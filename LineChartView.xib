@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LineChartView">
+            <connections>
+                <outlet property="dotImageView" destination="ymc-Co-KJw" id="Fcv-Sq-oQI"/>
+                <outlet property="mainBox" destination="ig4-ld-7Xp" id="ZmB-tn-cxd"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="ig4-ld-7Xp">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <view key="contentView" id="Rts-Gh-Jkc">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ymc-Co-KJw">
+                                <rect key="frame" x="440" y="131" width="10" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="Ucd-kD-7CT"/>
+                                    <constraint firstAttribute="width" constant="10" id="eeB-Je-9XN"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_chart_dot" id="KTe-iq-jjL"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ymc-Co-KJw" firstAttribute="centerY" secondItem="Rts-Gh-Jkc" secondAttribute="centerY" id="xyI-4s-azG"/>
+                            <constraint firstAttribute="trailing" secondItem="ymc-Co-KJw" secondAttribute="trailing" constant="30" id="zdi-wg-B2y"/>
+                        </constraints>
+                    </view>
+                    <color key="borderColor" red="0.34157451919999998" green="0.64983173080000001" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.34157451919999998" green="0.64983173080000001" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ig4-ld-7Xp" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="BoX-bN-2lp"/>
+                <constraint firstItem="ig4-ld-7Xp" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="MvR-1Y-UNL"/>
+                <constraint firstAttribute="bottom" secondItem="ig4-ld-7Xp" secondAttribute="bottom" id="eoZ-pg-Nm8"/>
+                <constraint firstAttribute="trailing" secondItem="ig4-ld-7Xp" secondAttribute="trailing" id="vM6-Jd-Hh0"/>
+            </constraints>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_chart_dot" width="10" height="10"/>
+    </resources>
+</document>

@@ -33,6 +33,8 @@
 		3E9C46101F70904F00693AA1 /* ChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E9C460F1F70904F00693AA1 /* ChartView.xib */; };
 		3E9C46131F70A88600693AA1 /* DownloadProgressBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E9C46121F70A88600693AA1 /* DownloadProgressBar.xib */; };
 		3E9C46161F70A8A300693AA1 /* DownloadProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9C46151F70A8A300693AA1 /* DownloadProgressBar.m */; };
+		3E9C46181F71165F00693AA1 /* LineChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E9C46171F71165F00693AA1 /* LineChartView.xib */; };
+		3E9C461B1F71176B00693AA1 /* LineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9C461A1F71176B00693AA1 /* LineChartView.m */; };
 		3ECF3CAD1F683B75005165E5 /* LLIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF3CAC1F683B75005165E5 /* LLIButton.m */; };
 		3ECF3CB71F687BE7005165E5 /* GiftButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ECF3CB61F687BE7005165E5 /* GiftButton.xib */; };
 		3ECF3CBA1F687C02005165E5 /* GiftButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF3CB91F687C02005165E5 /* GiftButton.m */; };
@@ -106,6 +108,9 @@
 		3E9C46121F70A88600693AA1 /* DownloadProgressBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadProgressBar.xib; sourceTree = "<group>"; };
 		3E9C46141F70A8A300693AA1 /* DownloadProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadProgressBar.h; sourceTree = "<group>"; };
 		3E9C46151F70A8A300693AA1 /* DownloadProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadProgressBar.m; sourceTree = "<group>"; };
+		3E9C46171F71165F00693AA1 /* LineChartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineChartView.xib; sourceTree = "<group>"; };
+		3E9C46191F71176B00693AA1 /* LineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineChartView.h; sourceTree = "<group>"; };
+		3E9C461A1F71176B00693AA1 /* LineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChartView.m; sourceTree = "<group>"; };
 		3ECF3CAB1F683B75005165E5 /* LLIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLIButton.h; path = XenioUIKit/LLIButton.h; sourceTree = "<group>"; };
 		3ECF3CAC1F683B75005165E5 /* LLIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLIButton.m; path = XenioUIKit/LLIButton.m; sourceTree = "<group>"; };
 		3ECF3CB61F687BE7005165E5 /* GiftButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftButton.xib; sourceTree = "<group>"; };
@@ -257,9 +262,12 @@
 		3E9C460B1F70846C00693AA1 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
+				3E9C460F1F70904F00693AA1 /* ChartView.xib */,
 				3E9C460C1F7084E100693AA1 /* ChartView.h */,
 				3E9C460D1F7084E100693AA1 /* ChartView.m */,
-				3E9C460F1F70904F00693AA1 /* ChartView.xib */,
+				3E9C46171F71165F00693AA1 /* LineChartView.xib */,
+				3E9C46191F71176B00693AA1 /* LineChartView.h */,
+				3E9C461A1F71176B00693AA1 /* LineChartView.m */,
 			);
 			name = Chart;
 			sourceTree = "<group>";
@@ -462,6 +470,7 @@
 				3E9C46051F7048DE00693AA1 /* Store.storyboard in Resources */,
 				3ECF3CF01F6978DA005165E5 /* SaveSettingsButton.xib in Resources */,
 				3E8EEF731F6DB3440034BE04 /* CustomHeaderCell.xib in Resources */,
+				3E9C46181F71165F00693AA1 /* LineChartView.xib in Resources */,
 				3E9C46101F70904F00693AA1 /* ChartView.xib in Resources */,
 				3ECF3CF41F6979D9005165E5 /* RemoveButton.xib in Resources */,
 				3ECF3CC61F6897B7005165E5 /* SignInButton.xib in Resources */,
@@ -546,6 +555,7 @@
 				3ECF3CE71F697053005165E5 /* AllStopButton.m in Sources */,
 				3EE9C4271F6C777A004B72F2 /* TabItemView.m in Sources */,
 				3E8A04C81F682F5900579DF8 /* NSView+INSNibLoading.m in Sources */,
+				3E9C461B1F71176B00693AA1 /* LineChartView.m in Sources */,
 				3E9C46161F70A8A300693AA1 /* DownloadProgressBar.m in Sources */,
 				3ECF3CEB1F6970CF005165E5 /* AddButton.m in Sources */,
 				3ECF3CBA1F687C02005165E5 /* GiftButton.m in Sources */,

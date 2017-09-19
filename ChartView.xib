@@ -3,13 +3,14 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="ChartView">
             <connections>
-                <outlet property="dotImage" destination="f1f-Jh-kpg" id="9X7-tq-V18"/>
+                <outlet property="lineChartView" destination="f77-NJ-ZcM" id="KfV-XS-qL5"/>
                 <outlet property="mainBox" destination="ZqL-ZL-fjp" id="GAT-ea-c1V"/>
                 <outlet property="mainBoxView" destination="4xK-A0-yXe" id="Hjr-7a-zDm"/>
             </connections>
@@ -27,28 +28,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
                     <color key="borderColor" red="0.34157451919999998" green="0.64983173080000001" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                    <color key="fillColor" red="0.34157451919999998" green="0.64983173080000001" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </box>
-                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f1f-Jh-kpg">
-                    <rect key="frame" x="416" y="120" width="48" height="32"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="48" id="sUT-Zd-nPH"/>
-                        <constraint firstAttribute="height" constant="32" id="xrR-iM-jPd"/>
-                    </constraints>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSAdvanced" id="aWS-br-rVY"/>
-                </imageView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="f77-NJ-ZcM" customClass="LineChartView">
+                    <rect key="frame" x="0.0" y="91" width="480" height="90"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="firstLineWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="firstLinePointsDistance">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="firstLinePercent">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="secondLineWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="secondLinePointsDistance">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="secondLinePercent">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customView>
             </subviews>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="f1f-Jh-kpg" secondAttribute="trailing" constant="16" id="Bg5-b8-uaQ"/>
+                <constraint firstItem="f77-NJ-ZcM" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="Idl-vr-ES1"/>
                 <constraint firstItem="ZqL-ZL-fjp" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="RiZ-Ip-Bq5"/>
+                <constraint firstItem="f77-NJ-ZcM" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="TA8-e2-De8"/>
                 <constraint firstAttribute="bottom" secondItem="ZqL-ZL-fjp" secondAttribute="bottom" id="TAp-oQ-5dS"/>
                 <constraint firstItem="ZqL-ZL-fjp" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="bv7-9A-Iei"/>
+                <constraint firstAttribute="trailing" secondItem="f77-NJ-ZcM" secondAttribute="trailing" id="eBU-eg-Ua9"/>
+                <constraint firstItem="f77-NJ-ZcM" firstAttribute="height" secondItem="4xK-A0-yXe" secondAttribute="height" multiplier="0.33" id="j0M-2E-6hv"/>
                 <constraint firstAttribute="trailing" secondItem="ZqL-ZL-fjp" secondAttribute="trailing" id="ovQ-PA-vXS"/>
-                <constraint firstItem="f1f-Jh-kpg" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="tRO-yX-uVW"/>
             </constraints>
         </customView>
     </objects>
-    <resources>
-        <image name="NSAdvanced" width="32" height="32"/>
-    </resources>
 </document>

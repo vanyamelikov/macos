@@ -26,7 +26,7 @@
     tableview.delegate = self;
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSTimer *timer = [NSTimer timerWithTimeInterval:.5f
+        NSTimer *timer = [NSTimer timerWithTimeInterval:0.1f
                                                  target:self
                                                selector:@selector(timerFired)
                                                userInfo:nil
@@ -47,14 +47,28 @@
 //        progress = 0;
 //    }
 //    [self.progressBar setNeedsDisplay:YES];
-    int lowerBound = 10;
-    int upperBound = 100;
-    int rndValue = lowerBound + arc4random() % (upperBound - lowerBound);
+    srandom(time(NULL));
+    int rndValue = 10 + arc4random() % (100 - 10);
     [self.mainChartView setCurrentPercent:rndValue];
+    
+    srandom(time(NULL));
+    rndValue = 10 + arc4random() % (100 - 10);
+    [self.mainChartView.lineChartView setFirstLinePercent:rndValue];
+    
+    srandom(time(NULL));
+    rndValue = 10 + arc4random() % (100 - 10);
+    [self.mainChartView.lineChartView setSecondLinePercent:rndValue];
+    
+    
     [self.mainChartView setNeedsDisplay:YES];
+
+    
+    
 }
 
-
+-(void)timerFirstLineFired {
+    
+}
 
 
 @end
