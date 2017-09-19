@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AddGameButton">
+            <connections>
+                <outlet property="backgroundBox" destination="eTq-k6-bFG" id="4XS-nB-A0B"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="QSu-C8-Fvl">
+            <rect key="frame" x="0.0" y="0.0" width="112" height="29"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="eTq-k6-bFG">
+                    <rect key="frame" x="0.0" y="0.0" width="112" height="29"/>
+                    <view key="contentView" id="ge9-uI-Hhi">
+                        <rect key="frame" x="1" y="1" width="110" height="27"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9UE-6h-cxN">
+                                <rect key="frame" x="18" y="6" width="74" height="18"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="ADD GAME" id="iTS-28-ajK">
+                                    <font key="font" size="12" name="SFUIText-Bold"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="9UE-6h-cxN" firstAttribute="centerX" secondItem="ge9-uI-Hhi" secondAttribute="centerX" id="NiF-dd-9dh"/>
+                            <constraint firstItem="9UE-6h-cxN" firstAttribute="centerY" secondItem="ge9-uI-Hhi" secondAttribute="centerY" constant="-1" id="jWr-O0-fAf"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="112" id="Aqx-Kz-W7O"/>
+                        <constraint firstAttribute="height" constant="29" id="FRJ-Oh-lYT"/>
+                    </constraints>
+                    <color key="borderColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.23921568630000001" green="0.4823529412" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eTq-k6-bFG" secondAttribute="bottom" id="9uF-pu-qAA"/>
+                <constraint firstItem="eTq-k6-bFG" firstAttribute="top" secondItem="QSu-C8-Fvl" secondAttribute="top" id="L0U-wv-5K1"/>
+                <constraint firstItem="eTq-k6-bFG" firstAttribute="leading" secondItem="QSu-C8-Fvl" secondAttribute="leading" id="kGX-iI-kN0"/>
+                <constraint firstAttribute="trailing" secondItem="eTq-k6-bFG" secondAttribute="trailing" id="mP7-bp-eZI"/>
+            </constraints>
+            <point key="canvasLocation" x="195" y="204.5"/>
+        </customView>
+    </objects>
+</document>

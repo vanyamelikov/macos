@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DownloadProgressBar">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="string" keyPath="emptyLineColor" value="#cccccc"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="fillLineColor" value="#347046"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="emptyLineHeight">
+                    <real key="value" value="9"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="emptyLineView" destination="s3O-vU-RR2" id="hAP-1A-prr"/>
+                <outlet property="fillLineBox" destination="xca-yO-qgc" id="RYL-XH-SgE"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="s3O-vU-RR2">
+                    <rect key="frame" x="0.0" y="135" width="480" height="2"/>
+                    <view key="contentView" id="Fqw-GB-I5c">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="2"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="Gql-kt-H4u"/>
+                    </constraints>
+                    <color key="fillColor" red="0.23921568630000001" green="0.4823529412" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </box>
+                <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="xca-yO-qgc">
+                    <rect key="frame" x="0.0" y="134" width="20" height="4"/>
+                    <view key="contentView" id="Yu4-9f-62S">
+                        <rect key="frame" x="1" y="1" width="18" height="2"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="5FU-22-3a3"/>
+                        <constraint firstAttribute="width" constant="20" id="sc0-yg-Vbf"/>
+                    </constraints>
+                    <color key="fillColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="s3O-vU-RR2" secondAttribute="trailing" id="1AF-A4-jEj"/>
+                <constraint firstItem="s3O-vU-RR2" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="2Ob-O7-C43"/>
+                <constraint firstItem="xca-yO-qgc" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="GS0-Qf-s2S"/>
+                <constraint firstItem="s3O-vU-RR2" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="Yly-oT-b1G"/>
+                <constraint firstItem="xca-yO-qgc" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="oix-IQ-o2f"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>

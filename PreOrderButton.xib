@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PreOrderButton">
+            <connections>
+                <outlet property="backgroundBox" destination="YDW-NL-7Z4" id="qtW-Pd-Xc2"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="JLM-5O-cjG">
+            <rect key="frame" x="0.0" y="0.0" width="114" height="32"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="2" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="YDW-NL-7Z4">
+                    <rect key="frame" x="0.0" y="0.0" width="114" height="32"/>
+                    <view key="contentView" id="JvK-XW-U0s">
+                        <rect key="frame" x="2" y="2" width="110" height="28"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="15q-kd-veY">
+                                <rect key="frame" x="0.0" y="0.0" width="110" height="28"/>
+                                <view key="contentView" id="MLv-ky-mAF">
+                                    <rect key="frame" x="1" y="1" width="108" height="26"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="y7G-R5-Yfr">
+                                            <rect key="frame" x="7" y="5" width="94" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="8az-pY-1JC"/>
+                                                <constraint firstAttribute="width" constant="90" id="UVw-gV-zcL"/>
+                                            </constraints>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="PRE-ORDER" id="H2g-ym-PwN">
+                                                <font key="font" size="12" name="SFUIText-Bold"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="y7G-R5-Yfr" firstAttribute="centerX" secondItem="MLv-ky-mAF" secondAttribute="centerX" id="T2i-pd-aAv"/>
+                                        <constraint firstItem="y7G-R5-Yfr" firstAttribute="centerY" secondItem="MLv-ky-mAF" secondAttribute="centerY" constant="-1" id="g0a-QK-fVX"/>
+                                    </constraints>
+                                </view>
+                                <color key="borderColor" red="0.23921568630000001" green="0.4823529412" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="fillColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="15q-kd-veY" secondAttribute="bottom" id="NJt-5M-Iko"/>
+                            <constraint firstItem="15q-kd-veY" firstAttribute="leading" secondItem="JvK-XW-U0s" secondAttribute="leading" id="Tfq-vq-nAJ"/>
+                            <constraint firstAttribute="trailing" secondItem="15q-kd-veY" secondAttribute="trailing" id="ZFd-TK-Ebc"/>
+                            <constraint firstItem="15q-kd-veY" firstAttribute="top" secondItem="JvK-XW-U0s" secondAttribute="top" id="rcd-r0-NYv"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="114" id="S6O-P7-l0d"/>
+                        <constraint firstAttribute="height" constant="32" id="wYg-yf-DUO"/>
+                    </constraints>
+                    <color key="borderColor" red="0.23921568627450979" green="0.4823529411764706" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.21909478306770325" green="0.41169720888137817" blue="0.83558934926986694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="YDW-NL-7Z4" firstAttribute="leading" secondItem="JLM-5O-cjG" secondAttribute="leading" id="Cte-R7-QbE"/>
+                <constraint firstAttribute="trailing" secondItem="YDW-NL-7Z4" secondAttribute="trailing" id="VjR-gu-HCN"/>
+                <constraint firstItem="YDW-NL-7Z4" firstAttribute="top" secondItem="JLM-5O-cjG" secondAttribute="top" id="XOV-la-M4M"/>
+                <constraint firstAttribute="bottom" secondItem="YDW-NL-7Z4" secondAttribute="bottom" id="Y0T-du-kJ1"/>
+            </constraints>
+            <point key="canvasLocation" x="195" y="204"/>
+        </customView>
+    </objects>
+</document>

@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -653,7 +655,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider=""/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
@@ -665,29 +667,433 @@
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="240" width="1600" height="900"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                     </window>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="6US-Mk-U34" kind="relationship" relationship="window.shadowedContentViewController" id="nfl-L6-2y6"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="74" y="341"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="hIz-AP-VOD">
+        <scene sceneID="XHS-fT-Z1t">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <viewController id="6US-Mk-U34" sceneMemberID="viewController">
+                    <view key="view" id="6q2-3V-EQb">
+                        <rect key="frame" x="0.0" y="0.0" width="1600" height="900"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="g5h-zM-VdP" customClass="LLIButton">
+                                <rect key="frame" x="734" y="496" width="132" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="VHc-R0-hm2"/>
+                                    <constraint firstAttribute="width" constant="132" id="mYU-r0-xcE"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="qpH-fE-MuQ" customClass="LIButton">
+                                <rect key="frame" x="734" y="545" width="132" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="1N2-75-U6b"/>
+                                    <constraint firstAttribute="height" constant="29" id="qQW-tO-fja"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="qYD-fa-ttn" customClass="GiftButton">
+                                <rect key="frame" x="764" y="454" width="73" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="59p-Vr-nsw"/>
+                                    <constraint firstAttribute="width" constant="73" id="HfT-IP-x1J"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Ibt-cg-RzG" customClass="SettingsButton">
+                                <rect key="frame" x="703" y="545" width="29" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="29" id="LIv-ju-auI"/>
+                                    <constraint firstAttribute="height" constant="29" id="ad7-Dk-aiX"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="HIB-c9-KIn" customClass="PreOrderButton">
+                                <rect key="frame" x="743" y="402" width="114" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="XFW-yf-K8Q"/>
+                                    <constraint firstAttribute="width" constant="114" id="lw8-0a-n9U"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="PYI-0w-DKm" customClass="SignInButton">
+                                <rect key="frame" x="661" y="346" width="278" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="278" id="ENp-vT-ogr"/>
+                                    <constraint firstAttribute="height" constant="36" id="z87-Ik-vKB"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="hwU-qx-OF1" customClass="RoundButton">
+                                <rect key="frame" x="787" y="594" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="DkP-fS-9CZ"/>
+                                    <constraint firstAttribute="width" constant="26" id="QHb-OH-Z8f"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="0NZ-lE-qAZ" customClass="AllStopButton">
+                                <rect key="frame" x="744" y="640" width="112" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="V1O-7o-58r"/>
+                                    <constraint firstAttribute="height" constant="29" id="eJI-lI-YOd"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="woy-9s-G73" customClass="AddGameButton">
+                                <rect key="frame" x="744" y="689" width="112" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="Lbd-db-V8M"/>
+                                    <constraint firstAttribute="height" constant="29" id="j9z-lP-Umn"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Mb0-3Z-Rxs" customClass="CancelButton">
+                                <rect key="frame" x="730" y="297" width="84" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="2mT-7e-JNw"/>
+                                    <constraint firstAttribute="width" constant="84" id="en3-la-kPf"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="kbm-Ap-6Of" customClass="AddButton">
+                                <rect key="frame" x="818" y="297" width="52" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="bd6-dd-Ema"/>
+                                    <constraint firstAttribute="width" constant="52" id="pnn-n5-bcu"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Wzp-pP-HQo" customClass="SaveSettingsButton">
+                                <rect key="frame" x="737" y="248" width="126" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="6O7-oz-xBF"/>
+                                    <constraint firstAttribute="height" constant="29" id="mp3-v5-uBS"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="2w4-RM-oLf" customClass="SendMessageButton">
+                                <rect key="frame" x="687" y="199" width="126" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="8Y3-nj-EKf"/>
+                                    <constraint firstAttribute="width" constant="126" id="Q8X-Nr-L7S"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="KE5-8Y-3g3" customClass="RemoveButton">
+                                <rect key="frame" x="818" y="199" width="76" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="agI-Wp-EZR"/>
+                                    <constraint firstAttribute="height" constant="29" id="tPf-fd-zLU"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="VZG-uy-0By" customClass="CustomTabbar">
+                                <rect key="frame" x="0.0" y="836" width="1600" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="sI9-vG-leI"/>
+                                </constraints>
+                            </customView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VqI-1X-afw">
+                                <rect key="frame" x="760" y="-7" width="81" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="W7G-yw-gjV"/>
+                                    <constraint firstAttribute="width" constant="69" id="cF9-c0-kYv"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mVp-sD-8Xt">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="XTK-Fr-lor" kind="show" id="K3c-vk-kca"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="qYD-fa-ttn" firstAttribute="centerX" secondItem="6q2-3V-EQb" secondAttribute="centerX" id="3LS-Qp-ZMC"/>
+                            <constraint firstItem="VZG-uy-0By" firstAttribute="leading" secondItem="6q2-3V-EQb" secondAttribute="leading" id="4xp-1Y-z9j"/>
+                            <constraint firstItem="PYI-0w-DKm" firstAttribute="centerX" secondItem="6q2-3V-EQb" secondAttribute="centerX" id="7EB-k5-IxA"/>
+                            <constraint firstItem="VqI-1X-afw" firstAttribute="centerX" secondItem="6q2-3V-EQb" secondAttribute="centerX" id="8pX-5e-sFN"/>
+                            <constraint firstItem="kbm-Ap-6Of" firstAttribute="top" secondItem="PYI-0w-DKm" secondAttribute="bottom" constant="20" id="AEu-HS-Zxg"/>
+                            <constraint firstItem="g5h-zM-VdP" firstAttribute="centerY" secondItem="6q2-3V-EQb" secondAttribute="centerY" constant="-60" id="BAy-an-Rvb"/>
+                            <constraint firstItem="kbm-Ap-6Of" firstAttribute="leading" secondItem="Mb0-3Z-Rxs" secondAttribute="trailing" constant="4" id="BCq-eo-Ua5"/>
+                            <constraint firstItem="Wzp-pP-HQo" firstAttribute="top" secondItem="Mb0-3Z-Rxs" secondAttribute="bottom" constant="20" id="Dcy-yE-gwT"/>
+                            <constraint firstAttribute="bottom" secondItem="VqI-1X-afw" secondAttribute="bottom" id="IAP-zZ-zaK"/>
+                            <constraint firstItem="qpH-fE-MuQ" firstAttribute="centerX" secondItem="6q2-3V-EQb" secondAttribute="centerX" id="Mjx-y8-5Hl"/>
+                            <constraint firstItem="hwU-qx-OF1" firstAttribute="centerX" secondItem="6q2-3V-EQb" secondAttribute="centerX" id="RD3-Qq-uld"/>
+                            <constraint firstItem="KE5-8Y-3g3" firstAttribute="top" secondItem="Wzp-pP-HQo" secondAttribute="bottom" constant="20" id="RMI-QS-tJ1"/>
+                            <constraint firstItem="2w4-RM-oLf" firstAttribute="top" secondItem="Wzp-pP-HQo" secondAttribute="bottom" constant="20" id="RTd-c0-WPG"/>
+                            <constraint firstItem="hwU-qx-OF1" firstAttribute="top" secondItem="0NZ-lE-qAZ" secondAttribute="bottom" constant="20" id="TlL-fF-JGm"/>
+                            <constraint firstAttribute="trailing" secondItem="VZG-uy-0By" secondAttribute="trailing" id="WGa-gO-O4n"/>
+                            <constraint firstItem="PYI-0w-DKm" firstAttribute="top" secondItem="HIB-c9-KIn" secondAttribute="bottom" constant="20" id="WUL-Af-Q3e"/>
+                            <constraint firstItem="HIB-c9-KIn" firstAttribute="centerX" secondItem="6q2-3V-EQb" secondAttribute="centerX" id="Ybh-qR-2zJ"/>
+                            <constraint firstItem="woy-9s-G73" firstAttribute="centerX" secondItem="6q2-3V-EQb" secondAttribute="centerX" id="YeL-mH-ndC"/>
+                            <constraint firstItem="Ibt-cg-RzG" firstAttribute="top" secondItem="hwU-qx-OF1" secondAttribute="bottom" constant="20" id="dhu-IS-gOn"/>
+                            <constraint firstItem="0NZ-lE-qAZ" firstAttribute="centerX" secondItem="6q2-3V-EQb" secondAttribute="centerX" id="ewK-WG-3ol"/>
+                            <constraint firstItem="qpH-fE-MuQ" firstAttribute="leading" secondItem="Ibt-cg-RzG" secondAttribute="trailing" constant="2" id="g2f-gA-Zai"/>
+                            <constraint firstItem="VZG-uy-0By" firstAttribute="top" secondItem="6q2-3V-EQb" secondAttribute="top" id="gg6-I2-HpO"/>
+                            <constraint firstItem="Mb0-3Z-Rxs" firstAttribute="top" secondItem="PYI-0w-DKm" secondAttribute="bottom" constant="20" id="hkB-es-aQL"/>
+                            <constraint firstItem="Ibt-cg-RzG" firstAttribute="centerY" secondItem="qpH-fE-MuQ" secondAttribute="centerY" id="hxn-Pu-e75"/>
+                            <constraint firstItem="KE5-8Y-3g3" firstAttribute="centerX" secondItem="6q2-3V-EQb" secondAttribute="centerX" constant="56" id="jpG-BN-hqt"/>
+                            <constraint firstItem="g5h-zM-VdP" firstAttribute="top" secondItem="qpH-fE-MuQ" secondAttribute="bottom" constant="20" id="lRs-Xv-6QD"/>
+                            <constraint firstItem="Mb0-3Z-Rxs" firstAttribute="centerX" secondItem="6q2-3V-EQb" secondAttribute="centerX" constant="-28" id="omm-2S-aTO"/>
+                            <constraint firstItem="g5h-zM-VdP" firstAttribute="centerX" secondItem="6q2-3V-EQb" secondAttribute="centerX" id="qH7-OR-Ust"/>
+                            <constraint firstItem="qYD-fa-ttn" firstAttribute="top" secondItem="g5h-zM-VdP" secondAttribute="bottom" constant="20" id="r4g-yE-rPr"/>
+                            <constraint firstItem="0NZ-lE-qAZ" firstAttribute="top" secondItem="woy-9s-G73" secondAttribute="bottom" constant="20" id="s4i-Ff-774"/>
+                            <constraint firstItem="HIB-c9-KIn" firstAttribute="top" secondItem="qYD-fa-ttn" secondAttribute="bottom" constant="20" id="vgJ-oi-P3d"/>
+                            <constraint firstItem="Wzp-pP-HQo" firstAttribute="centerX" secondItem="6q2-3V-EQb" secondAttribute="centerX" id="vzp-Fb-gAf"/>
+                            <constraint firstItem="2w4-RM-oLf" firstAttribute="centerX" secondItem="6q2-3V-EQb" secondAttribute="centerX" constant="-50" id="x5S-Uh-dDh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="aqX-H9-Mhf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="1375"/>
+        </scene>
+        <!--Main Tab View Controller-->
+        <scene sceneID="F0N-G5-ekk">
+            <objects>
+                <viewController id="XTK-Fr-lor" customClass="MainTabViewController" sceneMemberID="viewController">
+                    <view key="view" id="YJx-U4-oY8">
+                        <rect key="frame" x="0.0" y="0.0" width="1440" height="600"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="kBB-xw-gBx" customClass="CustomTabbar">
+                                <rect key="frame" x="0.0" y="536" width="1440" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Gb7-f1-LYi"/>
+                                </constraints>
+                            </customView>
+                            <tabView type="noTabsNoBorder" translatesAutoresizingMaskIntoConstraints="NO" id="KPd-vD-5tO">
+                                <rect key="frame" x="0.0" y="0.0" width="1440" height="536"/>
+                                <font key="font" metaFont="system"/>
+                                <tabViewItems>
+                                    <tabViewItem label="Tab" identifier="1" id="9XM-OF-F1E">
+                                        <view key="view" id="cXk-4Y-emf">
+                                            <rect key="frame" x="0.0" y="0.0" width="1440" height="536"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="View" identifier="2" id="gq0-T6-RkZ">
+                                        <view key="view" id="pFB-qB-zS5">
+                                            <rect key="frame" x="0.0" y="0.0" width="1440" height="536"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="Item 2" identifier="" id="0Wm-DL-uUL">
+                                        <view key="view" id="n03-2m-XTB">
+                                            <rect key="frame" x="0.0" y="0.0" width="1440" height="536"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="Item 3" identifier="" id="n5Z-BH-n4O">
+                                        <view key="view" id="wJJ-HI-su5">
+                                            <rect key="frame" x="10" y="33" width="1434" height="506"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="Item 4" identifier="" id="IpI-vj-2Ae">
+                                        <view key="view" id="dyU-ca-P8e">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </tabViewItem>
+                                </tabViewItems>
+                            </tabView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KPd-vD-5tO" secondAttribute="trailing" id="1sC-nQ-vTf"/>
+                            <constraint firstAttribute="bottom" secondItem="KPd-vD-5tO" secondAttribute="bottom" id="2iD-0F-idS"/>
+                            <constraint firstItem="kBB-xw-gBx" firstAttribute="top" secondItem="YJx-U4-oY8" secondAttribute="top" id="HC8-f2-z3Y"/>
+                            <constraint firstItem="kBB-xw-gBx" firstAttribute="leading" secondItem="YJx-U4-oY8" secondAttribute="leading" id="NLr-Qk-qcC"/>
+                            <constraint firstAttribute="trailing" secondItem="kBB-xw-gBx" secondAttribute="trailing" id="PdV-UC-bN4"/>
+                            <constraint firstItem="KPd-vD-5tO" firstAttribute="top" secondItem="kBB-xw-gBx" secondAttribute="bottom" id="QIG-0w-5Q1"/>
+                            <constraint firstItem="KPd-vD-5tO" firstAttribute="leading" secondItem="YJx-U4-oY8" secondAttribute="leading" id="rPD-e0-zQk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainTabBar" destination="kBB-xw-gBx" id="qAX-fU-UCk"/>
+                        <outlet property="mainTabView" destination="KPd-vD-5tO" id="fmf-pR-zlW"/>
+                    </connections>
+                </viewController>
+                <customObject id="T9H-dN-R11" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1379" y="2322"/>
+        </scene>
+        <!--Store Navigation View Controller-->
+        <scene sceneID="7Vh-hM-UGO">
+            <objects>
+                <viewController storyboardIdentifier="ViewController1" id="DXU-As-4Xf" customClass="StoreNavigationViewController" sceneMemberID="viewController">
+                    <view key="view" id="DCb-Xd-lLe">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="n58-bS-xOQ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="218" y="2934"/>
+        </scene>
+        <!--Library View Controller-->
+        <scene sceneID="tAK-9b-rEF">
+            <objects>
+                <viewController storyboardIdentifier="ViewController2" id="9VE-2T-eID" customClass="LibraryViewController" sceneMemberID="viewController">
+                    <view key="view" id="1TL-E9-Ga3">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="vpe-t7-KH2" customClass="DownloadProgressBar">
+                                <rect key="frame" x="25" y="18" width="400" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="I8n-TZ-NBR"/>
+                                    <constraint firstAttribute="height" constant="4" id="rQM-TM-LvP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="emptyLineHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillLineHeight">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="emptyLineColor" value="#ffffff"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fillLineColor" value="#000000"/>
+                                </userDefinedRuntimeAttributes>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="ehc-Ba-vAW" customClass="ChartView">
+                                <rect key="frame" x="23" y="110" width="405" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="cvN-UZ-PkJ"/>
+                                    <constraint firstAttribute="width" constant="405" id="mnA-sI-Fdp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barMargin">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="currentPercent">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ehc-Ba-vAW" firstAttribute="top" secondItem="1TL-E9-Ga3" secondAttribute="top" constant="33" id="E5T-xx-Zqf"/>
+                            <constraint firstItem="vpe-t7-KH2" firstAttribute="centerX" secondItem="1TL-E9-Ga3" secondAttribute="centerX" id="N6t-IJ-0nD"/>
+                            <constraint firstItem="ehc-Ba-vAW" firstAttribute="centerX" secondItem="1TL-E9-Ga3" secondAttribute="centerX" id="gQB-cP-yw0"/>
+                            <constraint firstAttribute="bottom" secondItem="vpe-t7-KH2" secondAttribute="bottom" constant="18" id="qeX-za-br7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainChartView" destination="ehc-Ba-vAW" id="9jC-il-pAc"/>
+                        <outlet property="progressBar" destination="vpe-t7-KH2" id="bPT-vI-NAl"/>
+                    </connections>
+                </viewController>
+                <customObject id="K1U-N5-Ea0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="736" y="2934"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ODp-9h-Tuo">
+            <objects>
+                <viewController storyboardIdentifier="ViewController3" id="8pp-BC-ghW" sceneMemberID="viewController">
+                    <view key="view" id="Vmr-TG-hoO">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fAw-qo-suv">
+                                <rect key="frame" x="218" y="141" width="14" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="1wD-4k-KnL"/>
+                                    <constraint firstAttribute="height" constant="17" id="dc7-x4-EX0"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="9dw-W7-Wb4">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LdV-dR-Huh">
+                                <rect key="frame" x="196" y="142" width="59" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="R00-s2-gMc"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="WALLET" id="VSk-Os-Yyf">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="LdV-dR-Huh" firstAttribute="centerY" secondItem="Vmr-TG-hoO" secondAttribute="centerY" id="1sv-ah-5gg"/>
+                            <constraint firstItem="fAw-qo-suv" firstAttribute="centerY" secondItem="Vmr-TG-hoO" secondAttribute="centerY" id="8qa-aU-DzG"/>
+                            <constraint firstItem="LdV-dR-Huh" firstAttribute="centerX" secondItem="Vmr-TG-hoO" secondAttribute="centerX" id="sQw-Eh-ayt"/>
+                            <constraint firstItem="fAw-qo-suv" firstAttribute="centerX" secondItem="Vmr-TG-hoO" secondAttribute="centerX" id="uXx-uJ-3o3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="LjJ-iG-WtB" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218" y="3312"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rD0-Kb-JoZ">
+            <objects>
+                <viewController storyboardIdentifier="ViewController4" id="NJL-qp-NYg" sceneMemberID="viewController">
+                    <view key="view" id="TEP-SJ-Tdq">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EzY-yL-0Ea">
+                                <rect key="frame" x="194" y="141" width="62" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="rEh-Pz-KQr"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="FRIENDS" id="kmF-IV-Ohp">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="EzY-yL-0Ea" firstAttribute="centerY" secondItem="TEP-SJ-Tdq" secondAttribute="centerY" id="GgD-aK-bCu"/>
+                            <constraint firstItem="EzY-yL-0Ea" firstAttribute="centerX" secondItem="TEP-SJ-Tdq" secondAttribute="centerX" id="yM1-g4-aeo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="P93-u0-m26" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="736" y="3312"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rJp-Nw-a7k">
+            <objects>
+                <viewController storyboardIdentifier="ViewController5" id="S71-Fn-JVf" sceneMemberID="viewController">
+                    <view key="view" id="yVg-Od-WB0">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZAT-Kp-3ul">
+                                <rect key="frame" x="189" y="141" width="72" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="vSm-yk-oAS"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="SETTINGS" id="yDw-yb-Eqx">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ZAT-Kp-3ul" firstAttribute="centerX" secondItem="yVg-Od-WB0" secondAttribute="centerX" id="o4r-ch-X1U"/>
+                            <constraint firstItem="ZAT-Kp-3ul" firstAttribute="centerY" secondItem="yVg-Od-WB0" secondAttribute="centerY" id="zZB-t3-1a8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="cVV-r1-xti" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1267" y="3312"/>
         </scene>
     </scenes>
 </document>

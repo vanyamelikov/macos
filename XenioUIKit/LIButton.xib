@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LIButton">
+            <connections>
+                <outlet property="backgroundBox" destination="MU5-EQ-McB" id="wq9-gk-6sH"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="6wJ-Ba-U8H">
+            <rect key="frame" x="0.0" y="0.0" width="132" height="29"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="MU5-EQ-McB">
+                    <rect key="frame" x="0.0" y="0.0" width="132" height="29"/>
+                    <view key="contentView" ambiguous="YES" id="2L1-ad-Fac">
+                        <rect key="frame" x="1" y="1" width="130" height="27"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Dn-fa-isQ">
+                                <rect key="frame" x="26" y="6" width="94" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="IsN-us-4Nr"/>
+                                    <constraint firstAttribute="height" constant="18" id="dxC-lW-3tI"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="LAUNCH GAME" id="nGV-qZ-nYp">
+                                    <font key="font" size="12" name="SFUIText-Bold"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="5Dn-fa-isQ" firstAttribute="top" secondItem="2L1-ad-Fac" secondAttribute="top" constant="3" id="0hY-aB-xB3"/>
+                            <constraint firstAttribute="bottom" secondItem="5Dn-fa-isQ" secondAttribute="bottom" constant="6" id="4ru-63-Q2D"/>
+                            <constraint firstAttribute="trailing" secondItem="5Dn-fa-isQ" secondAttribute="trailing" constant="6" id="GWt-eW-avM"/>
+                            <constraint firstItem="5Dn-fa-isQ" firstAttribute="leading" secondItem="2L1-ad-Fac" secondAttribute="leading" constant="28" id="uN6-9Y-N3M"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="132" id="OZJ-ct-XnF"/>
+                        <constraint firstAttribute="height" constant="29" id="wXX-B4-IWB"/>
+                    </constraints>
+                    <color key="borderColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.23921568627450979" green="0.4823529411764706" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </box>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OGm-X0-NOJ">
+                    <rect key="frame" x="12" y="9" width="10" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="M6T-kv-KOC"/>
+                        <constraint firstAttribute="height" constant="12" id="UQe-1l-t9a"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_play" id="gcI-M0-mC3"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="MU5-EQ-McB" firstAttribute="centerX" secondItem="6wJ-Ba-U8H" secondAttribute="centerX" id="ET5-tb-IgV"/>
+                <constraint firstItem="MU5-EQ-McB" firstAttribute="centerY" secondItem="6wJ-Ba-U8H" secondAttribute="centerY" id="Oyn-6X-iBV"/>
+                <constraint firstItem="OGm-X0-NOJ" firstAttribute="top" secondItem="6wJ-Ba-U8H" secondAttribute="top" constant="8" id="SPG-NK-HDT"/>
+                <constraint firstItem="OGm-X0-NOJ" firstAttribute="leading" secondItem="6wJ-Ba-U8H" secondAttribute="leading" constant="12" id="XCr-Q8-sNe"/>
+            </constraints>
+            <point key="canvasLocation" x="195" y="204.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_play" width="20" height="24"/>
+    </resources>
+</document>

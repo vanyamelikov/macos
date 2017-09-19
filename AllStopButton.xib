@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AllStopButton">
+            <connections>
+                <outlet property="backgroundBox" destination="vqP-1u-q1k" id="FP6-eb-qtf"/>
+                <outlet property="hiddenBox" destination="3pX-EF-Oes" id="L0q-vg-axa"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="bac-Jr-Ram">
+            <rect key="frame" x="0.0" y="0.0" width="112" height="29"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="QJV-Jh-UbF">
+                    <rect key="frame" x="0.0" y="0.0" width="112" height="29"/>
+                    <view key="contentView" id="2v4-5g-hvb">
+                        <rect key="frame" x="1" y="1" width="110" height="27"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="3pX-EF-Oes">
+                                <rect key="frame" x="100" y="-1" width="10" height="29"/>
+                                <view key="contentView" id="B6g-63-FU4">
+                                    <rect key="frame" x="1" y="1" width="8" height="27"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="vOx-kE-jUV"/>
+                                </constraints>
+                                <color key="borderColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="fillColor" red="0.23921568630000001" green="0.4823529412" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </box>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="vqP-1u-q1k">
+                                <rect key="frame" x="28" y="0.0" width="74" height="29"/>
+                                <view key="contentView" id="CbN-F8-qvY">
+                                    <rect key="frame" x="0.0" y="0.0" width="74" height="29"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8mz-mw-MiI">
+                                            <rect key="frame" x="5" y="7" width="68" height="18"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="ALL STOP" id="0hw-wn-2q9">
+                                                <font key="font" size="12" name="SFUIText-Bold"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8mz-mw-MiI" firstAttribute="centerY" secondItem="CbN-F8-qvY" secondAttribute="centerY" constant="-1" id="JKW-sE-mfg"/>
+                                        <constraint firstItem="8mz-mw-MiI" firstAttribute="centerX" secondItem="CbN-F8-qvY" secondAttribute="centerX" constant="2" id="eJy-KD-OgZ"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="EeZ-gR-Uct"/>
+                                </constraints>
+                                <color key="borderColor" red="0.23921568630000001" green="0.4823529412" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="fillColor" red="0.23921568630000001" green="0.4823529412" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3pX-EF-Oes" secondAttribute="bottom" constant="-1" id="0WY-06-gcI"/>
+                            <constraint firstItem="vqP-1u-q1k" firstAttribute="top" secondItem="2v4-5g-hvb" secondAttribute="top" constant="-2" id="5ju-9j-i4m"/>
+                            <constraint firstAttribute="bottom" secondItem="vqP-1u-q1k" secondAttribute="bottom" id="6Qd-9e-mxG"/>
+                            <constraint firstItem="3pX-EF-Oes" firstAttribute="leading" secondItem="2v4-5g-hvb" secondAttribute="leading" constant="100" id="N20-el-sVC"/>
+                            <constraint firstItem="3pX-EF-Oes" firstAttribute="top" secondItem="2v4-5g-hvb" secondAttribute="top" constant="-1" id="ipp-xN-jii"/>
+                            <constraint firstItem="vqP-1u-q1k" firstAttribute="leading" secondItem="2v4-5g-hvb" secondAttribute="leading" constant="28" id="pb5-jL-Fzn"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="112" id="WuE-pK-CxY"/>
+                        <constraint firstAttribute="height" constant="29" id="rbx-Sr-Not"/>
+                    </constraints>
+                    <color key="borderColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.1960784314" green="0.38823529410000002" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </box>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gGI-Pi-Odi">
+                    <rect key="frame" x="9" y="9" width="13" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="Rwa-dO-IgX"/>
+                        <constraint firstAttribute="width" constant="13" id="inB-rw-77X"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_allstop" id="kaO-OF-kct"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="QJV-Jh-UbF" firstAttribute="centerY" secondItem="gGI-Pi-Odi" secondAttribute="centerY" id="KDz-f8-5lV"/>
+                <constraint firstItem="gGI-Pi-Odi" firstAttribute="top" secondItem="bac-Jr-Ram" secondAttribute="top" constant="10" id="Vfk-CW-NnQ"/>
+                <constraint firstAttribute="trailing" secondItem="QJV-Jh-UbF" secondAttribute="trailing" id="gVo-fQ-m07"/>
+                <constraint firstItem="QJV-Jh-UbF" firstAttribute="leading" secondItem="bac-Jr-Ram" secondAttribute="leading" id="i3X-XX-x4e"/>
+                <constraint firstItem="gGI-Pi-Odi" firstAttribute="leading" secondItem="bac-Jr-Ram" secondAttribute="leading" constant="9" id="nWN-6M-xhG"/>
+            </constraints>
+            <point key="canvasLocation" x="168" y="244.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_allstop" width="24" height="24"/>
+    </resources>
+</document>

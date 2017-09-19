@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SettingsButton">
+            <connections>
+                <outlet property="backgroundBox" destination="svT-Hc-2L2" id="Ed0-uS-WXe"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="W9V-U2-OTZ">
+            <rect key="frame" x="0.0" y="0.0" width="29" height="29"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="svT-Hc-2L2">
+                    <rect key="frame" x="0.0" y="0.0" width="29" height="29"/>
+                    <view key="contentView" id="4Mn-q2-AhW">
+                        <rect key="frame" x="1" y="1" width="27" height="27"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="29" id="dHm-Iy-RxE"/>
+                        <constraint firstAttribute="height" constant="29" id="oBC-gq-wZP"/>
+                    </constraints>
+                    <color key="borderColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.035294117647058823" green="0.090196078431372548" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </box>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xPE-sJ-vEq">
+                    <rect key="frame" x="8" y="8" width="13" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="30t-wT-aPN"/>
+                        <constraint firstAttribute="width" constant="13" id="MIG-Mr-gC3"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_settings" id="vqX-Bp-DSg"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="svT-Hc-2L2" firstAttribute="leading" secondItem="W9V-U2-OTZ" secondAttribute="leading" id="4B2-fx-PtL"/>
+                <constraint firstAttribute="trailing" secondItem="svT-Hc-2L2" secondAttribute="trailing" id="CNc-Sb-8p8"/>
+                <constraint firstItem="svT-Hc-2L2" firstAttribute="top" secondItem="W9V-U2-OTZ" secondAttribute="top" id="cx8-eB-dpH"/>
+                <constraint firstItem="xPE-sJ-vEq" firstAttribute="centerX" secondItem="W9V-U2-OTZ" secondAttribute="centerX" id="gvc-3I-M5Z"/>
+                <constraint firstAttribute="bottom" secondItem="svT-Hc-2L2" secondAttribute="bottom" id="lc6-S0-w8i"/>
+                <constraint firstItem="xPE-sJ-vEq" firstAttribute="centerY" secondItem="W9V-U2-OTZ" secondAttribute="centerY" id="sI3-B3-dUM"/>
+            </constraints>
+            <point key="canvasLocation" x="194.5" y="204.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_settings" width="26" height="26"/>
+    </resources>
+</document>

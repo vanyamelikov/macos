@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SignInButton">
+            <connections>
+                <outlet property="backgroundBox" destination="Tfp-dq-iXf" id="WrK-4R-JGs"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="eLo-ML-1nb">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="32"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Tfp-dq-iXf">
+                    <rect key="frame" x="0.0" y="0.0" width="278" height="32"/>
+                    <view key="contentView" id="S0Q-p8-ulk">
+                        <rect key="frame" x="0.0" y="0.0" width="278" height="32"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="z0p-Xp-Hql">
+                                <rect key="frame" x="111" y="6" width="55" height="20"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Sign In" id="ONn-j3-w18">
+                                    <font key="font" size="14" name="SFUIText-Medium"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="z0p-Xp-Hql" firstAttribute="centerY" secondItem="S0Q-p8-ulk" secondAttribute="centerY" id="7yT-ea-wZN"/>
+                            <constraint firstItem="z0p-Xp-Hql" firstAttribute="centerX" secondItem="S0Q-p8-ulk" secondAttribute="centerX" id="QPU-PY-mu6"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="37y-2z-5Pz"/>
+                        <constraint firstAttribute="width" constant="278" id="anU-P1-9XP"/>
+                    </constraints>
+                    <color key="borderColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.23921568630000001" green="0.4823529412" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Tfp-dq-iXf" firstAttribute="leading" secondItem="eLo-ML-1nb" secondAttribute="leading" id="0jX-lo-ge0"/>
+                <constraint firstAttribute="bottom" secondItem="Tfp-dq-iXf" secondAttribute="bottom" id="Hcn-dR-r8f"/>
+                <constraint firstAttribute="trailing" secondItem="Tfp-dq-iXf" secondAttribute="trailing" id="VCp-P2-woN"/>
+                <constraint firstItem="Tfp-dq-iXf" firstAttribute="top" secondItem="eLo-ML-1nb" secondAttribute="top" id="Vrf-6C-p1n"/>
+            </constraints>
+            <point key="canvasLocation" x="151" y="317.5"/>
+        </customView>
+    </objects>
+</document>

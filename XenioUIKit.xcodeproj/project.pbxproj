@@ -7,14 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E1FF8E61F6AC4F700117F16 /* CustomTabbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E1FF8E51F6AC4F700117F16 /* CustomTabbar.xib */; };
+		3E1FF8E91F6AD86400117F16 /* CustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1FF8E81F6AD86400117F16 /* CustomTabbar.m */; };
 		3E25FB211F66EBCA000423E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E25FB201F66EBCA000423E9 /* AppDelegate.m */; };
 		3E25FB241F66EBCA000423E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E25FB231F66EBCA000423E9 /* main.m */; };
 		3E25FB271F66EBCA000423E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E25FB261F66EBCA000423E9 /* ViewController.m */; };
 		3E25FB291F66EBCA000423E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E25FB281F66EBCA000423E9 /* Assets.xcassets */; };
 		3E25FB2C1F66EBCA000423E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E25FB2A1F66EBCA000423E9 /* Main.storyboard */; };
+		3E36C8031F67198E00537BCA /* LIButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E36C8021F67198E00537BCA /* LIButton.xib */; };
+		3E36C8051F68158000537BCA /* LLIButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E36C8041F68158000537BCA /* LLIButton.xib */; };
+		3E8A04C51F682E5400579DF8 /* LIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A04C41F682E5400579DF8 /* LIButton.m */; };
+		3E8A04C81F682F5900579DF8 /* NSView+INSNibLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A04C71F682F5900579DF8 /* NSView+INSNibLoading.m */; };
+		3E8A04CB1F6839C800579DF8 /* RMSkinnedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A04CA1F6839C800579DF8 /* RMSkinnedView.m */; };
+		3E8EEF5F1F6D7BA40034BE04 /* CustomTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8EEF5E1F6D7BA40034BE04 /* CustomTableCellView.m */; };
+		3E8EEF611F6D7E000034BE04 /* CustomTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8EEF601F6D7E000034BE04 /* CustomTableView.xib */; };
+		3E8EEF671F6D85250034BE04 /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8EEF661F6D85250034BE04 /* LibraryViewController.m */; };
+		3E8EEF711F6DB26A0034BE04 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8EEF701F6DB26A0034BE04 /* CustomCell.xib */; };
+		3E8EEF731F6DB3440034BE04 /* CustomHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8EEF721F6DB3440034BE04 /* CustomHeaderCell.xib */; };
+		3E8EEF761F7007860034BE04 /* CustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8EEF751F7007860034BE04 /* CustomTableView.m */; };
+		3E9C45F61F70134800693AA1 /* KSNavigationController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E9C45F51F70134800693AA1 /* KSNavigationController.mm */; };
+		3E9C46021F70484C00693AA1 /* StoreNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9C46011F70484C00693AA1 /* StoreNavigationViewController.m */; };
+		3E9C46051F7048DE00693AA1 /* Store.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E9C46041F7048DE00693AA1 /* Store.storyboard */; };
+		3E9C46081F7049E600693AA1 /* MainStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9C46071F7049E600693AA1 /* MainStoreViewController.m */; };
+		3E9C460E1F7084E100693AA1 /* ChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9C460D1F7084E100693AA1 /* ChartView.m */; };
+		3E9C46101F70904F00693AA1 /* ChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E9C460F1F70904F00693AA1 /* ChartView.xib */; };
+		3E9C46131F70A88600693AA1 /* DownloadProgressBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E9C46121F70A88600693AA1 /* DownloadProgressBar.xib */; };
+		3E9C46161F70A8A300693AA1 /* DownloadProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9C46151F70A8A300693AA1 /* DownloadProgressBar.m */; };
+		3ECF3CAD1F683B75005165E5 /* LLIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF3CAC1F683B75005165E5 /* LLIButton.m */; };
+		3ECF3CB71F687BE7005165E5 /* GiftButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ECF3CB61F687BE7005165E5 /* GiftButton.xib */; };
+		3ECF3CBA1F687C02005165E5 /* GiftButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF3CB91F687C02005165E5 /* GiftButton.m */; };
+		3ECF3CBC1F68808C005165E5 /* SettingsButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ECF3CBB1F68808C005165E5 /* SettingsButton.xib */; };
+		3ECF3CBF1F68821E005165E5 /* SettingsButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF3CBE1F68821E005165E5 /* SettingsButton.m */; };
+		3ECF3CC11F6884B1005165E5 /* PreOrderButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ECF3CC01F6884B1005165E5 /* PreOrderButton.xib */; };
+		3ECF3CC41F6886A6005165E5 /* PreOrderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF3CC31F6886A6005165E5 /* PreOrderButton.m */; };
+		3ECF3CC61F6897B7005165E5 /* SignInButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ECF3CC51F6897B7005165E5 /* SignInButton.xib */; };
+		3ECF3CC91F689907005165E5 /* SignInButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF3CC81F689907005165E5 /* SignInButton.m */; };
+		3ECF3CCB1F689C3D005165E5 /* RoundButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ECF3CCA1F689C3D005165E5 /* RoundButton.xib */; };
+		3ECF3CCE1F689CC2005165E5 /* RoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF3CCD1F689CC2005165E5 /* RoundButton.m */; };
+		3ECF3CD31F68A49E005165E5 /* AllStopButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ECF3CD21F68A49E005165E5 /* AllStopButton.xib */; };
+		3ECF3CD81F68A729005165E5 /* AddGameButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ECF3CD71F68A729005165E5 /* AddGameButton.xib */; };
+		3ECF3CDA1F696CF6005165E5 /* AddButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ECF3CD91F696CF6005165E5 /* AddButton.xib */; };
+		3ECF3CDC1F696D54005165E5 /* CancelButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ECF3CDB1F696D54005165E5 /* CancelButton.xib */; };
+		3ECF3CE61F697053005165E5 /* CancelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF3CE11F697053005165E5 /* CancelButton.m */; };
+		3ECF3CE71F697053005165E5 /* AllStopButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF3CE21F697053005165E5 /* AllStopButton.m */; };
+		3ECF3CE81F697054005165E5 /* AddGameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF3CE51F697053005165E5 /* AddGameButton.m */; };
+		3ECF3CEB1F6970CF005165E5 /* AddButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF3CEA1F6970CF005165E5 /* AddButton.m */; };
+		3ECF3CEE1F6978C3005165E5 /* SaveSettingsButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF3CED1F6978C3005165E5 /* SaveSettingsButton.m */; };
+		3ECF3CF01F6978DA005165E5 /* SaveSettingsButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ECF3CEF1F6978DA005165E5 /* SaveSettingsButton.xib */; };
+		3ECF3CF21F6979A2005165E5 /* SendMessageButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ECF3CF11F6979A2005165E5 /* SendMessageButton.xib */; };
+		3ECF3CF41F6979D9005165E5 /* RemoveButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ECF3CF31F6979D9005165E5 /* RemoveButton.xib */; };
+		3ECF3CF71F697B66005165E5 /* SendMessageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF3CF61F697B66005165E5 /* SendMessageButton.m */; };
+		3ECF3CFA1F697BBD005165E5 /* RemoveButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF3CF91F697BBD005165E5 /* RemoveButton.m */; };
+		3EE9C4271F6C777A004B72F2 /* TabItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9C4261F6C777A004B72F2 /* TabItemView.m */; };
+		3EE9C42B1F6C91E8004B72F2 /* MainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9C42A1F6C91E8004B72F2 /* MainTabViewController.m */; };
+		C345FD36031D8AEF00F9D8E2 /* libPods-XenioUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E28B0330F5477A5754ADCA /* libPods-XenioUIKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E1FF8E51F6AC4F700117F16 /* CustomTabbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTabbar.xib; sourceTree = "<group>"; };
+		3E1FF8E71F6AD86400117F16 /* CustomTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabbar.h; sourceTree = "<group>"; };
+		3E1FF8E81F6AD86400117F16 /* CustomTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabbar.m; sourceTree = "<group>"; };
 		3E25FB1C1F66EBCA000423E9 /* XenioUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XenioUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E25FB1F1F66EBCA000423E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E25FB201F66EBCA000423E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -24,6 +76,81 @@
 		3E25FB281F66EBCA000423E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E25FB2B1F66EBCA000423E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E25FB2D1F66EBCA000423E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E36C8021F67198E00537BCA /* LIButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LIButton.xib; path = XenioUIKit/LIButton.xib; sourceTree = "<group>"; };
+		3E36C8041F68158000537BCA /* LLIButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LLIButton.xib; path = XenioUIKit/LLIButton.xib; sourceTree = "<group>"; };
+		3E8A04C31F682E5400579DF8 /* LIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LIButton.h; path = XenioUIKit/LIButton.h; sourceTree = "<group>"; };
+		3E8A04C41F682E5400579DF8 /* LIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LIButton.m; path = XenioUIKit/LIButton.m; sourceTree = "<group>"; };
+		3E8A04C61F682F5900579DF8 /* NSView+INSNibLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSView+INSNibLoading.h"; path = "../../Downloads/INSNibLoading-master/INSNibLoading/OSX/NSView+INSNibLoading.h"; sourceTree = "<group>"; };
+		3E8A04C71F682F5900579DF8 /* NSView+INSNibLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSView+INSNibLoading.m"; path = "../../Downloads/INSNibLoading-master/INSNibLoading/OSX/NSView+INSNibLoading.m"; sourceTree = "<group>"; };
+		3E8A04C91F6839C800579DF8 /* RMSkinnedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMSkinnedView.h; path = ../XenioMacOS/RMSkinnedView.h; sourceTree = "<group>"; };
+		3E8A04CA1F6839C800579DF8 /* RMSkinnedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMSkinnedView.m; path = ../XenioMacOS/RMSkinnedView.m; sourceTree = "<group>"; };
+		3E8EEF5D1F6D7BA40034BE04 /* CustomTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCellView.h; sourceTree = "<group>"; };
+		3E8EEF5E1F6D7BA40034BE04 /* CustomTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCellView.m; sourceTree = "<group>"; };
+		3E8EEF601F6D7E000034BE04 /* CustomTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableView.xib; sourceTree = "<group>"; };
+		3E8EEF651F6D85250034BE04 /* LibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryViewController.h; sourceTree = "<group>"; };
+		3E8EEF661F6D85250034BE04 /* LibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryViewController.m; sourceTree = "<group>"; };
+		3E8EEF701F6DB26A0034BE04 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		3E8EEF721F6DB3440034BE04 /* CustomHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomHeaderCell.xib; sourceTree = "<group>"; };
+		3E8EEF741F7007860034BE04 /* CustomTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableView.h; sourceTree = "<group>"; };
+		3E8EEF751F7007860034BE04 /* CustomTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableView.m; sourceTree = "<group>"; };
+		3E9C45F41F70134800693AA1 /* KSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSNavigationController.h; path = "../../Downloads/KSNavigationController-master/KSNavigationController/ObjectiveC/KSNavigationController.h"; sourceTree = "<group>"; };
+		3E9C45F51F70134800693AA1 /* KSNavigationController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = KSNavigationController.mm; path = "../../Downloads/KSNavigationController-master/KSNavigationController/ObjectiveC/KSNavigationController.mm"; sourceTree = "<group>"; };
+		3E9C46001F70484C00693AA1 /* StoreNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreNavigationViewController.h; sourceTree = "<group>"; };
+		3E9C46011F70484C00693AA1 /* StoreNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreNavigationViewController.m; sourceTree = "<group>"; };
+		3E9C46041F7048DE00693AA1 /* Store.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Store.storyboard; sourceTree = "<group>"; };
+		3E9C46061F7049E600693AA1 /* MainStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainStoreViewController.h; sourceTree = "<group>"; };
+		3E9C46071F7049E600693AA1 /* MainStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainStoreViewController.m; sourceTree = "<group>"; };
+		3E9C460C1F7084E100693AA1 /* ChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartView.h; sourceTree = "<group>"; };
+		3E9C460D1F7084E100693AA1 /* ChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartView.m; sourceTree = "<group>"; };
+		3E9C460F1F70904F00693AA1 /* ChartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartView.xib; sourceTree = "<group>"; };
+		3E9C46121F70A88600693AA1 /* DownloadProgressBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadProgressBar.xib; sourceTree = "<group>"; };
+		3E9C46141F70A8A300693AA1 /* DownloadProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadProgressBar.h; sourceTree = "<group>"; };
+		3E9C46151F70A8A300693AA1 /* DownloadProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadProgressBar.m; sourceTree = "<group>"; };
+		3ECF3CAB1F683B75005165E5 /* LLIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLIButton.h; path = XenioUIKit/LLIButton.h; sourceTree = "<group>"; };
+		3ECF3CAC1F683B75005165E5 /* LLIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLIButton.m; path = XenioUIKit/LLIButton.m; sourceTree = "<group>"; };
+		3ECF3CB61F687BE7005165E5 /* GiftButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiftButton.xib; sourceTree = "<group>"; };
+		3ECF3CB81F687C02005165E5 /* GiftButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftButton.h; sourceTree = "<group>"; };
+		3ECF3CB91F687C02005165E5 /* GiftButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftButton.m; sourceTree = "<group>"; };
+		3ECF3CBB1F68808C005165E5 /* SettingsButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsButton.xib; sourceTree = "<group>"; };
+		3ECF3CBD1F68821E005165E5 /* SettingsButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsButton.h; sourceTree = "<group>"; };
+		3ECF3CBE1F68821E005165E5 /* SettingsButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsButton.m; sourceTree = "<group>"; };
+		3ECF3CC01F6884B1005165E5 /* PreOrderButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreOrderButton.xib; sourceTree = "<group>"; };
+		3ECF3CC21F6886A6005165E5 /* PreOrderButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreOrderButton.h; sourceTree = "<group>"; };
+		3ECF3CC31F6886A6005165E5 /* PreOrderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreOrderButton.m; sourceTree = "<group>"; };
+		3ECF3CC51F6897B7005165E5 /* SignInButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInButton.xib; sourceTree = "<group>"; };
+		3ECF3CC71F689907005165E5 /* SignInButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInButton.h; sourceTree = "<group>"; };
+		3ECF3CC81F689907005165E5 /* SignInButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInButton.m; sourceTree = "<group>"; };
+		3ECF3CCA1F689C3D005165E5 /* RoundButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoundButton.xib; sourceTree = "<group>"; };
+		3ECF3CCC1F689CC2005165E5 /* RoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundButton.h; sourceTree = "<group>"; };
+		3ECF3CCD1F689CC2005165E5 /* RoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundButton.m; sourceTree = "<group>"; };
+		3ECF3CD21F68A49E005165E5 /* AllStopButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllStopButton.xib; sourceTree = "<group>"; };
+		3ECF3CD71F68A729005165E5 /* AddGameButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddGameButton.xib; sourceTree = "<group>"; };
+		3ECF3CD91F696CF6005165E5 /* AddButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddButton.xib; sourceTree = "<group>"; };
+		3ECF3CDB1F696D54005165E5 /* CancelButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CancelButton.xib; sourceTree = "<group>"; };
+		3ECF3CE01F697053005165E5 /* CancelButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelButton.h; sourceTree = "<group>"; };
+		3ECF3CE11F697053005165E5 /* CancelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelButton.m; sourceTree = "<group>"; };
+		3ECF3CE21F697053005165E5 /* AllStopButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllStopButton.m; sourceTree = "<group>"; };
+		3ECF3CE31F697053005165E5 /* AllStopButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllStopButton.h; sourceTree = "<group>"; };
+		3ECF3CE41F697053005165E5 /* AddGameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGameButton.h; sourceTree = "<group>"; };
+		3ECF3CE51F697053005165E5 /* AddGameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGameButton.m; sourceTree = "<group>"; };
+		3ECF3CE91F6970CF005165E5 /* AddButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddButton.h; sourceTree = "<group>"; };
+		3ECF3CEA1F6970CF005165E5 /* AddButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddButton.m; sourceTree = "<group>"; };
+		3ECF3CEC1F6978C3005165E5 /* SaveSettingsButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveSettingsButton.h; sourceTree = "<group>"; };
+		3ECF3CED1F6978C3005165E5 /* SaveSettingsButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveSettingsButton.m; sourceTree = "<group>"; };
+		3ECF3CEF1F6978DA005165E5 /* SaveSettingsButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaveSettingsButton.xib; sourceTree = "<group>"; };
+		3ECF3CF11F6979A2005165E5 /* SendMessageButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendMessageButton.xib; sourceTree = "<group>"; };
+		3ECF3CF31F6979D9005165E5 /* RemoveButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoveButton.xib; sourceTree = "<group>"; };
+		3ECF3CF51F697B66005165E5 /* SendMessageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendMessageButton.h; sourceTree = "<group>"; };
+		3ECF3CF61F697B66005165E5 /* SendMessageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendMessageButton.m; sourceTree = "<group>"; };
+		3ECF3CF81F697BBD005165E5 /* RemoveButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoveButton.h; sourceTree = "<group>"; };
+		3ECF3CF91F697BBD005165E5 /* RemoveButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoveButton.m; sourceTree = "<group>"; };
+		3EE9C4251F6C777A004B72F2 /* TabItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabItemView.h; sourceTree = "<group>"; };
+		3EE9C4261F6C777A004B72F2 /* TabItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabItemView.m; sourceTree = "<group>"; };
+		3EE9C4291F6C91E8004B72F2 /* MainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabViewController.h; sourceTree = "<group>"; };
+		3EE9C42A1F6C91E8004B72F2 /* MainTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabViewController.m; sourceTree = "<group>"; };
+		8D9DBD9449A1117FB45C62BD /* Pods-XenioUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XenioUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-XenioUIKit/Pods-XenioUIKit.release.xcconfig"; sourceTree = "<group>"; };
+		8E9347FF6F057E52691C32C9 /* Pods-XenioUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XenioUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XenioUIKit/Pods-XenioUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		B9E28B0330F5477A5754ADCA /* libPods-XenioUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XenioUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +158,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C345FD36031D8AEF00F9D8E2 /* libPods-XenioUIKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E1FF8E41F6AC4CE00117F16 /* CustomTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				3EE9C4251F6C777A004B72F2 /* TabItemView.h */,
+				3EE9C4261F6C777A004B72F2 /* TabItemView.m */,
+				3E1FF8E51F6AC4F700117F16 /* CustomTabbar.xib */,
+				3E1FF8E71F6AD86400117F16 /* CustomTabbar.h */,
+				3E1FF8E81F6AD86400117F16 /* CustomTabbar.m */,
+			);
+			name = CustomTabbar;
+			sourceTree = "<group>";
+		};
 		3E25FB131F66EBCA000423E9 = {
 			isa = PBXGroup;
 			children = (
+				3E9C46031F7048C200693AA1 /* Storyboards */,
+				3E9C45FF1F70482000693AA1 /* NavigationControllers */,
+				3EE9C4281F6C91C3004B72F2 /* ViewControllers */,
+				3ECF3CAF1F686883005165E5 /* UI */,
 				3E25FB1E1F66EBCA000423E9 /* XenioUIKit */,
+				3ECF3CAE1F686869005165E5 /* Libraries */,
 				3E25FB1D1F66EBCA000423E9 /* Products */,
+				999004ED6D35485C24B4D44A /* Pods */,
+				667C286EE9E32DD4CB68E22A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +223,169 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3E8EEF6B1F6D896C0034BE04 /* CustomTableView */ = {
+			isa = PBXGroup;
+			children = (
+				3E8EEF601F6D7E000034BE04 /* CustomTableView.xib */,
+				3E8EEF741F7007860034BE04 /* CustomTableView.h */,
+				3E8EEF751F7007860034BE04 /* CustomTableView.m */,
+				3E8EEF701F6DB26A0034BE04 /* CustomCell.xib */,
+				3E8EEF5D1F6D7BA40034BE04 /* CustomTableCellView.h */,
+				3E8EEF5E1F6D7BA40034BE04 /* CustomTableCellView.m */,
+				3E8EEF721F6DB3440034BE04 /* CustomHeaderCell.xib */,
+			);
+			name = CustomTableView;
+			sourceTree = "<group>";
+		};
+		3E9C45FF1F70482000693AA1 /* NavigationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E9C46001F70484C00693AA1 /* StoreNavigationViewController.h */,
+				3E9C46011F70484C00693AA1 /* StoreNavigationViewController.m */,
+			);
+			name = NavigationControllers;
+			sourceTree = "<group>";
+		};
+		3E9C46031F7048C200693AA1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3E9C46041F7048DE00693AA1 /* Store.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		3E9C460B1F70846C00693AA1 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				3E9C460C1F7084E100693AA1 /* ChartView.h */,
+				3E9C460D1F7084E100693AA1 /* ChartView.m */,
+				3E9C460F1F70904F00693AA1 /* ChartView.xib */,
+			);
+			name = Chart;
+			sourceTree = "<group>";
+		};
+		3E9C46111F70A85700693AA1 /* ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				3E9C46121F70A88600693AA1 /* DownloadProgressBar.xib */,
+				3E9C46141F70A8A300693AA1 /* DownloadProgressBar.h */,
+				3E9C46151F70A8A300693AA1 /* DownloadProgressBar.m */,
+			);
+			name = ProgressBar;
+			sourceTree = "<group>";
+		};
+		3ECF3CAE1F686869005165E5 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3E9C45F41F70134800693AA1 /* KSNavigationController.h */,
+				3E9C45F51F70134800693AA1 /* KSNavigationController.mm */,
+				3E8A04C91F6839C800579DF8 /* RMSkinnedView.h */,
+				3E8A04CA1F6839C800579DF8 /* RMSkinnedView.m */,
+				3E8A04C61F682F5900579DF8 /* NSView+INSNibLoading.h */,
+				3E8A04C71F682F5900579DF8 /* NSView+INSNibLoading.m */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		3ECF3CAF1F686883005165E5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3E9C46111F70A85700693AA1 /* ProgressBar */,
+				3E9C460B1F70846C00693AA1 /* Chart */,
+				3E8EEF6B1F6D896C0034BE04 /* CustomTableView */,
+				3E1FF8E41F6AC4CE00117F16 /* CustomTabbar */,
+				3ECF3CFB1F698011005165E5 /* Buttons */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		3ECF3CB01F686897005165E5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3E8A04C31F682E5400579DF8 /* LIButton.h */,
+				3E8A04C41F682E5400579DF8 /* LIButton.m */,
+				3ECF3CAB1F683B75005165E5 /* LLIButton.h */,
+				3ECF3CAC1F683B75005165E5 /* LLIButton.m */,
+				3ECF3CB81F687C02005165E5 /* GiftButton.h */,
+				3ECF3CB91F687C02005165E5 /* GiftButton.m */,
+				3ECF3CBD1F68821E005165E5 /* SettingsButton.h */,
+				3ECF3CBE1F68821E005165E5 /* SettingsButton.m */,
+				3ECF3CC21F6886A6005165E5 /* PreOrderButton.h */,
+				3ECF3CC31F6886A6005165E5 /* PreOrderButton.m */,
+				3ECF3CC71F689907005165E5 /* SignInButton.h */,
+				3ECF3CC81F689907005165E5 /* SignInButton.m */,
+				3ECF3CCC1F689CC2005165E5 /* RoundButton.h */,
+				3ECF3CCD1F689CC2005165E5 /* RoundButton.m */,
+				3ECF3CE31F697053005165E5 /* AllStopButton.h */,
+				3ECF3CE21F697053005165E5 /* AllStopButton.m */,
+				3ECF3CE41F697053005165E5 /* AddGameButton.h */,
+				3ECF3CE51F697053005165E5 /* AddGameButton.m */,
+				3ECF3CE91F6970CF005165E5 /* AddButton.h */,
+				3ECF3CEA1F6970CF005165E5 /* AddButton.m */,
+				3ECF3CE01F697053005165E5 /* CancelButton.h */,
+				3ECF3CE11F697053005165E5 /* CancelButton.m */,
+				3ECF3CEC1F6978C3005165E5 /* SaveSettingsButton.h */,
+				3ECF3CED1F6978C3005165E5 /* SaveSettingsButton.m */,
+				3ECF3CF51F697B66005165E5 /* SendMessageButton.h */,
+				3ECF3CF61F697B66005165E5 /* SendMessageButton.m */,
+				3ECF3CF81F697BBD005165E5 /* RemoveButton.h */,
+				3ECF3CF91F697BBD005165E5 /* RemoveButton.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		3ECF3CFB1F698011005165E5 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3ECF3CB01F686897005165E5 /* Classes */,
+				3E36C8021F67198E00537BCA /* LIButton.xib */,
+				3E36C8041F68158000537BCA /* LLIButton.xib */,
+				3ECF3CB61F687BE7005165E5 /* GiftButton.xib */,
+				3ECF3CBB1F68808C005165E5 /* SettingsButton.xib */,
+				3ECF3CC01F6884B1005165E5 /* PreOrderButton.xib */,
+				3ECF3CC51F6897B7005165E5 /* SignInButton.xib */,
+				3ECF3CCA1F689C3D005165E5 /* RoundButton.xib */,
+				3ECF3CD21F68A49E005165E5 /* AllStopButton.xib */,
+				3ECF3CD71F68A729005165E5 /* AddGameButton.xib */,
+				3ECF3CD91F696CF6005165E5 /* AddButton.xib */,
+				3ECF3CDB1F696D54005165E5 /* CancelButton.xib */,
+				3ECF3CEF1F6978DA005165E5 /* SaveSettingsButton.xib */,
+				3ECF3CF11F6979A2005165E5 /* SendMessageButton.xib */,
+				3ECF3CF31F6979D9005165E5 /* RemoveButton.xib */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		3EE9C4281F6C91C3004B72F2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3EE9C4291F6C91E8004B72F2 /* MainTabViewController.h */,
+				3EE9C42A1F6C91E8004B72F2 /* MainTabViewController.m */,
+				3E8EEF651F6D85250034BE04 /* LibraryViewController.h */,
+				3E8EEF661F6D85250034BE04 /* LibraryViewController.m */,
+				3E9C46061F7049E600693AA1 /* MainStoreViewController.h */,
+				3E9C46071F7049E600693AA1 /* MainStoreViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		667C286EE9E32DD4CB68E22A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9E28B0330F5477A5754ADCA /* libPods-XenioUIKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		999004ED6D35485C24B4D44A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E9347FF6F057E52691C32C9 /* Pods-XenioUIKit.debug.xcconfig */,
+				8D9DBD9449A1117FB45C62BD /* Pods-XenioUIKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +393,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E25FB301F66EBCA000423E9 /* Build configuration list for PBXNativeTarget "XenioUIKit" */;
 			buildPhases = (
+				AE5ABC96865DCEFD1E6DF001 /* [CP] Check Pods Manifest.lock */,
 				3E25FB181F66EBCA000423E9 /* Sources */,
 				3E25FB191F66EBCA000423E9 /* Frameworks */,
 				3E25FB1A1F66EBCA000423E9 /* Resources */,
+				54BEBBF766D0517B62088B5C /* [CP] Embed Pods Frameworks */,
+				49DE885275A79D652E4A8F88 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,21 +447,117 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ECF3CCB1F689C3D005165E5 /* RoundButton.xib in Resources */,
 				3E25FB291F66EBCA000423E9 /* Assets.xcassets in Resources */,
+				3E1FF8E61F6AC4F700117F16 /* CustomTabbar.xib in Resources */,
+				3E36C8031F67198E00537BCA /* LIButton.xib in Resources */,
+				3ECF3CD31F68A49E005165E5 /* AllStopButton.xib in Resources */,
+				3ECF3CF21F6979A2005165E5 /* SendMessageButton.xib in Resources */,
+				3ECF3CC11F6884B1005165E5 /* PreOrderButton.xib in Resources */,
 				3E25FB2C1F66EBCA000423E9 /* Main.storyboard in Resources */,
+				3E8EEF711F6DB26A0034BE04 /* CustomCell.xib in Resources */,
+				3ECF3CDC1F696D54005165E5 /* CancelButton.xib in Resources */,
+				3ECF3CB71F687BE7005165E5 /* GiftButton.xib in Resources */,
+				3ECF3CDA1F696CF6005165E5 /* AddButton.xib in Resources */,
+				3E9C46051F7048DE00693AA1 /* Store.storyboard in Resources */,
+				3ECF3CF01F6978DA005165E5 /* SaveSettingsButton.xib in Resources */,
+				3E8EEF731F6DB3440034BE04 /* CustomHeaderCell.xib in Resources */,
+				3E9C46101F70904F00693AA1 /* ChartView.xib in Resources */,
+				3ECF3CF41F6979D9005165E5 /* RemoveButton.xib in Resources */,
+				3ECF3CC61F6897B7005165E5 /* SignInButton.xib in Resources */,
+				3ECF3CBC1F68808C005165E5 /* SettingsButton.xib in Resources */,
+				3E9C46131F70A88600693AA1 /* DownloadProgressBar.xib in Resources */,
+				3E36C8051F68158000537BCA /* LLIButton.xib in Resources */,
+				3E8EEF611F6D7E000034BE04 /* CustomTableView.xib in Resources */,
+				3ECF3CD81F68A729005165E5 /* AddGameButton.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49DE885275A79D652E4A8F88 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XenioUIKit/Pods-XenioUIKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54BEBBF766D0517B62088B5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XenioUIKit/Pods-XenioUIKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE5ABC96865DCEFD1E6DF001 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3E25FB181F66EBCA000423E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ECF3CFA1F697BBD005165E5 /* RemoveButton.m in Sources */,
+				3E8EEF761F7007860034BE04 /* CustomTableView.m in Sources */,
+				3ECF3CC41F6886A6005165E5 /* PreOrderButton.m in Sources */,
+				3E9C45F61F70134800693AA1 /* KSNavigationController.mm in Sources */,
+				3ECF3CBF1F68821E005165E5 /* SettingsButton.m in Sources */,
+				3E1FF8E91F6AD86400117F16 /* CustomTabbar.m in Sources */,
+				3E8EEF671F6D85250034BE04 /* LibraryViewController.m in Sources */,
 				3E25FB271F66EBCA000423E9 /* ViewController.m in Sources */,
 				3E25FB241F66EBCA000423E9 /* main.m in Sources */,
+				3ECF3CCE1F689CC2005165E5 /* RoundButton.m in Sources */,
+				3E9C46021F70484C00693AA1 /* StoreNavigationViewController.m in Sources */,
+				3E8A04C51F682E5400579DF8 /* LIButton.m in Sources */,
+				3ECF3CE61F697053005165E5 /* CancelButton.m in Sources */,
+				3ECF3CC91F689907005165E5 /* SignInButton.m in Sources */,
+				3ECF3CAD1F683B75005165E5 /* LLIButton.m in Sources */,
+				3ECF3CE71F697053005165E5 /* AllStopButton.m in Sources */,
+				3EE9C4271F6C777A004B72F2 /* TabItemView.m in Sources */,
+				3E8A04C81F682F5900579DF8 /* NSView+INSNibLoading.m in Sources */,
+				3E9C46161F70A8A300693AA1 /* DownloadProgressBar.m in Sources */,
+				3ECF3CEB1F6970CF005165E5 /* AddButton.m in Sources */,
+				3ECF3CBA1F687C02005165E5 /* GiftButton.m in Sources */,
+				3E8A04CB1F6839C800579DF8 /* RMSkinnedView.m in Sources */,
+				3E9C460E1F7084E100693AA1 /* ChartView.m in Sources */,
+				3E9C46081F7049E600693AA1 /* MainStoreViewController.m in Sources */,
+				3EE9C42B1F6C91E8004B72F2 /* MainTabViewController.m in Sources */,
 				3E25FB211F66EBCA000423E9 /* AppDelegate.m in Sources */,
+				3ECF3CF71F697B66005165E5 /* SendMessageButton.m in Sources */,
+				3ECF3CE81F697054005165E5 /* AddGameButton.m in Sources */,
+				3E8EEF5F1F6D7BA40034BE04 /* CustomTableCellView.m in Sources */,
+				3ECF3CEE1F6978C3005165E5 /* SaveSettingsButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +666,7 @@
 		};
 		3E25FB311F66EBCA000423E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9347FF6F057E52691C32C9 /* Pods-XenioUIKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -269,6 +679,7 @@
 		};
 		3E25FB321F66EBCA000423E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D9DBD9449A1117FB45C62BD /* Pods-XenioUIKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -298,6 +709,7 @@
 				3E25FB321F66EBCA000423E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

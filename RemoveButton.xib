@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="RemoveButton">
+            <connections>
+                <outlet property="backgroundBox" destination="MJc-rl-Ig1" id="bnI-XU-nlc"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="H7t-1W-2rY">
+            <rect key="frame" x="0.0" y="0.0" width="76" height="29"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="MJc-rl-Ig1">
+                    <rect key="frame" x="0.0" y="0.0" width="76" height="29"/>
+                    <view key="contentView" id="Rpf-Jg-lQW">
+                        <rect key="frame" x="1" y="1" width="74" height="27"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NL3-kh-Rg6">
+                                <rect key="frame" x="7" y="6" width="61" height="18"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="REMOVE" id="net-8y-VYB">
+                                    <font key="font" size="12" name="SFUIText-Bold"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="NL3-kh-Rg6" firstAttribute="centerX" secondItem="Rpf-Jg-lQW" secondAttribute="centerX" id="YBj-Aj-tAR"/>
+                            <constraint firstItem="NL3-kh-Rg6" firstAttribute="centerY" secondItem="Rpf-Jg-lQW" secondAttribute="centerY" constant="-1" id="tzz-9q-eke"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="fhy-Sd-Agn"/>
+                        <constraint firstAttribute="width" constant="76" id="uv5-Z2-1xk"/>
+                    </constraints>
+                    <color key="borderColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.9137254901960784" green="0.44705882352941173" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="MJc-rl-Ig1" secondAttribute="trailing" id="2Q9-D0-DgD"/>
+                <constraint firstItem="MJc-rl-Ig1" firstAttribute="leading" secondItem="H7t-1W-2rY" secondAttribute="leading" id="5mv-Yb-Fjw"/>
+                <constraint firstAttribute="bottom" secondItem="MJc-rl-Ig1" secondAttribute="bottom" id="7Nn-xx-PjH"/>
+                <constraint firstItem="MJc-rl-Ig1" firstAttribute="top" secondItem="H7t-1W-2rY" secondAttribute="top" id="SPl-NI-imH"/>
+            </constraints>
+            <point key="canvasLocation" x="124" y="166"/>
+        </customView>
+    </objects>
+</document>
