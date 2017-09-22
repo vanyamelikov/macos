@@ -16,12 +16,9 @@
     // Drawing code here.
 }
 
-- (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+-(void)awakeFromNib {
+    [super awakeFromNib];
     
-    CustomTableCellView *cellView = [tableView makeViewWithIdentifier:@"customTableCellView" owner:self];
-    cellView.textField.textColor = [NSColor whiteColor];
-    
-    return cellView;
 }
 
 @end

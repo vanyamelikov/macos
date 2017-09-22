@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="9fk-yG-gVi" customClass="FriendsRightListNotificationCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Kvv-GB-DqU">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                    <view key="contentView" id="T3g-A6-aeC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0r4-ve-xh2">
+                                <rect key="frame" x="20" y="10" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Fau-e3-AKL"/>
+                                    <constraint firstAttribute="width" constant="36" id="uOf-Kr-jDb"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="ic_avatar-1" id="qpg-4h-sZI"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="z7V-LH-3dj">
+                                <rect key="frame" x="64" y="28" width="66" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="jqv-mF-eQ0"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Level Up!" id="Na9-pB-EPW">
+                                    <font key="font" size="14" name="SFUIText-Regular"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2l4-p6-9Mt">
+                                <rect key="frame" x="265" y="18" width="47" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Cb1-Wd-8M0"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="5m ago" id="AI2-lO-i8C">
+                                    <font key="font" size="12" name="SFUIText-Regular"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jfs-vf-W8T">
+                                <rect key="frame" x="64" y="7" width="127" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="8Ei-V1-PxD"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="You reached level 89!" id="061-lv-z8n">
+                                    <font key="font" size="12" name="SFUIText-Regular"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Jfs-vf-W8T" firstAttribute="top" secondItem="z7V-LH-3dj" secondAttribute="bottom" constant="1" id="1aj-xd-9Nw"/>
+                            <constraint firstItem="0r4-ve-xh2" firstAttribute="leading" secondItem="T3g-A6-aeC" secondAttribute="leading" constant="20" id="7Pw-SM-IqL"/>
+                            <constraint firstItem="z7V-LH-3dj" firstAttribute="centerY" secondItem="0r4-ve-xh2" secondAttribute="centerY" constant="-10" id="KHJ-8Q-Zf3"/>
+                            <constraint firstItem="0r4-ve-xh2" firstAttribute="centerY" secondItem="T3g-A6-aeC" secondAttribute="centerY" id="OfI-zg-TRS"/>
+                            <constraint firstItem="2l4-p6-9Mt" firstAttribute="centerY" secondItem="T3g-A6-aeC" secondAttribute="centerY" id="bwU-vd-vKt"/>
+                            <constraint firstAttribute="trailing" secondItem="2l4-p6-9Mt" secondAttribute="trailing" constant="10" id="ckl-j0-Ugb"/>
+                            <constraint firstItem="Jfs-vf-W8T" firstAttribute="leading" secondItem="0r4-ve-xh2" secondAttribute="trailing" constant="10" id="raH-7a-nyQ"/>
+                            <constraint firstItem="z7V-LH-3dj" firstAttribute="leading" secondItem="0r4-ve-xh2" secondAttribute="trailing" constant="10" id="zu6-LK-Jf2"/>
+                        </constraints>
+                    </view>
+                    <color key="borderColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Kvv-GB-DqU" firstAttribute="top" secondItem="9fk-yG-gVi" secondAttribute="top" id="1c1-VT-9sD"/>
+                <constraint firstAttribute="trailing" secondItem="Kvv-GB-DqU" secondAttribute="trailing" id="XOE-Qr-Iqm"/>
+                <constraint firstAttribute="bottom" secondItem="Kvv-GB-DqU" secondAttribute="bottom" id="jk9-kV-cPr"/>
+                <constraint firstItem="Kvv-GB-DqU" firstAttribute="leading" secondItem="9fk-yG-gVi" secondAttribute="leading" id="tC6-ZS-FdU"/>
+            </constraints>
+            <connections>
+                <outlet property="playerImage" destination="0r4-ve-xh2" id="cCL-1a-AQu"/>
+                <outlet property="playerNameLabel" destination="z7V-LH-3dj" id="KxJ-6P-h7U"/>
+                <outlet property="playerachievementLabel" destination="Jfs-vf-W8T" id="kdC-9O-Nul"/>
+                <outlet property="timeAgoLabel" destination="2l4-p6-9Mt" id="qhc-9C-jyf"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="165.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_avatar-1" width="37" height="37"/>
+    </resources>
+</document>

@@ -31,22 +31,22 @@
                     <color key="fillColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </box>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="f77-NJ-ZcM" customClass="LineChartView">
-                    <rect key="frame" x="0.0" y="91" width="480" height="90"/>
+                    <rect key="frame" x="0.0" y="68" width="480" height="136"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="firstLineWidth">
-                            <real key="value" value="2"/>
+                            <real key="value" value="1"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="firstLinePointsDistance">
-                            <real key="value" value="10"/>
+                            <real key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="firstLinePercent">
                             <real key="value" value="0.0"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="secondLineWidth">
-                            <real key="value" value="2"/>
+                            <real key="value" value="1"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="secondLinePointsDistance">
-                            <real key="value" value="12"/>
+                            <real key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="secondLinePercent">
                             <real key="value" value="0.0"/>
@@ -61,7 +61,7 @@
                 <constraint firstAttribute="bottom" secondItem="ZqL-ZL-fjp" secondAttribute="bottom" id="TAp-oQ-5dS"/>
                 <constraint firstItem="ZqL-ZL-fjp" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="bv7-9A-Iei"/>
                 <constraint firstAttribute="trailing" secondItem="f77-NJ-ZcM" secondAttribute="trailing" id="eBU-eg-Ua9"/>
-                <constraint firstItem="f77-NJ-ZcM" firstAttribute="height" secondItem="4xK-A0-yXe" secondAttribute="height" multiplier="0.33" id="j0M-2E-6hv"/>
+                <constraint firstItem="f77-NJ-ZcM" firstAttribute="height" secondItem="4xK-A0-yXe" secondAttribute="height" multiplier="0.5" id="j0M-2E-6hv"/>
                 <constraint firstAttribute="trailing" secondItem="ZqL-ZL-fjp" secondAttribute="trailing" id="ovQ-PA-vXS"/>
             </constraints>
         </customView>

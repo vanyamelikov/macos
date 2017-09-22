@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LibrarySideMenuHeaderCell">
+            <connections>
+                <outlet property="backgroundBox" destination="woA-io-hC3" id="KWB-iI-ItB"/>
+                <outlet property="label" destination="2CW-4n-pen" id="pwd-Op-MfG"/>
+                <outlet property="lightLayer" destination="IeX-xe-bOE" id="62x-om-Zxr"/>
+                <outlet property="searchImage" destination="RSn-BV-O6x" id="yEK-ke-mPs"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="6ST-89-3QQ">
+            <rect key="frame" x="0.0" y="0.0" width="255" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="woA-io-hC3">
+                    <rect key="frame" x="0.0" y="0.0" width="255" height="35"/>
+                    <view key="contentView" id="x0l-W2-9Cq">
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="35"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IeX-xe-bOE">
+                                <rect key="frame" x="0.0" y="0.0" width="255" height="35"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="search_bg" id="h24-SA-M8F"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2CW-4n-pen">
+                                <rect key="frame" x="19" y="8" width="187" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="2oN-RJ-SIl"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="MY GAMES" id="EqW-Qz-ftF">
+                                    <font key="font" size="12" name="SFUIText-Medium"/>
+                                    <color key="textColor" name="selectedMenuItemTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" red="0.34157451919999998" green="0.64983173080000001" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RSn-BV-O6x">
+                                <rect key="frame" x="214" y="11" width="14" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="0j8-NS-1M0"/>
+                                    <constraint firstAttribute="width" constant="14" id="fCi-hG-4CM"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_zoom" id="p9h-F7-3bt"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RSn-BV-O6x" secondAttribute="trailing" constant="27" id="579-E2-ppJ"/>
+                            <constraint firstItem="IeX-xe-bOE" firstAttribute="top" secondItem="x0l-W2-9Cq" secondAttribute="top" id="91X-UY-BrY"/>
+                            <constraint firstItem="2CW-4n-pen" firstAttribute="leading" secondItem="x0l-W2-9Cq" secondAttribute="leading" constant="21" id="Dfj-gs-h9Y"/>
+                            <constraint firstAttribute="bottom" secondItem="IeX-xe-bOE" secondAttribute="bottom" id="Ftn-0q-jQi"/>
+                            <constraint firstItem="RSn-BV-O6x" firstAttribute="centerY" secondItem="x0l-W2-9Cq" secondAttribute="centerY" id="Xqd-CC-DWo"/>
+                            <constraint firstAttribute="trailing" secondItem="IeX-xe-bOE" secondAttribute="trailing" id="dve-W7-d1C"/>
+                            <constraint firstItem="IeX-xe-bOE" firstAttribute="leading" secondItem="x0l-W2-9Cq" secondAttribute="leading" id="eu0-1f-6XF"/>
+                            <constraint firstItem="RSn-BV-O6x" firstAttribute="leading" secondItem="2CW-4n-pen" secondAttribute="trailing" constant="10" id="pgv-NR-nFz"/>
+                            <constraint firstItem="2CW-4n-pen" firstAttribute="centerY" secondItem="x0l-W2-9Cq" secondAttribute="centerY" id="tM0-tZ-qa5"/>
+                        </constraints>
+                    </view>
+                    <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="woA-io-hC3" secondAttribute="bottom" id="KSw-0c-ctI"/>
+                <constraint firstItem="woA-io-hC3" firstAttribute="top" secondItem="6ST-89-3QQ" secondAttribute="top" id="csW-Wg-pKe"/>
+                <constraint firstItem="woA-io-hC3" firstAttribute="leading" secondItem="6ST-89-3QQ" secondAttribute="leading" id="lbx-1a-dBU"/>
+                <constraint firstAttribute="trailing" secondItem="woA-io-hC3" secondAttribute="trailing" id="vc4-Sn-dKI"/>
+            </constraints>
+            <point key="canvasLocation" x="63.5" y="187"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_zoom" width="14" height="14"/>
+        <image name="search_bg" width="255" height="35"/>
+    </resources>
+</document>

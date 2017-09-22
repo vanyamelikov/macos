@@ -3,39 +3,55 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
-        <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Store View Controller-->
-        <scene sceneID="CeX-dI-pYI">
+        <!--Split View Controller-->
+        <scene sceneID="iKa-tl-ee3">
             <objects>
-                <viewController storyboardIdentifier="MainStoreViewController" id="bJ2-9N-dPq" customClass="MainStoreViewController" sceneMemberID="viewController">
-                    <view key="view" id="KcY-SN-TSW">
+                <splitViewController storyboardIdentifier="MainStoreViewController" id="JL9-Js-jCY" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem id="6us-xq-UtL"/>
+                        <splitViewItem id="klD-L3-hAP"/>
+                    </splitViewItems>
+                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="gVd-Ot-Pw7">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="pfv-L7-n5G">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                                <view key="contentView" id="igc-Fn-qqc">
-                                    <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <color key="borderColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="fillColor" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
-                            </box>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="pfv-L7-n5G" firstAttribute="leading" secondItem="KcY-SN-TSW" secondAttribute="leading" id="2cu-TC-JaH"/>
-                            <constraint firstItem="pfv-L7-n5G" firstAttribute="top" secondItem="KcY-SN-TSW" secondAttribute="top" id="UAu-bz-MFx"/>
-                            <constraint firstAttribute="bottom" secondItem="pfv-L7-n5G" secondAttribute="bottom" id="ar1-vo-Qm3"/>
-                            <constraint firstAttribute="trailing" secondItem="pfv-L7-n5G" secondAttribute="trailing" id="xl3-K2-9fa"/>
-                        </constraints>
+                    </splitView>
+                    <connections>
+                        <segue destination="BQa-Lt-qoT" kind="relationship" relationship="splitItems" id="2MR-zI-aLd"/>
+                        <segue destination="1iO-03-06a" kind="relationship" relationship="splitItems" id="e9d-k5-9Pu"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="btf-dx-LSd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-500" y="-77"/>
+        </scene>
+        <!--Store Side Menu View Controller-->
+        <scene sceneID="SPb-Go-0OC">
+            <objects>
+                <viewController id="BQa-Lt-qoT" customClass="StoreSideMenuViewController" sceneMemberID="viewController">
+                    <view key="view" id="u9h-C8-vPl">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
-                <customObject id="ksI-pp-46l" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="7pN-Ud-Hy9" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-55" y="2"/>
+            <point key="canvasLocation" x="-500" y="327"/>
+        </scene>
+        <!--Store Content View Controller-->
+        <scene sceneID="AbA-zB-q6f">
+            <objects>
+                <viewController id="1iO-03-06a" customClass="StoreContentViewController" sceneMemberID="viewController">
+                    <view key="view" id="fty-Oq-opA">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="5sI-Ed-Sgj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9" y="-77"/>
         </scene>
     </scenes>
 </document>

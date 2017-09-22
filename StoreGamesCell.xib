@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="StoreGamesCell">
+            <connections>
+                <outlet property="button" destination="8nt-or-bbp" id="EhL-F6-BXx"/>
+                <outlet property="gameImage" destination="Roh-Fi-y6E" id="uKa-ts-v4V"/>
+                <outlet property="gameNameLabel" destination="TxJ-No-eyY" id="3lx-q9-m6Z"/>
+                <outlet property="gameTag" destination="4ja-XU-Qs8" id="syv-fU-pGf"/>
+                <outlet property="macosImage" destination="6NG-i8-Alx" id="Pww-dJ-xpE"/>
+                <outlet property="priceLabel" destination="qoF-Z3-YHY" id="6M3-dc-kyG"/>
+                <outlet property="ratingView" destination="MaI-hS-giD" id="4W0-xq-ECf"/>
+                <outlet property="windowsImage" destination="A0t-w4-ZuM" id="4Zd-4h-8jt"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="OHD-x5-KeK">
+            <rect key="frame" x="0.0" y="0.0" width="1133" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="YYO-mQ-fyu">
+                    <rect key="frame" x="0.0" y="0.0" width="1133" height="106"/>
+                    <view key="contentView" id="WQb-rL-2vH">
+                        <rect key="frame" x="0.0" y="0.0" width="1133" height="106"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Roh-Fi-y6E">
+                                <rect key="frame" x="0.0" y="0.0" width="231" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="231" id="cf3-J0-3xr"/>
+                                    <constraint firstAttribute="height" constant="106" id="i3s-gR-ZyN"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Crysis" id="G09-wy-1Xh"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TxJ-No-eyY">
+                                <rect key="frame" x="245" y="60" width="80" height="30"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Crysis 2" id="5fF-HP-E20">
+                                    <font key="font" size="20" name="SFUIText-Regular"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="MaI-hS-giD">
+                                <rect key="frame" x="247" y="37" width="92" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="n9A-Is-oWu"/>
+                                    <constraint firstAttribute="width" constant="92" id="z86-3C-qln"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="4ja-XU-Qs8" customClass="GameTagView">
+                                <rect key="frame" x="247" y="14" width="122" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="VPM-Wq-UZe"/>
+                                    <constraint firstAttribute="width" constant="122" id="ihI-Qp-GLR"/>
+                                </constraints>
+                            </customView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Mq-6P-0TN">
+                                <rect key="frame" x="693" y="44" width="15" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="HxD-bw-lH4"/>
+                                    <constraint firstAttribute="height" constant="18" id="IF2-t1-a7I"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_windows" id="C1E-Ie-Xnx"/>
+                            </imageView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6NG-i8-Alx">
+                                <rect key="frame" x="720" y="46" width="15" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="FjJ-DR-d2j"/>
+                                    <constraint firstAttribute="width" constant="15" id="h3Z-Wh-U4o"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_macos" id="FwI-Kl-Fe2"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qoF-Z3-YHY">
+                                <rect key="frame" x="845" y="38" width="57" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Yfa-sv-qjo"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="$16.99" id="FUI-Bi-YDN">
+                                    <font key="font" size="16" name="SFUIText-Regular"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="8nt-or-bbp" customClass="SaveSettingsButton">
+                                <rect key="frame" x="994" y="39" width="110" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="16v-mE-inP"/>
+                                    <constraint firstAttribute="width" constant="110" id="ZNf-Qi-b5e"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="qoF-Z3-YHY" firstAttribute="centerY" secondItem="WQb-rL-2vH" secondAttribute="centerY" id="1dE-zO-Qek"/>
+                            <constraint firstItem="Roh-Fi-y6E" firstAttribute="leading" secondItem="WQb-rL-2vH" secondAttribute="leading" id="8cP-hG-TMT"/>
+                            <constraint firstItem="4Mq-6P-0TN" firstAttribute="centerY" secondItem="WQb-rL-2vH" secondAttribute="centerY" id="A0t-w4-ZuM"/>
+                            <constraint firstItem="6NG-i8-Alx" firstAttribute="leading" secondItem="4Mq-6P-0TN" secondAttribute="trailing" constant="12" id="Cv0-Vp-CAZ"/>
+                            <constraint firstItem="4ja-XU-Qs8" firstAttribute="leading" secondItem="Roh-Fi-y6E" secondAttribute="trailing" constant="16" id="DwC-Qu-TXo"/>
+                            <constraint firstItem="8nt-or-bbp" firstAttribute="centerY" secondItem="WQb-rL-2vH" secondAttribute="centerY" id="GAV-Df-E34"/>
+                            <constraint firstItem="TxJ-No-eyY" firstAttribute="top" secondItem="WQb-rL-2vH" secondAttribute="top" constant="16" id="GIL-Yy-OBv"/>
+                            <constraint firstItem="Roh-Fi-y6E" firstAttribute="top" secondItem="WQb-rL-2vH" secondAttribute="top" id="GMK-5k-37K"/>
+                            <constraint firstItem="4Mq-6P-0TN" firstAttribute="leading" secondItem="Roh-Fi-y6E" secondAttribute="trailing" constant="462" id="Gio-Pa-IpU"/>
+                            <constraint firstItem="TxJ-No-eyY" firstAttribute="leading" secondItem="Roh-Fi-y6E" secondAttribute="trailing" constant="16" id="IMw-vy-91t"/>
+                            <constraint firstAttribute="trailing" secondItem="8nt-or-bbp" secondAttribute="trailing" constant="29" id="Kav-LM-Gwh"/>
+                            <constraint firstItem="qoF-Z3-YHY" firstAttribute="leading" secondItem="6NG-i8-Alx" secondAttribute="trailing" constant="112" id="Sut-rg-jQL"/>
+                            <constraint firstItem="MaI-hS-giD" firstAttribute="top" secondItem="TxJ-No-eyY" secondAttribute="bottom" constant="6" id="VKD-hY-XSa"/>
+                            <constraint firstItem="MaI-hS-giD" firstAttribute="leading" secondItem="Roh-Fi-y6E" secondAttribute="trailing" constant="16" id="bLU-jA-skc"/>
+                            <constraint firstAttribute="bottom" secondItem="Roh-Fi-y6E" secondAttribute="bottom" id="cKC-Gu-H6G"/>
+                            <constraint firstItem="4ja-XU-Qs8" firstAttribute="top" secondItem="MaI-hS-giD" secondAttribute="bottom" constant="6" id="k2s-Ac-Qye"/>
+                            <constraint firstItem="6NG-i8-Alx" firstAttribute="centerY" secondItem="4Mq-6P-0TN" secondAttribute="centerY" constant="-2" id="kBj-tF-E52"/>
+                        </constraints>
+                    </view>
+                    <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.074509803921568626" green="0.086274509803921567" blue="0.12549019607843137" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="YYO-mQ-fyu" firstAttribute="top" secondItem="OHD-x5-KeK" secondAttribute="top" id="1sP-QP-JBF"/>
+                <constraint firstAttribute="bottom" secondItem="YYO-mQ-fyu" secondAttribute="bottom" id="5oU-Zw-huY"/>
+                <constraint firstAttribute="trailing" secondItem="YYO-mQ-fyu" secondAttribute="trailing" id="VlO-fI-qgp"/>
+                <constraint firstItem="YYO-mQ-fyu" firstAttribute="leading" secondItem="OHD-x5-KeK" secondAttribute="leading" id="Wcy-f1-pSm"/>
+            </constraints>
+            <point key="canvasLocation" x="131.5" y="168"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Crysis" width="241" height="109"/>
+        <image name="ic_macos" width="15" height="18"/>
+        <image name="ic_windows" width="17" height="17"/>
+    </resources>
+</document>

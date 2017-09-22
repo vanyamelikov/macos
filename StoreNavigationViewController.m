@@ -20,7 +20,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Store" bundle:nil];
     MainStoreViewController *mainStoreVC = (MainStoreViewController *)[sb instantiateControllerWithIdentifier:@"MainStoreViewController"];
     

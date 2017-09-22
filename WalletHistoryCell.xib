@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WalletHistoryCell"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="1129" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" cornerRadius="5" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="qZz-2y-gyt">
+                    <rect key="frame" x="0.0" y="0.0" width="1129" height="103"/>
+                    <view key="contentView" id="Iih-i8-rGe">
+                        <rect key="frame" x="1" y="1" width="1127" height="101"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="r8V-nZ-OPP">
+                                <rect key="frame" x="23" y="64" width="46" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="R9E-fj-wSw"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="ID: 025" id="anZ-JI-4cX">
+                                    <font key="font" size="12" name="SFUIText-Regular"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="2xZ-ha-Kz4">
+                                <rect key="frame" x="82" y="67" width="2" height="12"/>
+                                <view key="contentView" id="OyM-Zd-e7J">
+                                    <rect key="frame" x="0.0" y="0.0" width="2" height="12"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="0Ok-sI-W32"/>
+                                    <constraint firstAttribute="width" constant="2" id="GrY-wJ-N4I"/>
+                                </constraints>
+                                <color key="borderColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="fillColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                            </box>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UyS-B5-5YN">
+                                <rect key="frame" x="97" y="64" width="113" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="gYC-h1-KKU"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="DATE: 02 SEP 2017" id="AWh-oc-jih">
+                                    <font key="font" size="12" name="SFUIText-Regular"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="G0d-mE-6cf">
+                                <rect key="frame" x="223" y="67" width="2" height="12"/>
+                                <view key="contentView" id="X1h-AQ-VZB">
+                                    <rect key="frame" x="0.0" y="0.0" width="2" height="12"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="2" id="9Zn-fW-nqF"/>
+                                    <constraint firstAttribute="height" constant="12" id="Qpe-wY-FCh"/>
+                                </constraints>
+                                <color key="borderColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="fillColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                            </box>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CSY-eK-VSb">
+                                <rect key="frame" x="238" y="64" width="77" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="DcD-cr-zQq"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="MODE: FAST" id="RJo-db-q8N">
+                                    <font key="font" size="12" name="SFUIText-Regular"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dSP-QP-hgd">
+                                <rect key="frame" x="25" y="27" width="13" height="11"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="13" id="0w3-hL-Efl"/>
+                                    <constraint firstAttribute="height" constant="11" id="BcQ-gC-qc1"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_plane" id="ybt-xu-n56"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EAQ-XE-eb5">
+                                <rect key="frame" x="52" y="25" width="81" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="25s-CR-rVM"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Send money" id="lpe-Zi-GJ8">
+                                    <font key="font" size="13" name="SFUIText-Regular"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="68U-nh-nsV">
+                                <rect key="frame" x="161" y="27" width="2" height="12"/>
+                                <view key="contentView" id="lKV-5I-ZgF">
+                                    <rect key="frame" x="0.0" y="0.0" width="2" height="12"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="2" id="B4T-mo-arM"/>
+                                    <constraint firstAttribute="height" constant="12" id="uEO-K9-Dzy"/>
+                                </constraints>
+                                <color key="fillColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                            </box>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D4T-OO-dzZ">
+                                <rect key="frame" x="193" y="26" width="13" height="11"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="13" id="6UO-Tk-Rf5"/>
+                                    <constraint firstAttribute="height" constant="11" id="vsH-TC-XVL"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_userpic" id="cmT-Ph-gZz"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BhU-bB-ARw">
+                                <rect key="frame" x="222" y="25" width="40" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="pfk-K3-iQj"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="iddqd" id="Dbh-rH-KRB">
+                                    <font key="font" size="13" name="SFUIText-Regular"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kCE-An-gKM">
+                                <rect key="frame" x="1081" y="26" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="71Y-JX-RUm"/>
+                                    <constraint firstAttribute="height" constant="21" id="qQx-cH-NSM"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_xno" id="NA4-sa-Gwl"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jwT-FE-fUx">
+                                <rect key="frame" x="1028" y="30" width="45" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="yeB-Sv-Vkk"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="4 XNO" id="a5k-Iu-2Ga">
+                                    <font key="font" size="13" name="SFUIText-Regular"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2bN-X0-iFa">
+                                <rect key="frame" x="1055" y="64" width="49" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="g46-di-ZwD"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="DELETE" id="Jgt-JM-iGK">
+                                    <font key="font" size="12" name="SFUIText-Regular"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kCE-An-gKM" secondAttribute="trailing" constant="25" id="70e-5Y-z3i"/>
+                            <constraint firstItem="G0d-mE-6cf" firstAttribute="leading" secondItem="UyS-B5-5YN" secondAttribute="trailing" constant="15" id="9FB-Mu-W3d"/>
+                            <constraint firstItem="CSY-eK-VSb" firstAttribute="leading" secondItem="G0d-mE-6cf" secondAttribute="trailing" constant="15" id="Igo-mK-anG"/>
+                            <constraint firstItem="2bN-X0-iFa" firstAttribute="top" secondItem="Iih-i8-rGe" secondAttribute="top" constant="20" id="JO0-x9-B1J"/>
+                            <constraint firstItem="CSY-eK-VSb" firstAttribute="centerY" secondItem="r8V-nZ-OPP" secondAttribute="centerY" id="Jcf-yf-ZKW"/>
+                            <constraint firstItem="G0d-mE-6cf" firstAttribute="centerY" secondItem="r8V-nZ-OPP" secondAttribute="centerY" id="LBX-jM-6bq"/>
+                            <constraint firstItem="jwT-FE-fUx" firstAttribute="centerY" secondItem="kCE-An-gKM" secondAttribute="centerY" constant="-2" id="MsJ-1P-t3S"/>
+                            <constraint firstItem="2xZ-ha-Kz4" firstAttribute="centerY" secondItem="r8V-nZ-OPP" secondAttribute="centerY" id="O0b-9o-MJ0"/>
+                            <constraint firstItem="EAQ-XE-eb5" firstAttribute="leading" secondItem="dSP-QP-hgd" secondAttribute="trailing" constant="16" id="Q4Q-cl-Lal"/>
+                            <constraint firstItem="r8V-nZ-OPP" firstAttribute="leading" secondItem="Iih-i8-rGe" secondAttribute="leading" constant="25" id="SAo-af-54D"/>
+                            <constraint firstItem="r8V-nZ-OPP" firstAttribute="top" secondItem="Iih-i8-rGe" secondAttribute="top" constant="20" id="SCz-xe-sEx"/>
+                            <constraint firstItem="EAQ-XE-eb5" firstAttribute="centerY" secondItem="dSP-QP-hgd" secondAttribute="centerY" constant="-1" id="UCC-OX-w5X"/>
+                            <constraint firstItem="UyS-B5-5YN" firstAttribute="centerY" secondItem="r8V-nZ-OPP" secondAttribute="centerY" id="YCf-CT-0WD"/>
+                            <constraint firstItem="2xZ-ha-Kz4" firstAttribute="leading" secondItem="r8V-nZ-OPP" secondAttribute="trailing" constant="15" id="bUi-Ns-49f"/>
+                            <constraint firstItem="68U-nh-nsV" firstAttribute="leading" secondItem="EAQ-XE-eb5" secondAttribute="trailing" constant="30" id="buJ-Dm-F2K"/>
+                            <constraint firstItem="68U-nh-nsV" firstAttribute="centerY" secondItem="dSP-QP-hgd" secondAttribute="centerY" id="cba-jY-iZQ"/>
+                            <constraint firstAttribute="trailing" secondItem="2bN-X0-iFa" secondAttribute="trailing" constant="25" id="dbw-sa-PNr"/>
+                            <constraint firstItem="BhU-bB-ARw" firstAttribute="centerY" secondItem="EAQ-XE-eb5" secondAttribute="centerY" id="e9a-nF-PdX"/>
+                            <constraint firstItem="BhU-bB-ARw" firstAttribute="leading" secondItem="D4T-OO-dzZ" secondAttribute="trailing" constant="18" id="fRe-NI-nHe"/>
+                            <constraint firstItem="D4T-OO-dzZ" firstAttribute="centerY" secondItem="dSP-QP-hgd" secondAttribute="centerY" constant="1" id="gMk-eh-jdK"/>
+                            <constraint firstAttribute="bottom" secondItem="dSP-QP-hgd" secondAttribute="bottom" constant="27" id="nI8-vr-XXn"/>
+                            <constraint firstItem="dSP-QP-hgd" firstAttribute="leading" secondItem="Iih-i8-rGe" secondAttribute="leading" constant="25" id="tF2-9F-Pyd"/>
+                            <constraint firstItem="kCE-An-gKM" firstAttribute="leading" secondItem="jwT-FE-fUx" secondAttribute="trailing" constant="10" id="tXv-ke-uLR"/>
+                            <constraint firstItem="D4T-OO-dzZ" firstAttribute="leading" secondItem="68U-nh-nsV" secondAttribute="trailing" constant="30" id="uAW-fC-wdN"/>
+                            <constraint firstItem="UyS-B5-5YN" firstAttribute="leading" secondItem="2xZ-ha-Kz4" secondAttribute="trailing" constant="15" id="xAU-1W-gde"/>
+                            <constraint firstAttribute="bottom" secondItem="kCE-An-gKM" secondAttribute="bottom" constant="26" id="yAU-8I-MSl"/>
+                        </constraints>
+                    </view>
+                    <color key="borderColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="qZz-2y-gyt" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="HDJ-M6-rMk"/>
+                <constraint firstAttribute="bottom" secondItem="qZz-2y-gyt" secondAttribute="bottom" id="RMa-TS-eXv"/>
+                <constraint firstAttribute="trailing" secondItem="qZz-2y-gyt" secondAttribute="trailing" id="j6m-1b-mgD"/>
+                <constraint firstItem="qZz-2y-gyt" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="lrL-Fe-3lc"/>
+            </constraints>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_plane" width="13" height="11"/>
+        <image name="ic_userpic" width="12" height="14"/>
+        <image name="ic_xno" width="21" height="21"/>
+    </resources>
+</document>

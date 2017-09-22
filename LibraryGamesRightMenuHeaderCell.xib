@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LibraryGamesRightMenuHeaderCell">
+            <connections>
+                <outlet property="backgroundBox" destination="a3N-tx-LHg" id="c9a-4j-6is"/>
+                <outlet property="label" destination="SLl-fd-itw" id="equ-IS-kaX"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="B66-qV-8J9">
+            <rect key="frame" x="0.0" y="0.0" width="232" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="a3N-tx-LHg">
+                    <rect key="frame" x="0.0" y="0.0" width="232" height="45"/>
+                    <view key="contentView" id="zPv-pm-V7X">
+                        <rect key="frame" x="0.0" y="0.0" width="232" height="45"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SLl-fd-itw">
+                                <rect key="frame" x="8" y="8" width="216" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ka2-8z-xPz"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="RECOMMEND" id="ai7-vZ-MJY">
+                                    <font key="font" size="20" name="SFUIText-Medium"/>
+                                    <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SLl-fd-itw" secondAttribute="trailing" constant="10" id="B5K-4O-jEb"/>
+                            <constraint firstItem="SLl-fd-itw" firstAttribute="leading" secondItem="zPv-pm-V7X" secondAttribute="leading" constant="10" id="EeX-en-Egn"/>
+                            <constraint firstItem="SLl-fd-itw" firstAttribute="centerY" secondItem="zPv-pm-V7X" secondAttribute="centerY" id="WOV-Tk-rKS"/>
+                        </constraints>
+                    </view>
+                    <color key="fillColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="a3N-tx-LHg" firstAttribute="leading" secondItem="B66-qV-8J9" secondAttribute="leading" id="72a-YS-iFJ"/>
+                <constraint firstAttribute="bottom" secondItem="a3N-tx-LHg" secondAttribute="bottom" id="HXv-Rw-Uw1"/>
+                <constraint firstItem="a3N-tx-LHg" firstAttribute="top" secondItem="B66-qV-8J9" secondAttribute="top" id="Ni7-AR-P8W"/>
+                <constraint firstAttribute="trailing" secondItem="a3N-tx-LHg" secondAttribute="trailing" id="jQv-uw-sJU"/>
+            </constraints>
+            <point key="canvasLocation" x="131" y="168.5"/>
+        </customView>
+    </objects>
+</document>

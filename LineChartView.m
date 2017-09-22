@@ -40,25 +40,23 @@
     
     if(firstLineValues){
         CGFloat startX = NSMidX(self.dotImageView.frame);
-        CGFloat startY = NSMidY(self.dotImageView.frame);
+        CGFloat startY = self.bounds.size.height/2;
         NSPoint firstPoint = CGPointMake(startX, startY);
-        [firstLineValues insertObject:[NSNumber numberWithFloat:self.bounds.size.height*(firstLinePercent/100)] atIndex:1];
+        [firstLineValues insertObject:[NSNumber numberWithFloat:20 + self.bounds.size.height*(firstLinePercent/100)] atIndex:0];
         
         [firstPath removeAllPoints];
         [firstPath setLineWidth:firstLineWidth];
         
         [firstPath moveToPoint:firstPoint];
         
-        for(NSInteger i = 0; i < firstLineValues.count - 2; i++) {
-            NSPoint prev = CGPointMake(startX - i*firstLinePointsDistance, [(NSNumber *)[firstLineValues objectAtIndex:i+1] floatValue]);
-            NSPoint p = CGPointMake(startX - i*firstLinePointsDistance, [(NSNumber *)[firstLineValues objectAtIndex:i] floatValue]);
-            NSPoint midPoint = midPointForPoints(p, prev);
-            [firstPath curveToPoint:p controlPoint1:controlPointForPoints(prev, midPoint) controlPoint2:controlPointForPoints(midPoint, p)];
+        for(NSInteger i = 0; i < firstLineValues.count; i++) {
+            NSPoint p = CGPointMake(startX - i*firstLinePointsDistance, [((NSNumber *)[firstLineValues objectAtIndex:i]) floatValue] + 20);
+            [firstPath lineToPoint:p];
             [firstPath moveToPoint:p];
         }
         
         [firstPath closePath];
-        [[NSColor redColor] set];
+        [[NSColor colorFromHexString:@"#64EDE3"] set];
         [firstPath stroke];
     }
     
@@ -68,76 +66,59 @@
     
     if(secondLineValues){
         CGFloat startX = NSMidX(self.dotImageView.frame);
-        CGFloat startY = NSMidY(self.dotImageView.frame);
+        CGFloat startY = self.bounds.size.height/2;
         NSPoint firstPoint = CGPointMake(startX, startY);
-        [secondLineValues insertObject:[NSNumber numberWithFloat:self.bounds.size.height*(secondLinePercent/100)] atIndex:1];
+        [secondLineValues insertObject:[NSNumber numberWithFloat:20 + self.bounds.size.height*(secondLinePercent/100)] atIndex:0];
         
         [secondPath removeAllPoints];
         [secondPath setLineWidth:secondLineWidth];
         
         [secondPath moveToPoint:firstPoint];
         
-        for(NSInteger i = 0; i < secondLineValues.count - 2; i ++) {
-            NSPoint prev = CGPointMake(startX - i*secondLinePointsDistance, [(NSNumber *)[secondLineValues objectAtIndex:i+1] floatValue]);
-            NSPoint p = CGPointMake(startX - i*secondLinePointsDistance, [(NSNumber *)[secondLineValues objectAtIndex:i] floatValue]);
-            NSPoint midPoint = midPointForPoints(p, prev);
-            [secondPath curveToPoint:p controlPoint1:controlPointForPoints(prev, midPoint) controlPoint2:controlPointForPoints(midPoint, p)];
+        for(NSInteger i = 0; i < secondLineValues.count; i++) {
+            NSPoint p = CGPointMake(startX - i*secondLinePointsDistance, [((NSNumber *)[secondLineValues objectAtIndex:i]) floatValue] + 20);
+            [secondPath lineToPoint:p];
             [secondPath moveToPoint:p];
         }
         [secondPath closePath];
-        [[NSColor blueColor] set];
+        [[NSColor colorFromHexString:@"#A866E3"] set];
         [secondPath stroke];
     }
     
 }
 
 -(void)preDrawFirstLine {
+    
     if(firstLineWidth == 0)
         firstLineWidth = 1;
     if(firstLinePointsDistance == 0)
-        firstLinePointsDistance = 10.0f;
+        firstLinePointsDistance = 2.0f;
     if(!firstLineValues) {
         if(!firstPath) {
             firstPath = [[NSBezierPath alloc] init];
-            NSInteger capacity = (self.bounds.size.width-35)/firstLinePointsDistance;
+            NSInteger capacity = (self.bounds.size.width-40)/firstLinePointsDistance;
             firstLineValues = [[NSMutableArray alloc] initWithCapacity:capacity];
             for(NSInteger i = 0; i < capacity; i++)
-                [firstLineValues addObject:[NSNumber numberWithFloat:self.bounds.size.height/2]];
+                [firstLineValues addObject:[NSNumber numberWithFloat:(self.bounds.size.height/2)-30]];
         }
     }
 }
 
 -(void)preDrawSecondLine {
+    
     if(secondLineWidth == 0)
         secondLineWidth = 1;
     if(secondLinePointsDistance == 0)
-        secondLinePointsDistance = 10.0f;
+        secondLinePointsDistance = 2.0f;
     if(!secondLineValues) {
         if(!secondPath) {
             secondPath = [[NSBezierPath alloc] init];
-            NSInteger capacity = (self.bounds.size.width-35)/secondLinePointsDistance;
+            NSInteger capacity = (self.bounds.size.width-40)/secondLinePointsDistance;
             secondLineValues = [[NSMutableArray alloc] initWithCapacity:capacity];
             for(NSInteger i = 0; i < capacity; i++)
-                [secondLineValues addObject:[NSNumber numberWithFloat:self.bounds.size.height/2]];
+                [secondLineValues addObject:[NSNumber numberWithFloat:(self.bounds.size.height/2)-30]];
         }
     }
 }
-
-static CGPoint midPointForPoints(CGPoint p1, CGPoint p2) {
-    return CGPointMake((p1.x + p2.x) / 2, (p1.y + p2.y) / 2);
-}
-
-static CGPoint controlPointForPoints(CGPoint p1, CGPoint p2) {
-    CGPoint controlPoint = midPointForPoints(p1, p2);
-    CGFloat diffY = abs(p2.y - controlPoint.y);
-    
-    if (p1.y < p2.y)
-        controlPoint.y += diffY;
-    else if (p1.y > p2.y)
-        controlPoint.y -= diffY;
-    
-    return controlPoint;
-}
-
 
 @end

@@ -10,4 +10,7 @@
 
 @interface MainStoreViewController : NSViewController
 
+@property (strong) IBOutlet NSBox *mainStoreBox;
+
+
 @end

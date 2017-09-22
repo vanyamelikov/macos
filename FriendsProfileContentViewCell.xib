@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FriendsProfileContentViewCell">
+            <connections>
+                <outlet property="gameImage" destination="feY-GI-7KL" id="kPt-ni-fDM"/>
+                <outlet property="gameNameLabel" destination="HuG-s8-qF3" id="qWC-gi-jGJ"/>
+                <outlet property="gameTagView" destination="uJJ-7T-oba" id="cdW-If-P1l"/>
+                <outlet property="playerNameLabel" destination="HuG-s8-qF3" id="5Zm-vV-sL4"/>
+                <outlet property="timeAgoLabel" destination="YHt-Jm-2su" id="gJn-JD-kMN"/>
+                <outlet property="totalHoursLabel" destination="bne-Zg-uvF" id="17w-1Y-aFP"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="61y-hj-W9O">
+            <rect key="frame" x="0.0" y="0.0" width="807" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="O65-FO-G4v">
+                    <rect key="frame" x="0.0" y="0.0" width="807" height="106"/>
+                    <view key="contentView" id="yno-AF-sci">
+                        <rect key="frame" x="0.0" y="0.0" width="807" height="106"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="feY-GI-7KL">
+                                <rect key="frame" x="20" y="21" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="E17-Cr-CRZ"/>
+                                    <constraint firstAttribute="width" constant="65" id="wo4-cM-5nN"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="dota" id="V1Z-Kn-IJr"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HuG-s8-qF3">
+                                <rect key="frame" x="93" y="56" width="48" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="lFG-vY-L0I"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Dota 2" id="zEv-L4-Vq9">
+                                    <font key="font" size="14" name="SFUIText-Regular"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="uJJ-7T-oba" customClass="GameTagImageView">
+                                <rect key="frame" x="95" y="33" width="137" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="H2v-Rd-Qjx"/>
+                                    <constraint firstAttribute="width" constant="137" id="gTj-XT-X3g"/>
+                                </constraints>
+                            </customView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bne-Zg-uvF">
+                                <rect key="frame" x="698" y="43" width="73" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="dyT-d8-ZuI"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="768 Hours" id="gEH-eM-wG9">
+                                    <font key="font" size="14" name="SFUIText-Regular"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YHt-Jm-2su">
+                                <rect key="frame" x="612" y="43" width="50" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="ZbN-0a-UTH"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="2h ago" id="mp1-4A-ePT">
+                                    <font key="font" size="14" name="SFUIText-Regular"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bne-Zg-uvF" secondAttribute="trailing" constant="38" id="F77-am-Q1s"/>
+                            <constraint firstItem="HuG-s8-qF3" firstAttribute="centerY" secondItem="feY-GI-7KL" secondAttribute="centerY" constant="-12" id="NfM-fd-6EP"/>
+                            <constraint firstItem="uJJ-7T-oba" firstAttribute="leading" secondItem="feY-GI-7KL" secondAttribute="trailing" constant="10" id="Ugc-kP-3cu"/>
+                            <constraint firstItem="bne-Zg-uvF" firstAttribute="centerY" secondItem="yno-AF-sci" secondAttribute="centerY" id="Vug-Mo-yU7"/>
+                            <constraint firstItem="uJJ-7T-oba" firstAttribute="top" secondItem="HuG-s8-qF3" secondAttribute="bottom" constant="6" id="fSY-8N-dOI"/>
+                            <constraint firstItem="bne-Zg-uvF" firstAttribute="leading" secondItem="YHt-Jm-2su" secondAttribute="trailing" constant="40" id="mOW-Ca-eIM"/>
+                            <constraint firstItem="feY-GI-7KL" firstAttribute="centerY" secondItem="yno-AF-sci" secondAttribute="centerY" id="tSD-PF-yMq"/>
+                            <constraint firstItem="HuG-s8-qF3" firstAttribute="leading" secondItem="feY-GI-7KL" secondAttribute="trailing" constant="10" id="uzm-ql-RC5"/>
+                            <constraint firstItem="YHt-Jm-2su" firstAttribute="centerY" secondItem="yno-AF-sci" secondAttribute="centerY" id="wOV-WG-Y37"/>
+                            <constraint firstItem="feY-GI-7KL" firstAttribute="leading" secondItem="yno-AF-sci" secondAttribute="leading" constant="20" id="y6s-tm-bU7"/>
+                        </constraints>
+                    </view>
+                    <color key="borderColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="O65-FO-G4v" firstAttribute="top" secondItem="61y-hj-W9O" secondAttribute="top" id="9sV-Kz-eXd"/>
+                <constraint firstItem="O65-FO-G4v" firstAttribute="leading" secondItem="61y-hj-W9O" secondAttribute="leading" id="YWN-Ko-ckC"/>
+                <constraint firstAttribute="bottom" secondItem="O65-FO-G4v" secondAttribute="bottom" id="b6B-oE-Sog"/>
+                <constraint firstAttribute="trailing" secondItem="O65-FO-G4v" secondAttribute="trailing" id="pnh-ci-Bhn"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="166"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="dota" width="64" height="64"/>
+    </resources>
+</document>

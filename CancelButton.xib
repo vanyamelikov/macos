@@ -47,7 +47,7 @@
                         <constraint firstAttribute="height" constant="32" id="Xh4-yb-ELS"/>
                     </constraints>
                     <color key="borderColor" red="0.23921568630000001" green="0.4823529412" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                    <color key="fillColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                 </box>
             </subviews>
             <constraints>

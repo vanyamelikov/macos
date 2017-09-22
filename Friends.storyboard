@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Split View Controller-->
+        <scene sceneID="LYh-Pk-sH5">
+            <objects>
+                <splitViewController id="hcA-vc-TlO" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem id="zeb-LL-mRq"/>
+                        <splitViewItem id="eWQ-kO-Dj8"/>
+                        <splitViewItem id="l5o-6C-0eB"/>
+                    </splitViewItems>
+                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="Btw-dH-wi3">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </splitView>
+                    <connections>
+                        <segue destination="i1Z-rN-2dM" kind="relationship" relationship="splitItems" id="mm7-jn-dgq"/>
+                        <segue destination="W2X-kL-Ecs" kind="relationship" relationship="splitItems" id="T57-I1-lpj"/>
+                        <segue destination="rlk-gn-m6d" kind="relationship" relationship="splitItems" id="Mh9-2s-hi8"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="WVb-Qw-BMy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-211" y="261"/>
+        </scene>
+        <!--Friends Content View Controller-->
+        <scene sceneID="wWc-mM-LUP">
+            <objects>
+                <viewController id="i1Z-rN-2dM" customClass="FriendsContentViewController" sceneMemberID="viewController">
+                    <view key="view" id="cYW-6k-ayW">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="ofd-Cd-YQo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="459" y="80"/>
+        </scene>
+        <!--Friends Conten Navigation View Controller-->
+        <scene sceneID="TVG-wb-gjy">
+            <objects>
+                <viewController id="W2X-kL-Ecs" customClass="FriendsContenNavigationViewController" sceneMemberID="viewController">
+                    <view key="view" id="9SR-P0-UZO">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="C56-YY-8oT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="459" y="441"/>
+        </scene>
+        <!--Friends Side List View Controller-->
+        <scene sceneID="ZnT-RN-x8U">
+            <objects>
+                <viewController id="rlk-gn-m6d" customClass="FriendsSideListViewController" sceneMemberID="viewController">
+                    <view key="view" id="aCj-Ss-C2a">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="UJw-YB-GNu" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="755"/>
+        </scene>
+    </scenes>
+</document>

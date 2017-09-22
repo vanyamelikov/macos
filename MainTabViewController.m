@@ -9,7 +9,6 @@
 #import "MainTabViewController.h"
 #import "BFNavigationController.h"
 #import "NSViewController+BFNavigationController.h"
-#import "LibraryViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface MainTabViewController (){
@@ -74,19 +73,7 @@
 }
 
 - (void)tabView:(NSTabView *)tabView didSelectTabViewItem:(NSTabViewItem *)tabViewItem {
-    CABasicAnimation *controlPosAnim = [CABasicAnimation animationWithKeyPath:@"position"];
-    if (_mainTabBar.selectedTab>[tabView indexOfTabViewItem:tabViewItem]) {
-        [controlPosAnim setFromValue:[NSValue valueWithPoint:CGPointMake(tabViewItem.view.frame.origin.x - 500,tabViewItem.view.frame.origin.y)]];
-        
-    } else {
-        [controlPosAnim setFromValue:[NSValue valueWithPoint:CGPointMake(tabViewItem.view.frame.origin.x + 500,tabViewItem.view.frame.origin.y)]];
-    }
     
-    [controlPosAnim setToValue:[NSValue valueWithPoint:CGPointMake(tabViewItem.view.frame.origin.x,tabViewItem.view.frame.origin.y)]];
-    [[tabViewItem.view layer] addAnimation:controlPosAnim forKey:@"controlViewPosition"];
-    [tabViewItem.view setAnimations:[NSDictionary dictionaryWithObjectsAndKeys:controlPosAnim, @"frameOrigin", nil]];
-    
-    [tabViewItem.view.animator setFrameOrigin : CGPointMake(tabViewItem.view.frame.origin.x,tabViewItem.view.frame.origin.y)];
 }
 
 @end
