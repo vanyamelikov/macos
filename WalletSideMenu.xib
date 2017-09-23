@@ -1,15 +1,97 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-2" userLabel="File's Owner" customClass="WalletSideMenu">
+            <connections>
+                <outlet property="tableView" destination="a8u-Z9-pVy" id="aQg-vS-kVq"/>
+            </connections>
+        </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customView id="c22-O7-iKe">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+        <customView wantsLayer="YES" id="nE2-ap-ad4">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="737"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="L4F-U0-hOA">
+                    <rect key="frame" x="0.0" y="0.0" width="408" height="737"/>
+                    <view key="contentView" id="vXQ-dv-kbN">
+                        <rect key="frame" x="0.0" y="0.0" width="408" height="737"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="47" horizontalPageScroll="10" verticalLineScroll="47" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxW-aX-pDV">
+                                <rect key="frame" x="0.0" y="0.0" width="408" height="727"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="oOU-xC-U4m">
+                                    <rect key="frame" x="0.0" y="0.0" width="408" height="727"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="45" rowSizeStyle="automatic" viewBased="YES" floatsGroupRows="NO" id="a8u-Z9-pVy">
+                                            <rect key="frame" x="0.0" y="0.0" width="408" height="727"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <size key="intercellSpacing" width="3" height="2"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <color key="gridColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <tableColumns>
+                                                <tableColumn editable="NO" width="405" minWidth="40" maxWidth="1000" id="E4U-iv-KDM">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="YD9-gF-9BQ">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <prototypeCellViews>
+                                                        <customView identifier="StoreSideMenuHeaderCell" id="IuX-uc-HwA" customClass="LibrarySideMenuHeaderCell">
+                                                            <rect key="frame" x="1" y="1" width="405" height="45"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        </customView>
+                                                        <customView identifier="StoreSideMenuCell" focusRingType="none" id="FFO-Hu-HJ3">
+                                                            <rect key="frame" x="1" y="48" width="405" height="29"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        </customView>
+                                                    </prototypeCellViews>
+                                                </tableColumn>
+                                            </tableColumns>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="Wg6-iC-qbV">
+                                    <rect key="frame" x="-100" y="-100" width="223" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="4lG-g2-dKb">
+                                    <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="YxW-aX-pDV" secondAttribute="bottom" id="GZe-fi-oMR"/>
+                            <constraint firstAttribute="trailing" secondItem="YxW-aX-pDV" secondAttribute="trailing" id="ThL-ee-X57"/>
+                            <constraint firstItem="YxW-aX-pDV" firstAttribute="top" secondItem="vXQ-dv-kbN" secondAttribute="top" constant="10" id="h61-Yo-Jeu"/>
+                            <constraint firstItem="YxW-aX-pDV" firstAttribute="leading" secondItem="vXQ-dv-kbN" secondAttribute="leading" id="sXi-DH-fgV"/>
+                        </constraints>
+                    </view>
+                    <color key="fillColor" red="0.08235294118" green="0.094117647060000004" blue="0.13725490200000001" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="L4F-U0-hOA" firstAttribute="top" secondItem="nE2-ap-ad4" secondAttribute="top" id="13h-ff-pnw"/>
+                <constraint firstAttribute="bottom" secondItem="L4F-U0-hOA" secondAttribute="bottom" id="3hm-Ic-fhc"/>
+                <constraint firstItem="L4F-U0-hOA" firstAttribute="leading" secondItem="nE2-ap-ad4" secondAttribute="leading" id="aqQ-Bv-GsK"/>
+                <constraint firstAttribute="trailing" secondItem="L4F-U0-hOA" secondAttribute="trailing" id="sem-9n-Yf6"/>
+            </constraints>
+            <point key="canvasLocation" x="-363" y="400.5"/>
         </customView>
     </objects>
 </document>

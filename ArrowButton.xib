@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="ccb-f0-Ku6">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="cQ8-fr-llZ">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
+                    <view key="contentView" id="IAF-bu-Vn5">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o5V-7p-Dkx">
+                                <rect key="frame" x="4" y="10" width="20" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="XyW-kO-Z3n"/>
+                                    <constraint firstAttribute="width" constant="20" id="f3A-ZG-b1N"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_arrow" id="can-9D-twp"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="o5V-7p-Dkx" firstAttribute="centerY" secondItem="IAF-bu-Vn5" secondAttribute="centerY" id="e76-iT-Ok2"/>
+                            <constraint firstItem="o5V-7p-Dkx" firstAttribute="leading" secondItem="IAF-bu-Vn5" secondAttribute="leading" constant="4" id="isb-xp-ZQh"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="9ib-H2-KYB"/>
+                        <constraint firstAttribute="width" constant="100" id="Fnf-WI-fCk"/>
+                    </constraints>
+                    <color key="borderColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UI9-Ju-y4C">
+                    <rect key="frame" x="26" y="6" width="66" height="30"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Store" id="OZ7-n6-ga4">
+                        <font key="font" size="20" name="SFUIText-Bold"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="UI9-Ju-y4C" firstAttribute="leading" secondItem="o5V-7p-Dkx" secondAttribute="trailing" constant="4" id="2Hl-6M-M1D"/>
+                <constraint firstItem="cQ8-fr-llZ" firstAttribute="leading" secondItem="ccb-f0-Ku6" secondAttribute="leading" id="KOM-ZB-qvS"/>
+                <constraint firstItem="UI9-Ju-y4C" firstAttribute="centerY" secondItem="ccb-f0-Ku6" secondAttribute="centerY" constant="-4" id="WML-uK-uGP"/>
+                <constraint firstAttribute="trailing" secondItem="cQ8-fr-llZ" secondAttribute="trailing" id="XUO-dt-LJt"/>
+                <constraint firstItem="cQ8-fr-llZ" firstAttribute="top" secondItem="ccb-f0-Ku6" secondAttribute="top" id="git-1I-ztV"/>
+                <constraint firstAttribute="bottom" secondItem="cQ8-fr-llZ" secondAttribute="bottom" id="hlz-jY-Bcd"/>
+                <constraint firstAttribute="trailing" secondItem="UI9-Ju-y4C" secondAttribute="trailing" constant="10" id="pdo-pk-dTy"/>
+            </constraints>
+            <point key="canvasLocation" x="194.5" y="204"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_arrow" width="16" height="11"/>
+    </resources>
+</document>

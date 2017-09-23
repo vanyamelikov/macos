@@ -3,15 +3,91 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="WalletHistoryView"/>
+        <customObject id="-2" userLabel="File's Owner" customClass="WalletHistoryView">
+            <connections>
+                <outlet property="tableView" destination="2QU-l9-3UR" id="28L-pv-q7P"/>
+            </connections>
+        </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customView id="c22-O7-iKe" customClass="WalletHistoryView">
-            <rect key="frame" x="0.0" y="0.0" width="1129" height="103"/>
+        <customView id="OBm-Ja-Gql">
+            <rect key="frame" x="0.0" y="0.0" width="1135" height="316"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="YFB-7V-0Kj">
+                    <rect key="frame" x="0.0" y="0.0" width="1135" height="316"/>
+                    <view key="contentView" id="G10-lT-NqP">
+                        <rect key="frame" x="0.0" y="0.0" width="1135" height="316"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="108" horizontalPageScroll="10" verticalLineScroll="108" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="QoQ-bD-J8D">
+                                <rect key="frame" x="0.0" y="0.0" width="1133" height="316"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Mww-6h-oAM">
+                                    <rect key="frame" x="0.0" y="0.0" width="1133" height="316"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="103" rowSizeStyle="automatic" viewBased="YES" floatsGroupRows="NO" id="2QU-l9-3UR">
+                                            <rect key="frame" x="0.0" y="0.0" width="1133" height="316"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <size key="intercellSpacing" width="3" height="5"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <color key="gridColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <tableColumns>
+                                                <tableColumn editable="NO" width="1130" minWidth="40" maxWidth="2600" id="oqI-eR-KCR">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="Ogk-vA-af1">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <prototypeCellViews>
+                                                        <customView identifier="WalletHistoryCell" focusRingType="none" id="PEa-af-s7s" customClass="WalletHistoryCell">
+                                                            <rect key="frame" x="1" y="2" width="1129" height="103"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        </customView>
+                                                    </prototypeCellViews>
+                                                </tableColumn>
+                                            </tableColumns>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="G3p-Wh-ANH">
+                                    <rect key="frame" x="-100" y="-100" width="223" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="HTh-bd-BgZ">
+                                    <rect key="frame" x="-100" y="-100" width="15" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="QoQ-bD-J8D" firstAttribute="top" secondItem="G10-lT-NqP" secondAttribute="top" id="Q4F-68-BZI"/>
+                            <constraint firstAttribute="trailing" secondItem="QoQ-bD-J8D" secondAttribute="trailing" constant="2" id="bBP-rL-1dF"/>
+                            <constraint firstAttribute="bottom" secondItem="QoQ-bD-J8D" secondAttribute="bottom" id="ht2-bh-mnw"/>
+                            <constraint firstItem="QoQ-bD-J8D" firstAttribute="leading" secondItem="G10-lT-NqP" secondAttribute="leading" id="xxr-ZG-vWU"/>
+                        </constraints>
+                    </view>
+                    <color key="fillColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="YFB-7V-0Kj" firstAttribute="leading" secondItem="OBm-Ja-Gql" secondAttribute="leading" id="3fC-Vv-jaH"/>
+                <constraint firstAttribute="bottom" secondItem="YFB-7V-0Kj" secondAttribute="bottom" id="f5A-1E-H8i"/>
+                <constraint firstAttribute="trailing" secondItem="YFB-7V-0Kj" secondAttribute="trailing" id="oeM-Fc-bhk"/>
+                <constraint firstItem="YFB-7V-0Kj" firstAttribute="top" secondItem="OBm-Ja-Gql" secondAttribute="top" id="wtk-fI-cNC"/>
+            </constraints>
+            <point key="canvasLocation" x="-378" y="486"/>
         </customView>
     </objects>
 </document>

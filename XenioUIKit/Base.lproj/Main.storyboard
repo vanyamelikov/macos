@@ -911,68 +911,6 @@
             <point key="canvasLocation" x="370" y="3709"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="ODp-9h-Tuo">
-            <objects>
-                <viewController storyboardIdentifier="ViewController3" id="8pp-BC-ghW" sceneMemberID="viewController">
-                    <view key="view" id="LAh-Zq-Fyy">
-                        <rect key="frame" x="0.0" y="0.0" width="1833" height="900"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="7p1-D5-4Ul">
-                                <rect key="frame" x="0.0" y="0.0" width="1833" height="900"/>
-                                <view key="contentView" id="x6E-e5-xRe">
-                                    <rect key="frame" x="0.0" y="0.0" width="1833" height="900"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="B3d-Vr-gjf">
-                                            <rect key="frame" x="0.0" y="0.0" width="255" height="900"/>
-                                            <view key="contentView" id="afn-eY-faL">
-                                                <rect key="frame" x="0.0" y="0.0" width="255" height="900"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </view>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="255" id="OyX-wx-X8o"/>
-                                            </constraints>
-                                        </box>
-                                        <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="ppB-DE-VcO">
-                                            <rect key="frame" x="255" y="0.0" width="1" height="900"/>
-                                            <view key="contentView" id="opl-3K-yQY">
-                                                <rect key="frame" x="1" y="1" width="0.0" height="898"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </view>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="1" id="NLU-Hc-OkB"/>
-                                            </constraints>
-                                            <color key="borderColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="fillColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </box>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="B3d-Vr-gjf" firstAttribute="top" secondItem="x6E-e5-xRe" secondAttribute="top" id="8Qu-U4-RXi"/>
-                                        <constraint firstAttribute="bottom" secondItem="B3d-Vr-gjf" secondAttribute="bottom" id="Or6-cn-gYQ"/>
-                                        <constraint firstItem="B3d-Vr-gjf" firstAttribute="leading" secondItem="x6E-e5-xRe" secondAttribute="leading" id="PRU-c9-Rdd"/>
-                                        <constraint firstAttribute="bottom" secondItem="ppB-DE-VcO" secondAttribute="bottom" id="TW7-LO-34c"/>
-                                        <constraint firstItem="ppB-DE-VcO" firstAttribute="leading" secondItem="afn-eY-faL" secondAttribute="trailing" id="Y7i-Kc-YRj"/>
-                                        <constraint firstAttribute="trailing" secondItem="ppB-DE-VcO" secondAttribute="trailing" constant="1577" id="a8u-Dh-JEY"/>
-                                        <constraint firstItem="ppB-DE-VcO" firstAttribute="top" secondItem="x6E-e5-xRe" secondAttribute="top" id="g90-Jq-aJo"/>
-                                    </constraints>
-                                </view>
-                                <color key="fillColor" red="0.094117647060000004" green="0.1058823529" blue="0.16078431369999999" alpha="0.88" colorSpace="custom" customColorSpace="sRGB"/>
-                            </box>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="7p1-D5-4Ul" secondAttribute="trailing" id="DC2-6v-Y8W"/>
-                            <constraint firstAttribute="bottom" secondItem="7p1-D5-4Ul" secondAttribute="bottom" id="Yax-xQ-GZI"/>
-                            <constraint firstItem="7p1-D5-4Ul" firstAttribute="leading" secondItem="LAh-Zq-Fyy" secondAttribute="leading" id="cjc-v6-tEH"/>
-                            <constraint firstItem="7p1-D5-4Ul" firstAttribute="top" secondItem="LAh-Zq-Fyy" secondAttribute="top" id="jWl-Lt-JqO"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <customObject id="LjJ-iG-WtB" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="370" y="2548"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="rD0-Kb-JoZ">
             <objects>
                 <viewController storyboardIdentifier="ViewController2" id="NJL-qp-NYg" sceneMemberID="viewController">
@@ -1099,66 +1037,78 @@
             <point key="canvasLocation" x="1765" y="2557"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="kZl-HV-abC">
+        <scene sceneID="KO5-CZ-daA">
             <objects>
-                <viewController storyboardIdentifier="ViewController3" id="4Qj-Zx-Qlw" sceneMemberID="viewController">
-                    <view key="view" id="DVt-Z2-B81">
-                        <rect key="frame" x="0.0" y="0.0" width="1833" height="900"/>
+                <customObject id="f6Z-r8-IMi" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ViewController3" id="f0l-vt-WdI" sceneMemberID="viewController">
+                    <view key="view" id="p4t-zf-zux">
+                        <rect key="frame" x="0.0" y="0.0" width="2048" height="1152"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="zHE-0m-hzZ">
-                                <rect key="frame" x="0.0" y="0.0" width="1833" height="900"/>
-                                <view key="contentView" id="iWs-uB-K9h">
-                                    <rect key="frame" x="0.0" y="0.0" width="1833" height="900"/>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="JMv-fk-Aw3">
+                                <rect key="frame" x="0.0" y="0.0" width="2048" height="1152"/>
+                                <view key="contentView" id="uQq-so-a8j">
+                                    <rect key="frame" x="0.0" y="0.0" width="2048" height="1152"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="nnr-Hf-d8T">
-                                            <rect key="frame" x="0.0" y="0.0" width="255" height="900"/>
-                                            <view key="contentView" id="XWP-oj-6a5">
-                                                <rect key="frame" x="0.0" y="0.0" width="255" height="900"/>
+                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="0wi-3F-Qls" customClass="WalletHistoryView">
+                                            <rect key="frame" x="281" y="0.0" width="1741" height="1072"/>
+                                        </customView>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BAV-36-UZF">
+                                            <rect key="frame" x="279" y="1106" width="72" height="30"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="History" id="EnO-2X-SGj">
+                                                <font key="font" size="20" name="SFUIText-Regular"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="hB6-0Z-Q5f">
+                                            <rect key="frame" x="255" y="0.0" width="1" height="1152"/>
+                                            <view key="contentView" id="iCc-Am-SYM">
+                                                <rect key="frame" x="1" y="1" width="0.0" height="1150"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             </view>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="255" id="hbo-TP-c24"/>
-                                            </constraints>
-                                        </box>
-                                        <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="YCg-Rm-D73">
-                                            <rect key="frame" x="255" y="0.0" width="1" height="900"/>
-                                            <view key="contentView" id="uJQ-a2-HBa">
-                                                <rect key="frame" x="1" y="1" width="0.0" height="898"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </view>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="1" id="oo2-Ho-a1F"/>
+                                                <constraint firstAttribute="width" constant="1" id="c4z-3I-6Yj"/>
                                             </constraints>
                                             <color key="borderColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="fillColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                         </box>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="YCg-Rm-D73" firstAttribute="top" secondItem="iWs-uB-K9h" secondAttribute="top" id="0n0-w0-29y"/>
-                                        <constraint firstAttribute="bottom" secondItem="YCg-Rm-D73" secondAttribute="bottom" id="8d2-pL-91D"/>
-                                        <constraint firstAttribute="trailing" secondItem="YCg-Rm-D73" secondAttribute="trailing" constant="1577" id="PwM-n1-78Q"/>
-                                        <constraint firstItem="nnr-Hf-d8T" firstAttribute="top" secondItem="iWs-uB-K9h" secondAttribute="top" id="SUH-YJ-WCP"/>
-                                        <constraint firstItem="nnr-Hf-d8T" firstAttribute="leading" secondItem="iWs-uB-K9h" secondAttribute="leading" id="gs8-ZL-vDR"/>
-                                        <constraint firstAttribute="bottom" secondItem="nnr-Hf-d8T" secondAttribute="bottom" id="kHu-ZQ-WOX"/>
-                                        <constraint firstItem="YCg-Rm-D73" firstAttribute="leading" secondItem="XWP-oj-6a5" secondAttribute="trailing" id="r61-5J-4jW"/>
+                                        <constraint firstAttribute="trailing" secondItem="0wi-3F-Qls" secondAttribute="trailing" constant="26" id="6eD-zh-Lk9"/>
+                                        <constraint firstItem="0wi-3F-Qls" firstAttribute="top" secondItem="BAV-36-UZF" secondAttribute="bottom" constant="34" id="84k-xe-aCw"/>
+                                        <constraint firstAttribute="bottom" secondItem="hB6-0Z-Q5f" secondAttribute="bottom" id="H6S-Z5-qIn"/>
+                                        <constraint firstItem="0wi-3F-Qls" firstAttribute="top" secondItem="uQq-so-a8j" secondAttribute="top" constant="80" id="NL7-UJ-1fn"/>
+                                        <constraint firstItem="hB6-0Z-Q5f" firstAttribute="top" secondItem="uQq-so-a8j" secondAttribute="top" id="Oly-8a-MEv"/>
+                                        <constraint firstAttribute="bottom" secondItem="0wi-3F-Qls" secondAttribute="bottom" id="hpE-Ch-vqs"/>
                                     </constraints>
                                 </view>
-                                <color key="fillColor" red="0.094117647060000004" green="0.1058823529" blue="0.16078431369999999" alpha="0.88" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="fillColor" red="0.094117647060000004" green="0.1058823529" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </box>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="7cK-Cf-xLH" customClass="WalletSideMenu">
+                                <rect key="frame" x="0.0" y="0.0" width="255" height="1152"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="v4p-YR-gbY"/>
+                                </constraints>
+                            </customView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="zHE-0m-hzZ" secondAttribute="bottom" id="3gd-oJ-TKO"/>
-                            <constraint firstItem="zHE-0m-hzZ" firstAttribute="leading" secondItem="DVt-Z2-B81" secondAttribute="leading" id="4G6-v0-v4k"/>
-                            <constraint firstItem="zHE-0m-hzZ" firstAttribute="top" secondItem="DVt-Z2-B81" secondAttribute="top" id="Lex-kw-ir0"/>
-                            <constraint firstAttribute="trailing" secondItem="zHE-0m-hzZ" secondAttribute="trailing" id="vgU-YO-fsw"/>
+                            <constraint firstItem="hB6-0Z-Q5f" firstAttribute="leading" secondItem="7cK-Cf-xLH" secondAttribute="trailing" id="1Nl-P2-qBT"/>
+                            <constraint firstItem="7cK-Cf-xLH" firstAttribute="leading" secondItem="p4t-zf-zux" secondAttribute="leading" id="TOA-Bw-zKO"/>
+                            <constraint firstItem="7cK-Cf-xLH" firstAttribute="top" secondItem="p4t-zf-zux" secondAttribute="top" id="Wpo-LG-hTH"/>
+                            <constraint firstItem="0wi-3F-Qls" firstAttribute="leading" secondItem="7cK-Cf-xLH" secondAttribute="trailing" constant="26" id="a8o-C9-bdo"/>
+                            <constraint firstItem="JMv-fk-Aw3" firstAttribute="leading" secondItem="p4t-zf-zux" secondAttribute="leading" id="aIh-wP-laz"/>
+                            <constraint firstItem="JMv-fk-Aw3" firstAttribute="top" secondItem="p4t-zf-zux" secondAttribute="top" id="gtm-Pz-HTU"/>
+                            <constraint firstAttribute="bottom" secondItem="JMv-fk-Aw3" secondAttribute="bottom" id="inh-o0-GE2"/>
+                            <constraint firstAttribute="trailing" secondItem="JMv-fk-Aw3" secondAttribute="trailing" id="uaU-gR-4dw"/>
+                            <constraint firstAttribute="bottom" secondItem="7cK-Cf-xLH" secondAttribute="bottom" id="v62-Ob-c5U"/>
+                            <constraint firstItem="BAV-36-UZF" firstAttribute="leading" secondItem="7cK-Cf-xLH" secondAttribute="trailing" constant="26" id="xJR-kj-r6S"/>
                         </constraints>
                     </view>
                 </viewController>
-                <customObject id="BHH-lb-Wxv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1802" y="2696"/>
+            <point key="canvasLocation" x="370" y="4937"/>
         </scene>
     </scenes>
     <resources>

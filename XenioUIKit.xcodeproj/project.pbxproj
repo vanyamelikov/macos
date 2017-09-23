@@ -843,10 +843,10 @@
 		3EBAADED1F75C98300890AD1 /* WalletClasses */ = {
 			isa = PBXGroup;
 			children = (
-				3EBAADF51F76093C00890AD1 /* WalletHistoryView.h */,
-				3EBAADF61F76093C00890AD1 /* WalletHistoryView.m */,
 				3EBAADFD1F760DA700890AD1 /* WalletSideMenu.h */,
 				3EBAADFE1F760DA700890AD1 /* WalletSideMenu.m */,
+				3EBAADF51F76093C00890AD1 /* WalletHistoryView.h */,
+				3EBAADF61F76093C00890AD1 /* WalletHistoryView.m */,
 			);
 			name = WalletClasses;
 			sourceTree = "<group>";
