@@ -8,7 +8,7 @@
 
 #import "LibrarySideMenu.h"
 #import "LibrarySideMenuCell.h"
-#import "Colours.h"
+#import "LibrarySideMenuModel.h"
 
 @implementation LibrarySideMenu {
     NSMutableArray *dataSourceArray;

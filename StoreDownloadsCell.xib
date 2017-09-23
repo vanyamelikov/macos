@@ -38,21 +38,27 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="miniCrysis" id="NSe-9O-Q5J"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jQH-Pm-K25">
-                                <rect key="frame" x="85" y="16" width="80" height="30"/>
+                                <rect key="frame" x="85" y="20" width="86" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="VNS-X0-p0V"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Crysis 2" id="Yan-Wz-0J6">
-                                    <font key="font" size="20" name="SFUIText-Regular"/>
+                                    <font key="font" size="20" name="SFUIText-Bold"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="2ra-9T-hun">
-                                <rect key="frame" x="437" y="0.0" width="302" height="61"/>
+                                <rect key="frame" x="437" y="29" width="302" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="302" id="aXl-LO-XFP"/>
+                                    <constraint firstAttribute="height" constant="4" id="cR3-aj-u9e"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </customView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zCJ-wk-p7e">
                                 <rect key="frame" x="924" y="22" width="238" height="17"/>
@@ -74,16 +80,15 @@
                             </customView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="zCJ-wk-p7e" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" id="39s-WN-e45"/>
                             <constraint firstItem="jQH-Pm-K25" firstAttribute="leading" secondItem="XOU-Ei-zEl" secondAttribute="trailing" constant="26" id="AGl-07-rwC"/>
-                            <constraint firstItem="HtN-eu-JIr" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" id="RZ4-n7-O9R"/>
                             <constraint firstItem="XOU-Ei-zEl" firstAttribute="leading" secondItem="sr3-I2-CdM" secondAttribute="leading" id="ReO-Bc-Y7n"/>
                             <constraint firstAttribute="trailing" secondItem="HtN-eu-JIr" secondAttribute="trailing" constant="6" id="Trx-Zl-PHU"/>
-                            <constraint firstItem="2ra-9T-hun" firstAttribute="top" secondItem="sr3-I2-CdM" secondAttribute="top" id="lir-WJ-jHv"/>
+                            <constraint firstItem="HtN-eu-JIr" firstAttribute="centerY" secondItem="zCJ-wk-p7e" secondAttribute="centerY" id="eTc-Jd-9am"/>
                             <constraint firstItem="2ra-9T-hun" firstAttribute="leading" secondItem="XOU-Ei-zEl" secondAttribute="trailing" constant="376" id="s8k-Yc-SxX"/>
-                            <constraint firstItem="zCJ-wk-p7e" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" id="sSX-cc-Dbc"/>
-                            <constraint firstAttribute="bottom" secondItem="2ra-9T-hun" secondAttribute="bottom" id="vQj-Eu-WeL"/>
                             <constraint firstItem="zCJ-wk-p7e" firstAttribute="leading" secondItem="2ra-9T-hun" secondAttribute="trailing" constant="187" id="voa-Gc-f7K"/>
-                            <constraint firstItem="jQH-Pm-K25" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" id="wa7-qc-23Q"/>
+                            <constraint firstItem="jQH-Pm-K25" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" constant="-4" id="wa7-qc-23Q"/>
+                            <constraint firstItem="2ra-9T-hun" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" id="y85-zL-bkK"/>
                             <constraint firstItem="XOU-Ei-zEl" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" id="z9i-vf-DY2"/>
                         </constraints>
                     </view>

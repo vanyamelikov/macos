@@ -1,5 +1,5 @@
 //
-//  LibraryGamesServersListView.h
+//  StoreGamesView.h
 //  XenioUIKit
 //
 //  Created by Сергей Иванов on 22.09.17.
@@ -8,7 +8,7 @@
 
 #import "NSView+INSNibLoading.h"
 
-@interface LibraryGamesServersListView : INSNibLoadedView <NSTableViewDelegate, NSTableViewDataSource>
+@interface StoreGamesView : INSNibLoadedView <NSTableViewDelegate, NSTableViewDataSource>
 
 @property (strong) IBOutlet NSTableView *tableView;
 

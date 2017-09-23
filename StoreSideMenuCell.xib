@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="StoreSideMenuCell">
+            <connections>
+                <outlet property="backgroundBox" destination="sXl-gZ-bWf" id="84h-NF-4Fb"/>
+                <outlet property="label" destination="N45-lL-Bgb" id="XCt-dV-Qh4"/>
+                <outlet property="lightLayer" destination="4NE-b7-ZXg" id="G2J-hn-ZTG"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Ho1-Q0-4qp">
+            <rect key="frame" x="0.0" y="0.0" width="255" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="sXl-gZ-bWf">
+                    <rect key="frame" x="0.0" y="0.0" width="255" height="30"/>
+                    <view key="contentView" id="m14-EX-K7d">
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="30"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4NE-b7-ZXg">
+                                <rect key="frame" x="0.0" y="0.0" width="255" height="30"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="sidemenu_focus" id="IG4-Kp-DX7"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="N45-lL-Bgb">
+                                <rect key="frame" x="18" y="6" width="219" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="PZo-JE-Ae8"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Crysis 2" id="GMO-2N-16q">
+                                    <font key="font" size="13" name="SFUIText-Medium"/>
+                                    <color key="textColor" red="0.47058823529999999" green="0.50588235290000005" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.34157451919999998" green="0.64983173080000001" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="4NE-b7-ZXg" secondAttribute="bottom" id="DA5-u6-ZYS"/>
+                            <constraint firstItem="4NE-b7-ZXg" firstAttribute="top" secondItem="m14-EX-K7d" secondAttribute="top" id="I0I-yS-ibj"/>
+                            <constraint firstAttribute="trailing" secondItem="4NE-b7-ZXg" secondAttribute="trailing" id="Q8N-m9-O9i"/>
+                            <constraint firstItem="4NE-b7-ZXg" firstAttribute="leading" secondItem="m14-EX-K7d" secondAttribute="leading" id="YdN-1a-FTK"/>
+                            <constraint firstItem="N45-lL-Bgb" firstAttribute="centerY" secondItem="m14-EX-K7d" secondAttribute="centerY" id="cr2-sh-QSH"/>
+                            <constraint firstItem="N45-lL-Bgb" firstAttribute="leading" secondItem="m14-EX-K7d" secondAttribute="leading" constant="20" id="eoL-p5-i8X"/>
+                            <constraint firstAttribute="trailing" secondItem="N45-lL-Bgb" secondAttribute="trailing" constant="20" id="wBE-0k-xNn"/>
+                        </constraints>
+                    </view>
+                    <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="sXl-gZ-bWf" secondAttribute="bottom" id="bwN-9J-nwP"/>
+                <constraint firstItem="sXl-gZ-bWf" firstAttribute="leading" secondItem="Ho1-Q0-4qp" secondAttribute="leading" id="c2V-7x-8Ih"/>
+                <constraint firstItem="sXl-gZ-bWf" firstAttribute="top" secondItem="Ho1-Q0-4qp" secondAttribute="top" id="d6h-Fv-NZu"/>
+                <constraint firstAttribute="trailing" secondItem="sXl-gZ-bWf" secondAttribute="trailing" id="lDC-q9-p8Y"/>
+            </constraints>
+            <point key="canvasLocation" x="-154" y="178"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="sidemenu_focus" width="255" height="30"/>
+    </resources>
+</document>

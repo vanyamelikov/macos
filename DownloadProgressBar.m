@@ -23,8 +23,8 @@
         self.fillLineBox.frame = CGRectMake(self.bounds.origin.x, self.bounds.origin.y, 0, self.bounds.size.height);
         self.emptyLineView.frame = CGRectMake(self.bounds.origin.x, (self.bounds.size.height/2) - (self.emptyLineHeight / 2), self.bounds.size.width, self.emptyLineHeight);
         
-        [self.emptyLineView setFillColor:[NSColor colorFromHexString:self.emptyLineColor]];
-        [self.fillLineBox setFillColor:[NSColor colorFromHexString:self.fillLineColor]];
+        [self.emptyLineView setFillColor:self.emptyLineColor];
+        [self.fillLineBox setFillColor:self.fillLineColor];
     }
     return self;
 }

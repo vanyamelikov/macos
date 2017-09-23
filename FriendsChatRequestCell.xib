@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FriendsChatRequestCell">
+            <connections>
+                <outlet property="addbutton" destination="0hT-hd-Gqe" id="ziX-jV-3zW"/>
+                <outlet property="cancelButton" destination="zQ8-l9-Ych" id="QJ2-kY-kCO"/>
+                <outlet property="playerImage" destination="sH4-CV-uBe" id="uqA-FW-6Jj"/>
+                <outlet property="playerNameLabel" destination="BOT-Ms-m7r" id="o7K-b6-EAx"/>
+                <outlet property="playerStatusLabel" destination="rG7-we-WyU" id="8Fq-nn-Yqi"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="0NC-9Q-jPl">
+            <rect key="frame" x="0.0" y="0.0" width="582" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="tgK-45-lYv">
+                    <rect key="frame" x="0.0" y="0.0" width="582" height="66"/>
+                    <view key="contentView" id="Xbn-wE-Jvn">
+                        <rect key="frame" x="0.0" y="0.0" width="582" height="66"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sH4-CV-uBe">
+                                <rect key="frame" x="20" y="15" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="IoZ-V5-iSP"/>
+                                    <constraint firstAttribute="width" constant="36" id="tVQ-zg-qwa"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_avatar-1" id="4Gf-v9-CBK"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BOT-Ms-m7r">
+                                <rect key="frame" x="64" y="33" width="71" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Wnm-Sq-fck"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Police Girl" id="CjQ-wG-7CB">
+                                    <font key="font" size="14" name="SFUIText-Regular"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rG7-we-WyU">
+                                <rect key="frame" x="64" y="14" width="42" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="o38-4K-TsX"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Offline" id="sv7-pT-tXe">
+                                    <font key="font" size="12" name="SFUIText-Regular"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="0hT-hd-Gqe" customClass="AddButton">
+                                <rect key="frame" x="510" y="19" width="52" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="CNj-CL-pSK"/>
+                                    <constraint firstAttribute="width" constant="52" id="SRb-iC-Kau"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="zQ8-l9-Ych" customClass="CancelButton">
+                                <rect key="frame" x="420" y="19" width="84" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="TxS-LH-55i"/>
+                                    <constraint firstAttribute="height" constant="29" id="x3z-v1-ckp"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="sH4-CV-uBe" firstAttribute="leading" secondItem="Xbn-wE-Jvn" secondAttribute="leading" constant="20" id="3ad-Ka-x9x"/>
+                            <constraint firstItem="0hT-hd-Gqe" firstAttribute="centerY" secondItem="Xbn-wE-Jvn" secondAttribute="centerY" id="4IL-X1-9zc"/>
+                            <constraint firstItem="0hT-hd-Gqe" firstAttribute="leading" secondItem="zQ8-l9-Ych" secondAttribute="trailing" constant="6" id="5mH-c6-QbN"/>
+                            <constraint firstItem="zQ8-l9-Ych" firstAttribute="centerY" secondItem="Xbn-wE-Jvn" secondAttribute="centerY" id="IGS-r5-aHZ"/>
+                            <constraint firstItem="BOT-Ms-m7r" firstAttribute="leading" secondItem="sH4-CV-uBe" secondAttribute="trailing" constant="10" id="MVG-B0-slI"/>
+                            <constraint firstItem="sH4-CV-uBe" firstAttribute="centerY" secondItem="Xbn-wE-Jvn" secondAttribute="centerY" id="gv8-3X-l3U"/>
+                            <constraint firstItem="rG7-we-WyU" firstAttribute="leading" secondItem="sH4-CV-uBe" secondAttribute="trailing" constant="10" id="h7q-dA-fak"/>
+                            <constraint firstAttribute="trailing" secondItem="0hT-hd-Gqe" secondAttribute="trailing" constant="20" id="qow-tW-vmN"/>
+                            <constraint firstItem="BOT-Ms-m7r" firstAttribute="centerY" secondItem="sH4-CV-uBe" secondAttribute="centerY" constant="-10" id="uza-55-e37"/>
+                            <constraint firstItem="rG7-we-WyU" firstAttribute="top" secondItem="BOT-Ms-m7r" secondAttribute="bottom" constant="2" id="yca-In-9EO"/>
+                        </constraints>
+                    </view>
+                    <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="tgK-45-lYv" firstAttribute="top" secondItem="0NC-9Q-jPl" secondAttribute="top" id="LhP-Kt-iHg"/>
+                <constraint firstItem="tgK-45-lYv" firstAttribute="leading" secondItem="0NC-9Q-jPl" secondAttribute="leading" id="eRs-85-29a"/>
+                <constraint firstAttribute="trailing" secondItem="tgK-45-lYv" secondAttribute="trailing" id="gg3-3J-c7G"/>
+                <constraint firstAttribute="bottom" secondItem="tgK-45-lYv" secondAttribute="bottom" id="rLN-Cq-tIk"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="166"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_avatar-1" width="37" height="37"/>
+    </resources>
+</document>

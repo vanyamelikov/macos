@@ -10,4 +10,6 @@
 
 @interface StoreNavigationViewController : NSViewController
 
+@property (nonatomic) NSImage *backgroundImage;
+
 @end

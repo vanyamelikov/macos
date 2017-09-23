@@ -18,8 +18,8 @@
 
 @property (nonatomic, readwrite) IBInspectable CGFloat progressValue;
 
-@property (nonatomic, readwrite) IBInspectable NSString *emptyLineColor;
-@property (nonatomic, readwrite) IBInspectable NSString *fillLineColor;
+@property (nonatomic, readwrite) IBInspectable NSColor *emptyLineColor;
+@property (nonatomic, readwrite) IBInspectable NSColor *fillLineColor;
 
 @property (nonatomic, readwrite) IBInspectable CGFloat emptyLineHeight;
 @property (nonatomic, readwrite) IBInspectable CGFloat fillLineHeight;
