@@ -950,12 +950,39 @@
                                                 <constraint firstAttribute="width" constant="255" id="QgS-lG-jIT"/>
                                             </constraints>
                                         </customView>
+                                        <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E06-Yf-aMh" customClass="LIButton">
+                                            <rect key="frame" x="1126" y="880" width="132" height="29"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="29" id="m3y-ct-xdx"/>
+                                                <constraint firstAttribute="width" constant="132" id="wto-kI-YI9"/>
+                                            </constraints>
+                                        </customView>
+                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="AMT-c8-UQJ" customClass="SettingsButton">
+                                            <rect key="frame" x="1089" y="880" width="29" height="29"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="29" id="KJ8-bQ-0vr"/>
+                                                <constraint firstAttribute="height" constant="29" id="xAC-AC-Ct8"/>
+                                            </constraints>
+                                        </customView>
+                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="XUu-9z-qpq" customClass="LibraryFriendsGames">
+                                            <rect key="frame" x="263" y="849" width="818" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="RUL-2x-fRy"/>
+                                            </constraints>
+                                        </customView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="KE2-jL-Q1c" secondAttribute="bottom" id="5OD-la-R1B"/>
+                                        <constraint firstItem="Ed4-0J-YNM" firstAttribute="leading" secondItem="E06-Yf-aMh" secondAttribute="trailing" id="8bA-QH-0YG"/>
+                                        <constraint firstItem="XUu-9z-qpq" firstAttribute="leading" secondItem="0ou-I7-3tV" secondAttribute="trailing" constant="8" id="Aq7-ww-VdJ"/>
                                         <constraint firstItem="0ou-I7-3tV" firstAttribute="top" secondItem="snR-5e-LB1" secondAttribute="top" id="CIi-U0-5jg"/>
                                         <constraint firstItem="Ed4-0J-YNM" firstAttribute="top" secondItem="snR-5e-LB1" secondAttribute="top" id="Kb1-ns-Cew"/>
+                                        <constraint firstItem="XUu-9z-qpq" firstAttribute="top" secondItem="snR-5e-LB1" secondAttribute="top" constant="20" id="MK3-Dc-nQv"/>
+                                        <constraint firstItem="E06-Yf-aMh" firstAttribute="top" secondItem="snR-5e-LB1" secondAttribute="top" constant="20" id="SSv-ry-7Gc"/>
+                                        <constraint firstItem="AMT-c8-UQJ" firstAttribute="leading" secondItem="XUu-9z-qpq" secondAttribute="trailing" constant="8" id="St6-QB-on5"/>
+                                        <constraint firstItem="AMT-c8-UQJ" firstAttribute="centerY" secondItem="E06-Yf-aMh" secondAttribute="centerY" id="Yj5-mX-Tsp"/>
                                         <constraint firstAttribute="bottom" secondItem="Ed4-0J-YNM" secondAttribute="bottom" id="cIE-S4-bdq"/>
+                                        <constraint firstItem="E06-Yf-aMh" firstAttribute="leading" secondItem="AMT-c8-UQJ" secondAttribute="trailing" constant="5" id="fRX-r7-epg"/>
                                         <constraint firstItem="0ou-I7-3tV" firstAttribute="leading" secondItem="snR-5e-LB1" secondAttribute="leading" id="l04-fI-nsO"/>
                                         <constraint firstAttribute="bottom" secondItem="0ou-I7-3tV" secondAttribute="bottom" id="mGI-4w-dOt"/>
                                         <constraint firstItem="KE2-jL-Q1c" firstAttribute="top" secondItem="snR-5e-LB1" secondAttribute="top" id="nBC-4t-fox"/>

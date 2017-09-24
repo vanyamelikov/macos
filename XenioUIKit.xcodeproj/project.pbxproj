@@ -22,6 +22,10 @@
 		3E3E41FD1F756834009698FD /* LibraryGamesRightMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3E41FC1F756834009698FD /* LibraryGamesRightMenuView.m */; };
 		3E3E42001F757D0D009698FD /* LibraryGamesServersListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3E41FF1F757D0D009698FD /* LibraryGamesServersListView.m */; };
 		3E3E42031F757D72009698FD /* LibraryGamesServerListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3E42021F757D72009698FD /* LibraryGamesServerListModel.m */; };
+		3E6FE79D1F77452700B98AD3 /* LibraryFriendsGames.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE79C1F77452700B98AD3 /* LibraryFriendsGames.xib */; };
+		3E6FE7A01F7745D300B98AD3 /* LibraryFriendsGames.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE79F1F7745D300B98AD3 /* LibraryFriendsGames.m */; };
+		3E6FE7A61F774A9B00B98AD3 /* LibraryFriendsGamesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE7A41F774A9B00B98AD3 /* LibraryFriendsGamesItem.m */; };
+		3E6FE7A71F774A9B00B98AD3 /* LibraryFriendsGamesItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE7A51F774A9B00B98AD3 /* LibraryFriendsGamesItem.xib */; };
 		3E72309D1F72EADE0050A70D /* CustomHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E72309C1F72EADE0050A70D /* CustomHeaderCell.m */; };
 		3E7230A11F7309FD0050A70D /* HeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7230A01F7309FD0050A70D /* HeaderCell.m */; };
 		3E7230AC1F7348C30050A70D /* MainStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7230AB1F7348C30050A70D /* MainStoreViewController.m */; };
@@ -175,6 +179,12 @@
 		3E3E41FF1F757D0D009698FD /* LibraryGamesServersListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryGamesServersListView.m; sourceTree = "<group>"; };
 		3E3E42011F757D72009698FD /* LibraryGamesServerListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryGamesServerListModel.h; sourceTree = "<group>"; };
 		3E3E42021F757D72009698FD /* LibraryGamesServerListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryGamesServerListModel.m; sourceTree = "<group>"; };
+		3E6FE79C1F77452700B98AD3 /* LibraryFriendsGames.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryFriendsGames.xib; sourceTree = "<group>"; };
+		3E6FE79E1F7745D300B98AD3 /* LibraryFriendsGames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryFriendsGames.h; sourceTree = "<group>"; };
+		3E6FE79F1F7745D300B98AD3 /* LibraryFriendsGames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryFriendsGames.m; sourceTree = "<group>"; };
+		3E6FE7A31F774A9B00B98AD3 /* LibraryFriendsGamesItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryFriendsGamesItem.h; sourceTree = "<group>"; };
+		3E6FE7A41F774A9B00B98AD3 /* LibraryFriendsGamesItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryFriendsGamesItem.m; sourceTree = "<group>"; };
+		3E6FE7A51F774A9B00B98AD3 /* LibraryFriendsGamesItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryFriendsGamesItem.xib; sourceTree = "<group>"; };
 		3E72309B1F72EADE0050A70D /* CustomHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeaderCell.h; sourceTree = "<group>"; };
 		3E72309C1F72EADE0050A70D /* CustomHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHeaderCell.m; sourceTree = "<group>"; };
 		3E72309F1F7309FD0050A70D /* HeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderCell.h; sourceTree = "<group>"; };
@@ -496,6 +506,7 @@
 				3E7230BD1F734B7F0050A70D /* LibraryGameView.xib */,
 				3E8876071F7418AA001B8374 /* LibraryGamesRightMenuView.xib */,
 				3E8876091F7418C0001B8374 /* LibraryGamesServersListView.xib */,
+				3E6FE79C1F77452700B98AD3 /* LibraryFriendsGames.xib */,
 				3E8875E61F73F849001B8374 /* Cells */,
 			);
 			name = Library;
@@ -581,6 +592,7 @@
 				3E8875FD1F740DEC001B8374 /* LibraryGamesRightMenuHeaderCell.xib */,
 				3E8876051F741839001B8374 /* LibraryGamesServerListCell.xib */,
 				3EBAADCA1F75922700890AD1 /* LibraryGamesServerListHeaderCell.xib */,
+				3E6FE7A51F774A9B00B98AD3 /* LibraryFriendsGamesItem.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -600,6 +612,8 @@
 				3E8876031F741825001B8374 /* LibraryGamesServerListCell.m */,
 				3EBAADC71F75920300890AD1 /* LibraryGamesServerListHeaderCell.h */,
 				3EBAADC81F75920300890AD1 /* LibraryGamesServerListHeaderCell.m */,
+				3E6FE7A31F774A9B00B98AD3 /* LibraryFriendsGamesItem.h */,
+				3E6FE7A41F774A9B00B98AD3 /* LibraryFriendsGamesItem.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -719,6 +733,8 @@
 				3E3E41FC1F756834009698FD /* LibraryGamesRightMenuView.m */,
 				3E3E41FE1F757D0D009698FD /* LibraryGamesServersListView.h */,
 				3E3E41FF1F757D0D009698FD /* LibraryGamesServersListView.m */,
+				3E6FE79E1F7745D300B98AD3 /* LibraryFriendsGames.h */,
+				3E6FE79F1F7745D300B98AD3 /* LibraryFriendsGames.m */,
 			);
 			name = LibraryClasses;
 			sourceTree = "<group>";
@@ -1054,6 +1070,7 @@
 				3E8875F71F74085A001B8374 /* LibraryGamesRightMenuCell.xib in Resources */,
 				3E1FF8E61F6AC4F700117F16 /* CustomTabbar.xib in Resources */,
 				3E7230BC1F734B6E0050A70D /* LibraryEmptyView.xib in Resources */,
+				3E6FE7A71F774A9B00B98AD3 /* LibraryFriendsGamesItem.xib in Resources */,
 				3E36C8031F67198E00537BCA /* LIButton.xib in Resources */,
 				3ECF3CD31F68A49E005165E5 /* AllStopButton.xib in Resources */,
 				3EBAADE91F75BD6D00890AD1 /* StoreDownloadsView.xib in Resources */,
@@ -1097,6 +1114,7 @@
 				3E9C46101F70904F00693AA1 /* ChartView.xib in Resources */,
 				3ECF3CF41F6979D9005165E5 /* RemoveButton.xib in Resources */,
 				3ECF3CC61F6897B7005165E5 /* SignInButton.xib in Resources */,
+				3E6FE79D1F77452700B98AD3 /* LibraryFriendsGames.xib in Resources */,
 				3ECF3CBC1F68808C005165E5 /* SettingsButton.xib in Resources */,
 				3E9C46131F70A88600693AA1 /* DownloadProgressBar.xib in Resources */,
 				3E8876061F741839001B8374 /* LibraryGamesServerListCell.xib in Resources */,
@@ -1222,6 +1240,7 @@
 				3EBAADDE1F759A0D00890AD1 /* StoreSideMenuModel.m in Sources */,
 				3EBAADFF1F760DA700890AD1 /* WalletSideMenu.m in Sources */,
 				3E88766A1F7546A7001B8374 /* LibrarySideMenuModel.m in Sources */,
+				3E6FE7A01F7745D300B98AD3 /* LibraryFriendsGames.m in Sources */,
 				3EBAADE41F75A4B800890AD1 /* StoreGamesViewModel.m in Sources */,
 				3E8876661F754561001B8374 /* LibrarySideMenu.m in Sources */,
 				3E7230F61F7356430050A70D /* FriendsContentViewController.m in Sources */,
@@ -1240,6 +1259,7 @@
 				3E3E42031F757D72009698FD /* LibraryGamesServerListModel.m in Sources */,
 				3E88763E1F749720001B8374 /* FriendsContentViewListCell.m in Sources */,
 				3ECF3CEE1F6978C3005165E5 /* SaveSettingsButton.m in Sources */,
+				3E6FE7A61F774A9B00B98AD3 /* LibraryFriendsGamesItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
