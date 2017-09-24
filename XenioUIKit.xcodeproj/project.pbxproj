@@ -44,6 +44,8 @@
 		3E6FE7D21F7793F200B98AD3 /* WalletChooseFriendCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE7D11F7793F200B98AD3 /* WalletChooseFriendCollectionView.m */; };
 		3E6FE7D61F77C08500B98AD3 /* StoreGamesGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE7D41F77C08500B98AD3 /* StoreGamesGridCell.m */; };
 		3E6FE7D71F77C08500B98AD3 /* StoreGamesGridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE7D51F77C08500B98AD3 /* StoreGamesGridCell.xib */; };
+		3E6FE7D91F77D41300B98AD3 /* StoreGamesGridView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE7D81F77D41300B98AD3 /* StoreGamesGridView.xib */; };
+		3E6FE7DC1F77D46C00B98AD3 /* StoreGamesGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE7DB1F77D46C00B98AD3 /* StoreGamesGridView.m */; };
 		3E72309D1F72EADE0050A70D /* CustomHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E72309C1F72EADE0050A70D /* CustomHeaderCell.m */; };
 		3E7230A11F7309FD0050A70D /* HeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7230A01F7309FD0050A70D /* HeaderCell.m */; };
 		3E7230AC1F7348C30050A70D /* MainStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7230AB1F7348C30050A70D /* MainStoreViewController.m */; };
@@ -230,6 +232,9 @@
 		3E6FE7D31F77C08500B98AD3 /* StoreGamesGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreGamesGridCell.h; sourceTree = "<group>"; };
 		3E6FE7D41F77C08500B98AD3 /* StoreGamesGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreGamesGridCell.m; sourceTree = "<group>"; };
 		3E6FE7D51F77C08500B98AD3 /* StoreGamesGridCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreGamesGridCell.xib; sourceTree = "<group>"; };
+		3E6FE7D81F77D41300B98AD3 /* StoreGamesGridView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreGamesGridView.xib; sourceTree = "<group>"; };
+		3E6FE7DA1F77D46C00B98AD3 /* StoreGamesGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreGamesGridView.h; sourceTree = "<group>"; };
+		3E6FE7DB1F77D46C00B98AD3 /* StoreGamesGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreGamesGridView.m; sourceTree = "<group>"; };
 		3E72309B1F72EADE0050A70D /* CustomHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeaderCell.h; sourceTree = "<group>"; };
 		3E72309C1F72EADE0050A70D /* CustomHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHeaderCell.m; sourceTree = "<group>"; };
 		3E72309F1F7309FD0050A70D /* HeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderCell.h; sourceTree = "<group>"; };
@@ -568,6 +573,7 @@
 				3E7230B31F734ABB0050A70D /* StoreGamesView.xib */,
 				3EBAADE81F75BD6D00890AD1 /* StoreDownloadsView.xib */,
 				3E8876131F7423F0001B8374 /* Cells */,
+				3E6FE7D81F77D41300B98AD3 /* StoreGamesGridView.xib */,
 			);
 			name = Store;
 			sourceTree = "<group>";
@@ -710,8 +716,6 @@
 				3E8876231F744329001B8374 /* StoreGamesCell.xib */,
 				3E88761E1F7434E7001B8374 /* StoreDownloadsCell.xib */,
 				3E8876551F74ABE0001B8374 /* StorePaymentInformationCell.xib */,
-				3E6FE7D31F77C08500B98AD3 /* StoreGamesGridCell.h */,
-				3E6FE7D41F77C08500B98AD3 /* StoreGamesGridCell.m */,
 				3E6FE7D51F77C08500B98AD3 /* StoreGamesGridCell.xib */,
 			);
 			name = Cells;
@@ -730,6 +734,8 @@
 				3E8876261F745460001B8374 /* StoreGamesCell.m */,
 				3E8876601F74B654001B8374 /* StorePaymentInformationCell.h */,
 				3E8876611F74B654001B8374 /* StorePaymentInformationCell.m */,
+				3E6FE7D31F77C08500B98AD3 /* StoreGamesGridCell.h */,
+				3E6FE7D41F77C08500B98AD3 /* StoreGamesGridCell.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -920,6 +926,8 @@
 				3EBAADE01F75A34900890AD1 /* StoreGamesView.m */,
 				3EBAADE51F75BD3800890AD1 /* StoreDownloadsView.h */,
 				3EBAADE61F75BD3800890AD1 /* StoreDownloadsView.m */,
+				3E6FE7DA1F77D46C00B98AD3 /* StoreGamesGridView.h */,
+				3E6FE7DB1F77D46C00B98AD3 /* StoreGamesGridView.m */,
 			);
 			name = StoreClasses;
 			sourceTree = "<group>";
@@ -1177,6 +1185,7 @@
 				3EBAADE91F75BD6D00890AD1 /* StoreDownloadsView.xib in Resources */,
 				3E88760A1F7418C0001B8374 /* LibraryGamesServersListView.xib in Resources */,
 				3E7230B61F734B020050A70D /* Library.storyboard in Resources */,
+				3E6FE7D91F77D41300B98AD3 /* StoreGamesGridView.xib in Resources */,
 				3E88761F1F7434E7001B8374 /* StoreDownloadsCell.xib in Resources */,
 				3E6FE7B71F776D3B00B98AD3 /* BuyGameScreenshotsView.xib in Resources */,
 				3E7230B01F734A070050A70D /* StoreSideMenu.xib in Resources */,
@@ -1303,6 +1312,7 @@
 				3EBAAE021F760DEC00890AD1 /* WalletSideMenuModel.m in Sources */,
 				3E8A04C51F682E5400579DF8 /* LIButton.m in Sources */,
 				3E7230FF1F7357C60050A70D /* SettingsContentViewController.m in Sources */,
+				3E6FE7DC1F77D46C00B98AD3 /* StoreGamesGridView.m in Sources */,
 				3E8876011F74104E001B8374 /* LibraryGamesRightMenuHeaderCell.m in Sources */,
 				3EBAADCE1F75958A00890AD1 /* StoreSideMenuCell.m in Sources */,
 				3E7230CE1F734E450050A70D /* StoreContentViewController.m in Sources */,

@@ -9,6 +9,9 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="StoreGamesGridCell">
             <connections>
+                <outlet property="itemImageView" destination="9nD-1t-Khz" id="R8R-PV-glT"/>
+                <outlet property="itemNameLabel" destination="Y8W-OO-xr3" id="ADB-Gk-uTn"/>
+                <outlet property="itemRatingBox" destination="nuI-2k-wFf" id="TCh-r4-lnB"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
