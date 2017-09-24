@@ -26,6 +26,9 @@
     [super setRepresentedObject:representedObject];
     if(representedObject != nil) {
         [self.itemImageView setImage:[NSImage imageNamed:[representedObject valueForKey:@"itemImage"]]];
+        [self.itemImageView setWantsLayer: YES];
+        [self.itemImageView.layer setCornerRadius:self.itemImageView.frame.size.height/2];
+        self.itemImageView.layer.masksToBounds = YES;
     }
 }
 

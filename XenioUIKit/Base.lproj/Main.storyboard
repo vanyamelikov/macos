@@ -988,6 +988,12 @@
                                                 <constraint firstAttribute="height" constant="125" id="4N7-Mu-X0e"/>
                                             </constraints>
                                         </customView>
+                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="mEf-B8-9ln" customClass="WalletChooseFriendCollectionView">
+                                            <rect key="frame" x="263" y="227" width="818" height="82"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="82" id="nja-0G-cwc"/>
+                                            </constraints>
+                                        </customView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="QP4-HR-DBW" firstAttribute="width" secondItem="XUu-9z-qpq" secondAttribute="width" id="1QK-NK-eXI"/>
@@ -1001,8 +1007,10 @@
                                         <constraint firstItem="XUu-9z-qpq" firstAttribute="top" secondItem="snR-5e-LB1" secondAttribute="top" constant="20" id="MK3-Dc-nQv"/>
                                         <constraint firstItem="jfS-Hy-tzP" firstAttribute="top" secondItem="QP4-HR-DBW" secondAttribute="bottom" constant="8" id="Mxy-kH-sn6"/>
                                         <constraint firstItem="0PV-TV-04c" firstAttribute="top" secondItem="XUu-9z-qpq" secondAttribute="bottom" constant="21" id="QCm-0f-fUl"/>
+                                        <constraint firstItem="mEf-B8-9ln" firstAttribute="width" secondItem="jfS-Hy-tzP" secondAttribute="width" id="R0b-rJ-CaG"/>
                                         <constraint firstItem="0PV-TV-04c" firstAttribute="width" secondItem="XUu-9z-qpq" secondAttribute="width" id="RZ8-UH-ifE"/>
                                         <constraint firstItem="E06-Yf-aMh" firstAttribute="top" secondItem="snR-5e-LB1" secondAttribute="top" constant="20" id="SSv-ry-7Gc"/>
+                                        <constraint firstItem="mEf-B8-9ln" firstAttribute="leading" secondItem="0ou-I7-3tV" secondAttribute="trailing" constant="8" id="SnK-xA-CTo"/>
                                         <constraint firstItem="AMT-c8-UQJ" firstAttribute="leading" secondItem="XUu-9z-qpq" secondAttribute="trailing" constant="8" id="St6-QB-on5"/>
                                         <constraint firstItem="AMT-c8-UQJ" firstAttribute="centerY" secondItem="E06-Yf-aMh" secondAttribute="centerY" id="Yj5-mX-Tsp"/>
                                         <constraint firstItem="jfS-Hy-tzP" firstAttribute="leading" secondItem="0ou-I7-3tV" secondAttribute="trailing" constant="8" id="bLY-hn-gVJ"/>
@@ -1014,6 +1022,7 @@
                                         <constraint firstAttribute="bottom" secondItem="0ou-I7-3tV" secondAttribute="bottom" id="mGI-4w-dOt"/>
                                         <constraint firstItem="KE2-jL-Q1c" firstAttribute="top" secondItem="snR-5e-LB1" secondAttribute="top" id="nBC-4t-fox"/>
                                         <constraint firstItem="KE2-jL-Q1c" firstAttribute="leading" secondItem="Ed4-0J-YNM" secondAttribute="trailing" id="pj3-XK-kbH"/>
+                                        <constraint firstItem="mEf-B8-9ln" firstAttribute="top" secondItem="jfS-Hy-tzP" secondAttribute="bottom" constant="8" id="tHd-vl-eui"/>
                                         <constraint firstAttribute="trailing" secondItem="KE2-jL-Q1c" secondAttribute="trailing" id="z1I-vq-aLr"/>
                                     </constraints>
                                 </view>
