@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FriendsFeaturedGamesItem">
+            <connections>
+                <outlet property="itemImageBox" destination="kkk-0Z-JBp" id="WUb-xW-JnL"/>
+                <outlet property="itemImageView" destination="Wrt-Mo-8lp" id="yE4-Rr-WWa"/>
+                <outlet property="itemNameLabel" destination="LJi-sJ-ZPI" id="hl2-gz-X4D"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="104" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" cornerRadius="10" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="kkk-0Z-JBp">
+                    <rect key="frame" x="20" y="41" width="64" height="64"/>
+                    <view key="contentView" id="JK2-FD-nC3">
+                        <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wrt-Mo-8lp">
+                                <rect key="frame" x="12" y="12" width="40" height="40"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" id="Rca-nq-vvC"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Wrt-Mo-8lp" secondAttribute="trailing" constant="12" id="0Bm-BO-z1A"/>
+                            <constraint firstAttribute="bottom" secondItem="Wrt-Mo-8lp" secondAttribute="bottom" constant="12" id="4uM-5y-jJk"/>
+                            <constraint firstItem="Wrt-Mo-8lp" firstAttribute="leading" secondItem="JK2-FD-nC3" secondAttribute="leading" constant="12" id="KQV-fY-4SZ"/>
+                            <constraint firstItem="Wrt-Mo-8lp" firstAttribute="top" secondItem="JK2-FD-nC3" secondAttribute="top" constant="12" id="WXs-r7-d3t"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="b6f-bQ-S3U"/>
+                        <constraint firstAttribute="width" constant="64" id="fyP-8W-T6Q"/>
+                    </constraints>
+                    <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LJi-sJ-ZPI">
+                    <rect key="frame" x="2" y="20" width="100" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="ZO8-yc-zyY"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="PPS-5z-9Ap">
+                        <font key="font" size="13" name="SFUIText-Regular"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="kkk-0Z-JBp" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="29S-14-I3p"/>
+                <constraint firstAttribute="trailing" secondItem="LJi-sJ-ZPI" secondAttribute="trailing" constant="4" id="8VH-rU-gfa"/>
+                <constraint firstItem="LJi-sJ-ZPI" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="4" id="F1w-lJ-z6n"/>
+                <constraint firstItem="kkk-0Z-JBp" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="SJ2-f1-XFB"/>
+                <constraint firstAttribute="trailing" secondItem="LJi-sJ-ZPI" secondAttribute="trailing" constant="4" id="c8k-T2-6X5"/>
+                <constraint firstItem="LJi-sJ-ZPI" firstAttribute="top" secondItem="kkk-0Z-JBp" secondAttribute="bottom" constant="2" id="gGd-DZ-Stf"/>
+                <constraint firstItem="LJi-sJ-ZPI" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="4" id="oSv-pn-5La"/>
+                <constraint firstItem="LJi-sJ-ZPI" firstAttribute="top" secondItem="kkk-0Z-JBp" secondAttribute="bottom" constant="2" id="zFd-Fe-MdP"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>

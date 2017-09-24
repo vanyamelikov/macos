@@ -1,18 +1,21 @@
 //
-//  LibraryScreenshotItem.m
+//  FriendsFeaturedGamesItem.m
 //  XenioUIKit
 //
 //  Created by Сергей Иванов on 24.09.17.
 //  Copyright © 2017 mifsoftware. All rights reserved.
 //
 
-#import "LibraryScreenshotItem.h"
+#import "FriendsFeaturedGamesItem.h"
 
-@interface LibraryScreenshotItem ()
+@interface FriendsFeaturedGamesItem ()
 @property (strong) IBOutlet NSImageView *itemImageView;
+@property (strong) IBOutlet NSTextField *itemNameLabel;
+@property (strong) IBOutlet NSBox *itemImageBox;
+
 @end
 
-@implementation LibraryScreenshotItem
+@implementation FriendsFeaturedGamesItem
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,6 +26,7 @@
     [super setRepresentedObject:representedObject];
     if(representedObject != nil) {
         [self.itemImageView setImage:[NSImage imageNamed:[representedObject valueForKey:@"itemImage"]]];
+        [self.itemNameLabel setStringValue:[representedObject valueForKey:@"itemName"]];
     }
 }
 
