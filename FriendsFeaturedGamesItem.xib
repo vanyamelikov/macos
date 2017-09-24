@@ -50,7 +50,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="19" id="ZO8-yc-zyY"/>
                     </constraints>
-                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="PPS-5z-9Ap">
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" id="PPS-5z-9Ap">
                         <font key="font" size="13" name="SFUIText-Regular"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

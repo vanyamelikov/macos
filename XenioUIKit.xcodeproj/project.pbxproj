@@ -36,6 +36,8 @@
 		3E6FE7BD1F776D7900B98AD3 /* BuyGameScreenshotItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE7BB1F776D7900B98AD3 /* BuyGameScreenshotItem.xib */; };
 		3E6FE7C11F777EC400B98AD3 /* FriendsFeaturedGamesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE7BF1F777EC400B98AD3 /* FriendsFeaturedGamesItem.m */; };
 		3E6FE7C21F777EC400B98AD3 /* FriendsFeaturedGamesItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE7C01F777EC400B98AD3 /* FriendsFeaturedGamesItem.xib */; };
+		3E6FE7C41F77834300B98AD3 /* FriendsFeaturedGamesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE7C31F77834300B98AD3 /* FriendsFeaturedGamesView.xib */; };
+		3E6FE7C81F7783D300B98AD3 /* FriendsFeaturedGamesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE7C71F7783D300B98AD3 /* FriendsFeaturedGamesView.m */; };
 		3E72309D1F72EADE0050A70D /* CustomHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E72309C1F72EADE0050A70D /* CustomHeaderCell.m */; };
 		3E7230A11F7309FD0050A70D /* HeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7230A01F7309FD0050A70D /* HeaderCell.m */; };
 		3E7230AC1F7348C30050A70D /* MainStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7230AB1F7348C30050A70D /* MainStoreViewController.m */; };
@@ -210,6 +212,9 @@
 		3E6FE7BE1F777EC400B98AD3 /* FriendsFeaturedGamesItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsFeaturedGamesItem.h; sourceTree = "<group>"; };
 		3E6FE7BF1F777EC400B98AD3 /* FriendsFeaturedGamesItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsFeaturedGamesItem.m; sourceTree = "<group>"; };
 		3E6FE7C01F777EC400B98AD3 /* FriendsFeaturedGamesItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsFeaturedGamesItem.xib; sourceTree = "<group>"; };
+		3E6FE7C31F77834300B98AD3 /* FriendsFeaturedGamesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsFeaturedGamesView.xib; sourceTree = "<group>"; };
+		3E6FE7C61F7783D300B98AD3 /* FriendsFeaturedGamesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsFeaturedGamesView.h; sourceTree = "<group>"; };
+		3E6FE7C71F7783D300B98AD3 /* FriendsFeaturedGamesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsFeaturedGamesView.m; sourceTree = "<group>"; };
 		3E72309B1F72EADE0050A70D /* CustomHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeaderCell.h; sourceTree = "<group>"; };
 		3E72309C1F72EADE0050A70D /* CustomHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHeaderCell.m; sourceTree = "<group>"; };
 		3E72309F1F7309FD0050A70D /* HeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderCell.h; sourceTree = "<group>"; };
@@ -505,6 +510,15 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		3E6FE7C51F7783BB00B98AD3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3E6FE7C61F7783D300B98AD3 /* FriendsFeaturedGamesView.h */,
+				3E6FE7C71F7783D300B98AD3 /* FriendsFeaturedGamesView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		3E7230911F72D8860050A70D /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
@@ -563,6 +577,7 @@
 		3E7230A41F7346020050A70D /* Friends */ = {
 			isa = PBXGroup;
 			children = (
+				3E6FE7C51F7783BB00B98AD3 /* Classes */,
 				3E8876281F746CBE001B8374 /* Cells */,
 				3E7230DE1F7351820050A70D /* Friends.storyboard */,
 				3E88762F1F7471B6001B8374 /* FriendsChatRequestCell.xib */,
@@ -570,6 +585,7 @@
 				3E8876471F749B70001B8374 /* FriendsProfileContentViewCell.xib */,
 				3E8876511F74ABB2001B8374 /* FriendsRightListCell.xib */,
 				3E8876531F74ABCA001B8374 /* FriendsRightListNotificationCell.xib */,
+				3E6FE7C31F77834300B98AD3 /* FriendsFeaturedGamesView.xib */,
 			);
 			name = Friends;
 			sourceTree = "<group>";
@@ -1113,6 +1129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6FE7C41F77834300B98AD3 /* FriendsFeaturedGamesView.xib in Resources */,
 				3E8876561F74ABE0001B8374 /* StorePaymentInformationCell.xib in Resources */,
 				3EBAADD01F7595A700890AD1 /* StoreSideMenuCell.xib in Resources */,
 				3ECF3CCB1F689C3D005165E5 /* RoundButton.xib in Resources */,
@@ -1266,6 +1283,7 @@
 				3E6FE7BC1F776D7900B98AD3 /* BuyGameScreenshotItem.m in Sources */,
 				3E88765C1F74AF6D001B8374 /* FriendsRightListCell.m in Sources */,
 				3E8876041F741825001B8374 /* LibraryGamesServerListCell.m in Sources */,
+				3E6FE7C81F7783D300B98AD3 /* FriendsFeaturedGamesView.m in Sources */,
 				3E9C462D1F71F9DF00693AA1 /* TextFieldWithFriend.m in Sources */,
 				3E8876501F74A038001B8374 /* FriendsProfileContentViewCell.m in Sources */,
 				3E8876621F74B654001B8374 /* StorePaymentInformationCell.m in Sources */,
