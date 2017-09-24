@@ -26,6 +26,14 @@
 		3E6FE7A01F7745D300B98AD3 /* LibraryFriendsGames.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE79F1F7745D300B98AD3 /* LibraryFriendsGames.m */; };
 		3E6FE7A61F774A9B00B98AD3 /* LibraryFriendsGamesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE7A41F774A9B00B98AD3 /* LibraryFriendsGamesItem.m */; };
 		3E6FE7A71F774A9B00B98AD3 /* LibraryFriendsGamesItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE7A51F774A9B00B98AD3 /* LibraryFriendsGamesItem.xib */; };
+		3E6FE7AB1F775E9C00B98AD3 /* LibraryScreenshotItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE7A91F775E9C00B98AD3 /* LibraryScreenshotItem.m */; };
+		3E6FE7AC1F775E9C00B98AD3 /* LibraryScreenshotItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE7AA1F775E9C00B98AD3 /* LibraryScreenshotItem.xib */; };
+		3E6FE7AE1F77602800B98AD3 /* LibraryScreenshotsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE7AD1F77602800B98AD3 /* LibraryScreenshotsView.xib */; };
+		3E6FE7B11F77605800B98AD3 /* LibraryScreenshotsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE7B01F77605800B98AD3 /* LibraryScreenshotsView.m */; };
+		3E6FE7B51F776D2000B98AD3 /* BuyGameScreenshotsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE7B41F776D2000B98AD3 /* BuyGameScreenshotsView.m */; };
+		3E6FE7B71F776D3B00B98AD3 /* BuyGameScreenshotsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE7B61F776D3B00B98AD3 /* BuyGameScreenshotsView.xib */; };
+		3E6FE7BC1F776D7900B98AD3 /* BuyGameScreenshotItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE7BA1F776D7900B98AD3 /* BuyGameScreenshotItem.m */; };
+		3E6FE7BD1F776D7900B98AD3 /* BuyGameScreenshotItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE7BB1F776D7900B98AD3 /* BuyGameScreenshotItem.xib */; };
 		3E72309D1F72EADE0050A70D /* CustomHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E72309C1F72EADE0050A70D /* CustomHeaderCell.m */; };
 		3E7230A11F7309FD0050A70D /* HeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7230A01F7309FD0050A70D /* HeaderCell.m */; };
 		3E7230AC1F7348C30050A70D /* MainStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7230AB1F7348C30050A70D /* MainStoreViewController.m */; };
@@ -185,6 +193,18 @@
 		3E6FE7A31F774A9B00B98AD3 /* LibraryFriendsGamesItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryFriendsGamesItem.h; sourceTree = "<group>"; };
 		3E6FE7A41F774A9B00B98AD3 /* LibraryFriendsGamesItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryFriendsGamesItem.m; sourceTree = "<group>"; };
 		3E6FE7A51F774A9B00B98AD3 /* LibraryFriendsGamesItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryFriendsGamesItem.xib; sourceTree = "<group>"; };
+		3E6FE7A81F775E9C00B98AD3 /* LibraryScreenshotItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryScreenshotItem.h; sourceTree = "<group>"; };
+		3E6FE7A91F775E9C00B98AD3 /* LibraryScreenshotItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryScreenshotItem.m; sourceTree = "<group>"; };
+		3E6FE7AA1F775E9C00B98AD3 /* LibraryScreenshotItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryScreenshotItem.xib; sourceTree = "<group>"; };
+		3E6FE7AD1F77602800B98AD3 /* LibraryScreenshotsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryScreenshotsView.xib; sourceTree = "<group>"; };
+		3E6FE7AF1F77605800B98AD3 /* LibraryScreenshotsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryScreenshotsView.h; sourceTree = "<group>"; };
+		3E6FE7B01F77605800B98AD3 /* LibraryScreenshotsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryScreenshotsView.m; sourceTree = "<group>"; };
+		3E6FE7B31F776D2000B98AD3 /* BuyGameScreenshotsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyGameScreenshotsView.h; sourceTree = "<group>"; };
+		3E6FE7B41F776D2000B98AD3 /* BuyGameScreenshotsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyGameScreenshotsView.m; sourceTree = "<group>"; };
+		3E6FE7B61F776D3B00B98AD3 /* BuyGameScreenshotsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyGameScreenshotsView.xib; sourceTree = "<group>"; };
+		3E6FE7B91F776D7900B98AD3 /* BuyGameScreenshotItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyGameScreenshotItem.h; sourceTree = "<group>"; };
+		3E6FE7BA1F776D7900B98AD3 /* BuyGameScreenshotItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyGameScreenshotItem.m; sourceTree = "<group>"; };
+		3E6FE7BB1F776D7900B98AD3 /* BuyGameScreenshotItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyGameScreenshotItem.xib; sourceTree = "<group>"; };
 		3E72309B1F72EADE0050A70D /* CustomHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeaderCell.h; sourceTree = "<group>"; };
 		3E72309C1F72EADE0050A70D /* CustomHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHeaderCell.m; sourceTree = "<group>"; };
 		3E72309F1F7309FD0050A70D /* HeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderCell.h; sourceTree = "<group>"; };
@@ -459,6 +479,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3E6FE7B21F776B9600B98AD3 /* BuyGame */ = {
+			isa = PBXGroup;
+			children = (
+				3E6FE7B81F776D4E00B98AD3 /* Cells */,
+				3E6FE7B31F776D2000B98AD3 /* BuyGameScreenshotsView.h */,
+				3E6FE7B41F776D2000B98AD3 /* BuyGameScreenshotsView.m */,
+				3E6FE7B61F776D3B00B98AD3 /* BuyGameScreenshotsView.xib */,
+			);
+			name = BuyGame;
+			sourceTree = "<group>";
+		};
+		3E6FE7B81F776D4E00B98AD3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3E6FE7B91F776D7900B98AD3 /* BuyGameScreenshotItem.h */,
+				3E6FE7BA1F776D7900B98AD3 /* BuyGameScreenshotItem.m */,
+				3E6FE7BB1F776D7900B98AD3 /* BuyGameScreenshotItem.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		3E7230911F72D8860050A70D /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
@@ -485,6 +526,7 @@
 		3E7230A21F7345CA0050A70D /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				3E6FE7B21F776B9600B98AD3 /* BuyGame */,
 				3EBAADD11F7595DA00890AD1 /* StoreClasses */,
 				3E9C46041F7048DE00693AA1 /* Store.storyboard */,
 				3E7230AF1F734A070050A70D /* StoreSideMenu.xib */,
@@ -507,6 +549,7 @@
 				3E8876071F7418AA001B8374 /* LibraryGamesRightMenuView.xib */,
 				3E8876091F7418C0001B8374 /* LibraryGamesServersListView.xib */,
 				3E6FE79C1F77452700B98AD3 /* LibraryFriendsGames.xib */,
+				3E6FE7AD1F77602800B98AD3 /* LibraryScreenshotsView.xib */,
 				3E8875E61F73F849001B8374 /* Cells */,
 			);
 			name = Library;
@@ -593,6 +636,7 @@
 				3E8876051F741839001B8374 /* LibraryGamesServerListCell.xib */,
 				3EBAADCA1F75922700890AD1 /* LibraryGamesServerListHeaderCell.xib */,
 				3E6FE7A51F774A9B00B98AD3 /* LibraryFriendsGamesItem.xib */,
+				3E6FE7AA1F775E9C00B98AD3 /* LibraryScreenshotItem.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -614,6 +658,8 @@
 				3EBAADC81F75920300890AD1 /* LibraryGamesServerListHeaderCell.m */,
 				3E6FE7A31F774A9B00B98AD3 /* LibraryFriendsGamesItem.h */,
 				3E6FE7A41F774A9B00B98AD3 /* LibraryFriendsGamesItem.m */,
+				3E6FE7A81F775E9C00B98AD3 /* LibraryScreenshotItem.h */,
+				3E6FE7A91F775E9C00B98AD3 /* LibraryScreenshotItem.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -735,6 +781,8 @@
 				3E3E41FF1F757D0D009698FD /* LibraryGamesServersListView.m */,
 				3E6FE79E1F7745D300B98AD3 /* LibraryFriendsGames.h */,
 				3E6FE79F1F7745D300B98AD3 /* LibraryFriendsGames.m */,
+				3E6FE7AF1F77605800B98AD3 /* LibraryScreenshotsView.h */,
+				3E6FE7B01F77605800B98AD3 /* LibraryScreenshotsView.m */,
 			);
 			name = LibraryClasses;
 			sourceTree = "<group>";
@@ -1066,6 +1114,7 @@
 				3E88760F1F741DE7001B8374 /* LibrarySideMenuHeaderCell.xib in Resources */,
 				3E8876401F749810001B8374 /* PlayerStatusView.xib in Resources */,
 				3E7230C61F734C1D0050A70D /* ReceiveView.xib in Resources */,
+				3E6FE7BD1F776D7900B98AD3 /* BuyGameScreenshotItem.xib in Resources */,
 				3E8876341F748D4A001B8374 /* GameTagView.xib in Resources */,
 				3E8875F71F74085A001B8374 /* LibraryGamesRightMenuCell.xib in Resources */,
 				3E1FF8E61F6AC4F700117F16 /* CustomTabbar.xib in Resources */,
@@ -1077,6 +1126,7 @@
 				3E88760A1F7418C0001B8374 /* LibraryGamesServersListView.xib in Resources */,
 				3E7230B61F734B020050A70D /* Library.storyboard in Resources */,
 				3E88761F1F7434E7001B8374 /* StoreDownloadsCell.xib in Resources */,
+				3E6FE7B71F776D3B00B98AD3 /* BuyGameScreenshotsView.xib in Resources */,
 				3E7230B01F734A070050A70D /* StoreSideMenu.xib in Resources */,
 				3EBAADCB1F75922700890AD1 /* LibraryGamesServerListHeaderCell.xib in Resources */,
 				3ECF3CF21F6979A2005165E5 /* SendMessageButton.xib in Resources */,
@@ -1093,7 +1143,9 @@
 				3ECF3CDC1F696D54005165E5 /* CancelButton.xib in Resources */,
 				3E8876541F74ABCA001B8374 /* FriendsRightListNotificationCell.xib in Resources */,
 				3E7230C01F734BDD0050A70D /* Wallet.storyboard in Resources */,
+				3E6FE7AE1F77602800B98AD3 /* LibraryScreenshotsView.xib in Resources */,
 				3EBAADF11F75F7ED00890AD1 /* ArrowButton.xib in Resources */,
+				3E6FE7AC1F775E9C00B98AD3 /* LibraryScreenshotItem.xib in Resources */,
 				3ECF3CB71F687BE7005165E5 /* GiftButton.xib in Resources */,
 				3E7230E11F7351EA0050A70D /* Settings.storyboard in Resources */,
 				3E7230C21F734C020050A70D /* WalletSideMenu.xib in Resources */,
@@ -1184,6 +1236,7 @@
 				3ECF3CFA1F697BBD005165E5 /* RemoveButton.m in Sources */,
 				3ECF3CC41F6886A6005165E5 /* PreOrderButton.m in Sources */,
 				3ECF3CBF1F68821E005165E5 /* SettingsButton.m in Sources */,
+				3E6FE7B11F77605800B98AD3 /* LibraryScreenshotsView.m in Sources */,
 				3E1FF8E91F6AD86400117F16 /* CustomTabbar.m in Sources */,
 				3E25FB271F66EBCA000423E9 /* ViewController.m in Sources */,
 				3E7230FC1F7357A60050A70D /* SettingsContentNavigationViewController.m in Sources */,
@@ -1201,12 +1254,14 @@
 				3EBAADCE1F75958A00890AD1 /* StoreSideMenuCell.m in Sources */,
 				3E7230CE1F734E450050A70D /* StoreContentViewController.m in Sources */,
 				3E7230A11F7309FD0050A70D /* HeaderCell.m in Sources */,
+				3E6FE7BC1F776D7900B98AD3 /* BuyGameScreenshotItem.m in Sources */,
 				3E88765C1F74AF6D001B8374 /* FriendsRightListCell.m in Sources */,
 				3E8876041F741825001B8374 /* LibraryGamesServerListCell.m in Sources */,
 				3E9C462D1F71F9DF00693AA1 /* TextFieldWithFriend.m in Sources */,
 				3E8876501F74A038001B8374 /* FriendsProfileContentViewCell.m in Sources */,
 				3E8876621F74B654001B8374 /* StorePaymentInformationCell.m in Sources */,
 				3ECF3CE61F697053005165E5 /* CancelButton.m in Sources */,
+				3E6FE7B51F776D2000B98AD3 /* BuyGameScreenshotsView.m in Sources */,
 				3E7230F91F7357810050A70D /* SettingsSideListViewController.m in Sources */,
 				3ECF3CC91F689907005165E5 /* SignInButton.m in Sources */,
 				3EBAADF71F76093C00890AD1 /* WalletHistoryView.m in Sources */,
@@ -1243,6 +1298,7 @@
 				3E6FE7A01F7745D300B98AD3 /* LibraryFriendsGames.m in Sources */,
 				3EBAADE41F75A4B800890AD1 /* StoreGamesViewModel.m in Sources */,
 				3E8876661F754561001B8374 /* LibrarySideMenu.m in Sources */,
+				3E6FE7AB1F775E9C00B98AD3 /* LibraryScreenshotItem.m in Sources */,
 				3E7230F61F7356430050A70D /* FriendsContentViewController.m in Sources */,
 				3E88761D1F7432C0001B8374 /* WalletHistoryCell.m in Sources */,
 				3E88764D1F749EF7001B8374 /* GameTagImageView.m in Sources */,

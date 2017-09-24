@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BuyGameScreenshotsView">
+            <connections>
+                <outlet property="collectionView" destination="v4u-Y3-Tft" id="zbe-Ac-gmt"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="HhM-EG-xTE">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <view key="contentView" id="u8f-gM-w2q">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" verticalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="L7s-9a-I4R">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                                <clipView key="contentView" drawsBackground="NO" id="TwQ-pt-p7W">
+                                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView maxNumberOfRows="1" id="v4u-Y3-Tft">
+                                            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="primaryBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </collectionView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="CMl-6q-mc1">
+                                    <rect key="frame" x="-100" y="-100" width="233" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="UiT-aI-qOr">
+                                    <rect key="frame" x="-100" y="-100" width="15" height="143"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="L7s-9a-I4R" secondAttribute="trailing" id="0ob-9Z-PfY"/>
+                            <constraint firstItem="L7s-9a-I4R" firstAttribute="leading" secondItem="u8f-gM-w2q" secondAttribute="leading" id="KRf-O1-LgG"/>
+                            <constraint firstItem="L7s-9a-I4R" firstAttribute="top" secondItem="u8f-gM-w2q" secondAttribute="top" id="SJ1-k0-6ox"/>
+                            <constraint firstAttribute="bottom" secondItem="L7s-9a-I4R" secondAttribute="bottom" id="dt6-TB-Ewv"/>
+                        </constraints>
+                    </view>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HhM-EG-xTE" secondAttribute="trailing" id="85C-mT-Wpy"/>
+                <constraint firstItem="HhM-EG-xTE" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="8j5-SU-a1u"/>
+                <constraint firstItem="HhM-EG-xTE" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="SQs-oS-SMJ"/>
+                <constraint firstAttribute="bottom" secondItem="HhM-EG-xTE" secondAttribute="bottom" id="qjt-ud-yaI"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>
