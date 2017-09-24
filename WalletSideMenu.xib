@@ -50,11 +50,11 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <customView identifier="StoreSideMenuHeaderCell" id="IuX-uc-HwA" customClass="LibrarySideMenuHeaderCell">
+                                                        <customView identifier="LibraryGamesRightMenuHeaderCell" id="IuX-uc-HwA" customClass="LibraryGamesRightMenuHeaderCell">
                                                             <rect key="frame" x="1" y="1" width="405" height="45"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         </customView>
-                                                        <customView identifier="StoreSideMenuCell" focusRingType="none" id="FFO-Hu-HJ3">
+                                                        <customView identifier="LibrarySideMenuCell" focusRingType="none" id="FFO-Hu-HJ3" customClass="LibrarySideMenuCell">
                                                             <rect key="frame" x="1" y="48" width="405" height="29"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         </customView>

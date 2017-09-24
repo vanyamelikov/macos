@@ -12,5 +12,4 @@
 
 @property (strong) IBOutlet NSTableView *tableView;
 
-
 @end

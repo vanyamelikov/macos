@@ -759,6 +759,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="2048" height="1152"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nbv-yx-TBD">
+                                <rect key="frame" x="-3" y="-3" width="2054" height="1158"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" imageFrameStyle="grayBezel" image="nfs" id="eud-Wv-6Gd"/>
+                            </imageView>
                             <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="uUA-Kf-anp">
                                 <rect key="frame" x="0.0" y="0.0" width="2048" height="1152"/>
                                 <view key="contentView" id="frJ-li-oAE">
@@ -883,7 +887,7 @@
                                         <constraint firstItem="0op-hs-dh6" firstAttribute="top" secondItem="frJ-li-oAE" secondAttribute="top" constant="16" id="tr4-QB-rkB"/>
                                     </constraints>
                                 </view>
-                                <color key="fillColor" red="0.094117647060000004" green="0.1058823529" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="fillColor" red="0.094117647060000004" green="0.1058823529" blue="0.16078431369999999" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                             </box>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="3GW-p8-0iQ" customClass="StoreSideMenu">
                                 <rect key="frame" x="0.0" y="0.0" width="255" height="1152"/>
@@ -893,16 +897,20 @@
                             </customView>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Nbv-yx-TBD" secondAttribute="bottom" id="7Np-4K-HdB"/>
                             <constraint firstAttribute="bottom" secondItem="3GW-p8-0iQ" secondAttribute="bottom" id="ACa-c4-gQn"/>
                             <constraint firstItem="DkV-M4-CPc" firstAttribute="leading" secondItem="3GW-p8-0iQ" secondAttribute="trailing" constant="26" id="Izj-Bq-4mG"/>
                             <constraint firstAttribute="trailing" secondItem="uUA-Kf-anp" secondAttribute="trailing" id="Mh0-ZX-oGR"/>
                             <constraint firstItem="ZD2-PX-BCQ" firstAttribute="leading" secondItem="3GW-p8-0iQ" secondAttribute="trailing" constant="26" id="Ppg-sD-i62"/>
+                            <constraint firstAttribute="trailing" secondItem="Nbv-yx-TBD" secondAttribute="trailing" id="Rsy-I1-h2R"/>
                             <constraint firstItem="uUA-Kf-anp" firstAttribute="top" secondItem="DCb-Xd-lLe" secondAttribute="top" id="UU5-an-R65"/>
                             <constraint firstItem="uUA-Kf-anp" firstAttribute="leading" secondItem="DCb-Xd-lLe" secondAttribute="leading" id="VzB-t5-phV"/>
                             <constraint firstItem="k4L-pB-rAm" firstAttribute="leading" secondItem="3GW-p8-0iQ" secondAttribute="trailing" constant="26" id="Y6q-Il-YVl"/>
                             <constraint firstItem="3GW-p8-0iQ" firstAttribute="top" secondItem="DCb-Xd-lLe" secondAttribute="top" id="YPX-wX-gpy"/>
                             <constraint firstAttribute="bottom" secondItem="uUA-Kf-anp" secondAttribute="bottom" id="ldP-Jd-wGg"/>
                             <constraint firstItem="3GW-p8-0iQ" firstAttribute="leading" secondItem="DCb-Xd-lLe" secondAttribute="leading" id="myp-Hx-bc4"/>
+                            <constraint firstItem="Nbv-yx-TBD" firstAttribute="leading" secondItem="DCb-Xd-lLe" secondAttribute="leading" id="odh-qv-a8r"/>
+                            <constraint firstItem="Nbv-yx-TBD" firstAttribute="top" secondItem="DCb-Xd-lLe" secondAttribute="top" id="q4H-VA-rSo"/>
                             <constraint firstItem="hfd-yn-DXL" firstAttribute="leading" secondItem="3GW-p8-0iQ" secondAttribute="trailing" constant="26" id="vYD-Ry-Yof"/>
                         </constraints>
                     </view>
@@ -1116,5 +1124,6 @@
         <image name="ic_list" width="18" height="11"/>
         <image name="ic_zoom" width="14" height="14"/>
         <image name="lightWideLayer" width="114" height="35"/>
+        <image name="nfs" width="2048" height="1152"/>
     </resources>
 </document>
