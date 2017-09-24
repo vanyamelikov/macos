@@ -38,6 +38,8 @@
 		3E6FE7C21F777EC400B98AD3 /* FriendsFeaturedGamesItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE7C01F777EC400B98AD3 /* FriendsFeaturedGamesItem.xib */; };
 		3E6FE7C41F77834300B98AD3 /* FriendsFeaturedGamesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE7C31F77834300B98AD3 /* FriendsFeaturedGamesView.xib */; };
 		3E6FE7C81F7783D300B98AD3 /* FriendsFeaturedGamesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE7C71F7783D300B98AD3 /* FriendsFeaturedGamesView.m */; };
+		3E6FE7CC1F77909700B98AD3 /* WalletChooseFriendItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE7CA1F77909700B98AD3 /* WalletChooseFriendItem.m */; };
+		3E6FE7CD1F77909700B98AD3 /* WalletChooseFriendItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE7CB1F77909700B98AD3 /* WalletChooseFriendItem.xib */; };
 		3E72309D1F72EADE0050A70D /* CustomHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E72309C1F72EADE0050A70D /* CustomHeaderCell.m */; };
 		3E7230A11F7309FD0050A70D /* HeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7230A01F7309FD0050A70D /* HeaderCell.m */; };
 		3E7230AC1F7348C30050A70D /* MainStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7230AB1F7348C30050A70D /* MainStoreViewController.m */; };
@@ -215,6 +217,9 @@
 		3E6FE7C31F77834300B98AD3 /* FriendsFeaturedGamesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsFeaturedGamesView.xib; sourceTree = "<group>"; };
 		3E6FE7C61F7783D300B98AD3 /* FriendsFeaturedGamesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsFeaturedGamesView.h; sourceTree = "<group>"; };
 		3E6FE7C71F7783D300B98AD3 /* FriendsFeaturedGamesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsFeaturedGamesView.m; sourceTree = "<group>"; };
+		3E6FE7C91F77909700B98AD3 /* WalletChooseFriendItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletChooseFriendItem.h; sourceTree = "<group>"; };
+		3E6FE7CA1F77909700B98AD3 /* WalletChooseFriendItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletChooseFriendItem.m; sourceTree = "<group>"; };
+		3E6FE7CB1F77909700B98AD3 /* WalletChooseFriendItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletChooseFriendItem.xib; sourceTree = "<group>"; };
 		3E72309B1F72EADE0050A70D /* CustomHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeaderCell.h; sourceTree = "<group>"; };
 		3E72309C1F72EADE0050A70D /* CustomHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHeaderCell.m; sourceTree = "<group>"; };
 		3E72309F1F7309FD0050A70D /* HeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderCell.h; sourceTree = "<group>"; };
@@ -720,6 +725,7 @@
 			children = (
 				3E8876161F7426BD001B8374 /* Classes */,
 				3E8876191F7428DA001B8374 /* WalletHistoryCell.xib */,
+				3E6FE7CB1F77909700B98AD3 /* WalletChooseFriendItem.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -727,6 +733,8 @@
 		3E8876161F7426BD001B8374 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3E6FE7C91F77909700B98AD3 /* WalletChooseFriendItem.h */,
+				3E6FE7CA1F77909700B98AD3 /* WalletChooseFriendItem.m */,
 				3E88761B1F7432C0001B8374 /* WalletHistoryCell.h */,
 				3E88761C1F7432C0001B8374 /* WalletHistoryCell.m */,
 			);
@@ -1199,6 +1207,7 @@
 				3E7230B81F734B440050A70D /* LibraryEmptySideMenu.xib in Resources */,
 				3E36C8051F68158000537BCA /* LLIButton.xib in Resources */,
 				3ECF3CD81F68A729005165E5 /* AddGameButton.xib in Resources */,
+				3E6FE7CD1F77909700B98AD3 /* WalletChooseFriendItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1333,6 +1342,7 @@
 				3E8876121F741F70001B8374 /* LibrarySideMenuHeaderCell.m in Sources */,
 				3E8875FA1F740CBC001B8374 /* LibraryGamesRightMenuCell.m in Sources */,
 				3ECF3CF71F697B66005165E5 /* SendMessageButton.m in Sources */,
+				3E6FE7CC1F77909700B98AD3 /* WalletChooseFriendItem.m in Sources */,
 				3ECF3CE81F697054005165E5 /* AddGameButton.m in Sources */,
 				3E88762E1F7471A5001B8374 /* FriendsChatRequestCell.m in Sources */,
 				3E88765F1F74B132001B8374 /* FriendsRightListNotificationCell.m in Sources */,

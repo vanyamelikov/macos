@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WalletChooseFriendItem">
+            <connections>
+                <outlet property="itemImageView" destination="BSf-RB-mNq" id="bF0-et-H1o"/>
+                <outlet property="itemSelectedIndicator" destination="1QN-3R-Y1p" id="ztv-jr-daD"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="66" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="EJx-Ma-zR6">
+                    <rect key="frame" x="0.0" y="0.0" width="66" height="82"/>
+                    <view key="contentView" id="gpk-r1-fuR">
+                        <rect key="frame" x="0.0" y="0.0" width="66" height="82"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BSf-RB-mNq">
+                                <rect key="frame" x="4" y="16" width="58" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="lZ2-sC-ys8"/>
+                                    <constraint firstAttribute="height" constant="58" id="x98-AG-ukr"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="Crysis" id="BpF-7I-xiN"/>
+                            </imageView>
+                            <box boxType="custom" borderWidth="0.0" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="1QN-3R-Y1p">
+                                <rect key="frame" x="29" y="4" width="8" height="8"/>
+                                <view key="contentView" id="fIE-pF-ICu">
+                                    <rect key="frame" x="0.0" y="0.0" width="8" height="8"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="r3k-wu-6Zb"/>
+                                    <constraint firstAttribute="height" constant="8" id="rd7-jR-8ze"/>
+                                </constraints>
+                                <color key="fillColor" red="0.40000000000000002" green="0.66666666669999997" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="BSf-RB-mNq" firstAttribute="centerX" secondItem="gpk-r1-fuR" secondAttribute="centerX" id="ABT-YK-jDN"/>
+                            <constraint firstItem="1QN-3R-Y1p" firstAttribute="centerX" secondItem="gpk-r1-fuR" secondAttribute="centerX" id="La5-3r-fsR"/>
+                            <constraint firstItem="BSf-RB-mNq" firstAttribute="top" secondItem="gpk-r1-fuR" secondAttribute="top" constant="8" id="QSC-cS-PJf"/>
+                            <constraint firstItem="1QN-3R-Y1p" firstAttribute="top" secondItem="BSf-RB-mNq" secondAttribute="bottom" constant="4" id="ZZu-HG-Rog"/>
+                        </constraints>
+                    </view>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="EJx-Ma-zR6" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="CoK-JU-6yh"/>
+                <constraint firstAttribute="bottom" secondItem="EJx-Ma-zR6" secondAttribute="bottom" id="EOA-Wr-4Se"/>
+                <constraint firstAttribute="trailing" secondItem="EJx-Ma-zR6" secondAttribute="trailing" id="TK4-rN-elK"/>
+                <constraint firstItem="EJx-Ma-zR6" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="hOe-Nv-i08"/>
+            </constraints>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Crysis" width="241" height="109"/>
+    </resources>
+</document>
