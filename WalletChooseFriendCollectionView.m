@@ -32,22 +32,21 @@
 }
 
 -(void)initView {
-    self.collectionView.delegate = self;
     self.collectionViewItem = [WalletChooseFriendItem new];
-    
-    self.contents = @[@{@"itemImage":@"img_cf_a1"},
-                      @{@"itemImage":@"img_cf_a1"},
-                      @{@"itemImage":@"img_cf_a1"},
-                      @{@"itemImage":@"img_cf_a1"},
-                      @{@"itemImage":@"img_cf_a1"},
-                      @{@"itemImage":@"img_cf_a1"},
-                      @{@"itemImage":@"img_cf_a1"},
-                      @{@"itemImage":@"img_cf_a1"},
-                      @{@"itemImage":@"img_cf_a1"}];
+    self.contents = @[@{@"itemImage":@"img_cf_a1", @"itemTag":@"0"},
+                      @{@"itemImage":@"img_cf_a1", @"itemTag":@"1"},
+                      @{@"itemImage":@"img_cf_a1", @"itemTag":@"2"},
+                      @{@"itemImage":@"img_cf_a1", @"itemTag":@"3"},
+                      @{@"itemImage":@"img_cf_a1", @"itemTag":@"4"},
+                      @{@"itemImage":@"img_cf_a1", @"itemTag":@"5"},
+                      @{@"itemImage":@"img_cf_a1", @"itemTag":@"6"},
+                      @{@"itemImage":@"img_cf_a1", @"itemTag":@"7"},
+                      @{@"itemImage":@"img_cf_a1", @"itemTag":@"8"}];
     [self.collectionView setMaxNumberOfRows:1];
     [self.collectionView setItemPrototype:self.collectionViewItem];
     
     [self.collectionView setContent:self.contents];
+    self.collectionView.selectable = YES;
 }
 
 

@@ -10,16 +10,12 @@
 
 @interface WalletChooseFriendItem ()
 
-@property (strong) IBOutlet NSImageView *itemImageView;
-@property (strong) IBOutlet NSBox *itemSelectedIndicator;
-
 @end
 
 @implementation WalletChooseFriendItem
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
 }
 
 -(void)setRepresentedObject:(id)representedObject {
@@ -29,7 +25,17 @@
         [self.itemImageView setWantsLayer: YES];
         [self.itemImageView.layer setCornerRadius:self.itemImageView.frame.size.height/2];
         self.itemImageView.layer.masksToBounds = YES;
+        self.viewTag = [[representedObject valueForKey:@"itemTag"] integerValue];
+        [self.itemSelectedIndicator setHidden:YES];
     }
+}
+
+-(void)setSelected:(BOOL)selected {
+    [super setSelected:selected];
+    if(selected)
+        self.itemSelectedIndicator.hidden = NO;
+    else
+        self.itemSelectedIndicator.hidden = YES;
 }
 
 @end

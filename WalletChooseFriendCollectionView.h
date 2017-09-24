@@ -9,7 +9,7 @@
 #import "NSView+INSNibLoading.h"
 #import "WalletChooseFriendItem.h"
 
-@interface WalletChooseFriendCollectionView : INSNibLoadedView <NSCollectionViewDelegate>
+@interface WalletChooseFriendCollectionView : INSNibLoadedView
 
 @property (strong) IBOutlet NSCollectionView *collectionView;
 @property (strong) NSArray *contents;
