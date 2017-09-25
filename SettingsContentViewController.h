@@ -10,4 +10,6 @@
 
 @interface SettingsContentViewController : NSViewController
 
+@property (strong) IBOutlet NSTextField *largeTextField;
+
 @end

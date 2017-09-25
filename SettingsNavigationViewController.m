@@ -21,9 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Settings" bundle:nil];
-    SettingsViewController *mainStoreVC = (SettingsViewController *)[sb instantiateControllerWithIdentifier:@"SettingsNavigationController"];
+    SettingsViewController *mainSettingsVC = (SettingsViewController *)[sb instantiateControllerWithIdentifier:@"SettingsNavigationController"];
     _navigationController = [[BFNavigationController alloc] initWithFrame:NSMakeRect(0, 0, self.view.frame.size.width, self.view.frame.size.height)
-                                                       rootViewController:mainStoreVC];
+                                                       rootViewController:mainSettingsVC];
     
     [self.view addSubview:_navigationController.view];
 }

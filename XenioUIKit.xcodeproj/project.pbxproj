@@ -599,10 +599,9 @@
 		3E558BCC1F796E0B00542B7B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				3E558BD41F796F5800542B7B /* SettingsNavigationListCell.h */,
-				3E558BD51F796F5800542B7B /* SettingsNavigationListCell.m */,
-				3E558BD71F796F6600542B7B /* SettingsNavigationListHeaderCell.h */,
-				3E558BD81F796F6600542B7B /* SettingsNavigationListHeaderCell.m */,
+				3E558BD01F796E7B00542B7B /* SettingsSideListCell.xib */,
+				3E558BCE1F796E6200542B7B /* SettingsNavigationListCell.xib */,
+				3E558BD21F796ED800542B7B /* SettingsNavigationListHeaderCell.xib */,
 				3E558BCD1F796E3500542B7B /* Classes */,
 			);
 			name = Cells;
@@ -611,20 +610,21 @@
 		3E558BCD1F796E3500542B7B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3E558BD01F796E7B00542B7B /* SettingsSideListCell.xib */,
-				3E558BCE1F796E6200542B7B /* SettingsNavigationListCell.xib */,
-				3E558BD21F796ED800542B7B /* SettingsNavigationListHeaderCell.xib */,
+				3E558BD41F796F5800542B7B /* SettingsNavigationListCell.h */,
+				3E558BD51F796F5800542B7B /* SettingsNavigationListCell.m */,
+				3E558BD71F796F6600542B7B /* SettingsNavigationListHeaderCell.h */,
+				3E558BD81F796F6600542B7B /* SettingsNavigationListHeaderCell.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
 		};
-		3E558BDA1F79701400542B7B /* WalletClasses */ = {
+		3E558BDA1F79701400542B7B /* SettingsClasses */ = {
 			isa = PBXGroup;
 			children = (
 				3E558BDB1F79703200542B7B /* SettingsNavigationListView.h */,
 				3E558BDC1F79703200542B7B /* SettingsNavigationListView.m */,
 			);
-			name = WalletClasses;
+			name = SettingsClasses;
 			sourceTree = "<group>";
 		};
 		3E558BDE1F7970A900542B7B /* Settings */ = {
@@ -699,8 +699,8 @@
 				3E7230AF1F734A070050A70D /* StoreSideMenu.xib */,
 				3E7230B31F734ABB0050A70D /* StoreGamesView.xib */,
 				3EBAADE81F75BD6D00890AD1 /* StoreDownloadsView.xib */,
-				3E8876131F7423F0001B8374 /* Cells */,
 				3E6FE7D81F77D41300B98AD3 /* StoreGamesGridView.xib */,
+				3E8876131F7423F0001B8374 /* Cells */,
 			);
 			name = Store;
 			sourceTree = "<group>";
@@ -741,7 +741,7 @@
 		3E7230A51F7346260050A70D /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				3E558BDA1F79701400542B7B /* WalletClasses */,
+				3E558BDA1F79701400542B7B /* SettingsClasses */,
 				3E7230E01F7351EA0050A70D /* Settings.storyboard */,
 				3E558BC81F796D3400542B7B /* SettingsNavigationListView.xib */,
 				3E558BCA1F796D8E00542B7B /* SettingsSideListView.xib */,

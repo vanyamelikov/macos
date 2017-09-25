@@ -109,7 +109,7 @@
 -(CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row {
     SettingsNavigationListModel *model = [dataSourceArray objectAtIndex:row];
     if(model.isHeader)
-        return 60;
+        return 40;
     else
         return 29;
 }

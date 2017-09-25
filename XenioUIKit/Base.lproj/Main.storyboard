@@ -776,19 +776,6 @@
                                 <view key="contentView" id="snR-5e-LB1">
                                     <rect key="frame" x="0.0" y="0.0" width="1742" height="929"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="0ou-I7-3tV" customClass="LibrarySideMenu">
-                                            <rect key="frame" x="0.0" y="0.0" width="255" height="929"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="255" id="gZn-6g-bKk"/>
-                                            </constraints>
-                                        </customView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="0ou-I7-3tV" firstAttribute="top" secondItem="snR-5e-LB1" secondAttribute="top" id="CIi-U0-5jg"/>
-                                        <constraint firstItem="0ou-I7-3tV" firstAttribute="leading" secondItem="snR-5e-LB1" secondAttribute="leading" id="l04-fI-nsO"/>
-                                        <constraint firstAttribute="bottom" secondItem="0ou-I7-3tV" secondAttribute="bottom" id="mGI-4w-dOt"/>
-                                    </constraints>
                                 </view>
                                 <color key="fillColor" red="0.094117647060000004" green="0.1058823529" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </box>
@@ -805,10 +792,10 @@
             </objects>
             <point key="canvasLocation" x="2916" y="2562.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings Navigation View Controller-->
         <scene sceneID="rJp-Nw-a7k">
             <objects>
-                <viewController storyboardIdentifier="ViewController5" id="S71-Fn-JVf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController5" id="S71-Fn-JVf" customClass="SettingsNavigationViewController" sceneMemberID="viewController">
                     <view key="view" id="yVg-Od-WB0">
                         <rect key="frame" x="0.0" y="0.0" width="1742" height="1152"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -829,17 +816,6 @@
                                 <view key="contentView" id="aJn-oG-IAt">
                                     <rect key="frame" x="0.0" y="0.0" width="1742" height="1152"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="g2Q-hB-YWR" customClass="StoreDownloadsView">
-                                            <rect key="frame" x="19" y="107" width="1723" height="924"/>
-                                        </customView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="g2Q-hB-YWR" firstAttribute="leading" secondItem="aJn-oG-IAt" secondAttribute="leading" constant="19" id="HtZ-mE-U51"/>
-                                        <constraint firstAttribute="bottom" secondItem="g2Q-hB-YWR" secondAttribute="bottom" constant="107" id="iuc-AM-sza"/>
-                                        <constraint firstItem="g2Q-hB-YWR" firstAttribute="top" secondItem="aJn-oG-IAt" secondAttribute="top" constant="121" id="qSV-lL-lXD"/>
-                                        <constraint firstAttribute="trailing" secondItem="g2Q-hB-YWR" secondAttribute="trailing" id="w3Q-0e-jTE"/>
-                                    </constraints>
                                 </view>
                                 <color key="fillColor" red="0.094117647060000004" green="0.1058823529" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </box>
@@ -865,22 +841,6 @@
                     <view key="view" id="l2z-zg-PU8">
                         <rect key="frame" x="0.0" y="0.0" width="2048" height="929"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="n0H-CR-N7K">
-                                <rect key="frame" x="0.0" y="0.0" width="2048" height="929"/>
-                                <view key="contentView" id="GGT-w5-6R6">
-                                    <rect key="frame" x="0.0" y="0.0" width="2048" height="929"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <color key="fillColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
-                            </box>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="n0H-CR-N7K" firstAttribute="leading" secondItem="l2z-zg-PU8" secondAttribute="leading" id="5JQ-y2-Q1g"/>
-                            <constraint firstAttribute="bottom" secondItem="n0H-CR-N7K" secondAttribute="bottom" id="9t9-DL-jw0"/>
-                            <constraint firstAttribute="trailing" secondItem="n0H-CR-N7K" secondAttribute="trailing" id="dcr-p4-Zko"/>
-                            <constraint firstItem="n0H-CR-N7K" firstAttribute="top" secondItem="l2z-zg-PU8" secondAttribute="top" id="vsc-ol-uPx"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="SOD-CG-fQW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

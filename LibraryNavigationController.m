@@ -21,10 +21,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Library" bundle:nil];
-    LibraryViewController *mainStoreVC = (LibraryViewController *)[sb instantiateControllerWithIdentifier:@"LibraryNavigationViewController"];
+    LibraryViewController *mainLibraryVC = (LibraryViewController *)[sb instantiateControllerWithIdentifier:@"LibraryNavigationViewController"];
     
     _navigationController = [[BFNavigationController alloc] initWithFrame:NSMakeRect(0, 0, self.view.frame.size.width, self.view.frame.size.height)
-                                                       rootViewController:mainStoreVC];
+                                                       rootViewController:mainLibraryVC];
     
     [self.view addSubview:_navigationController.view];
 }
