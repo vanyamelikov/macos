@@ -72,36 +72,56 @@
             <objects>
                 <viewController id="dJD-SN-XQd" customClass="WalletContentViewController" sceneMemberID="viewController">
                     <view key="view" id="cH2-q1-xo0">
-                        <rect key="frame" x="0.0" y="0.0" width="2605" height="1152"/>
+                        <rect key="frame" x="0.0" y="0.0" width="2605" height="1272"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Xds-2D-fWR">
-                                <rect key="frame" x="0.0" y="0.0" width="2605" height="1152"/>
-                                <view key="contentView" id="pez-Sv-40u">
-                                    <rect key="frame" x="0.0" y="0.0" width="2605" height="1152"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <color key="fillColor" red="0.094117647060000004" green="0.1058823529" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </box>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="1KH-eR-jX2">
-                                <rect key="frame" x="943" y="0.0" width="720" height="932"/>
+                                <rect key="frame" x="0.0" y="0.0" width="2605" height="1052"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="GVw-Hb-Rya">
-                                        <rect key="frame" x="221" y="897" width="278" height="35"/>
+                                        <rect key="frame" x="1164" y="1017" width="278" height="35"/>
+                                        <subviews>
+                                            <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="ywX-9p-Bpt">
+                                                <rect key="frame" x="243" y="0.0" width="35" height="35"/>
+                                                <view key="contentView" id="7fB-jz-xqM">
+                                                    <rect key="frame" x="1" y="1" width="33" height="33"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h3G-de-L82">
+                                                            <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
+                                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" id="FsR-Aa-uiW"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="h3G-de-L82" secondAttribute="bottom" id="7L6-xl-oDS"/>
+                                                        <constraint firstAttribute="trailing" secondItem="h3G-de-L82" secondAttribute="trailing" id="eUk-h4-Nlq"/>
+                                                        <constraint firstItem="h3G-de-L82" firstAttribute="top" secondItem="7fB-jz-xqM" secondAttribute="top" id="fku-XA-c8O"/>
+                                                        <constraint firstItem="h3G-de-L82" firstAttribute="leading" secondItem="7fB-jz-xqM" secondAttribute="leading" id="gkn-0X-Qm4"/>
+                                                    </constraints>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="dyh-2W-Hcj"/>
+                                                </constraints>
+                                                <color key="borderColor" red="0.46666666670000001" green="0.56078431370000004" blue="0.60784313729999995" alpha="0.5" colorSpace="calibratedRGB"/>
+                                            </box>
+                                        </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ywX-9p-Bpt" secondAttribute="trailing" id="38U-vv-CTl"/>
+                                            <constraint firstAttribute="bottom" secondItem="ywX-9p-Bpt" secondAttribute="bottom" id="TU0-eY-wVT"/>
                                             <constraint firstAttribute="width" constant="278" id="bQQ-iq-yqi"/>
+                                            <constraint firstItem="ywX-9p-Bpt" firstAttribute="top" secondItem="GVw-Hb-Rya" secondAttribute="top" id="dj6-U7-B7l"/>
                                             <constraint firstAttribute="height" constant="35" id="jzR-2j-Sg1"/>
                                         </constraints>
                                     </customView>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="xJY-yB-TW4">
-                                        <rect key="frame" x="221" y="852" width="278" height="35"/>
+                                        <rect key="frame" x="1164" y="972" width="278" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="PIL-OS-9iU"/>
                                             <constraint firstAttribute="width" constant="278" id="qsW-f9-0lJ"/>
                                         </constraints>
                                     </customView>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hKw-1O-joS">
-                                        <rect key="frame" x="278" y="772" width="164" height="26"/>
+                                        <rect key="frame" x="1221" y="892" width="164" height="26"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="26" id="9cA-Wd-6fh"/>
                                         </constraints>
@@ -112,26 +132,27 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PUA-Z3-yBM">
-                                        <rect key="frame" x="182" y="700" width="357" height="46"/>
+                                        <rect key="frame" x="1124" y="820" width="357" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="46" id="PoN-uL-su7"/>
                                         </constraints>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="xdc-Lm-VIW">
                                             <font key="font" size="13" name="SFUIText-Regular"/>
-                                            <string key="title">Are you sure you want to send 0.04 BTC ($99.74 USD) to13uB2yUBh2fHSX1woN8Ne6dwZ4FvMbXKsw?</string>
+                                            <string key="title">Are you sure you want to send 0.04 BTC ($99.74 USD) to
+13uB2yUBh2fHSX1woN8Ne6dwZ4FvMbXKsw?</string>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="QWm-ZE-aKZ" customClass="SendMoneyButton">
-                                        <rect key="frame" x="221" y="611" width="278" height="35"/>
+                                        <rect key="frame" x="1164" y="731" width="278" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="HDv-4P-U75"/>
                                             <constraint firstAttribute="width" constant="278" id="n8s-2D-UcL"/>
                                         </constraints>
                                     </customView>
                                     <box boxType="custom" borderWidth="0.0" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="POg-Ie-Lpp">
-                                        <rect key="frame" x="158" y="473" width="404" height="82"/>
+                                        <rect key="frame" x="1101" y="593" width="404" height="82"/>
                                         <view key="contentView" id="FJ7-LX-sDg">
                                             <rect key="frame" x="0.0" y="0.0" width="404" height="82"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -210,8 +231,45 @@
                                     <constraint firstItem="POg-Ie-Lpp" firstAttribute="top" secondItem="QWm-ZE-aKZ" secondAttribute="bottom" constant="56" id="VF5-CJ-h9Y"/>
                                     <constraint firstItem="xJY-yB-TW4" firstAttribute="centerX" secondItem="1KH-eR-jX2" secondAttribute="centerX" id="Wkk-E8-3wM"/>
                                     <constraint firstItem="PUA-Z3-yBM" firstAttribute="centerX" secondItem="1KH-eR-jX2" secondAttribute="centerX" id="X5M-st-4Zj"/>
-                                    <constraint firstAttribute="width" constant="720" id="avr-DK-8J3"/>
                                     <constraint firstItem="hKw-1O-joS" firstAttribute="centerX" secondItem="1KH-eR-jX2" secondAttribute="centerX" id="cLP-cG-COr"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="aOU-4E-v24">
+                                <rect key="frame" x="0.0" y="0.0" width="2605" height="1052"/>
+                                <subviews>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="ROV-Ja-oDx" customClass="WalletChooseFriendCollectionView">
+                                        <rect key="frame" x="983" y="968" width="640" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="84" id="dnt-5R-3kL"/>
+                                            <constraint firstAttribute="width" constant="640" id="kd7-Rx-g0s"/>
+                                        </constraints>
+                                    </customView>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uAr-uG-GJa">
+                                        <rect key="frame" x="1070" y="926" width="465" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="pfq-bi-gq4"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Select a friend to whom you want to send the transfer" usesSingleLineMode="YES" id="RGG-hn-6u3">
+                                            <font key="font" size="18" name="SFUIText-Regular"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="qWn-pb-Yf8" customClass="SendMoneyButton">
+                                        <rect key="frame" x="1164" y="858" width="278" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="278" id="UOh-ek-TLu"/>
+                                            <constraint firstAttribute="height" constant="35" id="lSy-FU-m7p"/>
+                                        </constraints>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uAr-uG-GJa" firstAttribute="top" secondItem="ROV-Ja-oDx" secondAttribute="bottom" constant="20" id="BfC-OY-vnp"/>
+                                    <constraint firstItem="uAr-uG-GJa" firstAttribute="centerX" secondItem="aOU-4E-v24" secondAttribute="centerX" id="Fpq-x8-GCs"/>
+                                    <constraint firstItem="ROV-Ja-oDx" firstAttribute="centerX" secondItem="aOU-4E-v24" secondAttribute="centerX" id="SBj-XE-IHE"/>
+                                    <constraint firstItem="ROV-Ja-oDx" firstAttribute="top" secondItem="aOU-4E-v24" secondAttribute="top" id="d1y-rC-7EJ"/>
+                                    <constraint firstItem="qWn-pb-Yf8" firstAttribute="top" secondItem="uAr-uG-GJa" secondAttribute="bottom" constant="33" id="hrv-C6-Wse"/>
+                                    <constraint firstItem="qWn-pb-Yf8" firstAttribute="centerX" secondItem="aOU-4E-v24" secondAttribute="centerX" id="w4j-2c-gRL"/>
                                 </constraints>
                             </customView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AeL-4b-GBn">
@@ -222,30 +280,40 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IyX-Jw-ylE" customClass="WalletHistoryView">
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="IyX-Jw-ylE" customClass="WalletHistoryView">
                                 <rect key="frame" x="26" y="0.0" width="2553" height="1072"/>
                             </customView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Xds-2D-fWR" secondAttribute="bottom" id="4zO-3B-R8F"/>
-                            <constraint firstItem="IyX-Jw-ylE" firstAttribute="top" secondItem="cH2-q1-xo0" secondAttribute="top" constant="80" id="7eg-pf-nhQ"/>
-                            <constraint firstItem="1KH-eR-jX2" firstAttribute="centerX" secondItem="cH2-q1-xo0" secondAttribute="centerX" id="Grp-cV-jns"/>
+                            <constraint firstAttribute="trailing" secondItem="aOU-4E-v24" secondAttribute="trailing" id="1WO-W8-Vfc"/>
+                            <constraint firstItem="1KH-eR-jX2" firstAttribute="leading" secondItem="cH2-q1-xo0" secondAttribute="leading" id="3Fp-o5-CZh"/>
+                            <constraint firstItem="IyX-Jw-ylE" firstAttribute="top" secondItem="cH2-q1-xo0" secondAttribute="top" constant="200" id="7eg-pf-nhQ"/>
+                            <constraint firstAttribute="bottom" secondItem="aOU-4E-v24" secondAttribute="bottom" id="Aiy-yY-WAd"/>
                             <constraint firstAttribute="trailing" secondItem="IyX-Jw-ylE" secondAttribute="trailing" constant="26" id="LuL-2i-SoP"/>
+                            <constraint firstItem="aOU-4E-v24" firstAttribute="top" secondItem="cH2-q1-xo0" secondAttribute="top" constant="220" id="Rc6-xG-hpE"/>
                             <constraint firstItem="IyX-Jw-ylE" firstAttribute="top" secondItem="AeL-4b-GBn" secondAttribute="bottom" constant="34" id="Voa-Au-g3d"/>
                             <constraint firstItem="AeL-4b-GBn" firstAttribute="leading" secondItem="cH2-q1-xo0" secondAttribute="leading" constant="26" id="Wfk-sK-Iw6"/>
                             <constraint firstAttribute="bottom" secondItem="1KH-eR-jX2" secondAttribute="bottom" id="gbJ-Hl-uAB"/>
                             <constraint firstItem="IyX-Jw-ylE" firstAttribute="leading" secondItem="cH2-q1-xo0" secondAttribute="leading" constant="26" id="h9b-oq-R1P"/>
                             <constraint firstItem="1KH-eR-jX2" firstAttribute="top" secondItem="cH2-q1-xo0" secondAttribute="top" constant="220" id="k86-Pr-PoM"/>
-                            <constraint firstItem="Xds-2D-fWR" firstAttribute="leading" secondItem="cH2-q1-xo0" secondAttribute="leading" id="kdd-kf-GAd"/>
-                            <constraint firstItem="Xds-2D-fWR" firstAttribute="top" secondItem="cH2-q1-xo0" secondAttribute="top" id="rXc-Kf-9gE"/>
-                            <constraint firstAttribute="trailing" secondItem="Xds-2D-fWR" secondAttribute="trailing" id="wBY-Gu-eeX"/>
+                            <constraint firstItem="aOU-4E-v24" firstAttribute="leading" secondItem="cH2-q1-xo0" secondAttribute="leading" id="nrU-AB-Pj7"/>
                             <constraint firstAttribute="bottom" secondItem="IyX-Jw-ylE" secondAttribute="bottom" id="wds-ha-27d"/>
+                            <constraint firstAttribute="trailing" secondItem="1KH-eR-jX2" secondAttribute="trailing" id="xaC-9r-dfe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chooseFriendView" destination="aOU-4E-v24" id="Iva-yV-Xdd"/>
+                        <outlet property="firstInput" destination="GVw-Hb-Rya" id="bNA-QM-32Y"/>
+                        <outlet property="firstSendMoneyView" destination="1KH-eR-jX2" id="ZL7-er-XK0"/>
+                        <outlet property="friendImage" destination="h3G-de-L82" id="jUT-Mk-5nf"/>
+                        <outlet property="friendImageBox" destination="ywX-9p-Bpt" id="Os8-VQ-JvM"/>
+                        <outlet property="sendMoneyButton" destination="qWn-pb-Yf8" id="MZB-MJ-N9Z"/>
+                        <outlet property="walletHistoryView" destination="IyX-Jw-ylE" id="dcg-5q-M4z"/>
+                    </connections>
                 </viewController>
                 <customObject id="sR6-6V-48P" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="369.5" y="1033"/>
+            <point key="canvasLocation" x="371" y="1093"/>
         </scene>
     </scenes>
     <resources>
