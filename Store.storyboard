@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Store Split View-->
+        <!--Split View Controller-->
         <scene sceneID="iKa-tl-ee3">
             <objects>
-                <splitViewController storyboardIdentifier="MainStoreViewController" id="JL9-Js-jCY" customClass="StoreSplitView" sceneMemberID="viewController">
+                <splitViewController storyboardIdentifier="MainStoreViewController" id="JL9-Js-jCY" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem id="6us-xq-UtL"/>
                         <splitViewItem id="klD-L3-hAP"/>

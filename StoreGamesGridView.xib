@@ -24,14 +24,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView wantsLayer="YES" fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSe-Mu-f4W">
+                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSe-Mu-f4W">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="j4d-7b-yC2">
+                                <clipView key="contentView" drawsBackground="NO" id="j4d-7b-yC2">
                                     <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <collectionView ambiguous="YES" id="UKY-js-2Ij">
+                                        <collectionView id="UKY-js-2Ij">
                                             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="primaryBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -49,6 +48,12 @@
                                 </scroller>
                             </scrollView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="RSe-Mu-f4W" firstAttribute="top" secondItem="VBy-et-Wq6" secondAttribute="top" id="0WY-0v-Pky"/>
+                            <constraint firstAttribute="bottom" secondItem="RSe-Mu-f4W" secondAttribute="bottom" id="1IO-1r-NAz"/>
+                            <constraint firstAttribute="trailing" secondItem="RSe-Mu-f4W" secondAttribute="trailing" id="UWc-TW-xgV"/>
+                            <constraint firstItem="RSe-Mu-f4W" firstAttribute="leading" secondItem="VBy-et-Wq6" secondAttribute="leading" id="ua8-x9-ave"/>
+                        </constraints>
                     </view>
                 </box>
             </subviews>
