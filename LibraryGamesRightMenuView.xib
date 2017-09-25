@@ -24,7 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="408" height="737"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="47" horizontalPageScroll="10" verticalLineScroll="47" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0y4-Dh-ORL">
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="55" horizontalPageScroll="10" verticalLineScroll="55" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0y4-Dh-ORL">
                                 <rect key="frame" x="0.0" y="0.0" width="408" height="737"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Oqa-MX-zPP">
                                     <rect key="frame" x="0.0" y="0.0" width="408" height="737"/>
@@ -33,7 +33,7 @@
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="45" rowSizeStyle="automatic" viewBased="YES" floatsGroupRows="NO" id="13p-1l-w38">
                                             <rect key="frame" x="0.0" y="0.0" width="408" height="737"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <size key="intercellSpacing" width="3" height="2"/>
+                                            <size key="intercellSpacing" width="3" height="10"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                             <color key="gridColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                             <tableColumns>
@@ -51,11 +51,11 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <customView identifier="LibraryGamesRightMenuHeaderCell" id="QIw-T3-l9U" customClass="LibraryGamesRightMenuHeaderCell">
-                                                            <rect key="frame" x="1" y="1" width="405" height="45"/>
+                                                            <rect key="frame" x="1" y="5" width="405" height="45"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         </customView>
                                                         <customView identifier="LibraryGamesRightMenuCell" focusRingType="none" id="3mH-Bh-s6L" customClass="LibraryGamesRightMenuCell">
-                                                            <rect key="frame" x="1" y="48" width="405" height="29"/>
+                                                            <rect key="frame" x="1" y="60" width="405" height="29"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         </customView>
                                                     </prototypeCellViews>

@@ -15,24 +15,23 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="c22-O7-iKe">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <rect key="frame" x="0.0" y="0.0" width="400" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="NVa-bQ-lsp">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="272"/>
                     <view key="contentView" id="WF9-fg-aZ8">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="272"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView wantsLayer="YES" fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" verticalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="j7e-fs-wxc">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="hht-X8-jeX">
-                                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" verticalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="j7e-fs-wxc">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="272"/>
+                                <clipView key="contentView" drawsBackground="NO" id="hht-X8-jeX">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="272"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <collectionView ambiguous="YES" selectable="YES" maxNumberOfRows="1" id="oaY-cN-pyV">
-                                            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                                        <collectionView selectable="YES" maxNumberOfRows="1" id="oaY-cN-pyV">
+                                            <rect key="frame" x="0.0" y="0.0" width="400" height="272"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="primaryBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </collectionView>
@@ -49,14 +48,20 @@
                                 </scroller>
                             </scrollView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="j7e-fs-wxc" firstAttribute="top" secondItem="WF9-fg-aZ8" secondAttribute="top" id="CIR-Rs-00y"/>
+                            <constraint firstItem="j7e-fs-wxc" firstAttribute="leading" secondItem="WF9-fg-aZ8" secondAttribute="leading" id="MN4-Ns-sga"/>
+                            <constraint firstAttribute="bottom" secondItem="j7e-fs-wxc" secondAttribute="bottom" id="REC-JV-Kah"/>
+                            <constraint firstAttribute="trailing" secondItem="j7e-fs-wxc" secondAttribute="trailing" id="w8M-bO-IWx"/>
+                        </constraints>
                     </view>
                 </box>
             </subviews>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="NVa-bQ-lsp" secondAttribute="bottom" id="8Se-Ge-nAQ"/>
-                <constraint firstItem="NVa-bQ-lsp" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="HEy-r5-Ppq"/>
-                <constraint firstItem="NVa-bQ-lsp" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="YBN-jv-RlQ"/>
-                <constraint firstAttribute="trailing" secondItem="NVa-bQ-lsp" secondAttribute="trailing" id="f63-Yp-TY6"/>
+                <constraint firstItem="NVa-bQ-lsp" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="3Oe-R5-t1Z"/>
+                <constraint firstAttribute="trailing" secondItem="NVa-bQ-lsp" secondAttribute="trailing" id="O5h-o6-C4G"/>
+                <constraint firstAttribute="bottom" secondItem="NVa-bQ-lsp" secondAttribute="bottom" id="Xzk-PZ-hss"/>
+                <constraint firstItem="NVa-bQ-lsp" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="f4W-pg-cQI"/>
             </constraints>
         </customView>
     </objects>

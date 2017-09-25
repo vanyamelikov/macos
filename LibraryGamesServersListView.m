@@ -100,7 +100,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    [self.tableView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleRegular];
+    [self.tableView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleNone];
     [self.tableView setUsesAlternatingRowBackgroundColors:NO];
     [self.tableView setBackgroundColor:[NSColor clearColor]];
     [[self.tableView enclosingScrollView] setDrawsBackground:NO];
@@ -118,7 +118,7 @@
 -(CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row {
     LibraryGamesServerListModel *model = [dataSourceArray objectAtIndex:row];
     if(model.isHeader)
-        return 45;
+        return 60;
     else
         return 50;
 }

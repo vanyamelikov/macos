@@ -60,16 +60,16 @@
             <objects>
                 <viewController id="QkG-4D-3Rk" customClass="LibraryContentViewController" sceneMemberID="viewController">
                     <view key="view" id="Lbw-fq-Pju">
-                        <rect key="frame" x="0.0" y="0.0" width="1334" height="769"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1360" height="769"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="dxI-kJ-2Su">
-                                <rect key="frame" x="0.0" y="0.0" width="1334" height="769"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1360" height="769"/>
                                 <subviews>
                                     <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="SFI-QI-m9w">
-                                        <rect key="frame" x="26" y="670" width="1282" height="1"/>
+                                        <rect key="frame" x="26" y="670" width="1308" height="1"/>
                                         <view key="contentView" id="d1K-Ia-9s7">
-                                            <rect key="frame" x="0.0" y="0.0" width="1282" height="1"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1308" height="1"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="5ps-Nw-PF2">
@@ -118,7 +118,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HOV-HD-DN9">
-                                        <rect key="frame" x="435" y="355" width="464" height="60"/>
+                                        <rect key="frame" x="448" y="355" width="464" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="460" id="XE3-2Q-SyE"/>
                                             <constraint firstAttribute="height" constant="60" id="agm-rK-SwO"/>
@@ -130,7 +130,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="rHo-Hn-pf3" customClass="AddGameButton">
-                                        <rect key="frame" x="612" y="300" width="111" height="29"/>
+                                        <rect key="frame" x="625" y="300" width="111" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="111" id="H2v-pO-feo"/>
                                             <constraint firstAttribute="height" constant="29" id="cwl-PA-6Ml"/>
@@ -152,23 +152,22 @@
                                 </constraints>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="k72-Jc-YAu">
-                                <rect key="frame" x="0.0" y="0.0" width="1334" height="769"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1360" height="769"/>
                                 <subviews>
                                     <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="wI1-4P-ZmE">
-                                        <rect key="frame" x="26" y="670" width="820" height="1"/>
+                                        <rect key="frame" x="26" y="670" width="821" height="1"/>
                                         <view key="contentView" id="mMS-m0-xI7">
-                                            <rect key="frame" x="0.0" y="0.0" width="820" height="1"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="821" height="1"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="7GF-pe-Aec">
-                                                    <rect key="frame" x="0.0" y="0.0" width="88" height="1"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="93" height="1"/>
                                                     <view key="contentView" id="cVx-Ib-wkb">
-                                                        <rect key="frame" x="1" y="1" width="86" height="0.0"/>
+                                                        <rect key="frame" x="1" y="1" width="91" height="0.0"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     </view>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="kF1-67-kMV"/>
-                                                        <constraint firstAttribute="width" constant="88" id="vf3-74-Enx"/>
                                                     </constraints>
                                                     <color key="borderColor" red="0.40000000000000002" green="0.66666666669999997" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="fillColor" red="0.40000000000000002" green="0.66666666669999997" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -188,13 +187,13 @@
                                         <color key="fillColor" red="0.14117647059999999" green="0.1647058824" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                     </box>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="0AB-da-j9t" customClass="LibraryGamesServersListView">
-                                        <rect key="frame" x="1079" y="0.0" width="255" height="769"/>
+                                        <rect key="frame" x="1105" y="0.0" width="255" height="769"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="255" id="FhQ-CT-FgX"/>
                                         </constraints>
                                     </customView>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="l2G-bt-nbi" customClass="LibraryGamesRightMenuView">
-                                        <rect key="frame" x="847" y="0.0" width="232" height="769"/>
+                                        <rect key="frame" x="873" y="0.0" width="232" height="769"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="232" id="pI7-zG-LCH"/>
                                         </constraints>
@@ -248,14 +247,14 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="eaH-Fb-UCK" customClass="LibraryFriendsGames">
-                                                    <rect key="frame" x="0.0" y="0.0" width="451" height="49"/>
+                                                    <rect key="frame" x="20" y="0.0" width="781" height="49"/>
                                                 </customView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="eaH-Fb-UCK" secondAttribute="trailing" constant="370" id="AGi-d2-w3Y"/>
+                                                <constraint firstAttribute="trailing" secondItem="eaH-Fb-UCK" secondAttribute="trailing" constant="20" id="AGi-d2-w3Y"/>
                                                 <constraint firstAttribute="bottom" secondItem="eaH-Fb-UCK" secondAttribute="bottom" id="Amd-AN-BCT"/>
                                                 <constraint firstItem="eaH-Fb-UCK" firstAttribute="top" secondItem="p7A-wW-jkf" secondAttribute="top" constant="10" id="GZJ-an-bc9"/>
-                                                <constraint firstItem="eaH-Fb-UCK" firstAttribute="leading" secondItem="p7A-wW-jkf" secondAttribute="leading" id="cT2-JH-hhd"/>
+                                                <constraint firstItem="eaH-Fb-UCK" firstAttribute="leading" secondItem="p7A-wW-jkf" secondAttribute="leading" constant="20" id="cT2-JH-hhd"/>
                                             </constraints>
                                         </view>
                                         <constraints>
@@ -281,14 +280,13 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Lem-OY-jK8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="88" height="1"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="1"/>
                                                     <view key="contentView" id="Y3R-xN-hAQ">
-                                                        <rect key="frame" x="1" y="1" width="86" height="0.0"/>
+                                                        <rect key="frame" x="1" y="1" width="178" height="0.0"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     </view>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="ouz-5P-Gjp"/>
-                                                        <constraint firstAttribute="width" constant="88" id="q3u-bo-HOg"/>
                                                     </constraints>
                                                     <color key="borderColor" red="0.40000000000000002" green="0.66666666669999997" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="fillColor" red="0.40000000000000002" green="0.66666666669999997" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -325,13 +323,12 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="icp-Go-30w">
-                                                    <rect key="frame" x="0.0" y="0.0" width="88" height="1"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="83" height="1"/>
                                                     <view key="contentView" id="brv-LF-sN8">
-                                                        <rect key="frame" x="1" y="1" width="86" height="0.0"/>
+                                                        <rect key="frame" x="1" y="1" width="81" height="0.0"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     </view>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="88" id="d6U-FW-1Qi"/>
                                                         <constraint firstAttribute="height" constant="1" id="mq3-az-wLA"/>
                                                     </constraints>
                                                     <color key="borderColor" red="0.40000000000000002" green="0.66666666669999997" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -366,7 +363,6 @@
                                         <rect key="frame" x="26" y="248" width="821" height="130"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="130" id="4uI-3g-u08"/>
-                                            <constraint firstAttribute="width" constant="821" id="jqD-io-RzG"/>
                                         </constraints>
                                     </customView>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nau-8j-f8H">
@@ -380,45 +376,65 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="ZhR-RX-Mg7" customClass="LIButton">
+                                        <rect key="frame" x="715" y="723" width="132" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="132" id="3mN-kY-UB0"/>
+                                            <constraint firstAttribute="height" constant="29" id="uh2-e7-2hU"/>
+                                        </constraints>
+                                    </customView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="saA-Ur-frk" customClass="SettingsButton">
+                                        <rect key="frame" x="682" y="723" width="29" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="9NO-d0-d3b"/>
+                                            <constraint firstAttribute="width" constant="29" id="wAT-18-OYh"/>
+                                        </constraints>
+                                    </customView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="icp-Go-30w" firstAttribute="width" secondItem="88R-xM-yTD" secondAttribute="width" id="1nP-42-425"/>
                                     <constraint firstAttribute="trailing" secondItem="0AB-da-j9t" secondAttribute="trailing" id="5XJ-4a-VqG"/>
+                                    <constraint firstItem="saA-Ur-frk" firstAttribute="centerY" secondItem="ZhR-RX-Mg7" secondAttribute="centerY" id="6YC-uT-bd1"/>
                                     <constraint firstItem="7sD-lb-qsA" firstAttribute="leading" secondItem="k72-Jc-YAu" secondAttribute="leading" constant="26" id="6dv-wD-Mv0"/>
                                     <constraint firstItem="1g4-RM-daM" firstAttribute="top" secondItem="wI1-4P-ZmE" secondAttribute="bottom" constant="16" id="6sx-ot-Vgw"/>
                                     <constraint firstItem="wI1-4P-ZmE" firstAttribute="top" secondItem="nau-8j-f8H" secondAttribute="bottom" constant="7" id="8f4-mn-kAB"/>
                                     <constraint firstItem="ZLP-HG-b8Q" firstAttribute="top" secondItem="1g4-RM-daM" secondAttribute="bottom" constant="30" id="90u-WR-ako"/>
                                     <constraint firstItem="wI1-4P-ZmE" firstAttribute="leading" secondItem="k72-Jc-YAu" secondAttribute="leading" constant="26" id="BPH-rT-d86"/>
-                                    <constraint firstItem="l2G-bt-nbi" firstAttribute="leading" secondItem="7sD-lb-qsA" secondAttribute="trailing" id="CDb-ft-Vbm"/>
+                                    <constraint firstItem="l2G-bt-nbi" firstAttribute="leading" secondItem="7sD-lb-qsA" secondAttribute="trailing" constant="26" id="CDb-ft-Vbm"/>
                                     <constraint firstItem="nau-8j-f8H" firstAttribute="leading" secondItem="k72-Jc-YAu" secondAttribute="leading" constant="26" id="Dcl-sY-f0g"/>
                                     <constraint firstItem="ZLP-HG-b8Q" firstAttribute="leading" secondItem="k72-Jc-YAu" secondAttribute="leading" constant="26" id="Fjv-T1-DIa"/>
                                     <constraint firstItem="QcB-GE-RfJ" firstAttribute="top" secondItem="RUt-IY-oGd" secondAttribute="bottom" constant="20" id="HrZ-cP-CFO"/>
                                     <constraint firstItem="0AB-da-j9t" firstAttribute="top" secondItem="k72-Jc-YAu" secondAttribute="top" id="Kml-XQ-PCZ"/>
                                     <constraint firstItem="8Y8-mW-1kv" firstAttribute="centerY" secondItem="acK-pz-87y" secondAttribute="centerY" id="LWf-5Y-6No"/>
-                                    <constraint firstItem="l2G-bt-nbi" firstAttribute="leading" secondItem="k72-Jc-YAu" secondAttribute="leading" constant="847" id="TsH-4V-FsD"/>
+                                    <constraint firstItem="ZhR-RX-Mg7" firstAttribute="centerY" secondItem="8Y8-mW-1kv" secondAttribute="centerY" id="P8E-zg-D2O"/>
+                                    <constraint firstItem="ZhR-RX-Mg7" firstAttribute="leading" secondItem="saA-Ur-frk" secondAttribute="trailing" constant="4" id="XXp-MG-AFN"/>
                                     <constraint firstItem="E4M-tP-zQJ" firstAttribute="centerY" secondItem="88R-xM-yTD" secondAttribute="centerY" id="YKA-np-P4G"/>
+                                    <constraint firstItem="l2G-bt-nbi" firstAttribute="leading" secondItem="ZhR-RX-Mg7" secondAttribute="trailing" constant="26" id="YgO-bL-2gs"/>
                                     <constraint firstItem="8Vz-Gv-Axg" firstAttribute="leading" secondItem="k72-Jc-YAu" secondAttribute="leading" constant="26" id="aTh-ul-SYn"/>
                                     <constraint firstItem="l2G-bt-nbi" firstAttribute="top" secondItem="k72-Jc-YAu" secondAttribute="top" id="aXU-6Y-dc2"/>
-                                    <constraint firstAttribute="trailing" secondItem="wI1-4P-ZmE" secondAttribute="trailing" constant="488" id="d33-Rr-iks"/>
-                                    <constraint firstItem="l2G-bt-nbi" firstAttribute="leading" secondItem="1g4-RM-daM" secondAttribute="trailing" id="eCb-eu-IG6"/>
+                                    <constraint firstItem="7GF-pe-Aec" firstAttribute="width" secondItem="nau-8j-f8H" secondAttribute="width" id="cU0-OE-H4L"/>
+                                    <constraint firstItem="l2G-bt-nbi" firstAttribute="leading" secondItem="1g4-RM-daM" secondAttribute="trailing" constant="26" id="eCb-eu-IG6"/>
                                     <constraint firstItem="8Vz-Gv-Axg" firstAttribute="top" secondItem="88R-xM-yTD" secondAttribute="bottom" constant="8" id="eF5-Vy-DRc"/>
                                     <constraint firstItem="RUt-IY-oGd" firstAttribute="top" secondItem="ZLP-HG-b8Q" secondAttribute="bottom" constant="8" id="eb4-pi-nRt"/>
-                                    <constraint firstItem="l2G-bt-nbi" firstAttribute="leading" secondItem="8Vz-Gv-Axg" secondAttribute="trailing" id="glD-By-GG8"/>
+                                    <constraint firstItem="l2G-bt-nbi" firstAttribute="leading" secondItem="8Vz-Gv-Axg" secondAttribute="trailing" constant="26" id="glD-By-GG8"/>
                                     <constraint firstItem="7sD-lb-qsA" firstAttribute="top" secondItem="8Vz-Gv-Axg" secondAttribute="bottom" constant="20" id="hJo-wo-lhu"/>
                                     <constraint firstItem="nau-8j-f8H" firstAttribute="top" secondItem="8Y8-mW-1kv" secondAttribute="bottom" constant="24" id="jT9-NP-SDK"/>
-                                    <constraint firstItem="l2G-bt-nbi" firstAttribute="leading" secondItem="QcB-GE-RfJ" secondAttribute="trailing" id="n2Y-wg-Bal"/>
+                                    <constraint firstItem="l2G-bt-nbi" firstAttribute="leading" secondItem="QcB-GE-RfJ" secondAttribute="trailing" constant="26" id="n2Y-wg-Bal"/>
                                     <constraint firstItem="acK-pz-87y" firstAttribute="leading" secondItem="k72-Jc-YAu" secondAttribute="leading" constant="26" id="nH9-zd-W6t"/>
                                     <constraint firstAttribute="bottom" secondItem="0AB-da-j9t" secondAttribute="bottom" id="oFz-zY-D0q"/>
                                     <constraint firstItem="QcB-GE-RfJ" firstAttribute="leading" secondItem="k72-Jc-YAu" secondAttribute="leading" constant="26" id="pHD-7w-Ioz"/>
                                     <constraint firstItem="8Y8-mW-1kv" firstAttribute="leading" secondItem="acK-pz-87y" secondAttribute="trailing" constant="15" id="rCN-QR-gpz"/>
                                     <constraint firstItem="acK-pz-87y" firstAttribute="top" secondItem="k72-Jc-YAu" secondAttribute="top" constant="20" id="rVS-IG-Csy"/>
+                                    <constraint firstItem="Lem-OY-jK8" firstAttribute="width" secondItem="ZLP-HG-b8Q" secondAttribute="width" id="rnk-Jq-aOm"/>
                                     <constraint firstItem="1g4-RM-daM" firstAttribute="leading" secondItem="k72-Jc-YAu" secondAttribute="leading" constant="26" id="sG1-3E-D4S"/>
                                     <constraint firstItem="RUt-IY-oGd" firstAttribute="leading" secondItem="k72-Jc-YAu" secondAttribute="leading" constant="26" id="t6z-qt-ude"/>
-                                    <constraint firstItem="l2G-bt-nbi" firstAttribute="leading" secondItem="RUt-IY-oGd" secondAttribute="trailing" id="tJN-BQ-TWO"/>
+                                    <constraint firstItem="l2G-bt-nbi" firstAttribute="leading" secondItem="RUt-IY-oGd" secondAttribute="trailing" constant="26" id="tJN-BQ-TWO"/>
                                     <constraint firstAttribute="bottom" secondItem="l2G-bt-nbi" secondAttribute="bottom" id="tUk-yV-J5s"/>
                                     <constraint firstItem="88R-xM-yTD" firstAttribute="top" secondItem="p7A-wW-jkf" secondAttribute="bottom" constant="30" id="vjU-Ce-A2f"/>
+                                    <constraint firstItem="l2G-bt-nbi" firstAttribute="leading" secondItem="wI1-4P-ZmE" secondAttribute="trailing" constant="26" id="x2s-M6-fum"/>
                                     <constraint firstItem="88R-xM-yTD" firstAttribute="leading" secondItem="k72-Jc-YAu" secondAttribute="leading" constant="26" id="xTu-ja-RFh"/>
                                     <constraint firstItem="0AB-da-j9t" firstAttribute="leading" secondItem="l2G-bt-nbi" secondAttribute="trailing" id="xuG-FZ-ouR"/>
-                                    <constraint firstItem="l2G-bt-nbi" firstAttribute="leading" secondItem="E4M-tP-zQJ" secondAttribute="trailing" id="zyv-4v-cee"/>
+                                    <constraint firstItem="l2G-bt-nbi" firstAttribute="leading" secondItem="E4M-tP-zQJ" secondAttribute="trailing" constant="26" id="zyv-4v-cee"/>
                                 </constraints>
                             </customView>
                         </subviews>

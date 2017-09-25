@@ -139,7 +139,7 @@
 -(CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row {
     LibraryGamesRightMenuModel *model = [dataSourceArray objectAtIndex:row];
     if(model.isHeader)
-        return 45;
+        return 60;
     else
         return 29;
 }
@@ -157,12 +157,5 @@
     }
 }
 
-//-(BOOL)tableView:(NSTableView *)tableView isGroupRow:(NSInteger)row {
-//    LibraryGamesRightMenuModel *model = [dataSourceArray objectAtIndex:row];
-//    if(model.isHeader)
-//        return YES;
-//    else
-//        return NO;
-//}
 
 @end

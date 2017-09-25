@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AddGame"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="vMd-gf-fnV">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="5P5-Wq-KUq">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
+                    <view key="contentView" id="PrL-n7-6mo">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uvj-hJ-Qhz">
+                                <rect key="frame" x="4" y="13" width="16" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="Esz-Zq-Idr"/>
+                                    <constraint firstAttribute="height" constant="8" id="gB0-Vx-2v0"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_plus" id="7Bq-Ok-8aX"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Uvj-hJ-Qhz" firstAttribute="leading" secondItem="PrL-n7-6mo" secondAttribute="leading" constant="4" id="7bn-5B-a49"/>
+                            <constraint firstItem="Uvj-hJ-Qhz" firstAttribute="centerY" secondItem="PrL-n7-6mo" secondAttribute="centerY" id="c6i-ze-WwE"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="Um9-iw-BAN"/>
+                    </constraints>
+                    <color key="borderColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S11-Lg-GuL">
+                    <rect key="frame" x="19" y="8" width="73" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="nsO-76-Ml2"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="ADD GAME" id="EcC-k2-GHB">
+                        <font key="font" size="12" name="SFUIText-Medium"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="S11-Lg-GuL" firstAttribute="leading" secondItem="Uvj-hJ-Qhz" secondAttribute="trailing" constant="1" id="4sO-n0-nTA"/>
+                <constraint firstItem="5P5-Wq-KUq" firstAttribute="leading" secondItem="vMd-gf-fnV" secondAttribute="leading" id="GEC-bg-sTv"/>
+                <constraint firstItem="S11-Lg-GuL" firstAttribute="centerY" secondItem="vMd-gf-fnV" secondAttribute="centerY" constant="-1" id="IRr-ki-BTW"/>
+                <constraint firstAttribute="bottom" secondItem="5P5-Wq-KUq" secondAttribute="bottom" id="YEf-mX-bfA"/>
+                <constraint firstAttribute="trailing" secondItem="5P5-Wq-KUq" secondAttribute="trailing" id="jkE-F7-m7g"/>
+                <constraint firstItem="5P5-Wq-KUq" firstAttribute="top" secondItem="vMd-gf-fnV" secondAttribute="top" id="zG0-Vo-jbh"/>
+            </constraints>
+            <point key="canvasLocation" x="210" y="204"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_plus" width="19" height="19"/>
+    </resources>
+</document>
