@@ -3,13 +3,14 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Split View Controller-->
         <scene sceneID="6Ch-Bg-MyO">
             <objects>
-                <splitViewController id="uqV-xM-SPG" sceneMemberID="viewController">
+                <splitViewController storyboardIdentifier="LibraryNavigationViewController" id="uqV-xM-SPG" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem id="VBN-5U-q47"/>
                         <splitViewItem id="hP0-xS-DLX"/>
@@ -32,26 +33,136 @@
             <objects>
                 <viewController id="e0q-KA-Svv" customClass="LibrarySideMenuViewController" sceneMemberID="viewController">
                     <view key="view" id="Ezt-MW-vv5">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="769"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="3Mz-do-oeq">
+                                <rect key="frame" x="0.0" y="0.0" width="255" height="769"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="9Tp-lp-eQA"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3Mz-do-oeq" firstAttribute="top" secondItem="Ezt-MW-vv5" secondAttribute="top" id="15l-Wb-hvh"/>
+                            <constraint firstAttribute="bottom" secondItem="3Mz-do-oeq" secondAttribute="bottom" id="8xc-Ya-Qdo"/>
+                            <constraint firstItem="3Mz-do-oeq" firstAttribute="leading" secondItem="Ezt-MW-vv5" secondAttribute="leading" id="JO0-jP-LEB"/>
+                            <constraint firstAttribute="trailing" secondItem="3Mz-do-oeq" secondAttribute="trailing" id="Pxw-HK-8iG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="iQU-xp-5Sa" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-192" y="630"/>
+            <point key="canvasLocation" x="-201.5" y="864.5"/>
         </scene>
-        <!--Library Content View Controller-->
+        <!--View Controller-->
         <scene sceneID="p5Y-gP-sYd">
             <objects>
-                <viewController id="QkG-4D-3Rk" customClass="LibraryContentViewController" sceneMemberID="viewController">
+                <viewController id="QkG-4D-3Rk" sceneMemberID="viewController">
                     <view key="view" id="Lbw-fq-Pju">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1334" height="769"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="dxI-kJ-2Su">
+                                <rect key="frame" x="0.0" y="0.0" width="1334" height="769"/>
+                                <subviews>
+                                    <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="SFI-QI-m9w">
+                                        <rect key="frame" x="26" y="670" width="1282" height="1"/>
+                                        <view key="contentView" id="d1K-Ia-9s7">
+                                            <rect key="frame" x="0.0" y="0.0" width="1282" height="1"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="5ps-Nw-PF2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="88" height="1"/>
+                                                    <view key="contentView" id="msg-vp-9LU">
+                                                        <rect key="frame" x="1" y="1" width="86" height="0.0"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="88" id="PNn-Xm-Pd6"/>
+                                                        <constraint firstAttribute="height" constant="1" id="dNb-5n-stq"/>
+                                                    </constraints>
+                                                    <color key="borderColor" red="0.40000000000000002" green="0.66666666669999997" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="fillColor" red="0.40000000000000002" green="0.66666666669999997" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </box>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5ps-Nw-PF2" firstAttribute="centerY" secondItem="d1K-Ia-9s7" secondAttribute="centerY" id="MFa-Wf-MdX"/>
+                                                <constraint firstAttribute="bottom" secondItem="5ps-Nw-PF2" secondAttribute="bottom" id="V5g-jj-aaT"/>
+                                                <constraint firstItem="5ps-Nw-PF2" firstAttribute="top" secondItem="d1K-Ia-9s7" secondAttribute="top" id="g2C-eg-pv6"/>
+                                                <constraint firstItem="5ps-Nw-PF2" firstAttribute="leading" secondItem="d1K-Ia-9s7" secondAttribute="leading" id="kgd-rd-Xsk"/>
+                                            </constraints>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="cky-JU-wse"/>
+                                        </constraints>
+                                        <color key="borderColor" red="0.14117647059999999" green="0.1647058824" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="fillColor" red="0.14117647059999999" green="0.1647058824" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                    </box>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Ezw-AA-cSU" customClass="ArrowButton">
+                                        <rect key="frame" x="26" y="719" width="100" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="bXO-1A-ILE"/>
+                                            <constraint firstAttribute="height" constant="30" id="uAA-kv-UL9"/>
+                                        </constraints>
+                                    </customView>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UxO-iw-q6W">
+                                        <rect key="frame" x="24" y="679" width="92" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="88" id="du1-Lc-9bC"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Empty library" id="BPB-rG-wkv">
+                                            <font key="font" size="14" name="SFUIText-Regular"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HOV-HD-DN9">
+                                        <rect key="frame" x="435" y="355" width="464" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="460" id="XE3-2Q-SyE"/>
+                                            <constraint firstAttribute="height" constant="60" id="agm-rK-SwO"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Your library  is empty" id="vTs-mE-swm">
+                                            <font key="font" size="40" name="SFUIText-Regular"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="rHo-Hn-pf3" customClass="AddGameButton">
+                                        <rect key="frame" x="612" y="300" width="111" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="111" id="H2v-pO-feo"/>
+                                            <constraint firstAttribute="height" constant="29" id="cwl-PA-6Ml"/>
+                                        </constraints>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="UxO-iw-q6W" firstAttribute="top" secondItem="Ezw-AA-cSU" secondAttribute="bottom" constant="20" id="5Zy-6l-uA0"/>
+                                    <constraint firstItem="SFI-QI-m9w" firstAttribute="top" secondItem="UxO-iw-q6W" secondAttribute="bottom" constant="8" id="6aa-Dy-nns"/>
+                                    <constraint firstItem="Ezw-AA-cSU" firstAttribute="leading" secondItem="dxI-kJ-2Su" secondAttribute="leading" constant="26" id="8kW-Ec-ZAG"/>
+                                    <constraint firstItem="rHo-Hn-pf3" firstAttribute="centerX" secondItem="dxI-kJ-2Su" secondAttribute="centerX" id="Dkm-lb-9lM"/>
+                                    <constraint firstItem="rHo-Hn-pf3" firstAttribute="top" secondItem="HOV-HD-DN9" secondAttribute="bottom" constant="26" id="PkH-Rq-Z2k"/>
+                                    <constraint firstAttribute="trailing" secondItem="SFI-QI-m9w" secondAttribute="trailing" constant="26" id="RjC-dp-7sK"/>
+                                    <constraint firstItem="SFI-QI-m9w" firstAttribute="leading" secondItem="dxI-kJ-2Su" secondAttribute="leading" constant="26" id="VXp-jo-JPN"/>
+                                    <constraint firstItem="Ezw-AA-cSU" firstAttribute="top" secondItem="dxI-kJ-2Su" secondAttribute="top" constant="20" id="X3J-Q9-0fy"/>
+                                    <constraint firstItem="HOV-HD-DN9" firstAttribute="top" secondItem="SFI-QI-m9w" secondAttribute="bottom" constant="255" id="paO-lg-w7c"/>
+                                    <constraint firstItem="UxO-iw-q6W" firstAttribute="leading" secondItem="dxI-kJ-2Su" secondAttribute="leading" constant="26" id="z9R-PV-qG3"/>
+                                    <constraint firstItem="HOV-HD-DN9" firstAttribute="centerX" secondItem="dxI-kJ-2Su" secondAttribute="centerX" id="zrP-oZ-gpv"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dxI-kJ-2Su" firstAttribute="top" secondItem="Lbw-fq-Pju" secondAttribute="top" id="59P-mN-PYf"/>
+                            <constraint firstAttribute="trailing" secondItem="dxI-kJ-2Su" secondAttribute="trailing" id="8iP-3E-twC"/>
+                            <constraint firstItem="dxI-kJ-2Su" firstAttribute="leading" secondItem="Lbw-fq-Pju" secondAttribute="leading" id="CDf-ga-hHb"/>
+                            <constraint firstAttribute="bottom" secondItem="dxI-kJ-2Su" secondAttribute="bottom" id="HpF-hz-btY"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="QTJ-v7-dps" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-754" y="630"/>
+            <point key="canvasLocation" x="596" y="864.5"/>
         </scene>
     </scenes>
 </document>

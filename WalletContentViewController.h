@@ -12,6 +12,10 @@
 
 @interface WalletContentViewController : NSViewController
 
+@property (strong) IBOutlet NSTextField *categoryLabel;
+@property (strong) IBOutlet NSTextField *amountLabel;
+@property (strong) IBOutlet NSTextField *xnoLabel;
+
 @property (strong) IBOutlet WalletHistoryView *walletHistoryView;
 @property (strong) IBOutlet NSView *firstSendMoneyView;
 @property (strong) IBOutlet NSView *chooseFriendView;

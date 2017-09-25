@@ -22,6 +22,8 @@
 		3E3E41FD1F756834009698FD /* LibraryGamesRightMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3E41FC1F756834009698FD /* LibraryGamesRightMenuView.m */; };
 		3E3E42001F757D0D009698FD /* LibraryGamesServersListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3E41FF1F757D0D009698FD /* LibraryGamesServersListView.m */; };
 		3E3E42031F757D72009698FD /* LibraryGamesServerListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3E42021F757D72009698FD /* LibraryGamesServerListModel.m */; };
+		3E558BB41F78B7D000542B7B /* LibraryNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BB31F78B7D000542B7B /* LibraryNavigationController.m */; };
+		3E558BB71F78B8BE00542B7B /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BB61F78B8BE00542B7B /* LibraryViewController.m */; };
 		3E6FE79D1F77452700B98AD3 /* LibraryFriendsGames.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE79C1F77452700B98AD3 /* LibraryFriendsGames.xib */; };
 		3E6FE7A01F7745D300B98AD3 /* LibraryFriendsGames.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE79F1F7745D300B98AD3 /* LibraryFriendsGames.m */; };
 		3E6FE7A61F774A9B00B98AD3 /* LibraryFriendsGamesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE7A41F774A9B00B98AD3 /* LibraryFriendsGamesItem.m */; };
@@ -215,6 +217,10 @@
 		3E3E41FF1F757D0D009698FD /* LibraryGamesServersListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryGamesServersListView.m; sourceTree = "<group>"; };
 		3E3E42011F757D72009698FD /* LibraryGamesServerListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryGamesServerListModel.h; sourceTree = "<group>"; };
 		3E3E42021F757D72009698FD /* LibraryGamesServerListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryGamesServerListModel.m; sourceTree = "<group>"; };
+		3E558BB21F78B7D000542B7B /* LibraryNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryNavigationController.h; sourceTree = "<group>"; };
+		3E558BB31F78B7D000542B7B /* LibraryNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryNavigationController.m; sourceTree = "<group>"; };
+		3E558BB51F78B8BE00542B7B /* LibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryViewController.h; sourceTree = "<group>"; };
+		3E558BB61F78B8BE00542B7B /* LibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryViewController.m; sourceTree = "<group>"; };
 		3E6FE79C1F77452700B98AD3 /* LibraryFriendsGames.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryFriendsGames.xib; sourceTree = "<group>"; };
 		3E6FE79E1F7745D300B98AD3 /* LibraryFriendsGames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryFriendsGames.h; sourceTree = "<group>"; };
 		3E6FE79F1F7745D300B98AD3 /* LibraryFriendsGames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryFriendsGames.m; sourceTree = "<group>"; };
@@ -672,6 +678,8 @@
 				3E7230D01F734EA10050A70D /* LibrarySideMenuViewController.m */,
 				3E7230D21F734EEC0050A70D /* LibraryContentViewController.h */,
 				3E7230D31F734EEC0050A70D /* LibraryContentViewController.m */,
+				3E558BB51F78B8BE00542B7B /* LibraryViewController.h */,
+				3E558BB61F78B8BE00542B7B /* LibraryViewController.m */,
 			);
 			name = LibraryViewControllers;
 			sourceTree = "<group>";
@@ -914,6 +922,8 @@
 				3E9C46011F70484C00693AA1 /* StoreNavigationViewController.m */,
 				3E6FE7FD1F784BCF00B98AD3 /* WalletNavigationController.h */,
 				3E6FE7FE1F784BCF00B98AD3 /* WalletNavigationController.m */,
+				3E558BB21F78B7D000542B7B /* LibraryNavigationController.h */,
+				3E558BB31F78B7D000542B7B /* LibraryNavigationController.m */,
 			);
 			name = NavigationControllers;
 			sourceTree = "<group>";
@@ -1374,6 +1384,7 @@
 				3E6FE8021F785F4400B98AD3 /* WalletViewController.m in Sources */,
 				3ECF3CC41F6886A6005165E5 /* PreOrderButton.m in Sources */,
 				3ECF3CBF1F68821E005165E5 /* SettingsButton.m in Sources */,
+				3E558BB71F78B8BE00542B7B /* LibraryViewController.m in Sources */,
 				3E6FE7F11F782BB700B98AD3 /* ContinueButton.m in Sources */,
 				3E6FE7B11F77605800B98AD3 /* LibraryScreenshotsView.m in Sources */,
 				3E1FF8E91F6AD86400117F16 /* CustomTabbar.m in Sources */,
@@ -1392,6 +1403,7 @@
 				3E6FE7DC1F77D46C00B98AD3 /* StoreGamesGridView.m in Sources */,
 				3E6FE7EC1F782A6900B98AD3 /* PassphraseView.m in Sources */,
 				3E8876011F74104E001B8374 /* LibraryGamesRightMenuHeaderCell.m in Sources */,
+				3E558BB41F78B7D000542B7B /* LibraryNavigationController.m in Sources */,
 				3EBAADCE1F75958A00890AD1 /* StoreSideMenuCell.m in Sources */,
 				3E7230CE1F734E450050A70D /* StoreContentViewController.m in Sources */,
 				3E7230A11F7309FD0050A70D /* HeaderCell.m in Sources */,
