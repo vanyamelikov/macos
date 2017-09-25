@@ -26,6 +26,20 @@
 		3E558BB71F78B8BE00542B7B /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BB61F78B8BE00542B7B /* LibraryViewController.m */; };
 		3E558BB91F794A9200542B7B /* AddGame.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E558BB81F794A9200542B7B /* AddGame.xib */; };
 		3E558BBC1F794B7D00542B7B /* AddGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BBB1F794B7D00542B7B /* AddGame.m */; };
+		3E558BC21F7950BC00542B7B /* SettingsNavigationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BC11F7950BC00542B7B /* SettingsNavigationListViewController.m */; };
+		3E558BC41F79549200542B7B /* ProfileEditButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E558BC31F79549200542B7B /* ProfileEditButton.xib */; };
+		3E558BC71F79558100542B7B /* ProfileEditButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BC61F79558100542B7B /* ProfileEditButton.m */; };
+		3E558BC91F796D3400542B7B /* SettingsNavigationListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E558BC81F796D3400542B7B /* SettingsNavigationListView.xib */; };
+		3E558BCB1F796D8E00542B7B /* SettingsSideListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E558BCA1F796D8E00542B7B /* SettingsSideListView.xib */; };
+		3E558BCF1F796E6200542B7B /* SettingsNavigationListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E558BCE1F796E6200542B7B /* SettingsNavigationListCell.xib */; };
+		3E558BD11F796E7B00542B7B /* SettingsSideListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E558BD01F796E7B00542B7B /* SettingsSideListCell.xib */; };
+		3E558BD31F796ED800542B7B /* SettingsNavigationListHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E558BD21F796ED800542B7B /* SettingsNavigationListHeaderCell.xib */; };
+		3E558BD61F796F5800542B7B /* SettingsNavigationListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BD51F796F5800542B7B /* SettingsNavigationListCell.m */; };
+		3E558BD91F796F6600542B7B /* SettingsNavigationListHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BD81F796F6600542B7B /* SettingsNavigationListHeaderCell.m */; };
+		3E558BDD1F79703200542B7B /* SettingsNavigationListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BDC1F79703200542B7B /* SettingsNavigationListView.m */; };
+		3E558BE11F79710300542B7B /* SettingsNavigationListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BE01F79710300542B7B /* SettingsNavigationListModel.m */; };
+		3E558BE41F7973A500542B7B /* SettingsNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BE31F7973A500542B7B /* SettingsNavigationViewController.m */; };
+		3E558BE71F79772C00542B7B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BE61F79772C00542B7B /* SettingsViewController.m */; };
 		3E6FE79D1F77452700B98AD3 /* LibraryFriendsGames.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE79C1F77452700B98AD3 /* LibraryFriendsGames.xib */; };
 		3E6FE7A01F7745D300B98AD3 /* LibraryFriendsGames.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE79F1F7745D300B98AD3 /* LibraryFriendsGames.m */; };
 		3E6FE7A61F774A9B00B98AD3 /* LibraryFriendsGamesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE7A41F774A9B00B98AD3 /* LibraryFriendsGamesItem.m */; };
@@ -92,7 +106,6 @@
 		3E7230F01F73559F0050A70D /* FriendsContentNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7230EF1F73559F0050A70D /* FriendsContentNavigationViewController.m */; };
 		3E7230F61F7356430050A70D /* FriendsContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7230F51F7356430050A70D /* FriendsContentViewController.m */; };
 		3E7230F91F7357810050A70D /* SettingsSideListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7230F81F7357810050A70D /* SettingsSideListViewController.m */; };
-		3E7230FC1F7357A60050A70D /* SettingsContentNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7230FB1F7357A60050A70D /* SettingsContentNavigationViewController.m */; };
 		3E7230FF1F7357C60050A70D /* SettingsContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7230FE1F7357C60050A70D /* SettingsContentViewController.m */; };
 		3E8875E81F73F8A5001B8374 /* LibrarySideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8875E71F73F8A5001B8374 /* LibrarySideMenuCell.xib */; };
 		3E8875F01F74027A001B8374 /* LibrarySideMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8875EF1F74027A001B8374 /* LibrarySideMenuCell.m */; };
@@ -225,6 +238,28 @@
 		3E558BB81F794A9200542B7B /* AddGame.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddGame.xib; sourceTree = "<group>"; };
 		3E558BBA1F794B7D00542B7B /* AddGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGame.h; sourceTree = "<group>"; };
 		3E558BBB1F794B7D00542B7B /* AddGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGame.m; sourceTree = "<group>"; };
+		3E558BC01F7950BC00542B7B /* SettingsNavigationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsNavigationListViewController.h; sourceTree = "<group>"; };
+		3E558BC11F7950BC00542B7B /* SettingsNavigationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsNavigationListViewController.m; sourceTree = "<group>"; };
+		3E558BC31F79549200542B7B /* ProfileEditButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileEditButton.xib; sourceTree = "<group>"; };
+		3E558BC51F79558100542B7B /* ProfileEditButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileEditButton.h; sourceTree = "<group>"; };
+		3E558BC61F79558100542B7B /* ProfileEditButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileEditButton.m; sourceTree = "<group>"; };
+		3E558BC81F796D3400542B7B /* SettingsNavigationListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsNavigationListView.xib; sourceTree = "<group>"; };
+		3E558BCA1F796D8E00542B7B /* SettingsSideListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsSideListView.xib; sourceTree = "<group>"; };
+		3E558BCE1F796E6200542B7B /* SettingsNavigationListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsNavigationListCell.xib; sourceTree = "<group>"; };
+		3E558BD01F796E7B00542B7B /* SettingsSideListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsSideListCell.xib; sourceTree = "<group>"; };
+		3E558BD21F796ED800542B7B /* SettingsNavigationListHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsNavigationListHeaderCell.xib; sourceTree = "<group>"; };
+		3E558BD41F796F5800542B7B /* SettingsNavigationListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsNavigationListCell.h; sourceTree = "<group>"; };
+		3E558BD51F796F5800542B7B /* SettingsNavigationListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsNavigationListCell.m; sourceTree = "<group>"; };
+		3E558BD71F796F6600542B7B /* SettingsNavigationListHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsNavigationListHeaderCell.h; sourceTree = "<group>"; };
+		3E558BD81F796F6600542B7B /* SettingsNavigationListHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsNavigationListHeaderCell.m; sourceTree = "<group>"; };
+		3E558BDB1F79703200542B7B /* SettingsNavigationListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsNavigationListView.h; sourceTree = "<group>"; };
+		3E558BDC1F79703200542B7B /* SettingsNavigationListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsNavigationListView.m; sourceTree = "<group>"; };
+		3E558BDF1F79710300542B7B /* SettingsNavigationListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsNavigationListModel.h; sourceTree = "<group>"; };
+		3E558BE01F79710300542B7B /* SettingsNavigationListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsNavigationListModel.m; sourceTree = "<group>"; };
+		3E558BE21F7973A500542B7B /* SettingsNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsNavigationViewController.h; sourceTree = "<group>"; };
+		3E558BE31F7973A500542B7B /* SettingsNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsNavigationViewController.m; sourceTree = "<group>"; };
+		3E558BE51F79772C00542B7B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		3E558BE61F79772C00542B7B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		3E6FE79C1F77452700B98AD3 /* LibraryFriendsGames.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryFriendsGames.xib; sourceTree = "<group>"; };
 		3E6FE79E1F7745D300B98AD3 /* LibraryFriendsGames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryFriendsGames.h; sourceTree = "<group>"; };
 		3E6FE79F1F7745D300B98AD3 /* LibraryFriendsGames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryFriendsGames.m; sourceTree = "<group>"; };
@@ -328,8 +363,6 @@
 		3E7230F51F7356430050A70D /* FriendsContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsContentViewController.m; sourceTree = "<group>"; };
 		3E7230F71F7357810050A70D /* SettingsSideListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsSideListViewController.h; sourceTree = "<group>"; };
 		3E7230F81F7357810050A70D /* SettingsSideListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsSideListViewController.m; sourceTree = "<group>"; };
-		3E7230FA1F7357A60050A70D /* SettingsContentNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsContentNavigationViewController.h; sourceTree = "<group>"; };
-		3E7230FB1F7357A60050A70D /* SettingsContentNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsContentNavigationViewController.m; sourceTree = "<group>"; };
 		3E7230FD1F7357C60050A70D /* SettingsContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsContentViewController.h; sourceTree = "<group>"; };
 		3E7230FE1F7357C60050A70D /* SettingsContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsContentViewController.m; sourceTree = "<group>"; };
 		3E8875E71F73F8A5001B8374 /* LibrarySideMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibrarySideMenuCell.xib; sourceTree = "<group>"; };
@@ -563,6 +596,46 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3E558BCC1F796E0B00542B7B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3E558BD41F796F5800542B7B /* SettingsNavigationListCell.h */,
+				3E558BD51F796F5800542B7B /* SettingsNavigationListCell.m */,
+				3E558BD71F796F6600542B7B /* SettingsNavigationListHeaderCell.h */,
+				3E558BD81F796F6600542B7B /* SettingsNavigationListHeaderCell.m */,
+				3E558BCD1F796E3500542B7B /* Classes */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		3E558BCD1F796E3500542B7B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3E558BD01F796E7B00542B7B /* SettingsSideListCell.xib */,
+				3E558BCE1F796E6200542B7B /* SettingsNavigationListCell.xib */,
+				3E558BD21F796ED800542B7B /* SettingsNavigationListHeaderCell.xib */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		3E558BDA1F79701400542B7B /* WalletClasses */ = {
+			isa = PBXGroup;
+			children = (
+				3E558BDB1F79703200542B7B /* SettingsNavigationListView.h */,
+				3E558BDC1F79703200542B7B /* SettingsNavigationListView.m */,
+			);
+			name = WalletClasses;
+			sourceTree = "<group>";
+		};
+		3E558BDE1F7970A900542B7B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3E558BDF1F79710300542B7B /* SettingsNavigationListModel.h */,
+				3E558BE01F79710300542B7B /* SettingsNavigationListModel.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		3E6FE7B21F776B9600B98AD3 /* BuyGame */ = {
 			isa = PBXGroup;
 			children = (
@@ -668,7 +741,11 @@
 		3E7230A51F7346260050A70D /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				3E558BDA1F79701400542B7B /* WalletClasses */,
 				3E7230E01F7351EA0050A70D /* Settings.storyboard */,
+				3E558BC81F796D3400542B7B /* SettingsNavigationListView.xib */,
+				3E558BCA1F796D8E00542B7B /* SettingsSideListView.xib */,
+				3E558BCC1F796E0B00542B7B /* Cells */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -715,10 +792,12 @@
 			children = (
 				3E7230F71F7357810050A70D /* SettingsSideListViewController.h */,
 				3E7230F81F7357810050A70D /* SettingsSideListViewController.m */,
-				3E7230FA1F7357A60050A70D /* SettingsContentNavigationViewController.h */,
-				3E7230FB1F7357A60050A70D /* SettingsContentNavigationViewController.m */,
 				3E7230FD1F7357C60050A70D /* SettingsContentViewController.h */,
 				3E7230FE1F7357C60050A70D /* SettingsContentViewController.m */,
+				3E558BC01F7950BC00542B7B /* SettingsNavigationListViewController.h */,
+				3E558BC11F7950BC00542B7B /* SettingsNavigationListViewController.m */,
+				3E558BE51F79772C00542B7B /* SettingsViewController.h */,
+				3E558BE61F79772C00542B7B /* SettingsViewController.m */,
 			);
 			name = SettingsViewControllers;
 			sourceTree = "<group>";
@@ -900,6 +979,7 @@
 				3EBAADDB1F7599E300890AD1 /* Store */,
 				3EBAADDA1F7599D500890AD1 /* Library */,
 				3EBAADF91F760A3400890AD1 /* Wallet */,
+				3E558BDE1F7970A900542B7B /* Settings */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -926,6 +1006,8 @@
 				3E6FE7FE1F784BCF00B98AD3 /* WalletNavigationController.m */,
 				3E558BB21F78B7D000542B7B /* LibraryNavigationController.h */,
 				3E558BB31F78B7D000542B7B /* LibraryNavigationController.m */,
+				3E558BE21F7973A500542B7B /* SettingsNavigationViewController.h */,
+				3E558BE31F7973A500542B7B /* SettingsNavigationViewController.m */,
 			);
 			name = NavigationControllers;
 			sourceTree = "<group>";
@@ -1118,6 +1200,8 @@
 				3E6FE8161F78980C00B98AD3 /* SendMoneyButton.m */,
 				3E558BBA1F794B7D00542B7B /* AddGame.h */,
 				3E558BBB1F794B7D00542B7B /* AddGame.m */,
+				3E558BC51F79558100542B7B /* ProfileEditButton.h */,
+				3E558BC61F79558100542B7B /* ProfileEditButton.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1146,6 +1230,7 @@
 				3E6FE8031F78732B00B98AD3 /* PrivateKeyButton.xib */,
 				3E6FE8131F7897EB00B98AD3 /* SendMoneyButton.xib */,
 				3E558BB81F794A9200542B7B /* AddGame.xib */,
+				3E558BC31F79549200542B7B /* ProfileEditButton.xib */,
 			);
 			name = Buttons;
 			sourceTree = "<group>";
@@ -1275,6 +1360,7 @@
 				3E6FE7D91F77D41300B98AD3 /* StoreGamesGridView.xib in Resources */,
 				3E88761F1F7434E7001B8374 /* StoreDownloadsCell.xib in Resources */,
 				3E6FE7B71F776D3B00B98AD3 /* BuyGameScreenshotsView.xib in Resources */,
+				3E558BD31F796ED800542B7B /* SettingsNavigationListHeaderCell.xib in Resources */,
 				3E7230B01F734A070050A70D /* StoreSideMenu.xib in Resources */,
 				3EBAADCB1F75922700890AD1 /* LibraryGamesServerListHeaderCell.xib in Resources */,
 				3ECF3CF21F6979A2005165E5 /* SendMessageButton.xib in Resources */,
@@ -1290,6 +1376,7 @@
 				3E8EEF711F6DB26A0034BE04 /* CustomCell.xib in Resources */,
 				3ECF3CDC1F696D54005165E5 /* CancelButton.xib in Resources */,
 				3E8876541F74ABCA001B8374 /* FriendsRightListNotificationCell.xib in Resources */,
+				3E558BCB1F796D8E00542B7B /* SettingsSideListView.xib in Resources */,
 				3E7230C01F734BDD0050A70D /* Wallet.storyboard in Resources */,
 				3E6FE7AE1F77602800B98AD3 /* LibraryScreenshotsView.xib in Resources */,
 				3E6FE7E41F77FC1100B98AD3 /* WelcomeContinueButton.xib in Resources */,
@@ -1301,11 +1388,14 @@
 				3ECF3CDA1F696CF6005165E5 /* AddButton.xib in Resources */,
 				3E6FE8141F7897EB00B98AD3 /* SendMoneyButton.xib in Resources */,
 				3E7230BA1F734B5F0050A70D /* LibrarySideMenu.xib in Resources */,
+				3E558BC91F796D3400542B7B /* SettingsNavigationListView.xib in Resources */,
 				3E9C46051F7048DE00693AA1 /* Store.storyboard in Resources */,
 				3E7230B41F734ABB0050A70D /* StoreGamesView.xib in Resources */,
+				3E558BC41F79549200542B7B /* ProfileEditButton.xib in Resources */,
 				3E7230C41F734C0F0050A70D /* SendView.xib in Resources */,
 				3ECF3CF01F6978DA005165E5 /* SaveSettingsButton.xib in Resources */,
 				3E8EEF731F6DB3440034BE04 /* CustomHeaderCell.xib in Resources */,
+				3E558BD11F796E7B00542B7B /* SettingsSideListCell.xib in Resources */,
 				3E88761A1F7428DA001B8374 /* WalletHistoryCell.xib in Resources */,
 				3E7230DF1F7351820050A70D /* Friends.storyboard in Resources */,
 				3E88764A1F749D31001B8374 /* GameTagImageView.xib in Resources */,
@@ -1314,6 +1404,7 @@
 				3E8875FE1F740DEC001B8374 /* LibraryGamesRightMenuHeaderCell.xib in Resources */,
 				3E8876241F744329001B8374 /* StoreGamesCell.xib in Resources */,
 				3E7230BE1F734B7F0050A70D /* LibraryGameView.xib in Resources */,
+				3E558BCF1F796E6200542B7B /* SettingsNavigationListCell.xib in Resources */,
 				3E6FE7E91F78068C00B98AD3 /* PassphraseView.xib in Resources */,
 				3E9C46101F70904F00693AA1 /* ChartView.xib in Resources */,
 				3ECF3CF41F6979D9005165E5 /* RemoveButton.xib in Resources */,
@@ -1394,18 +1485,19 @@
 				3E6FE7B11F77605800B98AD3 /* LibraryScreenshotsView.m in Sources */,
 				3E1FF8E91F6AD86400117F16 /* CustomTabbar.m in Sources */,
 				3E25FB271F66EBCA000423E9 /* ViewController.m in Sources */,
-				3E7230FC1F7357A60050A70D /* SettingsContentNavigationViewController.m in Sources */,
 				3E25FB241F66EBCA000423E9 /* main.m in Sources */,
 				3ECF3CCE1F689CC2005165E5 /* RoundButton.m in Sources */,
 				3E7230F01F73559F0050A70D /* FriendsContentNavigationViewController.m in Sources */,
 				3E7230D71F734F5A0050A70D /* WalletSideMenuViewController.m in Sources */,
 				3E9C46021F70484C00693AA1 /* StoreNavigationViewController.m in Sources */,
 				3E8875F01F74027A001B8374 /* LibrarySideMenuCell.m in Sources */,
+				3E558BC21F7950BC00542B7B /* SettingsNavigationListViewController.m in Sources */,
 				3EBAADC91F75920300890AD1 /* LibraryGamesServerListHeaderCell.m in Sources */,
 				3EBAAE021F760DEC00890AD1 /* WalletSideMenuModel.m in Sources */,
 				3E8A04C51F682E5400579DF8 /* LIButton.m in Sources */,
 				3E7230FF1F7357C60050A70D /* SettingsContentViewController.m in Sources */,
 				3E6FE7DC1F77D46C00B98AD3 /* StoreGamesGridView.m in Sources */,
+				3E558BD61F796F5800542B7B /* SettingsNavigationListCell.m in Sources */,
 				3E6FE7EC1F782A6900B98AD3 /* PassphraseView.m in Sources */,
 				3E8876011F74104E001B8374 /* LibraryGamesRightMenuHeaderCell.m in Sources */,
 				3E558BB41F78B7D000542B7B /* LibraryNavigationController.m in Sources */,
@@ -1417,6 +1509,7 @@
 				3E88765C1F74AF6D001B8374 /* FriendsRightListCell.m in Sources */,
 				3E8876041F741825001B8374 /* LibraryGamesServerListCell.m in Sources */,
 				3E6FE7C81F7783D300B98AD3 /* FriendsFeaturedGamesView.m in Sources */,
+				3E558BD91F796F6600542B7B /* SettingsNavigationListHeaderCell.m in Sources */,
 				3E9C462D1F71F9DF00693AA1 /* TextFieldWithFriend.m in Sources */,
 				3E8876501F74A038001B8374 /* FriendsProfileContentViewCell.m in Sources */,
 				3E8876621F74B654001B8374 /* StorePaymentInformationCell.m in Sources */,
@@ -1464,11 +1557,15 @@
 				3E6FE7A01F7745D300B98AD3 /* LibraryFriendsGames.m in Sources */,
 				3EBAADE41F75A4B800890AD1 /* StoreGamesViewModel.m in Sources */,
 				3E6FE7C11F777EC400B98AD3 /* FriendsFeaturedGamesItem.m in Sources */,
+				3E558BE71F79772C00542B7B /* SettingsViewController.m in Sources */,
 				3E8876661F754561001B8374 /* LibrarySideMenu.m in Sources */,
+				3E558BDD1F79703200542B7B /* SettingsNavigationListView.m in Sources */,
 				3E6FE7AB1F775E9C00B98AD3 /* LibraryScreenshotItem.m in Sources */,
+				3E558BC71F79558100542B7B /* ProfileEditButton.m in Sources */,
 				3E6FE7E71F77FD8100B98AD3 /* WelcomeContinueButton.m in Sources */,
 				3E6FE8101F78883A00B98AD3 /* NSView+Fade.m in Sources */,
 				3E7230F61F7356430050A70D /* FriendsContentViewController.m in Sources */,
+				3E558BE11F79710300542B7B /* SettingsNavigationListModel.m in Sources */,
 				3E88761D1F7432C0001B8374 /* WalletHistoryCell.m in Sources */,
 				3E88764D1F749EF7001B8374 /* GameTagImageView.m in Sources */,
 				3E8876121F741F70001B8374 /* LibrarySideMenuHeaderCell.m in Sources */,
@@ -1479,6 +1576,7 @@
 				3E6FE7D61F77C08500B98AD3 /* StoreGamesGridCell.m in Sources */,
 				3E88762E1F7471A5001B8374 /* FriendsChatRequestCell.m in Sources */,
 				3E88765F1F74B132001B8374 /* FriendsRightListNotificationCell.m in Sources */,
+				3E558BE41F7973A500542B7B /* SettingsNavigationViewController.m in Sources */,
 				3EBAADD41F7595FE00890AD1 /* StoreSideMenu.m in Sources */,
 				3E6FE7E21F77F1BC00B98AD3 /* MainWindow.m in Sources */,
 				3E3E41FA1F7565C5009698FD /* LibraryGamesRightMenuModel.m in Sources */,

@@ -674,7 +674,7 @@
                         <value key="maxSize" type="size" width="2880" height="1800"/>
                     </window>
                     <connections>
-                        <segue destination="XTK-Fr-lor" kind="relationship" relationship="window.shadowedContentViewController" id="OrC-QN-NYz"/>
+                        <segue destination="XTK-Fr-lor" kind="relationship" relationship="window.shadowedContentViewController" id="Eyb-bt-pt0"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -858,10 +858,10 @@
             </objects>
             <point key="canvasLocation" x="2916" y="3678"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings Navigation View Controller-->
         <scene sceneID="BtP-7J-afD">
             <objects>
-                <viewController storyboardIdentifier="ViewController4" id="u2g-ve-zUy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController4" id="u2g-ve-zUy" customClass="SettingsNavigationViewController" sceneMemberID="viewController">
                     <view key="view" id="l2z-zg-PU8">
                         <rect key="frame" x="0.0" y="0.0" width="2048" height="929"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -874,17 +874,10 @@
                                 </view>
                                 <color key="fillColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                             </box>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="MRS-N1-bRI" customClass="StoreGamesGridView">
-                                <rect key="frame" x="0.0" y="0.0" width="2048" height="929"/>
-                            </customView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="MRS-N1-bRI" secondAttribute="trailing" id="3PO-FN-FA5"/>
                             <constraint firstItem="n0H-CR-N7K" firstAttribute="leading" secondItem="l2z-zg-PU8" secondAttribute="leading" id="5JQ-y2-Q1g"/>
-                            <constraint firstItem="MRS-N1-bRI" firstAttribute="top" secondItem="l2z-zg-PU8" secondAttribute="top" id="5m9-Xb-tj7"/>
                             <constraint firstAttribute="bottom" secondItem="n0H-CR-N7K" secondAttribute="bottom" id="9t9-DL-jw0"/>
-                            <constraint firstAttribute="bottom" secondItem="MRS-N1-bRI" secondAttribute="bottom" id="Txp-tc-Aaa"/>
-                            <constraint firstItem="MRS-N1-bRI" firstAttribute="leading" secondItem="l2z-zg-PU8" secondAttribute="leading" id="YtO-GR-7Nr"/>
                             <constraint firstAttribute="trailing" secondItem="n0H-CR-N7K" secondAttribute="trailing" id="dcr-p4-Zko"/>
                             <constraint firstItem="n0H-CR-N7K" firstAttribute="top" secondItem="l2z-zg-PU8" secondAttribute="top" id="vsc-ol-uPx"/>
                         </constraints>

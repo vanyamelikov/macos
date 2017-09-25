@@ -21,7 +21,7 @@
     NSWindow *window = [[NSApplication sharedApplication] mainWindow];
     [window setBackgroundColor:[NSColor colorWithPatternImage:[NSImage imageNamed:@"Background"]]];
 
-    self.secondView.hidden = YES;
+    self.secondView.alphaValue = 0.0f;
     self.passphareView.hidden = YES;
 
     NSClickGestureRecognizer *registerClick = [[NSClickGestureRecognizer alloc] initWithTarget:self action:@selector(RegisterAction:)];
@@ -38,15 +38,16 @@
 {
     self.RegisterLabel.textColor = [NSColor whiteColor];
     self.SignInLabel.textColor = [NSColor colorFromHexString:@"959AA2"];
-    [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
-        context.duration = 0.5f;
-        self.firstView.animator.alphaValue = 0;
-    }
-                        completionHandler:^{
-                            self.firstView.hidden = YES;
-                            self.secondView.hidden = NO;
-                            self.firstView.alphaValue = 1;
-                        }];
+//    [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
+//        context.duration = 0.5f;
+//        self.firstView.animator.alphaValue = 0;
+//    }
+//                        completionHandler:^{
+//                            self.firstView.hidden = YES;
+//                            self.secondView.hidden = NO;
+//                            self.firstView.alphaValue = 1;
+//                        }];
+    [self fadeInOutAnimation:self.firstView :self.secondView];
     
 }
 
@@ -54,15 +55,16 @@
 {
     self.SignInLabel.textColor = [NSColor whiteColor];
     self.RegisterLabel.textColor = [NSColor colorFromHexString:@"959AA2"];
-    [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
-        context.duration = 0.5f;
-        self.secondView.animator.alphaValue = 0;
-    }
-                        completionHandler:^{
-                            self.secondView.hidden = YES;
-                            self.firstView.hidden = NO;
-                            self.secondView.alphaValue = 1;
-                        }];
+//    [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
+//        context.duration = 0.5f;
+//        self.secondView.animator.alphaValue = 0;
+//    }
+//                        completionHandler:^{
+//                            self.secondView.hidden = YES;
+//                            self.firstView.hidden = NO;
+//                            self.secondView.alphaValue = 1;
+//                        }];
+    [self fadeInOutAnimation:self.secondView :self.firstView];
     
 }
 
@@ -81,6 +83,18 @@
 }
 
 
+-(void)fadeInOutAnimation : (NSView *) view1 : (NSView *) view2 {
+    //duration doesn't work
+    [NSAnimationContext beginGrouping];
+    [[NSAnimationContext currentContext] setDuration:2.0];
+    [[view1 animator] setAlphaValue:0.0f];
+    [NSAnimationContext endGrouping];
+    
+    [NSAnimationContext beginGrouping];
+    [[NSAnimationContext currentContext] setDuration:2.0];
+    [[view2 animator] setAlphaValue:1.0f];
+    [NSAnimationContext endGrouping];
+}
 
 
 @end
