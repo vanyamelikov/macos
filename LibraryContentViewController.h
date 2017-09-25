@@ -7,7 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "AddGameButton.h"
 
 @interface LibraryContentViewController : NSViewController
+
+@property (strong) IBOutlet NSView *libraryEmptyView;
+@property (strong) IBOutlet NSView *libraryGameView;
+@property (strong) IBOutlet AddGameButton *addGameButton;
 
 @end
