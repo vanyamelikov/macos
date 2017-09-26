@@ -50,7 +50,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <customView identifier="LibraryGamesRightMenuHeaderCell" id="IuX-uc-HwA" customClass="LibraryGamesRightMenuHeaderCell">
+                                                        <customView identifier="WalletSideMenuHeaderCell" id="IuX-uc-HwA" customClass="WalletSideMenuHeaderCell">
                                                             <rect key="frame" x="1" y="1" width="405" height="45"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         </customView>

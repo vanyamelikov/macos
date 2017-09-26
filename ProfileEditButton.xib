@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ProfileEditButton"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="sEY-fQ-Yr3">
+            <rect key="frame" x="0.0" y="0.0" width="156" height="34"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="azB-8b-Go4">
+                    <rect key="frame" x="0.0" y="0.0" width="156" height="34"/>
+                    <view key="contentView" id="uJv-AV-wmr">
+                        <rect key="frame" x="0.0" y="0.0" width="156" height="34"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hcJ-6R-knw">
+                                <rect key="frame" x="4" y="10" width="20" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="LkX-Jf-EOC"/>
+                                    <constraint firstAttribute="height" constant="14" id="UAf-I1-TeE"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_arrow" id="Oht-uS-Zz1"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="hcJ-6R-knw" firstAttribute="centerY" secondItem="uJv-AV-wmr" secondAttribute="centerY" id="12O-uO-1rV"/>
+                            <constraint firstItem="hcJ-6R-knw" firstAttribute="leading" secondItem="uJv-AV-wmr" secondAttribute="leading" constant="4" id="NWO-Qq-l85"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="uoe-x1-Y1Z"/>
+                    </constraints>
+                    <color key="borderColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="itH-2L-nKC">
+                    <rect key="frame" x="26" y="6" width="132" height="30"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Profile/Edit" id="gsV-YT-ciV">
+                        <font key="font" size="20" name="SFUIText-Bold"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="azB-8b-Go4" firstAttribute="top" secondItem="sEY-fQ-Yr3" secondAttribute="top" id="9hh-NQ-S32"/>
+                <constraint firstAttribute="bottom" secondItem="azB-8b-Go4" secondAttribute="bottom" id="E3j-Rn-QGk"/>
+                <constraint firstItem="itH-2L-nKC" firstAttribute="centerY" secondItem="sEY-fQ-Yr3" secondAttribute="centerY" constant="-4" id="RCr-zr-UDL"/>
+                <constraint firstItem="itH-2L-nKC" firstAttribute="leading" secondItem="hcJ-6R-knw" secondAttribute="trailing" constant="4" id="bUV-gg-K9a"/>
+                <constraint firstAttribute="trailing" secondItem="itH-2L-nKC" secondAttribute="trailing" id="g4n-Jt-Ne6"/>
+                <constraint firstItem="azB-8b-Go4" firstAttribute="leading" secondItem="sEY-fQ-Yr3" secondAttribute="leading" id="tBh-cT-3J8"/>
+                <constraint firstAttribute="trailing" secondItem="azB-8b-Go4" secondAttribute="trailing" id="vhA-MP-qwW"/>
+            </constraints>
+            <point key="canvasLocation" x="222" y="204"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_arrow" width="16" height="11"/>
+    </resources>
+</document>

@@ -10,6 +10,7 @@
 #import "WalletSideMenuModel.h"
 #import "LibrarySideMenuCell.h"
 #import "LibraryGamesRightMenuHeaderCell.h"
+#import "WalletSideMenuHeaderCell.h"
 
 @implementation WalletSideMenu {
     NSMutableArray *dataSourceArray;
@@ -69,17 +70,17 @@
     [dataSourceArray addObject:model4];
     
     WalletSideMenuModel *model5 = [WalletSideMenuModel new];
-    model5.title = @"Favorites";
+    model5.title = @"Password";
     model5.isHeader = NO;
     [dataSourceArray addObject:model5];
     
     WalletSideMenuModel *model6 = [WalletSideMenuModel new];
-    model6.title = @"Favorites";
+    model6.title = @"My cards";
     model6.isHeader = NO;
     [dataSourceArray addObject:model6];
     
     WalletSideMenuModel *model7 = [WalletSideMenuModel new];
-    model7.title = @"Favorites";
+    model7.title = @"Security";
     model7.isHeader = NO;
     [dataSourceArray addObject:model7];
     
@@ -104,7 +105,7 @@
 -(CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row {
     WalletSideMenuModel *model = [dataSourceArray objectAtIndex:row];
     if(model.isHeader)
-        return 45;
+        return 40;
     else
         return 29;
 }
@@ -112,7 +113,7 @@
 -(NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
     WalletSideMenuModel *model = [dataSourceArray objectAtIndex:row];
     if(model.isHeader) {
-        LibraryGamesRightMenuHeaderCell *cell = (LibraryGamesRightMenuHeaderCell *)[tableView makeViewWithIdentifier:@"LibraryGamesRightMenuHeaderCell" owner:self];
+        WalletSideMenuHeaderCell *cell = (WalletSideMenuHeaderCell *)[tableView makeViewWithIdentifier:@"WalletSideMenuHeaderCell" owner:self];
         cell.label.stringValue = model.title;
         return cell;
     }else {

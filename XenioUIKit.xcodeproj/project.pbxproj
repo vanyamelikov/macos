@@ -40,6 +40,12 @@
 		3E558BE11F79710300542B7B /* SettingsNavigationListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BE01F79710300542B7B /* SettingsNavigationListModel.m */; };
 		3E558BE41F7973A500542B7B /* SettingsNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BE31F7973A500542B7B /* SettingsNavigationViewController.m */; };
 		3E558BE71F79772C00542B7B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BE61F79772C00542B7B /* SettingsViewController.m */; };
+		3E558BEF1F79A44D00542B7B /* WalletSideMenuHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E558BEE1F79A44D00542B7B /* WalletSideMenuHeaderCell.xib */; };
+		3E558BF21F79A46B00542B7B /* WalletSideMenuHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BF11F79A46B00542B7B /* WalletSideMenuHeaderCell.m */; };
+		3E558BF41F79AF7F00542B7B /* FriendsHideCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E558BF31F79AF7F00542B7B /* FriendsHideCell.xib */; };
+		3E558BF71F79AFA500542B7B /* FriendsHideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BF61F79AFA500542B7B /* FriendsHideCell.m */; };
+		3E558BFA1F79D51000542B7B /* StoreMainGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E558BF91F79D51000542B7B /* StoreMainGridView.m */; };
+		3E558BFC1F79D53200542B7B /* StoreMainGridView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E558BFB1F79D53200542B7B /* StoreMainGridView.xib */; };
 		3E6FE79D1F77452700B98AD3 /* LibraryFriendsGames.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6FE79C1F77452700B98AD3 /* LibraryFriendsGames.xib */; };
 		3E6FE7A01F7745D300B98AD3 /* LibraryFriendsGames.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE79F1F7745D300B98AD3 /* LibraryFriendsGames.m */; };
 		3E6FE7A61F774A9B00B98AD3 /* LibraryFriendsGamesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6FE7A41F774A9B00B98AD3 /* LibraryFriendsGamesItem.m */; };
@@ -260,6 +266,15 @@
 		3E558BE31F7973A500542B7B /* SettingsNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsNavigationViewController.m; sourceTree = "<group>"; };
 		3E558BE51F79772C00542B7B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		3E558BE61F79772C00542B7B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		3E558BEE1F79A44D00542B7B /* WalletSideMenuHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletSideMenuHeaderCell.xib; sourceTree = "<group>"; };
+		3E558BF01F79A46B00542B7B /* WalletSideMenuHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletSideMenuHeaderCell.h; sourceTree = "<group>"; };
+		3E558BF11F79A46B00542B7B /* WalletSideMenuHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletSideMenuHeaderCell.m; sourceTree = "<group>"; };
+		3E558BF31F79AF7F00542B7B /* FriendsHideCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsHideCell.xib; sourceTree = "<group>"; };
+		3E558BF51F79AFA500542B7B /* FriendsHideCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsHideCell.h; sourceTree = "<group>"; };
+		3E558BF61F79AFA500542B7B /* FriendsHideCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsHideCell.m; sourceTree = "<group>"; };
+		3E558BF81F79D51000542B7B /* StoreMainGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreMainGridView.h; sourceTree = "<group>"; };
+		3E558BF91F79D51000542B7B /* StoreMainGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreMainGridView.m; sourceTree = "<group>"; };
+		3E558BFB1F79D53200542B7B /* StoreMainGridView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreMainGridView.xib; sourceTree = "<group>"; };
 		3E6FE79C1F77452700B98AD3 /* LibraryFriendsGames.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryFriendsGames.xib; sourceTree = "<group>"; };
 		3E6FE79E1F7745D300B98AD3 /* LibraryFriendsGames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryFriendsGames.h; sourceTree = "<group>"; };
 		3E6FE79F1F7745D300B98AD3 /* LibraryFriendsGames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryFriendsGames.m; sourceTree = "<group>"; };
@@ -701,6 +716,9 @@
 				3EBAADE81F75BD6D00890AD1 /* StoreDownloadsView.xib */,
 				3E6FE7D81F77D41300B98AD3 /* StoreGamesGridView.xib */,
 				3E8876131F7423F0001B8374 /* Cells */,
+				3E558BF81F79D51000542B7B /* StoreMainGridView.h */,
+				3E558BF91F79D51000542B7B /* StoreMainGridView.m */,
+				3E558BFB1F79D53200542B7B /* StoreMainGridView.xib */,
 			);
 			name = Store;
 			sourceTree = "<group>";
@@ -728,12 +746,8 @@
 				3E6FE7C51F7783BB00B98AD3 /* Classes */,
 				3E8876281F746CBE001B8374 /* Cells */,
 				3E7230DE1F7351820050A70D /* Friends.storyboard */,
-				3E88762F1F7471B6001B8374 /* FriendsChatRequestCell.xib */,
-				3E88763A1F749462001B8374 /* FriendsContentViewListCell.xib */,
-				3E8876471F749B70001B8374 /* FriendsProfileContentViewCell.xib */,
-				3E8876511F74ABB2001B8374 /* FriendsRightListCell.xib */,
-				3E8876531F74ABCA001B8374 /* FriendsRightListNotificationCell.xib */,
 				3E6FE7C31F77834300B98AD3 /* FriendsFeaturedGamesView.xib */,
+				3E558BF31F79AF7F00542B7B /* FriendsHideCell.xib */,
 			);
 			name = Friends;
 			sourceTree = "<group>";
@@ -880,6 +894,7 @@
 				3E8876161F7426BD001B8374 /* Classes */,
 				3E8876191F7428DA001B8374 /* WalletHistoryCell.xib */,
 				3E6FE7CB1F77909700B98AD3 /* WalletChooseFriendItem.xib */,
+				3E558BEE1F79A44D00542B7B /* WalletSideMenuHeaderCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -891,6 +906,8 @@
 				3E6FE7CA1F77909700B98AD3 /* WalletChooseFriendItem.m */,
 				3E88761B1F7432C0001B8374 /* WalletHistoryCell.h */,
 				3E88761C1F7432C0001B8374 /* WalletHistoryCell.m */,
+				3E558BF01F79A46B00542B7B /* WalletSideMenuHeaderCell.h */,
+				3E558BF11F79A46B00542B7B /* WalletSideMenuHeaderCell.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -902,6 +919,11 @@
 				3E6FE7BE1F777EC400B98AD3 /* FriendsFeaturedGamesItem.h */,
 				3E6FE7BF1F777EC400B98AD3 /* FriendsFeaturedGamesItem.m */,
 				3E6FE7C01F777EC400B98AD3 /* FriendsFeaturedGamesItem.xib */,
+				3E88762F1F7471B6001B8374 /* FriendsChatRequestCell.xib */,
+				3E88763A1F749462001B8374 /* FriendsContentViewListCell.xib */,
+				3E8876471F749B70001B8374 /* FriendsProfileContentViewCell.xib */,
+				3E8876511F74ABB2001B8374 /* FriendsRightListCell.xib */,
+				3E8876531F74ABCA001B8374 /* FriendsRightListNotificationCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -909,6 +931,8 @@
 		3E8876291F746CC6001B8374 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3E558BF51F79AFA500542B7B /* FriendsHideCell.h */,
+				3E558BF61F79AFA500542B7B /* FriendsHideCell.m */,
 				3E88762C1F7471A5001B8374 /* FriendsChatRequestCell.h */,
 				3E88762D1F7471A5001B8374 /* FriendsChatRequestCell.m */,
 				3E88763C1F749720001B8374 /* FriendsContentViewListCell.h */,
@@ -1348,6 +1372,7 @@
 				3E8876341F748D4A001B8374 /* GameTagView.xib in Resources */,
 				3E8875F71F74085A001B8374 /* LibraryGamesRightMenuCell.xib in Resources */,
 				3E6FE7CF1F7793CE00B98AD3 /* WalletChooseFriendCollectionView.xib in Resources */,
+				3E558BFC1F79D53200542B7B /* StoreMainGridView.xib in Resources */,
 				3E1FF8E61F6AC4F700117F16 /* CustomTabbar.xib in Resources */,
 				3E7230BC1F734B6E0050A70D /* LibraryEmptyView.xib in Resources */,
 				3E6FE7A71F774A9B00B98AD3 /* LibraryFriendsGamesItem.xib in Resources */,
@@ -1366,12 +1391,14 @@
 				3ECF3CF21F6979A2005165E5 /* SendMessageButton.xib in Resources */,
 				3ECF3CC11F6884B1005165E5 /* PreOrderButton.xib in Resources */,
 				3E25FB2C1F66EBCA000423E9 /* Main.storyboard in Resources */,
+				3E558BEF1F79A44D00542B7B /* WalletSideMenuHeaderCell.xib in Resources */,
 				3E0224E81F72148B00C99608 /* TextFieldWithFriend.xib in Resources */,
 				3EBAADEF1F75CCEC00890AD1 /* WalletHistoryView.xib in Resources */,
 				3E8876301F7471B6001B8374 /* FriendsChatRequestCell.xib in Resources */,
 				3E8876521F74ABB2001B8374 /* FriendsRightListCell.xib in Resources */,
 				3E88763B1F749462001B8374 /* FriendsContentViewListCell.xib in Resources */,
 				3E8876081F7418AA001B8374 /* LibraryGamesRightMenuView.xib in Resources */,
+				3E558BF41F79AF7F00542B7B /* FriendsHideCell.xib in Resources */,
 				3E8875E81F73F8A5001B8374 /* LibrarySideMenuCell.xib in Resources */,
 				3E8EEF711F6DB26A0034BE04 /* CustomCell.xib in Resources */,
 				3ECF3CDC1F696D54005165E5 /* CancelButton.xib in Resources */,
@@ -1489,6 +1516,7 @@
 				3ECF3CCE1F689CC2005165E5 /* RoundButton.m in Sources */,
 				3E7230F01F73559F0050A70D /* FriendsContentNavigationViewController.m in Sources */,
 				3E7230D71F734F5A0050A70D /* WalletSideMenuViewController.m in Sources */,
+				3E558BF71F79AFA500542B7B /* FriendsHideCell.m in Sources */,
 				3E9C46021F70484C00693AA1 /* StoreNavigationViewController.m in Sources */,
 				3E8875F01F74027A001B8374 /* LibrarySideMenuCell.m in Sources */,
 				3E558BC21F7950BC00542B7B /* SettingsNavigationListViewController.m in Sources */,
@@ -1512,6 +1540,7 @@
 				3E558BD91F796F6600542B7B /* SettingsNavigationListHeaderCell.m in Sources */,
 				3E9C462D1F71F9DF00693AA1 /* TextFieldWithFriend.m in Sources */,
 				3E8876501F74A038001B8374 /* FriendsProfileContentViewCell.m in Sources */,
+				3E558BF21F79A46B00542B7B /* WalletSideMenuHeaderCell.m in Sources */,
 				3E8876621F74B654001B8374 /* StorePaymentInformationCell.m in Sources */,
 				3E6FE7FC1F7844EC00B98AD3 /* SignInViewController.m in Sources */,
 				3ECF3CE61F697053005165E5 /* CancelButton.m in Sources */,
@@ -1526,6 +1555,7 @@
 				3EBAADE11F75A34900890AD1 /* StoreGamesView.m in Sources */,
 				3E8876271F745460001B8374 /* StoreGamesCell.m in Sources */,
 				3E7230AC1F7348C30050A70D /* MainStoreViewController.m in Sources */,
+				3E558BFA1F79D51000542B7B /* StoreMainGridView.m in Sources */,
 				3ECF3CE71F697053005165E5 /* AllStopButton.m in Sources */,
 				3E7230D11F734EA10050A70D /* LibrarySideMenuViewController.m in Sources */,
 				3E7230CB1F734E110050A70D /* StoreSideMenuViewController.m in Sources */,

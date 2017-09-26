@@ -758,6 +758,22 @@
                     <view key="view" id="DCb-Xd-lLe">
                         <rect key="frame" x="0.0" y="0.0" width="585" height="291"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="ZEF-6d-Iyk">
+                                <rect key="frame" x="0.0" y="0.0" width="585" height="291"/>
+                                <view key="contentView" id="zVk-PZ-pRx">
+                                    <rect key="frame" x="0.0" y="0.0" width="585" height="291"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="fillColor" red="0.094117647060000004" green="0.1058823529" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZEF-6d-Iyk" secondAttribute="bottom" id="CtO-T1-4el"/>
+                            <constraint firstItem="ZEF-6d-Iyk" firstAttribute="top" secondItem="DCb-Xd-lLe" secondAttribute="top" id="Ur1-g4-hKu"/>
+                            <constraint firstAttribute="trailing" secondItem="ZEF-6d-Iyk" secondAttribute="trailing" id="gCV-Zo-pie"/>
+                            <constraint firstItem="ZEF-6d-Iyk" firstAttribute="leading" secondItem="DCb-Xd-lLe" secondAttribute="leading" id="w0c-Jr-XB4"/>
+                        </constraints>
                     </view>
                 </viewController>
             </objects>
@@ -839,13 +855,29 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController4" id="u2g-ve-zUy" customClass="SettingsNavigationViewController" sceneMemberID="viewController">
                     <view key="view" id="l2z-zg-PU8">
-                        <rect key="frame" x="0.0" y="0.0" width="2048" height="929"/>
+                        <rect key="frame" x="0.0" y="0.0" width="585" height="330"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Rzw-rw-X7l">
+                                <rect key="frame" x="0.0" y="0.0" width="585" height="330"/>
+                                <view key="contentView" id="rwo-CF-I1T">
+                                    <rect key="frame" x="0.0" y="0.0" width="585" height="330"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="fillColor" red="0.094117647060000004" green="0.1058823529" blue="0.16078431369999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Rzw-rw-X7l" firstAttribute="leading" secondItem="l2z-zg-PU8" secondAttribute="leading" id="1ee-Bk-PrL"/>
+                            <constraint firstAttribute="trailing" secondItem="Rzw-rw-X7l" secondAttribute="trailing" id="Ry7-Wf-hWY"/>
+                            <constraint firstAttribute="bottom" secondItem="Rzw-rw-X7l" secondAttribute="bottom" id="gr3-kJ-boe"/>
+                            <constraint firstItem="Rzw-rw-X7l" firstAttribute="top" secondItem="l2z-zg-PU8" secondAttribute="top" id="pJP-Bv-Ono"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="SOD-CG-fQW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="974" y="2562.5"/>
+            <point key="canvasLocation" x="1229.5" y="2862"/>
         </scene>
         <!--Wallet Navigation Controller-->
         <scene sceneID="KO5-CZ-daA">
@@ -855,6 +887,22 @@
                     <view key="view" id="p4t-zf-zux">
                         <rect key="frame" x="0.0" y="0.0" width="585" height="308"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="QWg-Ya-9se">
+                                <rect key="frame" x="0.0" y="0.0" width="585" height="308"/>
+                                <view key="contentView" id="Vh6-DN-EvV">
+                                    <rect key="frame" x="0.0" y="0.0" width="585" height="308"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="fillColor" red="0.094117647060000004" green="0.1058823529" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="QWg-Ya-9se" firstAttribute="leading" secondItem="p4t-zf-zux" secondAttribute="leading" id="aM1-4K-kZ2"/>
+                            <constraint firstItem="QWg-Ya-9se" firstAttribute="top" secondItem="p4t-zf-zux" secondAttribute="top" id="mOy-AX-kC8"/>
+                            <constraint firstAttribute="trailing" secondItem="QWg-Ya-9se" secondAttribute="trailing" id="qWI-9x-Ppg"/>
+                            <constraint firstAttribute="bottom" secondItem="QWg-Ya-9se" secondAttribute="bottom" id="wUK-hN-uVw"/>
+                        </constraints>
                     </view>
                 </viewController>
             </objects>

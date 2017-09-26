@@ -75,14 +75,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="2605" height="1272"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="OfV-52-paF">
-                                <rect key="frame" x="0.0" y="0.0" width="2605" height="1272"/>
-                                <view key="contentView" id="lWV-lX-fTW">
-                                    <rect key="frame" x="0.0" y="0.0" width="2605" height="1272"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <color key="fillColor" red="0.094117647058823528" green="0.10588235294117647" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
-                            </box>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="1KH-eR-jX2">
                                 <rect key="frame" x="0.0" y="0.0" width="2605" height="1052"/>
                                 <subviews>
@@ -337,20 +329,16 @@
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="aOU-4E-v24" secondAttribute="trailing" id="1WO-W8-Vfc"/>
-                            <constraint firstItem="OfV-52-paF" firstAttribute="height" secondItem="cH2-q1-xo0" secondAttribute="height" id="2ZV-Hv-tIf"/>
                             <constraint firstItem="1KH-eR-jX2" firstAttribute="leading" secondItem="cH2-q1-xo0" secondAttribute="leading" id="3Fp-o5-CZh"/>
                             <constraint firstItem="AeL-4b-GBn" firstAttribute="top" secondItem="cH2-q1-xo0" secondAttribute="top" constant="13" id="4Oq-qp-XFS"/>
                             <constraint firstItem="IyX-Jw-ylE" firstAttribute="top" secondItem="cH2-q1-xo0" secondAttribute="top" constant="78" id="7eg-pf-nhQ"/>
                             <constraint firstAttribute="bottom" secondItem="aOU-4E-v24" secondAttribute="bottom" id="Aiy-yY-WAd"/>
                             <constraint firstItem="j36-3X-5uH" firstAttribute="top" secondItem="iFy-ek-Fd7" secondAttribute="bottom" constant="2" id="Ddx-IJ-S08"/>
-                            <constraint firstItem="OfV-52-paF" firstAttribute="centerX" secondItem="cH2-q1-xo0" secondAttribute="centerX" id="Hzg-Nb-RAN"/>
                             <constraint firstAttribute="trailing" secondItem="IyX-Jw-ylE" secondAttribute="trailing" constant="26" id="LuL-2i-SoP"/>
                             <constraint firstItem="iFy-ek-Fd7" firstAttribute="top" secondItem="AeL-4b-GBn" secondAttribute="bottom" constant="26" id="PxU-it-pMs"/>
-                            <constraint firstItem="OfV-52-paF" firstAttribute="width" secondItem="cH2-q1-xo0" secondAttribute="width" id="RGk-jc-rSm"/>
                             <constraint firstItem="j36-3X-5uH" firstAttribute="leading" secondItem="cH2-q1-xo0" secondAttribute="leading" constant="30" id="RZI-Jz-KpE"/>
                             <constraint firstItem="aOU-4E-v24" firstAttribute="top" secondItem="cH2-q1-xo0" secondAttribute="top" constant="220" id="Rc6-xG-hpE"/>
                             <constraint firstItem="AeL-4b-GBn" firstAttribute="leading" secondItem="cH2-q1-xo0" secondAttribute="leading" constant="26" id="Wfk-sK-Iw6"/>
-                            <constraint firstItem="OfV-52-paF" firstAttribute="centerY" secondItem="cH2-q1-xo0" secondAttribute="centerY" id="btP-jp-ERF"/>
                             <constraint firstAttribute="bottom" secondItem="1KH-eR-jX2" secondAttribute="bottom" id="gbJ-Hl-uAB"/>
                             <constraint firstItem="IyX-Jw-ylE" firstAttribute="leading" secondItem="cH2-q1-xo0" secondAttribute="leading" constant="26" id="h9b-oq-R1P"/>
                             <constraint firstItem="1KH-eR-jX2" firstAttribute="top" secondItem="cH2-q1-xo0" secondAttribute="top" constant="220" id="k86-Pr-PoM"/>

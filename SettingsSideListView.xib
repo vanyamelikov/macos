@@ -1,15 +1,102 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner"/>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customView id="c22-O7-iKe">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+        <customView wantsLayer="YES" id="pxR-aU-AhE">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="737"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="jwp-oH-toX">
+                    <rect key="frame" x="0.0" y="0.0" width="408" height="737"/>
+                    <view key="contentView" id="vwv-kP-eJC">
+                        <rect key="frame" x="0.0" y="0.0" width="408" height="737"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="47" horizontalPageScroll="10" verticalLineScroll="47" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxo-rY-PjK">
+                                <rect key="frame" x="0.0" y="0.0" width="408" height="667"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="veY-MS-dDP">
+                                    <rect key="frame" x="0.0" y="0.0" width="408" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="45" rowSizeStyle="automatic" viewBased="YES" floatsGroupRows="NO" id="wUl-v9-9Wj">
+                                            <rect key="frame" x="0.0" y="0.0" width="408" height="667"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <size key="intercellSpacing" width="3" height="2"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <color key="gridColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <tableColumns>
+                                                <tableColumn editable="NO" width="405" minWidth="40" maxWidth="1000" id="zov-2z-2mI">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="AdY-i5-B4k">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <prototypeCellViews>
+                                                        <customView identifier="FriendsHideCell" focusRingType="none" id="q78-3G-gGO" customClass="FriendsRightListCell">
+                                                            <rect key="frame" x="1" y="1" width="405" height="29"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        </customView>
+                                                        <customView identifier="FriendsRightListCell" focusRingType="none" id="sO5-jf-yiD" customClass="FriendsRightListCell">
+                                                            <rect key="frame" x="1" y="32" width="405" height="29"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        </customView>
+                                                    </prototypeCellViews>
+                                                </tableColumn>
+                                            </tableColumns>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="yOL-me-ddq">
+                                    <rect key="frame" x="-100" y="-100" width="223" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="n6t-uY-CWZ">
+                                    <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="WIf-vo-8dJ">
+                                <rect key="frame" x="0.0" y="667" width="408" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="qvI-ee-8bp"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Gxo-rY-PjK" secondAttribute="bottom" id="14s-eU-K98"/>
+                            <constraint firstItem="Gxo-rY-PjK" firstAttribute="top" secondItem="WIf-vo-8dJ" secondAttribute="bottom" id="9Mc-l6-A45"/>
+                            <constraint firstItem="WIf-vo-8dJ" firstAttribute="leading" secondItem="vwv-kP-eJC" secondAttribute="leading" id="Cfw-KU-cf6"/>
+                            <constraint firstItem="WIf-vo-8dJ" firstAttribute="top" secondItem="vwv-kP-eJC" secondAttribute="top" id="RfU-My-cPS"/>
+                            <constraint firstAttribute="trailing" secondItem="WIf-vo-8dJ" secondAttribute="trailing" id="YaU-fY-2aW"/>
+                            <constraint firstAttribute="trailing" secondItem="Gxo-rY-PjK" secondAttribute="trailing" id="o71-aQ-YGO"/>
+                            <constraint firstItem="Gxo-rY-PjK" firstAttribute="leading" secondItem="vwv-kP-eJC" secondAttribute="leading" id="v8v-dD-lls"/>
+                        </constraints>
+                    </view>
+                    <color key="fillColor" red="0.08235294118" green="0.094117647060000004" blue="0.13725490200000001" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jwp-oH-toX" secondAttribute="trailing" id="Eby-Za-usi"/>
+                <constraint firstItem="jwp-oH-toX" firstAttribute="leading" secondItem="pxR-aU-AhE" secondAttribute="leading" id="WoZ-3l-rNc"/>
+                <constraint firstItem="jwp-oH-toX" firstAttribute="top" secondItem="pxR-aU-AhE" secondAttribute="top" id="gcq-Bg-AJe"/>
+                <constraint firstAttribute="bottom" secondItem="jwp-oH-toX" secondAttribute="bottom" id="pFH-9z-pF7"/>
+            </constraints>
+            <point key="canvasLocation" x="-363" y="400.5"/>
         </customView>
     </objects>
 </document>

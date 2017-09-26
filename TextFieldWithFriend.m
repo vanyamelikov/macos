@@ -40,6 +40,7 @@
     self = [super initWithFrame:frameRect];
     if(self) {
         [self initView];
+        [self drawTextField];
     }
     return self;
 }
