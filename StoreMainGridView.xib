@@ -14,88 +14,135 @@
             <rect key="frame" x="0.0" y="0.0" width="1134" height="594"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <box fixedFrame="YES" boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Owu-5g-M0W">
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Owu-5g-M0W">
                     <rect key="frame" x="0.0" y="0.0" width="202" height="202"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <view key="contentView" ambiguous="YES" id="vCb-Z5-stC">
+                    <view key="contentView" id="vCb-Z5-stC">
                         <rect key="frame" x="0.0" y="0.0" width="202" height="202"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="202" id="As9-8t-jka"/>
+                        <constraint firstAttribute="width" constant="202" id="fM6-Mh-3NJ"/>
+                    </constraints>
                     <color key="fillColor" red="1" green="0.024711538460000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </box>
-                <box fixedFrame="YES" boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="rNJ-LR-3mk">
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="rNJ-LR-3mk">
                     <rect key="frame" x="202" y="0.0" width="202" height="202"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <view key="contentView" ambiguous="YES" id="r3i-Lv-8MF">
+                    <view key="contentView" id="r3i-Lv-8MF">
                         <rect key="frame" x="0.0" y="0.0" width="202" height="202"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="202" id="1iu-q5-JG4"/>
+                        <constraint firstAttribute="width" constant="202" id="uZj-gc-HLg"/>
+                    </constraints>
                     <color key="fillColor" red="0.96560126540000002" green="0.78072273729999997" blue="0.34421676400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </box>
-                <box fixedFrame="YES" boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="ydV-jJ-5Dg">
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="ydV-jJ-5Dg">
                     <rect key="frame" x="404" y="0.0" width="202" height="202"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <view key="contentView" ambiguous="YES" id="Xcq-pG-OfE">
+                    <view key="contentView" id="Xcq-pG-OfE">
                         <rect key="frame" x="0.0" y="0.0" width="202" height="202"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="202" id="afE-FE-gkx"/>
+                        <constraint firstAttribute="height" constant="202" id="cRL-zE-1xg"/>
+                    </constraints>
                     <color key="fillColor" red="0.98431372549999996" green="0.93333333330000001" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                 </box>
-                <box fixedFrame="YES" boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="hxb-tf-1sf">
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="hxb-tf-1sf">
                     <rect key="frame" x="606" y="0.0" width="528" height="202"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <view key="contentView" ambiguous="YES" id="xB5-fK-8lI">
+                    <view key="contentView" id="xB5-fK-8lI">
                         <rect key="frame" x="0.0" y="0.0" width="528" height="202"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="202" id="Gtx-ab-uy1"/>
+                        <constraint firstAttribute="width" constant="528" id="c5Y-2W-cJE"/>
+                    </constraints>
                     <color key="fillColor" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
                 </box>
-                <box fixedFrame="YES" boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="sfc-eT-cDj">
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="sfc-eT-cDj">
                     <rect key="frame" x="0.0" y="202" width="742" height="392"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <view key="contentView" ambiguous="YES" id="itc-uu-ZaL">
+                    <view key="contentView" id="itc-uu-ZaL">
                         <rect key="frame" x="0.0" y="0.0" width="742" height="392"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="392" id="1lQ-Pl-d9R"/>
+                        <constraint firstAttribute="width" constant="742" id="f9g-Ll-i8B"/>
+                    </constraints>
                     <color key="fillColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
                 </box>
-                <box fixedFrame="YES" boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="oEZ-Vk-YfB">
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="oEZ-Vk-YfB">
                     <rect key="frame" x="742" y="202" width="202" height="202"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <view key="contentView" ambiguous="YES" id="srq-a7-qTz">
+                    <view key="contentView" id="srq-a7-qTz">
                         <rect key="frame" x="0.0" y="0.0" width="202" height="202"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="202" id="3Nx-M3-z6i"/>
+                        <constraint firstAttribute="width" constant="202" id="R4L-fY-p32"/>
+                    </constraints>
                     <color key="fillColor" red="0.58431372550000005" green="0.60392156860000001" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                 </box>
-                <box fixedFrame="YES" boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="lqz-Oe-Fba">
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="lqz-Oe-Fba">
                     <rect key="frame" x="944" y="202" width="190" height="202"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <view key="contentView" ambiguous="YES" id="FYR-V8-EJh">
+                    <view key="contentView" id="FYR-V8-EJh">
                         <rect key="frame" x="0.0" y="0.0" width="190" height="202"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="190" id="9ZV-cg-6vp"/>
+                        <constraint firstAttribute="height" constant="202" id="BWG-ok-227"/>
+                    </constraints>
                     <color key="fillColor" name="selectedKnobColor" catalog="System" colorSpace="catalog"/>
                 </box>
-                <box fixedFrame="YES" boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="aUi-Gy-2iy">
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="aUi-Gy-2iy">
                     <rect key="frame" x="742" y="404" width="202" height="190"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <view key="contentView" ambiguous="YES" id="keI-U3-O1T">
+                    <view key="contentView" id="keI-U3-O1T">
                         <rect key="frame" x="0.0" y="0.0" width="202" height="190"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="202" id="WbE-Nu-cP5"/>
+                        <constraint firstAttribute="height" constant="190" id="gYL-fG-cgM"/>
+                    </constraints>
                     <color key="fillColor" red="0.88630746729999998" green="0.31708508730000001" blue="0.52908444399999999" alpha="1" colorSpace="calibratedRGB"/>
                 </box>
-                <box fixedFrame="YES" boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="9GX-A9-OOX">
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="9GX-A9-OOX">
                     <rect key="frame" x="944" y="404" width="190" height="190"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <view key="contentView" ambiguous="YES" id="3zw-a3-veU">
+                    <view key="contentView" id="3zw-a3-veU">
                         <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="190" id="Cua-LY-EvA"/>
+                        <constraint firstAttribute="height" constant="190" id="e0k-gd-S53"/>
+                    </constraints>
                     <color key="fillColor" red="0.016569223189999999" green="0.60392156860000001" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                 </box>
             </subviews>
+            <constraints>
+                <constraint firstItem="sfc-eT-cDj" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="A9J-1M-zyy"/>
+                <constraint firstItem="ydV-jJ-5Dg" firstAttribute="leading" secondItem="rNJ-LR-3mk" secondAttribute="trailing" id="GlJ-Ho-M41"/>
+                <constraint firstAttribute="trailing" secondItem="hxb-tf-1sf" secondAttribute="trailing" id="LZg-Nl-F7b"/>
+                <constraint firstItem="9GX-A9-OOX" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="M6t-fN-DxX"/>
+                <constraint firstAttribute="trailing" secondItem="lqz-Oe-Fba" secondAttribute="trailing" id="OU7-bM-Ryp"/>
+                <constraint firstItem="sfc-eT-cDj" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="OgS-m4-fhm"/>
+                <constraint firstItem="rNJ-LR-3mk" firstAttribute="leading" secondItem="Owu-5g-M0W" secondAttribute="trailing" id="PJE-pv-xYv"/>
+                <constraint firstItem="Owu-5g-M0W" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="SXf-aW-Crt"/>
+                <constraint firstItem="hxb-tf-1sf" firstAttribute="top" secondItem="oEZ-Vk-YfB" secondAttribute="bottom" id="TPG-pI-eDl"/>
+                <constraint firstAttribute="bottom" secondItem="hxb-tf-1sf" secondAttribute="bottom" id="TPZ-ne-L42"/>
+                <constraint firstAttribute="bottom" secondItem="rNJ-LR-3mk" secondAttribute="bottom" id="W4Y-ev-613"/>
+                <constraint firstAttribute="bottom" secondItem="Owu-5g-M0W" secondAttribute="bottom" id="X3h-7B-5Dr"/>
+                <constraint firstAttribute="bottom" secondItem="ydV-jJ-5Dg" secondAttribute="bottom" id="XCC-33-uln"/>
+                <constraint firstItem="aUi-Gy-2iy" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="YIb-C4-4GO"/>
+                <constraint firstItem="lqz-Oe-Fba" firstAttribute="leading" secondItem="oEZ-Vk-YfB" secondAttribute="trailing" id="ZOG-kK-Mea"/>
+                <constraint firstAttribute="trailing" secondItem="9GX-A9-OOX" secondAttribute="trailing" id="kYr-Rp-9K3"/>
+                <constraint firstItem="aUi-Gy-2iy" firstAttribute="leading" secondItem="sfc-eT-cDj" secondAttribute="trailing" id="mrX-eO-bby"/>
+                <constraint firstItem="hxb-tf-1sf" firstAttribute="top" secondItem="lqz-Oe-Fba" secondAttribute="bottom" id="wz7-9z-vfG"/>
+            </constraints>
         </customView>
     </objects>
 </document>
