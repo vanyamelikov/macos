@@ -41,8 +41,8 @@
     StoreGamesViewModel *model = [StoreGamesViewModel new];
     model.gameName = @"Crysis 2";
     model.gameImage = [NSImage imageNamed:@"screenshot"];
-    model.gameOSType = 2;
-    model.buttonType = 1;
+    model.gameOSType = 1;
+    model.buttonType = 0;
     model.gamePrice = @"$16.99";
     for(int i = 0; i < 10; i ++) {
         [dataSourceArray addObject:model];
@@ -86,10 +86,10 @@
     }
     cell.priceLabel.stringValue = model.gamePrice;
     if(model.buttonType == 0) {
-        cell.buyButton.hidden = NO;
+        cell.preOrderButton.hidden = NO;
         cell.freeButton.hidden = YES;
     } else if(model.buttonType == 1) {
-        cell.buyButton.hidden = YES;
+        cell.preOrderButton.hidden = YES;
         cell.freeButton.hidden = NO;
     }
     return cell;

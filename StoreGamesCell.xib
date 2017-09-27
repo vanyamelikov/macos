@@ -9,12 +9,12 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="StoreGamesCell">
             <connections>
-                <outlet property="buyButton" destination="8nt-or-bbp" id="COu-bI-OHJ"/>
                 <outlet property="freeButton" destination="GmB-G9-t8R" id="54B-jt-euh"/>
                 <outlet property="gameImage" destination="Roh-Fi-y6E" id="uKa-ts-v4V"/>
                 <outlet property="gameNameLabel" destination="TxJ-No-eyY" id="3lx-q9-m6Z"/>
                 <outlet property="gameTag" destination="4ja-XU-Qs8" id="syv-fU-pGf"/>
                 <outlet property="macosImage" destination="6NG-i8-Alx" id="Pww-dJ-xpE"/>
+                <outlet property="preOrderButton" destination="8nt-or-bbp" id="xN8-1O-2I5"/>
                 <outlet property="priceLabel" destination="qoF-Z3-YHY" id="6M3-dc-kyG"/>
                 <outlet property="ratingView" destination="ENW-rx-5ln" id="v62-oc-VsB"/>
                 <outlet property="windowsImage" destination="4Mq-6P-0TN" id="DSV-bI-MbR"/>
@@ -38,7 +38,7 @@
                                     <constraint firstAttribute="width" constant="231" id="cf3-J0-3xr"/>
                                     <constraint firstAttribute="height" constant="106" id="i3s-gR-ZyN"/>
                                 </constraints>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Crysis" id="G09-wy-1Xh"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="screenshot" id="G09-wy-1Xh"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TxJ-No-eyY">
                                 <rect key="frame" x="245" y="70" width="68" height="24"/>
@@ -72,7 +72,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8nt-or-bbp" customClass="LIButton">
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8nt-or-bbp" customClass="LLIButton">
                                 <rect key="frame" x="993" y="39" width="110" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="16v-mE-inP"/>
@@ -133,11 +133,11 @@
                                     <constraint firstAttribute="width" constant="122" id="iuO-iK-UlA"/>
                                 </constraints>
                             </customView>
-                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GmB-G9-t8R" customClass="AddGameButton">
-                                <rect key="frame" x="993" y="38" width="110" height="30"/>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GmB-G9-t8R" customClass="FreeButton">
+                                <rect key="frame" x="1021" y="39" width="82" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="yrd-sa-dkY"/>
-                                    <constraint firstAttribute="height" constant="30" id="zUF-Dx-WZN"/>
+                                    <constraint firstAttribute="width" constant="82" id="yrd-sa-dkY"/>
+                                    <constraint firstAttribute="height" constant="29" id="zUF-Dx-WZN"/>
                                 </constraints>
                             </customView>
                         </subviews>
@@ -187,9 +187,9 @@
         </customView>
     </objects>
     <resources>
-        <image name="Crysis" width="241" height="109"/>
         <image name="ic_macos" width="15" height="18"/>
         <image name="ic_star" width="13" height="13"/>
         <image name="ic_windows" width="17" height="17"/>
+        <image name="screenshot" width="350" height="197"/>
     </resources>
 </document>

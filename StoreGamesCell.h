@@ -12,6 +12,7 @@
 #import "AllStopButton.h"
 #import "AddGameButton.h"
 #import "LLIButton.h"
+#import "FreeButton.h"
 
 @interface StoreGamesCell : INSNibLoadedView
 
@@ -22,7 +23,8 @@
 @property (weak) IBOutlet NSImageView *windowsImage;
 @property (strong) IBOutlet NSImageView *macosImage;
 @property (strong) IBOutlet NSTextField *priceLabel;
-@property (weak) IBOutlet AddGameButton *freeButton;
-@property (weak) IBOutlet LLIButton *buyButton;
+@property (weak) IBOutlet FreeButton *freeButton;
+@property (weak) IBOutlet LLIButton *preOrderButton;
+
 
 @end

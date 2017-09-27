@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		19C6724A3D68E67C8BE196CC /* libPods-XenioUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B42B9AA34683B9849D28601 /* libPods-XenioUIKit.a */; };
+		31B593BB1F7C14CF00D5B5FC /* FreeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */; };
+		31B593C11F7C15D400D5B5FC /* FreeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B593C01F7C15D400D5B5FC /* FreeButton.m */; };
+		31B593C31F7C194B00D5B5FC /* StoreTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593C21F7C194B00D5B5FC /* StoreTabView.xib */; };
 		3E0224E81F72148B00C99608 /* TextFieldWithFriend.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0224E71F72148B00C99608 /* TextFieldWithFriend.xib */; };
 		3E1FF8E61F6AC4F700117F16 /* CustomTabbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E1FF8E51F6AC4F700117F16 /* CustomTabbar.xib */; };
 		3E1FF8E91F6AD86400117F16 /* CustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1FF8E81F6AD86400117F16 /* CustomTabbar.m */; };
@@ -220,6 +223,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreeButton.xib; sourceTree = "<group>"; };
+		31B593BF1F7C15D400D5B5FC /* FreeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeButton.h; sourceTree = "<group>"; };
+		31B593C01F7C15D400D5B5FC /* FreeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeButton.m; sourceTree = "<group>"; };
+		31B593C21F7C194B00D5B5FC /* StoreTabView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreTabView.xib; sourceTree = "<group>"; };
 		3E0224E71F72148B00C99608 /* TextFieldWithFriend.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldWithFriend.xib; sourceTree = "<group>"; };
 		3E1FF8E51F6AC4F700117F16 /* CustomTabbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTabbar.xib; sourceTree = "<group>"; };
 		3E1FF8E71F6AD86400117F16 /* CustomTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabbar.h; sourceTree = "<group>"; };
@@ -742,6 +749,7 @@
 				3E7230B31F734ABB0050A70D /* StoreGamesView.xib */,
 				3EBAADE81F75BD6D00890AD1 /* StoreDownloadsView.xib */,
 				3E6FE7D81F77D41300B98AD3 /* StoreGamesGridView.xib */,
+				31B593C21F7C194B00D5B5FC /* StoreTabView.xib */,
 				3E8876131F7423F0001B8374 /* Cells */,
 				3E558BF81F79D51000542B7B /* StoreMainGridView.h */,
 				3E558BF91F79D51000542B7B /* StoreMainGridView.m */,
@@ -1262,6 +1270,8 @@
 				3E558BBB1F794B7D00542B7B /* AddGame.m */,
 				3E558BC51F79558100542B7B /* ProfileEditButton.h */,
 				3E558BC61F79558100542B7B /* ProfileEditButton.m */,
+				31B593BF1F7C15D400D5B5FC /* FreeButton.h */,
+				31B593C01F7C15D400D5B5FC /* FreeButton.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1291,6 +1301,7 @@
 				3E6FE8131F7897EB00B98AD3 /* SendMoneyButton.xib */,
 				3E558BB81F794A9200542B7B /* AddGame.xib */,
 				3E558BC31F79549200542B7B /* ProfileEditButton.xib */,
+				31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */,
 			);
 			name = Buttons;
 			sourceTree = "<group>";
@@ -1422,6 +1433,7 @@
 				3E88761F1F7434E7001B8374 /* StoreDownloadsCell.xib in Resources */,
 				3E6FE7B71F776D3B00B98AD3 /* BuyGameScreenshotsView.xib in Resources */,
 				3E558BD31F796ED800542B7B /* SettingsNavigationListHeaderCell.xib in Resources */,
+				31B593C31F7C194B00D5B5FC /* StoreTabView.xib in Resources */,
 				3E7230B01F734A070050A70D /* StoreSideMenu.xib in Resources */,
 				3EBAADCB1F75922700890AD1 /* LibraryGamesServerListHeaderCell.xib in Resources */,
 				3ECF3CF21F6979A2005165E5 /* SendMessageButton.xib in Resources */,
@@ -1470,6 +1482,7 @@
 				3E7230BE1F734B7F0050A70D /* LibraryGameView.xib in Resources */,
 				3E558BCF1F796E6200542B7B /* SettingsNavigationListCell.xib in Resources */,
 				3E6FE7E91F78068C00B98AD3 /* PassphraseView.xib in Resources */,
+				31B593BB1F7C14CF00D5B5FC /* FreeButton.xib in Resources */,
 				3E9C46101F70904F00693AA1 /* ChartView.xib in Resources */,
 				3ECF3CF41F6979D9005165E5 /* RemoveButton.xib in Resources */,
 				3ECF3CC61F6897B7005165E5 /* SignInButton.xib in Resources */,
@@ -1564,6 +1577,7 @@
 				3EBAAE021F760DEC00890AD1 /* WalletSideMenuModel.m in Sources */,
 				3E558C121F7AE43E00542B7B /* FriendsListModel.m in Sources */,
 				3E8A04C51F682E5400579DF8 /* LIButton.m in Sources */,
+				31B593C11F7C15D400D5B5FC /* FreeButton.m in Sources */,
 				3E7230FF1F7357C60050A70D /* SettingsContentViewController.m in Sources */,
 				3E6FE7DC1F77D46C00B98AD3 /* StoreGamesGridView.m in Sources */,
 				3E558BD61F796F5800542B7B /* SettingsNavigationListCell.m in Sources */,

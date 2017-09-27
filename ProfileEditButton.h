@@ -8,6 +8,10 @@
 
 #import "NSView+INSNibLoading.h"
 
-@interface ProfileEditButton : INSNibLoadedView
+@interface ProfileEditButton : INSNibLoadedView {
+    NSColor *RGBcolor;
+    NSColor *alphaColor;
+}
+@property (strong) IBOutlet NSBox *backgroundBox;
 
 @end

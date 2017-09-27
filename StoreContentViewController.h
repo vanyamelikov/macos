@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface StoreContentViewController : NSViewController
-
+@interface StoreContentViewController : NSViewController <NSTabViewDelegate>
+@property (weak) IBOutlet NSTabView *gamesTabController;
 @end
