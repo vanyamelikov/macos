@@ -34,9 +34,11 @@
 }
 
 - (IBAction)ChangeToListClick:(NSClickGestureRecognizer *)sender {
+    [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:0]];
 }
 
 - (IBAction)ChangeToGridClick:(NSClickGestureRecognizer *)sender {
+    [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:1]];
 }
 
 

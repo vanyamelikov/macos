@@ -57,5 +57,4 @@
     [self.collectionView setContent:self.contents];
 }
 
-
 @end
