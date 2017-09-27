@@ -9,6 +9,7 @@
 #import "StoreContentViewController.h"
 #import "StoreGamesView.h"
 #import "StoreGamesGridView.h"
+#import "StoreMainGridView.h"
 
 @interface StoreContentViewController ()
 
@@ -19,8 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSSplitViewController *view = (NSSplitViewController *)self.parentViewController;
+    StoreSideMenu *storeSideMenu = view.splitViewItems[0].viewController.view.subviews[1];
+    storeSideMenu.delegate = self;
+    
     StoreGamesView *storeGamesList = [[StoreGamesView alloc] initWithFrame:self.gamesTabController.frame];
     StoreGamesGridView *storeGamesGrid = [[StoreGamesGridView alloc] initWithFrame:self.gamesTabController.frame];
+    StoreMainGridView *storeMainGridView = [[StoreMainGridView alloc] initWithFrame:self.gamesTabController.frame];
     
     NSTabViewItem *item;
     item = [[self gamesTabController] tabViewItemAtIndex:0];
@@ -30,7 +36,7 @@
     [item setView:storeGamesGrid];
     
     item = [[self gamesTabController] tabViewItemAtIndex:2];
-    [item setView:storeGamesGrid];
+    [item setView:storeMainGridView];
 }
 
 - (IBAction)ChangeToListClick:(NSClickGestureRecognizer *)sender {
@@ -41,7 +47,11 @@
     [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:1]];
 }
 
-
+-(void)itemClicked:(NSInteger)sender {
+    if(sender == 1) {
+        [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:2]];
+    }
+}
 
 
 @end

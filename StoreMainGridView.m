@@ -10,10 +10,33 @@
 
 @implementation StoreMainGridView
 
-- (void)drawRect:(NSRect)dirtyRect {
-    [super drawRect:dirtyRect];
-    
-    // Drawing code here.
+-(void)awakeFromNib {
+    [super awakeFromNib];
+    if(self) {
+        for (NSView *itemView in self.subviews) {
+            if([itemView isKindOfClass:[NSImageView class]]) {
+                [itemView setWantsLayer: YES];
+                [itemView.layer setCornerRadius:2.0f];
+                itemView.layer.masksToBounds = YES;
+            }
+        }
+    }
+}
+
+-(instancetype)initWithCoder:(NSCoder *)decoder {
+    self = [super initWithCoder:decoder];
+    if(self) {
+        
+    }
+    return self;
+}
+
+-(instancetype)initWithFrame:(NSRect)frameRect {
+    self = [super initWithFrame:frameRect];
+    if(self) {
+        
+    }
+    return self;
 }
 
 @end

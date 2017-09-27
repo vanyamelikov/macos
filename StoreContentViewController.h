@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "StoreSideMenu.h"
 
-@interface StoreContentViewController : NSViewController <NSTabViewDelegate>
+@interface StoreContentViewController : NSViewController <NSTabViewDelegate, StoreSideMenuDelegate>
 @property (weak) IBOutlet NSTabView *gamesTabController;
 @end
