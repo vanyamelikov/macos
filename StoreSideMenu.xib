@@ -18,7 +18,7 @@
             <rect key="frame" x="0.0" y="0.0" width="408" height="737"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <box wantsLayer="YES" boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Wq0-9c-AxB">
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Wq0-9c-AxB">
                     <rect key="frame" x="0.0" y="0.0" width="408" height="737"/>
                     <view key="contentView" id="4gz-do-svH">
                         <rect key="frame" x="0.0" y="0.0" width="408" height="737"/>
@@ -82,7 +82,15 @@
                             <constraint firstItem="mAr-th-hwK" firstAttribute="top" secondItem="4gz-do-svH" secondAttribute="top" constant="10" id="u6W-ED-d9g"/>
                         </constraints>
                     </view>
-                    <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                    <contentFilters>
+                        <ciFilter name="CIGaussianBlur">
+                            <configuration>
+                                <null key="inputImage"/>
+                                <real key="inputRadius" value="10"/>
+                            </configuration>
+                        </ciFilter>
+                    </contentFilters>
+                    <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="0.89859996177370038" colorSpace="custom" customColorSpace="sRGB"/>
                 </box>
             </subviews>
             <constraints>

@@ -26,7 +26,8 @@
     
     StoreGamesView *storeGamesList = [[StoreGamesView alloc] initWithFrame:self.gamesTabController.frame];
     StoreGamesGridView *storeGamesGrid = [[StoreGamesGridView alloc] initWithFrame:self.gamesTabController.frame];
-    StoreMainGridView *storeMainGridView = [[StoreMainGridView alloc] initWithFrame:self.gamesTabController.frame];
+    StoreMainGridView *storeMainGridView = [[StoreMainGridView alloc] initWithFrame:CGRectMake(self.gamesTabController.frame.origin.x,
+                                                                                               self.gamesTabController.frame.origin.x, 1134, 594)];
     
     NSTabViewItem *item;
     item = [[self gamesTabController] tabViewItemAtIndex:0];

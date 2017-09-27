@@ -668,9 +668,9 @@
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA" customClass="MainWindow">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="136" y="15" width="1440" height="940"/>
+                        <rect key="contentRect" x="136" y="85" width="1440" height="900"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <value key="minSize" type="size" width="1440" height="940"/>
+                        <value key="minSize" type="size" width="1440" height="900"/>
                         <value key="maxSize" type="size" width="2880" height="1800"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="yta-iW-VvC"/>
@@ -682,7 +682,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="84" y="410"/>
+            <point key="canvasLocation" x="84" y="409"/>
         </scene>
         <!--Main Tab View Controller-->
         <scene sceneID="F0N-G5-ekk">

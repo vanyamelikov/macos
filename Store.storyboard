@@ -241,7 +241,7 @@
                                         <constraint firstItem="aiM-co-5kq" firstAttribute="leading" secondItem="m1s-KW-lbc" secondAttribute="leading" constant="26" id="tkQ-UE-ZNe"/>
                                     </constraints>
                                 </view>
-                                <color key="fillColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="0.79852350917431192" colorSpace="calibratedRGB"/>
                             </box>
                         </subviews>
                         <constraints>
