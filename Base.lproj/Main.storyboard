@@ -664,7 +664,7 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController showSeguePresentationStyle="single" id="B8D-0N-5wS" sceneMemberID="viewController">
+                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA" customClass="MainWindow">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -687,24 +687,18 @@
         <!--Main Tab View Controller-->
         <scene sceneID="F0N-G5-ekk">
             <objects>
-                <viewController id="XTK-Fr-lor" customClass="MainTabViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainTabViewController" id="XTK-Fr-lor" customClass="MainTabViewController" sceneMemberID="viewController">
                     <view key="view" id="YJx-U4-oY8">
-                        <rect key="frame" x="0.0" y="0.0" width="1440" height="810"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1440" height="900"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="kBB-xw-gBx" customClass="CustomTabbar">
-                                <rect key="frame" x="0.0" y="746" width="1440" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="Gb7-f1-LYi"/>
-                                </constraints>
-                            </customView>
-                            <tabView type="noTabsNoBorder" translatesAutoresizingMaskIntoConstraints="NO" id="KPd-vD-5tO">
-                                <rect key="frame" x="0.0" y="0.0" width="1440" height="746"/>
+                            <tabView drawsBackground="NO" type="noTabsNoBorder" translatesAutoresizingMaskIntoConstraints="NO" id="KPd-vD-5tO">
+                                <rect key="frame" x="0.0" y="0.0" width="1440" height="836"/>
                                 <font key="font" metaFont="system"/>
                                 <tabViewItems>
                                     <tabViewItem label="Tab" identifier="1" id="9XM-OF-F1E">
                                         <view key="view" id="cXk-4Y-emf">
-                                            <rect key="frame" x="0.0" y="0.0" width="1440" height="746"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1440" height="836"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </view>
                                     </tabViewItem>
@@ -745,6 +739,12 @@
                                     </tabViewItem>
                                 </tabViewItems>
                             </tabView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="kBB-xw-gBx" customClass="CustomTabbar">
+                                <rect key="frame" x="0.0" y="836" width="1440" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Gb7-f1-LYi"/>
+                                </constraints>
+                            </customView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="KPd-vD-5tO" secondAttribute="trailing" id="1sC-nQ-vTf"/>
@@ -763,7 +763,7 @@
                 </viewController>
                 <customObject id="T9H-dN-R11" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="104" y="1503"/>
+            <point key="canvasLocation" x="111" y="1646"/>
         </scene>
         <!--Store Navigation View Controller-->
         <scene sceneID="7Vh-hM-UGO">
@@ -773,22 +773,6 @@
                     <view key="view" id="DCb-Xd-lLe">
                         <rect key="frame" x="0.0" y="0.0" width="585" height="291"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="ZEF-6d-Iyk">
-                                <rect key="frame" x="0.0" y="0.0" width="585" height="291"/>
-                                <view key="contentView" id="zVk-PZ-pRx">
-                                    <rect key="frame" x="0.0" y="0.0" width="585" height="291"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <color key="fillColor" red="0.094117647060000004" green="0.1058823529" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </box>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="ZEF-6d-Iyk" secondAttribute="bottom" id="CtO-T1-4el"/>
-                            <constraint firstItem="ZEF-6d-Iyk" firstAttribute="top" secondItem="DCb-Xd-lLe" secondAttribute="top" id="Ur1-g4-hKu"/>
-                            <constraint firstAttribute="trailing" secondItem="ZEF-6d-Iyk" secondAttribute="trailing" id="gCV-Zo-pie"/>
-                            <constraint firstItem="ZEF-6d-Iyk" firstAttribute="leading" secondItem="DCb-Xd-lLe" secondAttribute="leading" id="w0c-Jr-XB4"/>
-                        </constraints>
                     </view>
                 </viewController>
             </objects>
@@ -926,7 +910,7 @@
         <!--View Controller-->
         <scene sceneID="rxx-UN-zTW">
             <objects>
-                <viewController showSeguePresentationStyle="single" id="3zU-Hu-vV9" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="3zU-Hu-vV9" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="k66-fk-uFM">
                         <rect key="frame" x="0.0" y="0.0" width="1440" height="920"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -983,7 +967,6 @@
                     </view>
                     <connections>
                         <outlet property="continueButton" destination="0NK-ip-fyL" id="32D-5P-JEO"/>
-                        <segue destination="FPN-er-qDz" kind="show" identifier="loginSegue" id="FHN-p9-glr"/>
                     </connections>
                 </viewController>
                 <customObject id="FIV-lP-5Ry" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -993,7 +976,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="86V-OP-g8G">
             <objects>
-                <viewController showSeguePresentationStyle="single" id="FPN-er-qDz" customClass="SignInViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" id="FPN-er-qDz" customClass="SignInViewController" sceneMemberID="viewController">
                     <view key="view" id="p8I-ys-pT8">
                         <rect key="frame" x="0.0" y="0.0" width="1440" height="900"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1168,7 +1151,6 @@
                         <outlet property="passwordTextField" destination="wpk-Hl-xjx" id="vgt-gS-raE"/>
                         <outlet property="privateKeyButton" destination="86U-ug-hdL" id="0oU-gu-UAd"/>
                         <outlet property="secondView" destination="7qz-nC-D71" id="VTT-9l-YYj"/>
-                        <segue destination="XTK-Fr-lor" kind="show" identifier="MainViewIdentifier" id="a7A-zg-CzF"/>
                     </connections>
                 </viewController>
                 <customObject id="kz1-Lp-GJo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

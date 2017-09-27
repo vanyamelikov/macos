@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		19C6724A3D68E67C8BE196CC /* libPods-XenioUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B42B9AA34683B9849D28601 /* libPods-XenioUIKit.a */; };
+		315947031F7C51CF0073FA52 /* BackgroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315947021F7C51CF0073FA52 /* BackgroundView.xib */; };
+		315947061F7C51F40073FA52 /* BackgoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 315947051F7C51F40073FA52 /* BackgoundView.m */; };
 		31B593BB1F7C14CF00D5B5FC /* FreeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */; };
 		31B593C11F7C15D400D5B5FC /* FreeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B593C01F7C15D400D5B5FC /* FreeButton.m */; };
 		31B593C31F7C194B00D5B5FC /* StoreTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593C21F7C194B00D5B5FC /* StoreTabView.xib */; };
@@ -223,6 +225,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		315947021F7C51CF0073FA52 /* BackgroundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackgroundView.xib; sourceTree = "<group>"; };
+		315947041F7C51F40073FA52 /* BackgoundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgoundView.h; sourceTree = "<group>"; };
+		315947051F7C51F40073FA52 /* BackgoundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgoundView.m; sourceTree = "<group>"; };
 		31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreeButton.xib; sourceTree = "<group>"; };
 		31B593BF1F7C15D400D5B5FC /* FreeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeButton.h; sourceTree = "<group>"; };
 		31B593C01F7C15D400D5B5FC /* FreeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeButton.m; sourceTree = "<group>"; };
@@ -1219,6 +1224,9 @@
 				3E6FE7E81F78068C00B98AD3 /* PassphraseView.xib */,
 				3E6FE7EA1F782A6900B98AD3 /* PassphraseView.h */,
 				3E6FE7EB1F782A6900B98AD3 /* PassphraseView.m */,
+				315947021F7C51CF0073FA52 /* BackgroundView.xib */,
+				315947041F7C51F40073FA52 /* BackgoundView.h */,
+				315947051F7C51F40073FA52 /* BackgoundView.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -1428,6 +1436,7 @@
 				3EBAADE91F75BD6D00890AD1 /* StoreDownloadsView.xib in Resources */,
 				3E88760A1F7418C0001B8374 /* LibraryGamesServersListView.xib in Resources */,
 				3E6FE7EE1F782B3F00B98AD3 /* ContinueButton.xib in Resources */,
+				315947031F7C51CF0073FA52 /* BackgroundView.xib in Resources */,
 				3E7230B61F734B020050A70D /* Library.storyboard in Resources */,
 				3E6FE7D91F77D41300B98AD3 /* StoreGamesGridView.xib in Resources */,
 				3E88761F1F7434E7001B8374 /* StoreDownloadsCell.xib in Resources */,
@@ -1637,6 +1646,7 @@
 				3E3E41FD1F756834009698FD /* LibraryGamesRightMenuView.m in Sources */,
 				3E6FE7D21F7793F200B98AD3 /* WalletChooseFriendCollectionView.m in Sources */,
 				3E72309D1F72EADE0050A70D /* CustomHeaderCell.m in Sources */,
+				315947061F7C51F40073FA52 /* BackgoundView.m in Sources */,
 				3E6FE80A1F78767C00B98AD3 /* PrivateKeyButton.m in Sources */,
 				3E8876221F744082001B8374 /* StoreDownloadsCell.m in Sources */,
 				3EBAADDE1F759A0D00890AD1 /* StoreSideMenuModel.m in Sources */,

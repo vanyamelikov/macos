@@ -449,7 +449,7 @@
                         <constraint firstAttribute="height" constant="64" id="dXI-Mr-pyL"/>
                     </constraints>
                     <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                    <color key="fillColor" red="0.074509803921568626" green="0.086274509803921567" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" red="0.074509803921568626" green="0.086274509803921567" blue="0.12549019607843137" alpha="0.79760368883792054" colorSpace="calibratedRGB"/>
                 </box>
             </subviews>
             <constraints>

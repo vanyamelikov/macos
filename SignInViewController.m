@@ -8,6 +8,7 @@
 
 #import "SignInViewController.h"
 #import "Colours.h"
+#import "MainTabViewController.h"
 
 @interface SignInViewController ()
 
@@ -17,9 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
-    NSWindow *window = [[NSApplication sharedApplication] mainWindow];
-    [window setBackgroundColor:[NSColor colorWithPatternImage:[NSImage imageNamed:@"Background"]]];
 
     self.secondView.alphaValue = YES;
     self.passphareView.hidden = YES;
@@ -40,7 +38,10 @@
 
 - (void)signInButtonAction:(id)sender
 {
-    [self performSegueWithIdentifier:@"MainViewIdentifier" sender:sender];
+    //MainTabViewController
+    NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+    MainTabViewController *vc = (MainTabViewController *)[sb instantiateControllerWithIdentifier:@"MainTabViewController"];
+    self.view.window.contentViewController = vc;
 }
 
 - (void)RegisterAction:(id)sender
@@ -98,11 +99,6 @@
                             self.passphareView.hidden = NO;
                             self.passphareView.alphaValue = 1;
                         }];
-}
-
-- (void)prepareForSegue:(NSStoryboardSegue *)segue sender:(id)sender
-{
-    [self.view.window close];
 }
 
 //-(void)fadeInOutAnimation : (NSView *) view1 : (NSView *) view2 {

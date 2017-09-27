@@ -47,11 +47,11 @@
     [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:1]];
 }
 
--(void)itemClicked:(NSInteger)sender {
+-(void)itemClicked:(NSInteger)sender :(NSString *)title {
     if(sender == 1) {
         [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:2]];
     }
+    self.storeCategoriesTitle.stringValue = title;
 }
-
 
 @end

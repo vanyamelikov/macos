@@ -28,13 +28,9 @@
 
 - (void)continueClicked:(id)sender
 {
-    [self performSegueWithIdentifier:@"loginSegue" sender:sender];
-    
-}
-
-- (void)prepareForSegue:(NSStoryboardSegue *)segue sender:(id)sender
-{
-    [self.view.window close];
+    NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+    SignInViewController *vc1 = (SignInViewController*)[sb instantiateControllerWithIdentifier:@"SignInViewController"];
+    self.view.window.contentViewController = vc1;
 }
 
 @end

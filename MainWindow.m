@@ -26,7 +26,9 @@
     return self;
 }
 
-
+-(void)changeBackgroundImage : (NSString *)imageName {
+    [self setBackgroundColor:[NSColor colorWithPatternImage:[NSImage imageNamed:imageName]]];
+}
 
 
 @end

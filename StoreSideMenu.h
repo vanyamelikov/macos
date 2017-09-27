@@ -10,7 +10,7 @@
 
 @class StoreSideMenu;
 @protocol StoreSideMenuDelegate <NSObject>
-- (void) itemClicked: (NSInteger) sender;
+- (void) itemClicked: (NSInteger) sender : (NSString *)title;
 @end
 
 @interface StoreSideMenu : INSNibLoadedView <NSTableViewDelegate, NSTableViewDataSource>

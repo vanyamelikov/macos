@@ -7,8 +7,10 @@
 //
 
 #import "MainTabViewController.h"
+#import "MainWindow.h"
 #import "BFNavigationController.h"
 #import "NSViewController+BFNavigationController.h"
+#import "MainStoreViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface MainTabViewController (){
@@ -23,8 +25,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     _mainTabView.delegate = self;
     _mainTabBar.delegate = self;
+    
+    NSStoryboard *sb1 = [NSStoryboard storyboardWithName:@"Store" bundle:nil];
+    MainStoreViewController *mainStoreVC = (MainStoreViewController *)[sb1 instantiateControllerWithIdentifier:@"MainStoreViewController"];
     
     NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
     NSViewController *vc1 = [sb instantiateControllerWithIdentifier:@"ViewController1"];
@@ -37,7 +43,7 @@
 
     NSTabViewItem *item;
     item = [[self mainTabView] tabViewItemAtIndex:0];
-    [item setView:[vc1 view]];
+    [item setView:[mainStoreVC view]];
 
     item = [[self mainTabView] tabViewItemAtIndex:1];
     [item setView:[vc2 view]];
@@ -57,6 +63,12 @@
     item = [[self mainTabView] tabViewItemAtIndex:6];
     [item setView:[vc7 view]];
 
+}
+
+-(void)viewWillAppear {
+    [super viewWillAppear];
+    MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
+    [mainWindow changeBackgroundImage:@"nfs"];
 }
 
 -(void)tabClicked:(NSInteger)sender {
@@ -81,7 +93,6 @@
 
 -(void)animation : (NSInteger) toItem : (NSInteger) fromItem {
 
-    
 }
 
 - (void)tabView:(NSTabView *)tabView didSelectTabViewItem:(NSTabViewItem *)tabViewItem {

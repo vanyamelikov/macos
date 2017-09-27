@@ -11,4 +11,5 @@
 
 @interface StoreContentViewController : NSViewController <NSTabViewDelegate, StoreSideMenuDelegate>
 @property (weak) IBOutlet NSTabView *gamesTabController;
+@property (weak) IBOutlet NSTextField *storeCategoriesTitle;
 @end
