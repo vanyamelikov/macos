@@ -9,6 +9,9 @@
 #import "NSView+INSNibLoading.h"
 #import "CancelButton.h"
 #import "SaveSettingsButton.h"
+#import "AllStopButton.h"
+#import "AddGameButton.h"
+#import "LLIButton.h"
 
 @interface StoreGamesCell : INSNibLoadedView
 
@@ -16,9 +19,10 @@
 @property (strong) IBOutlet NSTextField *gameNameLabel;
 @property (strong) IBOutlet NSView *ratingView;
 @property (strong) IBOutlet CancelButton *gameTag;
-@property (strong) IBOutlet NSLayoutConstraint *windowsImage;
+@property (weak) IBOutlet NSImageView *windowsImage;
 @property (strong) IBOutlet NSImageView *macosImage;
 @property (strong) IBOutlet NSTextField *priceLabel;
-@property (strong) IBOutlet SaveSettingsButton *button;
+@property (weak) IBOutlet AddGameButton *freeButton;
+@property (weak) IBOutlet LLIButton *buyButton;
 
 @end

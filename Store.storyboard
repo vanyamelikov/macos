@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,8 +18,12 @@
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="gVd-Ot-Pw7">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <outlet property="delegate" destination="JL9-Js-jCY" id="IPE-ON-ZvF"/>
+                        </connections>
                     </splitView>
                     <connections>
+                        <outlet property="splitView" destination="gVd-Ot-Pw7" id="hIg-QL-fGb"/>
                         <segue destination="BQa-Lt-qoT" kind="relationship" relationship="splitItems" id="2MR-zI-aLd"/>
                         <segue destination="1iO-03-06a" kind="relationship" relationship="splitItems" id="e9d-k5-9Pu"/>
                     </connections>
@@ -82,15 +86,15 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="kvd-1k-OCJ">
-                                            <rect key="frame" x="26" y="1041" width="1750" height="1"/>
+                                            <rect key="frame" x="26" y="1043" width="1750" height="1"/>
                                             <view key="contentView" id="0lZ-IE-w00">
                                                 <rect key="frame" x="0.0" y="0.0" width="1750" height="1"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="DVZ-qF-KfS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="1"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="95" height="1"/>
                                                         <view key="contentView" id="vDl-Mw-Pjw">
-                                                            <rect key="frame" x="1" y="1" width="95" height="0.0"/>
+                                                            <rect key="frame" x="1" y="1" width="93" height="0.0"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </view>
                                                         <constraints>
@@ -121,15 +125,15 @@
                                             </constraints>
                                         </customView>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="plW-Km-rbt">
-                                            <rect key="frame" x="24" y="1050" width="99" height="20"/>
+                                            <rect key="frame" x="24" y="1052" width="97" height="18"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Casual Games" id="3oe-k4-qKS">
-                                                <font key="font" size="14" name="SFUIText-Regular"/>
+                                                <font key="font" metaFont="system" size="14"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <customView translatesAutoresizingMaskIntoConstraints="NO" id="PPA-KQ-Idl" customClass="StoreGamesView">
-                                            <rect key="frame" x="26" y="0.0" width="1750" height="1011"/>
+                                            <rect key="frame" x="26" y="0.0" width="1750" height="1013"/>
                                         </customView>
                                         <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="fo2-sy-24e">
                                             <rect key="frame" x="1658" y="1089" width="144" height="35"/>
@@ -166,7 +170,7 @@
                                             <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                         </box>
                                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bPY-JE-RRf">
-                                            <rect key="frame" x="1718" y="1055" width="18" height="11"/>
+                                            <rect key="frame" x="1718" y="1057" width="18" height="11"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="18" id="Cfs-G5-7J7"/>
                                                 <constraint firstAttribute="height" constant="11" id="nsd-0Q-OUB"/>
@@ -174,7 +178,7 @@
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_list" id="qZR-Nk-2wK"/>
                                         </imageView>
                                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8s4-yx-gxJ">
-                                            <rect key="frame" x="1762" y="1053" width="14" height="14"/>
+                                            <rect key="frame" x="1762" y="1055" width="14" height="14"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="14" id="18y-09-dRr"/>
                                                 <constraint firstAttribute="width" constant="14" id="ZVJ-kG-rzn"/>

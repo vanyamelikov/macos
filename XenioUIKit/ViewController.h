@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "WelcomeContinueButton.h"
 
 @interface ViewController : NSViewController
 
+@property (strong) IBOutlet WelcomeContinueButton *continueButton;
 
 @end
 

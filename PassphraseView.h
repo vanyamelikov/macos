@@ -12,5 +12,6 @@
 @interface PassphraseView : INSNibLoadedView
 
 @property (strong) IBOutlet ContinueButton *continueButton;
+@property (strong) IBOutlet NSImageView *closeButton;
 
 @end

@@ -10,8 +10,10 @@
 
 @interface StoreGamesViewModel : NSObject
 
-@property (nonatomic) NSString *title;
-@property (nonatomic) BOOL isHeader;
+@property (nonatomic) NSString *gameName;
 @property (nonatomic) NSImage *gameImage;
-
+@property (nonatomic) CGFloat gameRating;
+@property (nonatomic) NSInteger gameOSType;
+@property (nonatomic) NSInteger buttonType;
+@property (nonatomic) NSString *gamePrice;
 @end

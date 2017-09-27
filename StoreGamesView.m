@@ -39,61 +39,15 @@
     dataSourceArray = [[NSMutableArray alloc] init];
     
     StoreGamesViewModel *model = [StoreGamesViewModel new];
-    //model.title = @"RECOMMENDED";
-    [dataSourceArray addObject:model];
-    
-    StoreGamesViewModel *model1 = [StoreGamesViewModel new];
-    //model1.title = @"Featured";
-    [dataSourceArray addObject:model1];
-    
-    StoreGamesViewModel *model2 = [StoreGamesViewModel new];
-    //model2.title = @"Popular";
-    [dataSourceArray addObject:model2];
-    
-    StoreGamesViewModel *model3 = [StoreGamesViewModel new];
-    //model3.title = @"New";
-    [dataSourceArray addObject:model3];
-    
-    StoreGamesViewModel *model4 = [StoreGamesViewModel new];
-    //model4.title = @"REVIEW OF CATEGORIES";
-    [dataSourceArray addObject:model4];
-    
-    StoreGamesViewModel *model5 = [StoreGamesViewModel new];
-    //model5.title = @"Leaders Of Sells";
-    [dataSourceArray addObject:model5];
-    
-    StoreGamesViewModel *model6 = [StoreGamesViewModel new];
-    //model6.title = @"Recently Updated";
-    [dataSourceArray addObject:model6];
-    
-    StoreGamesViewModel *model7 = [StoreGamesViewModel new];
-    //model6.title = @"Recently Updated";
-    [dataSourceArray addObject:model7];
-    
-    StoreGamesViewModel *model8 = [StoreGamesViewModel new];
-    //model6.title = @"Recently Updated";
-    [dataSourceArray addObject:model8];
-    
-    StoreGamesViewModel *model9 = [StoreGamesViewModel new];
-    //model6.title = @"Recently Updated";
-    [dataSourceArray addObject:model9];
-    
-    StoreGamesViewModel *model10 = [StoreGamesViewModel new];
-    //model6.title = @"Recently Updated";
-    [dataSourceArray addObject:model10];
-    
-    StoreGamesViewModel *model11 = [StoreGamesViewModel new];
-    //model6.title = @"Recently Updated";
-    [dataSourceArray addObject:model11];
-    
-    StoreGamesViewModel *model12 = [StoreGamesViewModel new];
-    //model6.title = @"Recently Updated";
-    [dataSourceArray addObject:model12];
-    
-    StoreGamesViewModel *model13 = [StoreGamesViewModel new];
-    //model6.title = @"Recently Updated";
-    [dataSourceArray addObject:model13];
-    
+    model.gameName = @"Crysis 2";
+    model.gameImage = [NSImage imageNamed:@"screenshot"];
+    model.gameOSType = 2;
+    model.buttonType = 1;
+    model.gamePrice = @"$16.99";
+    for(int i = 0; i < 10; i ++) {
+        [dataSourceArray addObject:model];
+    }
+
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
@@ -112,15 +66,32 @@
 #pragma mark - TableViewDelegate
 
 -(CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row {
-
     return 106;
 }
 
 -(NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
     StoreGamesViewModel *model = [dataSourceArray objectAtIndex:row];
     StoreGamesCell *cell = (StoreGamesCell *)[tableView makeViewWithIdentifier:@"StoreGamesCell" owner:self];
-    //cell.gameNameLabel.stringValue = model.title;
-    
+    cell.gameNameLabel.stringValue = model.gameName;
+    cell.gameImage.image = model.gameImage;
+    if(model.gameOSType == 0) {
+        cell.macosImage.hidden = YES;
+        cell.windowsImage.hidden = NO;
+    } else if(model.gameOSType == 1) {
+        cell.macosImage.hidden = NO;
+        cell.windowsImage.hidden = YES;
+    } else {
+        cell.macosImage.hidden = YES;
+        cell.windowsImage.hidden = YES;
+    }
+    cell.priceLabel.stringValue = model.gamePrice;
+    if(model.buttonType == 0) {
+        cell.buyButton.hidden = NO;
+        cell.freeButton.hidden = YES;
+    } else if(model.buttonType == 1) {
+        cell.buyButton.hidden = YES;
+        cell.freeButton.hidden = NO;
+    }
     return cell;
 }
 

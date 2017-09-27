@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="StoreGamesCell">
             <connections>
-                <outlet property="button" destination="8nt-or-bbp" id="EhL-F6-BXx"/>
+                <outlet property="buyButton" destination="8nt-or-bbp" id="COu-bI-OHJ"/>
+                <outlet property="freeButton" destination="GmB-G9-t8R" id="54B-jt-euh"/>
                 <outlet property="gameImage" destination="Roh-Fi-y6E" id="uKa-ts-v4V"/>
                 <outlet property="gameNameLabel" destination="TxJ-No-eyY" id="3lx-q9-m6Z"/>
                 <outlet property="gameTag" destination="4ja-XU-Qs8" id="syv-fU-pGf"/>
                 <outlet property="macosImage" destination="6NG-i8-Alx" id="Pww-dJ-xpE"/>
                 <outlet property="priceLabel" destination="qoF-Z3-YHY" id="6M3-dc-kyG"/>
-                <outlet property="windowsImage" destination="A0t-w4-ZuM" id="4Zd-4h-8jt"/>
+                <outlet property="ratingView" destination="ENW-rx-5ln" id="v62-oc-VsB"/>
+                <outlet property="windowsImage" destination="4Mq-6P-0TN" id="DSV-bI-MbR"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -39,9 +41,9 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Crysis" id="G09-wy-1Xh"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TxJ-No-eyY">
-                                <rect key="frame" x="245" y="70" width="67" height="24"/>
+                                <rect key="frame" x="245" y="70" width="68" height="24"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Crysis 2" id="5fF-HP-E20">
-                                    <font key="font" size="16" name="SFUIText-Medium"/>
+                                    <font key="font" size="16" name="SFProText-Semibold"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -63,17 +65,14 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_macos" id="FwI-Kl-Fe2"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qoF-Z3-YHY">
-                                <rect key="frame" x="845" y="38" width="57" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Yfa-sv-qjo"/>
-                                </constraints>
+                                <rect key="frame" x="846" y="41" width="56" height="24"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="$16.99" id="FUI-Bi-YDN">
-                                    <font key="font" size="16" name="SFUIText-Regular"/>
+                                    <font key="font" size="16" name="SFProText-Light"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="8nt-or-bbp" customClass="LLIButton">
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8nt-or-bbp" customClass="LIButton">
                                 <rect key="frame" x="993" y="39" width="110" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="16v-mE-inP"/>
@@ -121,7 +120,7 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_star" id="XYe-nw-qih"/>
                             </imageView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="ENW-rx-5ln">
-                                <rect key="frame" x="330" y="74" width="92" height="17"/>
+                                <rect key="frame" x="331" y="74" width="92" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="92" id="0FS-fv-D0z"/>
                                     <constraint firstAttribute="height" constant="17" id="REl-1k-GT9"/>
@@ -132,6 +131,13 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="bMa-Ra-X73"/>
                                     <constraint firstAttribute="width" constant="122" id="iuO-iK-UlA"/>
+                                </constraints>
+                            </customView>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GmB-G9-t8R" customClass="AddGameButton">
+                                <rect key="frame" x="993" y="38" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="yrd-sa-dkY"/>
+                                    <constraint firstAttribute="height" constant="30" id="zUF-Dx-WZN"/>
                                 </constraints>
                             </customView>
                         </subviews>
@@ -158,11 +164,13 @@
                             <constraint firstAttribute="bottom" secondItem="Roh-Fi-y6E" secondAttribute="bottom" id="cKC-Gu-H6G"/>
                             <constraint firstItem="c2V-M0-p5V" firstAttribute="centerY" secondItem="N90-Yi-Tlj" secondAttribute="centerY" id="dKZ-th-IiB"/>
                             <constraint firstItem="4ja-XU-Qs8" firstAttribute="top" secondItem="0Su-Ek-Puz" secondAttribute="bottom" constant="12" id="frI-TN-720"/>
+                            <constraint firstItem="GmB-G9-t8R" firstAttribute="centerY" secondItem="WQb-rL-2vH" secondAttribute="centerY" id="ipb-u2-H5P"/>
                             <constraint firstItem="6NG-i8-Alx" firstAttribute="centerY" secondItem="4Mq-6P-0TN" secondAttribute="centerY" constant="-2" id="kBj-tF-E52"/>
                             <constraint firstItem="4Mq-6P-0TN" firstAttribute="centerX" secondItem="WQb-rL-2vH" secondAttribute="centerX" constant="94" id="nVP-TS-OSL"/>
                             <constraint firstItem="0Su-Ek-Puz" firstAttribute="leading" secondItem="cJW-l6-gmD" secondAttribute="trailing" constant="4" id="reb-uk-iTn"/>
                             <constraint firstItem="ENW-rx-5ln" firstAttribute="leading" secondItem="TxJ-No-eyY" secondAttribute="trailing" constant="20" id="s4b-uj-WbJ"/>
                             <constraint firstItem="cJW-l6-gmD" firstAttribute="leading" secondItem="c2V-M0-p5V" secondAttribute="trailing" constant="4" id="tye-XV-kRp"/>
+                            <constraint firstAttribute="trailing" secondItem="GmB-G9-t8R" secondAttribute="trailing" constant="30" id="vDq-AR-fjY"/>
                         </constraints>
                     </view>
                     <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>

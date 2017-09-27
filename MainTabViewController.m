@@ -32,6 +32,8 @@
     NSViewController *vc3 = [sb instantiateControllerWithIdentifier:@"ViewController3"];
     NSViewController *vc4 = [sb instantiateControllerWithIdentifier:@"ViewController4"];
     NSViewController *vc5 = [sb instantiateControllerWithIdentifier:@"ViewController5"];
+    NSViewController *vc6 = [sb instantiateControllerWithIdentifier:@"ViewController6"];
+    NSViewController *vc7 = [sb instantiateControllerWithIdentifier:@"ViewController7"];
 
     NSTabViewItem *item;
     item = [[self mainTabView] tabViewItemAtIndex:0];
@@ -48,6 +50,12 @@
     
     item = [[self mainTabView] tabViewItemAtIndex:4];
     [item setView:[vc5 view]];
+    
+    item = [[self mainTabView] tabViewItemAtIndex:5];
+    [item setView:[vc6 view]];
+    
+    item = [[self mainTabView] tabViewItemAtIndex:6];
+    [item setView:[vc7 view]];
 
 }
 
@@ -64,6 +72,10 @@
         [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:3]];
     }else if (sender == 4){
         [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:4]];
+    }else if (sender == 5){
+        [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:5]];
+    }else if (sender == 6){
+        [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:6]];
     }
 }
 

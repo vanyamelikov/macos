@@ -13,7 +13,16 @@
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
     
-    // Drawing code here.
+    NSClickGestureRecognizer *close = [[NSClickGestureRecognizer alloc] initWithTarget:self action:@selector(closeClicked:)];
+    [self.closeButton addGestureRecognizer:close];
+    
+    NSClickGestureRecognizer *click = [[NSClickGestureRecognizer alloc] initWithTarget:self action:@selector(closeClicked:)];
+    [self.continueButton addGestureRecognizer:click];
+}
+
+- (void)closeClicked:(id)sender
+{
+    self.hidden = YES;
 }
 
 @end

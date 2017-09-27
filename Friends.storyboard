@@ -9,6 +9,7 @@
         <!--Split View Controller-->
         <scene sceneID="LYh-Pk-sH5">
             <objects>
+                <customObject id="WVb-Qw-BMy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <splitViewController id="hcA-vc-TlO" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem id="zeb-LL-mRq"/>
@@ -25,48 +26,127 @@
                         <segue destination="rlk-gn-m6d" kind="relationship" relationship="splitItems" id="Mh9-2s-hi8"/>
                     </connections>
                 </splitViewController>
-                <customObject id="WVb-Qw-BMy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-211" y="261"/>
         </scene>
         <!--Friends Content View Controller-->
         <scene sceneID="wWc-mM-LUP">
             <objects>
+                <customObject id="ofd-Cd-YQo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <viewController id="i1Z-rN-2dM" customClass="FriendsContentViewController" sceneMemberID="viewController">
                     <view key="view" id="cYW-6k-ayW">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="303" height="890"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="YPY-U6-pWI" customClass="SettingsSideListView">
+                                <rect key="frame" x="0.0" y="330" width="303" height="560"/>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="XvR-i0-sih" customClass="SettingsSideListView">
+                                <rect key="frame" x="0.0" y="0.0" width="303" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="U5l-Zg-fid"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YPY-U6-pWI" secondAttribute="trailing" id="0TL-wD-aux"/>
+                            <constraint firstItem="YPY-U6-pWI" firstAttribute="leading" secondItem="cYW-6k-ayW" secondAttribute="leading" id="VgM-2g-Ifo"/>
+                            <constraint firstItem="XvR-i0-sih" firstAttribute="top" secondItem="YPY-U6-pWI" secondAttribute="bottom" constant="50" id="cKR-mX-JMo"/>
+                            <constraint firstAttribute="trailing" secondItem="XvR-i0-sih" secondAttribute="trailing" id="ca9-i7-Ghg"/>
+                            <constraint firstItem="YPY-U6-pWI" firstAttribute="top" secondItem="cYW-6k-ayW" secondAttribute="top" id="kbA-U0-Pms"/>
+                            <constraint firstAttribute="bottom" secondItem="XvR-i0-sih" secondAttribute="bottom" id="yyl-zx-bAj"/>
+                            <constraint firstItem="XvR-i0-sih" firstAttribute="leading" secondItem="cYW-6k-ayW" secondAttribute="leading" id="zrL-GS-fna"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <customObject id="ofd-Cd-YQo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="459" y="80"/>
+            <point key="canvasLocation" x="540.5" y="1085"/>
         </scene>
         <!--Friends Conten Navigation View Controller-->
         <scene sceneID="TVG-wb-gjy">
             <objects>
+                <customObject id="C56-YY-8oT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <viewController id="W2X-kL-Ecs" customClass="FriendsContenNavigationViewController" sceneMemberID="viewController">
                     <view key="view" id="9SR-P0-UZO">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="298" height="890"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="SQa-tI-39n" customClass="SettingsNavigationListView">
+                                <rect key="frame" x="0.0" y="0.0" width="298" height="890"/>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SQa-tI-39n" secondAttribute="trailing" id="XMM-oz-vZP"/>
+                            <constraint firstAttribute="bottom" secondItem="SQa-tI-39n" secondAttribute="bottom" id="hXT-Sz-YNQ"/>
+                            <constraint firstItem="SQa-tI-39n" firstAttribute="top" secondItem="9SR-P0-UZO" secondAttribute="top" id="hea-s7-AXJ"/>
+                            <constraint firstItem="SQa-tI-39n" firstAttribute="leading" secondItem="9SR-P0-UZO" secondAttribute="leading" id="nes-jL-aFe"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <customObject id="C56-YY-8oT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="459" y="441"/>
+            <point key="canvasLocation" x="237" y="1085"/>
         </scene>
         <!--Friends Side List View Controller-->
         <scene sceneID="ZnT-RN-x8U">
             <objects>
+                <customObject id="UJw-YB-GNu" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <viewController id="rlk-gn-m6d" customClass="FriendsSideListViewController" sceneMemberID="viewController">
                     <view key="view" id="aCj-Ss-C2a">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1440" height="890"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="lL5-1b-mbE" customClass="FriendsContentList">
+                                <rect key="frame" x="26" y="0.0" width="1388" height="809"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="809" id="O6z-dq-OmM"/>
+                                </constraints>
+                            </customView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8o3-nF-hYQ">
+                                <rect key="frame" x="26" y="842" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="AaV-Mz-v2m"/>
+                                    <constraint firstAttribute="height" constant="16" id="dRO-ek-bdr"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_backarrow" id="1Fc-iu-o4i"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rnM-Ge-sEe">
+                                <rect key="frame" x="50" y="831" width="80" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="df1-2n-wds"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Friends" id="WgU-R9-DjZ">
+                                    <font key="font" size="20" name="SFUIText-Bold"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cpo-v3-lxR">
+                                <rect key="frame" x="1375" y="841" width="41" height="30"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="216" id="LDs-rw-4uv">
+                                    <font key="font" size="20" name="SFUIText-Bold"/>
+                                    <color key="textColor" red="0.24198439717292786" green="0.68816852569580078" blue="0.99984091520309448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="rnM-Ge-sEe" firstAttribute="centerY" secondItem="8o3-nF-hYQ" secondAttribute="centerY" id="5BB-WV-Q9S"/>
+                            <constraint firstAttribute="bottom" secondItem="lL5-1b-mbE" secondAttribute="bottom" id="KJ7-6m-Wki"/>
+                            <constraint firstItem="8o3-nF-hYQ" firstAttribute="top" secondItem="aCj-Ss-C2a" secondAttribute="top" constant="32" id="Zl0-Ts-xeM"/>
+                            <constraint firstItem="8o3-nF-hYQ" firstAttribute="leading" secondItem="aCj-Ss-C2a" secondAttribute="leading" constant="26" id="jxd-Jm-GPN"/>
+                            <constraint firstItem="lL5-1b-mbE" firstAttribute="leading" secondItem="aCj-Ss-C2a" secondAttribute="leading" constant="26" id="kBe-4i-cTz"/>
+                            <constraint firstAttribute="trailing" secondItem="lL5-1b-mbE" secondAttribute="trailing" constant="26" id="one-zy-TNq"/>
+                            <constraint firstItem="cpo-v3-lxR" firstAttribute="trailing" secondItem="lL5-1b-mbE" secondAttribute="trailing" id="s1L-1a-nPA"/>
+                            <constraint firstItem="rnM-Ge-sEe" firstAttribute="leading" secondItem="8o3-nF-hYQ" secondAttribute="trailing" constant="10" id="ufM-eg-Tpy"/>
+                            <constraint firstItem="lL5-1b-mbE" firstAttribute="top" secondItem="cpo-v3-lxR" secondAttribute="bottom" constant="32" id="wZF-9P-EFr"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <customObject id="UJw-YB-GNu" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-31" y="755"/>
+            <point key="canvasLocation" x="-635" y="1085"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_backarrow" width="16" height="11"/>
+    </resources>
 </document>
