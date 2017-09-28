@@ -82,15 +82,15 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="kvd-1k-OCJ">
-                                            <rect key="frame" x="26" y="1043" width="1750" height="1"/>
+                                            <rect key="frame" x="26" y="1041" width="729" height="1"/>
                                             <view key="contentView" id="0lZ-IE-w00">
-                                                <rect key="frame" x="0.0" y="0.0" width="1750" height="1"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="729" height="1"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="DVZ-qF-KfS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="95" height="1"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="63" height="1"/>
                                                         <view key="contentView" id="vDl-Mw-Pjw">
-                                                            <rect key="frame" x="1" y="1" width="93" height="0.0"/>
+                                                            <rect key="frame" x="1" y="1" width="61" height="0.0"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </view>
                                                         <constraints>
@@ -109,6 +109,7 @@
                                             </view>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="MUF-WP-QNl"/>
+                                                <constraint firstAttribute="width" constant="729" id="XYP-he-p1J"/>
                                             </constraints>
                                             <color key="borderColor" red="0.14117647059999999" green="0.1647058824" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="fillColor" red="0.14117647059999999" green="0.1647058824" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
@@ -121,9 +122,9 @@
                                             </constraints>
                                         </customView>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="plW-Km-rbt">
-                                            <rect key="frame" x="24" y="1052" width="97" height="18"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Casual Games" id="3oe-k4-qKS">
-                                                <font key="font" metaFont="system" size="14"/>
+                                            <rect key="frame" x="24" y="1050" width="65" height="20"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Featured" id="3oe-k4-qKS">
+                                                <font key="font" size="14" name="SFProText-Medium"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -193,12 +194,12 @@
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_grid" id="Nwb-FY-8H1"/>
                                         </imageView>
                                         <tabView drawsBackground="NO" type="noTabsNoBorder" translatesAutoresizingMaskIntoConstraints="NO" id="aiM-co-5kq">
-                                            <rect key="frame" x="26" y="0.0" width="1750" height="1013"/>
+                                            <rect key="frame" x="26" y="0.0" width="1750" height="1014"/>
                                             <font key="font" metaFont="system"/>
                                             <tabViewItems>
                                                 <tabViewItem label="Tab" identifier="" id="3py-Pp-7AM">
                                                     <view key="view" id="Pfa-tN-uyl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="1750" height="1013"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="1750" height="1014"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     </view>
                                                 </tabViewItem>
@@ -215,13 +216,20 @@
                                                 </tabViewItem>
                                             </tabViewItems>
                                         </tabView>
+                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="RFh-Je-veL" customClass="LLIButton">
+                                            <rect key="frame" x="1584" y="1048" width="110" height="29"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="29" id="imt-bv-PoO"/>
+                                                <constraint firstAttribute="width" constant="110" id="pQA-Ty-k3S"/>
+                                            </constraints>
+                                        </customView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="kvd-1k-OCJ" secondAttribute="trailing" constant="26" id="10R-LE-nzL"/>
+                                        <constraint firstItem="kvd-1k-OCJ" firstAttribute="top" secondItem="RFh-Je-veL" secondAttribute="bottom" constant="6" id="1qy-Ln-406"/>
                                         <constraint firstItem="abb-7k-7KV" firstAttribute="top" secondItem="m1s-KW-lbc" secondAttribute="top" constant="20" id="3UT-2F-7CL"/>
                                         <constraint firstItem="8s4-yx-gxJ" firstAttribute="leading" secondItem="bPY-JE-RRf" secondAttribute="trailing" constant="26" id="6Uk-el-yGo"/>
                                         <constraint firstItem="bPY-JE-RRf" firstAttribute="top" secondItem="fo2-sy-24e" secondAttribute="bottom" constant="21" id="8Nf-ws-yp9"/>
-                                        <constraint firstItem="aiM-co-5kq" firstAttribute="top" secondItem="kvd-1k-OCJ" secondAttribute="bottom" constant="30" id="8pN-fr-mjA"/>
+                                        <constraint firstItem="aiM-co-5kq" firstAttribute="top" secondItem="kvd-1k-OCJ" secondAttribute="bottom" constant="27" id="8pN-fr-mjA"/>
                                         <constraint firstAttribute="trailing" secondItem="aiM-co-5kq" secondAttribute="trailing" constant="26" id="EUq-za-SDn"/>
                                         <constraint firstItem="abb-7k-7KV" firstAttribute="leading" secondItem="m1s-KW-lbc" secondAttribute="leading" constant="26" id="IGv-3R-Cmf"/>
                                         <constraint firstItem="kvd-1k-OCJ" firstAttribute="top" secondItem="plW-Km-rbt" secondAttribute="bottom" constant="8" id="RdG-kf-bOj"/>
@@ -235,6 +243,7 @@
                                         <constraint firstItem="kvd-1k-OCJ" firstAttribute="leading" secondItem="m1s-KW-lbc" secondAttribute="leading" constant="26" id="kBz-Jc-PLN"/>
                                         <constraint firstItem="plW-Km-rbt" firstAttribute="leading" secondItem="m1s-KW-lbc" secondAttribute="leading" constant="26" id="qtt-Tg-YxP"/>
                                         <constraint firstItem="aiM-co-5kq" firstAttribute="leading" secondItem="m1s-KW-lbc" secondAttribute="leading" constant="26" id="tkQ-UE-ZNe"/>
+                                        <constraint firstItem="bPY-JE-RRf" firstAttribute="leading" secondItem="RFh-Je-veL" secondAttribute="trailing" constant="24" id="ust-GG-raV"/>
                                     </constraints>
                                 </view>
                                 <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="0.8486716360856269" colorSpace="calibratedRGB"/>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -46,12 +46,12 @@
                     </userDefinedRuntimeAttributes>
                 </box>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S11-Lg-GuL">
-                    <rect key="frame" x="19" y="8" width="73" height="20"/>
+                    <rect key="frame" x="19" y="8" width="72" height="20"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="nsO-76-Ml2"/>
                     </constraints>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="ADD GAME" id="EcC-k2-GHB">
-                        <font key="font" size="12" name="SFUIText-Medium"/>
+                        <font key="font" metaFont="cellTitle"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>

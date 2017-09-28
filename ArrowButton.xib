@@ -21,17 +21,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o5V-7p-Dkx">
-                                <rect key="frame" x="4" y="10" width="20" height="14"/>
+                                <rect key="frame" x="0.0" y="10" width="20" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="14" id="XyW-kO-Z3n"/>
                                     <constraint firstAttribute="width" constant="20" id="f3A-ZG-b1N"/>
                                 </constraints>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_arrow" id="can-9D-twp"/>
                             </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UI9-Ju-y4C">
+                                <rect key="frame" x="33" y="9" width="63" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="0ph-YC-wJR"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Store" usesSingleLineMode="YES" id="OZ7-n6-ga4">
+                                    <font key="font" size="20" name="SFProText-Bold"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="UI9-Ju-y4C" firstAttribute="centerY" secondItem="IAF-bu-Vn5" secondAttribute="centerY" id="FNP-t0-Pqb"/>
                             <constraint firstItem="o5V-7p-Dkx" firstAttribute="centerY" secondItem="IAF-bu-Vn5" secondAttribute="centerY" id="e76-iT-Ok2"/>
-                            <constraint firstItem="o5V-7p-Dkx" firstAttribute="leading" secondItem="IAF-bu-Vn5" secondAttribute="leading" constant="4" id="isb-xp-ZQh"/>
+                            <constraint firstItem="UI9-Ju-y4C" firstAttribute="leading" secondItem="o5V-7p-Dkx" secondAttribute="trailing" constant="15" id="efZ-hk-1VE"/>
+                            <constraint firstItem="o5V-7p-Dkx" firstAttribute="leading" secondItem="IAF-bu-Vn5" secondAttribute="leading" id="isb-xp-ZQh"/>
                         </constraints>
                     </view>
                     <constraints>
@@ -46,25 +59,14 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </box>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UI9-Ju-y4C">
-                    <rect key="frame" x="26" y="9" width="66" height="24"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Store" id="OZ7-n6-ga4">
-                        <font key="font" metaFont="system" size="20"/>
-                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
             </subviews>
             <constraints>
-                <constraint firstItem="UI9-Ju-y4C" firstAttribute="leading" secondItem="o5V-7p-Dkx" secondAttribute="trailing" constant="4" id="2Hl-6M-M1D"/>
                 <constraint firstItem="cQ8-fr-llZ" firstAttribute="leading" secondItem="ccb-f0-Ku6" secondAttribute="leading" id="KOM-ZB-qvS"/>
-                <constraint firstItem="UI9-Ju-y4C" firstAttribute="centerY" secondItem="ccb-f0-Ku6" secondAttribute="centerY" constant="-4" id="WML-uK-uGP"/>
                 <constraint firstAttribute="trailing" secondItem="cQ8-fr-llZ" secondAttribute="trailing" id="XUO-dt-LJt"/>
                 <constraint firstItem="cQ8-fr-llZ" firstAttribute="top" secondItem="ccb-f0-Ku6" secondAttribute="top" id="git-1I-ztV"/>
                 <constraint firstAttribute="bottom" secondItem="cQ8-fr-llZ" secondAttribute="bottom" id="hlz-jY-Bcd"/>
-                <constraint firstAttribute="trailing" secondItem="UI9-Ju-y4C" secondAttribute="trailing" constant="10" id="pdo-pk-dTy"/>
             </constraints>
-            <point key="canvasLocation" x="194.5" y="204"/>
+            <point key="canvasLocation" x="194" y="204"/>
         </customView>
     </objects>
     <resources>

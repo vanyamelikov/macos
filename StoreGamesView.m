@@ -120,6 +120,8 @@
     model8.buttonType = 0;
     model8.gamePrice = @"$17.99";
     [dataSourceArray addObject:model8];
+    
+    [self.tableView setIntercellSpacing:NSMakeSize(0, 5)];
 
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
