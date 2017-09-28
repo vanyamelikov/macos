@@ -12,7 +12,7 @@
 #import "PassphraseView.h"
 #import "PrivateKeyButton.h"
 
-@interface SignInViewController : NSViewController
+@interface SignInViewController : NSViewController <PassphraseViewDelegate>
 
 @property (strong) IBOutlet NSTextField *SignInLabel;
 @property (strong) IBOutlet NSTextField *RegisterLabel;
@@ -26,5 +26,9 @@
 
 @property (strong) IBOutlet PassphraseView *passphareView;
 @property (strong) IBOutlet PrivateKeyButton *privateKeyButton;
+
+@property (weak) IBOutlet NSBox *loginBox;
+@property (weak) IBOutlet NSBox *passwordBox;
+
 
 @end

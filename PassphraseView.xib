@@ -19,7 +19,7 @@
             <rect key="frame" x="0.0" y="0.0" width="566" height="669"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <box boxType="custom" borderWidth="0.0" cornerRadius="10" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Hvw-ev-JnS">
+                <box canDrawConcurrently="YES" boxType="custom" borderType="none" borderWidth="0.0" cornerRadius="10" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Hvw-ev-JnS">
                     <rect key="frame" x="0.0" y="0.0" width="566" height="669"/>
                     <view key="contentView" id="X7T-Ka-8ce">
                         <rect key="frame" x="0.0" y="0.0" width="566" height="669"/>
@@ -48,7 +48,7 @@
                                     <constraint firstAttribute="height" constant="76" id="cOl-YU-vOh"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="2yE-J2-38d">
-                                    <font key="font" metaFont="system" size="15"/>
+                                    <font key="font" size="15" name="SFProText-Regular"/>
                                     <string key="title">We have created your code phrase, which is in the box below.
 This code phrase allows you to access your wallet and to 
 the funds that it contains</string>
@@ -63,9 +63,9 @@ the funds that it contains</string>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cxZ-FJ-QE4">
-                                            <rect key="frame" x="14" y="23" width="298" height="32"/>
+                                            <rect key="frame" x="14" y="21" width="298" height="36"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" id="67l-eY-fKo">
-                                                <font key="font" metaFont="cellTitle"/>
+                                                <font key="font" size="12" name="SFProText-Medium"/>
                                                 <string key="title">river first hurry math become twice chocolate meat 
 nuts car skis rain odor</string>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -104,21 +104,21 @@ nuts car skis rain odor</string>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_clipboard" id="s6G-KP-uCv"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9bV-IU-SWL">
-                                <rect key="frame" x="237" y="330" width="92" height="19"/>
+                                <rect key="frame" x="236" y="325" width="95" height="24"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Remember!" id="BiZ-Qi-Wl7">
-                                    <font key="font" metaFont="system" size="16"/>
+                                    <font key="font" size="16" name="SFProText-Regular"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pON-06-1jv">
-                                <rect key="frame" x="44" y="220" width="479" height="100"/>
+                                <rect key="frame" x="44" y="215" width="479" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="eQa-cK-s8i"/>
                                     <constraint firstAttribute="width" constant="475" id="z99-Bn-uUa"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" placeholderString="" id="VVp-M3-WJ7">
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" size="13" name="SFProText-Regular"/>
                                     <string key="title">Write down your code phrase and ensure it is safely stored.
 If you lose your code phrase, you will forever lose access to your wallet.
 If someone finds out your passphrase, you will have access to your wallet.
@@ -128,22 +128,36 @@ We do not store your passphrase and, if lost, can not recover it.</string>
                                 </textFieldCell>
                             </textField>
                             <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="NfM-tu-KfF">
-                                <rect key="frame" x="-10" y="140" width="586" height="70"/>
+                                <rect key="frame" x="-1" y="135" width="568" height="70"/>
                                 <view key="contentView" id="iaB-uH-upU">
-                                    <rect key="frame" x="1" y="1" width="584" height="68"/>
+                                    <rect key="frame" x="1" y="1" width="566" height="68"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m5i-nj-7so">
-                                            <rect key="frame" x="68" y="26" width="347" height="17"/>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="m5i-nj-7so">
+                                            <rect key="frame" x="50" y="26" width="347" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="I wrote down my code phrase or saved it in a safe place." placeholderString="" id="qOb-4C-laL">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
+                                        <button translatesAutoresizingMaskIntoConstraints="NO" id="Iaf-R3-U7N">
+                                            <rect key="frame" x="21" y="25" width="17" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="13" id="QLV-5P-0pS"/>
+                                                <constraint firstAttribute="height" constant="14" id="Unk-cQ-1k3"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="gCY-GY-anN">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="m5i-nj-7so" firstAttribute="centerY" secondItem="iaB-uH-upU" secondAttribute="centerY" id="QJQ-9C-BM8"/>
+                                        <constraint firstItem="m5i-nj-7so" firstAttribute="leading" secondItem="Iaf-R3-U7N" secondAttribute="trailing" constant="16" id="cXV-o4-T87"/>
+                                        <constraint firstItem="Iaf-R3-U7N" firstAttribute="centerY" secondItem="iaB-uH-upU" secondAttribute="centerY" id="izo-Eh-ojp"/>
+                                        <constraint firstItem="Iaf-R3-U7N" firstAttribute="leading" secondItem="iaB-uH-upU" secondAttribute="leading" constant="23" id="pf3-Rj-y6e"/>
                                     </constraints>
                                 </view>
                                 <constraints>
@@ -152,29 +166,18 @@ We do not store your passphrase and, if lost, can not recover it.</string>
                                 <color key="borderColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                             </box>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="6If-Mf-WtH" customClass="ContinueButton">
-                                <rect key="frame" x="144" y="79" width="278" height="35"/>
+                                <rect key="frame" x="144" y="74" width="278" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="278" id="lve-cP-DuG"/>
                                     <constraint firstAttribute="height" constant="35" id="p6j-Sy-pLw"/>
                                 </constraints>
                             </customView>
-                            <button translatesAutoresizingMaskIntoConstraints="NO" id="Iaf-R3-U7N">
-                                <rect key="frame" x="89" y="88" width="17" height="18"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="14" id="LJy-dd-QdO"/>
-                                    <constraint firstAttribute="width" constant="13" id="gc3-H4-FZH"/>
-                                </constraints>
-                                <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="gCY-GY-anN">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="59C-as-zba" secondAttribute="trailing" constant="24" id="0vx-2X-LcS"/>
-                            <constraint firstItem="NfM-tu-KfF" firstAttribute="leading" secondItem="X7T-Ka-8ce" secondAttribute="leading" constant="-10" id="2tb-yg-L3s"/>
+                            <constraint firstItem="NfM-tu-KfF" firstAttribute="leading" secondItem="X7T-Ka-8ce" secondAttribute="leading" constant="-1" id="2tb-yg-L3s"/>
                             <constraint firstItem="hlg-Qp-aTx" firstAttribute="centerX" secondItem="X7T-Ka-8ce" secondAttribute="centerX" id="BSs-xI-ouQ"/>
-                            <constraint firstAttribute="trailing" secondItem="NfM-tu-KfF" secondAttribute="trailing" constant="-10" id="BYX-tt-kG3"/>
+                            <constraint firstAttribute="trailing" secondItem="NfM-tu-KfF" secondAttribute="trailing" constant="-1" id="BYX-tt-kG3"/>
                             <constraint firstItem="y6n-Gj-bTC" firstAttribute="centerX" secondItem="X7T-Ka-8ce" secondAttribute="centerX" id="BtD-tG-95b"/>
                             <constraint firstItem="59C-as-zba" firstAttribute="top" secondItem="X7T-Ka-8ce" secondAttribute="top" constant="26" id="Djr-YU-DFj"/>
                             <constraint firstItem="EH4-2r-6V8" firstAttribute="leading" secondItem="hlg-Qp-aTx" secondAttribute="trailing" id="KgA-tG-fKH"/>
@@ -183,23 +186,21 @@ We do not store your passphrase and, if lost, can not recover it.</string>
                             <constraint firstItem="i9V-O9-mAn" firstAttribute="centerX" secondItem="X7T-Ka-8ce" secondAttribute="centerX" id="LbM-Y8-RFS"/>
                             <constraint firstItem="i9V-O9-mAn" firstAttribute="top" secondItem="y6n-Gj-bTC" secondAttribute="bottom" constant="32" id="Mo5-X9-NdG"/>
                             <constraint firstItem="pON-06-1jv" firstAttribute="centerX" secondItem="X7T-Ka-8ce" secondAttribute="centerX" id="NxK-32-Fpu"/>
-                            <constraint firstItem="6If-Mf-WtH" firstAttribute="leading" secondItem="Iaf-R3-U7N" secondAttribute="trailing" constant="40" id="UVd-s6-DDm"/>
                             <constraint firstItem="9bV-IU-SWL" firstAttribute="centerX" secondItem="X7T-Ka-8ce" secondAttribute="centerX" id="XUi-jK-SMp"/>
                             <constraint firstItem="6If-Mf-WtH" firstAttribute="top" secondItem="NfM-tu-KfF" secondAttribute="bottom" constant="26" id="g3B-7H-Oce"/>
                             <constraint firstItem="EH4-2r-6V8" firstAttribute="top" secondItem="i9V-O9-mAn" secondAttribute="bottom" constant="16" id="g6V-c5-COi"/>
                             <constraint firstItem="pON-06-1jv" firstAttribute="top" secondItem="9bV-IU-SWL" secondAttribute="bottom" constant="10" id="glH-a9-JUm"/>
-                            <constraint firstItem="Iaf-R3-U7N" firstAttribute="centerY" secondItem="6If-Mf-WtH" secondAttribute="centerY" id="h5j-IA-c96"/>
                             <constraint firstItem="y6n-Gj-bTC" firstAttribute="top" secondItem="X7T-Ka-8ce" secondAttribute="top" constant="64" id="k8a-PO-V8D"/>
                             <constraint firstItem="NfM-tu-KfF" firstAttribute="top" secondItem="pON-06-1jv" secondAttribute="bottom" constant="10" id="rBc-tq-4Ad"/>
                             <constraint firstItem="hlg-Qp-aTx" firstAttribute="top" secondItem="i9V-O9-mAn" secondAttribute="bottom" constant="16" id="sUE-z3-2pv"/>
                         </constraints>
                     </view>
-                    <color key="fillColor" red="0.074509803921568626" green="0.086274509803921567" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                 </box>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OZR-ha-gaA">
-                    <rect key="frame" x="15" y="633" width="150" height="19"/>
+                    <rect key="frame" x="15" y="629" width="158" height="23"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Get your passphrase" id="Q2B-Ip-drp">
-                        <font key="font" metaFont="system" size="15"/>
+                        <font key="font" size="15" name="SFProText-Medium"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>

@@ -1089,11 +1089,11 @@
         <scene sceneID="7vi-cM-8Ku">
             <objects>
                 <viewController storyboardIdentifier="SignInViewController" showSeguePresentationStyle="single" id="dQ5-HS-63o" customClass="SignInViewController" sceneMemberID="viewController">
-                    <view key="view" id="xDw-71-nVP">
+                    <view key="view" wantsLayer="YES" id="xDw-71-nVP">
                         <rect key="frame" x="0.0" y="0.0" width="1440" height="900"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <box boxType="custom" borderWidth="0.0" title="Box" transparent="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SgP-1L-8gN">
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="SgP-1L-8gN">
                                 <rect key="frame" x="0.0" y="0.0" width="1440" height="900"/>
                                 <view key="contentView" id="TVV-eg-VFE">
                                     <rect key="frame" x="0.0" y="0.0" width="1440" height="900"/>
@@ -1262,21 +1262,12 @@
                                                 <constraint firstAttribute="height" constant="140" id="mp7-7Q-Mk8"/>
                                             </constraints>
                                         </customView>
-                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="EXg-XG-q0P" customClass="PassphraseView">
-                                            <rect key="frame" x="431" y="117" width="579" height="667"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="667" id="8b4-Fg-FYk"/>
-                                                <constraint firstAttribute="width" constant="579" id="GZ2-vq-qxZ"/>
-                                            </constraints>
-                                        </customView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="igt-4i-frE" firstAttribute="top" secondItem="TSh-z9-E98" secondAttribute="bottom" id="13s-PA-yOl"/>
                                         <constraint firstItem="0Kw-xN-BWu" firstAttribute="top" secondItem="TSh-z9-E98" secondAttribute="bottom" id="3lu-5k-b5p"/>
-                                        <constraint firstItem="EXg-XG-q0P" firstAttribute="centerX" secondItem="TVV-eg-VFE" secondAttribute="centerX" id="7jH-Ck-unt"/>
                                         <constraint firstItem="AwP-35-3JC" firstAttribute="top" secondItem="YIc-nz-7df" secondAttribute="bottom" constant="10" id="Ce7-zr-xu7"/>
                                         <constraint firstItem="AwP-35-3JC" firstAttribute="centerX" secondItem="TVV-eg-VFE" secondAttribute="centerX" id="DAi-X8-gKA"/>
-                                        <constraint firstItem="EXg-XG-q0P" firstAttribute="centerY" secondItem="TVV-eg-VFE" secondAttribute="centerY" id="Ozc-TK-yXf"/>
                                         <constraint firstItem="0Kw-xN-BWu" firstAttribute="centerX" secondItem="TVV-eg-VFE" secondAttribute="centerX" id="aNc-wP-kQe"/>
                                         <constraint firstItem="YIc-nz-7df" firstAttribute="centerX" secondItem="TVV-eg-VFE" secondAttribute="centerX" id="poj-Uc-nPP"/>
                                         <constraint firstItem="igt-4i-frE" firstAttribute="centerX" secondItem="TVV-eg-VFE" secondAttribute="centerX" id="qbK-Kh-ia5"/>
@@ -1315,15 +1306,24 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <customView canDrawConcurrently="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EXg-XG-q0P" customClass="PassphraseView">
+                                <rect key="frame" x="430" y="117" width="579" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="579" id="isA-IO-6d4"/>
+                                    <constraint firstAttribute="height" constant="667" id="unc-B6-hSk"/>
+                                </constraints>
+                            </customView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="2Xj-ui-DjS" firstAttribute="top" secondItem="Ihx-sh-Mbw" secondAttribute="bottom" constant="70" id="0aE-iF-Hv9"/>
+                            <constraint firstItem="EXg-XG-q0P" firstAttribute="centerX" secondItem="xDw-71-nVP" secondAttribute="centerX" id="2aS-Nj-9kp"/>
                             <constraint firstAttribute="trailing" secondItem="SgP-1L-8gN" secondAttribute="trailing" id="595-L1-eSV"/>
                             <constraint firstItem="Ihx-sh-Mbw" firstAttribute="centerX" secondItem="xDw-71-nVP" secondAttribute="centerX" id="8ux-vd-fJe"/>
                             <constraint firstItem="2Xj-ui-DjS" firstAttribute="centerY" secondItem="Aiv-Qg-I9Q" secondAttribute="centerY" id="92T-YT-lYK"/>
                             <constraint firstItem="SgP-1L-8gN" firstAttribute="top" secondItem="xDw-71-nVP" secondAttribute="top" id="YDM-M1-4fG"/>
                             <constraint firstItem="Aiv-Qg-I9Q" firstAttribute="leading" secondItem="gvu-y3-rxF" secondAttribute="leading" id="aK0-Hr-Bm0"/>
                             <constraint firstItem="SgP-1L-8gN" firstAttribute="leading" secondItem="xDw-71-nVP" secondAttribute="leading" id="bWV-1A-3OD"/>
+                            <constraint firstItem="EXg-XG-q0P" firstAttribute="centerY" secondItem="xDw-71-nVP" secondAttribute="centerY" id="hpY-NH-ZdV"/>
                             <constraint firstAttribute="bottom" secondItem="SgP-1L-8gN" secondAttribute="bottom" id="l4G-p3-huE"/>
                             <constraint firstItem="Ihx-sh-Mbw" firstAttribute="top" secondItem="xDw-71-nVP" secondAttribute="top" constant="170" id="sWk-pj-J3a"/>
                             <constraint firstItem="YIc-nz-7df" firstAttribute="top" secondItem="Aiv-Qg-I9Q" secondAttribute="bottom" constant="30" id="yWr-2b-kN7"/>
@@ -1336,8 +1336,10 @@
                         <outlet property="SignInLabel" destination="Aiv-Qg-I9Q" id="bxj-KH-Cha"/>
                         <outlet property="firstView" destination="igt-4i-frE" id="yc4-1p-w7q"/>
                         <outlet property="forgotPasswordLabel" destination="8wM-ww-UUQ" id="xoP-fg-Hj7"/>
+                        <outlet property="loginBox" destination="YIc-nz-7df" id="DhK-LY-v2l"/>
                         <outlet property="loginTextField" destination="jJp-6n-KVh" id="xaF-Pw-M0Q"/>
                         <outlet property="passphareView" destination="EXg-XG-q0P" id="px1-Aa-1lR"/>
+                        <outlet property="passwordBox" destination="AwP-35-3JC" id="U4f-Eh-Lqp"/>
                         <outlet property="passwordTextField" destination="u1Z-aQ-OMP" id="Ea7-Bo-8rT"/>
                         <outlet property="privateKeyButton" destination="ilo-JJ-R1k" id="InE-bv-k2e"/>
                         <outlet property="secondView" destination="0Kw-xN-BWu" id="hAe-3F-c0Y"/>

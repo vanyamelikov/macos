@@ -19,9 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.secondView.alphaValue = YES;
+    self.secondView.hidden = YES;
     self.passphareView.hidden = YES;
-    self.passphareView.alphaValue = 0.0f;
+    self.firstView.hidden = NO;
 
     NSClickGestureRecognizer *registerClick = [[NSClickGestureRecognizer alloc] initWithTarget:self action:@selector(RegisterAction:)];
     [self.RegisterLabel addGestureRecognizer:registerClick];
@@ -34,6 +34,8 @@
     
     NSClickGestureRecognizer *signInButtonClick = [[NSClickGestureRecognizer alloc] initWithTarget:self action:@selector(signInButtonAction:)];
     [self.SignInButton addGestureRecognizer:signInButtonClick];
+    
+    self.passphareView.delegate = self;
 }
 
 - (void)signInButtonAction:(id)sender
@@ -48,20 +50,10 @@
 {
     self.RegisterLabel.textColor = [NSColor whiteColor];
     self.SignInLabel.textColor = [NSColor colorFromHexString:@"959AA2"];
-        //[NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
-         //   context.duration = 0.5f;
-            self.firstView.animator.alphaValue = 0;
-            self.secondView.animator.alphaValue = 1;
-            self.secondView.animator.hidden = YES;
-            self.secondView.animator.hidden = NO;
-//        }
-//                            completionHandler:^{
-//                                self.firstView.hidden = YES;
-//                                self.secondView.hidden = NO;
-//                                self.firstView.alphaValue = 1;
-//                            }];
-   // [self fadeInOutAnimation:self.firstView :self.secondView];
-    
+//    self.firstView.animator.alphaValue = 0;
+//    self.secondView.animator.alphaValue = 1;
+    self.firstView.hidden = YES;
+    self.secondView.hidden = NO;
 }
 
 - (void)SignInAction:(id)sender
@@ -69,36 +61,17 @@
     self.SignInLabel.textColor = [NSColor whiteColor];
     self.RegisterLabel.textColor = [NSColor colorFromHexString:@"959AA2"];
     
-    self.firstView.animator.alphaValue = 1;
-    self.secondView.animator.alphaValue = 0;
-    self.secondView.animator.hidden = NO;
-    self.secondView.animator.hidden = YES;
-//    [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
-//        context.duration = 0.1f;
-//        self.secondView.animator.alphaValue = 0;
-//        self.firstView.animator.alphaValue = 1;
-//    }
-//                        completionHandler:^{
-//                            self.secondView.hidden = YES;
-//                            self.firstView.hidden = NO;
-//                            self.secondView.alphaValue = 1;
-//                        }];
-    //[self fadeInOutAnimation:self.secondView :self.firstView];
-    
+//    self.firstView.animator.alphaValue = 1;
+//    self.secondView.animator.alphaValue = 0;
+    self.firstView.hidden = NO;
+    self.secondView.hidden = YES;
 }
 
 - (void)privateKeyAction:(id)sender
 {
-    [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
-        context.duration = 0.1f;
-        self.passphareView.animator.alphaValue = 0;
-        self.secondView.animator.alphaValue = 0;
-    }
-                        completionHandler:^{
-                            self.secondView.hidden = YES;
-                            self.passphareView.hidden = NO;
-                            self.passphareView.alphaValue = 1;
-                        }];
+    self.firstView.hidden = YES;
+    self.secondView.hidden = YES;
+    self.passphareView.hidden = NO;
 }
 
 //-(void)fadeInOutAnimation : (NSView *) view1 : (NSView *) view2 {
@@ -114,5 +87,12 @@
 //    [NSAnimationContext endGrouping];
 //}
 
+-(void)passphraseViewDismiss {
+//    self.passphareView.animator.alphaValue = 0;
+    self.passphareView.hidden = YES;
+//    self.secondView.animator.alphaValue = 1;
+    self.secondView.hidden = NO;
+    self.firstView.hidden = YES;
+}
 
 @end

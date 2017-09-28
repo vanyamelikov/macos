@@ -10,6 +10,8 @@
 
 @implementation PassphraseView
 
+@synthesize delegate;
+
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
     
@@ -22,7 +24,8 @@
 
 - (void)closeClicked:(id)sender
 {
-    self.hidden = YES;
+    if(delegate && [self.delegate respondsToSelector:@selector(passphraseViewDismiss)])
+       [self.delegate passphraseViewDismiss];
 }
 
 @end
