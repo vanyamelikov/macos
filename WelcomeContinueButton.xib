@@ -19,6 +19,19 @@
                     <view key="contentView" id="spB-TL-UjE">
                         <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JN1-Tc-lVt">
+                                <rect key="frame" x="9" y="7" width="65" height="20"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Continue" usesSingleLineMode="YES" id="N2A-Xd-qYy">
+                                    <font key="font" size="14" name="SFProText-Medium"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="JN1-Tc-lVt" firstAttribute="centerY" secondItem="spB-TL-UjE" secondAttribute="centerY" id="oKv-ch-4N8"/>
+                        </constraints>
                     </view>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="jND-ln-fg3"/>
@@ -33,31 +46,22 @@
                     </userDefinedRuntimeAttributes>
                 </box>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IsI-Z8-Wwf">
-                    <rect key="frame" x="74" y="10" width="20" height="14"/>
+                    <rect key="frame" x="80" y="10" width="20" height="14"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="14" id="4nQ-pH-PhU"/>
                         <constraint firstAttribute="width" constant="20" id="vmf-hB-uQU"/>
                     </constraints>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_welcome_arrow" id="xQf-eP-ax5"/>
                 </imageView>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JN1-Tc-lVt">
-                    <rect key="frame" x="4" y="10" width="67" height="18"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Continue" id="N2A-Xd-qYy">
-                        <font key="font" metaFont="system" size="14"/>
-                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
             </subviews>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="nn8-tb-np1" secondAttribute="trailing" id="9Bc-V5-dlP"/>
                 <constraint firstItem="nn8-tb-np1" firstAttribute="leading" secondItem="ccK-VU-Hyb" secondAttribute="leading" id="DQB-Mc-Vf0"/>
+                <constraint firstItem="IsI-Z8-Wwf" firstAttribute="leading" secondItem="JN1-Tc-lVt" secondAttribute="trailing" constant="8" id="DvD-HG-fhp"/>
                 <constraint firstItem="nn8-tb-np1" firstAttribute="top" secondItem="ccK-VU-Hyb" secondAttribute="top" id="Js9-0n-ePr"/>
                 <constraint firstItem="IsI-Z8-Wwf" firstAttribute="centerY" secondItem="ccK-VU-Hyb" secondAttribute="centerY" id="PfZ-nr-Fwc"/>
-                <constraint firstAttribute="trailing" secondItem="IsI-Z8-Wwf" secondAttribute="trailing" constant="6" id="T1n-V2-C2v"/>
-                <constraint firstItem="JN1-Tc-lVt" firstAttribute="centerY" secondItem="ccK-VU-Hyb" secondAttribute="centerY" constant="-2" id="bdP-5y-mS1"/>
+                <constraint firstAttribute="trailing" secondItem="IsI-Z8-Wwf" secondAttribute="trailing" id="T1n-V2-C2v"/>
                 <constraint firstAttribute="bottom" secondItem="nn8-tb-np1" secondAttribute="bottom" id="kls-oZ-qBU"/>
-                <constraint firstItem="JN1-Tc-lVt" firstAttribute="leading" secondItem="ccK-VU-Hyb" secondAttribute="leading" constant="6" id="s4O-Gm-bdX"/>
             </constraints>
             <point key="canvasLocation" x="194.5" y="204"/>
         </customView>

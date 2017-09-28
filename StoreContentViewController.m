@@ -13,11 +13,16 @@
 #import "ImageUtils.h"
 #import "Colours.h"
 
+
+
 @interface StoreContentViewController ()
 
 @end
 
 @implementation StoreContentViewController
+
+#define kShowListGridButtons 108.0f
+#define kHideListGridButtons 26.0f
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -61,10 +66,24 @@
 }
 
 -(void)itemClicked:(NSInteger)sender :(NSString *)title {
-    if(sender == 2) {
+    if(sender == 2 || sender == 3 || sender == 4) {
         [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:2]];
+        [self hideListGridButtons:YES];
+    } else {
+        [self hideListGridButtons:NO];
     }
     self.storeCategoriesTitle.stringValue = title;
+}
+
+-(void)hideListGridButtons:(BOOL)hidden {
+    [self.view setWantsLayer:YES];
+    self.listImageView.hidden = hidden;
+    self.gridImageView.hidden = hidden;
+    if(hidden)
+        self.buyXenioButtonConstraint.constant = kHideListGridButtons;
+    else
+        self.buyXenioButtonConstraint.constant = kShowListGridButtons;
+    [self.view updateConstraints];
 }
 
 @end

@@ -8,9 +8,16 @@
 
 #import "PassphraseView.h"
 
-@implementation PassphraseView
+@implementation PassphraseView {
+    NSArray *wordsArray;
+}
 
 @synthesize delegate;
+
+-(void)awakeFromNib {
+    [super awakeFromNib];
+    
+}
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
@@ -26,6 +33,9 @@
 {
     if(delegate && [self.delegate respondsToSelector:@selector(passphraseViewDismiss)])
        [self.delegate passphraseViewDismiss];
+}
+- (IBAction)randomWordGeneratorClick:(NSClickGestureRecognizer *)sender {
+    
 }
 
 @end

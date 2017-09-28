@@ -11,6 +11,7 @@
             <connections>
                 <outlet property="closeButton" destination="59C-as-zba" id="dDB-9Q-dAY"/>
                 <outlet property="continueButton" destination="6If-Mf-WtH" id="BXN-SO-3bw"/>
+                <outlet property="phraseLabel" destination="cxZ-FJ-QE4" id="hgA-WM-xTB"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -78,6 +79,13 @@ nuts car skis rain odor</string>
                                                 <constraint firstAttribute="width" constant="14" id="P4f-25-gcB"/>
                                                 <constraint firstAttribute="height" constant="16" id="gh8-JG-oPo"/>
                                             </constraints>
+                                            <gestureRecognizers>
+                                                <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="yyQ-t9-Dgd">
+                                                    <connections>
+                                                        <action selector="randomWordGeneratorClick:" target="-2" id="LNk-Qt-nut"/>
+                                                    </connections>
+                                                </clickGestureRecognizer>
+                                            </gestureRecognizers>
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_refresh" id="xVZ-Fp-jxv"/>
                                         </imageView>
                                     </subviews>
@@ -163,7 +171,7 @@ We do not store your passphrase and, if lost, can not recover it.</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="raM-ua-KrU"/>
                                 </constraints>
-                                <color key="borderColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                <color key="borderColor" red="1" green="1" blue="1" alpha="0.038940653669724802" colorSpace="calibratedRGB"/>
                             </box>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="6If-Mf-WtH" customClass="ContinueButton">
                                 <rect key="frame" x="144" y="74" width="278" height="35"/>

@@ -27,6 +27,7 @@
 		31972D6F1F7CEB77008447C2 /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 31972D6E1F7CEB77008447C2 /* ImageUtils.m */; };
 		31972D711F7D1582008447C2 /* LibraryEmptySideMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31972D701F7D1582008447C2 /* LibraryEmptySideMenu.xib */; };
 		31972D741F7D1755008447C2 /* LibraryEmptySideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 31972D731F7D1755008447C2 /* LibraryEmptySideMenu.m */; };
+		31972D771F7D96CA008447C2 /* TextFieldWithTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 31972D761F7D96CA008447C2 /* TextFieldWithTag.m */; };
 		31B593BB1F7C14CF00D5B5FC /* FreeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */; };
 		31B593C11F7C15D400D5B5FC /* FreeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B593C01F7C15D400D5B5FC /* FreeButton.m */; };
 		31B593C31F7C194B00D5B5FC /* StoreTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593C21F7C194B00D5B5FC /* StoreTabView.xib */; };
@@ -272,6 +273,8 @@
 		31972D701F7D1582008447C2 /* LibraryEmptySideMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryEmptySideMenu.xib; sourceTree = "<group>"; };
 		31972D721F7D1755008447C2 /* LibraryEmptySideMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryEmptySideMenu.h; sourceTree = "<group>"; };
 		31972D731F7D1755008447C2 /* LibraryEmptySideMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibraryEmptySideMenu.m; sourceTree = "<group>"; };
+		31972D751F7D96CA008447C2 /* TextFieldWithTag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldWithTag.h; sourceTree = "<group>"; };
+		31972D761F7D96CA008447C2 /* TextFieldWithTag.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldWithTag.m; sourceTree = "<group>"; };
 		31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreeButton.xib; sourceTree = "<group>"; };
 		31B593BF1F7C15D400D5B5FC /* FreeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeButton.h; sourceTree = "<group>"; };
 		31B593C01F7C15D400D5B5FC /* FreeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeButton.m; sourceTree = "<group>"; };
@@ -1071,6 +1074,8 @@
 				3E9C462B1F71F9DF00693AA1 /* TextFieldWithFriend.h */,
 				3E9C462C1F71F9DF00693AA1 /* TextFieldWithFriend.m */,
 				3E0224E71F72148B00C99608 /* TextFieldWithFriend.xib */,
+				31972D751F7D96CA008447C2 /* TextFieldWithTag.h */,
+				31972D761F7D96CA008447C2 /* TextFieldWithTag.m */,
 			);
 			name = TextFieldWithFriend;
 			sourceTree = "<group>";
@@ -1779,6 +1784,7 @@
 				3E6FE7D61F77C08500B98AD3 /* StoreGamesGridCell.m in Sources */,
 				3E88762E1F7471A5001B8374 /* FriendsChatRequestCell.m in Sources */,
 				3E88765F1F74B132001B8374 /* FriendsRightListNotificationCell.m in Sources */,
+				31972D771F7D96CA008447C2 /* TextFieldWithTag.m in Sources */,
 				3E558BE41F7973A500542B7B /* SettingsNavigationViewController.m in Sources */,
 				3EBAADD41F7595FE00890AD1 /* StoreSideMenu.m in Sources */,
 				3E6FE7E21F77F1BC00B98AD3 /* MainWindow.m in Sources */,

@@ -14,11 +14,19 @@
 
 @end
 
-@implementation SignInViewController
+@implementation SignInViewController {
+    NSColor *focusTFBorderColor;
+    NSColor *unFocusTFBorderColor;
+    CGFloat tfAnimationDuration;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    focusTFBorderColor = [NSColor colorFromHexString:@"5c5e66"];
+    unFocusTFBorderColor = [NSColor colorFromHexString:@"383943"];
+    tfAnimationDuration = 2.0f;
+    
     self.secondView.hidden = YES;
     self.passphareView.hidden = YES;
     self.firstView.hidden = NO;
@@ -36,11 +44,17 @@
     [self.SignInButton addGestureRecognizer:signInButtonClick];
     
     self.passphareView.delegate = self;
+    
+    [self.loginBox setWantsLayer:YES];
+    [self.passwordBox setWantsLayer:YES];
+    self.loginTextField.delegate = self;
+    self.passwordTextField.delegate = self;
+    self.loginTextField.tagDelegate = self;
+    self.passwordTextField.tagDelegate = self;
 }
 
 - (void)signInButtonAction:(id)sender
 {
-    //MainTabViewController
     NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
     MainTabViewController *vc = (MainTabViewController *)[sb instantiateControllerWithIdentifier:@"MainTabViewController"];
     self.view.window.contentViewController = vc;
@@ -50,10 +64,12 @@
 {
     self.RegisterLabel.textColor = [NSColor whiteColor];
     self.SignInLabel.textColor = [NSColor colorFromHexString:@"959AA2"];
-//    self.firstView.animator.alphaValue = 0;
-//    self.secondView.animator.alphaValue = 1;
-    self.firstView.hidden = YES;
-    self.secondView.hidden = NO;
+    
+    [NSAnimationContext beginGrouping];
+    [[NSAnimationContext currentContext] setDuration:0.5];
+    self.firstView.animator.hidden = YES;
+    self.secondView.animator.hidden = NO;
+    [NSAnimationContext endGrouping];
 }
 
 - (void)SignInAction:(id)sender
@@ -61,38 +77,69 @@
     self.SignInLabel.textColor = [NSColor whiteColor];
     self.RegisterLabel.textColor = [NSColor colorFromHexString:@"959AA2"];
     
-//    self.firstView.animator.alphaValue = 1;
-//    self.secondView.animator.alphaValue = 0;
-    self.firstView.hidden = NO;
-    self.secondView.hidden = YES;
+    [NSAnimationContext beginGrouping];
+    [[NSAnimationContext currentContext] setDuration:0.5];
+    self.secondView.animator.hidden = YES;
+    self.firstView.animator.hidden = NO;
+    [NSAnimationContext endGrouping];
 }
 
 - (void)privateKeyAction:(id)sender
 {
-    self.firstView.hidden = YES;
-    self.secondView.hidden = YES;
-    self.passphareView.hidden = NO;
+    [NSAnimationContext beginGrouping];
+    [[NSAnimationContext currentContext] setDuration:0.5];
+    self.secondView.animator.hidden = YES;
+    self.passphareView.animator.hidden = NO;
+    [NSAnimationContext endGrouping];
 }
 
-//-(void)fadeInOutAnimation : (NSView *) view1 : (NSView *) view2 {
-//    //duration doesn't work
-//    [NSAnimationContext beginGrouping];
-//    [[NSAnimationContext currentContext] setDuration:2.0];
-//    [[view1 animator] setAlphaValue:0.0f];
-//    [NSAnimationContext endGrouping];
-//    
-//    [NSAnimationContext beginGrouping];
-//    [[NSAnimationContext currentContext] setDuration:2.0];
-//    [[view2 animator] setAlphaValue:1.0f];
-//    [NSAnimationContext endGrouping];
-//}
-
 -(void)passphraseViewDismiss {
-//    self.passphareView.animator.alphaValue = 0;
-    self.passphareView.hidden = YES;
-//    self.secondView.animator.alphaValue = 1;
-    self.secondView.hidden = NO;
+    
     self.firstView.hidden = YES;
+    
+    [NSAnimationContext beginGrouping];
+    [[NSAnimationContext currentContext] setDuration:0.5];
+    self.passphareView.animator.hidden = YES;
+    self.secondView.animator.hidden = NO;
+    [NSAnimationContext endGrouping];
+}
+
+-(void)controlTextDidEndEditing:(NSNotification *)obj {
+    TextFieldWithTag *textField = (TextFieldWithTag *)[obj object];
+    if(textField.mTag == 1) {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:tfAnimationDuration];
+        self.loginBox.animator.borderColor = unFocusTFBorderColor;
+        self.loginBox.borderColor = unFocusTFBorderColor;
+        [self.loginBox setNeedsDisplay:YES];
+        [NSAnimationContext endGrouping];
+    } else if(textField.mTag == 2) {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:tfAnimationDuration];
+        self.passwordBox.animator.borderColor = unFocusTFBorderColor;
+        self.passwordBox.borderColor = unFocusTFBorderColor;
+        [self.passwordBox setNeedsDisplay:YES];
+        [NSAnimationContext endGrouping];
+    }
+}
+
+-(void)textFieldSelected:(NSTextField *)sender {
+    TextFieldWithTag *textField = (TextFieldWithTag *)sender;
+    if(textField.mTag == 1) {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:tfAnimationDuration];
+        self.loginBox.animator.borderColor = focusTFBorderColor;
+        self.loginBox.borderColor = focusTFBorderColor;
+        [self.loginBox setNeedsDisplay:YES];
+        [NSAnimationContext endGrouping];
+    } else if(textField.mTag == 2) {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:tfAnimationDuration];
+        self.passwordBox.animator.borderColor = focusTFBorderColor;
+        self.passwordBox.borderColor = focusTFBorderColor;
+        [self.passwordBox setNeedsDisplay:YES];
+        [NSAnimationContext endGrouping];
+    }
 }
 
 @end

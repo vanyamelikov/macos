@@ -229,6 +229,7 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="kvd-1k-OCJ" firstAttribute="top" secondItem="RFh-Je-veL" secondAttribute="bottom" constant="6" id="1qy-Ln-406"/>
+                                        <constraint firstAttribute="trailing" secondItem="RFh-Je-veL" secondAttribute="trailing" constant="108" id="3JJ-9u-949"/>
                                         <constraint firstItem="abb-7k-7KV" firstAttribute="top" secondItem="m1s-KW-lbc" secondAttribute="top" constant="20" id="3UT-2F-7CL"/>
                                         <constraint firstItem="8s4-yx-gxJ" firstAttribute="leading" secondItem="bPY-JE-RRf" secondAttribute="trailing" constant="26" id="6Uk-el-yGo"/>
                                         <constraint firstItem="bPY-JE-RRf" firstAttribute="top" secondItem="fo2-sy-24e" secondAttribute="bottom" constant="21" id="8Nf-ws-yp9"/>
@@ -246,7 +247,6 @@
                                         <constraint firstItem="kvd-1k-OCJ" firstAttribute="leading" secondItem="m1s-KW-lbc" secondAttribute="leading" constant="26" id="kBz-Jc-PLN"/>
                                         <constraint firstItem="plW-Km-rbt" firstAttribute="leading" secondItem="m1s-KW-lbc" secondAttribute="leading" constant="26" id="qtt-Tg-YxP"/>
                                         <constraint firstItem="aiM-co-5kq" firstAttribute="leading" secondItem="m1s-KW-lbc" secondAttribute="leading" constant="26" id="tkQ-UE-ZNe"/>
-                                        <constraint firstItem="bPY-JE-RRf" firstAttribute="leading" secondItem="RFh-Je-veL" secondAttribute="trailing" constant="24" id="ust-GG-raV"/>
                                     </constraints>
                                 </view>
                                 <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="0.8486716360856269" colorSpace="calibratedRGB"/>
@@ -260,6 +260,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buyXenioButton" destination="RFh-Je-veL" id="nP8-5Q-1dJ"/>
+                        <outlet property="buyXenioButtonConstraint" destination="3JJ-9u-949" id="8FU-cA-BVi"/>
                         <outlet property="gamesTabController" destination="aiM-co-5kq" id="9A1-KI-u4s"/>
                         <outlet property="gridImageView" destination="8s4-yx-gxJ" id="FzM-CV-b3P"/>
                         <outlet property="listImageView" destination="bPY-JE-RRf" id="FaG-CT-HJS"/>

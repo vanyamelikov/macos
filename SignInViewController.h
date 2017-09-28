@@ -11,13 +11,14 @@
 #import "SignInButton.h"
 #import "PassphraseView.h"
 #import "PrivateKeyButton.h"
+#import "TextFieldWithTag.h"
 
-@interface SignInViewController : NSViewController <PassphraseViewDelegate>
+@interface SignInViewController : NSViewController <PassphraseViewDelegate, NSTextFieldDelegate, TextFieldWithTagDelegate>
 
 @property (strong) IBOutlet NSTextField *SignInLabel;
 @property (strong) IBOutlet NSTextField *RegisterLabel;
-@property (strong) IBOutlet NSTextField *loginTextField;
-@property (strong) IBOutlet NSTextField *passwordTextField;
+@property (strong) IBOutlet TextFieldWithTag *loginTextField;
+@property (strong) IBOutlet TextFieldWithTag *passwordTextField;
 @property (strong) IBOutlet SignInButton *SignInButton;
 @property (strong) IBOutlet NSTextField *forgotPasswordLabel;
 

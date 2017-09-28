@@ -20,5 +20,6 @@
 @property (strong) IBOutlet NSImageView *closeButton;
 
 @property (nonatomic, weak) id <PassphraseViewDelegate> delegate;
+@property (weak) IBOutlet NSTextField *phraseLabel;
 
 @end
