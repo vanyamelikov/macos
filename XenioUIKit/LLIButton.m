@@ -14,6 +14,10 @@
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
+    if(self.buttonTitleText != nil)
+        self.buttonTitle.stringValue = self.buttonTitleText;
+    else
+        self.buttonTitle.stringValue = @"BUY GAME";
     
     alphaColor = [NSColor colorFromHexString:@"#3263CA"];
     RGBcolor   = [NSColor colorFromHexString:@"#3D7BFF"];

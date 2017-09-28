@@ -17,5 +17,8 @@
 @property (strong) IBOutlet NSBox *backgroundBox;
 @property (strong) IBOutlet NSBox *hiddenBox;
 
+@property (weak) IBOutlet NSTextField *buttonTitle;
+
+@property (nonatomic) IBInspectable NSString *buttonTitleText;
 
 @end

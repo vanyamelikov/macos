@@ -222,6 +222,9 @@
                                                 <constraint firstAttribute="height" constant="29" id="imt-bv-PoO"/>
                                                 <constraint firstAttribute="width" constant="110" id="pQA-Ty-k3S"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="buttonTitleText" value="BUY XENIO"/>
+                                            </userDefinedRuntimeAttributes>
                                         </customView>
                                     </subviews>
                                     <constraints>
@@ -258,6 +261,8 @@
                     </view>
                     <connections>
                         <outlet property="gamesTabController" destination="aiM-co-5kq" id="9A1-KI-u4s"/>
+                        <outlet property="gridImageView" destination="8s4-yx-gxJ" id="FzM-CV-b3P"/>
+                        <outlet property="listImageView" destination="bPY-JE-RRf" id="FaG-CT-HJS"/>
                         <outlet property="storeCategoriesTitle" destination="plW-Km-rbt" id="PQx-4j-VJ6"/>
                     </connections>
                 </viewController>

@@ -10,6 +10,7 @@
         <customObject id="-2" userLabel="File's Owner" customClass="LLIButton">
             <connections>
                 <outlet property="backgroundBox" destination="2JG-gW-9yi" id="Meh-do-7dV"/>
+                <outlet property="buttonTitle" destination="chr-AC-dPK" id="r36-52-JLV"/>
                 <outlet property="hiddenBox" destination="a0i-Ls-tKS" id="81x-QI-LKM"/>
             </connections>
         </customObject>
@@ -85,27 +86,26 @@
                     </userDefinedRuntimeAttributes>
                 </box>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Iyd-VV-pZj">
-                    <rect key="frame" x="9" y="9" width="13" height="10"/>
+                    <rect key="frame" x="9" y="8" width="12" height="12"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="10" id="Mft-Ws-JBF"/>
-                        <constraint firstAttribute="width" constant="13" id="raL-0P-j3Q"/>
+                        <constraint firstAttribute="height" constant="12" id="0yG-1O-lGk"/>
+                        <constraint firstAttribute="width" constant="12" id="6MT-1b-8M5"/>
                     </constraints>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_card" id="DSN-hm-kGy"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_xenio" id="DSN-hm-kGy"/>
                 </imageView>
             </subviews>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="U8f-U4-mLo" secondAttribute="trailing" id="7Qc-On-Bpf"/>
                 <constraint firstItem="U8f-U4-mLo" firstAttribute="leading" secondItem="Oec-rl-JLZ" secondAttribute="leading" id="Bth-Pm-cht"/>
-                <constraint firstItem="Iyd-VV-pZj" firstAttribute="top" secondItem="Oec-rl-JLZ" secondAttribute="top" constant="10" id="SKE-OR-sA1"/>
-                <constraint firstItem="Iyd-VV-pZj" firstAttribute="leading" secondItem="Oec-rl-JLZ" secondAttribute="leading" constant="9" id="U1s-1d-oMX"/>
+                <constraint firstItem="Iyd-VV-pZj" firstAttribute="centerY" secondItem="Oec-rl-JLZ" secondAttribute="centerY" id="UnR-9Z-rJO"/>
                 <constraint firstItem="U8f-U4-mLo" firstAttribute="top" secondItem="Oec-rl-JLZ" secondAttribute="top" id="gfQ-be-I0D"/>
                 <constraint firstAttribute="bottom" secondItem="U8f-U4-mLo" secondAttribute="bottom" id="ib1-xn-x5Z"/>
-                <constraint firstItem="U8f-U4-mLo" firstAttribute="centerY" secondItem="Iyd-VV-pZj" secondAttribute="centerY" id="xN9-8k-WWH"/>
+                <constraint firstItem="Iyd-VV-pZj" firstAttribute="leading" secondItem="Oec-rl-JLZ" secondAttribute="leading" constant="9" id="oCj-VY-ebh"/>
             </constraints>
             <point key="canvasLocation" x="195" y="293.5"/>
         </customView>
     </objects>
     <resources>
-        <image name="ic_card" width="26" height="20"/>
+        <image name="ic_xenio" width="12" height="12"/>
     </resources>
 </document>

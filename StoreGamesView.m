@@ -152,8 +152,8 @@
         cell.macosImage.hidden = NO;
         cell.windowsImage.hidden = YES;
     } else {
-        cell.macosImage.hidden = YES;
-        cell.windowsImage.hidden = YES;
+        cell.macosImage.hidden = NO;
+        cell.windowsImage.hidden = NO;
     }
     cell.priceLabel.stringValue = model.gamePrice;
     if(model.buttonType == 0) {

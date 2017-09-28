@@ -10,6 +10,8 @@
 #import "StoreGamesView.h"
 #import "StoreGamesGridView.h"
 #import "StoreMainGridView.h"
+#import "ImageUtils.h"
+#import "Colours.h"
 
 @interface StoreContentViewController ()
 
@@ -43,11 +45,19 @@
 }
 
 - (IBAction)ChangeToListClick:(NSClickGestureRecognizer *)sender {
-    [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:0]];
+    if(![self.gamesTabController.selectedTabViewItem isEqual:[self.gamesTabController.tabViewItems objectAtIndex:0]]) {
+        [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:0]];
+        self.listImageView.image = [ImageUtils imageTintedWithColor:[NSColor colorFromHexString:@"#69a2a9c1"] : self.listImageView.image];
+        self.gridImageView.image = [ImageUtils imageTintedWithColor:[NSColor whiteColor] : self.gridImageView.image];
+    }
 }
 
 - (IBAction)ChangeToGridClick:(NSClickGestureRecognizer *)sender {
-    [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:1]];
+    if(![self.gamesTabController.selectedTabViewItem isEqual:[self.gamesTabController.tabViewItems objectAtIndex:1]]) {
+        [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:1]];
+        self.listImageView.image = [ImageUtils imageTintedWithColor:[NSColor whiteColor] : self.listImageView.image];
+        self.gridImageView.image = [ImageUtils imageTintedWithColor:[NSColor colorFromHexString:@"#69a2a9c1"] : self.gridImageView.image];
+    }
 }
 
 -(void)itemClicked:(NSInteger)sender :(NSString *)title {
