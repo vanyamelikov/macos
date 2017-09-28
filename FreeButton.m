@@ -8,6 +8,7 @@
 
 #import "FreeButton.h"
 #import "Colours.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation FreeButton
 

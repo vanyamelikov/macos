@@ -62,6 +62,13 @@
                                     <constraint firstAttribute="height" constant="17" id="b1u-xf-9gb"/>
                                     <constraint firstAttribute="width" constant="17" id="fB5-Fd-lB3"/>
                                 </constraints>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="SEx-De-Xhu">
+                                        <connections>
+                                            <action selector="downloadsClick:" target="-2" id="agy-a3-8Ca"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_grid" id="Wff-Kr-bq3"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hcd-2Y-WiH">

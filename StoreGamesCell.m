@@ -7,12 +7,13 @@
 //
 
 #import "StoreGamesCell.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation StoreGamesCell
 
-- (void)drawRect:(NSRect)dirtyRect {
+-(void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
-    
+    [self setWantsLayer:YES];
 }
 
 @end

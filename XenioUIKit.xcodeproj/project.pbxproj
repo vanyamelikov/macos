@@ -10,6 +10,19 @@
 		19C6724A3D68E67C8BE196CC /* libPods-XenioUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B42B9AA34683B9849D28601 /* libPods-XenioUIKit.a */; };
 		315947031F7C51CF0073FA52 /* BackgroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315947021F7C51CF0073FA52 /* BackgroundView.xib */; };
 		315947061F7C51F40073FA52 /* BackgoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 315947051F7C51F40073FA52 /* BackgoundView.m */; };
+		315947161F7C6B190073FA52 /* StoreGameSideListHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 315947071F7C6B170073FA52 /* StoreGameSideListHeaderCell.m */; };
+		315947171F7C6B190073FA52 /* StoreGameSideListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 315947091F7C6B170073FA52 /* StoreGameSideListCell.m */; };
+		315947181F7C6B190073FA52 /* StoreGameInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3159470B1F7C6B170073FA52 /* StoreGameInfoView.xib */; };
+		315947191F7C6B190073FA52 /* StoreGameInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3159470C1F7C6B170073FA52 /* StoreGameInfoView.m */; };
+		3159471A1F7C6B190073FA52 /* StoreGameInfoSideListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3159470E1F7C6B180073FA52 /* StoreGameInfoSideListView.xib */; };
+		3159471B1F7C6B190073FA52 /* BottomDownloadBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3159470F1F7C6B180073FA52 /* BottomDownloadBar.m */; };
+		3159471C1F7C6B190073FA52 /* BottomDownloadBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315947101F7C6B180073FA52 /* BottomDownloadBar.xib */; };
+		3159471D1F7C6B190073FA52 /* StoreGameSideListHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315947121F7C6B180073FA52 /* StoreGameSideListHeaderCell.xib */; };
+		3159471E1F7C6B190073FA52 /* StoreGameSideListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315947131F7C6B180073FA52 /* StoreGameSideListCell.xib */; };
+		3159471F1F7C6B190073FA52 /* StoreGameInfoSideListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 315947151F7C6B190073FA52 /* StoreGameInfoSideListView.m */; };
+		315947221F7C8DFA0073FA52 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315947211F7C8DFA0073FA52 /* QuartzCore.framework */; };
+		315947251F7C8F5E0073FA52 /* CustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 315947241F7C8F5E0073FA52 /* CustomScrollView.m */; };
+		315947281F7C99D80073FA52 /* SplitViewWithDivider.m in Sources */ = {isa = PBXBuildFile; fileRef = 315947271F7C99D80073FA52 /* SplitViewWithDivider.m */; };
 		31B593BB1F7C14CF00D5B5FC /* FreeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */; };
 		31B593C11F7C15D400D5B5FC /* FreeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B593C01F7C15D400D5B5FC /* FreeButton.m */; };
 		31B593C31F7C194B00D5B5FC /* StoreTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593C21F7C194B00D5B5FC /* StoreTabView.xib */; };
@@ -228,6 +241,26 @@
 		315947021F7C51CF0073FA52 /* BackgroundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackgroundView.xib; sourceTree = "<group>"; };
 		315947041F7C51F40073FA52 /* BackgoundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgoundView.h; sourceTree = "<group>"; };
 		315947051F7C51F40073FA52 /* BackgoundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgoundView.m; sourceTree = "<group>"; };
+		315947071F7C6B170073FA52 /* StoreGameSideListHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreGameSideListHeaderCell.m; sourceTree = "<group>"; };
+		315947081F7C6B170073FA52 /* StoreGameInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreGameInfoView.h; sourceTree = "<group>"; };
+		315947091F7C6B170073FA52 /* StoreGameSideListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreGameSideListCell.m; sourceTree = "<group>"; };
+		3159470A1F7C6B170073FA52 /* StoreGameInfoSideListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreGameInfoSideListView.h; sourceTree = "<group>"; };
+		3159470B1F7C6B170073FA52 /* StoreGameInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreGameInfoView.xib; sourceTree = "<group>"; };
+		3159470C1F7C6B170073FA52 /* StoreGameInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreGameInfoView.m; sourceTree = "<group>"; };
+		3159470D1F7C6B170073FA52 /* BottomDownloadBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomDownloadBar.h; sourceTree = "<group>"; };
+		3159470E1F7C6B180073FA52 /* StoreGameInfoSideListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreGameInfoSideListView.xib; sourceTree = "<group>"; };
+		3159470F1F7C6B180073FA52 /* BottomDownloadBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomDownloadBar.m; sourceTree = "<group>"; };
+		315947101F7C6B180073FA52 /* BottomDownloadBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomDownloadBar.xib; sourceTree = "<group>"; };
+		315947111F7C6B180073FA52 /* StoreGameSideListHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreGameSideListHeaderCell.h; sourceTree = "<group>"; };
+		315947121F7C6B180073FA52 /* StoreGameSideListHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreGameSideListHeaderCell.xib; sourceTree = "<group>"; };
+		315947131F7C6B180073FA52 /* StoreGameSideListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreGameSideListCell.xib; sourceTree = "<group>"; };
+		315947141F7C6B180073FA52 /* StoreGameSideListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreGameSideListCell.h; sourceTree = "<group>"; };
+		315947151F7C6B190073FA52 /* StoreGameInfoSideListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreGameInfoSideListView.m; sourceTree = "<group>"; };
+		315947211F7C8DFA0073FA52 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		315947231F7C8F5E0073FA52 /* CustomScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomScrollView.h; sourceTree = "<group>"; };
+		315947241F7C8F5E0073FA52 /* CustomScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomScrollView.m; sourceTree = "<group>"; };
+		315947261F7C99D80073FA52 /* SplitViewWithDivider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitViewWithDivider.h; sourceTree = "<group>"; };
+		315947271F7C99D80073FA52 /* SplitViewWithDivider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitViewWithDivider.m; sourceTree = "<group>"; };
 		31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreeButton.xib; sourceTree = "<group>"; };
 		31B593BF1F7C15D400D5B5FC /* FreeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeButton.h; sourceTree = "<group>"; };
 		31B593C01F7C15D400D5B5FC /* FreeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeButton.m; sourceTree = "<group>"; };
@@ -572,6 +605,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315947221F7C8DFA0073FA52 /* QuartzCore.framework in Frameworks */,
 				19C6724A3D68E67C8BE196CC /* libPods-XenioUIKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,6 +613,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		315947201F7C6B1F0073FA52 /* BottomDownloadBar */ = {
+			isa = PBXGroup;
+			children = (
+				3159470D1F7C6B170073FA52 /* BottomDownloadBar.h */,
+				3159470F1F7C6B180073FA52 /* BottomDownloadBar.m */,
+				315947101F7C6B180073FA52 /* BottomDownloadBar.xib */,
+			);
+			name = BottomDownloadBar;
+			sourceTree = "<group>";
+		};
 		3E1FF8E41F6AC4CE00117F16 /* CustomTabbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -749,6 +793,8 @@
 			children = (
 				3E6FE7B21F776B9600B98AD3 /* BuyGame */,
 				3EBAADD11F7595DA00890AD1 /* StoreClasses */,
+				3159470E1F7C6B180073FA52 /* StoreGameInfoSideListView.xib */,
+				3159470B1F7C6B170073FA52 /* StoreGameInfoView.xib */,
 				3E9C46041F7048DE00693AA1 /* Store.storyboard */,
 				3E7230AF1F734A070050A70D /* StoreSideMenu.xib */,
 				3E7230B31F734ABB0050A70D /* StoreGamesView.xib */,
@@ -903,6 +949,8 @@
 			isa = PBXGroup;
 			children = (
 				3E8876141F7423FA001B8374 /* Classes */,
+				315947131F7C6B180073FA52 /* StoreGameSideListCell.xib */,
+				315947121F7C6B180073FA52 /* StoreGameSideListHeaderCell.xib */,
 				3EBAADCF1F7595A700890AD1 /* StoreSideMenuCell.xib */,
 				3EBAADD51F75993A00890AD1 /* StoreSideMenuHeaderCell.xib */,
 				3E8876231F744329001B8374 /* StoreGamesCell.xib */,
@@ -916,6 +964,10 @@
 		3E8876141F7423FA001B8374 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				315947141F7C6B180073FA52 /* StoreGameSideListCell.h */,
+				315947091F7C6B170073FA52 /* StoreGameSideListCell.m */,
+				315947111F7C6B180073FA52 /* StoreGameSideListHeaderCell.h */,
+				315947071F7C6B170073FA52 /* StoreGameSideListHeaderCell.m */,
 				3EBAADCC1F75958A00890AD1 /* StoreSideMenuCell.h */,
 				3EBAADCD1F75958A00890AD1 /* StoreSideMenuCell.m */,
 				3EBAADD71F75997500890AD1 /* StoreSideMenuHeaderCell.h */,
@@ -1136,6 +1188,10 @@
 		3EBAADD11F7595DA00890AD1 /* StoreClasses */ = {
 			isa = PBXGroup;
 			children = (
+				3159470A1F7C6B170073FA52 /* StoreGameInfoSideListView.h */,
+				315947151F7C6B190073FA52 /* StoreGameInfoSideListView.m */,
+				315947081F7C6B170073FA52 /* StoreGameInfoView.h */,
+				3159470C1F7C6B170073FA52 /* StoreGameInfoView.m */,
 				3EBAADD21F7595FE00890AD1 /* StoreSideMenu.h */,
 				3EBAADD31F7595FE00890AD1 /* StoreSideMenu.m */,
 				3EBAADDF1F75A34800890AD1 /* StoreGamesView.h */,
@@ -1212,6 +1268,7 @@
 		3ECF3CAF1F686883005165E5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				315947201F7C6B1F0073FA52 /* BottomDownloadBar */,
 				3E8876461F749908001B8374 /* PlayerStatusView */,
 				3E8876451F7498FA001B8374 /* GameTagView */,
 				3E8876441F7498DC001B8374 /* TextFieldWithFriend */,
@@ -1227,6 +1284,10 @@
 				315947021F7C51CF0073FA52 /* BackgroundView.xib */,
 				315947041F7C51F40073FA52 /* BackgoundView.h */,
 				315947051F7C51F40073FA52 /* BackgoundView.m */,
+				315947231F7C8F5E0073FA52 /* CustomScrollView.h */,
+				315947241F7C8F5E0073FA52 /* CustomScrollView.m */,
+				315947261F7C99D80073FA52 /* SplitViewWithDivider.h */,
+				315947271F7C99D80073FA52 /* SplitViewWithDivider.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -1335,6 +1396,7 @@
 		667C286EE9E32DD4CB68E22A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				315947211F7C8DFA0073FA52 /* QuartzCore.framework */,
 				4B42B9AA34683B9849D28601 /* libPods-XenioUIKit.a */,
 			);
 			name = Frameworks;
@@ -1415,6 +1477,7 @@
 				3EBAADD01F7595A700890AD1 /* StoreSideMenuCell.xib in Resources */,
 				3ECF3CCB1F689C3D005165E5 /* RoundButton.xib in Resources */,
 				3E8876481F749B70001B8374 /* FriendsProfileContentViewCell.xib in Resources */,
+				3159471E1F7C6B190073FA52 /* StoreGameSideListCell.xib in Resources */,
 				3E6FE7C21F777EC400B98AD3 /* FriendsFeaturedGamesItem.xib in Resources */,
 				3EBAADD61F75993A00890AD1 /* StoreSideMenuHeaderCell.xib in Resources */,
 				3E25FB291F66EBCA000423E9 /* Assets.xcassets in Resources */,
@@ -1445,6 +1508,7 @@
 				31B593C31F7C194B00D5B5FC /* StoreTabView.xib in Resources */,
 				3E7230B01F734A070050A70D /* StoreSideMenu.xib in Resources */,
 				3EBAADCB1F75922700890AD1 /* LibraryGamesServerListHeaderCell.xib in Resources */,
+				3159471C1F7C6B190073FA52 /* BottomDownloadBar.xib in Resources */,
 				3ECF3CF21F6979A2005165E5 /* SendMessageButton.xib in Resources */,
 				3ECF3CC11F6884B1005165E5 /* PreOrderButton.xib in Resources */,
 				3E25FB2C1F66EBCA000423E9 /* Main.storyboard in Resources */,
@@ -1454,6 +1518,7 @@
 				3E8876301F7471B6001B8374 /* FriendsChatRequestCell.xib in Resources */,
 				3E558C0B1F7AE2F500542B7B /* FriendsContentList.xib in Resources */,
 				3E8876521F74ABB2001B8374 /* FriendsRightListCell.xib in Resources */,
+				315947181F7C6B190073FA52 /* StoreGameInfoView.xib in Resources */,
 				3E88763B1F749462001B8374 /* FriendsContentViewListCell.xib in Resources */,
 				3E8876081F7418AA001B8374 /* LibraryGamesRightMenuView.xib in Resources */,
 				3E558BF41F79AF7F00542B7B /* FriendsHideCell.xib in Resources */,
@@ -1464,6 +1529,7 @@
 				3E558BCB1F796D8E00542B7B /* SettingsSideListView.xib in Resources */,
 				3E7230C01F734BDD0050A70D /* Wallet.storyboard in Resources */,
 				3E6FE7AE1F77602800B98AD3 /* LibraryScreenshotsView.xib in Resources */,
+				3159471A1F7C6B190073FA52 /* StoreGameInfoSideListView.xib in Resources */,
 				3E6FE7E41F77FC1100B98AD3 /* WelcomeContinueButton.xib in Resources */,
 				3EBAADF11F75F7ED00890AD1 /* ArrowButton.xib in Resources */,
 				3E6FE7AC1F775E9C00B98AD3 /* LibraryScreenshotItem.xib in Resources */,
@@ -1472,6 +1538,7 @@
 				3E7230C21F734C020050A70D /* WalletSideMenu.xib in Resources */,
 				3ECF3CDA1F696CF6005165E5 /* AddButton.xib in Resources */,
 				3E6FE8141F7897EB00B98AD3 /* SendMoneyButton.xib in Resources */,
+				3159471D1F7C6B190073FA52 /* StoreGameSideListHeaderCell.xib in Resources */,
 				3E7230BA1F734B5F0050A70D /* LibrarySideMenu.xib in Resources */,
 				3E558BC91F796D3400542B7B /* SettingsNavigationListView.xib in Resources */,
 				3E9C46051F7048DE00693AA1 /* Store.storyboard in Resources */,
@@ -1592,9 +1659,11 @@
 				3E558BD61F796F5800542B7B /* SettingsNavigationListCell.m in Sources */,
 				3E6FE7EC1F782A6900B98AD3 /* PassphraseView.m in Sources */,
 				3E8876011F74104E001B8374 /* LibraryGamesRightMenuHeaderCell.m in Sources */,
+				315947281F7C99D80073FA52 /* SplitViewWithDivider.m in Sources */,
 				3E558BB41F78B7D000542B7B /* LibraryNavigationController.m in Sources */,
 				3EBAADCE1F75958A00890AD1 /* StoreSideMenuCell.m in Sources */,
 				3E7230CE1F734E450050A70D /* StoreContentViewController.m in Sources */,
+				3159471F1F7C6B190073FA52 /* StoreGameInfoSideListView.m in Sources */,
 				3E7230A11F7309FD0050A70D /* HeaderCell.m in Sources */,
 				3E6FE7BC1F776D7900B98AD3 /* BuyGameScreenshotItem.m in Sources */,
 				3E6FE8171F78980C00B98AD3 /* SendMoneyButton.m in Sources */,
@@ -1611,15 +1680,20 @@
 				3E6FE7B51F776D2000B98AD3 /* BuyGameScreenshotsView.m in Sources */,
 				3E7230F91F7357810050A70D /* SettingsSideListViewController.m in Sources */,
 				3E6FE7F71F7832F200B98AD3 /* SwitchCheckbox.m in Sources */,
+				315947161F7C6B190073FA52 /* StoreGameSideListHeaderCell.m in Sources */,
+				315947251F7C8F5E0073FA52 /* CustomScrollView.m in Sources */,
 				3ECF3CC91F689907005165E5 /* SignInButton.m in Sources */,
 				3EBAADF71F76093C00890AD1 /* WalletHistoryView.m in Sources */,
 				3ECF3CAD1F683B75005165E5 /* LLIButton.m in Sources */,
+				3159471B1F7C6B190073FA52 /* BottomDownloadBar.m in Sources */,
 				3E558C181F7AE79700542B7B /* FriendsNavigationController.m in Sources */,
 				3E3E42001F757D0D009698FD /* LibraryGamesServersListView.m in Sources */,
+				315947191F7C6B190073FA52 /* StoreGameInfoView.m in Sources */,
 				3E7230DD1F7350940050A70D /* NSView+INSNibLoading.m in Sources */,
 				3EBAADE11F75A34900890AD1 /* StoreGamesView.m in Sources */,
 				3E8876271F745460001B8374 /* StoreGamesCell.m in Sources */,
 				3E7230AC1F7348C30050A70D /* MainStoreViewController.m in Sources */,
+				315947171F7C6B190073FA52 /* StoreGameSideListCell.m in Sources */,
 				3E558BFA1F79D51000542B7B /* StoreMainGridView.m in Sources */,
 				3ECF3CE71F697053005165E5 /* AllStopButton.m in Sources */,
 				3E7230D11F734EA10050A70D /* LibrarySideMenuViewController.m in Sources */,

@@ -136,8 +136,8 @@
                             <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GmB-G9-t8R" customClass="FreeButton">
                                 <rect key="frame" x="1021" y="39" width="82" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="82" id="yrd-sa-dkY"/>
-                                    <constraint firstAttribute="height" constant="29" id="zUF-Dx-WZN"/>
+                                    <constraint firstAttribute="height" constant="29" id="Mqm-uc-6oV"/>
+                                    <constraint firstAttribute="width" constant="82" id="om3-On-UTB"/>
                                 </constraints>
                             </customView>
                         </subviews>
@@ -159,18 +159,18 @@
                             <constraint firstItem="NZF-oq-5nH" firstAttribute="leading" secondItem="N90-Yi-Tlj" secondAttribute="trailing" constant="4" id="Ile-vS-J4d"/>
                             <constraint firstItem="8nt-or-bbp" firstAttribute="leading" secondItem="qoF-Z3-YHY" secondAttribute="trailing" constant="93" id="OLt-zg-nLI"/>
                             <constraint firstItem="ENW-rx-5ln" firstAttribute="centerY" secondItem="TxJ-No-eyY" secondAttribute="centerY" id="Q8h-bP-Jd1"/>
+                            <constraint firstItem="GmB-G9-t8R" firstAttribute="centerY" secondItem="WQb-rL-2vH" secondAttribute="centerY" id="WGt-Kx-a4S"/>
                             <constraint firstItem="NZF-oq-5nH" firstAttribute="centerY" secondItem="N90-Yi-Tlj" secondAttribute="centerY" id="Ycm-c1-Ieb"/>
                             <constraint firstItem="4ja-XU-Qs8" firstAttribute="leading" secondItem="Roh-Fi-y6E" secondAttribute="trailing" constant="16" id="YsT-D5-kdf"/>
                             <constraint firstAttribute="bottom" secondItem="Roh-Fi-y6E" secondAttribute="bottom" id="cKC-Gu-H6G"/>
                             <constraint firstItem="c2V-M0-p5V" firstAttribute="centerY" secondItem="N90-Yi-Tlj" secondAttribute="centerY" id="dKZ-th-IiB"/>
                             <constraint firstItem="4ja-XU-Qs8" firstAttribute="top" secondItem="0Su-Ek-Puz" secondAttribute="bottom" constant="12" id="frI-TN-720"/>
-                            <constraint firstItem="GmB-G9-t8R" firstAttribute="centerY" secondItem="WQb-rL-2vH" secondAttribute="centerY" id="ipb-u2-H5P"/>
                             <constraint firstItem="6NG-i8-Alx" firstAttribute="centerY" secondItem="4Mq-6P-0TN" secondAttribute="centerY" constant="-2" id="kBj-tF-E52"/>
                             <constraint firstItem="4Mq-6P-0TN" firstAttribute="centerX" secondItem="WQb-rL-2vH" secondAttribute="centerX" constant="94" id="nVP-TS-OSL"/>
                             <constraint firstItem="0Su-Ek-Puz" firstAttribute="leading" secondItem="cJW-l6-gmD" secondAttribute="trailing" constant="4" id="reb-uk-iTn"/>
                             <constraint firstItem="ENW-rx-5ln" firstAttribute="leading" secondItem="TxJ-No-eyY" secondAttribute="trailing" constant="20" id="s4b-uj-WbJ"/>
                             <constraint firstItem="cJW-l6-gmD" firstAttribute="leading" secondItem="c2V-M0-p5V" secondAttribute="trailing" constant="4" id="tye-XV-kRp"/>
-                            <constraint firstAttribute="trailing" secondItem="GmB-G9-t8R" secondAttribute="trailing" constant="30" id="vDq-AR-fjY"/>
+                            <constraint firstAttribute="trailing" secondItem="GmB-G9-t8R" secondAttribute="trailing" constant="30" id="u1i-oh-scD"/>
                         </constraints>
                     </view>
                     <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>

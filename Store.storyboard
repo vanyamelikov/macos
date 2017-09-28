@@ -15,7 +15,7 @@
                         <splitViewItem id="6us-xq-UtL"/>
                         <splitViewItem id="klD-L3-hAP"/>
                     </splitViewItems>
-                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="gVd-Ot-Pw7">
+                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="gVd-Ot-Pw7" customClass="SplitViewWithDivider">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <connections>

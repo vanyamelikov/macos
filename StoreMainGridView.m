@@ -8,17 +8,26 @@
 
 #import "StoreMainGridView.h"
 
-@implementation StoreMainGridView
+@implementation StoreMainGridView {
+    NSArray *items;
+}
 
 -(void)awakeFromNib {
     [super awakeFromNib];
     if(self) {
-        for (NSView *itemView in self.subviews) {
-            if([itemView isKindOfClass:[NSImageView class]]) {
-                [itemView setWantsLayer: YES];
-                [itemView.layer setCornerRadius:2.0f];
-                itemView.layer.masksToBounds = YES;
-            }
+        items = @[self.storeImage1,
+                  self.storeImage2,
+                  self.storeImage3,
+                  self.storeImage4,
+                  self.storeImage5,
+                  self.storeImage6,
+                  self.storeImage7,
+                  self.storeImage8,
+                  self.storeImage9];
+        for (NSView *itemView in items) {
+             [itemView setWantsLayer: YES];
+             [itemView.layer setCornerRadius:2.0f];
+             itemView.layer.masksToBounds = YES;
         }
     }
 }

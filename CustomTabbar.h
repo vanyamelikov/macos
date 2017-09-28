@@ -13,6 +13,7 @@
 @class CustomTabbar;
 @protocol CustomTabbarDelegate <NSObject>
 - (void) tabClicked: (NSInteger) sender;
+- (void) downloadsButtonClick;
 @end
 
 @interface CustomTabbar : INSNibLoadedView <TabItemViewDelegate>

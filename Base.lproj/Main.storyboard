@@ -668,9 +668,9 @@
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA" customClass="MainWindow">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="136" y="85" width="1440" height="900"/>
+                        <rect key="contentRect" x="147" y="120" width="1440" height="810"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <value key="minSize" type="size" width="1440" height="900"/>
+                        <value key="minSize" type="size" width="1440" height="810"/>
                         <value key="maxSize" type="size" width="2880" height="1800"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="yta-iW-VvC"/>
@@ -689,16 +689,16 @@
             <objects>
                 <viewController storyboardIdentifier="MainTabViewController" id="XTK-Fr-lor" customClass="MainTabViewController" sceneMemberID="viewController">
                     <view key="view" id="YJx-U4-oY8">
-                        <rect key="frame" x="0.0" y="0.0" width="1440" height="900"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1440" height="810"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <tabView drawsBackground="NO" type="noTabsNoBorder" translatesAutoresizingMaskIntoConstraints="NO" id="KPd-vD-5tO">
-                                <rect key="frame" x="0.0" y="0.0" width="1440" height="836"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1440" height="746"/>
                                 <font key="font" metaFont="system"/>
                                 <tabViewItems>
                                     <tabViewItem label="Tab" identifier="1" id="9XM-OF-F1E">
                                         <view key="view" id="cXk-4Y-emf">
-                                            <rect key="frame" x="0.0" y="0.0" width="1440" height="836"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1440" height="746"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </view>
                                     </tabViewItem>
@@ -740,7 +740,7 @@
                                 </tabViewItems>
                             </tabView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="kBB-xw-gBx" customClass="CustomTabbar">
-                                <rect key="frame" x="0.0" y="836" width="1440" height="64"/>
+                                <rect key="frame" x="0.0" y="746" width="1440" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="Gb7-f1-LYi"/>
                                 </constraints>
@@ -757,6 +757,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bottomTabViewSpace" destination="2iD-0F-idS" id="VQ9-oA-bz1"/>
                         <outlet property="mainTabBar" destination="kBB-xw-gBx" id="qAX-fU-UCk"/>
                         <outlet property="mainTabView" destination="KPd-vD-5tO" id="fmf-pR-zlW"/>
                     </connections>
@@ -912,7 +913,7 @@
             <objects>
                 <viewController id="3zU-Hu-vV9" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="k66-fk-uFM">
-                        <rect key="frame" x="0.0" y="0.0" width="1440" height="920"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1440" height="810"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="B9J-hq-hy8">
@@ -978,11 +979,11 @@
             <objects>
                 <viewController storyboardIdentifier="SignInViewController" id="FPN-er-qDz" customClass="SignInViewController" sceneMemberID="viewController">
                     <view key="view" id="p8I-ys-pT8">
-                        <rect key="frame" x="0.0" y="0.0" width="1440" height="900"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1440" height="810"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="a7r-8L-ATb" customClass="TextFieldWithFriend">
-                                <rect key="frame" x="583" y="528" width="275" height="37"/>
+                                <rect key="frame" x="583" y="438" width="275" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="275" id="243-9g-t5e"/>
                                     <constraint firstAttribute="height" constant="37" id="IqO-E5-Gwb"/>
@@ -999,7 +1000,7 @@
                                 </userDefinedRuntimeAttributes>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="wpk-Hl-xjx" customClass="TextFieldWithFriend">
-                                <rect key="frame" x="583" y="481" width="275" height="37"/>
+                                <rect key="frame" x="583" y="391" width="275" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="275" id="AnN-ij-tHW"/>
                                     <constraint firstAttribute="height" constant="37" id="guQ-hb-lYn"/>
@@ -1009,7 +1010,7 @@
                                 </userDefinedRuntimeAttributes>
                             </customView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="A6Z-RS-Nfw">
-                                <rect key="frame" x="581" y="594" width="69" height="26"/>
+                                <rect key="frame" x="581" y="504" width="69" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="MHD-va-vah"/>
                                     <constraint firstAttribute="height" constant="26" id="Vx8-DQ-Q8R"/>
@@ -1021,7 +1022,7 @@
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3jf-j6-x2h">
-                                <rect key="frame" x="655" y="690" width="130" height="40"/>
+                                <rect key="frame" x="655" y="600" width="130" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="Xla-mH-T2u"/>
                                     <constraint firstAttribute="height" constant="40" id="kgd-O6-lgz"/>
@@ -1029,7 +1030,7 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_logo" id="vlm-3c-71B"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="exz-rf-Sst">
-                                <rect key="frame" x="661" y="594" width="74" height="26"/>
+                                <rect key="frame" x="661" y="504" width="74" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="mVH-9K-hfO"/>
                                     <constraint firstAttribute="height" constant="26" id="rdX-xG-qvQ"/>
@@ -1041,7 +1042,7 @@
                                 </textFieldCell>
                             </textField>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="duK-Bc-syy">
-                                <rect key="frame" x="555" y="341" width="330" height="140"/>
+                                <rect key="frame" x="555" y="251" width="330" height="140"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="9b9-yh-Vzc" customClass="SignInButton">
                                         <rect key="frame" x="26" y="85" width="278" height="35"/>
@@ -1087,7 +1088,7 @@
                                 </constraints>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="7qz-nC-D71">
-                                <rect key="frame" x="555" y="341" width="330" height="140"/>
+                                <rect key="frame" x="555" y="251" width="330" height="140"/>
                                 <subviews>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="BDC-P2-G5d" customClass="SignInButton">
                                         <rect key="frame" x="26" y="37" width="278" height="35"/>
@@ -1114,7 +1115,7 @@
                                 </constraints>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="HgM-qX-V8H" customClass="PassphraseView">
-                                <rect key="frame" x="431" y="117" width="579" height="667"/>
+                                <rect key="frame" x="431" y="72" width="579" height="667"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="667" id="LbO-Pc-EwY"/>
                                     <constraint firstAttribute="width" constant="579" id="Qn3-51-Nwp"/>
@@ -1155,7 +1156,7 @@
                 </viewController>
                 <customObject id="kz1-Lp-GJo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1772" y="1443"/>
+            <point key="canvasLocation" x="1749" y="1646"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4p6-Nv-rNy">
@@ -1163,11 +1164,11 @@
                 <customObject id="eFT-5R-7Qc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ViewController7" id="L88-lg-OJz" sceneMemberID="viewController">
                     <view key="view" id="Xfa-0W-YYg">
-                        <rect key="frame" x="0.0" y="0.0" width="1742" height="1152"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1440" height="810"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="P2v-Qe-gRl">
-                                <rect key="frame" x="835" y="568" width="72" height="17"/>
+                                <rect key="frame" x="684" y="397" width="72" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="ZdZ-Rh-NH7"/>
                                 </constraints>
@@ -1178,9 +1179,9 @@
                                 </textFieldCell>
                             </textField>
                             <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Egx-V4-yYN">
-                                <rect key="frame" x="0.0" y="0.0" width="1742" height="1152"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1440" height="810"/>
                                 <view key="contentView" id="Mg3-Fx-ukf">
-                                    <rect key="frame" x="0.0" y="0.0" width="1742" height="1152"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1440" height="810"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <color key="fillColor" red="0.094117647060000004" green="0.1058823529" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1205,11 +1206,11 @@
                 <customObject id="n0a-aR-CgT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ViewController6" id="c2E-LR-2g6" sceneMemberID="viewController">
                     <view key="view" id="JJS-nd-ICU">
-                        <rect key="frame" x="0.0" y="0.0" width="1742" height="1152"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1440" height="810"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gj3-GP-URl">
-                                <rect key="frame" x="835" y="568" width="72" height="17"/>
+                                <rect key="frame" x="684" y="397" width="72" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="jmI-jS-x3v"/>
                                 </constraints>
@@ -1220,22 +1221,22 @@
                                 </textFieldCell>
                             </textField>
                             <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="cIO-Q5-CkE">
-                                <rect key="frame" x="0.0" y="0.0" width="1742" height="1152"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1440" height="810"/>
                                 <view key="contentView" id="9H9-FT-aaB">
-                                    <rect key="frame" x="0.0" y="0.0" width="1742" height="1152"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1440" height="810"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <customView translatesAutoresizingMaskIntoConstraints="NO" id="zZp-Ct-0eN" customClass="StoreGamesGridView">
-                                            <rect key="frame" x="26" y="416" width="1690" height="716"/>
+                                            <rect key="frame" x="26" y="416" width="1388" height="374"/>
                                         </customView>
                                         <customView translatesAutoresizingMaskIntoConstraints="NO" id="VwU-ZE-9jh" customClass="FriendsFeaturedGamesView">
-                                            <rect key="frame" x="26" y="26" width="1690" height="120"/>
+                                            <rect key="frame" x="26" y="26" width="1388" height="120"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="120" id="Onk-Xt-UL8"/>
                                             </constraints>
                                         </customView>
                                         <customView translatesAutoresizingMaskIntoConstraints="NO" id="8iL-WU-dXL" customClass="BuyGameScreenshotsView">
-                                            <rect key="frame" x="26" y="166" width="1690" height="170"/>
+                                            <rect key="frame" x="26" y="166" width="1388" height="170"/>
                                         </customView>
                                     </subviews>
                                     <constraints>

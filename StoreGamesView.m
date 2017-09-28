@@ -9,6 +9,9 @@
 #import "StoreGamesView.h"
 #import "StoreGamesViewModel.h"
 #import "StoreGamesCell.h"
+#import "LLIButton.h"
+#import "FreeButton.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation StoreGamesView {
     NSMutableArray *dataSourceArray;
@@ -16,6 +19,14 @@
 
 -(void)awakeFromNib {
     [super awakeFromNib];
+    [self.tableView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleNone];
+    [self.tableView setUsesAlternatingRowBackgroundColors:NO];
+    [self.tableView setBackgroundColor:[NSColor clearColor]];
+    [[self.tableView enclosingScrollView] setDrawsBackground:NO];
+    [self.tableView.enclosingScrollView.contentView setCopiesOnScroll:NO];
+    self.tableView.enclosingScrollView.wantsLayer = YES;
+    self.tableView.wantsLayer = YES;
+    [self.tableView.enclosingScrollView setLayerContentsRedrawPolicy:NSViewLayerContentsRedrawNever];
 }
 
 -(instancetype)initWithCoder:(NSCoder *)coder {
@@ -50,11 +61,6 @@
 
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    
-    [self.tableView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleNone];
-    [self.tableView setUsesAlternatingRowBackgroundColors:NO];
-    [self.tableView setBackgroundColor:[NSColor clearColor]];
-    [[self.tableView enclosingScrollView] setDrawsBackground:NO];
 }
 
 #pragma mark - TableViewDataSource
@@ -70,6 +76,7 @@
 }
 
 -(NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+    
     StoreGamesViewModel *model = [dataSourceArray objectAtIndex:row];
     StoreGamesCell *cell = (StoreGamesCell *)[tableView makeViewWithIdentifier:@"StoreGamesCell" owner:self];
     cell.gameNameLabel.stringValue = model.gameName;

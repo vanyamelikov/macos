@@ -18,14 +18,14 @@
             <rect key="frame" x="0.0" y="0.0" width="82" height="29"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <box boxType="custom" cornerRadius="2" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="7KW-RW-exp">
+                <box boxType="custom" borderWidth="0.0" cornerRadius="2" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="7KW-RW-exp">
                     <rect key="frame" x="0.0" y="0.0" width="82" height="29"/>
                     <view key="contentView" id="WtM-ds-CKa">
-                        <rect key="frame" x="1" y="1" width="80" height="27"/>
+                        <rect key="frame" x="0.0" y="0.0" width="82" height="29"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IjN-sg-yjO">
-                                <rect key="frame" x="21" y="5" width="38" height="18"/>
+                                <rect key="frame" x="22" y="6" width="38" height="18"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="FREE" id="b20-Kc-dZj">
                                     <font key="font" size="12" name="SFMono-Bold"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

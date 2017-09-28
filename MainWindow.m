@@ -30,5 +30,4 @@
     [self setBackgroundColor:[NSColor colorWithPatternImage:[NSImage imageNamed:imageName]]];
 }
 
-
 @end

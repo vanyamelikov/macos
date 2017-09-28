@@ -82,4 +82,11 @@
     } completionHandler:nil];
 }
 
+- (IBAction)downloadsClick:(NSClickGestureRecognizer *)sender {
+    if(delegate && [self.delegate respondsToSelector:@selector(downloadsButtonClick)]) {
+        [self.delegate downloadsButtonClick];
+    }
+}
+
+
 @end

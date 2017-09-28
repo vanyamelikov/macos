@@ -11,11 +11,13 @@
 #import "BFNavigationController.h"
 #import "NSViewController+BFNavigationController.h"
 #import "MainStoreViewController.h"
+#import "BottomDownloadBar.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface MainTabViewController (){
     BFNavigationController *_navigationController;
     NSWindowController *_controlWindowController;
+    BOOL isShowDownloadBar;
 }
 
 @end
@@ -25,7 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    isShowDownloadBar = NO;
     _mainTabView.delegate = self;
     _mainTabBar.delegate = self;
     
@@ -69,6 +71,7 @@
     [super viewWillAppear];
     MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
     [mainWindow changeBackgroundImage:@"nfs"];
+    [mainWindow setMovableByWindowBackground:YES];
 }
 
 -(void)tabClicked:(NSInteger)sender {
@@ -96,6 +99,25 @@
 }
 
 - (void)tabView:(NSTabView *)tabView didSelectTabViewItem:(NSTabViewItem *)tabViewItem {
+    
+}
+
+-(void)downloadsButtonClick {
+    MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
+    BottomDownloadBar *downloadBar = [[BottomDownloadBar alloc] initWithFrame:CGRectMake(mainWindow.contentView.frame.origin.x,
+                                                                                         mainWindow.contentView.frame.origin.y,
+                                                                                         mainWindow.contentView.frame.size.width,
+                                                                                         75.0f)];
+    if(!isShowDownloadBar) {
+        [mainWindow.contentView addSubview:downloadBar positioned:NSWindowOut relativeTo:nil];
+        [mainWindow.contentView setNeedsDisplay:YES];
+        isShowDownloadBar = YES;
+    } else {
+        [downloadBar removeFromSuperview];
+        [mainWindow.contentView setNeedsDisplay:YES];
+        isShowDownloadBar = NO;
+    }
+    
     
 }
 
