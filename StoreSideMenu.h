@@ -7,6 +7,7 @@
 //
 
 #import "NSView+INSNibLoading.h"
+#import "Colours.h"
 
 @class StoreSideMenu;
 @protocol StoreSideMenuDelegate <NSObject>

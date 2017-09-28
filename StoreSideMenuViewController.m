@@ -7,6 +7,7 @@
 //
 
 #import "StoreSideMenuViewController.h"
+#import <CoreImage/CoreImage.h>
 
 @interface StoreSideMenuViewController ()
 

@@ -27,7 +27,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4NE-b7-ZXg">
-                                <rect key="frame" x="0.0" y="0.0" width="255" height="30"/>
+                                <rect key="frame" x="0.0" y="0.0" width="256" height="30"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="sidemenu_focus" id="IG4-Kp-DX7"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="N45-lL-Bgb">
@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="height" constant="19" id="PZo-JE-Ae8"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Crysis 2" id="GMO-2N-16q">
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" size="13" name="SFProText-Medium"/>
                                     <color key="textColor" red="0.47058823529999999" green="0.50588235290000005" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" red="0.34157451919999998" green="0.64983173080000001" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textFieldCell>
@@ -45,7 +45,7 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="4NE-b7-ZXg" secondAttribute="bottom" id="DA5-u6-ZYS"/>
                             <constraint firstItem="4NE-b7-ZXg" firstAttribute="top" secondItem="m14-EX-K7d" secondAttribute="top" id="I0I-yS-ibj"/>
-                            <constraint firstAttribute="trailing" secondItem="4NE-b7-ZXg" secondAttribute="trailing" id="Q8N-m9-O9i"/>
+                            <constraint firstAttribute="trailing" secondItem="4NE-b7-ZXg" secondAttribute="trailing" constant="-1" id="Q8N-m9-O9i"/>
                             <constraint firstItem="4NE-b7-ZXg" firstAttribute="leading" secondItem="m14-EX-K7d" secondAttribute="leading" id="YdN-1a-FTK"/>
                             <constraint firstItem="N45-lL-Bgb" firstAttribute="centerY" secondItem="m14-EX-K7d" secondAttribute="centerY" id="cr2-sh-QSH"/>
                             <constraint firstItem="N45-lL-Bgb" firstAttribute="leading" secondItem="m14-EX-K7d" secondAttribute="leading" constant="20" id="eoL-p5-i8X"/>

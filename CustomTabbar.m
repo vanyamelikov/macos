@@ -34,31 +34,31 @@
 
     switch (viewTag) {
         case 0:
-            dx = self.tabStore.frame.origin.x - self.viewToMove.frame.origin.x+120;
+            dx = self.tabStore.frame.origin.x - self.viewToMove.frame.origin.x+112;
             w = self.tabStore.frame.size.width;
             break;
         case 1:
-            dx = self.tabLibrary.frame.origin.x - self.viewToMove.frame.origin.x+120;
+            dx = self.tabLibrary.frame.origin.x - self.viewToMove.frame.origin.x+112;
             w = self.tabLibrary.frame.size.width;
             break;
         case 2:
-            dx = self.tabWallet.frame.origin.x - self.viewToMove.frame.origin.x+120;
+            dx = self.tabWallet.frame.origin.x - self.viewToMove.frame.origin.x+112;
             w = self.tabWallet.frame.size.width;
             break;
         case 3:
-            dx = self.tabFriends.frame.origin.x - self.viewToMove.frame.origin.x+120;
+            dx = self.tabFriends.frame.origin.x - self.viewToMove.frame.origin.x+112;
             w = self.tabFriends.frame.size.width;
             break;
         case 4:
-            dx = self.tabSettings.frame.origin.x - self.viewToMove.frame.origin.x+120;
+            dx = self.tabSettings.frame.origin.x - self.viewToMove.frame.origin.x+112;
             w = self.tabSettings.frame.size.width;
             break;
         case 5:
-            dx = self.tabItems1.frame.origin.x - self.viewToMove.frame.origin.x+120;
+            dx = self.tabItems1.frame.origin.x - self.viewToMove.frame.origin.x+112;
             w = self.tabItems1.frame.size.width;
             break;
         case 6:
-            dx = self.tabItems2.frame.origin.x - self.viewToMove.frame.origin.x+120;
+            dx = self.tabItems2.frame.origin.x - self.viewToMove.frame.origin.x+112;
             w = self.tabItems2.frame.size.width;
             break;
         default:

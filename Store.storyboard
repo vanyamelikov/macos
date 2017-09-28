@@ -36,34 +36,30 @@
         <scene sceneID="SPb-Go-0OC">
             <objects>
                 <viewController id="BQa-Lt-qoT" customClass="StoreSideMenuViewController" sceneMemberID="viewController">
-                    <view key="view" id="u9h-C8-vPl">
+                    <view key="view" wantsLayer="YES" id="u9h-C8-vPl">
                         <rect key="frame" x="0.0" y="0.0" width="255" height="1140"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="YKl-CX-YFC">
-                                <rect key="frame" x="0.0" y="0.0" width="255" height="1140"/>
-                                <view key="contentView" wantsLayer="YES" id="H7d-S5-S1g">
-                                    <rect key="frame" x="0.0" y="0.0" width="255" height="1140"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <color key="fillColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
-                            </box>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="5ig-MW-llh" customClass="StoreSideMenu">
+                            <customView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ig-MW-llh" customClass="StoreSideMenu">
                                 <rect key="frame" x="0.0" y="0.0" width="255" height="1140"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="255" id="bFJ-za-r9L"/>
                                 </constraints>
+                                <backgroundFilters>
+                                    <ciFilter name="CIGaussianBlur">
+                                        <configuration>
+                                            <null key="inputImage"/>
+                                            <real key="inputRadius" value="10"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </backgroundFilters>
                             </customView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="5ig-MW-llh" firstAttribute="leading" secondItem="u9h-C8-vPl" secondAttribute="leading" id="1hf-Nv-bp3"/>
                             <constraint firstAttribute="trailing" secondItem="5ig-MW-llh" secondAttribute="trailing" id="Gr8-O9-DyZ"/>
-                            <constraint firstItem="YKl-CX-YFC" firstAttribute="top" secondItem="u9h-C8-vPl" secondAttribute="top" id="Pw3-pc-zQU"/>
-                            <constraint firstItem="YKl-CX-YFC" firstAttribute="leading" secondItem="u9h-C8-vPl" secondAttribute="leading" id="SaR-tp-4Pv"/>
-                            <constraint firstAttribute="bottom" secondItem="YKl-CX-YFC" secondAttribute="bottom" id="XGz-7D-ksQ"/>
                             <constraint firstItem="5ig-MW-llh" firstAttribute="top" secondItem="u9h-C8-vPl" secondAttribute="top" id="XHu-bx-SFv"/>
                             <constraint firstAttribute="bottom" secondItem="5ig-MW-llh" secondAttribute="bottom" id="daC-Ja-MSW"/>
-                            <constraint firstAttribute="trailing" secondItem="YKl-CX-YFC" secondAttribute="trailing" id="k3s-1A-8Us"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -241,7 +237,7 @@
                                         <constraint firstItem="aiM-co-5kq" firstAttribute="leading" secondItem="m1s-KW-lbc" secondAttribute="leading" constant="26" id="tkQ-UE-ZNe"/>
                                     </constraints>
                                 </view>
-                                <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="0.79852350917431192" colorSpace="calibratedRGB"/>
+                                <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="0.8486716360856269" colorSpace="calibratedRGB"/>
                             </box>
                         </subviews>
                         <constraints>

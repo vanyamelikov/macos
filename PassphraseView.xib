@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -48,7 +48,7 @@
                                     <constraint firstAttribute="height" constant="76" id="cOl-YU-vOh"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="2yE-J2-38d">
-                                    <font key="font" size="15" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="system" size="15"/>
                                     <string key="title">We have created your code phrase, which is in the box below.
 This code phrase allows you to access your wallet and to 
 the funds that it contains</string>
@@ -63,9 +63,9 @@ the funds that it contains</string>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cxZ-FJ-QE4">
-                                            <rect key="frame" x="14" y="21" width="298" height="36"/>
+                                            <rect key="frame" x="14" y="23" width="298" height="32"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" id="67l-eY-fKo">
-                                                <font key="font" size="12" name="SFUIText-Regular"/>
+                                                <font key="font" metaFont="cellTitle"/>
                                                 <string key="title">river first hurry math become twice chocolate meat 
 nuts car skis rain odor</string>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -104,21 +104,21 @@ nuts car skis rain odor</string>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_clipboard" id="s6G-KP-uCv"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9bV-IU-SWL">
-                                <rect key="frame" x="236" y="325" width="95" height="24"/>
+                                <rect key="frame" x="237" y="330" width="92" height="19"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Remember!" id="BiZ-Qi-Wl7">
-                                    <font key="font" size="16" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="system" size="16"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pON-06-1jv">
-                                <rect key="frame" x="44" y="215" width="479" height="100"/>
+                                <rect key="frame" x="44" y="220" width="479" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="eQa-cK-s8i"/>
                                     <constraint firstAttribute="width" constant="475" id="z99-Bn-uUa"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" placeholderString="" id="VVp-M3-WJ7">
-                                    <font key="font" size="13" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                     <string key="title">Write down your code phrase and ensure it is safely stored.
 If you lose your code phrase, you will forever lose access to your wallet.
 If someone finds out your passphrase, you will have access to your wallet.
@@ -128,15 +128,15 @@ We do not store your passphrase and, if lost, can not recover it.</string>
                                 </textFieldCell>
                             </textField>
                             <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="NfM-tu-KfF">
-                                <rect key="frame" x="-10" y="135" width="586" height="70"/>
+                                <rect key="frame" x="-10" y="140" width="586" height="70"/>
                                 <view key="contentView" id="iaB-uH-upU">
                                     <rect key="frame" x="1" y="1" width="584" height="68"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m5i-nj-7so">
-                                            <rect key="frame" x="68" y="25" width="351" height="19"/>
+                                            <rect key="frame" x="68" y="26" width="347" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="I wrote down my code phrase or saved it in a safe place." placeholderString="" id="qOb-4C-laL">
-                                                <font key="font" size="13" name="SFUIText-Regular"/>
+                                                <font key="font" metaFont="system"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -152,14 +152,14 @@ We do not store your passphrase and, if lost, can not recover it.</string>
                                 <color key="borderColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
                             </box>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="6If-Mf-WtH" customClass="ContinueButton">
-                                <rect key="frame" x="144" y="74" width="278" height="35"/>
+                                <rect key="frame" x="144" y="79" width="278" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="278" id="lve-cP-DuG"/>
                                     <constraint firstAttribute="height" constant="35" id="p6j-Sy-pLw"/>
                                 </constraints>
                             </customView>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="Iaf-R3-U7N">
-                                <rect key="frame" x="89" y="83" width="17" height="18"/>
+                                <rect key="frame" x="89" y="88" width="17" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="14" id="LJy-dd-QdO"/>
                                     <constraint firstAttribute="width" constant="13" id="gc3-H4-FZH"/>
@@ -197,9 +197,9 @@ We do not store your passphrase and, if lost, can not recover it.</string>
                     <color key="fillColor" red="0.074509803921568626" green="0.086274509803921567" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
                 </box>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OZR-ha-gaA">
-                    <rect key="frame" x="15" y="629" width="158" height="23"/>
+                    <rect key="frame" x="15" y="633" width="150" height="19"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Get your passphrase" id="Q2B-Ip-drp">
-                        <font key="font" size="15" name="SFUIText-Medium"/>
+                        <font key="font" metaFont="system" size="15"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>

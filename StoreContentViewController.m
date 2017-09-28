@@ -21,7 +21,7 @@
     [super viewDidLoad];
     
     NSSplitViewController *view = (NSSplitViewController *)self.parentViewController;
-    StoreSideMenu *storeSideMenu = view.splitViewItems[0].viewController.view.subviews[1];
+    StoreSideMenu *storeSideMenu = view.splitViewItems[0].viewController.view.subviews[0];
     storeSideMenu.delegate = self;
     
     StoreGamesView *storeGamesList = [[StoreGamesView alloc] initWithFrame:self.gamesTabController.frame];
@@ -38,6 +38,8 @@
     
     item = [[self gamesTabController] tabViewItemAtIndex:2];
     [item setView:storeMainGridView];
+    
+    [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:2]];
 }
 
 - (IBAction)ChangeToListClick:(NSClickGestureRecognizer *)sender {
@@ -49,7 +51,7 @@
 }
 
 -(void)itemClicked:(NSInteger)sender :(NSString *)title {
-    if(sender == 1) {
+    if(sender == 2) {
         [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:2]];
     }
     self.storeCategoriesTitle.stringValue = title;

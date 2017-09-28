@@ -10,10 +10,4 @@
 
 @implementation StoreSideMenuCell
 
-- (void)drawRect:(NSRect)dirtyRect {
-    [super drawRect:dirtyRect];
-    
-    // Drawing code here.
-}
-
 @end

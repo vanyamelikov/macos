@@ -33,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hki-1b-ZhV">
-                                <rect key="frame" x="30" y="19" width="60" height="24"/>
+                                <rect key="frame" x="22" y="19" width="60" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="1QL-zk-TyC"/>
                                     <constraint firstAttribute="height" constant="24" id="uZ1-bD-Q85"/>
@@ -96,7 +96,7 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_balance" id="gHJ-8F-vzp"/>
                             </imageView>
                             <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="gvh-dV-CZ8">
-                                <rect key="frame" x="120" y="0.0" width="714" height="64"/>
+                                <rect key="frame" x="112" y="0.0" width="714" height="64"/>
                                 <view key="contentView" id="mRv-SN-wWM">
                                     <rect key="frame" x="0.0" y="0.0" width="714" height="64"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,9 +108,9 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ziP-FI-2D3">
-                                                        <rect key="frame" x="20" y="23" width="44" height="16"/>
+                                                        <rect key="frame" x="20" y="22" width="45" height="18"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="STORE" id="bjn-F6-eGZ">
-                                                            <font key="font" metaFont="cellTitle"/>
+                                                            <font key="font" size="12" name="SFProText-Semibold"/>
                                                             <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                                         </textFieldCell>
@@ -148,9 +148,9 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7C5-Er-hIG">
-                                                        <rect key="frame" x="20" y="23" width="54" height="16"/>
+                                                        <rect key="frame" x="20" y="22" width="56" height="18"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="LIBRARY" id="d4I-Kg-myD">
-                                                            <font key="font" metaFont="cellTitle"/>
+                                                            <font key="font" size="12" name="SFProText-Semibold"/>
                                                             <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                                         </textFieldCell>
@@ -188,9 +188,9 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2Br-Mf-BkE">
-                                                        <rect key="frame" x="20" y="23" width="52" height="16"/>
+                                                        <rect key="frame" x="20" y="22" width="53" height="18"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="WALLET" id="Nfb-wq-dWu">
-                                                            <font key="font" metaFont="cellTitle"/>
+                                                            <font key="font" size="12" name="SFProText-Semibold"/>
                                                             <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                                         </textFieldCell>
@@ -228,9 +228,9 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2v7-kf-TYU">
-                                                        <rect key="frame" x="20" y="23" width="58" height="16"/>
+                                                        <rect key="frame" x="20" y="22" width="58" height="18"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="FRIENDS" id="GLD-BI-nOf">
-                                                            <font key="font" metaFont="cellTitle"/>
+                                                            <font key="font" size="12" name="SFProText-Semibold"/>
                                                             <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                                         </textFieldCell>
@@ -269,9 +269,9 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rSj-Ho-sWb">
-                                                        <rect key="frame" x="20" y="23" width="68" height="16"/>
+                                                        <rect key="frame" x="20" y="22" width="68" height="18"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="SETTINGS" id="hNm-7y-nvE">
-                                                            <font key="font" metaFont="cellTitle"/>
+                                                            <font key="font" size="12" name="SFProText-Semibold"/>
                                                             <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                                         </textFieldCell>
@@ -310,9 +310,9 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JnY-de-p8t">
-                                                        <rect key="frame" x="20" y="23" width="58" height="16"/>
+                                                        <rect key="frame" x="20" y="22" width="58" height="18"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="ITEMS#1" id="Ymn-rc-8sQ">
-                                                            <font key="font" metaFont="cellTitle"/>
+                                                            <font key="font" size="12" name="SFProText-Semibold"/>
                                                             <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                                         </textFieldCell>
@@ -351,9 +351,9 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cNk-9P-whV">
-                                                        <rect key="frame" x="20" y="23" width="58" height="16"/>
+                                                        <rect key="frame" x="20" y="22" width="58" height="18"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="ITEMS#2" id="7iQ-rb-dzH">
-                                                            <font key="font" metaFont="cellTitle"/>
+                                                            <font key="font" size="12" name="SFProText-Semibold"/>
                                                             <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                                         </textFieldCell>
@@ -417,7 +417,7 @@
                                 <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                             </box>
                             <box fixedFrame="YES" boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="EIW-ux-eIb">
-                                <rect key="frame" x="120" y="0.0" width="64" height="3"/>
+                                <rect key="frame" x="112" y="0.0" width="64" height="3"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" ambiguous="YES" id="SnE-ED-eeZ">
                                     <rect key="frame" x="0.0" y="0.0" width="64" height="3"/>
@@ -427,7 +427,7 @@
                                 <color key="fillColor" red="0.23921568627450979" green="0.4823529411764706" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </box>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sIr-Ip-Lvs">
-                                <rect key="frame" x="120" y="2" width="64" height="61"/>
+                                <rect key="frame" x="112" y="2" width="64" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="tab_light_back" id="NlZ-7b-fvE"/>
                             </imageView>
@@ -439,7 +439,7 @@
                             <constraint firstAttribute="bottom" secondItem="gvh-dV-CZ8" secondAttribute="bottom" id="9yA-2i-0NL"/>
                             <constraint firstItem="Hcd-2Y-WiH" firstAttribute="leading" secondItem="5Qy-yC-Miz" secondAttribute="trailing" constant="30" id="A0n-NG-Vo0"/>
                             <constraint firstItem="gvh-dV-CZ8" firstAttribute="leading" secondItem="Hki-1b-ZhV" secondAttribute="trailing" constant="30" id="B9O-G9-ZXa"/>
-                            <constraint firstItem="Hki-1b-ZhV" firstAttribute="leading" secondItem="LRX-t5-sIx" secondAttribute="leading" constant="30" id="G5Y-u4-iMV"/>
+                            <constraint firstItem="Hki-1b-ZhV" firstAttribute="leading" secondItem="LRX-t5-sIx" secondAttribute="leading" constant="22" id="G5Y-u4-iMV"/>
                             <constraint firstItem="gvh-dV-CZ8" firstAttribute="top" secondItem="LRX-t5-sIx" secondAttribute="top" id="IZr-ct-XMx"/>
                             <constraint firstItem="1t3-ns-i0u" firstAttribute="leading" secondItem="Hcd-2Y-WiH" secondAttribute="trailing" constant="30" id="UUu-f1-Any"/>
                             <constraint firstItem="WEQ-vh-HlV" firstAttribute="centerY" secondItem="5Qy-yC-Miz" secondAttribute="centerY" constant="1" id="XsE-r4-wMM"/>
