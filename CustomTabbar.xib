@@ -26,6 +26,14 @@
             <rect key="frame" x="0.0" y="0.0" width="1328" height="64"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="094-ig-okr">
+                    <rect key="frame" x="0.0" y="0.0" width="1328" height="64"/>
+                    <view key="contentView" id="Sq2-db-KJG">
+                        <rect key="frame" x="0.0" y="0.0" width="1328" height="64"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="fillColor" red="0.090196078431372548" green="0.10196078431372549" blue="0.14901960784313725" alpha="0.96418673547400613" colorSpace="calibratedRGB"/>
+                </box>
                 <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="6cP-g0-Ahv">
                     <rect key="frame" x="0.0" y="0.0" width="1328" height="64"/>
                     <view key="contentView" id="LRX-t5-sIx">
@@ -456,13 +464,17 @@
                         <constraint firstAttribute="height" constant="64" id="dXI-Mr-pyL"/>
                     </constraints>
                     <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                    <color key="fillColor" red="0.0" green="0.0" blue="0.0" alpha="0.79760368883792054" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" red="0.074509803921568626" green="0.086274509803921567" blue="0.12549019607843137" alpha="0.79651662844036697" colorSpace="calibratedRGB"/>
                 </box>
             </subviews>
             <constraints>
                 <constraint firstItem="6cP-g0-Ahv" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="0YB-6o-McD"/>
                 <constraint firstAttribute="trailing" secondItem="6cP-g0-Ahv" secondAttribute="trailing" id="5bj-wt-iXx"/>
+                <constraint firstItem="094-ig-okr" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="Gx4-D0-E04"/>
                 <constraint firstItem="6cP-g0-Ahv" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="Kcb-nc-wHk"/>
+                <constraint firstAttribute="trailing" secondItem="094-ig-okr" secondAttribute="trailing" id="Nf3-M8-xJW"/>
+                <constraint firstAttribute="bottom" secondItem="094-ig-okr" secondAttribute="bottom" id="UOs-Pg-cND"/>
+                <constraint firstItem="094-ig-okr" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="Wbu-IU-iSn"/>
                 <constraint firstAttribute="bottom" secondItem="6cP-g0-Ahv" secondAttribute="bottom" id="mWI-rJ-dlY"/>
             </constraints>
             <point key="canvasLocation" x="560" y="109"/>

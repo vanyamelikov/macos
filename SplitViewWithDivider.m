@@ -7,6 +7,7 @@
 //
 
 #import "SplitViewWithDivider.h"
+#import "Colours.h"
 
 @implementation SplitViewWithDivider
 

@@ -19,19 +19,19 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Abp-1B-HLw">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <rect key="frame" x="-8" y="0.0" width="496" height="272"/>
                     <view key="contentView" id="VBy-et-Wq6">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                        <rect key="frame" x="0.0" y="0.0" width="496" height="272"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSe-Mu-f4W">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                                <rect key="frame" x="0.0" y="0.0" width="496" height="272"/>
                                 <clipView key="contentView" drawsBackground="NO" id="j4d-7b-yC2">
-                                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="496" height="272"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <collectionView id="UKY-js-2Ij">
-                                            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="496" height="272"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="primaryBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </collectionView>
@@ -49,19 +49,19 @@
                             </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="RSe-Mu-f4W" firstAttribute="top" secondItem="VBy-et-Wq6" secondAttribute="top" id="0WY-0v-Pky"/>
-                            <constraint firstAttribute="bottom" secondItem="RSe-Mu-f4W" secondAttribute="bottom" id="1IO-1r-NAz"/>
-                            <constraint firstAttribute="trailing" secondItem="RSe-Mu-f4W" secondAttribute="trailing" id="UWc-TW-xgV"/>
-                            <constraint firstItem="RSe-Mu-f4W" firstAttribute="leading" secondItem="VBy-et-Wq6" secondAttribute="leading" id="ua8-x9-ave"/>
+                            <constraint firstAttribute="bottom" secondItem="RSe-Mu-f4W" secondAttribute="bottom" id="VkN-Vk-5cP"/>
+                            <constraint firstItem="RSe-Mu-f4W" firstAttribute="leading" secondItem="VBy-et-Wq6" secondAttribute="leading" id="cYK-fv-EAz"/>
+                            <constraint firstItem="RSe-Mu-f4W" firstAttribute="top" secondItem="VBy-et-Wq6" secondAttribute="top" id="e7A-od-2eW"/>
+                            <constraint firstAttribute="trailing" secondItem="RSe-Mu-f4W" secondAttribute="trailing" id="vAE-As-ZMc"/>
                         </constraints>
                     </view>
                 </box>
             </subviews>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="Abp-1B-HLw" secondAttribute="trailing" id="0Nj-2Z-gT8"/>
-                <constraint firstItem="Abp-1B-HLw" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="6zX-nv-DTB"/>
-                <constraint firstAttribute="bottom" secondItem="Abp-1B-HLw" secondAttribute="bottom" id="Jvu-r3-jB6"/>
-                <constraint firstItem="Abp-1B-HLw" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="REJ-mQ-6GQ"/>
+                <constraint firstItem="Abp-1B-HLw" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="-8" id="17W-Su-BWD"/>
+                <constraint firstAttribute="bottom" secondItem="Abp-1B-HLw" secondAttribute="bottom" id="4RB-qX-MK1"/>
+                <constraint firstAttribute="trailing" secondItem="Abp-1B-HLw" secondAttribute="trailing" constant="-8" id="AAN-4I-3Ch"/>
+                <constraint firstItem="Abp-1B-HLw" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="adF-oi-b5T"/>
             </constraints>
         </customView>
     </objects>

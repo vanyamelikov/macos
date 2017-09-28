@@ -16,8 +16,8 @@
 
 @property (strong) IBOutlet NSTextField *SignInLabel;
 @property (strong) IBOutlet NSTextField *RegisterLabel;
-@property (strong) IBOutlet TextFieldWithFriend *loginTextField;
-@property (strong) IBOutlet TextFieldWithFriend *passwordTextField;
+@property (strong) IBOutlet NSTextField *loginTextField;
+@property (strong) IBOutlet NSTextField *passwordTextField;
 @property (strong) IBOutlet SignInButton *SignInButton;
 @property (strong) IBOutlet NSTextField *forgotPasswordLabel;
 

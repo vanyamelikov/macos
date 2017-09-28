@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface LibraryViewController : NSViewController
+@interface LibraryViewController : NSSplitViewController
 
 @end

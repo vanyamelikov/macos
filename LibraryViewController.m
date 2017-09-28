@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
+    NSViewController *controller = self.parentViewController;
+    NSView *view = self.view.superview;
 }
 
 @end

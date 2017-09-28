@@ -25,6 +25,8 @@
 		315947281F7C99D80073FA52 /* SplitViewWithDivider.m in Sources */ = {isa = PBXBuildFile; fileRef = 315947271F7C99D80073FA52 /* SplitViewWithDivider.m */; };
 		31972D6C1F7CB9FC008447C2 /* RMBluredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31972D6B1F7CB9FC008447C2 /* RMBluredView.m */; };
 		31972D6F1F7CEB77008447C2 /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 31972D6E1F7CEB77008447C2 /* ImageUtils.m */; };
+		31972D711F7D1582008447C2 /* LibraryEmptySideMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31972D701F7D1582008447C2 /* LibraryEmptySideMenu.xib */; };
+		31972D741F7D1755008447C2 /* LibraryEmptySideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 31972D731F7D1755008447C2 /* LibraryEmptySideMenu.m */; };
 		31B593BB1F7C14CF00D5B5FC /* FreeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */; };
 		31B593C11F7C15D400D5B5FC /* FreeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B593C01F7C15D400D5B5FC /* FreeButton.m */; };
 		31B593C31F7C194B00D5B5FC /* StoreTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593C21F7C194B00D5B5FC /* StoreTabView.xib */; };
@@ -267,6 +269,9 @@
 		31972D6B1F7CB9FC008447C2 /* RMBluredView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMBluredView.m; sourceTree = "<group>"; };
 		31972D6D1F7CEB77008447C2 /* ImageUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
 		31972D6E1F7CEB77008447C2 /* ImageUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
+		31972D701F7D1582008447C2 /* LibraryEmptySideMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryEmptySideMenu.xib; sourceTree = "<group>"; };
+		31972D721F7D1755008447C2 /* LibraryEmptySideMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryEmptySideMenu.h; sourceTree = "<group>"; };
+		31972D731F7D1755008447C2 /* LibraryEmptySideMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibraryEmptySideMenu.m; sourceTree = "<group>"; };
 		31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreeButton.xib; sourceTree = "<group>"; };
 		31B593BF1F7C15D400D5B5FC /* FreeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeButton.h; sourceTree = "<group>"; };
 		31B593C01F7C15D400D5B5FC /* FreeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeButton.m; sourceTree = "<group>"; };
@@ -836,6 +841,7 @@
 				3E8876091F7418C0001B8374 /* LibraryGamesServersListView.xib */,
 				3E6FE79C1F77452700B98AD3 /* LibraryFriendsGames.xib */,
 				3E6FE7AD1F77602800B98AD3 /* LibraryScreenshotsView.xib */,
+				31972D701F7D1582008447C2 /* LibraryEmptySideMenu.xib */,
 				3E8875E61F73F849001B8374 /* Cells */,
 			);
 			name = Library;
@@ -1105,6 +1111,8 @@
 				3E6FE79F1F7745D300B98AD3 /* LibraryFriendsGames.m */,
 				3E6FE7AF1F77605800B98AD3 /* LibraryScreenshotsView.h */,
 				3E6FE7B01F77605800B98AD3 /* LibraryScreenshotsView.m */,
+				31972D721F7D1755008447C2 /* LibraryEmptySideMenu.h */,
+				31972D731F7D1755008447C2 /* LibraryEmptySideMenu.m */,
 			);
 			name = LibraryClasses;
 			sourceTree = "<group>";
@@ -1565,6 +1573,7 @@
 				3E7230C41F734C0F0050A70D /* SendView.xib in Resources */,
 				3ECF3CF01F6978DA005165E5 /* SaveSettingsButton.xib in Resources */,
 				3E8EEF731F6DB3440034BE04 /* CustomHeaderCell.xib in Resources */,
+				31972D711F7D1582008447C2 /* LibraryEmptySideMenu.xib in Resources */,
 				3E558BD11F796E7B00542B7B /* SettingsSideListCell.xib in Resources */,
 				3E88761A1F7428DA001B8374 /* WalletHistoryCell.xib in Resources */,
 				3E7230DF1F7351820050A70D /* Friends.storyboard in Resources */,
@@ -1671,6 +1680,7 @@
 				3EBAAE021F760DEC00890AD1 /* WalletSideMenuModel.m in Sources */,
 				3E558C121F7AE43E00542B7B /* FriendsListModel.m in Sources */,
 				3E8A04C51F682E5400579DF8 /* LIButton.m in Sources */,
+				31972D741F7D1755008447C2 /* LibraryEmptySideMenu.m in Sources */,
 				31B593C11F7C15D400D5B5FC /* FreeButton.m in Sources */,
 				3E7230FF1F7357C60050A70D /* SettingsContentViewController.m in Sources */,
 				3E6FE7DC1F77D46C00B98AD3 /* StoreGamesGridView.m in Sources */,

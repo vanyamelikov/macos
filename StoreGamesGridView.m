@@ -28,7 +28,7 @@
 
 -(void)initView {
     self.collectionViewItem = [StoreGamesGridCell new];
-    
+
     self.contents = @[@{@"itemImage":@"img_store_game1", @"itemName":@"The Witcher 3"},
                       @{@"itemImage":@"img_store_game2", @"itemName":@"Tom Clancy's The Devision"},
                       @{@"itemImage":@"img_store_game3", @"itemName":@"The Crew"},

@@ -23,15 +23,14 @@
 @synthesize textField;
 
 - (void)drawRect:(NSRect)dirtyRect {
-    //[super drawRect:dirtyRect];
-    //[self drawTextField];
+    [super drawRect:dirtyRect];
+    [self initView];
 }
 
 -(instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if(self) {
         [self initView];
-        [self drawTextField];
     }
     return self;
 }
@@ -40,14 +39,8 @@
     self = [super initWithFrame:frameRect];
     if(self) {
         [self initView];
-        [self drawTextField];
     }
     return self;
-}
-
--(void)awakeFromNib {
-    [super awakeFromNib];
-    [self drawTextField];
 }
 
 -(void)initView {
@@ -67,13 +60,15 @@
         self.leftImageMargin = CGPointMake(16, 16);
     if(self.rightImageMargin.x == 0 && self.rightImageMargin.y == 0)
         self.rightImageMargin = CGPointMake(4, 4);
+    
+    [self drawTextField];
 }
 
 -(void)drawTextField {
     if(!borderColor)
-        borderColor = [NSColor colorWithRed:233 green:236 blue:243 alpha:0.3f];
+        borderColor = [NSColor colorFromHexString:@"#cccccc"];
     else
-        borderColor = [NSColor colorWithRed:233 green:236 blue:243 alpha:0.3f];
+        borderColor = [NSColor colorFromHexString:@"#cccccc"];
     
     //draw main border
     borderPath = [[NSBezierPath alloc] init];
@@ -146,7 +141,7 @@
     
     
     [textField setBordered:NO];
-    [textField setBackgroundColor:[NSColor clearColor]];
+    [textField setBackgroundColor:[NSColor redColor]];
     [textField setTextColor:[NSColor whiteColor]];
     [textField setPlaceholderString:self.placeholder];
     [textField setMaximumNumberOfLines:1];
@@ -155,7 +150,7 @@
     [textField setFocusRingType:NSFocusRingTypeNone];
     [textField setLineBreakMode:NSLineBreakByTruncatingTail];
     
-    [self addSubview:self.textField];
+    [self addSubview:textField];
     
     [textField setNeedsDisplay:YES];
     

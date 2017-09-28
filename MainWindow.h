@@ -12,6 +12,6 @@
 
 @property (nonatomic) NSString *backgroundImageName;
 
--(void)changeBackgroundImage : (NSString *)imageName;
+-(void)changeBackgroundImage : (NSImage *)image;
 
 @end

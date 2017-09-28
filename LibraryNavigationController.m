@@ -7,12 +7,9 @@
 //
 
 #import "LibraryNavigationController.h"
-#import <BFNavigationController/BFNavigationController.h>
 #import "LibraryViewController.h"
 
-@interface LibraryNavigationController () {
-    BFNavigationController *_navigationController;
-}
+@interface LibraryNavigationController ()
 
 @end
 
@@ -20,13 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Library" bundle:nil];
-    LibraryViewController *mainLibraryVC = (LibraryViewController *)[sb instantiateControllerWithIdentifier:@"LibraryNavigationViewController"];
     
-    _navigationController = [[BFNavigationController alloc] initWithFrame:NSMakeRect(0, 0, self.view.frame.size.width, self.view.frame.size.height)
-                                                       rootViewController:mainLibraryVC];
-    
-    [self.view addSubview:_navigationController.view];
 }
 
 @end

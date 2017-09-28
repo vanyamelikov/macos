@@ -13,6 +13,7 @@
 #import "MainStoreViewController.h"
 #import "BottomDownloadBar.h"
 #import <QuartzCore/QuartzCore.h>
+#import "LibraryViewController.h"
 
 @interface MainTabViewController (){
     BFNavigationController *_navigationController;
@@ -34,9 +35,10 @@
     NSStoryboard *sb1 = [NSStoryboard storyboardWithName:@"Store" bundle:nil];
     MainStoreViewController *mainStoreVC = (MainStoreViewController *)[sb1 instantiateControllerWithIdentifier:@"MainStoreViewController"];
     
+    NSStoryboard *sb2 = [NSStoryboard storyboardWithName:@"Library" bundle:nil];
+    LibraryViewController *mainLibraryVC = (LibraryViewController *)[sb2 instantiateControllerWithIdentifier:@"LibraryNavigationViewController"];
+    
     NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
-    NSViewController *vc1 = [sb instantiateControllerWithIdentifier:@"ViewController1"];
-    NSViewController *vc2 = [sb instantiateControllerWithIdentifier:@"ViewController2"];
     NSViewController *vc3 = [sb instantiateControllerWithIdentifier:@"ViewController3"];
     NSViewController *vc4 = [sb instantiateControllerWithIdentifier:@"ViewController4"];
     NSViewController *vc5 = [sb instantiateControllerWithIdentifier:@"ViewController5"];
@@ -48,7 +50,7 @@
     [item setView:[mainStoreVC view]];
 
     item = [[self mainTabView] tabViewItemAtIndex:1];
-    [item setView:[vc2 view]];
+    [item setView:[mainLibraryVC view]];
     
     item = [[self mainTabView] tabViewItemAtIndex:2];
     [item setView:[vc3 view]];
@@ -70,7 +72,7 @@
 -(void)viewWillAppear {
     [super viewWillAppear];
     MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
-    [mainWindow changeBackgroundImage:@"nfs"];
+    [mainWindow changeBackgroundImage:[NSImage imageNamed:@"nfs"]];
     [mainWindow setMovableByWindowBackground:YES];
 }
 

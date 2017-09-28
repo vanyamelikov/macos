@@ -7,6 +7,9 @@
 //
 
 #import "LibraryContentViewController.h"
+#import "LibraryEmptySideMenu.h"
+#import "SplitViewWithDivider.h"
+#import "MainWindow.h"
 
 @interface LibraryContentViewController ()
 
@@ -24,6 +27,18 @@
     [self.addGameButton addGestureRecognizer:addGameClick];
 }
 
+-(void)viewWillAppear {
+    [super viewWillAppear];
+//    SplitViewWithDivider *splitViewController = (SplitViewWithDivider*)self.view.superview.superview;
+//    NSTabView *vc = (NSTabView *)splitViewController.superview.superview;
+//    NSView *view1 = [vc.tabViewItems[0] view];
+//    NSImage *img = [self imageRepresentation:view1];
+//
+//    MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
+//    [mainWindow changeBackgroundImage:img];
+//    [mainWindow setMovableByWindowBackground:YES];
+}
+
 - (void)addGameAction:(id)sender
 {
     [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
@@ -36,6 +51,26 @@
                             self.libraryEmptyView.alphaValue = 1;
                         }];
     
+}
+
+- (NSImage *)imageRepresentation :(NSView *)viewToImage
+{
+    BOOL wasHidden = viewToImage.isHidden;
+    CGFloat wantedLayer = viewToImage.wantsLayer;
+    
+    viewToImage.hidden = NO;
+    viewToImage.wantsLayer = YES;
+    
+    NSImage *image = [[NSImage alloc] initWithSize:viewToImage.bounds.size];
+    [image lockFocus];
+    CGContextRef ctx = [NSGraphicsContext currentContext].graphicsPort;
+    [viewToImage.layer renderInContext:ctx];
+    [image unlockFocus];
+    
+    viewToImage.wantsLayer = wantedLayer;
+    viewToImage.hidden = wasHidden;
+    
+    return image;
 }
 
 @end
