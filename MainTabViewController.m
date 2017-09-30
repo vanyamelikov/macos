@@ -14,6 +14,15 @@
 #import "BottomDownloadBar.h"
 #import <QuartzCore/QuartzCore.h>
 #import "LibraryViewController.h"
+#import "WalletViewController.h"
+#import "SettingsViewController.h"
+#import "SettingsContentViewController.h"
+#import "FriendsContentViewController.h"
+#import "FriendsSideListViewController.h"
+#import "NSSplitView+ReplaceView.h"
+#import "SettingsNavigationListViewController.h"
+#import "SettingsSideListViewController.h"
+#import "SplitViewWithDivider.h"
 
 @interface MainTabViewController (){
     BFNavigationController *_navigationController;
@@ -25,6 +34,11 @@
 
 @implementation MainTabViewController
 
+-(void)awakeFromNib {
+    [super awakeFromNib];
+    [self.view setWantsLayer:YES];
+    [self.view setLayerContentsRedrawPolicy:NSViewLayerContentsRedrawOnSetNeedsDisplay];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,12 +52,21 @@
     NSStoryboard *sb2 = [NSStoryboard storyboardWithName:@"Library" bundle:nil];
     LibraryViewController *mainLibraryVC = (LibraryViewController *)[sb2 instantiateControllerWithIdentifier:@"LibraryNavigationViewController"];
     
-    NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
-    NSViewController *vc3 = [sb instantiateControllerWithIdentifier:@"ViewController3"];
-    NSViewController *vc4 = [sb instantiateControllerWithIdentifier:@"ViewController4"];
-    NSViewController *vc5 = [sb instantiateControllerWithIdentifier:@"ViewController5"];
-    NSViewController *vc6 = [sb instantiateControllerWithIdentifier:@"ViewController6"];
-    NSViewController *vc7 = [sb instantiateControllerWithIdentifier:@"ViewController7"];
+    NSStoryboard *sb3 = [NSStoryboard storyboardWithName:@"Wallet" bundle:nil];
+    WalletViewController *mainWalletVC = [sb3 instantiateControllerWithIdentifier:@"WalletViewController"];
+    
+    NSStoryboard *sb4 = [NSStoryboard storyboardWithName:@"Settings" bundle:nil];
+    SettingsContentViewController *mainSettingsVC = (SettingsContentViewController *)[sb4 instantiateControllerWithIdentifier:@"SettingsContentViewController"];
+    SettingsNavigationListViewController *navSettingsVC = (SettingsNavigationListViewController *)[sb4 instantiateControllerWithIdentifier:@"SettingsNavigationListViewController"];
+    SettingsSideListViewController *serverSettingsVC = (SettingsSideListViewController *)[sb4 instantiateControllerWithIdentifier:@"SettingsSideListViewController"];
+    
+    SplitViewWithDivider *settingsSplitView = [[SplitViewWithDivider alloc] initWithFrame:self.mainTabView.frame];
+    [settingsSplitView setVertical:YES];
+    [settingsSplitView setDividerStyle:NSSplitViewDividerStyleThin];
+    [settingsSplitView addSubview:mainSettingsVC.view];
+    [settingsSplitView addSubview:navSettingsVC.view];
+    [settingsSplitView addSubview:serverSettingsVC.view];
+    [settingsSplitView adjustSubviews];
 
     NSTabViewItem *item;
     item = [[self mainTabView] tabViewItemAtIndex:0];
@@ -53,27 +76,16 @@
     [item setView:[mainLibraryVC view]];
     
     item = [[self mainTabView] tabViewItemAtIndex:2];
-    [item setView:[vc3 view]];
+    [item setView:[mainWalletVC view]];
     
     item = [[self mainTabView] tabViewItemAtIndex:3];
-    [item setView:[vc4 view]];
-    
-    item = [[self mainTabView] tabViewItemAtIndex:4];
-    [item setView:[vc5 view]];
-    
-    item = [[self mainTabView] tabViewItemAtIndex:5];
-    [item setView:[vc6 view]];
-    
-    item = [[self mainTabView] tabViewItemAtIndex:6];
-    [item setView:[vc7 view]];
-
+    [item setView:settingsSplitView];
 }
 
 -(void)viewWillAppear {
     [super viewWillAppear];
     MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
     [mainWindow changeBackgroundImage:[NSImage imageNamed:@"nfs"]];
-    [mainWindow setMovableByWindowBackground:YES];
 }
 
 -(void)tabClicked:(NSInteger)sender {
@@ -85,14 +97,30 @@
         [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:1]];
     }else if (sender == 2){
         [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:2]];
-    }else if (sender == 3){
-        [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:3]];
-    }else if (sender == 4){
-        [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:4]];
-    }else if (sender == 5){
-        [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:5]];
-    }else if (sender == 6){
-        [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:6]];
+    }else if (sender == 3){//friends
+        NSSplitView *superView = (NSSplitView *)[_mainTabView.tabViewItems objectAtIndex:3].view;
+        
+        //get friends edit content view
+        NSStoryboard *friends = [NSStoryboard storyboardWithName:@"Friends" bundle:nil];
+        NSViewController *friendsVC = [friends instantiateControllerWithIdentifier:@"MainFriendsLeftSideViewController"];
+        //replace friends and settings view
+        [superView replaceSplitViewItemAtIndex:0 withViewController:friendsVC];
+        
+        //change tabview item
+        if(![_mainTabView.selectedTabViewItem isEqual:[_mainTabView.tabViewItems objectAtIndex:3]])
+            [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:3]];
+    }else if (sender == 4){//settings
+        NSSplitView *superView = (NSSplitView *)[_mainTabView.tabViewItems objectAtIndex:3].view;
+        
+        //get friends edit content view
+        NSStoryboard *settings = [NSStoryboard storyboardWithName:@"Settings" bundle:nil];
+        SettingsContentViewController *settingsVC = (SettingsContentViewController *)[settings instantiateControllerWithIdentifier:@"SettingsContentViewController"];
+        //replace friends and settings view
+        [superView replaceSplitViewItemAtIndex:0 withViewController:settingsVC];
+        
+        //change tabview item
+        if(![_mainTabView.selectedTabViewItem isEqual:[_mainTabView.tabViewItems objectAtIndex:3]])
+             [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:3]];
     }
 }
 
@@ -119,8 +147,6 @@
         [mainWindow.contentView setNeedsDisplay:YES];
         isShowDownloadBar = NO;
     }
-    
-    
 }
 
 @end

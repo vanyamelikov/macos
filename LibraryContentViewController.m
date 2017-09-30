@@ -17,6 +17,8 @@
 
 @implementation LibraryContentViewController
 
+@synthesize addGameDelegate;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -41,6 +43,9 @@
 
 - (void)addGameAction:(id)sender
 {
+    if(addGameDelegate && [self.addGameDelegate respondsToSelector:@selector(libraryEmtyAddGameClick)]) {
+        [self.addGameDelegate libraryEmtyAddGameClick];
+    }
     [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
         context.duration = 0.5f;
         self.libraryEmptyView.animator.alphaValue = 0;
@@ -50,27 +55,6 @@
                             self.libraryGameView.hidden = NO;
                             self.libraryEmptyView.alphaValue = 1;
                         }];
-    
-}
-
-- (NSImage *)imageRepresentation :(NSView *)viewToImage
-{
-    BOOL wasHidden = viewToImage.isHidden;
-    CGFloat wantedLayer = viewToImage.wantsLayer;
-    
-    viewToImage.hidden = NO;
-    viewToImage.wantsLayer = YES;
-    
-    NSImage *image = [[NSImage alloc] initWithSize:viewToImage.bounds.size];
-    [image lockFocus];
-    CGContextRef ctx = [NSGraphicsContext currentContext].graphicsPort;
-    [viewToImage.layer renderInContext:ctx];
-    [image unlockFocus];
-    
-    viewToImage.wantsLayer = wantedLayer;
-    viewToImage.hidden = wasHidden;
-    
-    return image;
 }
 
 @end

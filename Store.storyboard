@@ -15,7 +15,7 @@
                         <splitViewItem id="6us-xq-UtL"/>
                         <splitViewItem id="klD-L3-hAP"/>
                     </splitViewItems>
-                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="gVd-Ot-Pw7" customClass="SplitViewWithDivider">
+                    <splitView key="splitView" canDrawConcurrently="YES" focusRingType="none" dividerStyle="thin" vertical="YES" id="gVd-Ot-Pw7" customClass="SplitViewWithDivider">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <connections>
@@ -70,14 +70,14 @@
         <!--Store Content View Controller-->
         <scene sceneID="AbA-zB-q6f">
             <objects>
-                <viewController id="1iO-03-06a" customClass="StoreContentViewController" sceneMemberID="viewController">
-                    <view key="view" id="fty-Oq-opA">
+                <viewController storyboardIdentifier="StoreContentViewController" id="1iO-03-06a" customClass="StoreContentViewController" sceneMemberID="viewController">
+                    <view key="view" canDrawConcurrently="YES" id="fty-Oq-opA">
                         <rect key="frame" x="0.0" y="0.0" width="1802" height="1140"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Bdm-Kb-9TC">
+                            <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Bdm-Kb-9TC">
                                 <rect key="frame" x="0.0" y="0.0" width="1802" height="1140"/>
-                                <view key="contentView" wantsLayer="YES" id="m1s-KW-lbc">
+                                <view key="contentView" id="m1s-KW-lbc">
                                     <rect key="frame" x="0.0" y="0.0" width="1802" height="1140"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -205,13 +205,14 @@
                                                 </tabViewItem>
                                                 <tabViewItem label="View" identifier="" id="Zi0-zA-rQF">
                                                     <view key="view" id="J5n-ag-tF1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="163" height="108"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="1750" height="1014"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     </view>
                                                 </tabViewItem>
                                                 <tabViewItem label="Item 2" identifier="" id="kSm-CM-zfm">
                                                     <view key="view" id="8nc-yf-BDu">
-                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="1750" height="1014"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     </view>
                                                 </tabViewItem>
                                             </tabViewItems>
@@ -249,6 +250,7 @@
                                         <constraint firstItem="aiM-co-5kq" firstAttribute="leading" secondItem="m1s-KW-lbc" secondAttribute="leading" constant="26" id="tkQ-UE-ZNe"/>
                                     </constraints>
                                 </view>
+                                <color key="borderColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="0.8486716360856269" colorSpace="calibratedRGB"/>
                             </box>
                         </subviews>

@@ -8,12 +8,16 @@
 
 #import "SettingsViewController.h"
 
+@interface SettingsViewController ()
+
+@end
+
+
 @implementation SettingsViewController
 
-- (void)drawRect:(NSRect)dirtyRect {
-    [super drawRect:dirtyRect];
-    
-    // Drawing code here.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do view setup here.
 }
 
 @end

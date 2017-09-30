@@ -9,6 +9,8 @@
 #import "SignInViewController.h"
 #import "Colours.h"
 #import "MainTabViewController.h"
+#import "ImageUtils.h"
+#import "MainWindow.h"
 
 @interface SignInViewController ()
 
@@ -18,6 +20,12 @@
     NSColor *focusTFBorderColor;
     NSColor *unFocusTFBorderColor;
     CGFloat tfAnimationDuration;
+}
+
+-(void)awakeFromNib {
+    [super awakeFromNib];
+    [self.view setWantsLayer:YES];
+    [self.view setLayerContentsRedrawPolicy:NSViewLayerContentsRedrawOnSetNeedsDisplay];
 }
 
 - (void)viewDidLoad {
@@ -47,6 +55,7 @@
     
     [self.loginBox setWantsLayer:YES];
     [self.passwordBox setWantsLayer:YES];
+    [self.view setWantsLayer:YES];
     self.loginTextField.delegate = self;
     self.passwordTextField.delegate = self;
     self.loginTextField.tagDelegate = self;
@@ -57,7 +66,7 @@
 {
     NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
     MainTabViewController *vc = (MainTabViewController *)[sb instantiateControllerWithIdentifier:@"MainTabViewController"];
-    self.view.window.contentViewController = vc;
+    [self.view.window setContentViewController:vc];
 }
 
 - (void)RegisterAction:(id)sender

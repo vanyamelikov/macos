@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface FriendsViewController : NSViewController
+@interface FriendsViewController : NSSplitViewController
 
 @end

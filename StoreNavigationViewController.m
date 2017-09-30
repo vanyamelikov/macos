@@ -1,11 +1,3 @@
-//
-//  StoreNavigationViewController.m
-//  XenioUIKit
-//
-//  Created by Сергей Иванов on 18.09.17.
-//  Copyright © 2017 mifsoftware. All rights reserved.
-//
-
 #import "StoreNavigationViewController.h"
 #import "MainStoreViewController.h"
 #import <BFNavigationController/BFNavigationController.h>

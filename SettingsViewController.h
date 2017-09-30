@@ -6,8 +6,8 @@
 //  Copyright © 2017 mifsoftware. All rights reserved.
 //
 
-#import "NSView+INSNibLoading.h"
+#import <Cocoa/Cocoa.h>
 
-@interface SettingsViewController : INSNibLoadedView
+@interface SettingsViewController : NSSplitViewController
 
 @end

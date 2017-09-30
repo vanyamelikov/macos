@@ -11,15 +11,20 @@
 
 @implementation SplitViewWithDivider
 
--(void) drawRect {
-    id topView = [[self subviews] objectAtIndex:0];
-    NSRect topViewFrameRect = [topView frame];
-    [self drawDividerInRect:NSMakeRect(topViewFrameRect.origin.x, topViewFrameRect.size.height, topViewFrameRect.size.width, [self dividerThickness] )];
-}
 
 -(void) drawDividerInRect:(NSRect)aRect {
-    [[NSColor colorWithRed:255 green:255 blue:255 alpha:0.15] set];
+    [[NSColor colorWithRed:0 green:0 blue:0 alpha:0.8f] set];
     NSRectFill(aRect);
+    [self setNeedsDisplayInRect:aRect];
+}
+
+-(instancetype)initWithCoder:(NSCoder *)decoder {
+    self = [super initWithCoder:decoder];
+    if(self) {
+        [self setWantsLayer:YES];
+        [self setLayerContentsRedrawPolicy:NSViewLayerContentsRedrawOnSetNeedsDisplay];
+    }
+    return self;
 }
 
 @end

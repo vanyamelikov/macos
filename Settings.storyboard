@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Split View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="138-r9-lgg">
             <objects>
-                <splitViewController storyboardIdentifier="SettingsNavigationController" id="Zmj-oH-KSP" sceneMemberID="viewController">
+                <splitViewController storyboardIdentifier="SettingsViewController" id="Zmj-oH-KSP" customClass="SettingsViewController" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem id="Ame-az-T0d"/>
                         <splitViewItem id="kCY-gB-JvO"/>
@@ -22,8 +22,12 @@
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="9vG-7W-IXU">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <outlet property="delegate" destination="Zmj-oH-KSP" id="CAI-1j-c7M"/>
+                        </connections>
                     </splitView>
                     <connections>
+                        <outlet property="splitView" destination="9vG-7W-IXU" id="gA0-zm-bNN"/>
                         <segue destination="bIc-Ez-4EN" kind="relationship" relationship="splitItems" id="3dp-hI-lQa"/>
                         <segue destination="eTQ-1J-mb5" kind="relationship" relationship="splitItems" id="bYd-zR-jhf"/>
                         <segue destination="dBA-3u-nFO" kind="relationship" relationship="splitItems" id="raH-8i-tBY"/>
@@ -36,7 +40,7 @@
         <!--Settings Content View Controller-->
         <scene sceneID="Zhr-mt-el7">
             <objects>
-                <viewController id="bIc-Ez-4EN" customClass="SettingsContentViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsContentViewController" id="bIc-Ez-4EN" customClass="SettingsContentViewController" sceneMemberID="viewController">
                     <view key="view" id="Tl4-VM-i42">
                         <rect key="frame" x="0.0" y="0.0" width="847" height="900"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -75,20 +79,20 @@
                                 </constraints>
                             </customView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yl7-5o-vu1">
-                                <rect key="frame" x="124" y="766" width="115" height="38"/>
+                                <rect key="frame" x="124" y="766" width="106" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="0W8-dB-zdu"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="KOT3 Kill" id="i4B-bx-Pxf">
-                                    <font key="font" size="25" name="SFUIText-Medium"/>
+                                    <font key="font" metaFont="system" size="25"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="NPH-6J-mpc">
-                                <rect key="frame" x="126" y="757" width="111" height="1"/>
+                                <rect key="frame" x="126" y="757" width="102" height="1"/>
                                 <view key="contentView" id="ADs-4G-CM8">
-                                    <rect key="frame" x="1" y="1" width="109" height="0.0"/>
+                                    <rect key="frame" x="1" y="1" width="100" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <constraints>
@@ -98,12 +102,12 @@
                                 <color key="fillColor" red="0.40000000000000002" green="0.66666666669999997" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                             </box>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nPL-TQ-ZgF">
-                                <rect key="frame" x="18" y="682" width="122" height="38"/>
+                                <rect key="frame" x="18" y="682" width="106" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="6gW-VD-UkZ"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Information" id="uNS-Ng-8Fi">
-                                    <font key="font" size="20" name="SFUIText-Bold"/>
+                                    <font key="font" metaFont="system" size="20"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -115,12 +119,12 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NPN-HA-MWf">
-                                            <rect key="frame" x="13" y="487" width="78" height="20"/>
+                                            <rect key="frame" x="13" y="487" width="77" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="Ee6-GC-1JZ"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Name profile" id="yZd-xv-b4u">
-                                                <font key="font" size="12" name="SFUIText-Medium"/>
+                                                <font key="font" metaFont="cellTitle"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -131,7 +135,7 @@
                                                 <rect key="frame" x="1" y="1" width="367" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
-                                                    <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YKn-ZI-2eZ" customClass="PlaceholderWhiteTextField">
+                                                    <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YKn-ZI-2eZ">
                                                         <rect key="frame" x="6" y="4" width="355" height="27"/>
                                                         <contentFilters>
                                                             <ciFilter name="CIColorInvert">
@@ -141,7 +145,7 @@
                                                             </ciFilter>
                                                         </contentFilters>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="KOT3 Kill" id="ZUf-cO-jhV">
-                                                            <font key="font" size="14" name="SFUIText-Medium"/>
+                                                            <font key="font" metaFont="system" size="14"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                                                         </textFieldCell>
@@ -161,67 +165,67 @@
                                             <color key="borderColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                         </box>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="N5s-H1-eQz">
-                                            <rect key="frame" x="13" y="410" width="57" height="20"/>
+                                            <rect key="frame" x="13" y="410" width="56" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="bT3-Yq-cme"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="My name" id="fKR-CT-bXP">
-                                                <font key="font" size="12" name="SFUIText-Medium"/>
+                                                <font key="font" metaFont="cellTitle"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hEz-uj-zpk">
-                                            <rect key="frame" x="13" y="329" width="51" height="20"/>
+                                            <rect key="frame" x="13" y="329" width="50" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="tMf-ZO-uye"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Country" id="Khg-1B-eSY">
-                                                <font key="font" size="12" name="SFUIText-Medium"/>
+                                                <font key="font" metaFont="cellTitle"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bC7-hn-0vV">
-                                            <rect key="frame" x="13" y="248" width="44" height="20"/>
+                                            <rect key="frame" x="13" y="248" width="43" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="c83-W6-WWg"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Region" id="xMe-Fx-ZWs">
-                                                <font key="font" size="12" name="SFUIText-Medium"/>
+                                                <font key="font" metaFont="cellTitle"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UWr-2D-v8d">
-                                            <rect key="frame" x="13" y="167" width="28" height="20"/>
+                                            <rect key="frame" x="13" y="167" width="27" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="jXx-2s-eeZ"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="City" id="4Ep-mL-o33">
-                                                <font key="font" size="12" name="SFUIText-Medium"/>
+                                                <font key="font" metaFont="cellTitle"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1wf-Pc-PMC">
-                                            <rect key="frame" x="13" y="86" width="99" height="20"/>
+                                            <rect key="frame" x="13" y="86" width="96" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="Pc3-UJ-jTJ"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="My personal link" id="KYV-wE-Ab7">
-                                                <font key="font" size="12" name="SFUIText-Medium"/>
+                                                <font key="font" metaFont="cellTitle"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6og-Af-IsN">
-                                            <rect key="frame" x="408" y="487" width="78" height="20"/>
+                                            <rect key="frame" x="408" y="487" width="77" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="Am5-rb-llr"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Name profile" id="pYW-4Z-Nad">
-                                                <font key="font" size="12" name="SFUIText-Medium"/>
+                                                <font key="font" metaFont="cellTitle"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -239,7 +243,7 @@
                                                 <rect key="frame" x="1" y="1" width="367" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
-                                                    <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EHI-u1-nyh" customClass="PlaceholderWhiteTextField">
+                                                    <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EHI-u1-nyh">
                                                         <rect key="frame" x="6" y="4" width="355" height="27"/>
                                                         <contentFilters>
                                                             <ciFilter name="CIColorInvert">
@@ -249,7 +253,7 @@
                                                             </ciFilter>
                                                         </contentFilters>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Alexander" id="GP3-9X-iBR">
-                                                            <font key="font" size="14" name="SFUIText-Medium"/>
+                                                            <font key="font" metaFont="system" size="14"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                                                         </textFieldCell>
@@ -274,7 +278,7 @@
                                                 <rect key="frame" x="1" y="1" width="367" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
-                                                    <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IXa-4X-df1" customClass="PlaceholderWhiteTextField">
+                                                    <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IXa-4X-df1">
                                                         <rect key="frame" x="6" y="4" width="355" height="27"/>
                                                         <contentFilters>
                                                             <ciFilter name="CIColorInvert">
@@ -284,7 +288,7 @@
                                                             </ciFilter>
                                                         </contentFilters>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Russian Federation" id="kWM-nk-z2Q">
-                                                            <font key="font" size="14" name="SFUIText-Medium"/>
+                                                            <font key="font" metaFont="system" size="14"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                                                         </textFieldCell>
@@ -309,7 +313,7 @@
                                                 <rect key="frame" x="1" y="1" width="367" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
-                                                    <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ira-67-m8v" customClass="PlaceholderWhiteTextField">
+                                                    <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ira-67-m8v">
                                                         <rect key="frame" x="6" y="4" width="355" height="27"/>
                                                         <contentFilters>
                                                             <ciFilter name="CIColorInvert">
@@ -319,7 +323,7 @@
                                                             </ciFilter>
                                                         </contentFilters>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Bashkortostan" id="cSp-AU-C9C">
-                                                            <font key="font" size="14" name="SFUIText-Medium"/>
+                                                            <font key="font" metaFont="system" size="14"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                                                         </textFieldCell>
@@ -344,7 +348,7 @@
                                                 <rect key="frame" x="1" y="1" width="367" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
-                                                    <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="73e-mm-B6d" customClass="PlaceholderWhiteTextField">
+                                                    <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="73e-mm-B6d">
                                                         <rect key="frame" x="6" y="4" width="355" height="27"/>
                                                         <contentFilters>
                                                             <ciFilter name="CIColorInvert">
@@ -354,7 +358,7 @@
                                                             </ciFilter>
                                                         </contentFilters>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Moscow" id="apE-X4-tk1">
-                                                            <font key="font" size="14" name="SFUIText-Medium"/>
+                                                            <font key="font" metaFont="system" size="14"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                                                         </textFieldCell>
@@ -379,7 +383,7 @@
                                                 <rect key="frame" x="1" y="1" width="367" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
-                                                    <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wy2-ZS-Iq7" customClass="PlaceholderWhiteTextField">
+                                                    <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wy2-ZS-Iq7">
                                                         <rect key="frame" x="6" y="4" width="355" height="27"/>
                                                         <contentFilters>
                                                             <ciFilter name="CIColorInvert">
@@ -389,7 +393,7 @@
                                                             </ciFilter>
                                                         </contentFilters>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="xenio.io/client/user/kot3_kll" id="HGj-fE-Ccv">
-                                                            <font key="font" size="14" name="SFUIText-Medium"/>
+                                                            <font key="font" metaFont="system" size="14"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                                                         </textFieldCell>
@@ -414,7 +418,7 @@
                                                 <rect key="frame" x="1" y="1" width="370" height="331"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
-                                                    <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2w6-6f-XdD" customClass="PlaceholderWhiteTextField">
+                                                    <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2w6-6f-XdD">
                                                         <rect key="frame" x="4" y="4" width="362" height="323"/>
                                                         <contentFilters>
                                                             <ciFilter name="CIColorInvert">
@@ -424,7 +428,7 @@
                                                             </ciFilter>
                                                         </contentFilters>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="My name is ..." id="ksl-SB-xuI">
-                                                            <font key="font" size="14" name="SFUIText-Medium"/>
+                                                            <font key="font" metaFont="system" size="14"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                                                         </textFieldCell>
@@ -509,7 +513,7 @@
         <!--Settings Navigation List View Controller-->
         <scene sceneID="mK7-Xq-8AW">
             <objects>
-                <viewController id="eTQ-1J-mb5" customClass="SettingsNavigationListViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsNavigationListViewController" id="eTQ-1J-mb5" customClass="SettingsNavigationListViewController" sceneMemberID="viewController">
                     <view key="view" id="Vig-Wv-klr">
                         <rect key="frame" x="0.0" y="0.0" width="273" height="900"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -534,7 +538,7 @@
         <scene sceneID="0ht-5J-jRM">
             <objects>
                 <customObject id="vSz-n0-6LZ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <viewController id="dBA-3u-nFO" customClass="SettingsSideListViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsSideListViewController" id="dBA-3u-nFO" customClass="SettingsSideListViewController" sceneMemberID="viewController">
                     <view key="view" id="d8F-Xs-HKy">
                         <rect key="frame" x="0.0" y="0.0" width="332" height="900"/>
                         <autoresizingMask key="autoresizingMask"/>

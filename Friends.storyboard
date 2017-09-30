@@ -1,144 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Split View Controller-->
-        <scene sceneID="LYh-Pk-sH5">
-            <objects>
-                <customObject id="WVb-Qw-BMy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <splitViewController id="hcA-vc-TlO" sceneMemberID="viewController">
-                    <splitViewItems>
-                        <splitViewItem id="zeb-LL-mRq"/>
-                        <splitViewItem id="eWQ-kO-Dj8"/>
-                        <splitViewItem id="l5o-6C-0eB"/>
-                    </splitViewItems>
-                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="Btw-dH-wi3">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </splitView>
-                    <connections>
-                        <segue destination="i1Z-rN-2dM" kind="relationship" relationship="splitItems" id="mm7-jn-dgq"/>
-                        <segue destination="W2X-kL-Ecs" kind="relationship" relationship="splitItems" id="T57-I1-lpj"/>
-                        <segue destination="rlk-gn-m6d" kind="relationship" relationship="splitItems" id="Mh9-2s-hi8"/>
-                    </connections>
-                </splitViewController>
-            </objects>
-            <point key="canvasLocation" x="-211" y="261"/>
-        </scene>
-        <!--Friends Content View Controller-->
-        <scene sceneID="wWc-mM-LUP">
-            <objects>
-                <customObject id="ofd-Cd-YQo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <viewController id="i1Z-rN-2dM" customClass="FriendsContentViewController" sceneMemberID="viewController">
-                    <view key="view" id="cYW-6k-ayW">
-                        <rect key="frame" x="0.0" y="0.0" width="303" height="890"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="YPY-U6-pWI" customClass="SettingsSideListView">
-                                <rect key="frame" x="0.0" y="330" width="303" height="560"/>
-                            </customView>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="XvR-i0-sih" customClass="SettingsSideListView">
-                                <rect key="frame" x="0.0" y="0.0" width="303" height="280"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="280" id="U5l-Zg-fid"/>
-                                </constraints>
-                            </customView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="YPY-U6-pWI" secondAttribute="trailing" id="0TL-wD-aux"/>
-                            <constraint firstItem="YPY-U6-pWI" firstAttribute="leading" secondItem="cYW-6k-ayW" secondAttribute="leading" id="VgM-2g-Ifo"/>
-                            <constraint firstItem="XvR-i0-sih" firstAttribute="top" secondItem="YPY-U6-pWI" secondAttribute="bottom" constant="50" id="cKR-mX-JMo"/>
-                            <constraint firstAttribute="trailing" secondItem="XvR-i0-sih" secondAttribute="trailing" id="ca9-i7-Ghg"/>
-                            <constraint firstItem="YPY-U6-pWI" firstAttribute="top" secondItem="cYW-6k-ayW" secondAttribute="top" id="kbA-U0-Pms"/>
-                            <constraint firstAttribute="bottom" secondItem="XvR-i0-sih" secondAttribute="bottom" id="yyl-zx-bAj"/>
-                            <constraint firstItem="XvR-i0-sih" firstAttribute="leading" secondItem="cYW-6k-ayW" secondAttribute="leading" id="zrL-GS-fna"/>
-                        </constraints>
-                    </view>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="540.5" y="1085"/>
-        </scene>
-        <!--Friends Conten Navigation View Controller-->
-        <scene sceneID="TVG-wb-gjy">
-            <objects>
-                <customObject id="C56-YY-8oT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <viewController id="W2X-kL-Ecs" customClass="FriendsContenNavigationViewController" sceneMemberID="viewController">
-                    <view key="view" id="9SR-P0-UZO">
-                        <rect key="frame" x="0.0" y="0.0" width="298" height="890"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="SQa-tI-39n" customClass="SettingsNavigationListView">
-                                <rect key="frame" x="0.0" y="0.0" width="298" height="890"/>
-                            </customView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="SQa-tI-39n" secondAttribute="trailing" id="XMM-oz-vZP"/>
-                            <constraint firstAttribute="bottom" secondItem="SQa-tI-39n" secondAttribute="bottom" id="hXT-Sz-YNQ"/>
-                            <constraint firstItem="SQa-tI-39n" firstAttribute="top" secondItem="9SR-P0-UZO" secondAttribute="top" id="hea-s7-AXJ"/>
-                            <constraint firstItem="SQa-tI-39n" firstAttribute="leading" secondItem="9SR-P0-UZO" secondAttribute="leading" id="nes-jL-aFe"/>
-                        </constraints>
-                    </view>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="237" y="1085"/>
-        </scene>
-        <!--Friends Side List View Controller-->
+        <!--View Controller-->
         <scene sceneID="ZnT-RN-x8U">
             <objects>
                 <customObject id="UJw-YB-GNu" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <viewController id="rlk-gn-m6d" customClass="FriendsSideListViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainFriendsLeftSideViewController" id="rlk-gn-m6d" sceneMemberID="viewController">
                     <view key="view" id="aCj-Ss-C2a">
                         <rect key="frame" x="0.0" y="0.0" width="1440" height="890"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Vsm-ui-gRQ">
+                                <rect key="frame" x="0.0" y="0.0" width="1440" height="890"/>
+                                <view key="contentView" id="vp6-n1-0aU">
+                                    <rect key="frame" x="0.0" y="0.0" width="1440" height="890"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="0.60028430810397548" colorSpace="calibratedRGB"/>
+                            </box>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="lL5-1b-mbE" customClass="FriendsContentList">
                                 <rect key="frame" x="26" y="0.0" width="1388" height="809"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="809" id="O6z-dq-OmM"/>
-                                </constraints>
                             </customView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8o3-nF-hYQ">
                                 <rect key="frame" x="26" y="842" width="16" height="16"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="16" id="AaV-Mz-v2m"/>
-                                    <constraint firstAttribute="height" constant="16" id="dRO-ek-bdr"/>
+                                    <constraint firstAttribute="width" constant="16" id="Nie-w8-p1H"/>
+                                    <constraint firstAttribute="height" constant="16" id="ykl-Ua-Tjb"/>
                                 </constraints>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_backarrow" id="1Fc-iu-o4i"/>
                             </imageView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rnM-Ge-sEe">
-                                <rect key="frame" x="50" y="831" width="80" height="38"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cpo-v3-lxR">
+                                <rect key="frame" x="1378" y="841" width="38" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="df1-2n-wds"/>
+                                    <constraint firstAttribute="height" constant="24" id="PCP-du-XmM"/>
                                 </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Friends" id="WgU-R9-DjZ">
-                                    <font key="font" size="20" name="SFUIText-Bold"/>
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="216" id="LDs-rw-4uv">
+                                    <font key="font" metaFont="system" size="20"/>
+                                    <color key="textColor" red="0.24198439717292786" green="0.68816852569580078" blue="0.99984091520309448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cpo-v3-lxR">
-                                <rect key="frame" x="1375" y="841" width="41" height="30"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="216" id="LDs-rw-4uv">
-                                    <font key="font" size="20" name="SFUIText-Bold"/>
-                                    <color key="textColor" red="0.24198439717292786" green="0.68816852569580078" blue="0.99984091520309448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rnM-Ge-sEe">
+                                <rect key="frame" x="57" y="838" width="71" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="q8G-2w-BFl"/>
+                                </constraints>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Friends" usesSingleLineMode="YES" id="WgU-R9-DjZ">
+                                    <font key="font" metaFont="system" size="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="rnM-Ge-sEe" firstAttribute="centerY" secondItem="8o3-nF-hYQ" secondAttribute="centerY" id="5BB-WV-Q9S"/>
-                            <constraint firstAttribute="bottom" secondItem="lL5-1b-mbE" secondAttribute="bottom" id="KJ7-6m-Wki"/>
-                            <constraint firstItem="8o3-nF-hYQ" firstAttribute="top" secondItem="aCj-Ss-C2a" secondAttribute="top" constant="32" id="Zl0-Ts-xeM"/>
-                            <constraint firstItem="8o3-nF-hYQ" firstAttribute="leading" secondItem="aCj-Ss-C2a" secondAttribute="leading" constant="26" id="jxd-Jm-GPN"/>
-                            <constraint firstItem="lL5-1b-mbE" firstAttribute="leading" secondItem="aCj-Ss-C2a" secondAttribute="leading" constant="26" id="kBe-4i-cTz"/>
-                            <constraint firstAttribute="trailing" secondItem="lL5-1b-mbE" secondAttribute="trailing" constant="26" id="one-zy-TNq"/>
-                            <constraint firstItem="cpo-v3-lxR" firstAttribute="trailing" secondItem="lL5-1b-mbE" secondAttribute="trailing" id="s1L-1a-nPA"/>
-                            <constraint firstItem="rnM-Ge-sEe" firstAttribute="leading" secondItem="8o3-nF-hYQ" secondAttribute="trailing" constant="10" id="ufM-eg-Tpy"/>
-                            <constraint firstItem="lL5-1b-mbE" firstAttribute="top" secondItem="cpo-v3-lxR" secondAttribute="bottom" constant="32" id="wZF-9P-EFr"/>
+                            <constraint firstItem="Vsm-ui-gRQ" firstAttribute="leading" secondItem="aCj-Ss-C2a" secondAttribute="leading" id="1bb-Xy-uyV"/>
+                            <constraint firstItem="lL5-1b-mbE" firstAttribute="leading" secondItem="aCj-Ss-C2a" secondAttribute="leading" constant="26" id="599-0x-FHd"/>
+                            <constraint firstAttribute="bottom" secondItem="lL5-1b-mbE" secondAttribute="bottom" id="5R0-tk-0dP"/>
+                            <constraint firstAttribute="trailing" secondItem="cpo-v3-lxR" secondAttribute="trailing" constant="26" id="CjC-pk-DmO"/>
+                            <constraint firstItem="rnM-Ge-sEe" firstAttribute="top" secondItem="aCj-Ss-C2a" secondAttribute="top" constant="28" id="D3G-AS-x0S"/>
+                            <constraint firstItem="8o3-nF-hYQ" firstAttribute="top" secondItem="aCj-Ss-C2a" secondAttribute="top" constant="32" id="ED3-yc-v0D"/>
+                            <constraint firstItem="8o3-nF-hYQ" firstAttribute="leading" secondItem="aCj-Ss-C2a" secondAttribute="leading" constant="26" id="MoS-kv-flQ"/>
+                            <constraint firstItem="rnM-Ge-sEe" firstAttribute="leading" secondItem="8o3-nF-hYQ" secondAttribute="trailing" constant="17" id="NMc-in-BKI"/>
+                            <constraint firstItem="cpo-v3-lxR" firstAttribute="top" secondItem="aCj-Ss-C2a" secondAttribute="top" constant="25" id="ab5-zx-8MS"/>
+                            <constraint firstAttribute="trailing" secondItem="lL5-1b-mbE" secondAttribute="trailing" constant="26" id="idY-1n-eyl"/>
+                            <constraint firstAttribute="trailing" secondItem="Vsm-ui-gRQ" secondAttribute="trailing" id="oIh-CD-BY4"/>
+                            <constraint firstAttribute="bottom" secondItem="Vsm-ui-gRQ" secondAttribute="bottom" id="r26-r2-WeC"/>
+                            <constraint firstItem="Vsm-ui-gRQ" firstAttribute="top" secondItem="aCj-Ss-C2a" secondAttribute="top" id="t0h-hV-qzM"/>
+                            <constraint firstItem="lL5-1b-mbE" firstAttribute="top" secondItem="rnM-Ge-sEe" secondAttribute="bottom" constant="29" id="zOE-Jj-31j"/>
                         </constraints>
                     </view>
                 </viewController>

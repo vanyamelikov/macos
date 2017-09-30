@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "LibraryContentViewController.h"
 
-@interface LibrarySideMenuViewController : NSViewController
+@interface LibrarySideMenuViewController : NSViewController <LibraryAddGameDelegate>
 
 @end

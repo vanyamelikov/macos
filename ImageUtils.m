@@ -22,4 +22,24 @@
     return image;
 }
 
++ (NSImage *)imageRepresentation :(NSView *)viewToImage
+{
+    BOOL wasHidden = viewToImage.isHidden;
+    CGFloat wantedLayer = viewToImage.wantsLayer;
+    
+    viewToImage.hidden = NO;
+    viewToImage.wantsLayer = YES;
+    
+    NSImage *image = [[NSImage alloc] initWithSize:viewToImage.bounds.size];
+    [image lockFocus];
+    CGContextRef ctx = [NSGraphicsContext currentContext].graphicsPort;
+    [viewToImage.layer renderInContext:ctx];
+    [image unlockFocus];
+    
+    viewToImage.wantsLayer = wantedLayer;
+    viewToImage.hidden = wasHidden;
+    
+    return image;
+}
+
 @end

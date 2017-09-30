@@ -22,4 +22,6 @@
 @property (nonatomic, weak) id <PassphraseViewDelegate> delegate;
 @property (weak) IBOutlet NSTextField *phraseLabel;
 
+@property (weak) IBOutlet NSImageView *pasteboardButton;
+
 @end

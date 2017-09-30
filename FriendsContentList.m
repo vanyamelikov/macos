@@ -1,10 +1,3 @@
-//
-//  FriendsContentList.m
-//  XenioUIKit
-//
-//  Created by Сергей Иванов on 26.09.17.
-//  Copyright © 2017 mifsoftware. All rights reserved.
-//
 
 #import "FriendsContentList.h"
 #import "FriendsListModel.h"
@@ -118,7 +111,7 @@
 
 -(NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
     FriendsListModel *model = [dataSourceArray objectAtIndex:row];
-    FriendsContentViewListCell *cell = (FriendsContentViewListCell *)[tableView makeViewWithIdentifier:@"FriendsContentViewListCell" owner:self];
+    FriendsContentViewListCell *cell = (FriendsContentViewListCell *)[tableView makeViewWithIdentifier:@"FriendsContentListViewCell" owner:self];
     //cell.gameNameLabel.stringValue = model.title;
     
     return cell;

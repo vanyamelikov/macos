@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Split View Controller-->
+        <!--Wallet View Controller-->
         <scene sceneID="wWF-aS-hct">
             <objects>
-                <splitViewController storyboardIdentifier="WalletNavigationViewController" id="8Vj-e1-Eni" sceneMemberID="viewController">
+                <splitViewController storyboardIdentifier="WalletViewController" id="8Vj-e1-Eni" customClass="WalletViewController" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem id="E1P-1T-wz4"/>
                         <splitViewItem id="Nua-k1-j9C"/>
@@ -18,8 +18,12 @@
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="qC1-ez-qW9">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <outlet property="delegate" destination="8Vj-e1-Eni" id="wEn-94-hsY"/>
+                        </connections>
                     </splitView>
                     <connections>
+                        <outlet property="splitView" destination="qC1-ez-qW9" id="Om7-qq-oBr"/>
                         <segue destination="fgz-uD-YhY" kind="relationship" relationship="splitItems" id="oVv-gC-MCA"/>
                         <segue destination="dJD-SN-XQd" kind="relationship" relationship="splitItems" id="mfy-co-iPU"/>
                     </connections>
@@ -130,23 +134,23 @@
                                         </userDefinedRuntimeAttributes>
                                     </customView>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hKw-1O-joS">
-                                        <rect key="frame" x="1221" y="892" width="164" height="26"/>
+                                        <rect key="frame" x="1224" y="892" width="158" height="26"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="26" id="9cA-Wd-6fh"/>
                                         </constraints>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Send $99.74 USD?" id="6XR-Z5-KCc">
-                                            <font key="font" size="18" name="SFUIText-Regular"/>
+                                            <font key="font" metaFont="system" size="18"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PUA-Z3-yBM">
-                                        <rect key="frame" x="1124" y="820" width="357" height="46"/>
+                                        <rect key="frame" x="1126" y="820" width="354" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="46" id="PoN-uL-su7"/>
                                         </constraints>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="xdc-Lm-VIW">
-                                            <font key="font" size="13" name="SFUIText-Regular"/>
+                                            <font key="font" metaFont="system"/>
                                             <string key="title">Are you sure you want to send 0.04 BTC ($99.74 USD) to
 13uB2yUBh2fHSX1woN8Ne6dwZ4FvMbXKsw?</string>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -167,12 +171,12 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="67a-PO-lDq">
-                                                    <rect key="frame" x="72" y="32" width="92" height="19"/>
+                                                    <rect key="frame" x="72" y="32" width="90" height="19"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="19" id="pRI-Tb-C0l"/>
                                                     </constraints>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Fast transfer" id="H4h-qo-TGg">
-                                                        <font key="font" size="14" name="SFUIText-Regular"/>
+                                                        <font key="font" metaFont="system" size="14"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
@@ -263,12 +267,12 @@
                                         </constraints>
                                     </customView>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uAr-uG-GJa">
-                                        <rect key="frame" x="1070" y="926" width="465" height="22"/>
+                                        <rect key="frame" x="1082" y="926" width="441" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="pfq-bi-gq4"/>
                                         </constraints>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Select a friend to whom you want to send the transfer" usesSingleLineMode="YES" id="RGG-hn-6u3">
-                                            <font key="font" size="18" name="SFUIText-Regular"/>
+                                            <font key="font" metaFont="system" size="18"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -291,34 +295,34 @@
                                 </constraints>
                             </customView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AeL-4b-GBn">
-                                <rect key="frame" x="24" y="1229" width="63" height="30"/>
+                                <rect key="frame" x="24" y="1229" width="60" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="y4h-xI-lrY"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Wallet" id="AXf-BW-tlr">
-                                    <font key="font" size="20" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="system" size="20"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iFy-ek-Fd7">
-                                <rect key="frame" x="24" y="1179" width="170" height="24"/>
+                                <rect key="frame" x="24" y="1179" width="166" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="wQU-e1-bHE"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Avaliable amount to send" id="jt4-nR-KBo">
-                                    <font key="font" size="14" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="system" size="14"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="j36-3X-5uH">
-                                <rect key="frame" x="28" y="1147" width="142" height="30"/>
+                                <rect key="frame" x="28" y="1147" width="136" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="aEG-4U-mmS"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="13 XNO/2 USD" id="Mfu-vn-3xQ">
-                                    <font key="font" size="20" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="system" size="20"/>
                                     <color key="textColor" red="0.96560126543045044" green="0.78072273731231689" blue="0.34421676397323608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>

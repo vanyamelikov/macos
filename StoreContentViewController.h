@@ -10,7 +10,7 @@
 #import "StoreSideMenu.h"
 #import "LLIButton.h"
 
-@interface StoreContentViewController : NSViewController <NSTabViewDelegate, StoreSideMenuDelegate>
+@interface StoreContentViewController : NSViewController <NSTabViewDelegate, StoreSideMenuDelegate, NSWindowDelegate>
 @property (weak) IBOutlet NSLayoutConstraint *buyXenioButtonConstraint;
 @property (weak) IBOutlet NSTabView *gamesTabController;
 @property (weak) IBOutlet NSTextField *storeCategoriesTitle;

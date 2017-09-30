@@ -12,11 +12,10 @@
 #import "StoreMainGridView.h"
 #import "ImageUtils.h"
 #import "Colours.h"
-
-
+#import "MainWindow.h"
 
 @interface StoreContentViewController ()
-
+@property (nonatomic) StoreMainGridView *storeMainGridView;
 @end
 
 @implementation StoreContentViewController
@@ -33,8 +32,9 @@
     
     StoreGamesView *storeGamesList = [[StoreGamesView alloc] initWithFrame:self.gamesTabController.frame];
     StoreGamesGridView *storeGamesGrid = [[StoreGamesGridView alloc] initWithFrame:self.gamesTabController.frame];
-    StoreMainGridView *storeMainGridView = [[StoreMainGridView alloc] initWithFrame:CGRectMake(self.gamesTabController.frame.origin.x,
+    self.storeMainGridView = [[StoreMainGridView alloc] initWithFrame:CGRectMake(self.gamesTabController.frame.origin.x,
                                                                                                self.gamesTabController.frame.origin.x, 1134, 594)];
+    self.storeMainGridView.layer.autoresizingMask = kCALayerWidthSizable | kCALayerHeightSizable;
     
     NSTabViewItem *item;
     item = [[self gamesTabController] tabViewItemAtIndex:0];
@@ -44,9 +44,12 @@
     [item setView:storeGamesGrid];
     
     item = [[self gamesTabController] tabViewItemAtIndex:2];
-    [item setView:storeMainGridView];
+    [item setView:self.storeMainGridView];
     
     [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:2]];
+    
+    MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
+    mainWindow.delegate = self;
 }
 
 - (IBAction)ChangeToListClick:(NSClickGestureRecognizer *)sender {
@@ -84,6 +87,10 @@
     else
         self.buyXenioButtonConstraint.constant = kShowListGridButtons;
     [self.view updateConstraints];
+}
+
+-(void)windowWillStartLiveResize:(NSNotification *)notification {
+    NSLog(@"Hello = %@", notification.object);
 }
 
 @end

@@ -9,6 +9,10 @@
       "idiom" : "universal",
       "filename" : "img_store_game2@2x.png",
       "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

@@ -22,9 +22,6 @@
     self.tabFriends.delegate = self;
     self.tabLibrary.delegate = self;
     self.tabSettings.delegate = self;
-    self.tabItems1.delegate = self;
-    self.tabItems2.delegate = self;
-    
 }
 
 -(void)tabItemClicked:(NSInteger)viewTag {
@@ -52,14 +49,6 @@
         case 4:
             dx = self.tabSettings.frame.origin.x - self.viewToMove.frame.origin.x+112;
             w = self.tabSettings.frame.size.width;
-            break;
-        case 5:
-            dx = self.tabItems1.frame.origin.x - self.viewToMove.frame.origin.x+112;
-            w = self.tabItems1.frame.size.width;
-            break;
-        case 6:
-            dx = self.tabItems2.frame.origin.x - self.viewToMove.frame.origin.x+112;
-            w = self.tabItems2.frame.size.width;
             break;
         default:
             dx = 0;

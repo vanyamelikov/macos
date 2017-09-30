@@ -12,4 +12,5 @@
 
 @interface ImageUtils : NSObject
 + (NSImage *)imageTintedWithColor:(NSColor *)tint : (NSImage *)imageToRedraw;
++ (NSImage *)imageRepresentation :(NSView *)viewToImage;
 @end

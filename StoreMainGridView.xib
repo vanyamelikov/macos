@@ -26,7 +26,7 @@
             <rect key="frame" x="0.0" y="0.0" width="1134" height="594"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Owu-5g-M0W">
+                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="Owu-5g-M0W">
                     <rect key="frame" x="0.0" y="0.0" width="202" height="202"/>
                     <view key="contentView" id="vCb-Z5-stC">
                         <rect key="frame" x="0.0" y="0.0" width="202" height="202"/>
@@ -50,7 +50,7 @@
                     </constraints>
                     <color key="fillColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </box>
-                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="rNJ-LR-3mk">
+                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="rNJ-LR-3mk">
                     <rect key="frame" x="202" y="0.0" width="202" height="202"/>
                     <view key="contentView" id="r3i-Lv-8MF">
                         <rect key="frame" x="0.0" y="0.0" width="202" height="202"/>
@@ -74,7 +74,7 @@
                     </constraints>
                     <color key="fillColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </box>
-                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="ydV-jJ-5Dg">
+                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="ydV-jJ-5Dg">
                     <rect key="frame" x="404" y="0.0" width="202" height="202"/>
                     <view key="contentView" id="Xcq-pG-OfE">
                         <rect key="frame" x="0.0" y="0.0" width="202" height="202"/>
@@ -98,7 +98,7 @@
                     </constraints>
                     <color key="fillColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </box>
-                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="hxb-tf-1sf">
+                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="hxb-tf-1sf">
                     <rect key="frame" x="606" y="0.0" width="528" height="202"/>
                     <view key="contentView" id="xB5-fK-8lI">
                         <rect key="frame" x="0.0" y="0.0" width="528" height="202"/>
@@ -122,7 +122,7 @@
                     </constraints>
                     <color key="fillColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </box>
-                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="sfc-eT-cDj">
+                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="sfc-eT-cDj">
                     <rect key="frame" x="0.0" y="202" width="742" height="392"/>
                     <view key="contentView" id="itc-uu-ZaL">
                         <rect key="frame" x="0.0" y="0.0" width="742" height="392"/>
@@ -146,7 +146,7 @@
                     </constraints>
                     <color key="fillColor" red="0.0" green="0.72941176470000002" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                 </box>
-                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="oEZ-Vk-YfB">
+                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="oEZ-Vk-YfB">
                     <rect key="frame" x="742" y="202" width="202" height="202"/>
                     <view key="contentView" id="srq-a7-qTz">
                         <rect key="frame" x="0.0" y="0.0" width="202" height="202"/>
@@ -170,7 +170,7 @@
                     </constraints>
                     <color key="fillColor" red="0.0" green="0.72941176470000002" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                 </box>
-                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="lqz-Oe-Fba">
+                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="lqz-Oe-Fba">
                     <rect key="frame" x="944" y="202" width="190" height="202"/>
                     <view key="contentView" id="FYR-V8-EJh">
                         <rect key="frame" x="0.0" y="0.0" width="190" height="202"/>
@@ -194,7 +194,7 @@
                     </constraints>
                     <color key="fillColor" red="0.0" green="0.72941176470000002" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                 </box>
-                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="aUi-Gy-2iy">
+                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="aUi-Gy-2iy">
                     <rect key="frame" x="742" y="404" width="202" height="190"/>
                     <view key="contentView" id="keI-U3-O1T">
                         <rect key="frame" x="0.0" y="0.0" width="202" height="190"/>
@@ -218,7 +218,7 @@
                     </constraints>
                     <color key="fillColor" red="0.0" green="0.72941176470000002" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                 </box>
-                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="9GX-A9-OOX">
+                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="9GX-A9-OOX">
                     <rect key="frame" x="944" y="404" width="190" height="190"/>
                     <view key="contentView" id="3zw-a3-veU">
                         <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>

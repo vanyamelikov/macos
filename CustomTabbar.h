@@ -24,8 +24,6 @@
 @property (strong) IBOutlet TabItemView *tabWallet;
 @property (strong) IBOutlet TabItemView *tabFriends;
 @property (strong) IBOutlet TabItemView *tabSettings;
-@property (strong) IBOutlet TabItemView *tabItems1;
-@property (strong) IBOutlet TabItemView *tabItems2;
 @property (strong) IBOutlet NSImageView *lightLayerIV;
 
 @property (nonatomic) NSInteger selectedTab;

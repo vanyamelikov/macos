@@ -10,6 +10,7 @@
 #import "CustomTabbar.h"
 
 @interface MainTabViewController : NSViewController <CustomTabbarDelegate, NSTabViewDelegate>
+
 @property (strong) IBOutlet NSTabView *mainTabView;
 @property (strong) IBOutlet CustomTabbar *mainTabBar;
 @property (weak) IBOutlet NSLayoutConstraint *bottomTabViewSpace;

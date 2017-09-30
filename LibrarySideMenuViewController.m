@@ -7,6 +7,7 @@
 //
 
 #import "LibrarySideMenuViewController.h"
+#import "LibrarySideMenu.h"
 
 @interface LibrarySideMenuViewController ()
 
@@ -16,7 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
+    NSSplitViewController *splitViewController = (NSSplitViewController *)self.parentViewController;
+    LibraryContentViewController *contentVC = (LibraryContentViewController *)[[splitViewController splitViewItems] objectAtIndex:1].viewController;
+    contentVC.addGameDelegate = self;
+}
+
+-(void)libraryEmtyAddGameClick {
+    LibrarySideMenu *sideMenu = [[LibrarySideMenu alloc] initWithFrame:self.view.frame];
+    self.view.subviews[0].hidden = YES;
+    [self.view addSubview:sideMenu positioned:NSWindowAbove relativeTo:self.view.subviews[0]];
 }
 
 @end
