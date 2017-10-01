@@ -34,6 +34,8 @@
 		31972D741F7D1755008447C2 /* LibraryEmptySideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 31972D731F7D1755008447C2 /* LibraryEmptySideMenu.m */; };
 		31972D771F7D96CA008447C2 /* TextFieldWithTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 31972D761F7D96CA008447C2 /* TextFieldWithTag.m */; };
 		31B07EC81F80A21200B6BCCA /* SettingsFriendsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07EC71F80A21200B6BCCA /* SettingsFriendsListModel.m */; };
+		31B07ECD1F80ACCB00B6BCCA /* CustomSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07ECB1F80ACCB00B6BCCA /* CustomSearchBar.m */; };
+		31B07ECE1F80ACCB00B6BCCA /* CustomSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B07ECC1F80ACCB00B6BCCA /* CustomSearchBar.xib */; };
 		31B593BB1F7C14CF00D5B5FC /* FreeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */; };
 		31B593C11F7C15D400D5B5FC /* FreeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B593C01F7C15D400D5B5FC /* FreeButton.m */; };
 		31B593C31F7C194B00D5B5FC /* StoreTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593C21F7C194B00D5B5FC /* StoreTabView.xib */; };
@@ -310,6 +312,9 @@
 		31972D761F7D96CA008447C2 /* TextFieldWithTag.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldWithTag.m; sourceTree = "<group>"; };
 		31B07EC61F80A21200B6BCCA /* SettingsFriendsListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsFriendsListModel.h; sourceTree = "<group>"; };
 		31B07EC71F80A21200B6BCCA /* SettingsFriendsListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsFriendsListModel.m; sourceTree = "<group>"; };
+		31B07ECA1F80ACCA00B6BCCA /* CustomSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomSearchBar.h; path = CustomSearchBar/CustomSearchBar.h; sourceTree = "<group>"; };
+		31B07ECB1F80ACCB00B6BCCA /* CustomSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomSearchBar.m; path = CustomSearchBar/CustomSearchBar.m; sourceTree = "<group>"; };
+		31B07ECC1F80ACCB00B6BCCA /* CustomSearchBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomSearchBar.xib; path = CustomSearchBar/CustomSearchBar.xib; sourceTree = "<group>"; };
 		31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreeButton.xib; sourceTree = "<group>"; };
 		31B593BF1F7C15D400D5B5FC /* FreeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeButton.h; sourceTree = "<group>"; };
 		31B593C01F7C15D400D5B5FC /* FreeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeButton.m; sourceTree = "<group>"; };
@@ -731,6 +736,16 @@
 				31972D6B1F7CB9FC008447C2 /* RMBluredView.m */,
 			);
 			name = VisualEffects;
+			sourceTree = "<group>";
+		};
+		31B07EC91F80AC9F00B6BCCA /* CustomSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				31B07ECA1F80ACCA00B6BCCA /* CustomSearchBar.h */,
+				31B07ECB1F80ACCB00B6BCCA /* CustomSearchBar.m */,
+				31B07ECC1F80ACCB00B6BCCA /* CustomSearchBar.xib */,
+			);
+			name = CustomSearchBar;
 			sourceTree = "<group>";
 		};
 		31DAB2F21F7DFB9A006E326E /* Popover */ = {
@@ -1430,6 +1445,7 @@
 		3ECF3CAF1F686883005165E5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				31B07EC91F80AC9F00B6BCCA /* CustomSearchBar */,
 				3151CC7A1F7F22CC00B3D3C3 /* Modal */,
 				31DAB2F21F7DFB9A006E326E /* Popover */,
 				31972D691F7CB9C9008447C2 /* VisualEffects */,
@@ -1694,6 +1710,7 @@
 				3151CC831F7F23A500B3D3C3 /* WalletAddressModalView.xib in Resources */,
 				3E558C0B1F7AE2F500542B7B /* FriendsContentList.xib in Resources */,
 				3E8876521F74ABB2001B8374 /* FriendsRightListCell.xib in Resources */,
+				31B07ECE1F80ACCB00B6BCCA /* CustomSearchBar.xib in Resources */,
 				315947181F7C6B190073FA52 /* StoreGameInfoView.xib in Resources */,
 				3E88763B1F749462001B8374 /* FriendsContentViewListCell.xib in Resources */,
 				3E8876081F7418AA001B8374 /* LibraryGamesRightMenuView.xib in Resources */,
@@ -1920,6 +1937,7 @@
 				315947061F7C51F40073FA52 /* BackgoundView.m in Sources */,
 				3E6FE80A1F78767C00B98AD3 /* PrivateKeyButton.m in Sources */,
 				3E8876221F744082001B8374 /* StoreDownloadsCell.m in Sources */,
+				31B07ECD1F80ACCB00B6BCCA /* CustomSearchBar.m in Sources */,
 				3EBAADDE1F759A0D00890AD1 /* StoreSideMenuModel.m in Sources */,
 				3EBAADFF1F760DA700890AD1 /* WalletSideMenu.m in Sources */,
 				3E88766A1F7546A7001B8374 /* LibrarySideMenuModel.m in Sources */,

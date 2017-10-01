@@ -65,21 +65,23 @@
     
     MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
     mainWindow.delegate = self;
+    
+    self.gamesTabController.delegate = self;
 }
 
 - (IBAction)ChangeToListClick:(NSClickGestureRecognizer *)sender {
     if(![self.gamesTabController.selectedTabViewItem isEqual:[self.gamesTabController.tabViewItems objectAtIndex:0]]) {
         [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:0]];
-        self.listImageView.image = [ImageUtils imageTintedWithColor:[NSColor colorFromHexString:@"#69a2a9c1"] : self.listImageView.image];
-        self.gridImageView.image = [ImageUtils imageTintedWithColor:[NSColor whiteColor] : self.gridImageView.image];
+        self.listImageView.image = [ImageUtils imageTintedWithColor:[NSColor whiteColor] : self.listImageView.image];
+        self.gridImageView.image = [ImageUtils imageTintedWithColor:[NSColor colorFromHexString:@"#69a2a9c1"] : self.gridImageView.image];
     }
 }
 
 - (IBAction)ChangeToGridClick:(NSClickGestureRecognizer *)sender {
     if(![self.gamesTabController.selectedTabViewItem isEqual:[self.gamesTabController.tabViewItems objectAtIndex:1]]) {
         [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:1]];
-        self.listImageView.image = [ImageUtils imageTintedWithColor:[NSColor whiteColor] : self.listImageView.image];
-        self.gridImageView.image = [ImageUtils imageTintedWithColor:[NSColor colorFromHexString:@"#69a2a9c1"] : self.gridImageView.image];
+        self.listImageView.image = [ImageUtils imageTintedWithColor:[NSColor colorFromHexString:@"#69a2a9c1"] : self.listImageView.image];
+        self.gridImageView.image = [ImageUtils imageTintedWithColor:[NSColor whiteColor] : self.gridImageView.image];
     }
 }
 
@@ -104,32 +106,6 @@
     [self.view updateConstraints];
 }
 
-//-(void)windowDidResize:(NSNotification *)notification {
-//    [self.storeMainGridView setWantsBestResolutionOpenGLSurface:YES];
-//    [self.storeMainGridView setWantsLayer:YES];
-//    NSSize defaultSize = NSMakeSize(1134, 594);
-//    NSSize currentSize = self.gamesTabController.frame.size;
-//
-//    CGFloat liveW = currentSize.width / defaultSize.width;
-//    CGFloat liveH = currentSize.height / defaultSize.height;
-//
-//    self.storeMainGridView.translatesAutoresizingMaskIntoConstraints = YES;
-//    self.view.translatesAutoresizingMaskIntoConstraints = YES;
-//    self.gamesTabController.translatesAutoresizingMaskIntoConstraints = YES;
-//
-//    [NSAnimationContext beginGrouping];
-//    [[NSAnimationContext currentContext] setDuration:0.5];
-//    self.storeMainGridView.animator.frame = CGRectMake(self.gamesTabController.frame.origin.x,
-//                                                       self.gamesTabController.frame.origin.y,
-//                                                       defaultSize.width * liveW,
-//                                                       defaultSize.height * liveH);
-//    self.storeMainGridView.translatesAutoresizingMaskIntoConstraints = YES;
-//    self.view.translatesAutoresizingMaskIntoConstraints = YES;
-//    [self.view setNeedsDisplay:YES];
-//    [self.gamesTabController setNeedsDisplay:YES];
-//    [NSAnimationContext endGrouping];
-//}
-
 -(void)windowWillStartLiveResize:(NSNotification *)notification {
     if(self.gamesTabController.inLiveResize) {
         NSLog(@"Resize: %@", notification.object);
@@ -138,6 +114,15 @@
         [self.view setNeedsUpdateConstraints:YES];
         [self.view setNeedsDisplay:YES];
     }
+}
+
+-(void)tabView:(NSTabView *)tabView willSelectTabViewItem:(NSTabViewItem *)tabViewItem {
+    if([tabViewItem isEqual:[self.gamesTabController.tabViewItems objectAtIndex:2]]) {
+        self.gamesTabViewBottomConstraint.constant = 20;
+    } else {
+        self.gamesTabViewBottomConstraint.constant = 0;
+    }
+    [self.gamesTabController setNeedsUpdateConstraints:YES];
 }
 
 @end

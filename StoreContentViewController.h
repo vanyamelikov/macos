@@ -17,4 +17,6 @@
 @property (weak) IBOutlet NSImageView *listImageView;
 @property (weak) IBOutlet NSImageView *gridImageView;
 @property (weak) IBOutlet LLIButton *buyXenioButton;
+@property (weak) IBOutlet NSLayoutConstraint *gamesTabViewBottomConstraint;
+
 @end
