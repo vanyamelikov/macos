@@ -36,6 +36,11 @@
 		31B593BB1F7C14CF00D5B5FC /* FreeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */; };
 		31B593C11F7C15D400D5B5FC /* FreeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B593C01F7C15D400D5B5FC /* FreeButton.m */; };
 		31B593C31F7C194B00D5B5FC /* StoreTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593C21F7C194B00D5B5FC /* StoreTabView.xib */; };
+		31B8EB8E1F7FD75500962504 /* StoreMainGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B8EB8D1F7FD75500962504 /* StoreMainGridViewController.xib */; };
+		31B8EB921F7FD82500962504 /* StoreMainGamesGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B8EB901F7FD82500962504 /* StoreMainGamesGridViewController.m */; };
+		31B8EB931F7FD82500962504 /* StoreMainGamesGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B8EB911F7FD82500962504 /* StoreMainGamesGridViewController.xib */; };
+		31B8EB951F80433800962504 /* ChooseFriendButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B8EB941F80433800962504 /* ChooseFriendButton.xib */; };
+		31B8EB981F80437400962504 /* ChooseFriendButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B8EB971F80437400962504 /* ChooseFriendButton.m */; };
 		31DAB2F51F7DFBB7006E326E /* NSPopover+MISSINGBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DAB2F41F7DFBB7006E326E /* NSPopover+MISSINGBackgroundView.m */; };
 		31E4F72B1F7E9DEA0047B843 /* BuyGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31E4F7281F7E9DEA0047B843 /* BuyGame.storyboard */; };
 		31E4F72C1F7E9DEA0047B843 /* BuyGamePaymentMethodView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31E4F7291F7E9DEA0047B843 /* BuyGamePaymentMethodView.xib */; };
@@ -306,6 +311,13 @@
 		31B593BF1F7C15D400D5B5FC /* FreeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeButton.h; sourceTree = "<group>"; };
 		31B593C01F7C15D400D5B5FC /* FreeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeButton.m; sourceTree = "<group>"; };
 		31B593C21F7C194B00D5B5FC /* StoreTabView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreTabView.xib; sourceTree = "<group>"; };
+		31B8EB8D1F7FD75500962504 /* StoreMainGridViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreMainGridViewController.xib; sourceTree = "<group>"; };
+		31B8EB8F1F7FD82500962504 /* StoreMainGamesGridViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreMainGamesGridViewController.h; sourceTree = "<group>"; };
+		31B8EB901F7FD82500962504 /* StoreMainGamesGridViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreMainGamesGridViewController.m; sourceTree = "<group>"; };
+		31B8EB911F7FD82500962504 /* StoreMainGamesGridViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreMainGamesGridViewController.xib; sourceTree = "<group>"; };
+		31B8EB941F80433800962504 /* ChooseFriendButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseFriendButton.xib; sourceTree = "<group>"; };
+		31B8EB961F80437400962504 /* ChooseFriendButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseFriendButton.h; sourceTree = "<group>"; };
+		31B8EB971F80437400962504 /* ChooseFriendButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseFriendButton.m; sourceTree = "<group>"; };
 		31DAB2F31F7DFBB7006E326E /* NSPopover+MISSINGBackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSPopover+MISSINGBackgroundView.h"; sourceTree = "<group>"; };
 		31DAB2F41F7DFBB7006E326E /* NSPopover+MISSINGBackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSPopover+MISSINGBackgroundView.m"; sourceTree = "<group>"; };
 		31E4F7281F7E9DEA0047B843 /* BuyGame.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BuyGame.storyboard; path = "BuyGameMainQRСode/BuyGame.storyboard"; sourceTree = "<group>"; };
@@ -939,6 +951,10 @@
 				3E558BF81F79D51000542B7B /* StoreMainGridView.h */,
 				3E558BF91F79D51000542B7B /* StoreMainGridView.m */,
 				3E558BFB1F79D53200542B7B /* StoreMainGridView.xib */,
+				31B8EB8D1F7FD75500962504 /* StoreMainGridViewController.xib */,
+				31B8EB8F1F7FD82500962504 /* StoreMainGamesGridViewController.h */,
+				31B8EB901F7FD82500962504 /* StoreMainGamesGridViewController.m */,
+				31B8EB911F7FD82500962504 /* StoreMainGamesGridViewController.xib */,
 			);
 			name = Store;
 			sourceTree = "<group>";
@@ -1485,6 +1501,8 @@
 				3E558BC61F79558100542B7B /* ProfileEditButton.m */,
 				31B593BF1F7C15D400D5B5FC /* FreeButton.h */,
 				31B593C01F7C15D400D5B5FC /* FreeButton.m */,
+				31B8EB961F80437400962504 /* ChooseFriendButton.h */,
+				31B8EB971F80437400962504 /* ChooseFriendButton.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1515,6 +1533,7 @@
 				3E558BB81F794A9200542B7B /* AddGame.xib */,
 				3E558BC31F79549200542B7B /* ProfileEditButton.xib */,
 				31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */,
+				31B8EB941F80433800962504 /* ChooseFriendButton.xib */,
 			);
 			name = Buttons;
 			sourceTree = "<group>";
@@ -1695,17 +1714,20 @@
 				3159471D1F7C6B190073FA52 /* StoreGameSideListHeaderCell.xib in Resources */,
 				3E7230BA1F734B5F0050A70D /* LibrarySideMenu.xib in Resources */,
 				3E558BC91F796D3400542B7B /* SettingsNavigationListView.xib in Resources */,
+				31B8EB931F7FD82500962504 /* StoreMainGamesGridViewController.xib in Resources */,
 				31E4F7481F7E9E5E0047B843 /* PaymentInformationTotalCell.xib in Resources */,
 				3E9C46051F7048DE00693AA1 /* Store.storyboard in Resources */,
 				3E7230B41F734ABB0050A70D /* StoreGamesView.xib in Resources */,
 				3E558BC41F79549200542B7B /* ProfileEditButton.xib in Resources */,
 				31E4F74B1F7E9E5E0047B843 /* PaymentInformationView.xib in Resources */,
 				3E7230C41F734C0F0050A70D /* SendView.xib in Resources */,
+				31B8EB8E1F7FD75500962504 /* StoreMainGridViewController.xib in Resources */,
 				3ECF3CF01F6978DA005165E5 /* SaveSettingsButton.xib in Resources */,
 				3E8EEF731F6DB3440034BE04 /* CustomHeaderCell.xib in Resources */,
 				31E4F7451F7E9E5E0047B843 /* PaymentInfoChekboxCell.xib in Resources */,
 				31972D711F7D1582008447C2 /* LibraryEmptySideMenu.xib in Resources */,
 				3E558BD11F796E7B00542B7B /* SettingsSideListCell.xib in Resources */,
+				31B8EB951F80433800962504 /* ChooseFriendButton.xib in Resources */,
 				3E88761A1F7428DA001B8374 /* WalletHistoryCell.xib in Resources */,
 				3151CC851F7F23A500B3D3C3 /* FriendProfileModalView.xib in Resources */,
 				3E7230DF1F7351820050A70D /* Friends.storyboard in Resources */,
@@ -1853,6 +1875,7 @@
 				3E558C181F7AE79700542B7B /* FriendsNavigationController.m in Sources */,
 				3E3E42001F757D0D009698FD /* LibraryGamesServersListView.m in Sources */,
 				315947191F7C6B190073FA52 /* StoreGameInfoView.m in Sources */,
+				31B8EB921F7FD82500962504 /* StoreMainGamesGridViewController.m in Sources */,
 				3E7230DD1F7350940050A70D /* NSView+INSNibLoading.m in Sources */,
 				3EBAADE11F75A34900890AD1 /* StoreGamesView.m in Sources */,
 				3E8876271F745460001B8374 /* StoreGamesCell.m in Sources */,
@@ -1927,6 +1950,7 @@
 				31E4F7441F7E9E5E0047B843 /* PaymentInformationGameCell.m in Sources */,
 				3E8EEF5F1F6D7BA40034BE04 /* CustomTableCellView.m in Sources */,
 				3E8876431F7498A8001B8374 /* PlayerStatusView.m in Sources */,
+				31B8EB981F80437400962504 /* ChooseFriendButton.m in Sources */,
 				3E3E42031F757D72009698FD /* LibraryGamesServerListModel.m in Sources */,
 				3E88763E1F749720001B8374 /* FriendsContentViewListCell.m in Sources */,
 				3ECF3CEE1F6978C3005165E5 /* SaveSettingsButton.m in Sources */,

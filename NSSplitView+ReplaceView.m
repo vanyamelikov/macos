@@ -20,22 +20,29 @@
     
     //Set Up Animations
     NSView *currentView = self.subviews[index];
+    [self setWantsLayer:YES];
     [currentView setWantsLayer:YES];
     [newView setWantsLayer:YES];
     [currentView setLayerContentsRedrawPolicy:NSViewLayerContentsRedrawOnSetNeedsDisplay];
     [newView setLayerContentsRedrawPolicy:NSViewLayerContentsRedrawOnSetNeedsDisplay];
     
+    [self setNeedsDisplay:YES];
+    [currentView setNeedsDisplay:YES];
+    [newView setNeedsDisplay:YES];
+    
     // Move it into place
-    [[self animator] replaceSubview:self.subviews[index] with:newView];
-}
-
-- (CATransition *)slideAnimation
-{
-    CATransition *transition = [CATransition animation];
-    [transition setDuration:3.0f];
-    [transition setType:kCATransitionMoveIn];
-    [transition setSubtype:kCATransitionFromRight];
-    return transition;
+    currentView.alphaValue = 1.0f;
+    newView.alphaValue = 0.0f;
+    [NSAnimationContext runAnimationGroup:^(NSAnimationContext * _Nonnull context) {
+        context.duration = 3.0f;
+        context.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+        [currentView.animator setAlphaValue:0.0f];
+        [[self animator] replaceSubview:self.subviews[index] with:newView];
+        [newView.animator setAlphaValue:1.0f];
+    } completionHandler:^{
+        currentView.alphaValue = 1.0f;
+        newView.alphaValue = 1.0f;
+    }];
 }
 
 @end

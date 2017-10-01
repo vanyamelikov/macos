@@ -19,9 +19,9 @@
 @property (strong) IBOutlet WalletHistoryView *walletHistoryView;
 @property (strong) IBOutlet NSView *firstSendMoneyView;
 @property (strong) IBOutlet NSView *chooseFriendView;
-@property (strong) IBOutlet NSView *firstInput;
-@property (strong) IBOutlet NSBox *friendImageBox;
+//@property (strong) IBOutlet NSBox *friendImageBox;
 @property (strong) IBOutlet NSImageView *friendImage;
 @property (strong) IBOutlet SendMoneyButton *sendMoneyButton;
+@property (weak) IBOutlet NSImageView *userpicImage;
 
 @end

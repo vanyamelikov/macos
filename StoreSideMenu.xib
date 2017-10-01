@@ -15,23 +15,23 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView canDrawConcurrently="YES" id="JWM-EK-u5m">
-            <rect key="frame" x="0.0" y="0.0" width="408" height="737"/>
+            <rect key="frame" x="0.0" y="0.0" width="408" height="747"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <box canDrawConcurrently="YES" boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Wq0-9c-AxB">
-                    <rect key="frame" x="0.0" y="0.0" width="409" height="737"/>
+                    <rect key="frame" x="0.0" y="0.0" width="409" height="747"/>
                     <view key="contentView" id="4gz-do-svH">
-                        <rect key="frame" x="0.0" y="0.0" width="409" height="737"/>
+                        <rect key="frame" x="0.0" y="0.0" width="409" height="747"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="47" horizontalPageScroll="10" verticalLineScroll="47" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAr-th-hwK">
-                                <rect key="frame" x="0.0" y="0.0" width="409" height="737"/>
+                                <rect key="frame" x="0.0" y="0.0" width="409" height="747"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="IbD-Ep-tdD">
-                                    <rect key="frame" x="0.0" y="0.0" width="409" height="737"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="409" height="747"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="none" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="45" rowSizeStyle="automatic" viewBased="YES" floatsGroupRows="NO" id="E5Q-BQ-Y70">
-                                            <rect key="frame" x="0.0" y="0.0" width="409" height="737"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="409" height="747"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -82,7 +82,7 @@
                             <constraint firstItem="mAr-th-hwK" firstAttribute="top" secondItem="4gz-do-svH" secondAttribute="top" id="u6W-ED-d9g"/>
                         </constraints>
                     </view>
-                    <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="0.95361477446483178" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.08235294118" green="0.094117647060000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                 </box>
             </subviews>
             <constraints>

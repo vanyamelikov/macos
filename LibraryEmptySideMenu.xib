@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LibraryEmptySideMenu">
+            <connections>
+                <outlet property="addGameButton" destination="m0g-Oi-7OJ" id="mKi-la-cpn"/>
+                <outlet property="backgroundBox" destination="Pm9-1a-tkB" id="3tT-vy-uxM"/>
+                <outlet property="tableView" destination="Og7-93-aIF" id="b59-rH-qNb"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="255" height="536"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Pm9-1a-tkB">
+                    <rect key="frame" x="0.0" y="0.0" width="255" height="536"/>
+                    <view key="contentView" id="eOS-A6-oBW">
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="98" horizontalPageScroll="10" verticalLineScroll="98" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="7QH-Mc-5T0">
+                                <rect key="frame" x="0.0" y="76" width="255" height="460"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="N5m-1r-POl">
+                                    <rect key="frame" x="0.0" y="0.0" width="255" height="460"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="96" rowSizeStyle="automatic" viewBased="YES" id="Og7-93-aIF">
+                                            <rect key="frame" x="0.0" y="0.0" width="255" height="460"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <size key="intercellSpacing" width="3" height="2"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="gridColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <tableColumns>
+                                                <tableColumn identifier="" width="252" minWidth="10" maxWidth="3.4028234663852886e+38" id="dH1-HM-j3R">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="dfF-h8-Eio">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <prototypeCellViews>
+                                                        <customView identifier="StoreSideMenuCell" id="6Xr-Mc-WEi" customClass="StoreSideMenuCell">
+                                                            <rect key="frame" x="1" y="1" width="252" height="96"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        </customView>
+                                                        <customView identifier="StoreSideMenuHeaderCell" id="oHA-tz-NUc" customClass="StoreSideMenuHeaderCell">
+                                                            <rect key="frame" x="1" y="99" width="252" height="96"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        </customView>
+                                                    </prototypeCellViews>
+                                                </tableColumn>
+                                            </tableColumns>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="A91-6N-H9k">
+                                    <rect key="frame" x="-100" y="-100" width="223" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="fhC-EP-ik3">
+                                    <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="dL4-kr-0aB">
+                                <rect key="frame" x="0.0" y="0.0" width="255" height="76"/>
+                                <view key="contentView" id="O8t-P0-Px1">
+                                    <rect key="frame" x="0.0" y="0.0" width="255" height="76"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="m0g-Oi-7OJ" customClass="AddGame">
+                                            <rect key="frame" x="20" y="33" width="90" height="10"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="10" id="Pex-5I-QpD"/>
+                                                <constraint firstAttribute="width" constant="90" id="xLd-8U-sxA"/>
+                                            </constraints>
+                                        </customView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="m0g-Oi-7OJ" firstAttribute="centerY" secondItem="O8t-P0-Px1" secondAttribute="centerY" id="WIH-o3-UtF"/>
+                                        <constraint firstItem="m0g-Oi-7OJ" firstAttribute="leading" secondItem="O8t-P0-Px1" secondAttribute="leading" constant="20" id="adh-ri-1BW"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="6yc-gm-yb9"/>
+                                </constraints>
+                            </box>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="OaU-JX-oJ0">
+                                <rect key="frame" x="0.0" y="76" width="255" height="1"/>
+                                <view key="contentView" id="1Ot-ks-vpz">
+                                    <rect key="frame" x="0.0" y="0.0" width="255" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="lK6-6W-RCA"/>
+                                </constraints>
+                                <color key="borderColor" red="1" green="1" blue="1" alpha="0.037994552752293562" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="fillColor" red="1" green="1" blue="1" alpha="0.040730122324159006" colorSpace="custom" customColorSpace="sRGB"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dL4-kr-0aB" secondAttribute="bottom" id="CDO-rT-Em5"/>
+                            <constraint firstItem="dL4-kr-0aB" firstAttribute="top" secondItem="7QH-Mc-5T0" secondAttribute="bottom" id="Co9-Fh-phb"/>
+                            <constraint firstItem="OaU-JX-oJ0" firstAttribute="leading" secondItem="eOS-A6-oBW" secondAttribute="leading" id="NAy-wW-R3c"/>
+                            <constraint firstAttribute="trailing" secondItem="7QH-Mc-5T0" secondAttribute="trailing" id="NVG-D4-3uL"/>
+                            <constraint firstItem="dL4-kr-0aB" firstAttribute="leading" secondItem="eOS-A6-oBW" secondAttribute="leading" id="R0D-HL-y6p"/>
+                            <constraint firstItem="7QH-Mc-5T0" firstAttribute="leading" secondItem="eOS-A6-oBW" secondAttribute="leading" id="Yh7-xc-ASF"/>
+                            <constraint firstAttribute="trailing" secondItem="OaU-JX-oJ0" secondAttribute="trailing" id="heF-lk-oij"/>
+                            <constraint firstItem="dL4-kr-0aB" firstAttribute="top" secondItem="OaU-JX-oJ0" secondAttribute="bottom" id="kjc-IW-H5Z"/>
+                            <constraint firstItem="7QH-Mc-5T0" firstAttribute="top" secondItem="eOS-A6-oBW" secondAttribute="top" id="or4-m3-n6b"/>
+                            <constraint firstAttribute="trailing" secondItem="dL4-kr-0aB" secondAttribute="trailing" id="tZ8-i4-0TX"/>
+                        </constraints>
+                    </view>
+                    <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Pm9-1a-tkB" secondAttribute="bottom" id="56H-i8-qKv"/>
+                <constraint firstItem="Pm9-1a-tkB" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="Jl9-lB-dGO"/>
+                <constraint firstAttribute="trailing" secondItem="Pm9-1a-tkB" secondAttribute="trailing" id="QR1-hk-Xqa"/>
+                <constraint firstItem="Pm9-1a-tkB" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="SDS-Bg-z4f"/>
+            </constraints>
+            <point key="canvasLocation" x="72.5" y="300"/>
+        </customView>
+    </objects>
+</document>

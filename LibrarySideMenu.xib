@@ -32,7 +32,7 @@
                             </customView>
                             <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="32" horizontalPageScroll="10" verticalLineScroll="32" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="N18-sV-3ph">
                                 <rect key="frame" x="0.0" y="77" width="378" height="753"/>
-                                <clipView key="contentView" copiesOnScroll="NO" id="YQ8-JQ-8xD">
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="YQ8-JQ-8xD">
                                     <rect key="frame" x="0.0" y="0.0" width="378" height="753"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -40,7 +40,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="378" height="753"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
-                                            <color key="backgroundColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
                                                 <tableColumn identifier="LibrarySideMenuColumn" width="375" minWidth="40" maxWidth="1000" id="UcP-UC-cXr">
@@ -65,6 +65,7 @@
                                             </tableColumns>
                                         </tableView>
                                     </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.038940653669999999" colorSpace="calibratedRGB"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="O5v-r3-AJL">
                                     <rect key="frame" x="-100" y="-100" width="223" height="15"/>
@@ -94,6 +95,8 @@
                                         <constraint firstItem="9Yo-SM-o1P" firstAttribute="leading" secondItem="bBh-Rd-4sb" secondAttribute="leading" constant="20" id="rrR-fA-kSU"/>
                                     </constraints>
                                 </view>
+                                <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="fillColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                             </box>
                             <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="I1X-c0-qfN">
                                 <rect key="frame" x="0.0" y="76" width="378" height="1"/>
@@ -125,8 +128,8 @@
                             <constraint firstItem="t2y-fN-0Mi" firstAttribute="leading" secondItem="ciu-6s-rFg" secondAttribute="leading" id="q65-Hp-emT"/>
                         </constraints>
                     </view>
-                    <color key="borderColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="0.89769686544342508" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="borderColor" red="0.08235294118" green="0.094117647060000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" red="0.08235294118" green="0.094117647060000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                 </box>
             </subviews>
             <constraints>

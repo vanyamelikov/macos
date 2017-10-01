@@ -23,6 +23,9 @@
 #define kShowListGridButtons 108.0f
 #define kHideListGridButtons 26.0f
 
+//1134,
+//594)
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -32,9 +35,21 @@
     
     StoreGamesView *storeGamesList = [[StoreGamesView alloc] initWithFrame:self.gamesTabController.frame];
     StoreGamesGridView *storeGamesGrid = [[StoreGamesGridView alloc] initWithFrame:self.gamesTabController.frame];
+    NSLog(@"X is = %f", self.gamesTabController.frame.origin.x);
+    NSLog(@"Y is = %f", self.gamesTabController.frame.origin.x);
+    NSLog(@"W is = %f", self.gamesTabController.frame.size.width);
+    NSLog(@"H is = %f", self.gamesTabController.frame.size.height);
     self.storeMainGridView = [[StoreMainGridView alloc] initWithFrame:CGRectMake(self.gamesTabController.frame.origin.x,
-                                                                                               self.gamesTabController.frame.origin.x, 1134, 594)];
-    self.storeMainGridView.layer.autoresizingMask = kCALayerWidthSizable | kCALayerHeightSizable;
+                                                                                 self.gamesTabController.frame.origin.x,
+                                                                                 1134,
+                                                                                 594)];
+    
+    [self.storeMainGridView setWantsLayer:YES];
+    [self.gamesTabController.layer setMasksToBounds:YES];
+    [self.storeMainGridView.layer setContentsGravity:kCAGravityResizeAspect];
+    
+    [self.storeMainGridView setWantsBestResolutionOpenGLSurface:YES];
+    [self.storeMainGridView setAutoresizesSubviews:YES];
     
     NSTabViewItem *item;
     item = [[self gamesTabController] tabViewItemAtIndex:0];
@@ -89,8 +104,40 @@
     [self.view updateConstraints];
 }
 
+//-(void)windowDidResize:(NSNotification *)notification {
+//    [self.storeMainGridView setWantsBestResolutionOpenGLSurface:YES];
+//    [self.storeMainGridView setWantsLayer:YES];
+//    NSSize defaultSize = NSMakeSize(1134, 594);
+//    NSSize currentSize = self.gamesTabController.frame.size;
+//
+//    CGFloat liveW = currentSize.width / defaultSize.width;
+//    CGFloat liveH = currentSize.height / defaultSize.height;
+//
+//    self.storeMainGridView.translatesAutoresizingMaskIntoConstraints = YES;
+//    self.view.translatesAutoresizingMaskIntoConstraints = YES;
+//    self.gamesTabController.translatesAutoresizingMaskIntoConstraints = YES;
+//
+//    [NSAnimationContext beginGrouping];
+//    [[NSAnimationContext currentContext] setDuration:0.5];
+//    self.storeMainGridView.animator.frame = CGRectMake(self.gamesTabController.frame.origin.x,
+//                                                       self.gamesTabController.frame.origin.y,
+//                                                       defaultSize.width * liveW,
+//                                                       defaultSize.height * liveH);
+//    self.storeMainGridView.translatesAutoresizingMaskIntoConstraints = YES;
+//    self.view.translatesAutoresizingMaskIntoConstraints = YES;
+//    [self.view setNeedsDisplay:YES];
+//    [self.gamesTabController setNeedsDisplay:YES];
+//    [NSAnimationContext endGrouping];
+//}
+
 -(void)windowWillStartLiveResize:(NSNotification *)notification {
-    NSLog(@"Hello = %@", notification.object);
+    if(self.gamesTabController.inLiveResize) {
+        NSLog(@"Resize: %@", notification.object);
+        [self.storeMainGridView.layer setMasksToBounds:YES];
+        [self.storeMainGridView setNeedsDisplay:YES];
+        [self.view setNeedsUpdateConstraints:YES];
+        [self.view setNeedsDisplay:YES];
+    }
 }
 
 @end

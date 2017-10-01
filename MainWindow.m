@@ -5,6 +5,8 @@
 
 -(void)awakeFromNib {
     [super awakeFromNib];
+    self.delegate = self;
+    [self setOpaque:NO];
     [self setMovableByWindowBackground:YES];
     [self.contentView setWantsLayer:YES];
     [self.contentView setLayerContentsRedrawPolicy:NSViewLayerContentsRedrawOnSetNeedsDisplay];

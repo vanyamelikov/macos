@@ -20,6 +20,8 @@
     self.walletHistoryView.hidden = YES;
     self.firstSendMoneyView.hidden = NO;
     self.chooseFriendView.hidden = YES;
+    
+    [self.friendImage setImage:[NSImage imageNamed:@"ic_userpic"]];
 
     NSClickGestureRecognizer *imageClick = [[NSClickGestureRecognizer alloc] initWithTarget:self action:@selector(imageAction:)];
     [self.friendImage addGestureRecognizer:imageClick];
@@ -54,7 +56,6 @@
                             self.chooseFriendView.alphaValue = 1;
                         }];
     [self.friendImage setImage:[NSImage imageNamed:@"img_cf_a1"]];
-    
 }
 
 @end

@@ -15,5 +15,4 @@
 
 @property (strong) IBOutlet NSBox *backgroundBox;
 
-
 @end

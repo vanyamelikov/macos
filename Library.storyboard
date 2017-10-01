@@ -233,8 +233,8 @@
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_dota2" id="hdt-eX-sgm"/>
                                     </imageView>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8Y8-mW-1kv">
-                                        <rect key="frame" x="63" y="725" width="68" height="24"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Dota 2" id="6gp-Mc-LBe">
+                                        <rect key="frame" x="63" y="725" width="189" height="24"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Kings Last Protector" id="6gp-Mc-LBe">
                                             <font key="font" metaFont="system" size="20"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
