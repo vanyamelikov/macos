@@ -2,9 +2,11 @@
 #import "SettingsNavigationListModel.h"
 #import "SettingsNavigationListCell.h"
 #import "SettingsNavigationListHeaderCell.h"
+#import "Colours.h"
 
 @implementation SettingsNavigationListView {
     NSMutableArray *dataSourceArray;
+    NSInteger preSelectedRow;
 }
 
 -(void)awakeFromNib {
@@ -83,7 +85,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    [self.tableView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleRegular];
+    [self.tableView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleNone];
     [self.tableView setUsesAlternatingRowBackgroundColors:NO];
     [self.tableView setBackgroundColor:[NSColor clearColor]];
     [[self.tableView enclosingScrollView] setDrawsBackground:NO];
@@ -116,6 +118,27 @@
         SettingsNavigationListCell *cell = (SettingsNavigationListCell *)[tableView makeViewWithIdentifier:@"SettingsNavigationListCell" owner:self];
         cell.label.stringValue = model.title;
         return cell;
+    }
+}
+
+-(void)tableViewSelectionDidChange:(NSNotification *)notification {
+    NSInteger index = [self.tableView selectedRow];
+    SettingsNavigationListModel *model = [dataSourceArray objectAtIndex:index];
+    if(!model.isHeader && index != preSelectedRow) {
+        SettingsNavigationListCell *cellView = (SettingsNavigationListCell *)[self.tableView viewAtColumn:0 row:index makeIfNecessary:YES];
+        SettingsNavigationListCell *preSelectedCellView = (SettingsNavigationListCell *)[self.tableView viewAtColumn:0 row:preSelectedRow makeIfNecessary:YES];
+        if(cellView != nil && [cellView isKindOfClass:[SettingsNavigationListCell class]])
+        {
+            cellView.lightLayer.hidden = NO;
+            [cellView.label setTextColor:[NSColor colorFromHexString:@"#ffffff"]];
+        }
+        
+        if(preSelectedCellView != nil && [preSelectedCellView isKindOfClass:[SettingsNavigationListCell class]])
+        {
+            preSelectedCellView.lightLayer.hidden = YES;
+            [preSelectedCellView.label setTextColor:[NSColor colorFromHexString:@"#78819F"]];
+        }
+        preSelectedRow = index;
     }
 }
 

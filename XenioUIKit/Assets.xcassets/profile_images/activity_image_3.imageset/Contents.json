@@ -9,6 +9,10 @@
       "idiom" : "universal",
       "filename" : "activity_image_3@2x.png",
       "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

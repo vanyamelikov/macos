@@ -33,6 +33,7 @@
 		31972D711F7D1582008447C2 /* LibraryEmptySideMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31972D701F7D1582008447C2 /* LibraryEmptySideMenu.xib */; };
 		31972D741F7D1755008447C2 /* LibraryEmptySideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 31972D731F7D1755008447C2 /* LibraryEmptySideMenu.m */; };
 		31972D771F7D96CA008447C2 /* TextFieldWithTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 31972D761F7D96CA008447C2 /* TextFieldWithTag.m */; };
+		31B07EC81F80A21200B6BCCA /* SettingsFriendsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07EC71F80A21200B6BCCA /* SettingsFriendsListModel.m */; };
 		31B593BB1F7C14CF00D5B5FC /* FreeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */; };
 		31B593C11F7C15D400D5B5FC /* FreeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B593C01F7C15D400D5B5FC /* FreeButton.m */; };
 		31B593C31F7C194B00D5B5FC /* StoreTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593C21F7C194B00D5B5FC /* StoreTabView.xib */; };
@@ -307,6 +308,8 @@
 		31972D731F7D1755008447C2 /* LibraryEmptySideMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibraryEmptySideMenu.m; sourceTree = "<group>"; };
 		31972D751F7D96CA008447C2 /* TextFieldWithTag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldWithTag.h; sourceTree = "<group>"; };
 		31972D761F7D96CA008447C2 /* TextFieldWithTag.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldWithTag.m; sourceTree = "<group>"; };
+		31B07EC61F80A21200B6BCCA /* SettingsFriendsListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsFriendsListModel.h; sourceTree = "<group>"; };
+		31B07EC71F80A21200B6BCCA /* SettingsFriendsListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsFriendsListModel.m; sourceTree = "<group>"; };
 		31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreeButton.xib; sourceTree = "<group>"; };
 		31B593BF1F7C15D400D5B5FC /* FreeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeButton.h; sourceTree = "<group>"; };
 		31B593C01F7C15D400D5B5FC /* FreeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeButton.m; sourceTree = "<group>"; };
@@ -861,6 +864,8 @@
 			children = (
 				3E558BDF1F79710300542B7B /* SettingsNavigationListModel.h */,
 				3E558BE01F79710300542B7B /* SettingsNavigationListModel.m */,
+				31B07EC61F80A21200B6BCCA /* SettingsFriendsListModel.h */,
+				31B07EC71F80A21200B6BCCA /* SettingsFriendsListModel.m */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -1826,6 +1831,7 @@
 				3E25FB271F66EBCA000423E9 /* ViewController.m in Sources */,
 				31E4F74C1F7E9E5E0047B843 /* PaymentInfoModel.m in Sources */,
 				3E25FB241F66EBCA000423E9 /* main.m in Sources */,
+				31B07EC81F80A21200B6BCCA /* SettingsFriendsListModel.m in Sources */,
 				31E4F7521F7E9E6E0047B843 /* StoreGameInfoSideListView.m in Sources */,
 				3ECF3CCE1F689CC2005165E5 /* RoundButton.m in Sources */,
 				3E7230F01F73559F0050A70D /* FriendsContentNavigationViewController.m in Sources */,

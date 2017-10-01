@@ -11,9 +11,11 @@
 #import "LibrarySideMenuCell.h"
 #import "LibraryGamesRightMenuHeaderCell.h"
 #import "WalletSideMenuHeaderCell.h"
+#import "Colours.h"
 
 @implementation WalletSideMenu {
     NSMutableArray *dataSourceArray;
+    NSInteger preSelectedRow;
 }
 
 -(void)awakeFromNib {
@@ -87,7 +89,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    [self.tableView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleRegular];
+    [self.tableView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleNone];
     [self.tableView setUsesAlternatingRowBackgroundColors:NO];
     [self.tableView setBackgroundColor:[NSColor clearColor]];
     [[self.tableView enclosingScrollView] setDrawsBackground:NO];
@@ -120,6 +122,27 @@
         LibrarySideMenuCell *cell = (LibrarySideMenuCell *)[tableView makeViewWithIdentifier:@"LibrarySideMenuCell" owner:self];
         cell.label.stringValue = model.title;
         return cell;
+    }
+}
+
+-(void)tableViewSelectionDidChange:(NSNotification *)notification {
+    NSInteger index = [self.tableView selectedRow];
+    WalletSideMenuModel *model = [dataSourceArray objectAtIndex:index];
+    if(!model.isHeader && index != preSelectedRow) {
+        LibrarySideMenuCell *cellView = (LibrarySideMenuCell *)[self.tableView viewAtColumn:0 row:index makeIfNecessary:YES];
+        LibrarySideMenuCell *preSelectedCellView = (LibrarySideMenuCell *)[self.tableView viewAtColumn:0 row:preSelectedRow makeIfNecessary:YES];
+        if(cellView != nil && [cellView isKindOfClass:[LibrarySideMenuCell class]])
+        {
+            cellView.lightLayer.hidden = NO;
+            [cellView.label setTextColor:[NSColor colorFromHexString:@"#ffffff"]];
+        }
+        
+        if(preSelectedCellView != nil && [preSelectedCellView isKindOfClass:[LibrarySideMenuCell class]])
+        {
+            preSelectedCellView.lightLayer.hidden = YES;
+            [preSelectedCellView.label setTextColor:[NSColor colorFromHexString:@"#78819F"]];
+        }
+        preSelectedRow = index;
     }
 }
 

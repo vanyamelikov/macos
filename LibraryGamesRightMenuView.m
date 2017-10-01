@@ -2,9 +2,11 @@
 #import "LibraryGamesRightMenuModel.h"
 #import "LibraryGamesRightMenuCell.h"
 #import "LibraryGamesRightMenuHeaderCell.h"
+#import "Colours.h"
 
 @implementation LibraryGamesRightMenuView {
     NSMutableArray *dataSourceArray;
+    NSInteger preSelectedRow;
 }
 
 -(void)awakeFromNib {
@@ -113,7 +115,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    [self.tableView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleRegular];
+    [self.tableView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleNone];
     [self.tableView setUsesAlternatingRowBackgroundColors:NO];
     [self.tableView setBackgroundColor:[NSColor clearColor]];
     [[self.tableView enclosingScrollView] setDrawsBackground:NO];
@@ -146,6 +148,27 @@
         LibraryGamesRightMenuCell *cell = (LibraryGamesRightMenuCell *)[tableView makeViewWithIdentifier:@"LibraryGamesRightMenuCell" owner:self];
         cell.label.stringValue = model.title;
         return cell;
+    }
+}
+
+-(void)tableViewSelectionDidChange:(NSNotification *)notification {
+    NSInteger index = [self.tableView selectedRow];
+    LibraryGamesRightMenuModel *model = [dataSourceArray objectAtIndex:index];
+    if(!model.isHeader && index != preSelectedRow) {
+        LibraryGamesRightMenuCell *cellView = (LibraryGamesRightMenuCell *)[self.tableView viewAtColumn:0 row:index makeIfNecessary:YES];
+        LibraryGamesRightMenuCell *preSelectedCellView = (LibraryGamesRightMenuCell *)[self.tableView viewAtColumn:0 row:preSelectedRow makeIfNecessary:YES];
+        if(cellView != nil && [cellView isKindOfClass:[LibraryGamesRightMenuCell class]])
+        {
+            cellView.lightLayer.hidden = NO;
+            [cellView.label setTextColor:[NSColor colorFromHexString:@"#ffffff"]];
+        }
+        
+        if(preSelectedCellView != nil && [preSelectedCellView isKindOfClass:[LibraryGamesRightMenuCell class]])
+        {
+            preSelectedCellView.lightLayer.hidden = YES;
+            [preSelectedCellView.label setTextColor:[NSColor colorFromHexString:@"#78819F"]];
+        }
+        preSelectedRow = index;
     }
 }
 

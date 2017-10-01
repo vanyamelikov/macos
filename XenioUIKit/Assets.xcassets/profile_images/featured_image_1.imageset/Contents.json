@@ -9,6 +9,10 @@
       "idiom" : "universal",
       "filename" : "featured_image_1@2x.png",
       "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

@@ -194,12 +194,12 @@
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_grid" id="Nwb-FY-8H1"/>
                                         </imageView>
                                         <tabView drawsBackground="NO" type="noTabsNoBorder" translatesAutoresizingMaskIntoConstraints="NO" id="aiM-co-5kq">
-                                            <rect key="frame" x="26" y="0.0" width="1750" height="1014"/>
+                                            <rect key="frame" x="26" y="20" width="1750" height="994"/>
                                             <font key="font" metaFont="system"/>
                                             <tabViewItems>
                                                 <tabViewItem label="Tab" identifier="" id="3py-Pp-7AM">
                                                     <view key="view" id="Pfa-tN-uyl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="1750" height="1014"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="1750" height="994"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     </view>
                                                 </tabViewItem>
@@ -244,7 +244,7 @@
                                         <constraint firstItem="plW-Km-rbt" firstAttribute="top" secondItem="abb-7k-7KV" secondAttribute="bottom" constant="20" id="bot-p0-xYU"/>
                                         <constraint firstAttribute="trailing" secondItem="8s4-yx-gxJ" secondAttribute="trailing" constant="26" id="ght-dv-jwx"/>
                                         <constraint firstItem="8s4-yx-gxJ" firstAttribute="top" secondItem="fo2-sy-24e" secondAttribute="bottom" constant="20" id="hph-BQ-KZb"/>
-                                        <constraint firstAttribute="bottom" secondItem="aiM-co-5kq" secondAttribute="bottom" id="joc-Ug-auE"/>
+                                        <constraint firstAttribute="bottom" secondItem="aiM-co-5kq" secondAttribute="bottom" constant="20" id="joc-Ug-auE"/>
                                         <constraint firstItem="kvd-1k-OCJ" firstAttribute="leading" secondItem="m1s-KW-lbc" secondAttribute="leading" constant="26" id="kBz-Jc-PLN"/>
                                         <constraint firstItem="plW-Km-rbt" firstAttribute="leading" secondItem="m1s-KW-lbc" secondAttribute="leading" constant="26" id="qtt-Tg-YxP"/>
                                         <constraint firstItem="aiM-co-5kq" firstAttribute="leading" secondItem="m1s-KW-lbc" secondAttribute="leading" constant="26" id="tkQ-UE-ZNe"/>

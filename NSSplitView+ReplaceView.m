@@ -34,7 +34,7 @@
     currentView.alphaValue = 1.0f;
     newView.alphaValue = 0.0f;
     [NSAnimationContext runAnimationGroup:^(NSAnimationContext * _Nonnull context) {
-        context.duration = 3.0f;
+        context.duration = 0.6f;
         context.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
         [currentView.animator setAlphaValue:0.0f];
         [[self animator] replaceSubview:self.subviews[index] with:newView];

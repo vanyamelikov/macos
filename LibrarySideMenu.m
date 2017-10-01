@@ -1,9 +1,11 @@
 #import "LibrarySideMenu.h"
 #import "LibrarySideMenuCell.h"
 #import "LibrarySideMenuModel.h"
+#import "Colours.h"
 
 @implementation LibrarySideMenu {
     NSMutableArray *dataSourceArray;
+    NSInteger preSelectedRow;
 }
 
 
@@ -43,7 +45,7 @@
     dataSourceArray = [[NSMutableArray alloc] initWithArray:titleArray];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    [self.tableView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleRegular];
+    [self.tableView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleNone];
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
     [self.tableView selectRowIndexes:indexSet byExtendingSelection:NO];
 }
@@ -67,7 +69,23 @@
 }
 
 -(void)tableViewSelectionDidChange:(NSNotification *)notification {
-
+    NSInteger index = [self.tableView selectedRow];
+    if(index != preSelectedRow) {
+        LibrarySideMenuCell *cellView = (LibrarySideMenuCell *)[self.tableView viewAtColumn:0 row:index makeIfNecessary:YES];
+        LibrarySideMenuCell *preSelectedCellView = (LibrarySideMenuCell *)[self.tableView viewAtColumn:0 row:preSelectedRow makeIfNecessary:YES];
+        if(cellView != nil && [cellView isKindOfClass:[LibrarySideMenuCell class]])
+        {
+            cellView.lightLayer.hidden = NO;
+            [cellView.label setTextColor:[NSColor colorFromHexString:@"#ffffff"]];
+        }
+        
+        if(preSelectedCellView != nil && [preSelectedCellView isKindOfClass:[LibrarySideMenuCell class]])
+        {
+            preSelectedCellView.lightLayer.hidden = YES;
+            [preSelectedCellView.label setTextColor:[NSColor colorFromHexString:@"#78819F"]];
+        }
+        preSelectedRow = index;
+    }
 }
 
 @end
