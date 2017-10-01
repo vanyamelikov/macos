@@ -752,7 +752,7 @@
         <scene sceneID="rxx-UN-zTW">
             <objects>
                 <viewController title="Welcome ViewController" id="3zU-Hu-vV9" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="k66-fk-uFM">
+                    <view key="view" id="k66-fk-uFM">
                         <rect key="frame" x="0.0" y="0.0" width="1440" height="810"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -805,29 +805,6 @@
                             <constraint firstItem="B9J-hq-hy8" firstAttribute="centerX" secondItem="k66-fk-uFM" secondAttribute="centerX" id="AZu-Fx-YUZ"/>
                             <constraint firstAttribute="bottom" secondItem="B9J-hq-hy8" secondAttribute="bottom" id="BzE-xM-xvx"/>
                         </constraints>
-                        <animations>
-                            <caTransition key="subviews">
-                                <mutableData key="keyedArchiveRepresentation">
-YnBsaXN0MDDUAQIDBAUGW1xYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEwcI
-ESMqMDdAQ0RFRkdMTQoLU1ZVJG51bGzUCQoLDA0ODxBWJGNsYXNzVmZpbHRlclR0eXBlXxASX19DQUNv
-ZGluZ0NvbnRlbnRzgBKAAoANgA7ZCRITFBUWFxgZGhscHR4fICEbXENJX2lucHV0VGltZV5DSV9pbnB1
-dENlbnRlcl8QGUNJX2lucHV0U3RyaWF0aW9uQ29udHJhc3ReQ0lfaW5wdXRFeHRlbnRfEBpDSV9pbnB1
-dE1heFN0cmlhdGlvblJhZGl1c11DSV9pbnB1dENvbG9yXxAZQ0lfaW5wdXRTdHJpYXRpb25TdHJlbmd0
-aF8QFUNJX2lucHV0RmFkZVRocmVzaG9sZIAMgAiAA4ALgAWACYAGgAqACNQkJSYJJygnKVRDSV8wV0NJ
-Q291bnRUQ0lfMSJDFgAAEAKABNIrLC0uWiRjbGFzc25hbWVYJGNsYXNzZXNYQ0lWZWN0b3KiLS9YTlNP
-YmplY3TWMSQlJjIJMzQ1NDMpVENJXzJUQ0lfMyJDlgAAIgAAAAAQBIAE1Qk4OTo7PD09Pj9TcmVkVWFs
-cGhhVGJsdWVVZ3JlZW6AByI/gAAAIj8ZmZoiP0zMzdIrLEFCV0NJQ29sb3KiQS8jP/AAAAAAAAAjQASj
-1wo9cKQjQAAAAAAAAAAjQAMzMzMzMzPSKyxISV8QEUNJRmxhc2hUcmFuc2l0aW9uo0pLL18QEUNJRmxh
-c2hUcmFuc2l0aW9uWENJRmlsdGVyVGZhZGXSTglPUlpOUy5vYmplY3RzolBRgA+AEIAR0issVFVXTlNB
-cnJheaJUL9IrLFdYXENBVHJhbnNpdGlvbqNZWi9cQ0FUcmFuc2l0aW9uW0NBQW5pbWF0aW9uXxAPTlNL
-ZXllZEFyY2hpdmVy0V1eVHJvb3SAAQAIABEAGgAjAC0AMgA3AE0AUwBcAGMAagBvAIQAhgCIAIoAjACf
-AKwAuwDXAOYBAwERAS0BRQFHAUkBSwFNAU8BUQFTAVUBVwFgAWUBbQFyAXcBeQF7AYABiwGUAZ0BoAGp
-AbYBuwHAAcUBygHMAc4B2QHdAeMB6AHuAfAB9QH6Af8CBAIMAg8CGAIhAioCMwI4AkwCUAJkAm0CcgJ3
-AoIChQKHAokCiwKQApgCmwKgAq0CsQK+AsoC3ALfAuQAAAAAAAACAQAAAAAAAABfAAAAAAAAAAAAAAAA
-AAAC5g
-</mutableData>
-                            </caTransition>
-                        </animations>
                     </view>
                     <connections>
                         <outlet property="continueButton" destination="0NK-ip-fyL" id="32D-5P-JEO"/>
@@ -841,7 +818,7 @@ AAAC5g
         <scene sceneID="7vi-cM-8Ku">
             <objects>
                 <viewController storyboardIdentifier="SignInViewController" showSeguePresentationStyle="single" id="dQ5-HS-63o" customClass="SignInViewController" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="xDw-71-nVP">
+                    <view key="view" id="xDw-71-nVP">
                         <rect key="frame" x="0.0" y="0.0" width="1440" height="810"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -1000,7 +977,7 @@ AAAC5g
                                         <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Kw-xN-BWu">
                                             <rect key="frame" x="555" y="251" width="330" height="140"/>
                                             <subviews>
-                                                <customView translatesAutoresizingMaskIntoConstraints="NO" id="K1B-Qv-Av5" customClass="SignInButton">
+                                                <customView translatesAutoresizingMaskIntoConstraints="NO" id="K1B-Qv-Av5" customClass="SignUpButton">
                                                     <rect key="frame" x="26" y="37" width="278" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="278" id="6z2-rm-LWZ"/>

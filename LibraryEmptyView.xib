@@ -1,15 +1,143 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-2" userLabel="File's Owner" customClass="LibraryEmptyView">
+            <connections>
+                <outlet property="addGameButton" destination="iBh-bx-HDj" id="lU5-l1-oza"/>
+            </connections>
+        </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customView id="c22-O7-iKe">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+        <customView id="trc-IH-5yq">
+            <rect key="frame" x="0.0" y="0.0" width="1360" height="769"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Lxa-aA-vyx">
+                    <rect key="frame" x="0.0" y="0.0" width="1360" height="769"/>
+                    <view key="contentView" id="Aqg-hp-MNd">
+                        <rect key="frame" x="0.0" y="0.0" width="1360" height="769"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="F7G-MF-2x7" customClass="CustomSearchBar">
+                                <rect key="frame" x="1142" y="718" width="218" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="8lM-D8-NN3"/>
+                                    <constraint firstAttribute="height" constant="35" id="vTJ-UJ-cwE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showTitle" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="F7G-MF-2x7" firstAttribute="top" secondItem="Aqg-hp-MNd" secondAttribute="top" constant="16" id="Imf-Hk-A9M"/>
+                            <constraint firstAttribute="trailing" secondItem="F7G-MF-2x7" secondAttribute="trailing" id="XMb-Rk-ZsX"/>
+                        </constraints>
+                    </view>
+                    <color key="borderColor" red="1" green="1" blue="1" alpha="0.040730122319999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.090196078430000007" green="0.1019607843" blue="0.14901960780000001" alpha="0.97984757259999999" colorSpace="calibratedRGB"/>
+                </box>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="FjY-al-mjH">
+                    <rect key="frame" x="26" y="672" width="1308" height="1"/>
+                    <view key="contentView" id="8U7-3N-rzd">
+                        <rect key="frame" x="0.0" y="0.0" width="1308" height="1"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="C9r-7x-Tq0">
+                                <rect key="frame" x="0.0" y="0.0" width="88" height="1"/>
+                                <view key="contentView" id="6FL-oN-Xpa">
+                                    <rect key="frame" x="1" y="1" width="86" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="80U-VN-YL6"/>
+                                    <constraint firstAttribute="width" constant="88" id="mNu-sk-qtO"/>
+                                </constraints>
+                                <color key="borderColor" red="0.40000000000000002" green="0.66666666669999997" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="fillColor" red="0.40000000000000002" green="0.66666666669999997" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="C9r-7x-Tq0" firstAttribute="top" secondItem="8U7-3N-rzd" secondAttribute="top" id="KFJ-9O-F0E"/>
+                            <constraint firstAttribute="bottom" secondItem="C9r-7x-Tq0" secondAttribute="bottom" id="OVv-Q7-SeK"/>
+                            <constraint firstItem="C9r-7x-Tq0" firstAttribute="centerY" secondItem="8U7-3N-rzd" secondAttribute="centerY" id="TNs-KZ-grv"/>
+                            <constraint firstItem="C9r-7x-Tq0" firstAttribute="leading" secondItem="8U7-3N-rzd" secondAttribute="leading" id="xUs-wU-cnV"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Ksx-Al-cVh"/>
+                    </constraints>
+                    <color key="borderColor" red="1" green="1" blue="1" alpha="0.040730122319999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.090196078430000007" green="0.1019607843" blue="0.14901960780000001" alpha="0.98186639909999995" colorSpace="calibratedRGB"/>
+                </box>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Qzq-y1-2LK" customClass="ArrowButton">
+                    <rect key="frame" x="26" y="719" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="EYw-LN-lAb"/>
+                        <constraint firstAttribute="height" constant="30" id="z2R-h4-oXM"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BCA-bN-4TB">
+                    <rect key="frame" x="24" y="681" width="92" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="88" id="KGS-4Z-4CQ"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Empty library" id="Dsz-kw-C4b">
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9rf-dd-ibI">
+                    <rect key="frame" x="448" y="357" width="464" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="460" id="01q-Bw-SEg"/>
+                        <constraint firstAttribute="height" constant="60" id="2ca-bs-jeV"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Your library  is empty" id="i8J-Fe-nqM">
+                        <font key="font" metaFont="system" size="40"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="iBh-bx-HDj" customClass="AddGameButton">
+                    <rect key="frame" x="625" y="302" width="111" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="aiq-Xe-Bfd"/>
+                        <constraint firstAttribute="width" constant="111" id="iBu-Db-wJ3"/>
+                    </constraints>
+                    <gestureRecognizers>
+                        <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="rxR-s1-PC5">
+                            <connections>
+                                <action selector="showLibraryGameViewClick:" target="-2" id="LZs-Nq-2SD"/>
+                            </connections>
+                        </clickGestureRecognizer>
+                    </gestureRecognizers>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="iBh-bx-HDj" firstAttribute="centerX" secondItem="trc-IH-5yq" secondAttribute="centerX" id="6xQ-qZ-V00"/>
+                <constraint firstAttribute="bottom" secondItem="Lxa-aA-vyx" secondAttribute="bottom" id="7VK-ZP-FgM"/>
+                <constraint firstItem="iBh-bx-HDj" firstAttribute="top" secondItem="9rf-dd-ibI" secondAttribute="bottom" constant="26" id="AVV-Cd-Mfg"/>
+                <constraint firstItem="9rf-dd-ibI" firstAttribute="top" secondItem="FjY-al-mjH" secondAttribute="bottom" constant="255" id="Bda-nd-ypk"/>
+                <constraint firstItem="BCA-bN-4TB" firstAttribute="top" secondItem="Qzq-y1-2LK" secondAttribute="bottom" constant="20" id="Dd7-R6-6hB"/>
+                <constraint firstItem="Qzq-y1-2LK" firstAttribute="top" secondItem="trc-IH-5yq" secondAttribute="top" constant="20" id="Dez-m4-G97"/>
+                <constraint firstItem="9rf-dd-ibI" firstAttribute="centerX" secondItem="trc-IH-5yq" secondAttribute="centerX" id="E0B-Mk-pJu"/>
+                <constraint firstAttribute="trailing" secondItem="FjY-al-mjH" secondAttribute="trailing" constant="26" id="ELn-Cf-NVn"/>
+                <constraint firstItem="Lxa-aA-vyx" firstAttribute="leading" secondItem="trc-IH-5yq" secondAttribute="leading" id="Eam-8Y-4BB"/>
+                <constraint firstItem="FjY-al-mjH" firstAttribute="leading" secondItem="trc-IH-5yq" secondAttribute="leading" constant="26" id="SwS-8d-VFn"/>
+                <constraint firstItem="Lxa-aA-vyx" firstAttribute="top" secondItem="trc-IH-5yq" secondAttribute="top" id="fHB-MT-8gf"/>
+                <constraint firstItem="Qzq-y1-2LK" firstAttribute="leading" secondItem="trc-IH-5yq" secondAttribute="leading" constant="26" id="g2C-Io-7Ky"/>
+                <constraint firstAttribute="trailing" secondItem="Lxa-aA-vyx" secondAttribute="trailing" id="n4o-4F-s8w"/>
+                <constraint firstItem="BCA-bN-4TB" firstAttribute="leading" secondItem="trc-IH-5yq" secondAttribute="leading" constant="26" id="r6f-LU-Sa5"/>
+                <constraint firstItem="FjY-al-mjH" firstAttribute="top" secondItem="BCA-bN-4TB" secondAttribute="bottom" constant="8" id="vTY-A6-eVb"/>
+            </constraints>
         </customView>
     </objects>
 </document>

@@ -11,6 +11,8 @@
 #import "MainTabViewController.h"
 #import "ImageUtils.h"
 #import "MainWindow.h"
+#import "MyRectGradientView.h"
+#import "Colours.h"
 
 @interface SignInViewController ()
 
@@ -20,6 +22,7 @@
     NSColor *focusTFBorderColor;
     NSColor *unFocusTFBorderColor;
     CGFloat tfAnimationDuration;
+    NSImageView *imageView;
 }
 
 -(void)awakeFromNib {
@@ -30,6 +33,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setBackgroundImage:@"Background"];
     
     focusTFBorderColor = [NSColor colorFromHexString:@"5c5e66"];
     unFocusTFBorderColor = [NSColor colorFromHexString:@"383943"];
@@ -150,5 +155,49 @@
         [NSAnimationContext endGrouping];
     }
 }
+
+-(void)setBackgroundImage : (NSString *) imageName {
+    if(imageView == nil) {
+        imageView = [[NSImageView alloc] initWithFrame:self.view.frame];
+        [imageView setImageScaling:NSImageScaleAxesIndependently];
+        [imageView setImageAlignment:NSImageAlignCenter];
+        [imageView setImage:[NSImage imageNamed:imageName]];
+        [imageView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
+        
+        [self.view addSubview:imageView positioned:NSWindowBelow relativeTo:self.view];
+        
+        MyRectGradientView *rectGradientView = [[MyRectGradientView alloc] initWithFrame:self.view.frame];
+        [rectGradientView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
+        
+        [rectGradientView setStartColor:[NSColor colorWithRed:(24/255) green:(27/255) blue:(41/255) alpha:0.8f]];
+        [rectGradientView setEndColor:[NSColor colorWithRed:(24/255) green:(28/255) blue:(47/255) alpha:0.8f]];
+        [rectGradientView setAngle:90.0];
+
+        [self.view addSubview:rectGradientView positioned:NSWindowAbove relativeTo:imageView];
+        
+        NSDictionary * views = NSDictionaryOfVariableBindings(imageView);
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[imageView]|"
+                                                                          options:0
+                                                                          metrics:nil
+                                                                            views:views]];
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[imageView]|"
+                                                                          options:0
+                                                                          metrics:nil
+                                                                            views:views]];
+        
+        NSDictionary * rectViews = NSDictionaryOfVariableBindings(rectGradientView);
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[rectGradientView]|"
+                                                                          options:0
+                                                                          metrics:nil
+                                                                            views:rectViews]];
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[rectGradientView]|"
+                                                                          options:0
+                                                                          metrics:nil
+                                                                            views:rectViews]];
+    }
+    
+}
+
+
 
 @end

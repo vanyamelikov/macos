@@ -28,6 +28,7 @@
     BFNavigationController *_navigationController;
     NSWindowController *_controlWindowController;
     BOOL isShowDownloadBar;
+    NSImageView *imageView;
 }
 
 @end
@@ -42,6 +43,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setBackgroundImage:@"nfs"];
     isShowDownloadBar = NO;
     _mainTabView.delegate = self;
     _mainTabBar.delegate = self;
@@ -84,8 +86,6 @@
 
 -(void)viewWillAppear {
     [super viewWillAppear];
-    MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
-    [mainWindow changeBackgroundImage:[NSImage imageNamed:@"nfs"]];
 }
 
 -(void)tabClicked:(NSInteger)sender {
@@ -147,6 +147,29 @@
         [mainWindow.contentView setNeedsDisplay:YES];
         isShowDownloadBar = NO;
     }
+}
+
+-(void)setBackgroundImage : (NSString *) imageName {
+    if(imageView == nil) {
+        imageView = [[NSImageView alloc] initWithFrame:self.view.frame];
+        [imageView setImageScaling:NSImageScaleAxesIndependently];
+        [imageView setImageAlignment:NSImageAlignCenter];
+        [imageView setImage:[NSImage imageNamed:imageName]];
+        [imageView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
+        
+        [self.view addSubview:imageView positioned:NSWindowBelow relativeTo:self.view];
+        
+        NSDictionary * views = NSDictionaryOfVariableBindings(imageView);
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[imageView]|"
+                                                                          options:0
+                                                                          metrics:nil
+                                                                            views:views]];
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[imageView]|"
+                                                                          options:0
+                                                                          metrics:nil
+                                                                            views:views]];
+    }
+    
 }
 
 @end

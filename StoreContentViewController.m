@@ -33,12 +33,10 @@
     StoreSideMenu *storeSideMenu = view.splitViewItems[0].viewController.view.subviews[0];
     storeSideMenu.delegate = self;
     
+    [self hideListGridButtons:YES];
+    
     StoreGamesView *storeGamesList = [[StoreGamesView alloc] initWithFrame:self.gamesTabController.frame];
     StoreGamesGridView *storeGamesGrid = [[StoreGamesGridView alloc] initWithFrame:self.gamesTabController.frame];
-    NSLog(@"X is = %f", self.gamesTabController.frame.origin.x);
-    NSLog(@"Y is = %f", self.gamesTabController.frame.origin.x);
-    NSLog(@"W is = %f", self.gamesTabController.frame.size.width);
-    NSLog(@"H is = %f", self.gamesTabController.frame.size.height);
     self.storeMainGridView = [[StoreMainGridView alloc] initWithFrame:CGRectMake(self.gamesTabController.frame.origin.x,
                                                                                  self.gamesTabController.frame.origin.x,
                                                                                  1134,
@@ -63,10 +61,10 @@
     
     [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:2]];
     
+    self.gamesTabController.delegate = self;
+    
     MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
     mainWindow.delegate = self;
-    
-    self.gamesTabController.delegate = self;
 }
 
 - (IBAction)ChangeToListClick:(NSClickGestureRecognizer *)sender {

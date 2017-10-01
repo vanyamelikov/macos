@@ -10,6 +10,8 @@
 #import "LibraryEmptySideMenu.h"
 #import "SplitViewWithDivider.h"
 #import "MainWindow.h"
+#import "LibraryGameView.h"
+#import "LibraryEmptyView.h"
 
 @interface LibraryContentViewController ()
 
@@ -17,16 +19,10 @@
 
 @implementation LibraryContentViewController
 
-@synthesize addGameDelegate;
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.libraryGameView.hidden = YES;
     self.libraryEmptyView.hidden = NO;
-    
-    NSClickGestureRecognizer *addGameClick = [[NSClickGestureRecognizer alloc] initWithTarget:self action:@selector(addGameAction:)];
-    [self.addGameButton addGestureRecognizer:addGameClick];
 }
 
 -(void)viewWillAppear {
@@ -41,20 +37,7 @@
 //    [mainWindow setMovableByWindowBackground:YES];
 }
 
-- (void)addGameAction:(id)sender
-{
-    if(addGameDelegate && [self.addGameDelegate respondsToSelector:@selector(libraryEmtyAddGameClick)]) {
-        [self.addGameDelegate libraryEmtyAddGameClick];
-    }
-    [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
-        context.duration = 0.5f;
-        self.libraryEmptyView.animator.alphaValue = 0;
-    }
-                        completionHandler:^{
-                            self.libraryEmptyView.hidden = YES;
-                            self.libraryGameView.hidden = NO;
-                            self.libraryEmptyView.alphaValue = 1;
-                        }];
-}
+
+
 
 @end

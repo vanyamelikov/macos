@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "LibraryEmptyView.h"
 
-@interface LibraryViewController : NSSplitViewController
+@interface LibraryViewController : NSSplitViewController <LibraryAddGameDelegate>
 
 @end

@@ -13,4 +13,6 @@
 @interface ImageUtils : NSObject
 + (NSImage *)imageTintedWithColor:(NSColor *)tint : (NSImage *)imageToRedraw;
 + (NSImage *)imageRepresentation :(NSView *)viewToImage;
++ (NSImage *)resizedImage:(NSImage *)sourceImage toPixelDimensions:(NSSize)newSize;
++ (NSImage*) resize:(NSImage*)aImage frame:(NSRect)frame;
 @end

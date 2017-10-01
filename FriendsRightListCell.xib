@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,12 +36,12 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="ic_avatar-1" id="MCZ-Dx-mLT"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U3B-xI-J6t">
-                                <rect key="frame" x="64" y="23" width="71" height="20"/>
+                                <rect key="frame" x="64" y="23" width="69" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Miz-JD-0VX"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Police Girl" id="0KV-IM-qVK">
-                                    <font key="font" size="14" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="system" size="14"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -52,7 +52,7 @@
                                     <constraint firstAttribute="height" constant="20" id="chx-8o-muR"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Counter Strike 1.6" id="HP6-oy-9vK">
-                                    <font key="font" size="12" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="cellTitle"/>
                                     <color key="textColor" red="0.81960784313725488" green="0.78823529411764703" blue="0.47450980392156861" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -63,7 +63,7 @@
                                     <constraint firstAttribute="height" constant="20" id="8mO-dc-Bqq"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="In game" id="ONo-WZ-WgS">
-                                    <font key="font" size="12" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="cellTitle"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>

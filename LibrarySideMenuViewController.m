@@ -7,10 +7,9 @@
 //
 
 #import "LibrarySideMenuViewController.h"
-#import "LibrarySideMenu.h"
 
 @interface LibrarySideMenuViewController ()
-
+@property (nonatomic) LibraryContentViewController *contentVC;
 @end
 
 @implementation LibrarySideMenuViewController
@@ -18,14 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSSplitViewController *splitViewController = (NSSplitViewController *)self.parentViewController;
-    LibraryContentViewController *contentVC = (LibraryContentViewController *)[[splitViewController splitViewItems] objectAtIndex:1].viewController;
-    contentVC.addGameDelegate = self;
+    self.contentVC = (LibraryContentViewController *)[[splitViewController splitViewItems] objectAtIndex:1].viewController;
+    LibraryEmptyView *emptyView = (LibraryEmptyView *)self.contentVC.view.subviews[1];
+    emptyView.addGameDelegate = self;
 }
 
 -(void)libraryEmtyAddGameClick {
-    LibrarySideMenu *sideMenu = [[LibrarySideMenu alloc] initWithFrame:self.view.frame];
-    self.view.subviews[0].hidden = YES;
-    [self.view addSubview:sideMenu positioned:NSWindowAbove relativeTo:self.view.subviews[0]];
+    self.librarySideEmptyView.hidden = YES;
+    self.librarySideMenu.hidden = NO;
+    self.contentVC.libraryEmptyView.hidden = YES;
+    self.contentVC.libraryGameView.hidden = NO;
 }
 
 @end

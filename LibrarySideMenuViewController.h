@@ -8,7 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 #import "LibraryContentViewController.h"
+#import "LibraryEmptyView.h"
+#import "LibrarySideMenu.h"
+#import "LibraryEmptySideMenu.h"
 
 @interface LibrarySideMenuViewController : NSViewController <LibraryAddGameDelegate>
+@property (weak) IBOutlet LibrarySideMenu *librarySideMenu;
+@property (weak) IBOutlet LibraryEmptySideMenu *librarySideEmptyView;
 
 @end

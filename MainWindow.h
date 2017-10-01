@@ -8,8 +8,4 @@
 
 @interface MainWindow : NSWindow <NSWindowDelegate>
 
-@property (nonatomic) NSString *backgroundImageName;
-
--(void)changeBackgroundImage : (NSImage *)image;
-
 @end

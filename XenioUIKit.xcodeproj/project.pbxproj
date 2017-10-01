@@ -36,6 +36,16 @@
 		31B07EC81F80A21200B6BCCA /* SettingsFriendsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07EC71F80A21200B6BCCA /* SettingsFriendsListModel.m */; };
 		31B07ECD1F80ACCB00B6BCCA /* CustomSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07ECB1F80ACCB00B6BCCA /* CustomSearchBar.m */; };
 		31B07ECE1F80ACCB00B6BCCA /* CustomSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B07ECC1F80ACCB00B6BCCA /* CustomSearchBar.xib */; };
+		31B07ED11F80CC6500B6BCCA /* NSImage+MGCropExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07ECF1F80CC6500B6BCCA /* NSImage+MGCropExtensions.m */; };
+		31B07ED51F8113A000B6BCCA /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07ED41F8113A000B6BCCA /* BackgroundView.m */; };
+		31B07EDB1F8127A400B6BCCA /* MyRectGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07ED81F8127A400B6BCCA /* MyRectGradientView.m */; };
+		31B07EDC1F8127A400B6BCCA /* MyBaseGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07EDA1F8127A400B6BCCA /* MyBaseGradientView.m */; };
+		31B07EDF1F815A4E00B6BCCA /* LibraryEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07EDE1F815A4E00B6BCCA /* LibraryEmptyView.m */; };
+		31B07EE21F81633B00B6BCCA /* LibraryGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07EE11F81633B00B6BCCA /* LibraryGameView.m */; };
+		31B07EE41F8167A000B6BCCA /* SignUpButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B07EE31F8167A000B6BCCA /* SignUpButton.xib */; };
+		31B07EE81F8167F500B6BCCA /* SignUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07EE71F8167F500B6BCCA /* SignUpButton.m */; };
+		31B07EEE1F81812500B6BCCA /* LibraryGameSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07EED1F81812500B6BCCA /* LibraryGameSearchBar.m */; };
+		31B07EF01F81814200B6BCCA /* LibraryGameSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B07EEF1F81814200B6BCCA /* LibraryGameSearchBar.xib */; };
 		31B593BB1F7C14CF00D5B5FC /* FreeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */; };
 		31B593C11F7C15D400D5B5FC /* FreeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B593C01F7C15D400D5B5FC /* FreeButton.m */; };
 		31B593C31F7C194B00D5B5FC /* StoreTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593C21F7C194B00D5B5FC /* StoreTabView.xib */; };
@@ -315,6 +325,24 @@
 		31B07ECA1F80ACCA00B6BCCA /* CustomSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomSearchBar.h; path = CustomSearchBar/CustomSearchBar.h; sourceTree = "<group>"; };
 		31B07ECB1F80ACCB00B6BCCA /* CustomSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomSearchBar.m; path = CustomSearchBar/CustomSearchBar.m; sourceTree = "<group>"; };
 		31B07ECC1F80ACCB00B6BCCA /* CustomSearchBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomSearchBar.xib; path = CustomSearchBar/CustomSearchBar.xib; sourceTree = "<group>"; };
+		31B07ECF1F80CC6500B6BCCA /* NSImage+MGCropExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+MGCropExtensions.m"; sourceTree = "<group>"; };
+		31B07ED01F80CC6500B6BCCA /* NSImage+MGCropExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+MGCropExtensions.h"; sourceTree = "<group>"; };
+		31B07ED31F8113A000B6BCCA /* BackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
+		31B07ED41F8113A000B6BCCA /* BackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
+		31B07ED71F8127A400B6BCCA /* MyRectGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyRectGradientView.h; path = XenioUIKit/MyRectGradientView.h; sourceTree = "<group>"; };
+		31B07ED81F8127A400B6BCCA /* MyRectGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyRectGradientView.m; path = XenioUIKit/MyRectGradientView.m; sourceTree = "<group>"; };
+		31B07ED91F8127A400B6BCCA /* MyBaseGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyBaseGradientView.h; path = XenioUIKit/MyBaseGradientView.h; sourceTree = "<group>"; };
+		31B07EDA1F8127A400B6BCCA /* MyBaseGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyBaseGradientView.m; path = XenioUIKit/MyBaseGradientView.m; sourceTree = "<group>"; };
+		31B07EDD1F815A4E00B6BCCA /* LibraryEmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryEmptyView.h; sourceTree = "<group>"; };
+		31B07EDE1F815A4E00B6BCCA /* LibraryEmptyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibraryEmptyView.m; sourceTree = "<group>"; };
+		31B07EE01F81633B00B6BCCA /* LibraryGameView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryGameView.h; sourceTree = "<group>"; };
+		31B07EE11F81633B00B6BCCA /* LibraryGameView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibraryGameView.m; sourceTree = "<group>"; };
+		31B07EE31F8167A000B6BCCA /* SignUpButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpButton.xib; sourceTree = "<group>"; };
+		31B07EE61F8167F500B6BCCA /* SignUpButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpButton.h; sourceTree = "<group>"; };
+		31B07EE71F8167F500B6BCCA /* SignUpButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpButton.m; sourceTree = "<group>"; };
+		31B07EEC1F81812500B6BCCA /* LibraryGameSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryGameSearchBar.h; sourceTree = "<group>"; };
+		31B07EED1F81812500B6BCCA /* LibraryGameSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibraryGameSearchBar.m; sourceTree = "<group>"; };
+		31B07EEF1F81814200B6BCCA /* LibraryGameSearchBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryGameSearchBar.xib; sourceTree = "<group>"; };
 		31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreeButton.xib; sourceTree = "<group>"; };
 		31B593BF1F7C15D400D5B5FC /* FreeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeButton.h; sourceTree = "<group>"; };
 		31B593C01F7C15D400D5B5FC /* FreeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeButton.m; sourceTree = "<group>"; };
@@ -744,8 +772,41 @@
 				31B07ECA1F80ACCA00B6BCCA /* CustomSearchBar.h */,
 				31B07ECB1F80ACCB00B6BCCA /* CustomSearchBar.m */,
 				31B07ECC1F80ACCB00B6BCCA /* CustomSearchBar.xib */,
+				31B07EEC1F81812500B6BCCA /* LibraryGameSearchBar.h */,
+				31B07EED1F81812500B6BCCA /* LibraryGameSearchBar.m */,
+				31B07EEF1F81814200B6BCCA /* LibraryGameSearchBar.xib */,
 			);
 			name = CustomSearchBar;
+			sourceTree = "<group>";
+		};
+		31B07ED21F81137C00B6BCCA /* CustomViewBackground */ = {
+			isa = PBXGroup;
+			children = (
+				31B07ED31F8113A000B6BCCA /* BackgroundView.h */,
+				31B07ED41F8113A000B6BCCA /* BackgroundView.m */,
+			);
+			name = CustomViewBackground;
+			sourceTree = "<group>";
+		};
+		31B07ED61F81276100B6BCCA /* MyGradientView */ = {
+			isa = PBXGroup;
+			children = (
+				31B07ED91F8127A400B6BCCA /* MyBaseGradientView.h */,
+				31B07EDA1F8127A400B6BCCA /* MyBaseGradientView.m */,
+				31B07ED71F8127A400B6BCCA /* MyRectGradientView.h */,
+				31B07ED81F8127A400B6BCCA /* MyRectGradientView.m */,
+			);
+			name = MyGradientView;
+			sourceTree = "<group>";
+		};
+		31B07EE51F8167A800B6BCCA /* PassphraseView */ = {
+			isa = PBXGroup;
+			children = (
+				3E6FE7E81F78068C00B98AD3 /* PassphraseView.xib */,
+				3E6FE7EA1F782A6900B98AD3 /* PassphraseView.h */,
+				3E6FE7EB1F782A6900B98AD3 /* PassphraseView.m */,
+			);
+			name = PassphraseView;
 			sourceTree = "<group>";
 		};
 		31DAB2F21F7DFB9A006E326E /* Popover */ = {
@@ -1265,6 +1326,10 @@
 				3E6FE7B01F77605800B98AD3 /* LibraryScreenshotsView.m */,
 				31972D721F7D1755008447C2 /* LibraryEmptySideMenu.h */,
 				31972D731F7D1755008447C2 /* LibraryEmptySideMenu.m */,
+				31B07EDD1F815A4E00B6BCCA /* LibraryEmptyView.h */,
+				31B07EDE1F815A4E00B6BCCA /* LibraryEmptyView.m */,
+				31B07EE01F81633B00B6BCCA /* LibraryGameView.h */,
+				31B07EE11F81633B00B6BCCA /* LibraryGameView.m */,
 			);
 			name = LibraryClasses;
 			sourceTree = "<group>";
@@ -1430,6 +1495,8 @@
 		3ECF3CAE1F686869005165E5 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				31B07ED01F80CC6500B6BCCA /* NSImage+MGCropExtensions.h */,
+				31B07ECF1F80CC6500B6BCCA /* NSImage+MGCropExtensions.m */,
 				3E6FE80E1F78883A00B98AD3 /* NSView+Fade.h */,
 				3E6FE80F1F78883A00B98AD3 /* NSView+Fade.m */,
 				3E7230DB1F7350940050A70D /* NSView+INSNibLoading.h */,
@@ -1445,6 +1512,8 @@
 		3ECF3CAF1F686883005165E5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				31B07ED61F81276100B6BCCA /* MyGradientView */,
+				31B07ED21F81137C00B6BCCA /* CustomViewBackground */,
 				31B07EC91F80AC9F00B6BCCA /* CustomSearchBar */,
 				3151CC7A1F7F22CC00B3D3C3 /* Modal */,
 				31DAB2F21F7DFB9A006E326E /* Popover */,
@@ -1459,9 +1528,7 @@
 				3E8EEF6B1F6D896C0034BE04 /* CustomTableView */,
 				3E1FF8E41F6AC4CE00117F16 /* CustomTabbar */,
 				3ECF3CFB1F698011005165E5 /* Buttons */,
-				3E6FE7E81F78068C00B98AD3 /* PassphraseView.xib */,
-				3E6FE7EA1F782A6900B98AD3 /* PassphraseView.h */,
-				3E6FE7EB1F782A6900B98AD3 /* PassphraseView.m */,
+				31B07EE51F8167A800B6BCCA /* PassphraseView */,
 				315947021F7C51CF0073FA52 /* BackgroundView.xib */,
 				315947041F7C51F40073FA52 /* BackgoundView.h */,
 				315947051F7C51F40073FA52 /* BackgoundView.m */,
@@ -1524,6 +1591,8 @@
 				31B593C01F7C15D400D5B5FC /* FreeButton.m */,
 				31B8EB961F80437400962504 /* ChooseFriendButton.h */,
 				31B8EB971F80437400962504 /* ChooseFriendButton.m */,
+				31B07EE61F8167F500B6BCCA /* SignUpButton.h */,
+				31B07EE71F8167F500B6BCCA /* SignUpButton.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1533,12 +1602,13 @@
 			children = (
 				3ECF3CB01F686897005165E5 /* Classes */,
 				3E6FE7ED1F782B3F00B98AD3 /* ContinueButton.xib */,
+				3ECF3CC51F6897B7005165E5 /* SignInButton.xib */,
+				31B07EE31F8167A000B6BCCA /* SignUpButton.xib */,
 				3E36C8021F67198E00537BCA /* LIButton.xib */,
 				3E36C8041F68158000537BCA /* LLIButton.xib */,
 				3ECF3CB61F687BE7005165E5 /* GiftButton.xib */,
 				3ECF3CBB1F68808C005165E5 /* SettingsButton.xib */,
 				3ECF3CC01F6884B1005165E5 /* PreOrderButton.xib */,
-				3ECF3CC51F6897B7005165E5 /* SignInButton.xib */,
 				3ECF3CCA1F689C3D005165E5 /* RoundButton.xib */,
 				3ECF3CD21F68A49E005165E5 /* AllStopButton.xib */,
 				3ECF3CD71F68A729005165E5 /* AddGameButton.xib */,
@@ -1725,6 +1795,7 @@
 				3E7230C01F734BDD0050A70D /* Wallet.storyboard in Resources */,
 				3E6FE7AE1F77602800B98AD3 /* LibraryScreenshotsView.xib in Resources */,
 				31E4F74A1F7E9E5E0047B843 /* StoreGameInfoView.xib in Resources */,
+				31B07EF01F81814200B6BCCA /* LibraryGameSearchBar.xib in Resources */,
 				3E6FE7E41F77FC1100B98AD3 /* WelcomeContinueButton.xib in Resources */,
 				3EBAADF11F75F7ED00890AD1 /* ArrowButton.xib in Resources */,
 				3E6FE7AC1F775E9C00B98AD3 /* LibraryScreenshotItem.xib in Resources */,
@@ -1773,6 +1844,7 @@
 				3E36C8051F68158000537BCA /* LLIButton.xib in Resources */,
 				3ECF3CD81F68A729005165E5 /* AddGameButton.xib in Resources */,
 				3E6FE7CD1F77909700B98AD3 /* WalletChooseFriendItem.xib in Resources */,
+				31B07EE41F8167A000B6BCCA /* SignUpButton.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1835,6 +1907,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3151CC8B1F7F5F5600B3D3C3 /* NSSplitView+ReplaceView.h in Sources */,
+				31B07EDC1F8127A400B6BCCA /* MyBaseGradientView.m in Sources */,
 				3E7230D41F734EEC0050A70D /* LibraryContentViewController.m in Sources */,
 				3EBAADFC1F760A8100890AD1 /* WalletHistoryModel.m in Sources */,
 				3ECF3CFA1F697BBD005165E5 /* RemoveButton.m in Sources */,
@@ -1853,11 +1926,13 @@
 				3ECF3CCE1F689CC2005165E5 /* RoundButton.m in Sources */,
 				3E7230F01F73559F0050A70D /* FriendsContentNavigationViewController.m in Sources */,
 				3E7230D71F734F5A0050A70D /* WalletSideMenuViewController.m in Sources */,
+				31B07EE21F81633B00B6BCCA /* LibraryGameView.m in Sources */,
 				3E558BF71F79AFA500542B7B /* FriendsHideCell.m in Sources */,
 				3E9C46021F70484C00693AA1 /* StoreNavigationViewController.m in Sources */,
 				3E8875F01F74027A001B8374 /* LibrarySideMenuCell.m in Sources */,
 				3E558BC21F7950BC00542B7B /* SettingsNavigationListViewController.m in Sources */,
 				3EBAADC91F75920300890AD1 /* LibraryGamesServerListHeaderCell.m in Sources */,
+				31B07EEE1F81812500B6BCCA /* LibraryGameSearchBar.m in Sources */,
 				3EBAAE021F760DEC00890AD1 /* WalletSideMenuModel.m in Sources */,
 				3E558C121F7AE43E00542B7B /* FriendsListModel.m in Sources */,
 				31E4F7471F7E9E5E0047B843 /* PaymentInformationTableView.m in Sources */,
@@ -1869,6 +1944,7 @@
 				3E558BD61F796F5800542B7B /* SettingsNavigationListCell.m in Sources */,
 				3E6FE7EC1F782A6900B98AD3 /* PassphraseView.m in Sources */,
 				3E8876011F74104E001B8374 /* LibraryGamesRightMenuHeaderCell.m in Sources */,
+				31B07ED51F8113A000B6BCCA /* BackgroundView.m in Sources */,
 				315947281F7C99D80073FA52 /* SplitViewWithDivider.m in Sources */,
 				3E558BB41F78B7D000542B7B /* LibraryNavigationController.m in Sources */,
 				3EBAADCE1F75958A00890AD1 /* StoreSideMenuCell.m in Sources */,
@@ -1885,6 +1961,7 @@
 				3E558BF21F79A46B00542B7B /* WalletSideMenuHeaderCell.m in Sources */,
 				3E8876621F74B654001B8374 /* StorePaymentInformationCell.m in Sources */,
 				3E6FE7FC1F7844EC00B98AD3 /* SignInViewController.m in Sources */,
+				31B07EDB1F8127A400B6BCCA /* MyRectGradientView.m in Sources */,
 				3ECF3CE61F697053005165E5 /* CancelButton.m in Sources */,
 				3E6FE7B51F776D2000B98AD3 /* BuyGameScreenshotsView.m in Sources */,
 				3E7230F91F7357810050A70D /* SettingsSideListViewController.m in Sources */,
@@ -1899,6 +1976,7 @@
 				3E3E42001F757D0D009698FD /* LibraryGamesServersListView.m in Sources */,
 				315947191F7C6B190073FA52 /* StoreGameInfoView.m in Sources */,
 				31B8EB921F7FD82500962504 /* StoreMainGamesGridViewController.m in Sources */,
+				31B07EDF1F815A4E00B6BCCA /* LibraryEmptyView.m in Sources */,
 				3E7230DD1F7350940050A70D /* NSView+INSNibLoading.m in Sources */,
 				3EBAADE11F75A34900890AD1 /* StoreGamesView.m in Sources */,
 				3E8876271F745460001B8374 /* StoreGamesCell.m in Sources */,
@@ -1920,6 +1998,7 @@
 				3E7230EA1F7354CD0050A70D /* FriendsSideListViewController.m in Sources */,
 				3EBAADD91F75997500890AD1 /* StoreSideMenuHeaderCell.m in Sources */,
 				3ECF3CBA1F687C02005165E5 /* GiftButton.m in Sources */,
+				31B07EE81F8167F500B6BCCA /* SignUpButton.m in Sources */,
 				3E7230DA1F734F850050A70D /* WalletContentViewController.m in Sources */,
 				31E4F74E1F7E9E5E0047B843 /* PaymentInfoCheckboxCell.m in Sources */,
 				3E9C460E1F7084E100693AA1 /* ChartView.m in Sources */,
@@ -1972,6 +2051,7 @@
 				3E6FE7E21F77F1BC00B98AD3 /* MainWindow.m in Sources */,
 				3E3E41FA1F7565C5009698FD /* LibraryGamesRightMenuModel.m in Sources */,
 				31E4F7441F7E9E5E0047B843 /* PaymentInformationGameCell.m in Sources */,
+				31B07ED11F80CC6500B6BCCA /* NSImage+MGCropExtensions.m in Sources */,
 				3E8EEF5F1F6D7BA40034BE04 /* CustomTableCellView.m in Sources */,
 				3E8876431F7498A8001B8374 /* PlayerStatusView.m in Sources */,
 				31B8EB981F80437400962504 /* ChooseFriendButton.m in Sources */,

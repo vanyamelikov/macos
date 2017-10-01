@@ -1,7 +1,7 @@
 #import "NSView+INSNibLoading.h"
 
-@interface SettingsSideListView : INSNibLoadedView <NSTableViewDelegate, NSTableViewDataSource>
+@interface SettingsSideListView : INSNibLoadedView <NSOutlineViewDelegate, NSOutlineViewDataSource>
 
-@property (strong) IBOutlet NSTableView *tableView;
+@property (weak) IBOutlet NSOutlineView *friendsOutlineView;
 
 @end

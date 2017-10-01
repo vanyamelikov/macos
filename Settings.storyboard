@@ -551,7 +551,7 @@
                 </viewController>
                 <customObject id="H5U-9X-Tad" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="73.5" y="996"/>
+            <point key="canvasLocation" x="79" y="1057"/>
         </scene>
         <!--Settings Side List View Controller-->
         <scene sceneID="0ht-5J-jRM">
@@ -619,7 +619,7 @@
                                 </constraints>
                                 <color key="fillColor" red="0.17254901960784313" green="0.35686274509803922" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
                             </box>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="qW2-WE-dHO">
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="qW2-WE-dHO" customClass="CustomSearchBar">
                                 <rect key="frame" x="0.0" y="829" width="332" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="bMP-kG-NNI"/>
@@ -641,7 +641,7 @@
                     </view>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="378" y="996"/>
+            <point key="canvasLocation" x="389" y="1057"/>
         </scene>
     </scenes>
     <resources>

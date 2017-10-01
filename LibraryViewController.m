@@ -16,8 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSViewController *controller = self.parentViewController;
-    NSView *view = self.view.superview;
+    
+}
+
+-(void)libraryEmtyAddGameClick {
+    
 }
 
 @end

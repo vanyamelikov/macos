@@ -7,20 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "AddGameButton.h"
-
-@class LibraryContentViewController;
-
-@protocol LibraryAddGameDelegate <NSObject>
--(void)libraryEmtyAddGameClick;
-@end
+#import "LibraryEmptyView.h"
+#import "LibraryGameView.h"
 
 @interface LibraryContentViewController : NSViewController
 
-@property (strong) IBOutlet NSView *libraryEmptyView;
-@property (strong) IBOutlet NSView *libraryGameView;
-@property (strong) IBOutlet AddGameButton *addGameButton;
+@property (weak) IBOutlet LibraryEmptyView *libraryEmptyView;
+@property (weak) IBOutlet LibraryGameView *libraryGameView;
 
-@property (nonatomic, weak) id<LibraryAddGameDelegate> addGameDelegate;
 
 @end
