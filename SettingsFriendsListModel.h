@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FriendsListModel.h"
 
 @interface SettingsFriendsListModel : NSObject
+
+@property (nonatomic) NSString *title;
+@property (nonatomic) NSArray<FriendsListModel *> *friends;
 
 @end
