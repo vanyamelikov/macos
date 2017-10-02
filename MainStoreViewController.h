@@ -10,6 +10,7 @@
 #import "StoreSideMenuViewController.h"
 #import "StoreContentViewController.h"
 #import "NSViewController+BFNavigationController.h"
+#import "BFNavigationController.h"
 #import "StoreGamesView.h"
 #import "StoreGamesGridView.h"
 #import "StoreMainGridView.h"

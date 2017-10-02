@@ -7,6 +7,8 @@
 //
 
 #import "PGameInfoController.h"
+#import "BFNavigationController.h"
+#import "NSViewController+BFNavigationController.h"
 
 @interface PGameInfoController ()
 
@@ -14,9 +16,32 @@
 
 @implementation PGameInfoController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do view setup here.
+- (id)initWithNibName: (NSString *)nibNameOrNil bundle: (NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if(self) {
+        // Initialization code here.
+    }
+    
+    return self;
 }
 
+- (void)loadView {
+    [super loadView];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    NSLog(@"%@ - viewWillAppear: %i", self.title, animated);
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    NSLog(@"%@ - viewDidAppear: %i", self.title, animated);
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    NSLog(@"%@ - viewWillDisappear: %i", self.title, animated);
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    NSLog(@"%@ - viewDidDisappear: %i", self.title, animated);
+}
 @end

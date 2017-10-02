@@ -21,6 +21,8 @@
 #import "SettingsNavigationListViewController.h"
 #import "SettingsSideListViewController.h"
 #import "SplitViewWithDivider.h"
+#import "MyRectGradientView.h"
+#import "Colours.h"
 
 @interface MainTabViewController (){
     NSWindowController *_controlWindowController;
@@ -160,6 +162,15 @@
         
         [self.view addSubview:imageView positioned:NSWindowBelow relativeTo:self.view];
         
+        MyRectGradientView *rectGradientView = [[MyRectGradientView alloc] initWithFrame:self.view.frame];
+        [rectGradientView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
+        
+        [rectGradientView setStartColor:[NSColor colorWithRed:(23/255) green:(26/255) blue:(38/255) alpha:.9f]];
+        [rectGradientView setEndColor:[NSColor colorWithRed:(23/255) green:(26/255) blue:(38/255) alpha:.9f]];
+        [rectGradientView setAngle:90.0];
+        
+        [self.view addSubview:rectGradientView positioned:NSWindowAbove relativeTo:imageView];
+        
         NSDictionary * views = NSDictionaryOfVariableBindings(imageView);
         [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[imageView]|"
                                                                           options:0
@@ -169,6 +180,16 @@
                                                                           options:0
                                                                           metrics:nil
                                                                             views:views]];
+        
+        NSDictionary * rectViews = NSDictionaryOfVariableBindings(rectGradientView);
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[rectGradientView]|"
+                                                                          options:0
+                                                                          metrics:nil
+                                                                            views:rectViews]];
+        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[rectGradientView]|"
+                                                                          options:0
+                                                                          metrics:nil
+                                                                            views:rectViews]];
     }
     
 }

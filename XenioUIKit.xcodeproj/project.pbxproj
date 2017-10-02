@@ -47,7 +47,6 @@
 		31B07F3C1F81AECE00B6BCCA /* BuyGamePaymentMethodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07F331F81AECC00B6BCCA /* BuyGamePaymentMethodView.m */; };
 		31B07F411F81B10200B6BCCA /* PayNowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07F401F81B10200B6BCCA /* PayNowButton.m */; };
 		31B07F431F81B12300B6BCCA /* PayNowButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B07F421F81B12300B6BCCA /* PayNowButton.xib */; };
-		31B07F471F81B2A000B6BCCA /* PGameInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07F461F81B2A000B6BCCA /* PGameInfoController.m */; };
 		31B593BB1F7C14CF00D5B5FC /* FreeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */; };
 		31B593C11F7C15D400D5B5FC /* FreeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B593C01F7C15D400D5B5FC /* FreeButton.m */; };
 		31B593C31F7C194B00D5B5FC /* StoreTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B593C21F7C194B00D5B5FC /* StoreTabView.xib */; };
@@ -68,7 +67,12 @@
 		31E4F74D1F7E9E5E0047B843 /* PaymentInformationTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31E4F7401F7E9E5D0047B843 /* PaymentInformationTableView.xib */; };
 		31E4F74E1F7E9E5E0047B843 /* PaymentInfoCheckboxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E4F7411F7E9E5E0047B843 /* PaymentInfoCheckboxCell.m */; };
 		31E4F7551F7EA2560047B843 /* PayInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31E4F7541F7EA2560047B843 /* PayInfoCell.xib */; };
-		31F155441F81FCD00070B256 /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F155431F81FCD00070B256 /* Payment.storyboard */; };
+		31F155491F81FE9F0070B256 /* CustomSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F155461F81FE9F0070B256 /* CustomSwitch.m */; };
+		31F1554A1F81FE9F0070B256 /* CustomSwitch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F155471F81FE9F0070B256 /* CustomSwitch.xib */; };
+		31F1554E1F81FED90070B256 /* BuyGameMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F1554B1F81FED80070B256 /* BuyGameMainView.xib */; };
+		31F1554F1F81FED90070B256 /* BuyGameMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F1554D1F81FED90070B256 /* BuyGameMainView.m */; };
+		31F155531F820AAF0070B256 /* PGameInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F155511F820AAF0070B256 /* PGameInfoController.m */; };
+		31F155541F820AAF0070B256 /* PGameInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F155521F820AAF0070B256 /* PGameInfoController.xib */; };
 		3E1FF8E61F6AC4F700117F16 /* CustomTabbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E1FF8E51F6AC4F700117F16 /* CustomTabbar.xib */; };
 		3E1FF8E91F6AD86400117F16 /* CustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1FF8E81F6AD86400117F16 /* CustomTabbar.m */; };
 		3E25FB211F66EBCA000423E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E25FB201F66EBCA000423E9 /* AppDelegate.m */; };
@@ -341,8 +345,6 @@
 		31B07F3F1F81B10200B6BCCA /* PayNowButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayNowButton.h; sourceTree = "<group>"; };
 		31B07F401F81B10200B6BCCA /* PayNowButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayNowButton.m; sourceTree = "<group>"; };
 		31B07F421F81B12300B6BCCA /* PayNowButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayNowButton.xib; sourceTree = "<group>"; };
-		31B07F451F81B2A000B6BCCA /* PGameInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGameInfoController.h; sourceTree = "<group>"; };
-		31B07F461F81B2A000B6BCCA /* PGameInfoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGameInfoController.m; sourceTree = "<group>"; };
 		31B593BA1F7C14CF00D5B5FC /* FreeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreeButton.xib; sourceTree = "<group>"; };
 		31B593BF1F7C15D400D5B5FC /* FreeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreeButton.h; sourceTree = "<group>"; };
 		31B593C01F7C15D400D5B5FC /* FreeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeButton.m; sourceTree = "<group>"; };
@@ -372,7 +374,15 @@
 		31E4F7401F7E9E5D0047B843 /* PaymentInformationTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PaymentInformationTableView.xib; path = PaymentInformation/PaymentInformationTableView.xib; sourceTree = "<group>"; };
 		31E4F7411F7E9E5E0047B843 /* PaymentInfoCheckboxCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentInfoCheckboxCell.m; path = PaymentInformation/PaymentInfoCheckboxCell.m; sourceTree = "<group>"; };
 		31E4F7541F7EA2560047B843 /* PayInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayInfoCell.xib; sourceTree = "<group>"; };
-		31F155431F81FCD00070B256 /* Payment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
+		31F155461F81FE9F0070B256 /* CustomSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSwitch.m; sourceTree = "<group>"; };
+		31F155471F81FE9F0070B256 /* CustomSwitch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSwitch.xib; sourceTree = "<group>"; };
+		31F155481F81FE9F0070B256 /* CustomSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSwitch.h; sourceTree = "<group>"; };
+		31F1554B1F81FED80070B256 /* BuyGameMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyGameMainView.xib; sourceTree = "<group>"; };
+		31F1554C1F81FED80070B256 /* BuyGameMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyGameMainView.h; sourceTree = "<group>"; };
+		31F1554D1F81FED90070B256 /* BuyGameMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyGameMainView.m; sourceTree = "<group>"; };
+		31F155501F820AAF0070B256 /* PGameInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGameInfoController.h; sourceTree = "<group>"; };
+		31F155511F820AAF0070B256 /* PGameInfoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGameInfoController.m; sourceTree = "<group>"; };
+		31F155521F820AAF0070B256 /* PGameInfoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PGameInfoController.xib; sourceTree = "<group>"; };
 		3E1FF8E51F6AC4F700117F16 /* CustomTabbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTabbar.xib; sourceTree = "<group>"; };
 		3E1FF8E71F6AD86400117F16 /* CustomTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabbar.h; sourceTree = "<group>"; };
 		3E1FF8E81F6AD86400117F16 /* CustomTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabbar.m; sourceTree = "<group>"; };
@@ -783,8 +793,9 @@
 		31B07F441F81B21900B6BCCA /* PaymentViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				31B07F451F81B2A000B6BCCA /* PGameInfoController.h */,
-				31B07F461F81B2A000B6BCCA /* PGameInfoController.m */,
+				31F155501F820AAF0070B256 /* PGameInfoController.h */,
+				31F155511F820AAF0070B256 /* PGameInfoController.m */,
+				31F155521F820AAF0070B256 /* PGameInfoController.xib */,
 			);
 			name = PaymentViewControllers;
 			sourceTree = "<group>";
@@ -801,6 +812,9 @@
 		31E4F72E1F7E9DFE0047B843 /* Payment */ = {
 			isa = PBXGroup;
 			children = (
+				31F1554C1F81FED80070B256 /* BuyGameMainView.h */,
+				31F1554D1F81FED90070B256 /* BuyGameMainView.m */,
+				31F1554B1F81FED80070B256 /* BuyGameMainView.xib */,
 				315947081F7C6B170073FA52 /* StoreGameInfoView.h */,
 				3159470C1F7C6B170073FA52 /* StoreGameInfoView.m */,
 				31B07F2C1F81AE1C00B6BCCA /* StoreGameInfoView.xib */,
@@ -819,9 +833,18 @@
 				31B07F291F81AD8000B6BCCA /* PaymentInformationView.h */,
 				31B07F2A1F81AD8000B6BCCA /* PaymentInformationView.m */,
 				31E4F73D1F7E9E5D0047B843 /* PaymentInformationView.xib */,
-				31F155431F81FCD00070B256 /* Payment.storyboard */,
 			);
 			name = Payment;
+			sourceTree = "<group>";
+		};
+		31F155451F81FE650070B256 /* CustomSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				31F155481F81FE9F0070B256 /* CustomSwitch.h */,
+				31F155461F81FE9F0070B256 /* CustomSwitch.m */,
+				31F155471F81FE9F0070B256 /* CustomSwitch.xib */,
+			);
+			name = CustomSwitch;
 			sourceTree = "<group>";
 		};
 		3E1FF8E41F6AC4CE00117F16 /* CustomTabbar */ = {
@@ -1470,6 +1493,7 @@
 		3ECF3CAF1F686883005165E5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				31F155451F81FE650070B256 /* CustomSwitch */,
 				31B07ED61F81276100B6BCCA /* MyGradientView */,
 				31B07ED21F81137C00B6BCCA /* CustomViewBackground */,
 				31B07EC91F80AC9F00B6BCCA /* CustomSearchBar */,
@@ -1686,6 +1710,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E6FE7C41F77834300B98AD3 /* FriendsFeaturedGamesView.xib in Resources */,
+				31F155541F820AAF0070B256 /* PGameInfoController.xib in Resources */,
 				3E8876561F74ABE0001B8374 /* StorePaymentInformationCell.xib in Resources */,
 				3EBAADD01F7595A700890AD1 /* StoreSideMenuCell.xib in Resources */,
 				3ECF3CCB1F689C3D005165E5 /* RoundButton.xib in Resources */,
@@ -1704,7 +1729,6 @@
 				3E8875F71F74085A001B8374 /* LibraryGamesRightMenuCell.xib in Resources */,
 				3E6FE7CF1F7793CE00B98AD3 /* WalletChooseFriendCollectionView.xib in Resources */,
 				3E558BFC1F79D53200542B7B /* StoreMainGridView.xib in Resources */,
-				31F155441F81FCD00070B256 /* Payment.storyboard in Resources */,
 				31B07F431F81B12300B6BCCA /* PayNowButton.xib in Resources */,
 				3E1FF8E61F6AC4F700117F16 /* CustomTabbar.xib in Resources */,
 				3E7230BC1F734B6E0050A70D /* LibraryEmptyView.xib in Resources */,
@@ -1731,6 +1755,7 @@
 				3E558BEF1F79A44D00542B7B /* WalletSideMenuHeaderCell.xib in Resources */,
 				3EBAADEF1F75CCEC00890AD1 /* WalletHistoryView.xib in Resources */,
 				3E8876301F7471B6001B8374 /* FriendsChatRequestCell.xib in Resources */,
+				31F1554A1F81FE9F0070B256 /* CustomSwitch.xib in Resources */,
 				31E4F74D1F7E9E5E0047B843 /* PaymentInformationTableView.xib in Resources */,
 				3E558C0B1F7AE2F500542B7B /* FriendsContentList.xib in Resources */,
 				3E8876521F74ABB2001B8374 /* FriendsRightListCell.xib in Resources */,
@@ -1753,6 +1778,7 @@
 				3E7230E11F7351EA0050A70D /* Settings.storyboard in Resources */,
 				3E7230C21F734C020050A70D /* WalletSideMenu.xib in Resources */,
 				3ECF3CDA1F696CF6005165E5 /* AddButton.xib in Resources */,
+				31F1554E1F81FED90070B256 /* BuyGameMainView.xib in Resources */,
 				3E6FE8141F7897EB00B98AD3 /* SendMoneyButton.xib in Resources */,
 				3159471D1F7C6B190073FA52 /* StoreGameSideListHeaderCell.xib in Resources */,
 				3E7230BA1F734B5F0050A70D /* LibrarySideMenu.xib in Resources */,
@@ -1923,6 +1949,7 @@
 				31B8EB921F7FD82500962504 /* StoreMainGamesGridViewController.m in Sources */,
 				31B07EDF1F815A4E00B6BCCA /* LibraryEmptyView.m in Sources */,
 				3E7230DD1F7350940050A70D /* NSView+INSNibLoading.m in Sources */,
+				31F155531F820AAF0070B256 /* PGameInfoController.m in Sources */,
 				3EBAADE11F75A34900890AD1 /* StoreGamesView.m in Sources */,
 				3E8876271F745460001B8374 /* StoreGamesCell.m in Sources */,
 				3E7230AC1F7348C30050A70D /* MainStoreViewController.m in Sources */,
@@ -1931,6 +1958,7 @@
 				3ECF3CE71F697053005165E5 /* AllStopButton.m in Sources */,
 				3E7230D11F734EA10050A70D /* LibrarySideMenuViewController.m in Sources */,
 				31972D6F1F7CEB77008447C2 /* ImageUtils.m in Sources */,
+				31F1554F1F81FED90070B256 /* BuyGameMainView.m in Sources */,
 				3E7230CB1F734E110050A70D /* StoreSideMenuViewController.m in Sources */,
 				3E558C1B1F7AE82F00542B7B /* FriendsViewController.m in Sources */,
 				3EBAADE71F75BD3800890AD1 /* StoreDownloadsView.m in Sources */,
@@ -1944,7 +1972,6 @@
 				3EBAADD91F75997500890AD1 /* StoreSideMenuHeaderCell.m in Sources */,
 				3ECF3CBA1F687C02005165E5 /* GiftButton.m in Sources */,
 				31B07EE81F8167F500B6BCCA /* SignUpButton.m in Sources */,
-				31B07F471F81B2A000B6BCCA /* PGameInfoController.m in Sources */,
 				3E7230DA1F734F850050A70D /* WalletContentViewController.m in Sources */,
 				31E4F74E1F7E9E5E0047B843 /* PaymentInfoCheckboxCell.m in Sources */,
 				31B07F261F81AD1100B6BCCA /* BuyGameQRView.m in Sources */,
@@ -1982,6 +2009,7 @@
 				3E558BE11F79710300542B7B /* SettingsNavigationListModel.m in Sources */,
 				3E88761D1F7432C0001B8374 /* WalletHistoryCell.m in Sources */,
 				3E88764D1F749EF7001B8374 /* GameTagImageView.m in Sources */,
+				31F155491F81FE9F0070B256 /* CustomSwitch.m in Sources */,
 				31B07F271F81AD1100B6BCCA /* StoreGameInfoSideListView.m in Sources */,
 				3E8876121F741F70001B8374 /* LibrarySideMenuHeaderCell.m in Sources */,
 				3E8875FA1F740CBC001B8374 /* LibraryGamesRightMenuCell.m in Sources */,

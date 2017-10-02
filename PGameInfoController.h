@@ -7,10 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "StoreGameInfoSideListView.h"
+#import "BFViewController.h"
 
-@interface PGameInfoController : NSViewController
-
-
+@interface PGameInfoController : NSViewController <BFViewController>
 
 @end

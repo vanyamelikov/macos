@@ -7,6 +7,7 @@
 //
 
 #import "MainStoreViewController.h"
+#import "PGameInfoController.h"
 
 @interface MainStoreViewController ()
 
@@ -29,6 +30,9 @@
 
 -(void)tableViewItemClicked:(id)item {
     NSLog(@"Coming object is = %@", item);
+    PGameInfoController *mChildVC = [[PGameInfoController alloc] initWithNibName:@"PGameInfoController" bundle:[NSBundle mainBundle]];
+    [self.navigationController pushViewController:mChildVC animated:YES];
+    NSLog(@"Hello child VC");
 }
 
 

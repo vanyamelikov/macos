@@ -169,8 +169,8 @@
         MyRectGradientView *rectGradientView = [[MyRectGradientView alloc] initWithFrame:self.view.frame];
         [rectGradientView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
         
-        [rectGradientView setStartColor:[NSColor colorWithRed:(23/255) green:(26/255) blue:(38/255) alpha:.94f]];
-        [rectGradientView setEndColor:[NSColor colorWithRed:(23/255) green:(26/255) blue:(38/255) alpha:.94f]];
+        [rectGradientView setStartColor:[NSColor colorWithRed:(23/255) green:(26/255) blue:(38/255) alpha:.9f]];
+        [rectGradientView setEndColor:[NSColor colorWithRed:(23/255) green:(26/255) blue:(38/255) alpha:.9f]];
         [rectGradientView setAngle:90.0];
 
         [self.view addSubview:rectGradientView positioned:NSWindowAbove relativeTo:imageView];
