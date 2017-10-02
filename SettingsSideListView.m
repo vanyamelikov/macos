@@ -136,6 +136,16 @@
 
 #pragma mark - NSOutlineView
 
+-(CGFloat)outlineView:(NSOutlineView *)outlineView heightOfRowByItem:(id)item {
+    if ([item isKindOfClass:[FriendsListModel class]]) {
+        return 46.0f;
+    } else if ([item isKindOfClass:[SettingsFriendsListModel class]]) {
+        return 50.0f;
+    } else {
+        return 0.0f;
+    }
+}
+
 - (NSInteger)outlineView:(NSOutlineView *)outlineView numberOfChildrenOfItem:(id)item {
     if (item == nil) {
         return dataSourceArray.count;
@@ -160,10 +170,6 @@
 
 - (id)outlineView:(NSOutlineView *)outlineView objectValueForTableColumn:(NSTableColumn *)tableColumn byItem:(id)item {
     return item;
-}
-
-- (BOOL)outlineView:(NSOutlineView *)outlineView isGroupItem:(id)item {
-    return [item isKindOfClass:[SettingsFriendsListModel class]];
 }
 
 - (NSView *)outlineView:(NSOutlineView *)outlineView viewForTableColumn:(NSTableColumn *)tableColumn item:(id)item {
