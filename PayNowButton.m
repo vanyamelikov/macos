@@ -1,14 +1,14 @@
 //
-//  AddGameButton.m
+//  PayNowButton.m
 //  XenioUIKit
 //
-//  Created by Сергей Иванов on 13.09.17.
+//  Created by Иван Меликов on 02.10.17.
 //  Copyright © 2017 mifsoftware. All rights reserved.
 //
 
-#import "AddGameButton.h"
+#import "PayNowButton.h"
 
-@implementation AddGameButton
+@implementation PayNowButton
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
@@ -34,7 +34,5 @@
 -(void)mouseUp:(NSEvent *)theEvent {
     [self.backgroundBox setFillColor:RGBcolor];
 }
-
-
 
 @end

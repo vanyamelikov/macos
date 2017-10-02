@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PayNowButton">
+            <connections>
+                <outlet property="backgroundBox" destination="XxS-b1-zbs" id="wff-BA-sCf"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="mFA-f1-SxD">
+            <rect key="frame" x="0.0" y="0.0" width="112" height="29"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="XxS-b1-zbs">
+                    <rect key="frame" x="0.0" y="0.0" width="112" height="29"/>
+                    <view key="contentView" id="Shf-BA-5ex">
+                        <rect key="frame" x="1" y="1" width="110" height="27"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6J5-3L-9ed">
+                                <rect key="frame" x="24" y="7" width="63" height="16"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="PAY NOW" id="5D9-Bc-1m3">
+                                    <font key="font" metaFont="cellTitle"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="6J5-3L-9ed" firstAttribute="centerX" secondItem="Shf-BA-5ex" secondAttribute="centerX" id="30t-fp-kZj"/>
+                            <constraint firstItem="6J5-3L-9ed" firstAttribute="centerY" secondItem="Shf-BA-5ex" secondAttribute="centerY" constant="-1" id="QGz-um-x0c"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="4bp-DE-ppv"/>
+                        <constraint firstAttribute="width" constant="112" id="hql-H3-MVo"/>
+                    </constraints>
+                    <color key="borderColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.23921568630000001" green="0.4823529412" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="XxS-b1-zbs" firstAttribute="leading" secondItem="mFA-f1-SxD" secondAttribute="leading" id="cf0-1Y-Ghm"/>
+                <constraint firstItem="XxS-b1-zbs" firstAttribute="top" secondItem="mFA-f1-SxD" secondAttribute="top" id="efV-bm-Ef8"/>
+                <constraint firstAttribute="bottom" secondItem="XxS-b1-zbs" secondAttribute="bottom" id="f4r-gh-QXZ"/>
+                <constraint firstAttribute="trailing" secondItem="XxS-b1-zbs" secondAttribute="trailing" id="vvV-my-kUB"/>
+            </constraints>
+            <point key="canvasLocation" x="195" y="204.5"/>
+        </customView>
+    </objects>
+</document>

@@ -7,7 +7,6 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "TextFieldWithFriend.h"
 #import "SignInButton.h"
 #import "PassphraseView.h"
 #import "PrivateKeyButton.h"

@@ -1,14 +1,14 @@
 //
-//  CustomHeaderCell.m
+//  StoreGameSideListHeaderCell.m
 //  XenioUIKit
 //
-//  Created by Сергей Иванов on 20.09.17.
+//  Created by Сергей Иванов on 28.09.17.
 //  Copyright © 2017 mifsoftware. All rights reserved.
 //
 
-#import "CustomHeaderCell.h"
+#import "StoreGameSideListHeaderCell.h"
 
-@implementation CustomHeaderCell
+@implementation StoreGameSideListHeaderCell
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];

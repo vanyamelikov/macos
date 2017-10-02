@@ -7,6 +7,7 @@
 //
 
 #import "MainStoreViewController.h"
+#import "NSViewController+BFNavigationController.h"
 
 @interface MainStoreViewController ()
 
@@ -16,7 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
+    StoreContentViewController *storeContentVC = (StoreContentViewController *)self.childViewControllers[1];
+    
 }
 
 @end

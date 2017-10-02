@@ -7,10 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "StoreSideMenuViewController.h"
+#import "StoreContentViewController.h"
 
-@interface MainStoreViewController : NSViewController
-
-@property (strong) IBOutlet NSBox *mainStoreBox;
-
+@interface MainStoreViewController : NSSplitViewController
 
 @end

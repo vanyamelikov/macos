@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 #import "CustomTabbar.h"
+#import "BFNavigationController.h"
+#import "NSViewController+BFNavigationController.h"
 
 @interface MainTabViewController : NSViewController <CustomTabbarDelegate, NSTabViewDelegate>
 

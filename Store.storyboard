@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Split View Controller-->
+        <!--Main Store View Controller-->
         <scene sceneID="iKa-tl-ee3">
             <objects>
-                <splitViewController storyboardIdentifier="MainStoreViewController" id="JL9-Js-jCY" sceneMemberID="viewController">
+                <splitViewController storyboardIdentifier="MainStoreViewController" id="JL9-Js-jCY" customClass="MainStoreViewController" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem id="6us-xq-UtL"/>
                         <splitViewItem id="klD-L3-hAP"/>
@@ -36,23 +36,15 @@
         <scene sceneID="SPb-Go-0OC">
             <objects>
                 <viewController id="BQa-Lt-qoT" customClass="StoreSideMenuViewController" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="u9h-C8-vPl">
+                    <view key="view" id="u9h-C8-vPl">
                         <rect key="frame" x="0.0" y="0.0" width="255" height="1140"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ig-MW-llh" customClass="StoreSideMenu">
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="5ig-MW-llh" customClass="StoreSideMenu">
                                 <rect key="frame" x="0.0" y="0.0" width="255" height="1140"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="255" id="bFJ-za-r9L"/>
                                 </constraints>
-                                <backgroundFilters>
-                                    <ciFilter name="CIGaussianBlur">
-                                        <configuration>
-                                            <null key="inputImage"/>
-                                            <real key="inputRadius" value="10"/>
-                                        </configuration>
-                                    </ciFilter>
-                                </backgroundFilters>
                             </customView>
                         </subviews>
                         <constraints>

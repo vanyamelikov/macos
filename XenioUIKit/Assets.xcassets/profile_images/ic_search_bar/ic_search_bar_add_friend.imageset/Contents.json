@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "ic_search_bar_add_friend.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "ic_backarrow@2x.png",
+      "filename" : "ic_search_bar_add_friend@2x.png",
       "scale" : "2x"
     },
     {

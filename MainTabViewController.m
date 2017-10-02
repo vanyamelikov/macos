@@ -8,8 +8,6 @@
 
 #import "MainTabViewController.h"
 #import "MainWindow.h"
-#import "BFNavigationController.h"
-#import "NSViewController+BFNavigationController.h"
 #import "MainStoreViewController.h"
 #import "BottomDownloadBar.h"
 #import <QuartzCore/QuartzCore.h>
@@ -25,10 +23,10 @@
 #import "SplitViewWithDivider.h"
 
 @interface MainTabViewController (){
-    BFNavigationController *_navigationController;
     NSWindowController *_controlWindowController;
     BOOL isShowDownloadBar;
     NSImageView *imageView;
+    BFNavigationController *_navigationController;
 }
 
 @end
@@ -51,6 +49,9 @@
     NSStoryboard *sb1 = [NSStoryboard storyboardWithName:@"Store" bundle:nil];
     MainStoreViewController *mainStoreVC = (MainStoreViewController *)[sb1 instantiateControllerWithIdentifier:@"MainStoreViewController"];
     
+    _navigationController = [[BFNavigationController alloc] initWithFrame:NSMakeRect(0, 0, self.view.frame.size.width, self.view.frame.size.height)
+                                                       rootViewController:mainStoreVC];
+    
     NSStoryboard *sb2 = [NSStoryboard storyboardWithName:@"Library" bundle:nil];
     LibraryViewController *mainLibraryVC = (LibraryViewController *)[sb2 instantiateControllerWithIdentifier:@"LibraryNavigationViewController"];
     
@@ -72,7 +73,7 @@
 
     NSTabViewItem *item;
     item = [[self mainTabView] tabViewItemAtIndex:0];
-    [item setView:[mainStoreVC view]];
+    [item setView:[_navigationController view]];
 
     item = [[self mainTabView] tabViewItemAtIndex:1];
     [item setView:[mainLibraryVC view]];

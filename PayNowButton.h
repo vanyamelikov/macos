@@ -1,20 +1,20 @@
 //
-//  AddGameButton.h
+//  PayNowButton.h
 //  XenioUIKit
 //
-//  Created by Сергей Иванов on 13.09.17.
+//  Created by Иван Меликов on 02.10.17.
 //  Copyright © 2017 mifsoftware. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
 #import "NSView+INSNibLoading.h"
 #import "Colours.h"
 
-@interface AddGameButton : INSNibLoadedView{
+@interface PayNowButton : INSNibLoadedView {
     NSColor *RGBcolor;
     NSColor *alphaColor;
 }
 
 @property (strong) IBOutlet NSBox *backgroundBox;
+
 
 @end

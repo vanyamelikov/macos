@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FriendsHideCell">
+            <connections>
+                <outlet property="arrowDown" destination="eFJ-s5-DLR" id="2Zg-o4-s1W"/>
+                <outlet property="label" destination="0yQ-SS-RZT" id="nmL-5k-U3J"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="g9x-uG-uEW">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="eFJ-s5-DLR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                    <view key="contentView" id="cHS-vI-8uG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0yQ-SS-RZT">
+                                <rect key="frame" x="18" y="14" width="99" height="18"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="General (4/20)" id="OV0-SD-Kfm">
+                                    <font key="font" metaFont="system" size="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="czs-YX-R8E">
+                                <rect key="frame" x="288" y="19" width="12" height="7"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="NWi-Lh-tKS"/>
+                                    <constraint firstAttribute="height" constant="7" id="gXi-rB-QVI"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="ic_down_arrow" id="9dr-Xw-icR"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="czs-YX-R8E" firstAttribute="centerY" secondItem="cHS-vI-8uG" secondAttribute="centerY" id="EaM-Xq-zdM"/>
+                            <constraint firstItem="0yQ-SS-RZT" firstAttribute="leading" secondItem="cHS-vI-8uG" secondAttribute="leading" constant="20" id="OhQ-Iv-Ite"/>
+                            <constraint firstAttribute="trailing" secondItem="czs-YX-R8E" secondAttribute="trailing" constant="20" id="jSR-DQ-hs5"/>
+                            <constraint firstItem="0yQ-SS-RZT" firstAttribute="centerY" secondItem="cHS-vI-8uG" secondAttribute="centerY" id="ovp-Hk-RXQ"/>
+                        </constraints>
+                    </view>
+                    <color key="borderColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eFJ-s5-DLR" secondAttribute="trailing" id="7VL-S5-y6b"/>
+                <constraint firstItem="eFJ-s5-DLR" firstAttribute="top" secondItem="g9x-uG-uEW" secondAttribute="top" id="dc5-FP-kQD"/>
+                <constraint firstItem="eFJ-s5-DLR" firstAttribute="leading" secondItem="g9x-uG-uEW" secondAttribute="leading" id="qtK-Xo-kxR"/>
+                <constraint firstAttribute="bottom" secondItem="eFJ-s5-DLR" secondAttribute="bottom" id="sVI-pJ-CQZ"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="165.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_down_arrow" width="25" height="15"/>
+    </resources>
+</document>

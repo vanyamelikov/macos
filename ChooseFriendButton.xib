@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ChooseFriendButton">
+            <connections>
+                <outlet property="backgroundBox" destination="DGy-YF-cht" id="xfF-E4-sS8"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="t23-yT-Daw">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="DGy-YF-cht">
+                    <rect key="frame" x="0.0" y="0.0" width="278" height="35"/>
+                    <view key="contentView" id="hxH-jA-9r3">
+                        <rect key="frame" x="0.0" y="0.0" width="278" height="35"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6Sx-7o-szw">
+                                <rect key="frame" x="90" y="9" width="99" height="18"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Choose friend" id="Fnx-Nl-N5l">
+                                    <font key="font" metaFont="system" size="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="6Sx-7o-szw" firstAttribute="centerX" secondItem="hxH-jA-9r3" secondAttribute="centerX" id="OvV-b5-4WI"/>
+                            <constraint firstItem="6Sx-7o-szw" firstAttribute="centerY" secondItem="hxH-jA-9r3" secondAttribute="centerY" id="pTQ-W6-lWu"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="278" id="Isb-nb-LsX"/>
+                        <constraint firstAttribute="height" constant="35" id="xWD-2x-MDj"/>
+                    </constraints>
+                    <color key="borderColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.23921568630000001" green="0.4823529412" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="DGy-YF-cht" firstAttribute="leading" secondItem="t23-yT-Daw" secondAttribute="leading" id="H9r-h0-3BJ"/>
+                <constraint firstAttribute="bottom" secondItem="DGy-YF-cht" secondAttribute="bottom" id="Nos-eO-kvP"/>
+                <constraint firstItem="DGy-YF-cht" firstAttribute="top" secondItem="t23-yT-Daw" secondAttribute="top" id="Qzk-sB-LOT"/>
+                <constraint firstAttribute="trailing" secondItem="DGy-YF-cht" secondAttribute="trailing" id="yJy-br-rkR"/>
+            </constraints>
+            <point key="canvasLocation" x="151" y="317.5"/>
+        </customView>
+    </objects>
+</document>

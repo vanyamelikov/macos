@@ -1,0 +1,17 @@
+PODS:
+  - BFNavigationController (1.1.1)
+  - Colours (5.13.0):
+    - Colours/ObjC (= 5.13.0)
+  - Colours/ObjC (5.13.0)
+
+DEPENDENCIES:
+  - BFNavigationController
+  - Colours
+
+SPEC CHECKSUMS:
+  BFNavigationController: 79d37f6ace50700687ea0caa820a37cab281a706
+  Colours: f24220c38f13deac88612667e9b4a7fb96b871d4
+
+PODFILE CHECKSUM: cff976a9d6bca11a135535db17527534917450ff
+
+COCOAPODS: 1.3.1

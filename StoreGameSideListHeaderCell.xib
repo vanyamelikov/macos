@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="StoreGameSideListHeaderCell">
+            <connections>
+                <outlet property="backgroundBox" destination="BT3-8l-Zdg" id="Ny2-oj-wmR"/>
+                <outlet property="label" destination="969-Ap-M8g" id="uyB-4B-CLG"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="dcI-5b-0yl">
+            <rect key="frame" x="0.0" y="0.0" width="255" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="BT3-8l-Zdg">
+                    <rect key="frame" x="0.0" y="0.0" width="255" height="50"/>
+                    <view key="contentView" id="GSv-KG-PAE">
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="50"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="969-Ap-M8g">
+                                <rect key="frame" x="18" y="16" width="219" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="WMi-5W-UKa"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="MENU" id="RQf-a8-ico">
+                                    <font key="font" metaFont="cellTitle"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.34157451919999998" green="0.64983173080000001" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="969-Ap-M8g" secondAttribute="trailing" constant="20" id="Ch9-p7-Dhh"/>
+                            <constraint firstItem="969-Ap-M8g" firstAttribute="leading" secondItem="GSv-KG-PAE" secondAttribute="leading" constant="20" id="WdG-DR-CGp"/>
+                            <constraint firstItem="969-Ap-M8g" firstAttribute="centerY" secondItem="GSv-KG-PAE" secondAttribute="centerY" id="cCO-dk-w24"/>
+                        </constraints>
+                    </view>
+                    <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BT3-8l-Zdg" secondAttribute="bottom" id="VHT-Wu-r4j"/>
+                <constraint firstItem="BT3-8l-Zdg" firstAttribute="leading" secondItem="dcI-5b-0yl" secondAttribute="leading" id="dHo-c6-GxA"/>
+                <constraint firstAttribute="trailing" secondItem="BT3-8l-Zdg" secondAttribute="trailing" id="eNS-LU-OqM"/>
+                <constraint firstItem="BT3-8l-Zdg" firstAttribute="top" secondItem="dcI-5b-0yl" secondAttribute="top" id="hQg-92-534"/>
+            </constraints>
+            <point key="canvasLocation" x="-154.5" y="188"/>
+        </customView>
+    </objects>
+</document>

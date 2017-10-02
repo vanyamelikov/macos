@@ -1,14 +1,15 @@
 //
-//  AddGameButton.m
+//  ChooseFriendButton.m
 //  XenioUIKit
 //
-//  Created by Сергей Иванов on 13.09.17.
+//  Created by Иван Меликов on 01.10.17.
 //  Copyright © 2017 mifsoftware. All rights reserved.
 //
 
-#import "AddGameButton.h"
+#import "ChooseFriendButton.h"
+#import "Colours.h"
 
-@implementation AddGameButton
+@implementation ChooseFriendButton
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
@@ -34,7 +35,5 @@
 -(void)mouseUp:(NSEvent *)theEvent {
     [self.backgroundBox setFillColor:RGBcolor];
 }
-
-
 
 @end
