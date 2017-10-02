@@ -15,28 +15,28 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView wantsLayer="YES" id="pxR-aU-AhE">
-            <rect key="frame" x="0.0" y="0.0" width="356" height="487"/>
+            <rect key="frame" x="0.0" y="0.0" width="338" height="487"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="jwp-oH-toX">
-                    <rect key="frame" x="0.0" y="0.0" width="356" height="487"/>
+                    <rect key="frame" x="0.0" y="0.0" width="338" height="487"/>
                     <view key="contentView" id="vwv-kP-eJC">
-                        <rect key="frame" x="0.0" y="0.0" width="356" height="487"/>
+                        <rect key="frame" x="0.0" y="0.0" width="338" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="17" horizontalPageScroll="10" verticalLineScroll="17" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="zKN-je-The">
-                                <rect key="frame" x="0.0" y="0.0" width="356" height="487"/>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="96" horizontalPageScroll="10" verticalLineScroll="96" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="zKN-je-The">
+                                <rect key="frame" x="0.0" y="0.0" width="338" height="487"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="7Gp-Pq-KBK">
-                                    <rect key="frame" x="0.0" y="0.0" width="356" height="487"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="338" height="487"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" selectionHighlightStyle="none" columnReordering="NO" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" indentationMarkerFollowsCell="NO" outlineTableColumn="TTv-EG-Yhj" id="Pik-n0-cVA">
-                                            <rect key="frame" x="0.0" y="0.0" width="356" height="487"/>
+                                        <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" selectionHighlightStyle="none" columnReordering="NO" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" rowHeight="96" rowSizeStyle="automatic" viewBased="YES" indentationMarkerFollowsCell="NO" outlineTableColumn="TTv-EG-Yhj" id="Pik-n0-cVA">
+                                            <rect key="frame" x="0.0" y="0.0" width="338" height="487"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                             <color key="gridColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                             <tableColumns>
-                                                <tableColumn identifier="FriendsTableColumn" editable="NO" width="353" minWidth="40" maxWidth="1000" id="TTv-EG-Yhj">
+                                                <tableColumn identifier="FriendsTableColumn" editable="NO" width="338" minWidth="338" maxWidth="338" id="TTv-EG-Yhj">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -50,11 +50,11 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES"/>
                                                     <prototypeCellViews>
                                                         <customView identifier="FriendsHideCell" id="ktN-aL-9zI" customClass="FriendsHideCell">
-                                                            <rect key="frame" x="0.0" y="0.0" width="353" height="96"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="338" height="96"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         </customView>
                                                         <customView identifier="FriendsRightListCell" id="ZaQ-mW-Euf" customClass="FriendsRightListCell">
-                                                            <rect key="frame" x="0.0" y="96" width="353" height="96"/>
+                                                            <rect key="frame" x="0.0" y="96" width="338" height="96"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         </customView>
                                                     </prototypeCellViews>

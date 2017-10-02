@@ -37,7 +37,7 @@
         context.duration = 0.6f;
         context.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
         [currentView.animator setAlphaValue:0.0f];
-        [[self animator] replaceSubview:self.subviews[index] with:newView];
+        [self replaceSubview:self.subviews[index] with:newView];
         [newView.animator setAlphaValue:1.0f];
     } completionHandler:^{
         currentView.alphaValue = 1.0f;
