@@ -16,48 +16,49 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="g9x-uG-uEW">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="eFJ-s5-DLR">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="eFJ-s5-DLR">
+                    <rect key="frame" x="0.0" y="7" width="320" height="36"/>
                     <view key="contentView" id="cHS-vI-8uG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0yQ-SS-RZT">
-                                <rect key="frame" x="18" y="14" width="99" height="18"/>
+                                <rect key="frame" x="24" y="8" width="108" height="20"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="General (4/20)" id="OV0-SD-Kfm">
-                                    <font key="font" metaFont="system" size="14"/>
+                                    <font key="font" size="14" name="SFProText-Bold"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="czs-YX-R8E">
-                                <rect key="frame" x="288" y="19" width="12" height="7"/>
+                                <rect key="frame" x="288" y="10" width="12" height="15"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="12" id="NWi-Lh-tKS"/>
-                                    <constraint firstAttribute="height" constant="7" id="gXi-rB-QVI"/>
+                                    <constraint firstAttribute="height" constant="15" id="07U-p9-FW6"/>
+                                    <constraint firstAttribute="width" constant="12" id="oTS-HU-led"/>
                                 </constraints>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="ic_down_arrow" id="9dr-Xw-icR"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_down_arrow" id="9dr-Xw-icR"/>
                             </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="czs-YX-R8E" firstAttribute="centerY" secondItem="cHS-vI-8uG" secondAttribute="centerY" id="EaM-Xq-zdM"/>
-                            <constraint firstItem="0yQ-SS-RZT" firstAttribute="leading" secondItem="cHS-vI-8uG" secondAttribute="leading" constant="20" id="OhQ-Iv-Ite"/>
-                            <constraint firstAttribute="trailing" secondItem="czs-YX-R8E" secondAttribute="trailing" constant="20" id="jSR-DQ-hs5"/>
-                            <constraint firstItem="0yQ-SS-RZT" firstAttribute="centerY" secondItem="cHS-vI-8uG" secondAttribute="centerY" id="ovp-Hk-RXQ"/>
+                            <constraint firstItem="0yQ-SS-RZT" firstAttribute="leading" secondItem="cHS-vI-8uG" secondAttribute="leading" constant="26" id="IMm-Nf-0vZ"/>
+                            <constraint firstItem="czs-YX-R8E" firstAttribute="centerY" secondItem="cHS-vI-8uG" secondAttribute="centerY" id="m4w-vu-xh7"/>
+                            <constraint firstAttribute="trailing" secondItem="czs-YX-R8E" secondAttribute="trailing" constant="20" id="rmx-Js-ION"/>
+                            <constraint firstItem="0yQ-SS-RZT" firstAttribute="centerY" secondItem="cHS-vI-8uG" secondAttribute="centerY" id="twU-J0-Wfs"/>
                         </constraints>
                     </view>
                     <color key="borderColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
-                    <color key="fillColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="1" green="1" blue="1" alpha="0.036471913343558315" colorSpace="custom" customColorSpace="sRGB"/>
                 </box>
             </subviews>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="eFJ-s5-DLR" secondAttribute="trailing" id="7VL-S5-y6b"/>
-                <constraint firstItem="eFJ-s5-DLR" firstAttribute="top" secondItem="g9x-uG-uEW" secondAttribute="top" id="dc5-FP-kQD"/>
-                <constraint firstItem="eFJ-s5-DLR" firstAttribute="leading" secondItem="g9x-uG-uEW" secondAttribute="leading" id="qtK-Xo-kxR"/>
-                <constraint firstAttribute="bottom" secondItem="eFJ-s5-DLR" secondAttribute="bottom" id="sVI-pJ-CQZ"/>
+                <constraint firstItem="eFJ-s5-DLR" firstAttribute="centerY" secondItem="g9x-uG-uEW" secondAttribute="centerY" id="F6I-IV-uZz"/>
+                <constraint firstItem="eFJ-s5-DLR" firstAttribute="top" secondItem="g9x-uG-uEW" secondAttribute="top" constant="7" id="I4n-r8-PTT"/>
+                <constraint firstAttribute="trailing" secondItem="eFJ-s5-DLR" secondAttribute="trailing" id="hPk-6l-K7M"/>
+                <constraint firstItem="eFJ-s5-DLR" firstAttribute="leading" secondItem="g9x-uG-uEW" secondAttribute="leading" id="ubo-Vi-vsv"/>
+                <constraint firstAttribute="bottom" secondItem="eFJ-s5-DLR" secondAttribute="bottom" constant="7" id="x4b-n5-Tdk"/>
             </constraints>
             <point key="canvasLocation" x="132" y="165.5"/>
         </customView>

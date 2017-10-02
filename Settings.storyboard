@@ -565,8 +565,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="338" height="900"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="SpA-TB-dr5">
+                                <rect key="frame" x="0.0" y="0.0" width="338" height="900"/>
+                                <view key="contentView" id="tcV-YQ-4zv">
+                                    <rect key="frame" x="0.0" y="0.0" width="338" height="900"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="338" id="JLo-7M-9rw"/>
+                                </constraints>
+                                <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="fillColor" red="0.0" green="0.0" blue="0.0" alpha="0.39998322469325154" colorSpace="calibratedRGB"/>
+                            </box>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="03I-nb-m2h" customClass="SettingsSideListView">
-                                <rect key="frame" x="0.0" y="37" width="338" height="793"/>
+                                <rect key="frame" x="0.0" y="37" width="338" height="798"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="338" id="V9Z-Ue-h1f"/>
                                 </constraints>
@@ -623,24 +635,35 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="9Vd-va-MVm"/>
                                 </constraints>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="kY1-3S-CdI">
+                                        <connections>
+                                            <action selector="friendsRequestButtonClick:" target="dBA-3u-nFO" id="DcI-OT-jZg"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
                                 <color key="fillColor" red="0.17254901960784313" green="0.35686274509803922" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
                             </box>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="qW2-WE-dHO" customClass="CustomSearchBar">
-                                <rect key="frame" x="0.0" y="830" width="338" height="70"/>
+                                <rect key="frame" x="0.0" y="835" width="338" height="65"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="FkQ-gv-wY3"/>
+                                    <constraint firstAttribute="height" constant="65" id="FkQ-gv-wY3"/>
                                     <constraint firstAttribute="width" constant="338" id="W6R-fq-d8d"/>
                                 </constraints>
                             </customView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ybf-Ul-DAD" secondAttribute="bottom" id="B2r-vL-dQx"/>
+                            <constraint firstAttribute="bottom" secondItem="SpA-TB-dr5" secondAttribute="bottom" id="DYu-cw-dfZ"/>
+                            <constraint firstAttribute="trailing" secondItem="SpA-TB-dr5" secondAttribute="trailing" id="GM9-13-YAq"/>
+                            <constraint firstItem="SpA-TB-dr5" firstAttribute="top" secondItem="d8F-Xs-HKy" secondAttribute="top" id="JYf-dS-rQW"/>
                             <constraint firstAttribute="trailing" secondItem="ybf-Ul-DAD" secondAttribute="trailing" id="beK-Dr-dFL"/>
                             <constraint firstItem="qW2-WE-dHO" firstAttribute="top" secondItem="d8F-Xs-HKy" secondAttribute="top" id="etO-jf-Ir3"/>
                             <constraint firstItem="ybf-Ul-DAD" firstAttribute="leading" secondItem="d8F-Xs-HKy" secondAttribute="leading" id="ghJ-Nt-as2"/>
                             <constraint firstItem="qW2-WE-dHO" firstAttribute="leading" secondItem="d8F-Xs-HKy" secondAttribute="leading" id="m14-FM-k9x"/>
                             <constraint firstItem="03I-nb-m2h" firstAttribute="top" secondItem="qW2-WE-dHO" secondAttribute="bottom" id="mNM-Jr-968"/>
                             <constraint firstAttribute="trailing" secondItem="03I-nb-m2h" secondAttribute="trailing" id="nR0-mZ-tN5"/>
+                            <constraint firstItem="SpA-TB-dr5" firstAttribute="leading" secondItem="d8F-Xs-HKy" secondAttribute="leading" id="q10-u8-orJ"/>
                             <constraint firstItem="ybf-Ul-DAD" firstAttribute="top" secondItem="03I-nb-m2h" secondAttribute="bottom" id="rOV-JU-Bvs"/>
                             <constraint firstItem="03I-nb-m2h" firstAttribute="leading" secondItem="d8F-Xs-HKy" secondAttribute="leading" id="xwK-fu-8eA"/>
                             <constraint firstAttribute="trailing" secondItem="qW2-WE-dHO" secondAttribute="trailing" id="zxh-cP-a8i"/>

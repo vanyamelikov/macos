@@ -19,4 +19,8 @@
     // Do view setup here.
 }
 
+- (IBAction)friendsRequestButtonClick:(NSClickGestureRecognizer *)sender {
+}
+
+
 @end

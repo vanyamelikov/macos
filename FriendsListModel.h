@@ -2,7 +2,9 @@
 
 @interface FriendsListModel : NSObject
 
-@property (nonatomic) NSString *title;
-@property (nonatomic) BOOL isHeader;
+@property (nonatomic) NSString *friendImage;
+@property (nonatomic) NSString *friendName;
+@property (nonatomic) NSString *friendStatus;
+@property (nonatomic) NSString *friendGame;
 
 @end
