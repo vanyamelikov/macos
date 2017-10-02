@@ -1,13 +1,17 @@
 #import "StoreGamesView.h"
 #import "StoreGamesViewModel.h"
 #import "StoreGamesCell.h"
+#import "MainStoreViewController.h"
 #import "LLIButton.h"
 #import "FreeButton.h"
+#import "StoreSideMenuModel.h"
 #import <QuartzCore/QuartzCore.h>
 
 @implementation StoreGamesView {
     NSMutableArray *dataSourceArray;
 }
+
+@synthesize delegate;
 
 -(void)awakeFromNib {
     [super awakeFromNib];
@@ -38,14 +42,7 @@
 }
 
 -(void)initView {
-    
 
-//game4:
-//game5:
-//game6:
-//game7:
-//game8:
-    
     dataSourceArray = [[NSMutableArray alloc] init];
     
     StoreGamesViewModel *model1 = [StoreGamesViewModel new];
@@ -158,6 +155,11 @@
     return cell;
 }
 
-
+-(void)tableViewSelectionDidChange:(NSNotification *)notification {
+    StoreSideMenuModel *model = [dataSourceArray objectAtIndex:self.tableView.selectedRow];
+    if(delegate && [self.delegate respondsToSelector:@selector(tableViewItemClicked:)]) {
+        [self.delegate tableViewItemClicked:model];
+    }
+}
 
 @end

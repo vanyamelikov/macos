@@ -9,7 +9,11 @@
 #import <Cocoa/Cocoa.h>
 #import "StoreSideMenuViewController.h"
 #import "StoreContentViewController.h"
+#import "NSViewController+BFNavigationController.h"
+#import "StoreGamesView.h"
+#import "StoreGamesGridView.h"
+#import "StoreMainGridView.h"
 
-@interface MainStoreViewController : NSSplitViewController
+@interface MainStoreViewController : NSSplitViewController <StoreGamesViewDelegate>
 
 @end
