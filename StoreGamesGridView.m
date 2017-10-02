@@ -36,6 +36,12 @@
     [self.collectionView setItemPrototype:self.collectionViewItem];
     
     [self.collectionView setContent:self.contents];
+    
+    self.collectionView.delegate = self;
+}
+
+- (void)collectionView:(NSCollectionView *)collectionView didSelectItemsAtIndexPaths:(NSSet<NSIndexPath *> *)indexPaths {
+    
 }
 
 @end

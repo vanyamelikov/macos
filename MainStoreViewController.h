@@ -14,6 +14,6 @@
 #import "StoreGamesGridView.h"
 #import "StoreMainGridView.h"
 
-@interface MainStoreViewController : NSSplitViewController <StoreGamesViewDelegate>
+@interface MainStoreViewController : NSSplitViewController <StoreGamesViewDelegate, StoreGamesGridViewDelegate>
 
 @end

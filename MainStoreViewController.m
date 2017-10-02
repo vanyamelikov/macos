@@ -21,12 +21,19 @@
     StoreGamesGridView *gamesGridView = (StoreGamesGridView *)storeContentVC.gamesTabController.tabViewItems[1].view;
     StoreMainGridView *gamesMainGrid = (StoreMainGridView *)storeContentVC.gamesTabController.tabViewItems[2].view;
     gamesListView.delegate = self;
+    gamesGridView.delegate = self;
+    
 }
 
 #pragma mark - StoreGamesViewDelegate
 
 -(void)tableViewItemClicked:(id)item {
     NSLog(@"Coming object is = %@", item);
+}
+
+
+- (void)gamesGridViewItemClicked:(id)item {
+    NSLog(@"Collection coming object is = %@", item);
 }
 
 @end

@@ -68,6 +68,7 @@
 		31E4F74D1F7E9E5E0047B843 /* PaymentInformationTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31E4F7401F7E9E5D0047B843 /* PaymentInformationTableView.xib */; };
 		31E4F74E1F7E9E5E0047B843 /* PaymentInfoCheckboxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E4F7411F7E9E5E0047B843 /* PaymentInfoCheckboxCell.m */; };
 		31E4F7551F7EA2560047B843 /* PayInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31E4F7541F7EA2560047B843 /* PayInfoCell.xib */; };
+		31F155441F81FCD00070B256 /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F155431F81FCD00070B256 /* Payment.storyboard */; };
 		3E1FF8E61F6AC4F700117F16 /* CustomTabbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E1FF8E51F6AC4F700117F16 /* CustomTabbar.xib */; };
 		3E1FF8E91F6AD86400117F16 /* CustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1FF8E81F6AD86400117F16 /* CustomTabbar.m */; };
 		3E25FB211F66EBCA000423E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E25FB201F66EBCA000423E9 /* AppDelegate.m */; };
@@ -371,6 +372,7 @@
 		31E4F7401F7E9E5D0047B843 /* PaymentInformationTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PaymentInformationTableView.xib; path = PaymentInformation/PaymentInformationTableView.xib; sourceTree = "<group>"; };
 		31E4F7411F7E9E5E0047B843 /* PaymentInfoCheckboxCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaymentInfoCheckboxCell.m; path = PaymentInformation/PaymentInfoCheckboxCell.m; sourceTree = "<group>"; };
 		31E4F7541F7EA2560047B843 /* PayInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayInfoCell.xib; sourceTree = "<group>"; };
+		31F155431F81FCD00070B256 /* Payment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
 		3E1FF8E51F6AC4F700117F16 /* CustomTabbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTabbar.xib; sourceTree = "<group>"; };
 		3E1FF8E71F6AD86400117F16 /* CustomTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabbar.h; sourceTree = "<group>"; };
 		3E1FF8E81F6AD86400117F16 /* CustomTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabbar.m; sourceTree = "<group>"; };
@@ -817,6 +819,7 @@
 				31B07F291F81AD8000B6BCCA /* PaymentInformationView.h */,
 				31B07F2A1F81AD8000B6BCCA /* PaymentInformationView.m */,
 				31E4F73D1F7E9E5D0047B843 /* PaymentInformationView.xib */,
+				31F155431F81FCD00070B256 /* Payment.storyboard */,
 			);
 			name = Payment;
 			sourceTree = "<group>";
@@ -1701,6 +1704,7 @@
 				3E8875F71F74085A001B8374 /* LibraryGamesRightMenuCell.xib in Resources */,
 				3E6FE7CF1F7793CE00B98AD3 /* WalletChooseFriendCollectionView.xib in Resources */,
 				3E558BFC1F79D53200542B7B /* StoreMainGridView.xib in Resources */,
+				31F155441F81FCD00070B256 /* Payment.storyboard in Resources */,
 				31B07F431F81B12300B6BCCA /* PayNowButton.xib in Resources */,
 				3E1FF8E61F6AC4F700117F16 /* CustomTabbar.xib in Resources */,
 				3E7230BC1F734B6E0050A70D /* LibraryEmptyView.xib in Resources */,

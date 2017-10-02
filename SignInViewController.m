@@ -34,7 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setBackgroundImage:@"Background"];
+    [self setBackgroundImage:@"background_main"];
     
     focusTFBorderColor = [NSColor colorFromHexString:@"5c5e66"];
     unFocusTFBorderColor = [NSColor colorFromHexString:@"383943"];
@@ -169,8 +169,8 @@
         MyRectGradientView *rectGradientView = [[MyRectGradientView alloc] initWithFrame:self.view.frame];
         [rectGradientView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
         
-        [rectGradientView setStartColor:[NSColor colorWithRed:(24/255) green:(27/255) blue:(41/255) alpha:0.8f]];
-        [rectGradientView setEndColor:[NSColor colorWithRed:(24/255) green:(28/255) blue:(47/255) alpha:0.8f]];
+        [rectGradientView setStartColor:[NSColor colorWithRed:(23/255) green:(26/255) blue:(38/255) alpha:.94f]];
+        [rectGradientView setEndColor:[NSColor colorWithRed:(23/255) green:(26/255) blue:(38/255) alpha:.94f]];
         [rectGradientView setAngle:90.0];
 
         [self.view addSubview:rectGradientView positioned:NSWindowAbove relativeTo:imageView];

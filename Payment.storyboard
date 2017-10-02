@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="POO-hg-KRS">
+            <objects>
+                <viewController id="9md-q3-42i" sceneMemberID="viewController">
+                    <view key="view" id="k2z-J6-KDE">
+                        <rect key="frame" x="0.0" y="0.0" width="1440" height="810"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="ZH7-6U-jbc" customClass="StoreGameInfoSideListView">
+                                <rect key="frame" x="0.0" y="0.0" width="201" height="810"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="201" id="CFC-Jy-7iq"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="LoM-Wd-xgv">
+                                <rect key="frame" x="201" y="0.0" width="1239" height="810"/>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ZH7-6U-jbc" firstAttribute="leading" secondItem="k2z-J6-KDE" secondAttribute="leading" id="BZI-vg-69T"/>
+                            <constraint firstItem="ZH7-6U-jbc" firstAttribute="top" secondItem="k2z-J6-KDE" secondAttribute="top" id="EHn-6X-TA6"/>
+                            <constraint firstAttribute="trailing" secondItem="LoM-Wd-xgv" secondAttribute="trailing" id="GuE-DP-CDZ"/>
+                            <constraint firstAttribute="bottom" secondItem="ZH7-6U-jbc" secondAttribute="bottom" id="QhY-8y-faK"/>
+                            <constraint firstItem="LoM-Wd-xgv" firstAttribute="top" secondItem="k2z-J6-KDE" secondAttribute="top" id="SVR-wZ-Z1b"/>
+                            <constraint firstAttribute="bottom" secondItem="LoM-Wd-xgv" secondAttribute="bottom" id="i1O-t5-wys"/>
+                            <constraint firstItem="LoM-Wd-xgv" firstAttribute="leading" secondItem="ZH7-6U-jbc" secondAttribute="trailing" id="vgT-CR-Rqu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="Q2w-Mv-Qnf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-120" y="-152"/>
+        </scene>
+    </scenes>
+</document>
