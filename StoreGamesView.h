@@ -11,4 +11,6 @@
 
 @property (nonatomic, weak) id <StoreGamesViewDelegate> delegate;
 
+-(void)updateTableViewData : (BOOL)isFree;
+
 @end

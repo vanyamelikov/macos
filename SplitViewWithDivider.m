@@ -13,7 +13,7 @@
 
 
 -(void) drawDividerInRect:(NSRect)aRect {
-    [[NSColor colorWithRed:(255/255) green:(255/255) blue:(255/255) alpha:0.04f] set];
+    [[NSColor colorWithRed:(255/255) green:(255/255) blue:(255/255) alpha:0.1f] set];
     NSRectFill(aRect);
     [self setNeedsDisplayInRect:aRect];
 }

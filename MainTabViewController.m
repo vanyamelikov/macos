@@ -43,7 +43,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setBackgroundImage:@"nfs"];
+    [self setBackgroundImage:@"background_store_1"];
     isShowDownloadBar = NO;
     _mainTabView.delegate = self;
     _mainTabBar.delegate = self;
@@ -97,6 +97,7 @@
     if(sender == 0){
         [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:0]];  
     }else if (sender == 1){
+        [self setBackgroundImage:@"background_store_2"];
         [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:1]];
     }else if (sender == 2){
         [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:2]];
@@ -157,7 +158,6 @@
         imageView = [[NSImageView alloc] initWithFrame:self.view.frame];
         [imageView setImageScaling:NSImageScaleAxesIndependently];
         [imageView setImageAlignment:NSImageAlignCenter];
-        [imageView setImage:[NSImage imageNamed:imageName]];
         [imageView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
         
         [self.view addSubview:imageView positioned:NSWindowBelow relativeTo:self.view];
@@ -190,6 +190,8 @@
                                                                           options:0
                                                                           metrics:nil
                                                                             views:rectViews]];
+    } else {
+        [imageView setImage:[NSImage imageNamed:imageName]];
     }
     
 }

@@ -41,7 +41,7 @@
                         </constraints>
                     </view>
                     <color key="borderColor" red="1" green="1" blue="1" alpha="0.040730122319999999" colorSpace="custom" customColorSpace="sRGB"/>
-                    <color key="fillColor" red="0.090196078430000007" green="0.1019607843" blue="0.14901960780000001" alpha="0.97984757259999999" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" red="0.090196078430000007" green="0.1019607843" blue="0.14901960780000001" alpha="0.75009776431779152" colorSpace="calibratedRGB"/>
                 </box>
                 <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="FjY-al-mjH">
                     <rect key="frame" x="26" y="672" width="1308" height="1"/>

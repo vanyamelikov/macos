@@ -16,6 +16,9 @@
 
 @interface StoreContentViewController ()
 @property (nonatomic) StoreMainGridView *storeMainGridView;
+@property (nonatomic) StoreGamesView *storeGamesList;
+@property (nonatomic) StoreGamesGridView *storeGamesGrid;
+@property (nonatomic) BOOL isList;
 @end
 
 @implementation StoreContentViewController
@@ -28,15 +31,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.isList = YES;
     NSSplitViewController *view = (NSSplitViewController *)self.parentViewController;
     StoreSideMenu *storeSideMenu = view.splitViewItems[0].viewController.view.subviews[0];
     storeSideMenu.delegate = self;
     
     [self hideListGridButtons:YES];
     
-    StoreGamesView *storeGamesList = [[StoreGamesView alloc] initWithFrame:self.gamesTabController.frame];
-    StoreGamesGridView *storeGamesGrid = [[StoreGamesGridView alloc] initWithFrame:self.gamesTabController.frame];
+    self.storeGamesList = [[StoreGamesView alloc] initWithFrame:self.gamesTabController.frame];
+    self.storeGamesGrid = [[StoreGamesGridView alloc] initWithFrame:self.gamesTabController.frame];
     self.storeMainGridView = [[StoreMainGridView alloc] initWithFrame:CGRectMake(self.gamesTabController.frame.origin.x,
                                                                                  self.gamesTabController.frame.origin.x,
                                                                                  1134,
@@ -51,10 +54,10 @@
     
     NSTabViewItem *item;
     item = [[self gamesTabController] tabViewItemAtIndex:0];
-    [item setView:storeGamesList];
+    [item setView:self.storeGamesList];
     
     item = [[self gamesTabController] tabViewItemAtIndex:1];
-    [item setView:storeGamesGrid];
+    [item setView:self.storeGamesGrid];
     
     item = [[self gamesTabController] tabViewItemAtIndex:2];
     [item setView:self.storeMainGridView];
@@ -70,16 +73,14 @@
 - (IBAction)ChangeToListClick:(NSClickGestureRecognizer *)sender {
     if(![self.gamesTabController.selectedTabViewItem isEqual:[self.gamesTabController.tabViewItems objectAtIndex:0]]) {
         [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:0]];
-        self.listImageView.image = [ImageUtils imageTintedWithColor:[NSColor whiteColor] : self.listImageView.image];
-        self.gridImageView.image = [ImageUtils imageTintedWithColor:[NSColor colorFromHexString:@"#69a2a9c1"] : self.gridImageView.image];
+        self.isList = YES;
     }
 }
 
 - (IBAction)ChangeToGridClick:(NSClickGestureRecognizer *)sender {
     if(![self.gamesTabController.selectedTabViewItem isEqual:[self.gamesTabController.tabViewItems objectAtIndex:1]]) {
         [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:1]];
-        self.listImageView.image = [ImageUtils imageTintedWithColor:[NSColor colorFromHexString:@"#69a2a9c1"] : self.listImageView.image];
-        self.gridImageView.image = [ImageUtils imageTintedWithColor:[NSColor whiteColor] : self.gridImageView.image];
+        self.isList = NO;
     }
 }
 
@@ -87,8 +88,27 @@
     if(sender == 2 || sender == 3 || sender == 4) {
         [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:2]];
         [self hideListGridButtons:YES];
+        self.gamesTabController.alphaValue = 0;
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:1.5f];
+        self.gamesTabController.animator.alphaValue = 1;
+        [NSAnimationContext endGrouping];
+        self.gamesTabController.alphaValue = 1;
     } else {
         [self hideListGridButtons:NO];
+        if([title isEqualToString:@"Is free"]) {
+            [self.storeGamesList updateTableViewData:YES];
+            [self.storeGamesGrid updateCollectionView:NO];
+        }
+        else {
+            [self.storeGamesList updateTableViewData:NO];
+            [self.storeGamesGrid updateCollectionView:YES];
+        }
+        if(self.isList) {
+            [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:0]];
+        }else {
+            [self.gamesTabController selectTabViewItem:[self.gamesTabController.tabViewItems objectAtIndex:1]];
+        }
     }
     self.storeCategoriesTitle.stringValue = title;
 }
@@ -117,9 +137,23 @@
 -(void)tabView:(NSTabView *)tabView willSelectTabViewItem:(NSTabViewItem *)tabViewItem {
     if([tabViewItem isEqual:[self.gamesTabController.tabViewItems objectAtIndex:2]]) {
         self.gamesTabViewBottomConstraint.constant = 20;
+    } else if([tabViewItem isEqual:[self.gamesTabController.tabViewItems objectAtIndex:0]]) {
+        self.gamesTabViewBottomConstraint.constant = 0;
+        self.listImageView.image = [ImageUtils imageTintedWithColor:[NSColor whiteColor] : self.listImageView.image];
+        self.gridImageView.image = [ImageUtils imageTintedWithColor:[NSColor colorFromHexString:@"#69a2a9c1"] : self.gridImageView.image];
     } else {
         self.gamesTabViewBottomConstraint.constant = 0;
+        self.listImageView.image = [ImageUtils imageTintedWithColor:[NSColor colorFromHexString:@"#69a2a9c1"] : self.listImageView.image];
+        self.gridImageView.image = [ImageUtils imageTintedWithColor:[NSColor whiteColor] : self.gridImageView.image];
     }
+    
+    self.gamesTabController.alphaValue = 0;
+    [NSAnimationContext beginGrouping];
+    [[NSAnimationContext currentContext] setDuration:1.5f];
+    self.gamesTabController.animator.alphaValue = 1;
+    [NSAnimationContext endGrouping];
+    self.gamesTabController.alphaValue = 1;
+    
     [self.gamesTabController setNeedsUpdateConstraints:YES];
 }
 

@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
                     <color key="borderColor" red="1" green="1" blue="1" alpha="0.03799455275" colorSpace="custom" customColorSpace="sRGB"/>
-                    <color key="fillColor" red="0.090196078430000007" green="0.1019607843" blue="0.14901960780000001" alpha="0.9811257645" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" red="0.090196078430000007" green="0.1019607843" blue="0.14901960780000001" alpha="0.74888362492944793" colorSpace="calibratedRGB"/>
                 </box>
                 <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Xxy-j4-XCU">
                     <rect key="frame" x="26" y="673" width="821" height="1"/>

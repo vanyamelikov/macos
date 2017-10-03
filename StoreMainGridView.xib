@@ -36,7 +36,7 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SQ8-46-20z">
                                 <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="img_grid_6" id="e0v-9m-1kf"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_6" id="e0v-9m-1kf"/>
                             </imageView>
                         </subviews>
                     </view>
@@ -52,7 +52,7 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="slr-UL-q1N">
                                 <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="img_grid_7" id="aO0-s1-28U"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_7" id="aO0-s1-28U"/>
                             </imageView>
                         </subviews>
                     </view>
@@ -68,7 +68,7 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w3w-89-XDP">
                                 <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="img_grid_8" id="1gF-Jx-WOv"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_8" id="1gF-Jx-WOv"/>
                             </imageView>
                         </subviews>
                     </view>
@@ -84,7 +84,7 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k5u-Ca-Goa">
                                 <rect key="frame" x="0.0" y="0.0" width="528" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="img_grid_9" id="1uj-6k-8bs"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_9" id="1uj-6k-8bs"/>
                             </imageView>
                         </subviews>
                     </view>
@@ -100,7 +100,7 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dQC-Zc-ufo">
                                 <rect key="frame" x="0.0" y="0.0" width="730" height="392"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="img_grid_1" id="Bgb-k9-Rla"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_1" id="Bgb-k9-Rla"/>
                             </imageView>
                         </subviews>
                     </view>
@@ -116,7 +116,7 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9mz-Jg-zQo">
                                 <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="img_grid_4" id="Mkh-7q-X6I"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_4" id="Mkh-7q-X6I"/>
                             </imageView>
                         </subviews>
                     </view>
@@ -132,7 +132,7 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fzw-xf-Vy1">
                                 <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="img_grid_5" id="WyK-WG-vJT"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_5" id="WyK-WG-vJT"/>
                             </imageView>
                         </subviews>
                     </view>
@@ -148,7 +148,7 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yP4-GE-7mL">
                                 <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="img_grid_2" id="AJH-QQ-64K"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_2" id="AJH-QQ-64K"/>
                             </imageView>
                         </subviews>
                     </view>
@@ -164,7 +164,7 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H3T-cT-HN0">
                                 <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="img_grid_3" id="UVv-Z9-NRb"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_3" id="UVv-Z9-NRb"/>
                             </imageView>
                         </subviews>
                     </view>

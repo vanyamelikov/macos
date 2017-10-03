@@ -14,4 +14,6 @@
 
 @property (nonatomic, weak) id <StoreGamesGridViewDelegate> delegate;
 
+-(void)updateCollectionView : (BOOL)isAnimation;
+
 @end

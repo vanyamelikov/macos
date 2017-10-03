@@ -9,22 +9,20 @@
 #import "NSView+INSNibLoading.h"
 #import <QuartzCore/QuartzCore.h>
 
-IB_DESIGNABLE
 @interface XenioBackgroundView : NSView
 
 //Gradient Layer Properties
 @property (nonatomic) IBInspectable NSColor *startGradientColor;
 @property (nonatomic) IBInspectable NSColor *endGradientColor;
-@property (nonatomic) IBInspectable CGFloat gradientAngle;
-@property (nonatomic) IBInspectable CGFloat gradientOpacity;
+@property (nonatomic) IBInspectable float gradientOpacity;
 
 //Solid Layer Properties
 @property (nonatomic) IBInspectable NSColor *solidColor;
-@property (nonatomic) IBInspectable CGFloat solidOpacity;
+@property (nonatomic) IBInspectable float solidOpacity;
 
 //Blurred Image Properties
 @property (nonatomic) IBInspectable NSImage *blurredImage;
-@property (nonatomic) IBInspectable CGFloat imageTransparency;
-@property (nonatomic) IBInspectable CGFloat blurRadius;
+@property (nonatomic) IBInspectable float imageTransparency;
+@property (nonatomic) IBInspectable float blurRadius;
 
 @end

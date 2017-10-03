@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="Jel-cM-6QC">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
@@ -822,39 +822,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="703" height="570"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="HXw-Fj-xNz" customClass="XenioBackgroundView">
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="YYa-7c-M0g" customClass="XenioBackgroundView">
                                 <rect key="frame" x="0.0" y="0.0" width="703" height="570"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="startGradientColor">
-                                        <color key="value" red="0.22745098039215686" green="0.21568627450980393" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.22745098039215686" green="0.21568627450980393" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="endGradientColor">
-                                        <color key="value" red="0.38039215686274508" green="0.46666666666666667" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientAngle">
-                                        <real key="value" value="90"/>
+                                        <color key="value" red="0.38039215686274508" green="0.46666666666666667" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="gradientOpacity">
-                                        <real key="value" value="0.10000000000000001"/>
+                                        <real key="value" value="0.050000000000000003"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="solidColor">
                                         <color key="value" red="0.074509803921568626" green="0.086274509803921567" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="solidOpacity">
-                                        <real key="value" value="0.29999999999999999"/>
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="blurredImage" value="background_store_2"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="blurredImage" value="background_library"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="imageTransparency">
-                                        <real key="value" value="0.040000000000000001"/>
+                                        <real key="value" value="0.90000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="blurRadius">
+                                        <real key="value" value="40"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </customView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="HXw-Fj-xNz" secondAttribute="trailing" id="2Bx-mO-E7P"/>
-                            <constraint firstItem="HXw-Fj-xNz" firstAttribute="leading" secondItem="DPa-d6-rJr" secondAttribute="leading" id="DBY-sT-KSq"/>
-                            <constraint firstItem="HXw-Fj-xNz" firstAttribute="top" secondItem="DPa-d6-rJr" secondAttribute="top" id="TQG-i1-xvI"/>
-                            <constraint firstAttribute="bottom" secondItem="HXw-Fj-xNz" secondAttribute="bottom" id="jIa-iS-zNy"/>
+                            <constraint firstItem="YYa-7c-M0g" firstAttribute="top" secondItem="DPa-d6-rJr" secondAttribute="top" id="4gG-HB-zXZ"/>
+                            <constraint firstAttribute="bottom" secondItem="YYa-7c-M0g" secondAttribute="bottom" id="KME-nh-Wv5"/>
+                            <constraint firstAttribute="trailing" secondItem="YYa-7c-M0g" secondAttribute="trailing" id="OVl-DE-xHr"/>
+                            <constraint firstItem="YYa-7c-M0g" firstAttribute="leading" secondItem="DPa-d6-rJr" secondAttribute="leading" id="SuV-cm-Mdr"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1138,7 +1138,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background_store_2" width="2880" height="1620"/>
+        <image name="background_library" width="2880" height="1620"/>
         <image name="ic_lock" width="17" height="22"/>
         <image name="ic_logo" width="293" height="76"/>
         <image name="ic_userpic" width="12" height="14"/>
