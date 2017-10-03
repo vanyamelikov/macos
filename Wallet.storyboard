@@ -46,7 +46,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="255" height="1152"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <color key="fillColor" red="0.094117647060000004" green="0.1058823529" blue="0.16078431369999999" alpha="0.88" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="fillColor" red="0.094117647060000004" green="0.1058823529" blue="0.16078431369999999" alpha="0.85408215107361962" colorSpace="custom" customColorSpace="sRGB"/>
                             </box>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="fz6-ft-a1E" customClass="WalletSideMenu">
                                 <rect key="frame" x="0.0" y="0.0" width="255" height="1152"/>
@@ -86,7 +86,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <color key="borderColor" red="1" green="1" blue="1" alpha="0.03799455275" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="fillColor" red="0.090196078430000007" green="0.1019607843" blue="0.14901960780000001" alpha="0.9811257645" colorSpace="calibratedRGB"/>
+                                <color key="fillColor" red="0.090196078430000007" green="0.1019607843" blue="0.14901960780000001" alpha="0.80355914256748473" colorSpace="calibratedRGB"/>
                             </box>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="1KH-eR-jX2">
                                 <rect key="frame" x="0.0" y="0.0" width="2605" height="1052"/>
@@ -213,7 +213,7 @@
                                                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_input_xno" id="GND-pa-avI"/>
                                                 </imageView>
                                                 <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eTl-Hw-DD1" customClass="TextFieldWithTag">
-                                                    <rect key="frame" x="43" y="6" width="189" height="19"/>
+                                                    <rect key="frame" x="43" y="6" width="189" height="21"/>
                                                     <contentFilters>
                                                         <ciFilter name="CIColorInvert">
                                                             <configuration>
@@ -275,7 +275,7 @@
                                                 <constraint firstItem="WhD-ga-cCW" firstAttribute="top" secondItem="I4b-xO-79s" secondAttribute="top" id="UYj-Uk-BLI"/>
                                                 <constraint firstAttribute="bottom" secondItem="WhD-ga-cCW" secondAttribute="bottom" id="ZsN-hT-6Mb"/>
                                                 <constraint firstItem="Qb7-Om-iyM" firstAttribute="leading" secondItem="eTl-Hw-DD1" secondAttribute="trailing" constant="7" id="cd3-U0-fCB"/>
-                                                <constraint firstItem="eTl-Hw-DD1" firstAttribute="top" secondItem="I4b-xO-79s" secondAttribute="top" constant="8" id="e9S-2c-tqD"/>
+                                                <constraint firstItem="eTl-Hw-DD1" firstAttribute="top" secondItem="I4b-xO-79s" secondAttribute="top" constant="6" id="e9S-2c-tqD"/>
                                                 <constraint firstAttribute="bottom" secondItem="eTl-Hw-DD1" secondAttribute="bottom" constant="6" id="gTN-J3-RfT"/>
                                             </constraints>
                                         </view>
@@ -302,7 +302,7 @@
                                                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_input_plane" id="XRg-os-t22"/>
                                                 </imageView>
                                                 <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aY1-jw-5AD" customClass="TextFieldWithTag">
-                                                    <rect key="frame" x="43" y="6" width="233" height="19"/>
+                                                    <rect key="frame" x="43" y="6" width="233" height="21"/>
                                                     <contentFilters>
                                                         <ciFilter name="CIColorInvert">
                                                             <configuration>
@@ -325,7 +325,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="aY1-jw-5AD" secondAttribute="trailing" id="APV-s2-7U5"/>
                                                 <constraint firstItem="YeW-2q-Tam" firstAttribute="leading" secondItem="15e-xR-Uvp" secondAttribute="leading" constant="15" id="Mhs-Jt-xXT"/>
-                                                <constraint firstItem="aY1-jw-5AD" firstAttribute="top" secondItem="15e-xR-Uvp" secondAttribute="top" constant="8" id="eoL-Kn-WAX"/>
+                                                <constraint firstItem="aY1-jw-5AD" firstAttribute="top" secondItem="15e-xR-Uvp" secondAttribute="top" constant="6" id="eoL-Kn-WAX"/>
                                                 <constraint firstAttribute="bottom" secondItem="aY1-jw-5AD" secondAttribute="bottom" constant="6" id="irg-md-F8s"/>
                                                 <constraint firstItem="YeW-2q-Tam" firstAttribute="centerY" secondItem="15e-xR-Uvp" secondAttribute="centerY" id="kJU-mS-psz"/>
                                                 <constraint firstItem="aY1-jw-5AD" firstAttribute="leading" secondItem="YeW-2q-Tam" secondAttribute="trailing" constant="15" id="z5z-cj-nuy"/>

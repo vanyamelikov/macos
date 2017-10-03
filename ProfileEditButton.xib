@@ -46,7 +46,7 @@
                     </userDefinedRuntimeAttributes>
                 </box>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="itH-2L-nKC">
-                    <rect key="frame" x="26" y="9" width="132" height="24"/>
+                    <rect key="frame" x="26" y="5" width="132" height="24"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Profile/Edit" id="gsV-YT-ciV">
                         <font key="font" metaFont="system" size="20"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -57,7 +57,7 @@
             <constraints>
                 <constraint firstItem="azB-8b-Go4" firstAttribute="top" secondItem="sEY-fQ-Yr3" secondAttribute="top" id="9hh-NQ-S32"/>
                 <constraint firstAttribute="bottom" secondItem="azB-8b-Go4" secondAttribute="bottom" id="E3j-Rn-QGk"/>
-                <constraint firstItem="itH-2L-nKC" firstAttribute="centerY" secondItem="sEY-fQ-Yr3" secondAttribute="centerY" constant="-4" id="RCr-zr-UDL"/>
+                <constraint firstItem="itH-2L-nKC" firstAttribute="centerY" secondItem="sEY-fQ-Yr3" secondAttribute="centerY" id="RCr-zr-UDL"/>
                 <constraint firstItem="itH-2L-nKC" firstAttribute="leading" secondItem="hcJ-6R-knw" secondAttribute="trailing" constant="4" id="bUV-gg-K9a"/>
                 <constraint firstAttribute="trailing" secondItem="itH-2L-nKC" secondAttribute="trailing" id="g4n-Jt-Ne6"/>
                 <constraint firstItem="azB-8b-Go4" firstAttribute="leading" secondItem="sEY-fQ-Yr3" secondAttribute="leading" id="tBh-cT-3J8"/>

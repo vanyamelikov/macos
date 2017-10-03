@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PlayerStatusNotHere"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="S6o-06-c8x">
+            <rect key="frame" x="0.0" y="0.0" width="73" height="22"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="aSa-qk-WaY">
+                    <rect key="frame" x="0.0" y="0.0" width="73" height="22"/>
+                    <view key="contentView" id="f6g-Qc-wks">
+                        <rect key="frame" x="1" y="1" width="71" height="20"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="73" id="eyc-cn-EIC"/>
+                        <constraint firstAttribute="height" constant="22" id="ygg-R7-U4y"/>
+                    </constraints>
+                    <color key="borderColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.42352941176470588" green="0.61176470588235299" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="06V-nw-utB">
+                    <rect key="frame" x="0.0" y="3" width="73" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="ovt-bY-baz"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="NOT HERE" id="FMD-pK-maE">
+                        <font key="font" size="10" name="SFProText-Heavy"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aSa-qk-WaY" secondAttribute="trailing" id="0Qh-hZ-2kv"/>
+                <constraint firstItem="06V-nw-utB" firstAttribute="centerY" secondItem="S6o-06-c8x" secondAttribute="centerY" id="4OU-xf-G0G"/>
+                <constraint firstItem="aSa-qk-WaY" firstAttribute="leading" secondItem="S6o-06-c8x" secondAttribute="leading" id="61Q-m3-m4i"/>
+                <constraint firstAttribute="bottom" secondItem="aSa-qk-WaY" secondAttribute="bottom" id="AeP-pw-ZEf"/>
+                <constraint firstItem="06V-nw-utB" firstAttribute="leading" secondItem="S6o-06-c8x" secondAttribute="leading" constant="2" id="Sq5-KW-fGI"/>
+                <constraint firstItem="aSa-qk-WaY" firstAttribute="top" secondItem="S6o-06-c8x" secondAttribute="top" id="pqZ-ds-yg2"/>
+                <constraint firstAttribute="trailing" secondItem="06V-nw-utB" secondAttribute="trailing" constant="2" id="x5w-sH-OUb"/>
+            </constraints>
+            <point key="canvasLocation" x="194.5" y="204"/>
+        </customView>
+    </objects>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PlayerStatusOnline"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="OM8-qW-2lu">
+            <rect key="frame" x="0.0" y="0.0" width="73" height="22"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="nsn-fy-hwU">
+                    <rect key="frame" x="0.0" y="0.0" width="73" height="22"/>
+                    <view key="contentView" id="4V9-oS-C7z">
+                        <rect key="frame" x="1" y="1" width="71" height="20"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="73" id="Gdo-KG-BTu"/>
+                        <constraint firstAttribute="height" constant="22" id="SoI-Z8-DPz"/>
+                    </constraints>
+                    <color key="borderColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.44705882352941173" green="0.68627450980392157" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="klh-lx-a5C">
+                    <rect key="frame" x="0.0" y="3" width="73" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="O6F-Oc-AKk"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="ONLINE" id="iOa-J6-MHu">
+                        <font key="font" size="10" name="SFProText-Heavy"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nsn-fy-hwU" secondAttribute="trailing" id="0bo-31-OU4"/>
+                <constraint firstAttribute="trailing" secondItem="klh-lx-a5C" secondAttribute="trailing" constant="2" id="8Hn-KB-FpB"/>
+                <constraint firstItem="klh-lx-a5C" firstAttribute="centerY" secondItem="OM8-qW-2lu" secondAttribute="centerY" id="HXV-3a-Yvj"/>
+                <constraint firstItem="nsn-fy-hwU" firstAttribute="top" secondItem="OM8-qW-2lu" secondAttribute="top" id="Kvg-bp-tHJ"/>
+                <constraint firstItem="nsn-fy-hwU" firstAttribute="leading" secondItem="OM8-qW-2lu" secondAttribute="leading" id="XHT-E0-kqg"/>
+                <constraint firstItem="klh-lx-a5C" firstAttribute="leading" secondItem="OM8-qW-2lu" secondAttribute="leading" constant="2" id="amB-60-VKF"/>
+                <constraint firstAttribute="bottom" secondItem="nsn-fy-hwU" secondAttribute="bottom" id="y3X-yk-vbt"/>
+            </constraints>
+            <point key="canvasLocation" x="194.5" y="204"/>
+        </customView>
+    </objects>
+</document>

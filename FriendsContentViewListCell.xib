@@ -10,8 +10,14 @@
         <customObject id="-2" userLabel="File's Owner" customClass="FriendsContentViewListCell">
             <connections>
                 <outlet property="backgroundBox" destination="Zjg-lK-a1g" id="35N-LS-T0q"/>
+                <outlet property="gameNameLabel" destination="maq-rh-EfB" id="mDV-JO-MGe"/>
                 <outlet property="playerImage" destination="e6p-kw-Zpl" id="N0d-Ya-zyl"/>
                 <outlet property="playerNameLabel" destination="Mek-IU-a7f" id="g68-XW-9u7"/>
+                <outlet property="status0" destination="Zxl-TU-Mr9" id="Kae-mf-B6k"/>
+                <outlet property="status1" destination="5pt-xH-j2H" id="PfM-ux-IMK"/>
+                <outlet property="status2" destination="Yqe-4X-6ZG" id="ZAU-as-rK7"/>
+                <outlet property="status3" destination="dK2-ZD-Lyl" id="5CP-yx-VHq"/>
+                <outlet property="status4" destination="YAg-I0-HhJ" id="ia9-MP-Y87"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -35,44 +41,80 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="ic_avatar-1" id="Wij-0M-L86"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mek-IU-a7f">
-                                <rect key="frame" x="93" y="54" width="69" height="20"/>
+                                <rect key="frame" x="93" y="54" width="84" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="wz0-z0-E5f"/>
                                 </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Police Girl" id="fJw-Jl-T3D">
-                                    <font key="font" metaFont="system" size="14"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Police Girl" usesSingleLineMode="YES" id="fJw-Jl-T3D">
+                                    <font key="font" size="16" name="SFProText-Semibold"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="6Pf-cr-ZuP" customClass="PlayerStatusView">
-                                <rect key="frame" x="95" y="31" width="66" height="17"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="66" id="IOW-Nq-fK5"/>
-                                    <constraint firstAttribute="height" constant="17" id="scf-ej-mp5"/>
-                                </constraints>
-                            </customView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="maq-rh-EfB">
-                                <rect key="frame" x="651" y="43" width="120" height="20"/>
+                                <rect key="frame" x="643" y="43" width="128" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="OaZ-Ma-hTb"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Counter Strike 1.6" id="ePe-6I-h80">
-                                    <font key="font" metaFont="system" size="14"/>
+                                    <font key="font" size="14" name="SFProText-Semibold"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zxl-TU-Mr9" customClass="PlayerStatusNotHere">
+                                <rect key="frame" x="95" y="31" width="66" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="0IO-kC-vBR"/>
+                                    <constraint firstAttribute="height" constant="17" id="X91-gK-YB1"/>
+                                </constraints>
+                            </customView>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5pt-xH-j2H" customClass="PlayerStatusOffline">
+                                <rect key="frame" x="95" y="31" width="56" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="Gkn-Tc-DfM"/>
+                                    <constraint firstAttribute="width" constant="56" id="Slj-Lj-bQn"/>
+                                </constraints>
+                            </customView>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yqe-4X-6ZG" customClass="PlayerStatusOnline">
+                                <rect key="frame" x="95" y="31" width="56" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="fkv-bW-V4i"/>
+                                    <constraint firstAttribute="height" constant="17" id="mVo-VB-VXM"/>
+                                </constraints>
+                            </customView>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dK2-ZD-Lyl" customClass="PlayerStatusWantsToPlay">
+                                <rect key="frame" x="95" y="31" width="98" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="Czu-T8-nka"/>
+                                    <constraint firstAttribute="width" constant="98" id="Sco-qm-Qgv"/>
+                                </constraints>
+                            </customView>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YAg-I0-HhJ" customClass="PlayerStatusInGame">
+                                <rect key="frame" x="95" y="31" width="56" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="ib6-rd-yry"/>
+                                    <constraint firstAttribute="height" constant="17" id="t7M-C6-nMX"/>
+                                </constraints>
+                            </customView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="6Pf-cr-ZuP" firstAttribute="top" secondItem="Mek-IU-a7f" secondAttribute="bottom" constant="6" id="3NC-BF-c54"/>
+                            <constraint firstItem="Zxl-TU-Mr9" firstAttribute="top" secondItem="Mek-IU-a7f" secondAttribute="bottom" constant="6" id="8iQ-x0-5g9"/>
                             <constraint firstItem="Mek-IU-a7f" firstAttribute="centerY" secondItem="e6p-kw-Zpl" secondAttribute="centerY" constant="-10" id="JPk-60-O2J"/>
                             <constraint firstItem="e6p-kw-Zpl" firstAttribute="centerY" secondItem="k3r-Ix-38o" secondAttribute="centerY" id="Oge-24-jha"/>
-                            <constraint firstItem="6Pf-cr-ZuP" firstAttribute="leading" secondItem="e6p-kw-Zpl" secondAttribute="trailing" constant="10" id="W4S-f0-oCq"/>
+                            <constraint firstItem="5pt-xH-j2H" firstAttribute="leading" secondItem="e6p-kw-Zpl" secondAttribute="trailing" constant="10" id="Ury-Ut-0Fx"/>
+                            <constraint firstItem="Zxl-TU-Mr9" firstAttribute="leading" secondItem="e6p-kw-Zpl" secondAttribute="trailing" constant="10" id="VmZ-HA-tSb"/>
+                            <constraint firstItem="YAg-I0-HhJ" firstAttribute="top" secondItem="Mek-IU-a7f" secondAttribute="bottom" constant="6" id="Yz3-Wj-qMs"/>
+                            <constraint firstItem="dK2-ZD-Lyl" firstAttribute="leading" secondItem="e6p-kw-Zpl" secondAttribute="trailing" constant="10" id="bV9-Ui-fsh"/>
+                            <constraint firstItem="5pt-xH-j2H" firstAttribute="top" secondItem="Mek-IU-a7f" secondAttribute="bottom" constant="6" id="dYA-FP-67x"/>
                             <constraint firstItem="e6p-kw-Zpl" firstAttribute="leading" secondItem="k3r-Ix-38o" secondAttribute="leading" constant="20" id="gGB-aI-dX4"/>
                             <constraint firstItem="Mek-IU-a7f" firstAttribute="leading" secondItem="e6p-kw-Zpl" secondAttribute="trailing" constant="10" id="ieY-n0-Ech"/>
+                            <constraint firstItem="YAg-I0-HhJ" firstAttribute="leading" secondItem="e6p-kw-Zpl" secondAttribute="trailing" constant="10" id="jNo-Co-Bg4"/>
                             <constraint firstAttribute="trailing" secondItem="maq-rh-EfB" secondAttribute="trailing" constant="38" id="qbO-c2-cBO"/>
+                            <constraint firstItem="dK2-ZD-Lyl" firstAttribute="top" secondItem="Mek-IU-a7f" secondAttribute="bottom" constant="6" id="vhn-ZX-Fut"/>
+                            <constraint firstItem="Yqe-4X-6ZG" firstAttribute="leading" secondItem="e6p-kw-Zpl" secondAttribute="trailing" constant="10" id="wKZ-Jj-byQ"/>
                             <constraint firstItem="maq-rh-EfB" firstAttribute="centerY" secondItem="k3r-Ix-38o" secondAttribute="centerY" id="xmC-BR-WL5"/>
+                            <constraint firstItem="Yqe-4X-6ZG" firstAttribute="top" secondItem="Mek-IU-a7f" secondAttribute="bottom" constant="6" id="z63-Qf-lk4"/>
                         </constraints>
                     </view>
                     <color key="borderColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
@@ -85,7 +127,7 @@
                 <constraint firstItem="Zjg-lK-a1g" firstAttribute="leading" secondItem="hWY-tg-ocA" secondAttribute="leading" id="nNt-oe-G8M"/>
                 <constraint firstAttribute="bottom" secondItem="Zjg-lK-a1g" secondAttribute="bottom" id="veU-q1-yg3"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="166"/>
+            <point key="canvasLocation" x="131.5" y="166"/>
         </customView>
     </objects>
     <resources>

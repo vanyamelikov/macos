@@ -25,9 +25,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jph-fA-ou6">
-                                <rect key="frame" x="84" y="10" width="110" height="16"/>
+                                <rect key="frame" x="81" y="9" width="117" height="18"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Send / Private key" id="Fxo-c5-ra9">
-                                    <font key="font" metaFont="cellTitle"/>
+                                    <font key="font" size="12" name="SFProText-Bold"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>

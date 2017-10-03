@@ -25,9 +25,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sA6-Uo-mAw">
-                                <rect key="frame" x="12" y="7" width="101" height="16"/>
+                                <rect key="frame" x="10" y="5" width="106" height="18"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="SAVE SETTINGS" id="4o5-2h-ZWI">
-                                    <font key="font" metaFont="cellTitle"/>
+                                    <font key="font" size="12" name="SFProText-Bold"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -35,7 +35,7 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="sA6-Uo-mAw" firstAttribute="centerX" secondItem="ocD-hp-Dg6" secondAttribute="centerX" id="WcF-zM-Tcu"/>
-                            <constraint firstItem="sA6-Uo-mAw" firstAttribute="centerY" secondItem="ocD-hp-Dg6" secondAttribute="centerY" constant="-1" id="tud-5V-GzZ"/>
+                            <constraint firstItem="sA6-Uo-mAw" firstAttribute="centerY" secondItem="ocD-hp-Dg6" secondAttribute="centerY" id="tud-5V-GzZ"/>
                         </constraints>
                     </view>
                     <constraints>

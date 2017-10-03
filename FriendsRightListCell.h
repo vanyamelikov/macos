@@ -14,5 +14,6 @@
 @property (strong) IBOutlet NSTextField *playerNameLabel;
 @property (strong) IBOutlet NSTextField *playerStatusLabel;
 @property (strong) IBOutlet NSTextField *gameLabel;
+@property (weak) IBOutlet NSImageView *lightLayer;
 
 @end

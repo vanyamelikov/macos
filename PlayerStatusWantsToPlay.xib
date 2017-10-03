@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PlayerStatusWantsToPlay"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="LI9-np-IuQ">
+            <rect key="frame" x="0.0" y="0.0" width="113" height="22"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="LhW-j0-o0s">
+                    <rect key="frame" x="0.0" y="0.0" width="113" height="22"/>
+                    <view key="contentView" id="5ci-Qx-nnY">
+                        <rect key="frame" x="1" y="1" width="111" height="20"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="borderColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.64313725490196072" green="0.47450980392156861" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WE1-hB-uDG">
+                    <rect key="frame" x="0.0" y="3" width="113" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="1rU-an-ktg"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="WANTS TO PLAY" id="QjF-Df-ra3">
+                        <font key="font" size="10" name="SFProText-Heavy"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="LhW-j0-o0s" firstAttribute="leading" secondItem="LI9-np-IuQ" secondAttribute="leading" id="8Ve-o0-CiV"/>
+                <constraint firstAttribute="trailing" secondItem="LhW-j0-o0s" secondAttribute="trailing" id="9I4-1O-V03"/>
+                <constraint firstItem="LhW-j0-o0s" firstAttribute="top" secondItem="LI9-np-IuQ" secondAttribute="top" id="ANh-6b-kcn"/>
+                <constraint firstItem="WE1-hB-uDG" firstAttribute="centerY" secondItem="LI9-np-IuQ" secondAttribute="centerY" id="GfG-kw-PWP"/>
+                <constraint firstAttribute="trailing" secondItem="WE1-hB-uDG" secondAttribute="trailing" constant="2" id="I1F-IU-p3l"/>
+                <constraint firstAttribute="bottom" secondItem="LhW-j0-o0s" secondAttribute="bottom" id="fsy-uT-ZgE"/>
+                <constraint firstItem="WE1-hB-uDG" firstAttribute="leading" secondItem="LI9-np-IuQ" secondAttribute="leading" constant="2" id="x83-Qv-4AR"/>
+            </constraints>
+            <point key="canvasLocation" x="214.5" y="204"/>
+        </customView>
+    </objects>
+</document>

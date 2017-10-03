@@ -1,14 +1,14 @@
 //
-//  PlayerStatusView.m
+//  PlayerStatusOffline.m
 //  XenioUIKit
 //
-//  Created by Сергей Иванов on 22.09.17.
+//  Created by Иван Меликов on 03.10.17.
 //  Copyright © 2017 mifsoftware. All rights reserved.
 //
 
-#import "PlayerStatusView.h"
+#import "PlayerStatusOffline.h"
 
-@implementation PlayerStatusView
+@implementation PlayerStatusOffline
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];

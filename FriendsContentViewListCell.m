@@ -10,10 +10,11 @@
 
 @implementation FriendsContentViewListCell
 
-- (void)drawRect:(NSRect)dirtyRect {
+-(void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
-    
-    // Drawing code here.
+    [self setWantsLayer:YES];
+    [self.playerImage.layer setCornerRadius:10.0f];
+    [self.playerImage.layer setMasksToBounds:YES];
 }
 
 @end

@@ -55,6 +55,21 @@
 		31B8EB931F7FD82500962504 /* StoreMainGamesGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B8EB911F7FD82500962504 /* StoreMainGamesGridViewController.xib */; };
 		31B8EB951F80433800962504 /* ChooseFriendButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B8EB941F80433800962504 /* ChooseFriendButton.xib */; };
 		31B8EB981F80437400962504 /* ChooseFriendButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B8EB971F80437400962504 /* ChooseFriendButton.m */; };
+		31C3C6121F83D88C0070E612 /* PlayerStatusOffline.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C3C6111F83D88C0070E612 /* PlayerStatusOffline.xib */; };
+		31C3C6141F83D8C00070E612 /* PlayerStatusWantsToPlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C3C6131F83D8C00070E612 /* PlayerStatusWantsToPlay.xib */; };
+		31C3C6161F83D9C90070E612 /* PlayerStatusOnline.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C3C6151F83D9C90070E612 /* PlayerStatusOnline.xib */; };
+		31C3C6181F83D9FE0070E612 /* PlayerStatusNotHere.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C3C6171F83D9FE0070E612 /* PlayerStatusNotHere.xib */; };
+		31C3C61A1F83DA130070E612 /* PlayerStatusInGame.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C3C6191F83DA130070E612 /* PlayerStatusInGame.xib */; };
+		31C3C61E1F83DA5E0070E612 /* PlayerStatusOffline.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C3C61D1F83DA5E0070E612 /* PlayerStatusOffline.m */; };
+		31C3C6211F83DA6D0070E612 /* PlayerStatusOnline.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C3C6201F83DA6D0070E612 /* PlayerStatusOnline.m */; };
+		31C3C6241F83DA7D0070E612 /* PlayerStatusWantsToPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C3C6231F83DA7D0070E612 /* PlayerStatusWantsToPlay.m */; };
+		31C3C6271F83DA930070E612 /* PlayerStatusNotHere.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C3C6261F83DA930070E612 /* PlayerStatusNotHere.m */; };
+		31C3C62A1F83DAA10070E612 /* PlayerStatusInGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C3C6291F83DAA10070E612 /* PlayerStatusInGame.m */; };
+		31C3C62F1F83F6DD0070E612 /* LibraryGameModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C3C62E1F83F6DD0070E612 /* LibraryGameModalView.xib */; };
+		31C3C6311F83F6F20070E612 /* ProfileModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C3C6301F83F6F20070E612 /* ProfileModalView.xib */; };
+		31C3C6331F83F7030070E612 /* FriendProfileModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C3C6321F83F7030070E612 /* FriendProfileModalView.xib */; };
+		31C3C6351F83F7180070E612 /* SelfStatusModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C3C6341F83F7180070E612 /* SelfStatusModalView.xib */; };
+		31C3C6371F83F7290070E612 /* WalletAddressModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C3C6361F83F7290070E612 /* WalletAddressModalView.xib */; };
 		31DAB2F51F7DFBB7006E326E /* NSPopover+MISSINGBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DAB2F41F7DFBB7006E326E /* NSPopover+MISSINGBackgroundView.m */; };
 		31E4F7421F7E9E5E0047B843 /* PaymentInformationTotalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E4F7311F7E9E5C0047B843 /* PaymentInformationTotalCell.m */; };
 		31E4F7441F7E9E5E0047B843 /* PaymentInformationGameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E4F7341F7E9E5C0047B843 /* PaymentInformationGameCell.m */; };
@@ -208,8 +223,6 @@
 		3E8876371F748D65001B8374 /* GameTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8876361F748D65001B8374 /* GameTagView.m */; };
 		3E88763B1F749462001B8374 /* FriendsContentViewListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E88763A1F749462001B8374 /* FriendsContentViewListCell.xib */; };
 		3E88763E1F749720001B8374 /* FriendsContentViewListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E88763D1F749720001B8374 /* FriendsContentViewListCell.m */; };
-		3E8876401F749810001B8374 /* PlayerStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E88763F1F749810001B8374 /* PlayerStatusView.xib */; };
-		3E8876431F7498A8001B8374 /* PlayerStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8876421F7498A8001B8374 /* PlayerStatusView.m */; };
 		3E8876481F749B70001B8374 /* FriendsProfileContentViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8876471F749B70001B8374 /* FriendsProfileContentViewCell.xib */; };
 		3E88764A1F749D31001B8374 /* GameTagImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8876491F749D31001B8374 /* GameTagImageView.xib */; };
 		3E88764D1F749EF7001B8374 /* GameTagImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E88764C1F749EF7001B8374 /* GameTagImageView.m */; };
@@ -360,6 +373,26 @@
 		31B8EB941F80433800962504 /* ChooseFriendButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseFriendButton.xib; sourceTree = "<group>"; };
 		31B8EB961F80437400962504 /* ChooseFriendButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseFriendButton.h; sourceTree = "<group>"; };
 		31B8EB971F80437400962504 /* ChooseFriendButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseFriendButton.m; sourceTree = "<group>"; };
+		31C3C6111F83D88C0070E612 /* PlayerStatusOffline.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerStatusOffline.xib; sourceTree = "<group>"; };
+		31C3C6131F83D8C00070E612 /* PlayerStatusWantsToPlay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerStatusWantsToPlay.xib; sourceTree = "<group>"; };
+		31C3C6151F83D9C90070E612 /* PlayerStatusOnline.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerStatusOnline.xib; sourceTree = "<group>"; };
+		31C3C6171F83D9FE0070E612 /* PlayerStatusNotHere.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerStatusNotHere.xib; sourceTree = "<group>"; };
+		31C3C6191F83DA130070E612 /* PlayerStatusInGame.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerStatusInGame.xib; sourceTree = "<group>"; };
+		31C3C61C1F83DA5E0070E612 /* PlayerStatusOffline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerStatusOffline.h; sourceTree = "<group>"; };
+		31C3C61D1F83DA5E0070E612 /* PlayerStatusOffline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerStatusOffline.m; sourceTree = "<group>"; };
+		31C3C61F1F83DA6D0070E612 /* PlayerStatusOnline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerStatusOnline.h; sourceTree = "<group>"; };
+		31C3C6201F83DA6D0070E612 /* PlayerStatusOnline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerStatusOnline.m; sourceTree = "<group>"; };
+		31C3C6221F83DA7D0070E612 /* PlayerStatusWantsToPlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerStatusWantsToPlay.h; sourceTree = "<group>"; };
+		31C3C6231F83DA7D0070E612 /* PlayerStatusWantsToPlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerStatusWantsToPlay.m; sourceTree = "<group>"; };
+		31C3C6251F83DA930070E612 /* PlayerStatusNotHere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerStatusNotHere.h; sourceTree = "<group>"; };
+		31C3C6261F83DA930070E612 /* PlayerStatusNotHere.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerStatusNotHere.m; sourceTree = "<group>"; };
+		31C3C6281F83DAA10070E612 /* PlayerStatusInGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerStatusInGame.h; sourceTree = "<group>"; };
+		31C3C6291F83DAA10070E612 /* PlayerStatusInGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerStatusInGame.m; sourceTree = "<group>"; };
+		31C3C62E1F83F6DD0070E612 /* LibraryGameModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryGameModalView.xib; sourceTree = "<group>"; };
+		31C3C6301F83F6F20070E612 /* ProfileModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileModalView.xib; sourceTree = "<group>"; };
+		31C3C6321F83F7030070E612 /* FriendProfileModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendProfileModalView.xib; sourceTree = "<group>"; };
+		31C3C6341F83F7180070E612 /* SelfStatusModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelfStatusModalView.xib; sourceTree = "<group>"; };
+		31C3C6361F83F7290070E612 /* WalletAddressModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletAddressModalView.xib; sourceTree = "<group>"; };
 		31DAB2F31F7DFBB7006E326E /* NSPopover+MISSINGBackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSPopover+MISSINGBackgroundView.h"; sourceTree = "<group>"; };
 		31DAB2F41F7DFBB7006E326E /* NSPopover+MISSINGBackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSPopover+MISSINGBackgroundView.m"; sourceTree = "<group>"; };
 		31E4F72F1F7E9E5B0047B843 /* PaymentInfoCheckboxCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaymentInfoCheckboxCell.h; path = PaymentInformation/PaymentInfoCheckboxCell.h; sourceTree = "<group>"; };
@@ -600,9 +633,6 @@
 		3E88763A1F749462001B8374 /* FriendsContentViewListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsContentViewListCell.xib; sourceTree = "<group>"; };
 		3E88763C1F749720001B8374 /* FriendsContentViewListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsContentViewListCell.h; sourceTree = "<group>"; };
 		3E88763D1F749720001B8374 /* FriendsContentViewListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsContentViewListCell.m; sourceTree = "<group>"; };
-		3E88763F1F749810001B8374 /* PlayerStatusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerStatusView.xib; sourceTree = "<group>"; };
-		3E8876411F7498A8001B8374 /* PlayerStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerStatusView.h; sourceTree = "<group>"; };
-		3E8876421F7498A8001B8374 /* PlayerStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerStatusView.m; sourceTree = "<group>"; };
 		3E8876471F749B70001B8374 /* FriendsProfileContentViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsProfileContentViewCell.xib; sourceTree = "<group>"; };
 		3E8876491F749D31001B8374 /* GameTagImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameTagImageView.xib; sourceTree = "<group>"; };
 		3E88764B1F749EF7001B8374 /* GameTagImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTagImageView.h; sourceTree = "<group>"; };
@@ -812,6 +842,35 @@
 				31F155521F820AAF0070B256 /* PGameInfoController.xib */,
 			);
 			name = PaymentViewControllers;
+			sourceTree = "<group>";
+		};
+		31C3C61B1F83DA490070E612 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				31C3C61C1F83DA5E0070E612 /* PlayerStatusOffline.h */,
+				31C3C61D1F83DA5E0070E612 /* PlayerStatusOffline.m */,
+				31C3C61F1F83DA6D0070E612 /* PlayerStatusOnline.h */,
+				31C3C6201F83DA6D0070E612 /* PlayerStatusOnline.m */,
+				31C3C6221F83DA7D0070E612 /* PlayerStatusWantsToPlay.h */,
+				31C3C6231F83DA7D0070E612 /* PlayerStatusWantsToPlay.m */,
+				31C3C6251F83DA930070E612 /* PlayerStatusNotHere.h */,
+				31C3C6261F83DA930070E612 /* PlayerStatusNotHere.m */,
+				31C3C6281F83DAA10070E612 /* PlayerStatusInGame.h */,
+				31C3C6291F83DAA10070E612 /* PlayerStatusInGame.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		31C3C62B1F83F6B00070E612 /* ModalViews */ = {
+			isa = PBXGroup;
+			children = (
+				31C3C6321F83F7030070E612 /* FriendProfileModalView.xib */,
+				31C3C62E1F83F6DD0070E612 /* LibraryGameModalView.xib */,
+				31C3C6301F83F6F20070E612 /* ProfileModalView.xib */,
+				31C3C6341F83F7180070E612 /* SelfStatusModalView.xib */,
+				31C3C6361F83F7290070E612 /* WalletAddressModalView.xib */,
+			);
+			name = ModalViews;
 			sourceTree = "<group>";
 		};
 		31DAB2F21F7DFB9A006E326E /* Popover */ = {
@@ -1322,9 +1381,12 @@
 		3E8876461F749908001B8374 /* PlayerStatusView */ = {
 			isa = PBXGroup;
 			children = (
-				3E88763F1F749810001B8374 /* PlayerStatusView.xib */,
-				3E8876411F7498A8001B8374 /* PlayerStatusView.h */,
-				3E8876421F7498A8001B8374 /* PlayerStatusView.m */,
+				31C3C61B1F83DA490070E612 /* Classes */,
+				31C3C6111F83D88C0070E612 /* PlayerStatusOffline.xib */,
+				31C3C6151F83D9C90070E612 /* PlayerStatusOnline.xib */,
+				31C3C6131F83D8C00070E612 /* PlayerStatusWantsToPlay.xib */,
+				31C3C6171F83D9FE0070E612 /* PlayerStatusNotHere.xib */,
+				31C3C6191F83DA130070E612 /* PlayerStatusInGame.xib */,
 			);
 			name = PlayerStatusView;
 			sourceTree = "<group>";
@@ -1355,10 +1417,10 @@
 		3E8876671F754688001B8374 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3E558C0F1F7AE42D00542B7B /* Friends */,
 				3EBAADDB1F7599E300890AD1 /* Store */,
 				3EBAADDA1F7599D500890AD1 /* Library */,
 				3EBAADF91F760A3400890AD1 /* Wallet */,
+				3E558C0F1F7AE42D00542B7B /* Friends */,
 				3E558BDE1F7970A900542B7B /* Settings */,
 				31B07F281F81AD2200B6BCCA /* Payment */,
 			);
@@ -1516,6 +1578,7 @@
 		3ECF3CAF1F686883005165E5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				31C3C62B1F83F6B00070E612 /* ModalViews */,
 				31F1555D1F82EBD20070B256 /* XenioBackgroundView */,
 				31F155451F81FE650070B256 /* CustomSwitch */,
 				31B07ED61F81276100B6BCCA /* MyGradientView */,
@@ -1746,7 +1809,6 @@
 				3EBAADD61F75993A00890AD1 /* StoreSideMenuHeaderCell.xib in Resources */,
 				3E25FB291F66EBCA000423E9 /* Assets.xcassets in Resources */,
 				3E88760F1F741DE7001B8374 /* LibrarySideMenuHeaderCell.xib in Resources */,
-				3E8876401F749810001B8374 /* PlayerStatusView.xib in Resources */,
 				3E7230C61F734C1D0050A70D /* ReceiveView.xib in Resources */,
 				3E6FE8041F78732B00B98AD3 /* PrivateKeyButton.xib in Resources */,
 				3E6FE7D71F77C08500B98AD3 /* StoreGamesGridCell.xib in Resources */,
@@ -1754,6 +1816,7 @@
 				3E8876341F748D4A001B8374 /* GameTagView.xib in Resources */,
 				3E8875F71F74085A001B8374 /* LibraryGamesRightMenuCell.xib in Resources */,
 				3E6FE7CF1F7793CE00B98AD3 /* WalletChooseFriendCollectionView.xib in Resources */,
+				31C3C6141F83D8C00070E612 /* PlayerStatusWantsToPlay.xib in Resources */,
 				3E558BFC1F79D53200542B7B /* StoreMainGridView.xib in Resources */,
 				31B07F431F81B12300B6BCCA /* PayNowButton.xib in Resources */,
 				3E1FF8E61F6AC4F700117F16 /* CustomTabbar.xib in Resources */,
@@ -1764,6 +1827,7 @@
 				3EBAADE91F75BD6D00890AD1 /* StoreDownloadsView.xib in Resources */,
 				3E88760A1F7418C0001B8374 /* LibraryGamesServersListView.xib in Resources */,
 				3E6FE7EE1F782B3F00B98AD3 /* ContinueButton.xib in Resources */,
+				31C3C6371F83F7290070E612 /* WalletAddressModalView.xib in Resources */,
 				315947031F7C51CF0073FA52 /* BackgroundView.xib in Resources */,
 				3E7230B61F734B020050A70D /* Library.storyboard in Resources */,
 				3E6FE7D91F77D41300B98AD3 /* StoreGamesGridView.xib in Resources */,
@@ -1779,6 +1843,7 @@
 				3ECF3CC11F6884B1005165E5 /* PreOrderButton.xib in Resources */,
 				3E25FB2C1F66EBCA000423E9 /* Main.storyboard in Resources */,
 				3E558BEF1F79A44D00542B7B /* WalletSideMenuHeaderCell.xib in Resources */,
+				31C3C6331F83F7030070E612 /* FriendProfileModalView.xib in Resources */,
 				3EBAADEF1F75CCEC00890AD1 /* WalletHistoryView.xib in Resources */,
 				3E8876301F7471B6001B8374 /* FriendsChatRequestCell.xib in Resources */,
 				31F1554A1F81FE9F0070B256 /* CustomSwitch.xib in Resources */,
@@ -1790,6 +1855,7 @@
 				3E8876081F7418AA001B8374 /* LibraryGamesRightMenuView.xib in Resources */,
 				3E558BF41F79AF7F00542B7B /* FriendsHideCell.xib in Resources */,
 				31E4F7551F7EA2560047B843 /* PayInfoCell.xib in Resources */,
+				31C3C62F1F83F6DD0070E612 /* LibraryGameModalView.xib in Resources */,
 				3E8875E81F73F8A5001B8374 /* LibrarySideMenuCell.xib in Resources */,
 				3ECF3CDC1F696D54005165E5 /* CancelButton.xib in Resources */,
 				3E8876541F74ABCA001B8374 /* FriendsRightListNotificationCell.xib in Resources */,
@@ -1802,13 +1868,16 @@
 				3E6FE7AC1F775E9C00B98AD3 /* LibraryScreenshotItem.xib in Resources */,
 				3ECF3CB71F687BE7005165E5 /* GiftButton.xib in Resources */,
 				3E7230E11F7351EA0050A70D /* Settings.storyboard in Resources */,
+				31C3C61A1F83DA130070E612 /* PlayerStatusInGame.xib in Resources */,
 				3E7230C21F734C020050A70D /* WalletSideMenu.xib in Resources */,
 				3ECF3CDA1F696CF6005165E5 /* AddButton.xib in Resources */,
 				31F1554E1F81FED90070B256 /* BuyGameMainView.xib in Resources */,
 				3E6FE8141F7897EB00B98AD3 /* SendMoneyButton.xib in Resources */,
+				31C3C6181F83D9FE0070E612 /* PlayerStatusNotHere.xib in Resources */,
 				3159471D1F7C6B190073FA52 /* StoreGameSideListHeaderCell.xib in Resources */,
 				3E7230BA1F734B5F0050A70D /* LibrarySideMenu.xib in Resources */,
 				3E558BC91F796D3400542B7B /* SettingsNavigationListView.xib in Resources */,
+				31C3C6161F83D9C90070E612 /* PlayerStatusOnline.xib in Resources */,
 				31B8EB931F7FD82500962504 /* StoreMainGamesGridViewController.xib in Resources */,
 				31E4F7481F7E9E5E0047B843 /* PaymentInformationTotalCell.xib in Resources */,
 				3E9C46051F7048DE00693AA1 /* Store.storyboard in Resources */,
@@ -1824,7 +1893,9 @@
 				3E88761A1F7428DA001B8374 /* WalletHistoryCell.xib in Resources */,
 				31B07F2D1F81AE1C00B6BCCA /* StoreGameInfoView.xib in Resources */,
 				3E7230DF1F7351820050A70D /* Friends.storyboard in Resources */,
+				31C3C6121F83D88C0070E612 /* PlayerStatusOffline.xib in Resources */,
 				3E88764A1F749D31001B8374 /* GameTagImageView.xib in Resources */,
+				31C3C6351F83F7180070E612 /* SelfStatusModalView.xib in Resources */,
 				3E558BB91F794A9200542B7B /* AddGame.xib in Resources */,
 				31F155591F82D2F90070B256 /* FriendsListSearchBar.xib in Resources */,
 				3E9C46181F71165F00693AA1 /* LineChartView.xib in Resources */,
@@ -1833,6 +1904,7 @@
 				3E7230BE1F734B7F0050A70D /* LibraryGameView.xib in Resources */,
 				3E558BCF1F796E6200542B7B /* SettingsNavigationListCell.xib in Resources */,
 				3E6FE7E91F78068C00B98AD3 /* PassphraseView.xib in Resources */,
+				31C3C6311F83F6F20070E612 /* ProfileModalView.xib in Resources */,
 				31B593BB1F7C14CF00D5B5FC /* FreeButton.xib in Resources */,
 				3E9C46101F70904F00693AA1 /* ChartView.xib in Resources */,
 				3ECF3CF41F6979D9005165E5 /* RemoveButton.xib in Resources */,
@@ -1937,6 +2009,7 @@
 				31E4F7471F7E9E5E0047B843 /* PaymentInformationTableView.m in Sources */,
 				3E8A04C51F682E5400579DF8 /* LIButton.m in Sources */,
 				31972D741F7D1755008447C2 /* LibraryEmptySideMenu.m in Sources */,
+				31C3C61E1F83DA5E0070E612 /* PlayerStatusOffline.m in Sources */,
 				31B593C11F7C15D400D5B5FC /* FreeButton.m in Sources */,
 				3E7230FF1F7357C60050A70D /* SettingsContentViewController.m in Sources */,
 				3E6FE7DC1F77D46C00B98AD3 /* StoreGamesGridView.m in Sources */,
@@ -1973,6 +2046,7 @@
 				3ECF3CAD1F683B75005165E5 /* LLIButton.m in Sources */,
 				3159471B1F7C6B190073FA52 /* BottomDownloadBar.m in Sources */,
 				3E558C181F7AE79700542B7B /* FriendsNavigationController.m in Sources */,
+				31C3C6271F83DA930070E612 /* PlayerStatusNotHere.m in Sources */,
 				3E3E42001F757D0D009698FD /* LibraryGamesServersListView.m in Sources */,
 				315947191F7C6B190073FA52 /* StoreGameInfoView.m in Sources */,
 				31B8EB921F7FD82500962504 /* StoreMainGamesGridViewController.m in Sources */,
@@ -2006,6 +2080,7 @@
 				31B07F261F81AD1100B6BCCA /* BuyGameQRView.m in Sources */,
 				3E9C460E1F7084E100693AA1 /* ChartView.m in Sources */,
 				3E6FE7FF1F784BCF00B98AD3 /* WalletNavigationController.m in Sources */,
+				31C3C6211F83DA6D0070E612 /* PlayerStatusOnline.m in Sources */,
 				31DAB2F51F7DFBB7006E326E /* NSPopover+MISSINGBackgroundView.m in Sources */,
 				3EE9C42B1F6C91E8004B72F2 /* MainTabViewController.m in Sources */,
 				3EBAADEC1F75BDFC00890AD1 /* StoreDownloadsModel.m in Sources */,
@@ -2030,11 +2105,13 @@
 				3E558BE71F79772C00542B7B /* SettingsViewController.m in Sources */,
 				3E8876661F754561001B8374 /* LibrarySideMenu.m in Sources */,
 				3E558BDD1F79703200542B7B /* SettingsNavigationListView.m in Sources */,
+				31C3C6241F83DA7D0070E612 /* PlayerStatusWantsToPlay.m in Sources */,
 				3E6FE7AB1F775E9C00B98AD3 /* LibraryScreenshotItem.m in Sources */,
 				3E558BC71F79558100542B7B /* ProfileEditButton.m in Sources */,
 				3E6FE7E71F77FD8100B98AD3 /* WelcomeContinueButton.m in Sources */,
 				3E6FE8101F78883A00B98AD3 /* NSView+Fade.m in Sources */,
 				3E7230F61F7356430050A70D /* FriendsContentViewController.m in Sources */,
+				31C3C62A1F83DAA10070E612 /* PlayerStatusInGame.m in Sources */,
 				3E558BE11F79710300542B7B /* SettingsNavigationListModel.m in Sources */,
 				3E88761D1F7432C0001B8374 /* WalletHistoryCell.m in Sources */,
 				3E88764D1F749EF7001B8374 /* GameTagImageView.m in Sources */,
@@ -2058,7 +2135,6 @@
 				3E3E41FA1F7565C5009698FD /* LibraryGamesRightMenuModel.m in Sources */,
 				31E4F7441F7E9E5E0047B843 /* PaymentInformationGameCell.m in Sources */,
 				31B07ED11F80CC6500B6BCCA /* NSImage+MGCropExtensions.m in Sources */,
-				3E8876431F7498A8001B8374 /* PlayerStatusView.m in Sources */,
 				31B8EB981F80437400962504 /* ChooseFriendButton.m in Sources */,
 				3E3E42031F757D72009698FD /* LibraryGamesServerListModel.m in Sources */,
 				3E88763E1F749720001B8374 /* FriendsContentViewListCell.m in Sources */,

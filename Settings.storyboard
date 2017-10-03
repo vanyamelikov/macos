@@ -71,28 +71,21 @@
                                 </constraints>
                                 <color key="fillColor" red="0.98431372549019602" green="0.93333333333333335" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
                             </box>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="3Tj-le-A4d" customClass="ProfileEditButton">
-                                <rect key="frame" x="20" y="719" width="156" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="156" id="SAq-hX-ypj"/>
-                                    <constraint firstAttribute="height" constant="34" id="lRm-Y3-0z8"/>
-                                </constraints>
-                            </customView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yl7-5o-vu1">
-                                <rect key="frame" x="124" y="643" width="106" height="38"/>
+                                <rect key="frame" x="124" y="643" width="117" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="0W8-dB-zdu"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="KOT3 Kill" id="i4B-bx-Pxf">
-                                    <font key="font" metaFont="system" size="25"/>
+                                    <font key="font" size="25" name="SFProText-Semibold"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="NPH-6J-mpc">
-                                <rect key="frame" x="126" y="634" width="102" height="1"/>
+                                <rect key="frame" x="126" y="634" width="113" height="1"/>
                                 <view key="contentView" id="ADs-4G-CM8">
-                                    <rect key="frame" x="1" y="1" width="100" height="0.0"/>
+                                    <rect key="frame" x="1" y="1" width="111" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <constraints>
@@ -102,12 +95,12 @@
                                 <color key="fillColor" red="0.40000000000000002" green="0.66666666669999997" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                             </box>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nPL-TQ-ZgF">
-                                <rect key="frame" x="18" y="559" width="106" height="38"/>
+                                <rect key="frame" x="18" y="559" width="122" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="6gW-VD-UkZ"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Information" id="uNS-Ng-8Fi">
-                                    <font key="font" metaFont="system" size="20"/>
+                                    <font key="font" size="20" name="SFProText-Bold"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -119,18 +112,18 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6og-Af-IsN">
-                                            <rect key="frame" x="415" y="487" width="77" height="20"/>
+                                            <rect key="frame" x="415" y="487" width="78" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="Am5-rb-llr"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Name profile" id="pYW-4Z-Nad">
-                                                <font key="font" metaFont="cellTitle"/>
+                                                <font key="font" size="12" name="SFProText-Medium"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <customView translatesAutoresizingMaskIntoConstraints="NO" id="7Nw-tz-rwk" customClass="SaveSettingsButton">
-                                            <rect key="frame" x="655" y="37" width="126" height="29"/>
+                                            <rect key="frame" x="655" y="35" width="126" height="29"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="29" id="7gt-IX-cZS"/>
                                                 <constraint firstAttribute="width" constant="126" id="x2n-21-Edl"/>
@@ -143,7 +136,7 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2w6-6f-XdD">
-                                                        <rect key="frame" x="4" y="4" width="355" height="323"/>
+                                                        <rect key="frame" x="6" y="8" width="351" height="315"/>
                                                         <contentFilters>
                                                             <ciFilter name="CIColorInvert">
                                                                 <configuration>
@@ -152,17 +145,17 @@
                                                             </ciFilter>
                                                         </contentFilters>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="My name is ..." id="ksl-SB-xuI">
-                                                            <font key="font" metaFont="system" size="14"/>
+                                                            <font key="font" size="12" name="SFProText-Medium"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                                                         </textFieldCell>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="2w6-6f-XdD" secondAttribute="trailing" constant="6" id="Hyy-AD-uT4"/>
-                                                    <constraint firstAttribute="bottom" secondItem="2w6-6f-XdD" secondAttribute="bottom" constant="4" id="Jak-3x-oMw"/>
-                                                    <constraint firstItem="2w6-6f-XdD" firstAttribute="leading" secondItem="Kpn-LS-xU7" secondAttribute="leading" constant="6" id="QwH-wb-nfj"/>
-                                                    <constraint firstItem="2w6-6f-XdD" firstAttribute="top" secondItem="Kpn-LS-xU7" secondAttribute="top" constant="4" id="ZcO-mJ-FTn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2w6-6f-XdD" secondAttribute="trailing" constant="8" id="Hyy-AD-uT4"/>
+                                                    <constraint firstAttribute="bottom" secondItem="2w6-6f-XdD" secondAttribute="bottom" constant="8" id="Jak-3x-oMw"/>
+                                                    <constraint firstItem="2w6-6f-XdD" firstAttribute="leading" secondItem="Kpn-LS-xU7" secondAttribute="leading" constant="8" id="QwH-wb-nfj"/>
+                                                    <constraint firstItem="2w6-6f-XdD" firstAttribute="top" secondItem="Kpn-LS-xU7" secondAttribute="top" constant="8" id="ZcO-mJ-FTn"/>
                                                 </constraints>
                                             </view>
                                             <constraints>
@@ -177,12 +170,12 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="84V-1Q-OTQ">
-                                                        <rect key="frame" x="13" y="487" width="77" height="20"/>
+                                                        <rect key="frame" x="13" y="487" width="78" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="ggC-fi-PC4"/>
                                                         </constraints>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Name profile" id="kj1-zv-aOe">
-                                                            <font key="font" metaFont="cellTitle"/>
+                                                            <font key="font" size="12" name="SFProText-Medium"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
@@ -194,7 +187,7 @@
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="erX-tf-gP9">
-                                                                    <rect key="frame" x="6" y="4" width="361" height="27"/>
+                                                                    <rect key="frame" x="6" y="4" width="361" height="23"/>
                                                                     <contentFilters>
                                                                         <ciFilter name="CIColorInvert">
                                                                             <configuration>
@@ -203,14 +196,14 @@
                                                                         </ciFilter>
                                                                     </contentFilters>
                                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="KOT3 Kill" id="Mbh-kR-DWN">
-                                                                        <font key="font" metaFont="system" size="14"/>
+                                                                        <font key="font" size="12" name="SFProText-Medium"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                                                                     </textFieldCell>
                                                                 </textField>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstItem="erX-tf-gP9" firstAttribute="top" secondItem="kDS-x4-ZP5" secondAttribute="top" constant="4" id="HtQ-Nu-s87"/>
+                                                                <constraint firstItem="erX-tf-gP9" firstAttribute="top" secondItem="kDS-x4-ZP5" secondAttribute="top" constant="8" id="HtQ-Nu-s87"/>
                                                                 <constraint firstAttribute="trailing" secondItem="erX-tf-gP9" secondAttribute="trailing" constant="8" id="N38-ka-6Xa"/>
                                                                 <constraint firstItem="erX-tf-gP9" firstAttribute="leading" secondItem="kDS-x4-ZP5" secondAttribute="leading" constant="8" id="YpS-4J-vM2"/>
                                                                 <constraint firstAttribute="bottom" secondItem="erX-tf-gP9" secondAttribute="bottom" constant="4" id="r9i-Sb-h9x"/>
@@ -222,45 +215,45 @@
                                                         <color key="borderColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </box>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xhb-qR-bLn">
-                                                        <rect key="frame" x="13" y="406" width="56" height="20"/>
+                                                        <rect key="frame" x="13" y="406" width="57" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="K65-7N-GYo"/>
                                                         </constraints>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="My name" id="EsD-uN-5PK">
-                                                            <font key="font" metaFont="cellTitle"/>
+                                                            <font key="font" size="12" name="SFProText-Medium"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KBO-6D-CwL">
-                                                        <rect key="frame" x="13" y="325" width="50" height="20"/>
+                                                        <rect key="frame" x="13" y="325" width="51" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="1Mp-3Z-hZN"/>
                                                         </constraints>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Country" id="E8I-iJ-43W">
-                                                            <font key="font" metaFont="cellTitle"/>
+                                                            <font key="font" size="12" name="SFProText-Medium"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="moF-Pw-swH">
-                                                        <rect key="frame" x="13" y="244" width="43" height="20"/>
+                                                        <rect key="frame" x="13" y="244" width="44" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="n8j-y7-SDr"/>
                                                         </constraints>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Region" id="IES-6c-Iqx">
-                                                            <font key="font" metaFont="cellTitle"/>
+                                                            <font key="font" size="12" name="SFProText-Medium"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
                                                     </textField>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="x3Q-vz-ph5">
-                                                        <rect key="frame" x="13" y="163" width="27" height="20"/>
+                                                        <rect key="frame" x="13" y="163" width="28" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="kNi-e2-D2H"/>
                                                         </constraints>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="City" id="gY8-iz-ri0">
-                                                            <font key="font" metaFont="cellTitle"/>
+                                                            <font key="font" size="12" name="SFProText-Medium"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
@@ -272,7 +265,7 @@
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Jq-87-RvR">
-                                                                    <rect key="frame" x="6" y="4" width="361" height="27"/>
+                                                                    <rect key="frame" x="6" y="4" width="361" height="23"/>
                                                                     <contentFilters>
                                                                         <ciFilter name="CIColorInvert">
                                                                             <configuration>
@@ -281,7 +274,7 @@
                                                                         </ciFilter>
                                                                     </contentFilters>
                                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Alexander" id="G2l-2Q-3bh">
-                                                                        <font key="font" metaFont="system" size="14"/>
+                                                                        <font key="font" size="12" name="SFProText-Medium"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                                                                     </textFieldCell>
@@ -289,7 +282,7 @@
                                                             </subviews>
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="4Jq-87-RvR" secondAttribute="trailing" constant="8" id="1fU-n0-SgU"/>
-                                                                <constraint firstItem="4Jq-87-RvR" firstAttribute="top" secondItem="yuU-XN-ndH" secondAttribute="top" constant="4" id="B9R-Fb-ahF"/>
+                                                                <constraint firstItem="4Jq-87-RvR" firstAttribute="top" secondItem="yuU-XN-ndH" secondAttribute="top" constant="8" id="B9R-Fb-ahF"/>
                                                                 <constraint firstItem="4Jq-87-RvR" firstAttribute="leading" secondItem="yuU-XN-ndH" secondAttribute="leading" constant="8" id="j8z-i5-t37"/>
                                                                 <constraint firstAttribute="bottom" secondItem="4Jq-87-RvR" secondAttribute="bottom" constant="4" id="wTv-ua-FXV"/>
                                                             </constraints>
@@ -306,7 +299,7 @@
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hcn-LL-I23">
-                                                                    <rect key="frame" x="6" y="4" width="361" height="27"/>
+                                                                    <rect key="frame" x="6" y="4" width="361" height="23"/>
                                                                     <contentFilters>
                                                                         <ciFilter name="CIColorInvert">
                                                                             <configuration>
@@ -315,7 +308,7 @@
                                                                         </ciFilter>
                                                                     </contentFilters>
                                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Russian Federation" id="vHi-8o-0ft">
-                                                                        <font key="font" metaFont="system" size="14"/>
+                                                                        <font key="font" size="12" name="SFProText-Medium"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                                                                     </textFieldCell>
@@ -325,7 +318,7 @@
                                                                 <constraint firstItem="Hcn-LL-I23" firstAttribute="leading" secondItem="ebz-eD-tt0" secondAttribute="leading" constant="8" id="HcG-lu-LIU"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Hcn-LL-I23" secondAttribute="bottom" constant="4" id="k0z-ie-pCt"/>
                                                                 <constraint firstAttribute="trailing" secondItem="Hcn-LL-I23" secondAttribute="trailing" constant="8" id="lYk-0w-jnn"/>
-                                                                <constraint firstItem="Hcn-LL-I23" firstAttribute="top" secondItem="ebz-eD-tt0" secondAttribute="top" constant="4" id="xJH-7L-kfh"/>
+                                                                <constraint firstItem="Hcn-LL-I23" firstAttribute="top" secondItem="ebz-eD-tt0" secondAttribute="top" constant="8" id="xJH-7L-kfh"/>
                                                             </constraints>
                                                         </view>
                                                         <constraints>
@@ -340,7 +333,7 @@
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xp9-vf-yaR">
-                                                                    <rect key="frame" x="6" y="4" width="361" height="27"/>
+                                                                    <rect key="frame" x="6" y="4" width="361" height="23"/>
                                                                     <contentFilters>
                                                                         <ciFilter name="CIColorInvert">
                                                                             <configuration>
@@ -349,14 +342,14 @@
                                                                         </ciFilter>
                                                                     </contentFilters>
                                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Bashkortostan" id="wdd-Ei-QXo">
-                                                                        <font key="font" metaFont="system" size="14"/>
+                                                                        <font key="font" size="12" name="SFProText-Medium"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                                                                     </textFieldCell>
                                                                 </textField>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstItem="xp9-vf-yaR" firstAttribute="top" secondItem="4mQ-YW-lqQ" secondAttribute="top" constant="4" id="1eA-zp-N0m"/>
+                                                                <constraint firstItem="xp9-vf-yaR" firstAttribute="top" secondItem="4mQ-YW-lqQ" secondAttribute="top" constant="8" id="1eA-zp-N0m"/>
                                                                 <constraint firstAttribute="bottom" secondItem="xp9-vf-yaR" secondAttribute="bottom" constant="4" id="9VR-dk-cgH"/>
                                                                 <constraint firstAttribute="trailing" secondItem="xp9-vf-yaR" secondAttribute="trailing" constant="8" id="Md7-fx-AwY"/>
                                                                 <constraint firstItem="xp9-vf-yaR" firstAttribute="leading" secondItem="4mQ-YW-lqQ" secondAttribute="leading" constant="8" id="mnC-Ff-BeI"/>
@@ -374,7 +367,7 @@
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8Jh-2i-3HL">
-                                                                    <rect key="frame" x="6" y="4" width="361" height="27"/>
+                                                                    <rect key="frame" x="6" y="4" width="361" height="23"/>
                                                                     <contentFilters>
                                                                         <ciFilter name="CIColorInvert">
                                                                             <configuration>
@@ -383,7 +376,7 @@
                                                                         </ciFilter>
                                                                     </contentFilters>
                                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="xenio.io/client/user/kot3_kll" id="4ak-Fe-hh7">
-                                                                        <font key="font" metaFont="system" size="14"/>
+                                                                        <font key="font" size="12" name="SFProText-Medium"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                                                                     </textFieldCell>
@@ -392,7 +385,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="bottom" secondItem="8Jh-2i-3HL" secondAttribute="bottom" constant="4" id="Jtq-t7-mTw"/>
                                                                 <constraint firstAttribute="trailing" secondItem="8Jh-2i-3HL" secondAttribute="trailing" constant="8" id="XwP-p1-11a"/>
-                                                                <constraint firstItem="8Jh-2i-3HL" firstAttribute="top" secondItem="Ae7-ku-0e5" secondAttribute="top" constant="4" id="cn1-lc-3az"/>
+                                                                <constraint firstItem="8Jh-2i-3HL" firstAttribute="top" secondItem="Ae7-ku-0e5" secondAttribute="top" constant="8" id="cn1-lc-3az"/>
                                                                 <constraint firstItem="8Jh-2i-3HL" firstAttribute="leading" secondItem="Ae7-ku-0e5" secondAttribute="leading" constant="8" id="mmc-Ij-P6Z"/>
                                                             </constraints>
                                                         </view>
@@ -408,7 +401,7 @@
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tGI-UR-ViK">
-                                                                    <rect key="frame" x="6" y="4" width="361" height="27"/>
+                                                                    <rect key="frame" x="6" y="4" width="361" height="23"/>
                                                                     <contentFilters>
                                                                         <ciFilter name="CIColorInvert">
                                                                             <configuration>
@@ -417,14 +410,14 @@
                                                                         </ciFilter>
                                                                     </contentFilters>
                                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Moscow" id="zxA-4c-wiX">
-                                                                        <font key="font" metaFont="system" size="14"/>
+                                                                        <font key="font" size="12" name="SFProText-Medium"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                                                                     </textFieldCell>
                                                                 </textField>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstItem="tGI-UR-ViK" firstAttribute="top" secondItem="SSU-9O-hyd" secondAttribute="top" constant="4" id="6yK-iz-Nuu"/>
+                                                                <constraint firstItem="tGI-UR-ViK" firstAttribute="top" secondItem="SSU-9O-hyd" secondAttribute="top" constant="8" id="6yK-iz-Nuu"/>
                                                                 <constraint firstAttribute="bottom" secondItem="tGI-UR-ViK" secondAttribute="bottom" constant="4" id="SOl-9f-ywc"/>
                                                                 <constraint firstAttribute="trailing" secondItem="tGI-UR-ViK" secondAttribute="trailing" constant="8" id="k1c-Og-sym"/>
                                                                 <constraint firstItem="tGI-UR-ViK" firstAttribute="leading" secondItem="SSU-9O-hyd" secondAttribute="leading" constant="8" id="yIm-oK-zgm"/>
@@ -436,12 +429,12 @@
                                                         <color key="borderColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </box>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="u9T-tP-YLp">
-                                                        <rect key="frame" x="13" y="82" width="96" height="20"/>
+                                                        <rect key="frame" x="13" y="82" width="99" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="idg-5p-zPX"/>
                                                         </constraints>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="My personal link" id="nDW-qp-Sl3">
-                                                            <font key="font" metaFont="cellTitle"/>
+                                                            <font key="font" size="12" name="SFProText-Medium"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                         </textFieldCell>
@@ -505,21 +498,42 @@
                                 </constraints>
                                 <color key="fillColor" red="0.074509803921568626" green="0.086274509803921567" blue="0.12549019607843137" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                             </box>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NC0-Rs-JXz">
+                                <rect key="frame" x="26" y="729" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="BxH-cs-vJb"/>
+                                    <constraint firstAttribute="width" constant="16" id="oE4-VK-vq4"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_backarrow" id="lr7-VX-IQJ"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="h7u-4O-OGm">
+                                <rect key="frame" x="57" y="725" width="101" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="VyO-9I-4cD"/>
+                                </constraints>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Profile/Edit" usesSingleLineMode="YES" id="2kZ-uq-CJi">
+                                    <font key="font" metaFont="system" size="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="gCd-lg-RUk" firstAttribute="leading" secondItem="Tl4-VM-i42" secondAttribute="leading" constant="20" id="0W9-be-14s"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Th5-mA-1iz" secondAttribute="bottom" constant="26" id="8UL-b2-QKy"/>
+                            <constraint firstItem="h7u-4O-OGm" firstAttribute="top" secondItem="Tl4-VM-i42" secondAttribute="top" constant="28" id="AJc-cd-9rq"/>
                             <constraint firstItem="nPL-TQ-ZgF" firstAttribute="top" secondItem="gCd-lg-RUk" secondAttribute="bottom" constant="18" id="EQ6-I8-ETD"/>
-                            <constraint firstItem="3Tj-le-A4d" firstAttribute="leading" secondItem="Tl4-VM-i42" secondAttribute="leading" constant="20" id="HuV-CM-GCV"/>
+                            <constraint firstItem="h7u-4O-OGm" firstAttribute="leading" secondItem="NC0-Rs-JXz" secondAttribute="trailing" constant="17" id="JFn-7R-IkB"/>
+                            <constraint firstItem="NC0-Rs-JXz" firstAttribute="top" secondItem="Tl4-VM-i42" secondAttribute="top" constant="32" id="KkQ-7L-gZa"/>
                             <constraint firstItem="yl7-5o-vu1" firstAttribute="leading" secondItem="X52-1Y-5zQ" secondAttribute="trailing" constant="16" id="LX9-49-uMS"/>
-                            <constraint firstItem="gCd-lg-RUk" firstAttribute="top" secondItem="3Tj-le-A4d" secondAttribute="bottom" constant="14" id="QSj-zW-2Vm"/>
-                            <constraint firstItem="3Tj-le-A4d" firstAttribute="top" secondItem="Tl4-VM-i42" secondAttribute="top" constant="24" id="QeI-e4-64u"/>
                             <constraint firstItem="nPL-TQ-ZgF" firstAttribute="leading" secondItem="X52-1Y-5zQ" secondAttribute="leading" id="Snh-c0-Lxt"/>
                             <constraint firstItem="Th5-mA-1iz" firstAttribute="leading" secondItem="Tl4-VM-i42" secondAttribute="leading" constant="20" id="ZxD-Vz-Cz9"/>
                             <constraint firstItem="yl7-5o-vu1" firstAttribute="centerY" secondItem="X52-1Y-5zQ" secondAttribute="centerY" constant="-2" id="auy-XU-t1o"/>
                             <constraint firstAttribute="trailing" secondItem="Th5-mA-1iz" secondAttribute="trailing" constant="20" id="bMn-5v-Ntl"/>
+                            <constraint firstItem="gCd-lg-RUk" firstAttribute="top" secondItem="h7u-4O-OGm" secondAttribute="bottom" constant="20" id="eqH-nw-8iA"/>
                             <constraint firstItem="Th5-mA-1iz" firstAttribute="top" secondItem="nPL-TQ-ZgF" secondAttribute="bottom" constant="8" id="iaI-oE-DAU"/>
                             <constraint firstItem="NPH-6J-mpc" firstAttribute="leading" secondItem="yl7-5o-vu1" secondAttribute="leading" id="nUb-eE-8dc"/>
+                            <constraint firstItem="NC0-Rs-JXz" firstAttribute="leading" secondItem="Tl4-VM-i42" secondAttribute="leading" constant="26" id="reU-9K-7s9"/>
                             <constraint firstItem="NPH-6J-mpc" firstAttribute="width" secondItem="yl7-5o-vu1" secondAttribute="width" id="s1H-9D-y1p"/>
                             <constraint firstItem="NPH-6J-mpc" firstAttribute="top" secondItem="yl7-5o-vu1" secondAttribute="bottom" constant="8" id="wEb-XK-alC"/>
                         </constraints>
@@ -645,14 +659,14 @@
                                 <color key="fillColor" red="0.17254901960784313" green="0.35686274509803922" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
                             </box>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="qW2-WE-dHO" customClass="FriendsListSearchBar">
-                                <rect key="frame" x="0.0" y="850" width="338" height="35"/>
+                                <rect key="frame" x="0.0" y="853" width="338" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="nfz-wY-MwT"/>
                                 </constraints>
                             </customView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="03I-nb-m2h" firstAttribute="top" secondItem="qW2-WE-dHO" secondAttribute="bottom" constant="15" id="6Fd-pV-aVm"/>
+                            <constraint firstItem="03I-nb-m2h" firstAttribute="top" secondItem="qW2-WE-dHO" secondAttribute="bottom" constant="18" id="6Fd-pV-aVm"/>
                             <constraint firstAttribute="bottom" secondItem="ybf-Ul-DAD" secondAttribute="bottom" id="B2r-vL-dQx"/>
                             <constraint firstAttribute="bottom" secondItem="SpA-TB-dr5" secondAttribute="bottom" id="DYu-cw-dfZ"/>
                             <constraint firstAttribute="trailing" secondItem="SpA-TB-dr5" secondAttribute="trailing" id="GM9-13-YAq"/>
@@ -665,7 +679,7 @@
                             <constraint firstItem="qW2-WE-dHO" firstAttribute="leading" secondItem="d8F-Xs-HKy" secondAttribute="leading" id="rjw-fS-tAx"/>
                             <constraint firstAttribute="trailing" secondItem="qW2-WE-dHO" secondAttribute="trailing" id="vbs-n4-yPT"/>
                             <constraint firstItem="03I-nb-m2h" firstAttribute="leading" secondItem="d8F-Xs-HKy" secondAttribute="leading" id="xwK-fu-8eA"/>
-                            <constraint firstItem="qW2-WE-dHO" firstAttribute="top" secondItem="d8F-Xs-HKy" secondAttribute="top" constant="15" id="ybE-QL-Fh9"/>
+                            <constraint firstItem="qW2-WE-dHO" firstAttribute="top" secondItem="d8F-Xs-HKy" secondAttribute="top" constant="12" id="ybE-QL-Fh9"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -674,6 +688,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_backarrow" width="16" height="11"/>
         <image name="ic_photo" width="30" height="24"/>
     </resources>
 </document>

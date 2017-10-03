@@ -70,23 +70,23 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_grid" id="Wff-Kr-bq3"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hcd-2Y-WiH">
-                                <rect key="frame" x="1081" y="23" width="63" height="18"/>
+                                <rect key="frame" x="1078" y="22" width="66" height="20"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="KOT3 Kill" id="vcl-na-Xkn">
-                                    <font key="font" metaFont="system" size="14"/>
+                                    <font key="font" size="14" name="SFProText-Medium"/>
                                     <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Qy-yC-Miz">
-                                <rect key="frame" x="950" y="24" width="105" height="16"/>
+                                <rect key="frame" x="943" y="23" width="109" height="18"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="0.0 XNO/ 0.0 USD" id="Zpr-zw-QVe">
-                                    <font key="font" metaFont="cellTitle"/>
+                                    <font key="font" size="12" name="SFProText-Semibold"/>
                                     <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WEQ-vh-HlV">
-                                <rect key="frame" x="933" y="26" width="11" height="11"/>
+                                <rect key="frame" x="926" y="26" width="11" height="11"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="11" id="eSv-Wu-NOW"/>
                                     <constraint firstAttribute="height" constant="11" id="m3K-Ph-ls3"/>

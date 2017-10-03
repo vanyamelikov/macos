@@ -6,6 +6,7 @@
 
 @implementation SettingsSideListView{
     NSMutableArray *dataSourceArray;
+    NSInteger preSelectedRow;
 }
 
 -(instancetype)initWithCoder:(NSCoder *)coder {
@@ -214,6 +215,19 @@
             [((FriendsHideCell *)clickedView).sisclosureImageView setImage:arrowImage];
             [((FriendsHideCell *)clickedView).sisclosureImageView setNeedsDisplay:YES];
         }
+    } else if ([clickItem isKindOfClass:[FriendsListModel class]] && preSelectedRow != [self.friendsOutlineView clickedRow]) {
+        FriendsRightListCell *cellView = (FriendsRightListCell *)[self.friendsOutlineView viewAtColumn:0 row:[self.friendsOutlineView clickedRow] makeIfNecessary:YES];
+        FriendsRightListCell *preSelectedCellView = (FriendsRightListCell *)[self.friendsOutlineView viewAtColumn:0 row:preSelectedRow makeIfNecessary:YES];
+        if(cellView != nil && [cellView isKindOfClass:[FriendsRightListCell class]])
+        {
+            cellView.lightLayer.hidden = NO;
+        }
+        
+        if(preSelectedCellView != nil && [preSelectedCellView isKindOfClass:[FriendsRightListCell class]])
+        {
+            preSelectedCellView.lightLayer.hidden = YES;
+        }
+        preSelectedRow = [self.friendsOutlineView clickedRow];
     }
 }
 

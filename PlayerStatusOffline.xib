@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PlayerStatusOffline"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="80y-Jr-kR4">
+            <rect key="frame" x="0.0" y="0.0" width="73" height="22"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Y4K-9Q-oNQ">
+                    <rect key="frame" x="0.0" y="0.0" width="73" height="22"/>
+                    <view key="contentView" id="0EF-oB-YUv">
+                        <rect key="frame" x="1" y="1" width="71" height="20"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="73" id="5gG-F3-8ou"/>
+                        <constraint firstAttribute="height" constant="22" id="6Hv-vk-iJ3"/>
+                    </constraints>
+                    <color key="borderColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.92941176470588238" green="0.42745098039215684" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s0f-0U-daX">
+                    <rect key="frame" x="0.0" y="3" width="73" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="vYu-Af-aFC"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="OFFLINE" id="uDR-mo-swn">
+                        <font key="font" size="10" name="SFProText-Heavy"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Y4K-9Q-oNQ" firstAttribute="top" secondItem="80y-Jr-kR4" secondAttribute="top" id="Bu5-gn-tYD"/>
+                <constraint firstAttribute="trailing" secondItem="s0f-0U-daX" secondAttribute="trailing" constant="2" id="IT5-4D-baY"/>
+                <constraint firstItem="s0f-0U-daX" firstAttribute="leading" secondItem="80y-Jr-kR4" secondAttribute="leading" constant="2" id="JBR-9N-72g"/>
+                <constraint firstItem="s0f-0U-daX" firstAttribute="centerY" secondItem="80y-Jr-kR4" secondAttribute="centerY" id="aoO-bz-3IP"/>
+                <constraint firstAttribute="trailing" secondItem="Y4K-9Q-oNQ" secondAttribute="trailing" id="gM0-HK-zUB"/>
+                <constraint firstAttribute="bottom" secondItem="Y4K-9Q-oNQ" secondAttribute="bottom" id="tGN-Ye-3cO"/>
+                <constraint firstItem="Y4K-9Q-oNQ" firstAttribute="leading" secondItem="80y-Jr-kR4" secondAttribute="leading" id="v5M-uV-WPe"/>
+            </constraints>
+            <point key="canvasLocation" x="194.5" y="204"/>
+        </customView>
+    </objects>
+</document>

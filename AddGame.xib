@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uvj-hJ-Qhz">
-                                <rect key="frame" x="0.0" y="12" width="10" height="10"/>
+                                <rect key="frame" x="4" y="12" width="10" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="4xz-xl-NE1"/>
                                     <constraint firstAttribute="width" constant="10" id="oHj-Jw-TB5"/>
@@ -29,7 +29,7 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="ic_plus" id="7Bq-Ok-8aX"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S11-Lg-GuL">
-                                <rect key="frame" x="18" y="8" width="83" height="18"/>
+                                <rect key="frame" x="22" y="8" width="83" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="5Ay-Bt-tOq"/>
                                     <constraint firstAttribute="width" constant="79" id="sr4-mh-Eus"/>
@@ -43,7 +43,7 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="S11-Lg-GuL" firstAttribute="leading" secondItem="Uvj-hJ-Qhz" secondAttribute="trailing" constant="10" id="fwF-pt-0dd"/>
-                            <constraint firstItem="Uvj-hJ-Qhz" firstAttribute="leading" secondItem="PrL-n7-6mo" secondAttribute="leading" id="j1c-vI-dET"/>
+                            <constraint firstItem="Uvj-hJ-Qhz" firstAttribute="leading" secondItem="PrL-n7-6mo" secondAttribute="leading" constant="4" id="j1c-vI-dET"/>
                             <constraint firstItem="S11-Lg-GuL" firstAttribute="centerY" secondItem="PrL-n7-6mo" secondAttribute="centerY" id="q8j-oj-H1T"/>
                             <constraint firstItem="Uvj-hJ-Qhz" firstAttribute="centerY" secondItem="PrL-n7-6mo" secondAttribute="centerY" id="wB0-Cf-PBK"/>
                         </constraints>

@@ -6,5 +6,6 @@
 @property (nonatomic) NSString *friendName;
 @property (nonatomic) NSString *friendStatus;
 @property (nonatomic) NSString *friendGame;
+@property (nonatomic) NSInteger playerStatus;
 
 @end

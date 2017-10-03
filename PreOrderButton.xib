@@ -31,13 +31,13 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="y7G-R5-Yfr">
-                                            <rect key="frame" x="7" y="5" width="94" height="18"/>
+                                            <rect key="frame" x="7" y="4" width="94" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="18" id="8az-pY-1JC"/>
                                                 <constraint firstAttribute="width" constant="90" id="UVw-gV-zcL"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="PRE-ORDER" id="H2g-ym-PwN">
-                                                <font key="font" metaFont="cellTitle"/>
+                                                <font key="font" size="12" name="SFProText-Bold"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -45,7 +45,7 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="y7G-R5-Yfr" firstAttribute="centerX" secondItem="MLv-ky-mAF" secondAttribute="centerX" id="T2i-pd-aAv"/>
-                                        <constraint firstItem="y7G-R5-Yfr" firstAttribute="centerY" secondItem="MLv-ky-mAF" secondAttribute="centerY" constant="-1" id="g0a-QK-fVX"/>
+                                        <constraint firstItem="y7G-R5-Yfr" firstAttribute="centerY" secondItem="MLv-ky-mAF" secondAttribute="centerY" id="g0a-QK-fVX"/>
                                     </constraints>
                                 </view>
                                 <color key="borderColor" red="0.23921568630000001" green="0.4823529412" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>

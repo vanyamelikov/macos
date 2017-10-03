@@ -25,20 +25,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HYY-dP-oLt">
-                                <rect key="frame" x="13" y="7" width="56" height="18"/>
+                                <rect key="frame" x="13" y="6" width="56" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="c6W-FH-JYe"/>
                                     <constraint firstAttribute="width" constant="52" id="dpb-pg-rUl"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="CANCEL" id="YQh-xh-DJB">
-                                    <font key="font" metaFont="cellTitle"/>
+                                    <font key="font" size="12" name="SFProText-Bold"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="HYY-dP-oLt" firstAttribute="centerY" secondItem="GtT-Ke-dOz" secondAttribute="centerY" constant="-1" id="Pwp-b9-scd"/>
+                            <constraint firstItem="HYY-dP-oLt" firstAttribute="centerY" secondItem="GtT-Ke-dOz" secondAttribute="centerY" id="Pwp-b9-scd"/>
                             <constraint firstItem="HYY-dP-oLt" firstAttribute="centerX" secondItem="GtT-Ke-dOz" secondAttribute="centerX" id="s5E-fl-OrF"/>
                         </constraints>
                     </view>

@@ -95,13 +95,16 @@
     NSLog(@"Delegate Clicked Tab Is %ld", sender);
     [self animation:sender : _mainTabBar.selectedTab];
     if(sender == 0){
+        [self setBackgroundImage:@"background_store_2"];
         [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:0]];  
     }else if (sender == 1){
-        [self setBackgroundImage:@"background_store_2"];
+        [self setBackgroundImage:@"background_library"];
         [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:1]];
     }else if (sender == 2){
+        [self setBackgroundImage:@"background_store_2"];
         [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:2]];
     }else if (sender == 3){//friends
+        [self setBackgroundImage:@"background_profile"];
         NSSplitView *superView = (NSSplitView *)[_mainTabView.tabViewItems objectAtIndex:3].view;
         
         //get friends edit content view
@@ -114,6 +117,7 @@
         if(![_mainTabView.selectedTabViewItem isEqual:[_mainTabView.tabViewItems objectAtIndex:3]])
             [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:3]];
     }else if (sender == 4){//settings
+        [self setBackgroundImage:@"background_store_2"];
         NSSplitView *superView = (NSSplitView *)[_mainTabView.tabViewItems objectAtIndex:3].view;
         
         //get friends edit content view

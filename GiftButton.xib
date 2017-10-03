@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TnQ-uv-DIm">
-                                <rect key="frame" x="12" y="4" width="12" height="12"/>
+                                <rect key="frame" x="10" y="3" width="12" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="12" id="OBv-6C-C30"/>
                                     <constraint firstAttribute="height" constant="12" id="Oe7-N5-LI8"/>
@@ -34,8 +34,8 @@
                             </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="TnQ-uv-DIm" firstAttribute="top" secondItem="W6s-ck-KFH" secondAttribute="top" constant="4" id="Qee-hY-r5Z"/>
-                            <constraint firstItem="TnQ-uv-DIm" firstAttribute="leading" secondItem="W6s-ck-KFH" secondAttribute="leading" constant="12" id="UB7-1D-U88"/>
+                            <constraint firstItem="TnQ-uv-DIm" firstAttribute="leading" secondItem="W6s-ck-KFH" secondAttribute="leading" constant="10" id="UB7-1D-U88"/>
+                            <constraint firstItem="TnQ-uv-DIm" firstAttribute="centerY" secondItem="W6s-ck-KFH" secondAttribute="centerY" constant="1" id="wAQ-oW-M8r"/>
                         </constraints>
                     </view>
                     <constraints>
@@ -51,9 +51,9 @@
                     </userDefinedRuntimeAttributes>
                 </box>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8yu-Qb-gWs">
-                    <rect key="frame" x="14" y="0.0" width="61" height="21"/>
+                    <rect key="frame" x="27" y="2" width="37" height="18"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="GIFT" id="mpk-20-C1x">
-                        <font key="font" metaFont="cellTitle"/>
+                        <font key="font" size="12" name="SFProText-Bold"/>
                         <color key="textColor" red="0.15114864706993103" green="0.20339366793632507" blue="0.24094346165657043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
@@ -62,12 +62,10 @@
             <constraints>
                 <constraint firstItem="TkR-Jg-g8s" firstAttribute="leading" secondItem="nqF-Ru-5Ty" secondAttribute="leading" id="6qP-ko-m2V"/>
                 <constraint firstAttribute="trailing" secondItem="TkR-Jg-g8s" secondAttribute="trailing" id="B2H-mz-jBA"/>
-                <constraint firstAttribute="trailing" secondItem="8yu-Qb-gWs" secondAttribute="trailing" id="Pqb-PM-9a6"/>
-                <constraint firstItem="8yu-Qb-gWs" firstAttribute="leading" secondItem="nqF-Ru-5Ty" secondAttribute="leading" constant="16" id="ZZc-Va-F1w"/>
-                <constraint firstAttribute="bottom" secondItem="8yu-Qb-gWs" secondAttribute="bottom" id="cRP-Ts-f22"/>
+                <constraint firstItem="8yu-Qb-gWs" firstAttribute="centerY" secondItem="nqF-Ru-5Ty" secondAttribute="centerY" id="E3U-tw-aBf"/>
+                <constraint firstItem="8yu-Qb-gWs" firstAttribute="leading" secondItem="TnQ-uv-DIm" secondAttribute="trailing" constant="6" id="WW3-Hp-2RH"/>
                 <constraint firstItem="TkR-Jg-g8s" firstAttribute="top" secondItem="nqF-Ru-5Ty" secondAttribute="top" id="f58-mP-FAi"/>
                 <constraint firstAttribute="bottom" secondItem="TkR-Jg-g8s" secondAttribute="bottom" id="nPB-Mg-Szf"/>
-                <constraint firstItem="8yu-Qb-gWs" firstAttribute="top" secondItem="nqF-Ru-5Ty" secondAttribute="top" constant="1" id="w0S-2V-O3F"/>
             </constraints>
             <point key="canvasLocation" x="194.5" y="204"/>
         </customView>
