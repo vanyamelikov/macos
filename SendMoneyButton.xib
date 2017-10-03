@@ -25,9 +25,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Trt-p8-PuO">
-                                <rect key="frame" x="95" y="9" width="89" height="18"/>
+                                <rect key="frame" x="93" y="8" width="92" height="20"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Send money" id="m5S-Kx-2V2">
-                                    <font key="font" metaFont="system" size="14"/>
+                                    <font key="font" size="14" name="SFProText-Medium"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>

@@ -18,7 +18,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Ho1-Q0-4qp">
             <rect key="frame" x="0.0" y="0.0" width="255" height="30"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="sXl-gZ-bWf">
                     <rect key="frame" x="0.0" y="0.0" width="255" height="30"/>

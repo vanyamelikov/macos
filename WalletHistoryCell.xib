@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,7 +26,7 @@
                                     <constraint firstAttribute="height" constant="17" id="R9E-fj-wSw"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="ID: 025" id="anZ-JI-4cX">
-                                    <font key="font" size="12" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="cellTitle"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -50,7 +50,7 @@
                                     <constraint firstAttribute="height" constant="17" id="gYC-h1-KKU"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="DATE: 02 SEP 2017" id="AWh-oc-jih">
-                                    <font key="font" size="12" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="cellTitle"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -74,7 +74,7 @@
                                     <constraint firstAttribute="height" constant="17" id="DcD-cr-zQq"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="MODE: FAST" id="RJo-db-q8N">
-                                    <font key="font" size="12" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="cellTitle"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -88,18 +88,18 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_plane" id="ybt-xu-n56"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EAQ-XE-eb5">
-                                <rect key="frame" x="52" y="25" width="81" height="17"/>
+                                <rect key="frame" x="52" y="25" width="80" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="25s-CR-rVM"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Send money" id="lpe-Zi-GJ8">
-                                    <font key="font" size="13" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="68U-nh-nsV">
-                                <rect key="frame" x="161" y="27" width="2" height="12"/>
+                                <rect key="frame" x="160" y="27" width="2" height="12"/>
                                 <view key="contentView" id="lKV-5I-ZgF">
                                     <rect key="frame" x="0.0" y="0.0" width="2" height="12"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,7 +111,7 @@
                                 <color key="fillColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                             </box>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D4T-OO-dzZ">
-                                <rect key="frame" x="193" y="26" width="13" height="11"/>
+                                <rect key="frame" x="192" y="26" width="13" height="11"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="13" id="6UO-Tk-Rf5"/>
                                     <constraint firstAttribute="height" constant="11" id="vsH-TC-XVL"/>
@@ -119,12 +119,12 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_userpic" id="cmT-Ph-gZz"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BhU-bB-ARw">
-                                <rect key="frame" x="222" y="25" width="40" height="17"/>
+                                <rect key="frame" x="221" y="25" width="39" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="pfk-K3-iQj"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="iddqd" id="Dbh-rH-KRB">
-                                    <font key="font" size="13" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -143,7 +143,7 @@
                                     <constraint firstAttribute="height" constant="17" id="yeB-Sv-Vkk"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="4 XNO" id="a5k-Iu-2Ga">
-                                    <font key="font" size="13" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -154,7 +154,7 @@
                                     <constraint firstAttribute="height" constant="17" id="g46-di-ZwD"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="DELETE" id="Jgt-JM-iGK">
-                                    <font key="font" size="12" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="cellTitle"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>

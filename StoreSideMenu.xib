@@ -82,7 +82,7 @@
                             <constraint firstItem="mAr-th-hwK" firstAttribute="top" secondItem="4gz-do-svH" secondAttribute="top" id="u6W-ED-d9g"/>
                         </constraints>
                     </view>
-                    <color key="fillColor" red="0.08235294118" green="0.094117647060000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" red="0.08235294118" green="0.094117647060000004" blue="0.13725490200000001" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                 </box>
             </subviews>
             <constraints>

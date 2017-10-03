@@ -130,6 +130,11 @@
     self.friendsOutlineView.delegate = self;
     self.friendsOutlineView.dataSource = self;
     
+    [self.friendsOutlineView setTarget:self];
+    [self.friendsOutlineView setAction:@selector(outlineViewClicked:)];
+    [self.friendsOutlineView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleNone];
+
+    
     [self.friendsOutlineView reloadData];
 }
 
@@ -189,6 +194,27 @@
     }
     return nil;
 }
+
+- (void) outlineViewClicked:(NSOutlineView*)sender
+{
+    id clickItem = [sender itemAtRow:[self.friendsOutlineView clickedRow]];
+    if([clickItem isKindOfClass:[SettingsFriendsListModel class]]) {
+        NSImage *arrowImage;
+        id clickedView = [sender viewAtColumn:0 row:[self.friendsOutlineView clickedRow] makeIfNecessary:NO];
+        if(![sender isItemExpanded:clickItem]) {
+            [sender expandItem:clickItem];
+            arrowImage = [NSImage imageNamed:@"ic_up_arrow"];
+        }else {
+            [sender collapseItem:clickItem];
+            arrowImage = [NSImage imageNamed:@"ic_down_arrow"];
+        }
+        if([clickedView isKindOfClass:[FriendsHideCell class]]) {
+            [((FriendsHideCell *)clickedView).sisclosureImageView setImage:arrowImage];
+            [((FriendsHideCell *)clickedView).sisclosureImageView setNeedsDisplay:YES];
+        }
+    }
+}
+
 
 
 @end

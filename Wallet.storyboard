@@ -92,23 +92,23 @@
                                 <rect key="frame" x="0.0" y="0.0" width="2605" height="1052"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hKw-1O-joS">
-                                        <rect key="frame" x="1224" y="892" width="158" height="26"/>
+                                        <rect key="frame" x="1220" y="892" width="165" height="26"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="26" id="9cA-Wd-6fh"/>
                                         </constraints>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Send $99.74 USD?" id="6XR-Z5-KCc">
-                                            <font key="font" metaFont="system" size="18"/>
+                                            <font key="font" size="18" name="SFProText-Regular"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PUA-Z3-yBM">
-                                        <rect key="frame" x="1126" y="820" width="354" height="46"/>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PUA-Z3-yBM" userLabel="Are you sure you want to send 0.04 BTC ($99.74 USD) to 13uB2yUBh2fHSX1woN8Ne6dwZ4FvMbXKsw?">
+                                        <rect key="frame" x="1110" y="820" width="385" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="46" id="PoN-uL-su7"/>
                                         </constraints>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="xdc-Lm-VIW">
-                                            <font key="font" metaFont="system"/>
+                                            <font key="font" size="14" name="SFProText-Regular"/>
                                             <string key="title">Are you sure you want to send 0.04 BTC ($99.74 USD) to
 13uB2yUBh2fHSX1woN8Ne6dwZ4FvMbXKsw?</string>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -129,12 +129,12 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="67a-PO-lDq">
-                                                    <rect key="frame" x="72" y="32" width="90" height="19"/>
+                                                    <rect key="frame" x="72" y="32" width="94" height="19"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="19" id="pRI-Tb-C0l"/>
                                                     </constraints>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Fast transfer" id="H4h-qo-TGg">
-                                                        <font key="font" metaFont="system" size="14"/>
+                                                        <font key="font" size="14" name="SFProText-Medium"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
@@ -196,7 +196,7 @@
                                             <constraint firstAttribute="height" constant="82" id="GTd-H6-tTM"/>
                                             <constraint firstAttribute="width" constant="404" id="Ueq-fL-k1c"/>
                                         </constraints>
-                                        <color key="fillColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                        <color key="fillColor" red="1" green="1" blue="1" alpha="0.098770609662576683" colorSpace="calibratedRGB"/>
                                     </box>
                                     <box boxType="custom" cornerRadius="4" title="Xenio address" translatesAutoresizingMaskIntoConstraints="NO" id="HTc-BT-mxX">
                                         <rect key="frame" x="1164" y="1017" width="278" height="35"/>
@@ -222,7 +222,7 @@
                                                         </ciFilter>
                                                     </contentFilters>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Xenio address" drawsBackground="YES" id="pb6-9N-ou0">
-                                                        <font key="font" metaFont="system"/>
+                                                        <font key="font" size="12" name="SFProText-Medium"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                                     </textFieldCell>
@@ -311,7 +311,7 @@
                                                         </ciFilter>
                                                     </contentFilters>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Amount to send" drawsBackground="YES" id="dPN-dp-vUN">
-                                                        <font key="font" metaFont="system"/>
+                                                        <font key="font" size="12" name="SFProText-Medium"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                                     </textFieldCell>
@@ -392,64 +392,57 @@
                                 </constraints>
                             </customView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AeL-4b-GBn">
-                                <rect key="frame" x="24" y="1229" width="60" height="30"/>
+                                <rect key="frame" x="24" y="1229" width="67" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="y4h-xI-lrY"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Wallet" id="AXf-BW-tlr">
-                                    <font key="font" metaFont="system" size="20"/>
+                                    <font key="font" size="20" name="SFProText-Bold"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iFy-ek-Fd7">
-                                <rect key="frame" x="24" y="1179" width="166" height="24"/>
+                                <rect key="frame" x="24" y="1179" width="174" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="wQU-e1-bHE"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Avaliable amount to send" id="jt4-nR-KBo">
-                                    <font key="font" metaFont="system" size="14"/>
+                                    <font key="font" size="14" name="SFProText-Medium"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="j36-3X-5uH">
-                                <rect key="frame" x="28" y="1147" width="136" height="30"/>
+                                <rect key="frame" x="28" y="1147" width="148" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="aEG-4U-mmS"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="13 XNO/2 USD" id="Mfu-vn-3xQ">
-                                    <font key="font" metaFont="system" size="20"/>
+                                    <font key="font" size="20" name="SFProText-Bold"/>
                                     <color key="textColor" red="0.96560126543045044" green="0.78072273731231689" blue="0.34421676397323608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="IyX-Jw-ylE" customClass="WalletHistoryView">
-                                <rect key="frame" x="26" y="0.0" width="2553" height="1052"/>
-                            </customView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="aOU-4E-v24" secondAttribute="trailing" id="1WO-W8-Vfc"/>
                             <constraint firstItem="1KH-eR-jX2" firstAttribute="leading" secondItem="cH2-q1-xo0" secondAttribute="leading" id="3Fp-o5-CZh"/>
                             <constraint firstItem="AeL-4b-GBn" firstAttribute="top" secondItem="cH2-q1-xo0" secondAttribute="top" constant="13" id="4Oq-qp-XFS"/>
                             <constraint firstAttribute="trailing" secondItem="7Lr-Zl-iV1" secondAttribute="trailing" id="5bc-gA-dgs"/>
-                            <constraint firstItem="IyX-Jw-ylE" firstAttribute="top" secondItem="cH2-q1-xo0" secondAttribute="top" constant="220" id="9cx-qz-Clw"/>
                             <constraint firstAttribute="bottom" secondItem="aOU-4E-v24" secondAttribute="bottom" id="Aiy-yY-WAd"/>
                             <constraint firstItem="j36-3X-5uH" firstAttribute="top" secondItem="iFy-ek-Fd7" secondAttribute="bottom" constant="2" id="Ddx-IJ-S08"/>
-                            <constraint firstAttribute="trailing" secondItem="IyX-Jw-ylE" secondAttribute="trailing" constant="26" id="LuL-2i-SoP"/>
                             <constraint firstAttribute="bottom" secondItem="7Lr-Zl-iV1" secondAttribute="bottom" id="OTZ-U2-pud"/>
                             <constraint firstItem="iFy-ek-Fd7" firstAttribute="top" secondItem="AeL-4b-GBn" secondAttribute="bottom" constant="26" id="PxU-it-pMs"/>
                             <constraint firstItem="j36-3X-5uH" firstAttribute="leading" secondItem="cH2-q1-xo0" secondAttribute="leading" constant="30" id="RZI-Jz-KpE"/>
                             <constraint firstItem="aOU-4E-v24" firstAttribute="top" secondItem="cH2-q1-xo0" secondAttribute="top" constant="220" id="Rc6-xG-hpE"/>
                             <constraint firstItem="AeL-4b-GBn" firstAttribute="leading" secondItem="cH2-q1-xo0" secondAttribute="leading" constant="26" id="Wfk-sK-Iw6"/>
                             <constraint firstAttribute="bottom" secondItem="1KH-eR-jX2" secondAttribute="bottom" id="gbJ-Hl-uAB"/>
-                            <constraint firstItem="IyX-Jw-ylE" firstAttribute="leading" secondItem="cH2-q1-xo0" secondAttribute="leading" constant="26" id="h9b-oq-R1P"/>
                             <constraint firstItem="1KH-eR-jX2" firstAttribute="top" secondItem="cH2-q1-xo0" secondAttribute="top" constant="220" id="k86-Pr-PoM"/>
                             <constraint firstItem="7Lr-Zl-iV1" firstAttribute="top" secondItem="cH2-q1-xo0" secondAttribute="top" id="kRa-MO-aBC"/>
                             <constraint firstItem="7Lr-Zl-iV1" firstAttribute="leading" secondItem="cH2-q1-xo0" secondAttribute="leading" id="n20-uX-6gg"/>
                             <constraint firstItem="aOU-4E-v24" firstAttribute="leading" secondItem="cH2-q1-xo0" secondAttribute="leading" id="nrU-AB-Pj7"/>
                             <constraint firstItem="iFy-ek-Fd7" firstAttribute="leading" secondItem="cH2-q1-xo0" secondAttribute="leading" constant="26" id="rb7-aJ-Jw8"/>
-                            <constraint firstAttribute="bottom" secondItem="IyX-Jw-ylE" secondAttribute="bottom" id="wds-ha-27d"/>
                             <constraint firstAttribute="trailing" secondItem="1KH-eR-jX2" secondAttribute="trailing" id="xaC-9r-dfe"/>
                         </constraints>
                     </view>
@@ -462,7 +455,6 @@
                         <outlet property="sendMoneyButton" destination="qWn-pb-Yf8" id="MZB-MJ-N9Z"/>
                         <outlet property="slider" destination="dRe-xR-CdI" id="7Ln-42-haT"/>
                         <outlet property="transferLabel" destination="67a-PO-lDq" id="3oq-2Q-q3Q"/>
-                        <outlet property="walletHistoryView" destination="IyX-Jw-ylE" id="dcg-5q-M4z"/>
                         <outlet property="xnoLabel" destination="j36-3X-5uH" id="RJ6-cL-ope"/>
                     </connections>
                 </viewController>

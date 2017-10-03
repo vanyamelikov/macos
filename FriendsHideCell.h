@@ -12,5 +12,6 @@
 
 @property (strong) IBOutlet NSTextField *label;
 @property (strong) IBOutlet NSBox *arrowDown;
+@property (weak) IBOutlet NSImageView *sisclosureImageView;
 
 @end

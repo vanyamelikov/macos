@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FriendsListSearchBar">
+            <connections>
+                <outlet property="addFriendIV" destination="OUJ-06-RJ5" id="Jza-Dt-oeH"/>
+                <outlet property="currentOnlineLabel" destination="7zG-uu-jRM" id="zto-Ji-RcC"/>
+                <outlet property="lightLayerIV" destination="3R2-6j-fzc" id="Xl0-H0-73e"/>
+                <outlet property="searchIV" destination="AlX-fI-P6e" id="qtu-X5-TiK"/>
+                <outlet property="searchTF" destination="FYv-et-rRe" id="JDY-hM-qBr"/>
+                <outlet property="searchTitle" destination="x9j-98-aLB" id="ghc-Tj-Xeq"/>
+                <outlet property="underlineBox" destination="57F-ac-d6y" id="eXS-aH-hX4"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView autoresizesSubviews="NO" canDrawConcurrently="YES" id="bGf-6W-Xqa">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3R2-6j-fzc">
+                    <rect key="frame" x="224" y="0.0" width="114" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="lightWideLayer" id="NfC-Cc-vm5"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AlX-fI-P6e">
+                    <rect key="frame" x="298" y="11" width="14" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <gestureRecognizers>
+                        <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="Ohe-1F-QuT">
+                            <connections>
+                                <action selector="searchButtonClick:" target="-2" id="5EY-gC-dRH"/>
+                            </connections>
+                        </clickGestureRecognizer>
+                    </gestureRecognizers>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="ic_zoom" id="3dF-aB-kqV"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OUJ-06-RJ5">
+                    <rect key="frame" x="274" y="9" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <gestureRecognizers>
+                        <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="JJY-bM-vvc"/>
+                    </gestureRecognizers>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="ic_search_add" id="msK-SW-0Ec"/>
+                </imageView>
+                <box fixedFrame="YES" boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="57F-ac-d6y">
+                    <rect key="frame" x="298" y="-1" width="20" height="2"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <view key="contentView" ambiguous="YES" id="y0d-Kb-8fS">
+                        <rect key="frame" x="0.0" y="0.0" width="20" height="2"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="fillColor" red="0.23921568630000001" green="0.4823529412" blue="1" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x9j-98-aLB">
+                    <rect key="frame" x="18" y="0.0" width="84" height="35"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Friends" id="cjt-7t-gzh">
+                        <font key="font" size="20" name="SFProText-Bold"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7zG-uu-jRM">
+                    <rect key="frame" x="102" y="0.0" width="84" height="35"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="216" id="IZ3-rf-EkO">
+                        <font key="font" size="20" name="SFProText-Bold"/>
+                        <color key="textColor" red="0.23921568627450979" green="0.68627450980392157" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FYv-et-rRe">
+                    <rect key="frame" x="44" y="7" width="224" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    <contentFilters>
+                        <ciFilter name="CIColorInvert">
+                            <configuration>
+                                <null key="inputImage"/>
+                            </configuration>
+                        </ciFilter>
+                    </contentFilters>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" id="y6Z-ep-AHz">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <point key="canvasLocation" x="138" y="166.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_search_add" width="14" height="14"/>
+        <image name="ic_zoom" width="14" height="14"/>
+        <image name="lightWideLayer" width="114" height="35"/>
+    </resources>
+</document>

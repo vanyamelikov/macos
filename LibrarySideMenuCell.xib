@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="height" constant="19" id="j8M-Bd-z4I"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Crysis 2" id="Jvk-6k-TUU">
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" size="13" name="SFProText-Medium"/>
                                     <color key="textColor" red="0.47058823529411764" green="0.50588235294117645" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" red="0.34157451919999998" green="0.64983173080000001" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textFieldCell>

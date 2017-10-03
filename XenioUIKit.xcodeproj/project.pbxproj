@@ -73,6 +73,11 @@
 		31F1554F1F81FED90070B256 /* BuyGameMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F1554D1F81FED90070B256 /* BuyGameMainView.m */; };
 		31F155531F820AAF0070B256 /* PGameInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F155511F820AAF0070B256 /* PGameInfoController.m */; };
 		31F155541F820AAF0070B256 /* PGameInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F155521F820AAF0070B256 /* PGameInfoController.xib */; };
+		31F155571F82AEC80070B256 /* CustomOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F155561F82AEC80070B256 /* CustomOutlineView.m */; };
+		31F155591F82D2F90070B256 /* FriendsListSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F155581F82D2F90070B256 /* FriendsListSearchBar.xib */; };
+		31F1555C1F82D7FE0070B256 /* FriendsListSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F1555B1F82D7FE0070B256 /* FriendsListSearchBar.m */; };
+		31F1555F1F82EC140070B256 /* XenioBackgroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F1555E1F82EC140070B256 /* XenioBackgroundView.xib */; };
+		31F155621F82EE210070B256 /* XenioBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F155611F82EE210070B256 /* XenioBackgroundView.m */; };
 		3E1FF8E61F6AC4F700117F16 /* CustomTabbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E1FF8E51F6AC4F700117F16 /* CustomTabbar.xib */; };
 		3E1FF8E91F6AD86400117F16 /* CustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1FF8E81F6AD86400117F16 /* CustomTabbar.m */; };
 		3E25FB211F66EBCA000423E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E25FB201F66EBCA000423E9 /* AppDelegate.m */; };
@@ -383,6 +388,14 @@
 		31F155501F820AAF0070B256 /* PGameInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGameInfoController.h; sourceTree = "<group>"; };
 		31F155511F820AAF0070B256 /* PGameInfoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGameInfoController.m; sourceTree = "<group>"; };
 		31F155521F820AAF0070B256 /* PGameInfoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PGameInfoController.xib; sourceTree = "<group>"; };
+		31F155551F82AEC80070B256 /* CustomOutlineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomOutlineView.h; sourceTree = "<group>"; };
+		31F155561F82AEC80070B256 /* CustomOutlineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomOutlineView.m; sourceTree = "<group>"; };
+		31F155581F82D2F90070B256 /* FriendsListSearchBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsListSearchBar.xib; sourceTree = "<group>"; };
+		31F1555A1F82D7FE0070B256 /* FriendsListSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendsListSearchBar.h; sourceTree = "<group>"; };
+		31F1555B1F82D7FE0070B256 /* FriendsListSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendsListSearchBar.m; sourceTree = "<group>"; };
+		31F1555E1F82EC140070B256 /* XenioBackgroundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XenioBackgroundView.xib; sourceTree = "<group>"; };
+		31F155601F82EE210070B256 /* XenioBackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XenioBackgroundView.h; sourceTree = "<group>"; };
+		31F155611F82EE210070B256 /* XenioBackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XenioBackgroundView.m; sourceTree = "<group>"; };
 		3E1FF8E51F6AC4F700117F16 /* CustomTabbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTabbar.xib; sourceTree = "<group>"; };
 		3E1FF8E71F6AD86400117F16 /* CustomTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabbar.h; sourceTree = "<group>"; };
 		3E1FF8E81F6AD86400117F16 /* CustomTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabbar.m; sourceTree = "<group>"; };
@@ -747,6 +760,9 @@
 				31B07EEC1F81812500B6BCCA /* LibraryGameSearchBar.h */,
 				31B07EED1F81812500B6BCCA /* LibraryGameSearchBar.m */,
 				31B07EEF1F81814200B6BCCA /* LibraryGameSearchBar.xib */,
+				31F1555A1F82D7FE0070B256 /* FriendsListSearchBar.h */,
+				31F1555B1F82D7FE0070B256 /* FriendsListSearchBar.m */,
+				31F155581F82D2F90070B256 /* FriendsListSearchBar.xib */,
 			);
 			name = CustomSearchBar;
 			sourceTree = "<group>";
@@ -845,6 +861,16 @@
 				31F155471F81FE9F0070B256 /* CustomSwitch.xib */,
 			);
 			name = CustomSwitch;
+			sourceTree = "<group>";
+		};
+		31F1555D1F82EBD20070B256 /* XenioBackgroundView */ = {
+			isa = PBXGroup;
+			children = (
+				31F1555E1F82EC140070B256 /* XenioBackgroundView.xib */,
+				31F155601F82EE210070B256 /* XenioBackgroundView.h */,
+				31F155611F82EE210070B256 /* XenioBackgroundView.m */,
+			);
+			name = XenioBackgroundView;
 			sourceTree = "<group>";
 		};
 		3E1FF8E41F6AC4CE00117F16 /* CustomTabbar */ = {
@@ -1493,6 +1519,7 @@
 		3ECF3CAF1F686883005165E5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				31F1555D1F82EBD20070B256 /* XenioBackgroundView */,
 				31F155451F81FE650070B256 /* CustomSwitch */,
 				31B07ED61F81276100B6BCCA /* MyGradientView */,
 				31B07ED21F81137C00B6BCCA /* CustomViewBackground */,
@@ -1515,6 +1542,8 @@
 				315947241F7C8F5E0073FA52 /* CustomScrollView.m */,
 				315947261F7C99D80073FA52 /* SplitViewWithDivider.h */,
 				315947271F7C99D80073FA52 /* SplitViewWithDivider.m */,
+				31F155551F82AEC80070B256 /* CustomOutlineView.h */,
+				31F155561F82AEC80070B256 /* CustomOutlineView.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -1765,6 +1794,7 @@
 				3E558BF41F79AF7F00542B7B /* FriendsHideCell.xib in Resources */,
 				31E4F7551F7EA2560047B843 /* PayInfoCell.xib in Resources */,
 				3E8875E81F73F8A5001B8374 /* LibrarySideMenuCell.xib in Resources */,
+				31F1555F1F82EC140070B256 /* XenioBackgroundView.xib in Resources */,
 				3ECF3CDC1F696D54005165E5 /* CancelButton.xib in Resources */,
 				3E8876541F74ABCA001B8374 /* FriendsRightListNotificationCell.xib in Resources */,
 				3E558BCB1F796D8E00542B7B /* SettingsSideListView.xib in Resources */,
@@ -1800,6 +1830,7 @@
 				3E7230DF1F7351820050A70D /* Friends.storyboard in Resources */,
 				3E88764A1F749D31001B8374 /* GameTagImageView.xib in Resources */,
 				3E558BB91F794A9200542B7B /* AddGame.xib in Resources */,
+				31F155591F82D2F90070B256 /* FriendsListSearchBar.xib in Resources */,
 				3E9C46181F71165F00693AA1 /* LineChartView.xib in Resources */,
 				3E8875FE1F740DEC001B8374 /* LibraryGamesRightMenuHeaderCell.xib in Resources */,
 				3E8876241F744329001B8374 /* StoreGamesCell.xib in Resources */,
@@ -1916,6 +1947,7 @@
 				3E558BD61F796F5800542B7B /* SettingsNavigationListCell.m in Sources */,
 				3E6FE7EC1F782A6900B98AD3 /* PassphraseView.m in Sources */,
 				3E8876011F74104E001B8374 /* LibraryGamesRightMenuHeaderCell.m in Sources */,
+				31F155621F82EE210070B256 /* XenioBackgroundView.m in Sources */,
 				31B07ED51F8113A000B6BCCA /* BackgroundView.m in Sources */,
 				315947281F7C99D80073FA52 /* SplitViewWithDivider.m in Sources */,
 				31B07F3C1F81AECE00B6BCCA /* BuyGamePaymentMethodView.m in Sources */,
@@ -1931,6 +1963,7 @@
 				3E8876501F74A038001B8374 /* FriendsProfileContentViewCell.m in Sources */,
 				3E558BF21F79A46B00542B7B /* WalletSideMenuHeaderCell.m in Sources */,
 				3E8876621F74B654001B8374 /* StorePaymentInformationCell.m in Sources */,
+				31F155571F82AEC80070B256 /* CustomOutlineView.m in Sources */,
 				3E6FE7FC1F7844EC00B98AD3 /* SignInViewController.m in Sources */,
 				31B07EDB1F8127A400B6BCCA /* MyRectGradientView.m in Sources */,
 				3ECF3CE61F697053005165E5 /* CancelButton.m in Sources */,
@@ -2011,6 +2044,7 @@
 				3E88764D1F749EF7001B8374 /* GameTagImageView.m in Sources */,
 				31F155491F81FE9F0070B256 /* CustomSwitch.m in Sources */,
 				31B07F271F81AD1100B6BCCA /* StoreGameInfoSideListView.m in Sources */,
+				31F1555C1F82D7FE0070B256 /* FriendsListSearchBar.m in Sources */,
 				3E8876121F741F70001B8374 /* LibrarySideMenuHeaderCell.m in Sources */,
 				3E8875FA1F740CBC001B8374 /* LibraryGamesRightMenuCell.m in Sources */,
 				3E558C0E1F7AE39200542B7B /* FriendsContentList.m in Sources */,

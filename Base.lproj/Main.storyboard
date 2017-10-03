@@ -814,6 +814,54 @@
             </objects>
             <point key="canvasLocation" x="1763" y="409"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="M6d-jz-sEJ">
+            <objects>
+                <viewController id="Jel-cM-6QC" sceneMemberID="viewController">
+                    <view key="view" id="DPa-d6-rJr">
+                        <rect key="frame" x="0.0" y="0.0" width="703" height="570"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="HXw-Fj-xNz" customClass="XenioBackgroundView">
+                                <rect key="frame" x="0.0" y="0.0" width="703" height="570"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startGradientColor">
+                                        <color key="value" red="0.22745098039215686" green="0.21568627450980393" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endGradientColor">
+                                        <color key="value" red="0.38039215686274508" green="0.46666666666666667" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientAngle">
+                                        <real key="value" value="90"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientOpacity">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="solidColor">
+                                        <color key="value" red="0.074509803921568626" green="0.086274509803921567" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="solidOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="blurredImage" value="background_store_2"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageTransparency">
+                                        <real key="value" value="0.040000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HXw-Fj-xNz" secondAttribute="trailing" id="2Bx-mO-E7P"/>
+                            <constraint firstItem="HXw-Fj-xNz" firstAttribute="leading" secondItem="DPa-d6-rJr" secondAttribute="leading" id="DBY-sT-KSq"/>
+                            <constraint firstItem="HXw-Fj-xNz" firstAttribute="top" secondItem="DPa-d6-rJr" secondAttribute="top" id="TQG-i1-xvI"/>
+                            <constraint firstAttribute="bottom" secondItem="HXw-Fj-xNz" secondAttribute="bottom" id="jIa-iS-zNy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="3Rn-Ij-ya2" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3029.5" y="289"/>
+        </scene>
         <!--Sign In View Controller-->
         <scene sceneID="7vi-cM-8Ku">
             <objects>
@@ -1090,6 +1138,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background_store_2" width="2880" height="1620"/>
         <image name="ic_lock" width="17" height="22"/>
         <image name="ic_logo" width="293" height="76"/>
         <image name="ic_userpic" width="12" height="14"/>

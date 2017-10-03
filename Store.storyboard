@@ -57,7 +57,7 @@
                 </viewController>
                 <customObject id="7pN-Ud-Hy9" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-616.5" y="772"/>
+            <point key="canvasLocation" x="-683" y="772"/>
         </scene>
         <!--Store Content View Controller-->
         <scene sceneID="AbA-zB-q6f">

@@ -13,18 +13,18 @@
 
 
 -(void) drawDividerInRect:(NSRect)aRect {
-    NSColor *colorLayer = [NSColor colorWithRed:0 green:0 blue:0 alpha:0.7f];
+    [[NSColor colorWithRed:(255/255) green:(255/255) blue:(255/255) alpha:0.04f] set];
     NSRectFill(aRect);
     [self setNeedsDisplayInRect:aRect];
 }
 
--(instancetype)initWithCoder:(NSCoder *)decoder {
-    self = [super initWithCoder:decoder];
-    if(self) {
-        [self setWantsLayer:YES];
-        [self setLayerContentsRedrawPolicy:NSViewLayerContentsRedrawOnSetNeedsDisplay];
-    }
-    return self;
-}
+//-(instancetype)initWithCoder:(NSCoder *)decoder {
+//    self = [super initWithCoder:decoder];
+//    if(self) {
+//        [self setWantsLayer:YES];
+//        [self setLayerContentsRedrawPolicy:NSViewLayerContentsRedrawOnSetNeedsDisplay];
+//    }
+//    return self;
+//}
 
 @end
