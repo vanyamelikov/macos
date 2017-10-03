@@ -111,7 +111,7 @@
         NSStoryboard *friends = [NSStoryboard storyboardWithName:@"Friends" bundle:nil];
         NSViewController *friendsVC = [friends instantiateControllerWithIdentifier:@"MainFriendsLeftSideViewController"];
         //replace friends and settings view
-        [superView replaceSplitViewItemAtIndex:0 withViewController:friendsVC];
+        [superView replaceSplitViewItemAtIndex:0 withViewController:friendsVC.view];
         
         //change tabview item
         if(![_mainTabView.selectedTabViewItem isEqual:[_mainTabView.tabViewItems objectAtIndex:3]])
@@ -124,7 +124,7 @@
         NSStoryboard *settings = [NSStoryboard storyboardWithName:@"Settings" bundle:nil];
         SettingsContentViewController *settingsVC = (SettingsContentViewController *)[settings instantiateControllerWithIdentifier:@"SettingsContentViewController"];
         //replace friends and settings view
-        [superView replaceSplitViewItemAtIndex:0 withViewController:settingsVC];
+        [superView replaceSplitViewItemAtIndex:0 withViewController:settingsVC.view];
         
         //change tabview item
         if(![_mainTabView.selectedTabViewItem isEqual:[_mainTabView.tabViewItems objectAtIndex:3]])

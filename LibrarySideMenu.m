@@ -2,12 +2,26 @@
 #import "LibrarySideMenuCell.h"
 #import "LibrarySideMenuModel.h"
 #import "Colours.h"
+#import "SelfStatusModalViewController.h"
 
 @implementation LibrarySideMenu {
     NSMutableArray *dataSourceArray;
     NSInteger preSelectedRow;
+    NSPopover *popover;
+    SelfStatusModalViewController *popoverViewController;
 }
 
+- (IBAction)showPopupClick:(NSClickGestureRecognizer *)sender {
+    popover = [[NSPopover alloc] init];
+    [popover setBehavior: NSPopoverBehaviorTransient];
+    [popover setDelegate: self];
+    popoverViewController = [[SelfStatusModalViewController alloc] initWithNibName: @"SelfStatusModalViewController" bundle: nil];
+    [popover setContentViewController: popoverViewController];
+    [popover setContentSize: popoverViewController.view.frame.size];
+    [popover showRelativeToRect: sender.view.bounds
+                         ofView: sender.view
+                  preferredEdge: NSMaxYEdge | NSMaxXEdge];
+}
 
 -(void)awakeFromNib {
     [super awakeFromNib];

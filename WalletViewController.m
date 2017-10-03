@@ -12,11 +12,11 @@
 
 @end
 
-@implementation WalletViewController
+@implementation WalletViewController 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
+
 }
 
 @end

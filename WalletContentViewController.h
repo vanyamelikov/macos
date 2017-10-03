@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "WalletHistoryView.h"
 #import "SendMoneyButton.h"
+#import "WalletSideMenu.h"
 
 @interface WalletContentViewController : NSViewController
 

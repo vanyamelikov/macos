@@ -16,7 +16,7 @@
 - (void) downloadsButtonClick;
 @end
 
-@interface CustomTabbar : INSNibLoadedView <TabItemViewDelegate>
+@interface CustomTabbar : INSNibLoadedView <TabItemViewDelegate, NSPopoverDelegate>
 
 @property (strong) IBOutlet NSBox *viewToMove;
 @property (strong) IBOutlet TabItemView *tabStore;

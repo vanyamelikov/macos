@@ -8,7 +8,7 @@
 - (void) itemClicked: (NSInteger) sender : (NSString *)title;
 @end
 
-@interface LibraryEmptySideMenu : INSNibLoadedView <NSTableViewDelegate, NSTableViewDataSource>
+@interface LibraryEmptySideMenu : INSNibLoadedView <NSTableViewDelegate, NSTableViewDataSource, NSPopoverDelegate>
 @property (weak) IBOutlet NSBox *backgroundBox;
 @property (weak) IBOutlet AddGame *addGameButton;
 @property (weak) IBOutlet NSTableView *tableView;

@@ -40,23 +40,23 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="modal_avatar" id="kVL-u4-Gbf"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OqT-p9-agb">
-                                <rect key="frame" x="80" y="248" width="74" height="21"/>
+                                <rect key="frame" x="80" y="248" width="81" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="UJz-wG-AVa"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="KOT3 Kill" id="zbF-sI-TuG">
-                                    <font key="font" metaFont="system" size="17"/>
+                                    <font key="font" size="17" name="SFProText-Semibold"/>
                                     <color key="textColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bh8-X8-Ssi">
-                                <rect key="frame" x="80" y="229" width="43" height="17"/>
+                                <rect key="frame" x="80" y="229" width="38" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="cdA-Aw-Myj"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Online" id="oVU-C6-XrT">
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" size="11" name="SFProText-Medium"/>
                                     <color key="textColor" red="0.43921568630000002" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -76,9 +76,9 @@
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_window_profile" id="1h2-VT-WaH"/>
                                         </imageView>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yLY-DC-mfq">
-                                            <rect key="frame" x="46" y="6" width="46" height="18"/>
+                                            <rect key="frame" x="46" y="5" width="47" height="20"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Profile" id="nal-ed-EPp">
-                                                <font key="font" metaFont="system" size="14"/>
+                                                <font key="font" size="14" name="SFProText-Regular"/>
                                                 <color key="textColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -111,9 +111,9 @@
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_window_message" id="2f5-TC-jFe"/>
                                         </imageView>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="d8h-Fi-EHP">
-                                            <rect key="frame" x="46" y="6" width="99" height="18"/>
+                                            <rect key="frame" x="46" y="5" width="101" height="20"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Send message" id="fnF-NL-jC0">
-                                                <font key="font" metaFont="system" size="14"/>
+                                                <font key="font" size="14" name="SFProText-Regular"/>
                                                 <color key="textColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -157,9 +157,9 @@
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_window_invite" id="GTs-FH-Qaz"/>
                                         </imageView>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7fH-JQ-3Fn">
-                                            <rect key="frame" x="46" y="6" width="120" height="18"/>
+                                            <rect key="frame" x="46" y="5" width="123" height="20"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Invite to the game" id="Mpb-ze-d5z">
-                                                <font key="font" metaFont="system" size="14"/>
+                                                <font key="font" size="14" name="SFProText-Regular"/>
                                                 <color key="textColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -192,9 +192,9 @@
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_window_offer" id="rqy-6v-L63"/>
                                         </imageView>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1e5-nS-PON">
-                                            <rect key="frame" x="46" y="6" width="123" height="18"/>
+                                            <rect key="frame" x="46" y="5" width="126" height="20"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Offer an exchange" id="yfl-iN-Q7z">
-                                                <font key="font" metaFont="system" size="14"/>
+                                                <font key="font" size="14" name="SFProText-Regular"/>
                                                 <color key="textColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -227,9 +227,9 @@
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_window_block" id="af5-1u-51Q"/>
                                         </imageView>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dMs-Mb-ppy">
-                                            <rect key="frame" x="46" y="6" width="72" height="18"/>
+                                            <rect key="frame" x="46" y="5" width="74" height="20"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Block user" id="3MQ-8X-BlP">
-                                                <font key="font" metaFont="system" size="14"/>
+                                                <font key="font" size="14" name="SFProText-Regular"/>
                                                 <color key="textColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -262,9 +262,9 @@
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_window_remove" id="dAi-2N-sqL"/>
                                         </imageView>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tve-1i-MJF">
-                                            <rect key="frame" x="46" y="6" width="139" height="18"/>
+                                            <rect key="frame" x="46" y="5" width="141" height="20"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Remove from friends" id="TIY-u2-h3W">
-                                                <font key="font" metaFont="system" size="14"/>
+                                                <font key="font" size="14" name="SFProText-Regular"/>
                                                 <color key="textColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>

@@ -7,8 +7,12 @@
 //
 
 #import "CustomTabbar.h"
+#import "ProfileModalViewController.h"
 
-@implementation CustomTabbar
+@implementation CustomTabbar {
+    NSPopover *popover;
+    ProfileModalViewController *profileModalViewController;
+}
 
 @synthesize delegate;
 
@@ -22,6 +26,17 @@
     self.tabFriends.delegate = self;
     self.tabLibrary.delegate = self;
     self.tabSettings.delegate = self;
+}
+- (IBAction)openPopOverClick:(NSClickGestureRecognizer *)sender {
+    popover = [[NSPopover alloc] init];
+    [popover setBehavior: NSPopoverBehaviorTransient];
+    [popover setDelegate: self];
+    profileModalViewController = [[ProfileModalViewController alloc] initWithNibName: @"ProfileModalViewController" bundle: nil];
+    [popover setContentViewController: profileModalViewController];
+    [popover setContentSize: profileModalViewController.view.frame.size];
+    [popover showRelativeToRect: sender.view.frame
+                         ofView: self
+                  preferredEdge: NSMinYEdge | NSMinXEdge];
 }
 
 -(void)tabItemClicked:(NSInteger)viewTag {

@@ -24,6 +24,9 @@
     
     return self;
 }
+- (IBAction)backActionClick:(NSClickGestureRecognizer *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (void)loadView {
     [super loadView];
@@ -31,6 +34,8 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     NSLog(@"%@ - viewWillAppear: %i", self.title, animated);
+//    NSClickGestureRecognizer *registerClick = [[NSClickGestureRecognizer alloc] initWithTarget:self action:@selector(RegisterAction:)];
+//    [self.RegisterLabel addGestureRecognizer:registerClick];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

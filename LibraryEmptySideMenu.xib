@@ -88,6 +88,13 @@
                                                 <constraint firstAttribute="height" constant="10" id="Pex-5I-QpD"/>
                                                 <constraint firstAttribute="width" constant="90" id="xLd-8U-sxA"/>
                                             </constraints>
+                                            <gestureRecognizers>
+                                                <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="tdo-Yd-jKY">
+                                                    <connections>
+                                                        <action selector="showPopoverClick:" target="-2" id="cYo-En-OvG"/>
+                                                    </connections>
+                                                </clickGestureRecognizer>
+                                            </gestureRecognizers>
                                         </customView>
                                     </subviews>
                                     <constraints>

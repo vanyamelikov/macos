@@ -3,10 +3,15 @@
 #import "FriendsRightListCell.h"
 #import "FriendsListModel.h"
 #import "SettingsFriendsListModel.h"
+#import "FriendProfileModalViewController.h"
+#import "SelfStatusModalViewController.h"
 
 @implementation SettingsSideListView{
     NSMutableArray *dataSourceArray;
     NSInteger preSelectedRow;
+    NSPopover *popover;
+    FriendProfileModalViewController *popoverViewController;
+    SelfStatusModalViewController *popoverViewController1;
 }
 
 -(instancetype)initWithCoder:(NSCoder *)coder {
@@ -228,6 +233,30 @@
             preSelectedCellView.lightLayer.hidden = YES;
         }
         preSelectedRow = [self.friendsOutlineView clickedRow];
+        
+        
+        if([self.friendsOutlineView clickedRow] >= 9) {
+            popover = [[NSPopover alloc] init];
+            [popover setBehavior: NSPopoverBehaviorTransient];
+            [popover setDelegate: self];
+            popoverViewController = [[FriendProfileModalViewController alloc] initWithNibName: @"FriendProfileModalViewController" bundle: nil];
+            [popover setContentViewController: popoverViewController];
+            [popover setContentSize: popoverViewController.view.frame.size];
+            [popover showRelativeToRect: cellView.bounds
+                                 ofView: cellView
+                          preferredEdge: NSMinYEdge | NSMinXEdge];
+        } else {
+            //SelfStatusModalViewController
+            popover = [[NSPopover alloc] init];
+            [popover setBehavior: NSPopoverBehaviorTransient];
+            [popover setDelegate: self];
+            popoverViewController1 = [[SelfStatusModalViewController alloc] initWithNibName: @"SelfStatusModalViewController" bundle: nil];
+            [popover setContentViewController: popoverViewController1];
+            [popover setContentSize: popoverViewController.view.frame.size];
+            [popover showRelativeToRect: cellView.bounds
+                                 ofView: cellView
+                          preferredEdge: NSMinYEdge | NSMinXEdge];
+        }
     }
 }
 

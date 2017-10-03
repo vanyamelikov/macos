@@ -44,6 +44,13 @@
                                     <constraint firstAttribute="width" constant="32" id="HZV-d1-Ve5"/>
                                     <constraint firstAttribute="height" constant="32" id="XZZ-Bd-LaF"/>
                                 </constraints>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="jOM-Or-Emt">
+                                        <connections>
+                                            <action selector="openPopOverClick:" target="-2" id="cVu-4j-yI1"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_avatar" id="uf5-qc-DAu"/>
                             </imageView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LnD-7X-yfV">

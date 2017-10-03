@@ -48,23 +48,23 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_modal_xenio" id="erf-fb-SlO"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hae-sX-OKW">
-                                <rect key="frame" x="80" y="111" width="47" height="21"/>
+                                <rect key="frame" x="80" y="111" width="51" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="XM4-yh-oPY"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Xenio" id="F8t-Ru-HIe">
-                                    <font key="font" metaFont="system" size="17"/>
+                                    <font key="font" size="17" name="SFProText-Semibold"/>
                                     <color key="textColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OUr-ez-7kd">
-                                <rect key="frame" x="80" y="92" width="86" height="17"/>
+                                <rect key="frame" x="80" y="92" width="77" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="Rju-ic-IAs"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Address / link" id="mye-rq-wzM">
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" size="11" name="SFProText-Medium"/>
                                     <color key="textColor" red="0.43921568630000002" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -84,9 +84,9 @@
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_window_copy" id="FBY-pd-L99"/>
                                         </imageView>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="P3J-DT-TIt">
-                                            <rect key="frame" x="46" y="6" width="93" height="18"/>
+                                            <rect key="frame" x="46" y="5" width="95" height="20"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Copy address" id="jUr-0J-5qp">
-                                                <font key="font" metaFont="system" size="14"/>
+                                                <font key="font" size="14" name="SFProText-Regular"/>
                                                 <color key="textColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -119,9 +119,9 @@
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_window_past" id="bEa-zp-6Qw"/>
                                         </imageView>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gJF-qV-6Eg">
-                                            <rect key="frame" x="46" y="6" width="96" height="18"/>
+                                            <rect key="frame" x="46" y="5" width="98" height="20"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Paste address" id="2gD-aZ-WOA">
-                                                <font key="font" metaFont="system" size="14"/>
+                                                <font key="font" size="14" name="SFProText-Regular"/>
                                                 <color key="textColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>

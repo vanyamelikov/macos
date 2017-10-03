@@ -160,13 +160,13 @@
         if(cellView != nil && [cellView isKindOfClass:[LibraryGamesRightMenuCell class]])
         {
             cellView.lightLayer.hidden = NO;
-            [cellView.label setTextColor:[NSColor colorFromHexString:@"#ffffff"]];
+            //[cellView.label setTextColor:[NSColor colorFromHexString:@"#ffffff"]];
         }
         
         if(preSelectedCellView != nil && [preSelectedCellView isKindOfClass:[LibraryGamesRightMenuCell class]])
         {
             preSelectedCellView.lightLayer.hidden = YES;
-            [preSelectedCellView.label setTextColor:[NSColor colorFromHexString:@"#78819F"]];
+            //[preSelectedCellView.label setTextColor:[NSColor colorFromHexString:@"#78819F"]];
         }
         preSelectedRow = index;
     }

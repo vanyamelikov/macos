@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -40,12 +40,12 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_servon" id="ciy-sw-dBH"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hMR-dt-Zkf">
-                                <rect key="frame" x="68" y="26" width="86" height="20"/>
+                                <rect key="frame" x="68" y="26" width="84" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="qSs-7Y-XrT"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Syd.Xenio.io" id="MTF-6r-xZg">
-                                    <font key="font" size="14" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="system" size="14"/>
                                     <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </textFieldCell>
@@ -56,7 +56,7 @@
                                     <constraint firstAttribute="height" constant="15" id="7KA-jn-QC5"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="6 MS" id="qJ0-UZ-psY">
-                                    <font key="font" size="10" name="SFUIText-Regular"/>
+                                    <font key="font" metaFont="system" size="10"/>
                                     <color key="textColor" red="1" green="1" blue="0.99988096950000005" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </textFieldCell>

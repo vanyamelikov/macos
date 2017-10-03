@@ -10,5 +10,5 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface NSSplitView(ReplaceView)
--(void)replaceSplitViewItemAtIndex:(NSInteger)index withViewController:(NSViewController*)newViewController;
+-(void)replaceSplitViewItemAtIndex:(NSInteger)index withViewController:(NSView*)newView;
 @end

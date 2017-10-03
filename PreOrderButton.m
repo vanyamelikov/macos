@@ -14,8 +14,8 @@
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
     
-    alphaColor = [NSColor colorFromHexString:@"#3D7BFF"];
-    RGBcolor   = [NSColor colorWithWhite:1.0 alpha:0.5];
+    alphaColor = [NSColor colorFromHexString:@"#2565EE"];
+    RGBcolor   = [NSColor colorFromHexString:@"#3D7BFF"];
 }
 
 -(void)mouseEntered:(NSEvent *)theEvent {

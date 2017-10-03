@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LibraryGameModalViewController">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="235" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" cornerRadius="5" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="oSd-pw-2VI">
+                    <rect key="frame" x="0.0" y="0.0" width="235" height="106"/>
+                    <view key="contentView" id="gdh-ln-6dX">
+                        <rect key="frame" x="0.0" y="0.0" width="235" height="106"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="qQN-es-tUW">
+                                <rect key="frame" x="0.0" y="68" width="235" height="30"/>
+                                <view key="contentView" id="jnS-iQ-91C">
+                                    <rect key="frame" x="0.0" y="0.0" width="235" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fCj-MG-RjD">
+                                            <rect key="frame" x="14" y="5" width="147" height="20"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Add third-party game" id="QuL-r9-RNd">
+                                                <font key="font" size="14" name="SFProText-Regular"/>
+                                                <color key="textColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="fCj-MG-RjD" firstAttribute="leading" secondItem="jnS-iQ-91C" secondAttribute="leading" constant="16" id="IOa-Q7-Bqa"/>
+                                        <constraint firstItem="fCj-MG-RjD" firstAttribute="centerY" secondItem="jnS-iQ-91C" secondAttribute="centerY" id="cPz-6e-u0I"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="doC-fN-Ntp"/>
+                                </constraints>
+                                <color key="fillColor" red="1" green="1" blue="1" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
+                            </box>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="6O3-6n-aCP">
+                                <rect key="frame" x="0.0" y="38" width="235" height="30"/>
+                                <view key="contentView" id="s4L-1o-XOZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="235" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KsO-cQ-i8o">
+                                            <rect key="frame" x="14" y="5" width="99" height="20"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Activate Xenio" id="uwC-4Y-0PX">
+                                                <font key="font" size="14" name="SFProText-Regular"/>
+                                                <color key="textColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="KsO-cQ-i8o" firstAttribute="leading" secondItem="s4L-1o-XOZ" secondAttribute="leading" constant="16" id="Vbb-lC-bHw"/>
+                                        <constraint firstItem="KsO-cQ-i8o" firstAttribute="centerY" secondItem="s4L-1o-XOZ" secondAttribute="centerY" id="pe8-Yc-tk1"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dUk-06-RNb"/>
+                                </constraints>
+                                <color key="fillColor" red="1" green="1" blue="1" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
+                            </box>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="JIh-5t-ucu">
+                                <rect key="frame" x="0.0" y="8" width="235" height="30"/>
+                                <view key="contentView" id="Z0P-ZE-sYw">
+                                    <rect key="frame" x="0.0" y="0.0" width="235" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c8f-ss-MsH">
+                                            <rect key="frame" x="14" y="5" width="203" height="20"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="View games in the Xenio store" id="0Kg-XT-n4Z">
+                                                <font key="font" size="14" name="SFProText-Regular"/>
+                                                <color key="textColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="c8f-ss-MsH" firstAttribute="centerY" secondItem="Z0P-ZE-sYw" secondAttribute="centerY" id="OL1-Rv-Pxa"/>
+                                        <constraint firstItem="c8f-ss-MsH" firstAttribute="leading" secondItem="Z0P-ZE-sYw" secondAttribute="leading" constant="16" id="kxz-YR-rpG"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9n2-aE-Yr2"/>
+                                </constraints>
+                                <color key="fillColor" red="1" green="1" blue="1" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="JIh-5t-ucu" firstAttribute="leading" secondItem="gdh-ln-6dX" secondAttribute="leading" id="AOX-uw-Uyg"/>
+                            <constraint firstItem="JIh-5t-ucu" firstAttribute="top" secondItem="6O3-6n-aCP" secondAttribute="bottom" id="EvG-nE-Akc"/>
+                            <constraint firstItem="JIh-5t-ucu" firstAttribute="leading" secondItem="gdh-ln-6dX" secondAttribute="leading" id="GEq-BO-otx"/>
+                            <constraint firstAttribute="trailing" secondItem="JIh-5t-ucu" secondAttribute="trailing" id="OBB-fZ-fOG"/>
+                            <constraint firstItem="qQN-es-tUW" firstAttribute="leading" secondItem="gdh-ln-6dX" secondAttribute="leading" id="V3a-3d-Nyh"/>
+                            <constraint firstItem="qQN-es-tUW" firstAttribute="top" secondItem="gdh-ln-6dX" secondAttribute="top" constant="8" id="VJL-w9-xjf"/>
+                            <constraint firstAttribute="trailing" secondItem="qQN-es-tUW" secondAttribute="trailing" id="WyY-hP-ZLJ"/>
+                            <constraint firstAttribute="trailing" secondItem="6O3-6n-aCP" secondAttribute="trailing" id="cbb-D2-rXh"/>
+                            <constraint firstItem="6O3-6n-aCP" firstAttribute="leading" secondItem="gdh-ln-6dX" secondAttribute="leading" id="hy8-vn-J6q"/>
+                            <constraint firstItem="6O3-6n-aCP" firstAttribute="top" secondItem="qQN-es-tUW" secondAttribute="bottom" id="s4i-CP-wcw"/>
+                            <constraint firstAttribute="trailing" secondItem="JIh-5t-ucu" secondAttribute="trailing" id="sNH-oN-Htc"/>
+                            <constraint firstAttribute="bottom" secondItem="JIh-5t-ucu" secondAttribute="bottom" constant="8" id="tXD-SE-whP"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="235" id="hpB-JD-xMq"/>
+                        <constraint firstAttribute="height" constant="106" id="vXb-MJ-bdD"/>
+                    </constraints>
+                    <color key="fillColor" red="1" green="1" blue="1" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="oSd-pw-2VI" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="AZa-mn-W3E"/>
+                <constraint firstItem="oSd-pw-2VI" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="FNv-Kx-16x"/>
+                <constraint firstAttribute="bottom" secondItem="oSd-pw-2VI" secondAttribute="bottom" id="JuO-h0-ifQ"/>
+                <constraint firstAttribute="trailing" secondItem="oSd-pw-2VI" secondAttribute="trailing" id="jS0-UW-Zmt"/>
+            </constraints>
+            <point key="canvasLocation" x="23.5" y="137"/>
+        </customView>
+    </objects>
+</document>

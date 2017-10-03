@@ -10,12 +10,11 @@
 
 @implementation NSSplitView (ReplaceView)
 
--(void)replaceSplitViewItemAtIndex:(NSInteger)index withViewController:(NSViewController*)newViewController {
+-(void)replaceSplitViewItemAtIndex:(NSInteger)index withViewController:(NSView*)newView {
     assert(index <= [self.subviews count]);
 
     // Set up the frame
     NSRect frame = self.subviews[index].frame;
-    NSView *newView = newViewController.view;
     newView.frame = frame;
     
     //Set Up Animations

@@ -27,9 +27,9 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VJH-LE-79d">
-                                            <rect key="frame" x="14" y="6" width="144" height="18"/>
+                                            <rect key="frame" x="14" y="5" width="147" height="20"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Add third-party game" id="HqM-Hl-LFN">
-                                                <font key="font" metaFont="system" size="14"/>
+                                                <font key="font" size="14" name="SFProText-Regular"/>
                                                 <color key="textColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -52,9 +52,9 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="67h-gB-Is5">
-                                            <rect key="frame" x="14" y="6" width="97" height="18"/>
+                                            <rect key="frame" x="14" y="5" width="99" height="20"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Activate Xenio" id="P5J-pj-fZg">
-                                                <font key="font" metaFont="system" size="14"/>
+                                                <font key="font" size="14" name="SFProText-Regular"/>
                                                 <color key="textColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -77,9 +77,9 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bli-v4-Rop">
-                                            <rect key="frame" x="14" y="6" width="199" height="18"/>
+                                            <rect key="frame" x="14" y="5" width="203" height="20"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="View games in the Xenio store" id="RmN-bk-SsM">
-                                                <font key="font" metaFont="system" size="14"/>
+                                                <font key="font" size="14" name="SFProText-Regular"/>
                                                 <color key="textColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>

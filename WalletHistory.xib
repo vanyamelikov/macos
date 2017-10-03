@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WalletHistory"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="eWS-y7-bGy" customClass="WalletHistoryView">
+                    <rect key="frame" x="0.0" y="0.0" width="1440" height="620"/>
+                    <subviews>
+                        <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="108" horizontalPageScroll="10" verticalLineScroll="108" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="UK7-cO-2aD">
+                            <rect key="frame" x="0.0" y="0.0" width="1440" height="620"/>
+                            <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Akx-OC-CWV">
+                                <rect key="frame" x="0.0" y="0.0" width="1440" height="620"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="103" rowSizeStyle="automatic" viewBased="YES" floatsGroupRows="NO" id="C88-Ak-Edo">
+                                        <rect key="frame" x="0.0" y="0.0" width="1440" height="620"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <size key="intercellSpacing" width="3" height="5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <color key="gridColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <tableColumns>
+                                            <tableColumn editable="NO" width="1437" minWidth="40" maxWidth="2600" id="etK-GK-ud1">
+                                                <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                                    <font key="font" metaFont="smallSystem"/>
+                                                    <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                </tableHeaderCell>
+                                                <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="JUh-KL-ANi">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                </textFieldCell>
+                                                <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                <prototypeCellViews>
+                                                    <customView identifier="WalletHistoryCell" focusRingType="none" id="o4n-R3-rcF" customClass="WalletHistoryCell">
+                                                        <rect key="frame" x="1" y="2" width="1437" height="103"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    </customView>
+                                                </prototypeCellViews>
+                                            </tableColumn>
+                                        </tableColumns>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                            </clipView>
+                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="RSi-aq-IDP">
+                                <rect key="frame" x="-100" y="-100" width="223" height="15"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="wp8-74-xo7">
+                                <rect key="frame" x="-100" y="-100" width="15" height="102"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                        </scrollView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="UK7-cO-2aD" firstAttribute="top" secondItem="eWS-y7-bGy" secondAttribute="top" id="2k4-eA-CsN"/>
+                        <constraint firstAttribute="bottom" secondItem="UK7-cO-2aD" secondAttribute="bottom" id="kxj-Qw-8S5"/>
+                        <constraint firstAttribute="trailing" secondItem="UK7-cO-2aD" secondAttribute="trailing" id="v7f-7G-5Nm"/>
+                        <constraint firstItem="UK7-cO-2aD" firstAttribute="leading" secondItem="eWS-y7-bGy" secondAttribute="leading" id="yI4-4s-Ush"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ydi-dC-mmM">
+                    <rect key="frame" x="24" y="797" width="79" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="q8V-dg-jbW"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="History" id="jS8-yx-bc9">
+                        <font key="font" size="20" name="SFProText-Bold"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Ydi-dC-mmM" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="13" id="981-wO-BVw"/>
+                <constraint firstAttribute="trailing" secondItem="eWS-y7-bGy" secondAttribute="trailing" id="OmP-xo-ePJ"/>
+                <constraint firstItem="eWS-y7-bGy" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="Opu-tZ-cyu"/>
+                <constraint firstItem="Ydi-dC-mmM" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="26" id="PIt-0Q-OzL"/>
+                <constraint firstItem="eWS-y7-bGy" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="220" id="aXG-7V-saY"/>
+                <constraint firstAttribute="bottom" secondItem="eWS-y7-bGy" secondAttribute="bottom" id="ffQ-Tf-xU0"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>

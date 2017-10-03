@@ -1,15 +1,136 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-2" userLabel="File's Owner" customClass="ReceiveView"/>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customView id="c22-O7-iKe">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+        <customView id="op6-el-0wg">
+            <rect key="frame" x="0.0" y="0.0" width="1440" height="900"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" cornerRadius="10" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="QF3-B3-jOr">
+                    <rect key="frame" x="688" y="762" width="64" height="64"/>
+                    <view key="contentView" id="gYT-zq-Y43">
+                        <rect key="frame" x="1" y="1" width="62" height="62"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G2s-h8-Mef">
+                                <rect key="frame" x="16" y="16" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8PD-sN-5fQ"/>
+                                    <constraint firstAttribute="width" constant="30" id="IYc-Um-Y1W"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_xno_large" id="FLU-ax-HMr"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="G2s-h8-Mef" firstAttribute="centerX" secondItem="gYT-zq-Y43" secondAttribute="centerX" id="Hs9-Df-dAm"/>
+                            <constraint firstItem="G2s-h8-Mef" firstAttribute="centerY" secondItem="gYT-zq-Y43" secondAttribute="centerY" id="z3K-GI-fvr"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="GQ8-PG-RBf"/>
+                        <constraint firstAttribute="width" constant="64" id="Oo9-QO-vEy"/>
+                    </constraints>
+                    <color key="borderColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </box>
+                <box boxType="custom" borderWidth="2" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="40B-T4-9Z9">
+                    <rect key="frame" x="583" y="370" width="275" height="275"/>
+                    <view key="contentView" id="c8u-qW-KlU">
+                        <rect key="frame" x="2" y="2" width="271" height="271"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OCS-Cm-ODk">
+                                <rect key="frame" x="65" y="65" width="142" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="AfL-4R-Vy8"/>
+                                    <constraint firstAttribute="width" constant="142" id="zmW-1L-KGQ"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="img_qr" id="mPB-9i-U4H"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="OCS-Cm-ODk" firstAttribute="centerY" secondItem="c8u-qW-KlU" secondAttribute="centerY" id="91A-hQ-Ghg"/>
+                            <constraint firstItem="OCS-Cm-ODk" firstAttribute="centerX" secondItem="c8u-qW-KlU" secondAttribute="centerX" id="MJE-XH-wrc"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="275" id="UNe-4I-J2A"/>
+                        <constraint firstAttribute="height" constant="275" id="m1z-Q9-Te6"/>
+                    </constraints>
+                    <color key="borderColor" red="0.91372549020000005" green="0.92549019610000005" blue="0.95294117649999999" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fGD-Gq-zfv">
+                    <rect key="frame" x="670" y="334" width="100" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="KUs-PN-2cQ"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Xenio address:" id="Smz-dS-1z6">
+                        <font key="font" metaFont="system" size="14"/>
+                        <color key="textColor" red="0.3411764706" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MdW-AC-eXD">
+                    <rect key="frame" x="574" y="308" width="293" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="XQc-cA-45e"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="3AiGej11G8jUXvEBPvQKPLiHXC7ruUCp1Z" id="2KB-MR-zUQ">
+                        <font key="font" metaFont="systemBold" size="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5gw-qu-8qi">
+                    <rect key="frame" x="24" y="857" width="83" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="uCU-g4-Pbr"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Receive" id="RbR-Tn-phg">
+                        <font key="font" size="20" name="SFProText-Bold"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="izf-QY-zrz">
+                    <rect key="frame" x="518" y="663" width="404" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="400" id="8xW-U7-Tl7"/>
+                        <constraint firstAttribute="height" constant="60" id="NzZ-Jy-3h6"/>
+                    </constraints>
+                    <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="center" title="You can request money from your friends or acquainstances in the xenio system" id="8dB-bJ-Y3j">
+                        <font key="font" size="15" name="SFProText-Medium"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="QF3-B3-jOr" firstAttribute="centerX" secondItem="op6-el-0wg" secondAttribute="centerX" id="OTa-Ew-xTL"/>
+                <constraint firstItem="5gw-qu-8qi" firstAttribute="leading" secondItem="op6-el-0wg" secondAttribute="leading" constant="26" id="PJq-5E-wSt"/>
+                <constraint firstItem="MdW-AC-eXD" firstAttribute="centerX" secondItem="op6-el-0wg" secondAttribute="centerX" id="YTT-LP-iJH"/>
+                <constraint firstItem="izf-QY-zrz" firstAttribute="centerX" secondItem="op6-el-0wg" secondAttribute="centerX" id="aBs-H9-0wM"/>
+                <constraint firstItem="c8u-qW-KlU" firstAttribute="top" secondItem="izf-QY-zrz" secondAttribute="bottom" constant="20" id="cQB-bU-PXM"/>
+                <constraint firstItem="izf-QY-zrz" firstAttribute="top" secondItem="gYT-zq-Y43" secondAttribute="bottom" constant="40" id="gEa-Ow-Fff"/>
+                <constraint firstItem="QF3-B3-jOr" firstAttribute="top" secondItem="op6-el-0wg" secondAttribute="top" constant="74" id="kUr-ER-gfd"/>
+                <constraint firstItem="fGD-Gq-zfv" firstAttribute="top" secondItem="c8u-qW-KlU" secondAttribute="bottom" constant="20" id="okE-G9-kSf"/>
+                <constraint firstItem="5gw-qu-8qi" firstAttribute="top" secondItem="op6-el-0wg" secondAttribute="top" constant="13" id="rSJ-xX-wnR"/>
+                <constraint firstItem="40B-T4-9Z9" firstAttribute="centerX" secondItem="op6-el-0wg" secondAttribute="centerX" id="rjW-g4-jdI"/>
+                <constraint firstItem="fGD-Gq-zfv" firstAttribute="centerX" secondItem="op6-el-0wg" secondAttribute="centerX" id="sUp-Dy-oK8"/>
+                <constraint firstItem="MdW-AC-eXD" firstAttribute="top" secondItem="fGD-Gq-zfv" secondAttribute="bottom" constant="8" id="yFC-WD-uVa"/>
+            </constraints>
         </customView>
     </objects>
+    <resources>
+        <image name="ic_xno_large" width="30" height="30"/>
+        <image name="img_qr" width="284" height="284"/>
+    </resources>
 </document>
