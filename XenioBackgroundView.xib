@@ -3,58 +3,14 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
-        <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="XenioBackgroundView">
-            <connections>
-                <outlet property="bluredImageView" destination="f33-6O-jKU" id="QYb-vU-UZu"/>
-                <outlet property="gradientLayer" destination="xOH-pZ-dun" id="a5H-wU-jv1"/>
-                <outlet property="solidLayer" destination="qUS-Mk-uOI" id="qmi-z9-r4X"/>
-            </connections>
-        </customObject>
+        <customObject id="-2" userLabel="File's Owner" customClass="XenioBackgroundView"/>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customView id="c22-O7-iKe">
-            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-            <subviews>
-                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="qUS-Mk-uOI" userLabel="SolidLayer">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
-                    <view key="contentView" id="EwU-8Z-Xhg">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </view>
-                    <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                </box>
-                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f33-6O-jKU" userLabel="Blured Image">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" id="0Jk-zf-fKp"/>
-                </imageView>
-                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="xOH-pZ-dun" userLabel="GradientLayer">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
-                    <view key="contentView" id="WWS-HW-MLZ">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </view>
-                    <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                </box>
-            </subviews>
-            <constraints>
-                <constraint firstItem="f33-6O-jKU" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="2id-7N-qY5"/>
-                <constraint firstItem="xOH-pZ-dun" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="6fj-bd-BKy"/>
-                <constraint firstItem="qUS-Mk-uOI" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="8G9-go-Tvl"/>
-                <constraint firstAttribute="trailing" secondItem="qUS-Mk-uOI" secondAttribute="trailing" id="Gz8-4L-tdy"/>
-                <constraint firstAttribute="bottom" secondItem="qUS-Mk-uOI" secondAttribute="bottom" id="OCD-wv-TXA"/>
-                <constraint firstAttribute="bottom" secondItem="f33-6O-jKU" secondAttribute="bottom" id="QcI-Zy-rty"/>
-                <constraint firstItem="qUS-Mk-uOI" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="Qf6-eo-CBy"/>
-                <constraint firstItem="xOH-pZ-dun" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="Vuu-Fc-vdh"/>
-                <constraint firstItem="f33-6O-jKU" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="kin-r8-zk1"/>
-                <constraint firstAttribute="trailing" secondItem="f33-6O-jKU" secondAttribute="trailing" id="uTz-1c-Wty"/>
-                <constraint firstAttribute="bottom" secondItem="xOH-pZ-dun" secondAttribute="bottom" id="yAu-QT-T6W"/>
-                <constraint firstAttribute="trailing" secondItem="xOH-pZ-dun" secondAttribute="trailing" id="zXc-og-6lp"/>
-            </constraints>
+        <customView autoresizesSubviews="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="550" height="550"/>
         </customView>
     </objects>
 </document>

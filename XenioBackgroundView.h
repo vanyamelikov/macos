@@ -9,10 +9,8 @@
 #import "NSView+INSNibLoading.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface XenioBackgroundView : INSNibLoadedView
-@property (weak) IBOutlet NSBox *solidLayer;
-@property (weak) IBOutlet NSImageView *bluredImageView;
-@property (weak) IBOutlet NSBox *gradientLayer;
+IB_DESIGNABLE
+@interface XenioBackgroundView : NSView
 
 //Gradient Layer Properties
 @property (nonatomic) IBInspectable NSColor *startGradientColor;
