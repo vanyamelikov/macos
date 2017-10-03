@@ -174,6 +174,8 @@
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView objectValueForTableColumn:(NSTableColumn *)tableColumn byItem:(id)item {
+    [outlineView expandItem:item];
+    [outlineView setAutosaveExpandedItems:YES];
     return item;
 }
 
@@ -215,6 +217,19 @@
     }
 }
 
+-(void)viewDidMoveToWindow {
+    [super viewDidMoveToWindow];
+    [self performSelector:@selector(expandAllItems) withObject:self afterDelay:0.0];
+}
+
+-(void)expandAllItems {
+    for(NSInteger i = 0; i < self.friendsOutlineView.numberOfRows; i++) {
+        id item = [self.friendsOutlineView itemAtRow:i];
+        if([item isKindOfClass:[SettingsFriendsListModel class]]) {
+            [self.friendsOutlineView expandItem:item];
+        }
+    }
+}
 
 
 @end
