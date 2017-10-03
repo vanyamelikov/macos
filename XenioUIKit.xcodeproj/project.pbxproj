@@ -76,7 +76,6 @@
 		31F155571F82AEC80070B256 /* CustomOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F155561F82AEC80070B256 /* CustomOutlineView.m */; };
 		31F155591F82D2F90070B256 /* FriendsListSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F155581F82D2F90070B256 /* FriendsListSearchBar.xib */; };
 		31F1555C1F82D7FE0070B256 /* FriendsListSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F1555B1F82D7FE0070B256 /* FriendsListSearchBar.m */; };
-		31F1555F1F82EC140070B256 /* XenioBackgroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F1555E1F82EC140070B256 /* XenioBackgroundView.xib */; };
 		31F155621F82EE210070B256 /* XenioBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F155611F82EE210070B256 /* XenioBackgroundView.m */; };
 		3E1FF8E61F6AC4F700117F16 /* CustomTabbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E1FF8E51F6AC4F700117F16 /* CustomTabbar.xib */; };
 		3E1FF8E91F6AD86400117F16 /* CustomTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1FF8E81F6AD86400117F16 /* CustomTabbar.m */; };
@@ -393,7 +392,6 @@
 		31F155581F82D2F90070B256 /* FriendsListSearchBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsListSearchBar.xib; sourceTree = "<group>"; };
 		31F1555A1F82D7FE0070B256 /* FriendsListSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendsListSearchBar.h; sourceTree = "<group>"; };
 		31F1555B1F82D7FE0070B256 /* FriendsListSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendsListSearchBar.m; sourceTree = "<group>"; };
-		31F1555E1F82EC140070B256 /* XenioBackgroundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XenioBackgroundView.xib; sourceTree = "<group>"; };
 		31F155601F82EE210070B256 /* XenioBackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XenioBackgroundView.h; sourceTree = "<group>"; };
 		31F155611F82EE210070B256 /* XenioBackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XenioBackgroundView.m; sourceTree = "<group>"; };
 		3E1FF8E51F6AC4F700117F16 /* CustomTabbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTabbar.xib; sourceTree = "<group>"; };
@@ -866,7 +864,6 @@
 		31F1555D1F82EBD20070B256 /* XenioBackgroundView */ = {
 			isa = PBXGroup;
 			children = (
-				31F1555E1F82EC140070B256 /* XenioBackgroundView.xib */,
 				31F155601F82EE210070B256 /* XenioBackgroundView.h */,
 				31F155611F82EE210070B256 /* XenioBackgroundView.m */,
 			);
@@ -1794,7 +1791,6 @@
 				3E558BF41F79AF7F00542B7B /* FriendsHideCell.xib in Resources */,
 				31E4F7551F7EA2560047B843 /* PayInfoCell.xib in Resources */,
 				3E8875E81F73F8A5001B8374 /* LibrarySideMenuCell.xib in Resources */,
-				31F1555F1F82EC140070B256 /* XenioBackgroundView.xib in Resources */,
 				3ECF3CDC1F696D54005165E5 /* CancelButton.xib in Resources */,
 				3E8876541F74ABCA001B8374 /* FriendsRightListNotificationCell.xib in Resources */,
 				3E558BCB1F796D8E00542B7B /* SettingsSideListView.xib in Resources */,

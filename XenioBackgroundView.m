@@ -7,6 +7,8 @@
 //
 
 #import "XenioBackgroundView.h"
+#import <CoreImage/CoreImage.h>
+#import <QuartzCore/QuartzCore.h>
 
 @implementation XenioBackgroundView
 
@@ -27,10 +29,24 @@
 }
 
 -(void)drawRect:(NSRect)dirtyRect {
-    [self addSolidRectangleWithColor:self.solidColor
-                          andOpacity:self.solidOpacity];
-    [super drawRect:dirtyRect];
+//    [self addSolidRectangleWithColor:self.solidColor
+//                          andOpacity:self.solidOpacity];
+//    [self addRectangleGradientWithStartColor:self.startGradientColor
+//                                    endColor:self.endGradientColor
+//                                  andOpacity:self.gradientOpacity];
+//    [self addBlurredImageViewWithImage:[NSImage imageNamed:@"background_store_1"]
+//                            blurRadius:60.0f
+//                               opacity:1.0f];
+    [self addBlurredImageViewWithImage:[NSImage imageNamed:@"background_store_1"]
+                            blurRadius:60.0f
+                               opacity:1.0f];
 }
+
+//-(void)awakeFromNib {
+//    [self addBlurredImageViewWithImage:[NSImage imageNamed:@"background_store_1"]
+//                            blurRadius:60.0f
+//                               opacity:1.0f];
+//}
 
 -(void)initView {
     if(!self.startGradientColor)
@@ -65,7 +81,8 @@
     [solidLayer setCornerRadius:0.0f];
     [solidLayer setBorderWidth:0.0f];
     [solidLayer setMasksToBounds:YES];
-    [solidLayer setBackgroundColor:[NSColor redColor].CGColor];
+    [solidLayer setBackgroundColor:color.CGColor];
+    [solidLayer setOpacity:opacity];
     
     [self.layer addSublayer:solidLayer];
 }
@@ -74,14 +91,32 @@
 -(void)addBlurredImageViewWithImage:(NSImage *)image
                           blurRadius:(CGFloat)radius
                              opacity:(CGFloat)opacity {
+    [self setWantsLayer:YES];
+    CALayer *blurredImageLayer = [CALayer layer];
+    [blurredImageLayer setFrame:self.frame];
+    [blurredImageLayer setMasksToBounds:YES];
+    
+    [blurredImageLayer setContents:(id)[self rBlurredImage:image]];
+    
+    [blurredImageLayer setOpacity:1.0f];
+    
+    [self.layer addSublayer:blurredImageLayer];
 }
 
 //Set gradient layer
 -(void)addRectangleGradientWithStartColor:(NSColor *)startColor
                                  endColor:(NSColor *)endColor
-                            gradientAngle:(CGFloat)angle
                                andOpacity:(CGFloat)opacity {
+    [self setWantsLayer:YES];
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    [gradientLayer setFrame:self.frame];
+    [gradientLayer setMasksToBounds:YES];
+    [gradientLayer setColors:[NSArray arrayWithObjects:
+                              (id)[startColor CGColor],
+                              (id)[endColor CGColor], nil]];
+    [gradientLayer setOpacity:opacity];
     
+    [self.layer addSublayer:gradientLayer];
 }
 
 
@@ -99,14 +134,24 @@
     return imageRef;
 }
 
-//Create Core Image Filter
--(NSArray *)filters {
+-(CGImageRef)rBlurredImage : (NSImage *)inImage {
+    CIContext *context = [CIContext contextWithOptions:nil];
+    
+    NSData *imageData = [inImage TIFFRepresentation];
+    
+    CIImage *inputImage = [[CIImage alloc] initWithData:imageData];
+    
     CIFilter *blurFilter = [CIFilter filterWithName:@"CIGaussianBlur"];
-    [blurFilter setDefaults];
-    [blurFilter setValue:[NSNumber numberWithFloat:0.0]
-                  forKey:@"inputRadius"];
-    [blurFilter setName:@"blur"];
-    return [NSArray arrayWithObjects:blurFilter, nil];
+    [blurFilter setValue:inputImage forKey:kCIInputImageKey];
+    [blurFilter setValue:@60.0f forKey:@"inputRadius"];
+    
+    CIImage *result = [blurFilter valueForKey:kCIOutputImageKey];
+    
+    CGImageRef cgImage = [context createCGImage:result fromRect:[inputImage extent]];
+    
+    //CGImageRelease(cgImage);
+    
+    return cgImage;
 }
 
 
