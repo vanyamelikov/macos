@@ -54,15 +54,15 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_avatar" id="uf5-qc-DAu"/>
                             </imageView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LnD-7X-yfV">
-                                <rect key="frame" x="1219" y="24" width="17" height="17"/>
+                                <rect key="frame" x="1212" y="21" width="24" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="17" id="DhD-FL-bOG"/>
-                                    <constraint firstAttribute="width" constant="17" id="n5D-cM-JLA"/>
+                                    <constraint firstAttribute="height" constant="24" id="DhD-FL-bOG"/>
+                                    <constraint firstAttribute="width" constant="24" id="n5D-cM-JLA"/>
                                 </constraints>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_bell" id="psq-HG-fKu"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_ringer" id="psq-HG-fKu"/>
                             </imageView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1t3-ns-i0u">
-                                <rect key="frame" x="1172" y="24" width="17" height="17"/>
+                                <rect key="frame" x="1165" y="24" width="17" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="b1u-xf-9gb"/>
                                     <constraint firstAttribute="width" constant="17" id="fB5-Fd-lB3"/>
@@ -77,7 +77,7 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_grid" id="Wff-Kr-bq3"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hcd-2Y-WiH">
-                                <rect key="frame" x="1078" y="22" width="66" height="20"/>
+                                <rect key="frame" x="1071" y="22" width="66" height="20"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="KOT3 Kill" id="vcl-na-Xkn">
                                     <font key="font" size="14" name="SFProText-Medium"/>
                                     <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -85,7 +85,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Qy-yC-Miz">
-                                <rect key="frame" x="943" y="23" width="109" height="18"/>
+                                <rect key="frame" x="936" y="23" width="109" height="18"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="0.0 XNO/ 0.0 USD" id="Zpr-zw-QVe">
                                     <font key="font" size="12" name="SFProText-Semibold"/>
                                     <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -93,7 +93,7 @@
                                 </textFieldCell>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WEQ-vh-HlV">
-                                <rect key="frame" x="926" y="26" width="11" height="11"/>
+                                <rect key="frame" x="919" y="26" width="11" height="11"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="11" id="eSv-Wu-NOW"/>
                                     <constraint firstAttribute="height" constant="11" id="m3K-Ph-ls3"/>
@@ -387,10 +387,10 @@
     <resources>
         <image name="ic_avatar" width="62" height="62"/>
         <image name="ic_balance" width="21" height="21"/>
-        <image name="ic_bell" width="41" height="41"/>
         <image name="ic_grid" width="35" height="35"/>
         <image name="ic_library" width="23" height="17"/>
         <image name="ic_logotype" width="129" height="34"/>
+        <image name="ic_ringer" width="22" height="22"/>
         <image name="ic_settings" width="26" height="26"/>
         <image name="ic_store" width="23" height="21"/>
         <image name="ic_wallet" width="23" height="21"/>

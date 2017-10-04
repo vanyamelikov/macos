@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LastActivityCell">
+            <connections>
+                <outlet property="activityNameLabel" destination="RXc-Ji-8IT" id="fEz-aN-6EB"/>
+                <outlet property="agoTimeLabel" destination="lZR-1O-3br" id="QDQ-5c-yTa"/>
+                <outlet property="image" destination="Gdx-ez-8fl" id="4Pp-no-cnZ"/>
+                <outlet property="totalTimeLabel" destination="qaX-EF-bkh" id="wZb-Cs-GYs"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="gSo-JW-WhV">
+            <rect key="frame" x="0.0" y="0.0" width="807" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box fixedFrame="YES" boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="0Jv-jF-ihT">
+                    <rect key="frame" x="0.0" y="0.0" width="807" height="105"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <view key="contentView" id="FYK-Q0-gYu">
+                        <rect key="frame" x="0.0" y="0.0" width="807" height="105"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RXc-Ji-8IT">
+                                <rect key="frame" x="103" y="55" width="172" height="24"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Adventures of burger" id="pCN-CX-yOI">
+                                    <font key="font" size="16" name="SFProText-Semibold"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qaX-EF-bkh">
+                                <rect key="frame" x="676" y="44" width="91" height="19"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="2.321 Hours" id="m42-cG-ARm">
+                                    <font key="font" metaFont="system" size="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="U5b-6p-jCO" customClass="ActivityTag">
+                                <rect key="frame" x="105" y="28" width="122" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="LJY-xu-BnH"/>
+                                    <constraint firstAttribute="height" constant="17" id="NGD-6X-R6L"/>
+                                </constraints>
+                            </customView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gdx-ez-8fl">
+                                <rect key="frame" x="21" y="22" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="4CO-g7-cpr"/>
+                                    <constraint firstAttribute="height" constant="64" id="ZDy-EG-8qp"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="activity_image_1" id="gcs-GA-imt"/>
+                            </imageView>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lZR-1O-3br">
+                                <rect key="frame" x="544" y="44" width="90" height="19"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="2 hours ago" id="zoU-BH-pc3">
+                                    <font key="font" metaFont="system" size="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Gdx-ez-8fl" firstAttribute="centerY" secondItem="FYK-Q0-gYu" secondAttribute="centerY" id="06b-61-uqP"/>
+                            <constraint firstItem="RXc-Ji-8IT" firstAttribute="top" secondItem="FYK-Q0-gYu" secondAttribute="top" constant="28" id="24T-lY-nAI"/>
+                            <constraint firstItem="lZR-1O-3br" firstAttribute="centerY" secondItem="FYK-Q0-gYu" secondAttribute="centerY" id="54h-S5-TlM"/>
+                            <constraint firstItem="qaX-EF-bkh" firstAttribute="centerY" secondItem="FYK-Q0-gYu" secondAttribute="centerY" id="Qdy-Kb-Ccd"/>
+                            <constraint firstItem="RXc-Ji-8IT" firstAttribute="leading" secondItem="Gdx-ez-8fl" secondAttribute="trailing" constant="20" id="U1l-xb-lNO"/>
+                            <constraint firstItem="qaX-EF-bkh" firstAttribute="leading" secondItem="lZR-1O-3br" secondAttribute="trailing" constant="46" id="Vcm-mT-8Xa"/>
+                            <constraint firstAttribute="trailing" secondItem="qaX-EF-bkh" secondAttribute="trailing" constant="39" id="Yus-FE-tcs"/>
+                            <constraint firstItem="lZR-1O-3br" firstAttribute="leading" secondItem="Gdx-ez-8fl" secondAttribute="trailing" constant="461" id="auF-Y1-cH0"/>
+                            <constraint firstItem="Gdx-ez-8fl" firstAttribute="leading" secondItem="FYK-Q0-gYu" secondAttribute="leading" constant="21" id="bXH-hC-aCg"/>
+                            <constraint firstItem="Gdx-ez-8fl" firstAttribute="top" secondItem="FYK-Q0-gYu" secondAttribute="top" constant="21" id="fXC-vj-n5n"/>
+                            <constraint firstItem="U5b-6p-jCO" firstAttribute="leading" secondItem="Gdx-ez-8fl" secondAttribute="trailing" constant="20" id="gTa-xk-wMv"/>
+                            <constraint firstAttribute="bottom" secondItem="U5b-6p-jCO" secondAttribute="bottom" constant="28" id="odS-gA-M3M"/>
+                        </constraints>
+                    </view>
+                    <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+            </subviews>
+            <point key="canvasLocation" x="518.5" y="151.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="activity_image_1" width="64" height="64"/>
+    </resources>
+</document>

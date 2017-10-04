@@ -57,7 +57,7 @@
                 <constraint firstAttribute="bottom" secondItem="MJc-rl-Ig1" secondAttribute="bottom" id="7Nn-xx-PjH"/>
                 <constraint firstItem="MJc-rl-Ig1" firstAttribute="top" secondItem="H7t-1W-2rY" secondAttribute="top" id="SPl-NI-imH"/>
             </constraints>
-            <point key="canvasLocation" x="124" y="166"/>
+            <point key="canvasLocation" x="124" y="165.5"/>
         </customView>
     </objects>
 </document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ActivityTag"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="ZJO-Bd-1FI">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="17"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Ogu-qM-4Cq">
+                    <rect key="frame" x="0.0" y="0.0" width="140" height="17"/>
+                    <view key="contentView" id="Dga-7f-siw">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="17"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="borderColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x4I-SZ-hb2">
+                    <rect key="frame" x="4" y="2" width="12" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="0zc-cF-vmv"/>
+                        <constraint firstAttribute="height" constant="12" id="PVS-5W-EX8"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_activity_photo" id="Okc-vo-TZY"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0A8-sS-mbD">
+                    <rect key="frame" x="18" y="2" width="120" height="13"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="250 SCREENSHOTS" id="Rjq-Ci-kPl">
+                        <font key="font" metaFont="system" size="10"/>
+                        <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="0A8-sS-mbD" firstAttribute="centerY" secondItem="ZJO-Bd-1FI" secondAttribute="centerY" id="2uV-EG-BLK"/>
+                <constraint firstAttribute="trailing" secondItem="Ogu-qM-4Cq" secondAttribute="trailing" id="7cH-W8-Yit"/>
+                <constraint firstItem="x4I-SZ-hb2" firstAttribute="leading" secondItem="ZJO-Bd-1FI" secondAttribute="leading" constant="4" id="DM8-oZ-1QL"/>
+                <constraint firstAttribute="bottom" secondItem="Ogu-qM-4Cq" secondAttribute="bottom" id="H3a-31-RLL"/>
+                <constraint firstItem="Ogu-qM-4Cq" firstAttribute="top" secondItem="ZJO-Bd-1FI" secondAttribute="top" id="R5s-O8-uG6"/>
+                <constraint firstItem="Ogu-qM-4Cq" firstAttribute="leading" secondItem="ZJO-Bd-1FI" secondAttribute="leading" id="W39-pt-tva"/>
+                <constraint firstAttribute="trailing" secondItem="0A8-sS-mbD" secondAttribute="trailing" constant="4" id="fpf-LV-ekO"/>
+                <constraint firstItem="x4I-SZ-hb2" firstAttribute="centerY" secondItem="ZJO-Bd-1FI" secondAttribute="centerY" id="oJt-GY-xh2"/>
+                <constraint firstItem="0A8-sS-mbD" firstAttribute="leading" secondItem="x4I-SZ-hb2" secondAttribute="trailing" constant="4" id="wx7-Vq-kFD"/>
+            </constraints>
+            <point key="canvasLocation" x="270.5" y="168.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_activity_photo" width="10" height="10"/>
+    </resources>
+</document>
