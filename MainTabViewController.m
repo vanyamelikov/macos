@@ -23,6 +23,7 @@
 #import "SplitViewWithDivider.h"
 #import "MyRectGradientView.h"
 #import "Colours.h"
+#import "FriendsProfileViewController.h"
 
 @interface MainTabViewController (){
     NSWindowController *_controlWindowController;
@@ -90,6 +91,11 @@
                                              selector:@selector(changeBackground:)
                                                  name:@"changeBackgroundNotification"
                                                object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(openFriendsProfile:)
+                                                 name:@"openFriendsProfileNotification"
+                                               object:nil];
 }
 
 -(void)viewWillAppear {
@@ -100,6 +106,23 @@
 {
     if ([[notification name] isEqualToString:@"changeBackgroundNotification"])
         [self setBackgroundImage:notification.object];
+}
+
+-(void) openFriendsProfile:(NSNotification *) notification {
+    if ([[notification name] isEqualToString:@"openFriendsProfileNotification"]) {
+        NSSplitView *superView = (NSSplitView *)[_mainTabView.tabViewItems objectAtIndex:3].view;
+        
+        //get friends edit content view
+        NSStoryboard *friends = [NSStoryboard storyboardWithName:@"Friends" bundle:nil];
+        FriendsProfileViewController *friendProfileVC = (FriendsProfileViewController *)[friends instantiateControllerWithIdentifier:@"FriendsProfileViewController"];
+        
+        //replace friends and settings view
+        [superView replaceSplitViewItemAtIndex:0 withViewController:friendProfileVC.view];
+        
+        //change tabview item
+        if(![_mainTabView.selectedTabViewItem isEqual:[_mainTabView.tabViewItems objectAtIndex:3]])
+            [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:3]];
+    }
 }
 
 -(void)tabClicked:(NSInteger)sender {
@@ -121,6 +144,7 @@
         //get friends edit content view
         NSStoryboard *friends = [NSStoryboard storyboardWithName:@"Friends" bundle:nil];
         NSViewController *friendsVC = [friends instantiateControllerWithIdentifier:@"MainFriendsLeftSideViewController"];
+        
         //replace friends and settings view
         [superView replaceSplitViewItemAtIndex:0 withViewController:friendsVC.view];
         

@@ -79,11 +79,11 @@
             </objects>
             <point key="canvasLocation" x="-635" y="1085"/>
         </scene>
-        <!--View Controller-->
+        <!--Friends Profile View Controller-->
         <scene sceneID="y9g-Wt-Eda">
             <objects>
                 <customObject id="uhU-vu-74N" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="MainProfileLeftSideViewController" id="95d-GR-yrX" sceneMemberID="viewController">
+                <viewController identifier="FriendsProfileViewController" storyboardIdentifier="FriendsProfileViewController" id="95d-GR-yrX" customClass="FriendsProfileViewController" sceneMemberID="viewController">
                     <view key="view" id="Z9J-fp-qlh">
                         <rect key="frame" x="0.0" y="0.0" width="1440" height="890"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -105,30 +105,6 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <box boxType="custom" borderWidth="0.0" cornerRadius="8" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="4Df-yC-vMW">
-                                            <rect key="frame" x="20" y="723" width="90" height="90"/>
-                                            <view key="contentView" id="5ag-GU-FMb">
-                                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                <subviews>
-                                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lmB-oM-XCX">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_avatar" id="zz6-hE-uYZ"/>
-                                                    </imageView>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="lmB-oM-XCX" firstAttribute="top" secondItem="5ag-GU-FMb" secondAttribute="top" id="McF-ZJ-nUV"/>
-                                                    <constraint firstAttribute="bottom" secondItem="lmB-oM-XCX" secondAttribute="bottom" id="TMX-Kd-1gQ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="lmB-oM-XCX" secondAttribute="trailing" id="gco-rS-F9C"/>
-                                                    <constraint firstItem="lmB-oM-XCX" firstAttribute="leading" secondItem="5ag-GU-FMb" secondAttribute="leading" id="mPm-9V-QZr"/>
-                                                </constraints>
-                                            </view>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="90" id="5T5-hi-Kz1"/>
-                                                <constraint firstAttribute="height" constant="90" id="pdD-a1-sjq"/>
-                                            </constraints>
-                                            <color key="fillColor" red="0.98431372549999996" green="0.93333333330000001" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        </box>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="95M-5Y-Fau">
                                             <rect key="frame" x="134" y="765" width="117" height="38"/>
                                             <constraints>
@@ -176,8 +152,8 @@
                                                 <constraint firstAttribute="height" constant="29" id="Wv4-7h-43M"/>
                                             </constraints>
                                         </customView>
-                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="Vz2-fU-55h">
-                                            <rect key="frame" x="20" y="319" width="1400" height="326"/>
+                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="Vz2-fU-55h" customClass="LastActivityView">
+                                            <rect key="frame" x="0.0" y="319" width="1440" height="326"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="326" id="d98-yO-5K1"/>
                                             </constraints>
@@ -194,9 +170,9 @@
                                             </textFieldCell>
                                         </textField>
                                         <customView translatesAutoresizingMaskIntoConstraints="NO" id="wax-8E-Vee" customClass="FriendsFeaturedGamesView">
-                                            <rect key="frame" x="20" y="112" width="1400" height="125"/>
+                                            <rect key="frame" x="0.0" y="122" width="1440" height="135"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="125" id="24i-bs-scS"/>
+                                                <constraint firstAttribute="height" constant="135" id="24i-bs-scS"/>
                                             </constraints>
                                         </customView>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vCt-7I-sop">
@@ -210,29 +186,33 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7er-x3-xY7">
+                                            <rect key="frame" x="20" y="723" width="90" height="90"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="img_profile_avatar" id="Tvr-BU-Ik2"/>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="SLU-8G-75T" firstAttribute="centerY" secondItem="4Df-yC-vMW" secondAttribute="centerY" id="08d-Ai-6ng"/>
-                                        <constraint firstItem="pug-Yt-SbF" firstAttribute="leading" secondItem="4Df-yC-vMW" secondAttribute="trailing" constant="26" id="44d-sS-76R"/>
+                                        <constraint firstItem="wjx-GY-v5D" firstAttribute="leading" secondItem="FvS-rK-lxC" secondAttribute="leading" constant="20" id="0mU-Ex-bfS"/>
+                                        <constraint firstItem="95M-5Y-Fau" firstAttribute="leading" secondItem="7er-x3-xY7" secondAttribute="trailing" constant="26" id="6Pg-DK-4rs"/>
                                         <constraint firstItem="Vz2-fU-55h" firstAttribute="top" secondItem="wjx-GY-v5D" secondAttribute="bottom" constant="20" id="6sc-5N-zrz"/>
-                                        <constraint firstItem="4Df-yC-vMW" firstAttribute="leading" secondItem="FvS-rK-lxC" secondAttribute="leading" constant="20" id="9bu-Ph-D7a"/>
-                                        <constraint firstItem="wjx-GY-v5D" firstAttribute="top" secondItem="5ag-GU-FMb" secondAttribute="bottom" constant="20" id="DJ9-Of-2hl"/>
                                         <constraint firstItem="SLA-tI-tJd" firstAttribute="leading" secondItem="SLU-8G-75T" secondAttribute="trailing" constant="3" id="DsP-Pa-r8I"/>
                                         <constraint firstItem="vCt-7I-sop" firstAttribute="centerY" secondItem="snc-3d-3PY" secondAttribute="centerY" id="Fis-u6-Tlo"/>
                                         <constraint firstItem="snc-3d-3PY" firstAttribute="leading" secondItem="FvS-rK-lxC" secondAttribute="leading" constant="20" id="GQr-NO-OAN"/>
-                                        <constraint firstItem="Vz2-fU-55h" firstAttribute="leading" secondItem="FvS-rK-lxC" secondAttribute="leading" constant="20" id="NX2-bL-NcJ"/>
-                                        <constraint firstItem="wax-8E-Vee" firstAttribute="leading" secondItem="FvS-rK-lxC" secondAttribute="leading" constant="20" id="TWy-hp-nMc"/>
-                                        <constraint firstItem="95M-5Y-Fau" firstAttribute="leading" secondItem="5ag-GU-FMb" secondAttribute="trailing" constant="26" id="VnN-Hs-JWs"/>
-                                        <constraint firstItem="wax-8E-Vee" firstAttribute="top" secondItem="snc-3d-3PY" secondAttribute="bottom" constant="20" id="Vs0-wU-6DO"/>
+                                        <constraint firstItem="Vz2-fU-55h" firstAttribute="leading" secondItem="FvS-rK-lxC" secondAttribute="leading" id="NX2-bL-NcJ"/>
+                                        <constraint firstItem="wax-8E-Vee" firstAttribute="leading" secondItem="FvS-rK-lxC" secondAttribute="leading" id="TWy-hp-nMc"/>
+                                        <constraint firstItem="wax-8E-Vee" firstAttribute="top" secondItem="snc-3d-3PY" secondAttribute="bottom" id="Vs0-wU-6DO"/>
                                         <constraint firstAttribute="trailing" secondItem="SLA-tI-tJd" secondAttribute="trailing" constant="20" id="WmP-iW-bbZ"/>
-                                        <constraint firstAttribute="trailing" secondItem="Vz2-fU-55h" secondAttribute="trailing" constant="20" id="YqO-Di-Uak"/>
+                                        <constraint firstAttribute="trailing" secondItem="Vz2-fU-55h" secondAttribute="trailing" id="YqO-Di-Uak"/>
                                         <constraint firstItem="snc-3d-3PY" firstAttribute="top" secondItem="Vz2-fU-55h" secondAttribute="bottom" constant="24" id="Yr8-Pi-md0"/>
                                         <constraint firstAttribute="trailing" secondItem="vCt-7I-sop" secondAttribute="trailing" constant="20" id="eW3-mV-ypg"/>
-                                        <constraint firstItem="wjx-GY-v5D" firstAttribute="leading" secondItem="5ag-GU-FMb" secondAttribute="leading" id="gGq-g9-6nJ"/>
-                                        <constraint firstAttribute="trailing" secondItem="wax-8E-Vee" secondAttribute="trailing" constant="20" id="hBw-nv-BIG"/>
+                                        <constraint firstAttribute="trailing" secondItem="wax-8E-Vee" secondAttribute="trailing" id="hBw-nv-BIG"/>
+                                        <constraint firstItem="wjx-GY-v5D" firstAttribute="top" secondItem="7er-x3-xY7" secondAttribute="bottom" constant="20" id="hf8-Qt-8aI"/>
+                                        <constraint firstItem="SLA-tI-tJd" firstAttribute="top" secondItem="FvS-rK-lxC" secondAttribute="top" constant="107" id="iQJ-xb-tkM"/>
                                         <constraint firstItem="95M-5Y-Fau" firstAttribute="top" secondItem="FvS-rK-lxC" secondAttribute="top" constant="87" id="oNX-Jo-TbG"/>
                                         <constraint firstAttribute="trailing" secondItem="hKL-Io-lOG" secondAttribute="trailing" constant="20" id="pcc-Fb-6Nu"/>
+                                        <constraint firstItem="7er-x3-xY7" firstAttribute="leading" secondItem="FvS-rK-lxC" secondAttribute="leading" constant="20" id="rLE-sc-jdW"/>
                                         <constraint firstItem="hKL-Io-lOG" firstAttribute="centerY" secondItem="wjx-GY-v5D" secondAttribute="centerY" id="t2x-zN-eNu"/>
+                                        <constraint firstItem="pug-Yt-SbF" firstAttribute="leading" secondItem="7er-x3-xY7" secondAttribute="trailing" constant="26" id="tcu-jx-Poz"/>
                                         <constraint firstItem="SLA-tI-tJd" firstAttribute="centerY" secondItem="SLU-8G-75T" secondAttribute="centerY" id="td1-BO-cXk"/>
                                         <constraint firstItem="pug-Yt-SbF" firstAttribute="top" secondItem="95M-5Y-Fau" secondAttribute="bottom" constant="2" id="zUl-hM-F1L"/>
                                     </constraints>
@@ -260,9 +240,9 @@
                             </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="7er-x3-xY7" firstAttribute="top" secondItem="z8D-ZL-MUR" secondAttribute="bottom" constant="25" id="8IC-gU-fV4"/>
                             <constraint firstItem="0J0-pH-kg2" firstAttribute="top" secondItem="Z9J-fp-qlh" secondAttribute="top" constant="28" id="C94-SI-AI8"/>
                             <constraint firstItem="z8D-ZL-MUR" firstAttribute="leading" secondItem="0J0-pH-kg2" secondAttribute="trailing" constant="17" id="CRf-II-Uvs"/>
-                            <constraint firstItem="4Df-yC-vMW" firstAttribute="top" secondItem="z8D-ZL-MUR" secondAttribute="bottom" constant="25" id="GvY-1l-Pdl"/>
                             <constraint firstAttribute="trailing" secondItem="RjT-K1-H08" secondAttribute="trailing" id="fvK-rX-IHM"/>
                             <constraint firstItem="z8D-ZL-MUR" firstAttribute="top" secondItem="Z9J-fp-qlh" secondAttribute="top" constant="28" id="jSs-5V-sOn"/>
                             <constraint firstItem="RjT-K1-H08" firstAttribute="top" secondItem="Z9J-fp-qlh" secondAttribute="top" id="tLp-nm-PYk"/>
@@ -271,13 +251,16 @@
                             <constraint firstItem="0J0-pH-kg2" firstAttribute="leading" secondItem="Z9J-fp-qlh" secondAttribute="leading" constant="26" id="zai-51-wCr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="friendAvatarImageView" destination="7er-x3-xY7" id="htF-kg-keX"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-635" y="2081"/>
         </scene>
     </scenes>
     <resources>
-        <image name="ic_avatar" width="62" height="62"/>
         <image name="ic_backarrow" width="16" height="11"/>
+        <image name="img_profile_avatar" width="90" height="90"/>
     </resources>
 </document>

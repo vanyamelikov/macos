@@ -11,6 +11,8 @@
 @interface ProfileModel : NSObject
 
 @property (nonatomic) NSString *title;
+@property (nonatomic) NSString *lastActivityTime;
+@property (nonatomic) NSString *totalTime;
 @property (nonatomic) NSImage *gameImage;
 
 @end

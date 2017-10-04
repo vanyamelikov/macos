@@ -63,9 +63,10 @@
 		317B060C1F855707006D2786 /* ActivityTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 317B060B1F855707006D2786 /* ActivityTag.m */; };
 		317B06111F85577B006D2786 /* LastActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 317B06101F85577B006D2786 /* LastActivityCell.xib */; };
 		317B06141F85579F006D2786 /* LastActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 317B06131F85579F006D2786 /* LastActivityCell.m */; };
-		317B06161F8557CA006D2786 /* LastActivityTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 317B06151F8557CA006D2786 /* LastActivityTableView.xib */; };
+		317B06161F8557CA006D2786 /* LastActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 317B06151F8557CA006D2786 /* LastActivityView.xib */; };
 		317B06191F855815006D2786 /* LastActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 317B06181F855815006D2786 /* LastActivityView.m */; };
 		317B061D1F855A08006D2786 /* ProfileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 317B061C1F855A08006D2786 /* ProfileModel.m */; };
+		317B06201F856047006D2786 /* FriendsProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317B061F1F856047006D2786 /* FriendsProfileViewController.m */; };
 		31972D6C1F7CB9FC008447C2 /* RMBluredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31972D6B1F7CB9FC008447C2 /* RMBluredView.m */; };
 		31972D6F1F7CEB77008447C2 /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 31972D6E1F7CEB77008447C2 /* ImageUtils.m */; };
 		31972D711F7D1582008447C2 /* LibraryEmptySideMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31972D701F7D1582008447C2 /* LibraryEmptySideMenu.xib */; };
@@ -416,11 +417,13 @@
 		317B06101F85577B006D2786 /* LastActivityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LastActivityCell.xib; sourceTree = "<group>"; };
 		317B06121F85579F006D2786 /* LastActivityCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LastActivityCell.h; sourceTree = "<group>"; };
 		317B06131F85579F006D2786 /* LastActivityCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LastActivityCell.m; sourceTree = "<group>"; };
-		317B06151F8557CA006D2786 /* LastActivityTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LastActivityTableView.xib; sourceTree = "<group>"; };
+		317B06151F8557CA006D2786 /* LastActivityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LastActivityView.xib; sourceTree = "<group>"; };
 		317B06171F855815006D2786 /* LastActivityView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LastActivityView.h; sourceTree = "<group>"; };
 		317B06181F855815006D2786 /* LastActivityView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LastActivityView.m; sourceTree = "<group>"; };
 		317B061B1F855A08006D2786 /* ProfileModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileModel.h; sourceTree = "<group>"; };
 		317B061C1F855A08006D2786 /* ProfileModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileModel.m; sourceTree = "<group>"; };
+		317B061E1F856047006D2786 /* FriendsProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendsProfileViewController.h; sourceTree = "<group>"; };
+		317B061F1F856047006D2786 /* FriendsProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendsProfileViewController.m; sourceTree = "<group>"; };
 		31972D6A1F7CB9FC008447C2 /* RMBluredView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMBluredView.h; sourceTree = "<group>"; };
 		31972D6B1F7CB9FC008447C2 /* RMBluredView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMBluredView.m; sourceTree = "<group>"; };
 		31972D6D1F7CEB77008447C2 /* ImageUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
@@ -1304,7 +1307,9 @@
 				3E558C0A1F7AE2F500542B7B /* FriendsContentList.xib */,
 				317B06171F855815006D2786 /* LastActivityView.h */,
 				317B06181F855815006D2786 /* LastActivityView.m */,
-				317B06151F8557CA006D2786 /* LastActivityTableView.xib */,
+				317B06151F8557CA006D2786 /* LastActivityView.xib */,
+				317B061E1F856047006D2786 /* FriendsProfileViewController.h */,
+				317B061F1F856047006D2786 /* FriendsProfileViewController.m */,
 			);
 			name = Friends;
 			sourceTree = "<group>";
@@ -2011,7 +2016,7 @@
 				3E6FE7A71F774A9B00B98AD3 /* LibraryFriendsGamesItem.xib in Resources */,
 				3E36C8031F67198E00537BCA /* LIButton.xib in Resources */,
 				3115C3A41F84F18F0022F8B2 /* QRBuyXenioButton.xib in Resources */,
-				317B06161F8557CA006D2786 /* LastActivityTableView.xib in Resources */,
+				317B06161F8557CA006D2786 /* LastActivityView.xib in Resources */,
 				3ECF3CD31F68A49E005165E5 /* AllStopButton.xib in Resources */,
 				3EBAADE91F75BD6D00890AD1 /* StoreDownloadsView.xib in Resources */,
 				3E88760A1F7418C0001B8374 /* LibraryGamesServersListView.xib in Resources */,
@@ -2214,6 +2219,7 @@
 				3E8A04C51F682E5400579DF8 /* LIButton.m in Sources */,
 				31972D741F7D1755008447C2 /* LibraryEmptySideMenu.m in Sources */,
 				31C3C61E1F83DA5E0070E612 /* PlayerStatusOffline.m in Sources */,
+				317B06201F856047006D2786 /* FriendsProfileViewController.m in Sources */,
 				31B593C11F7C15D400D5B5FC /* FreeButton.m in Sources */,
 				3115C3AE1F84FB760022F8B2 /* BuyGamePaymentMethodTableView.m in Sources */,
 				3E7230FF1F7357C60050A70D /* SettingsContentViewController.m in Sources */,

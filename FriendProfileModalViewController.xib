@@ -98,6 +98,13 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="oTt-VP-Tfa"/>
                                 </constraints>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="qjs-eZ-AXO">
+                                        <connections>
+                                            <action selector="openFriendProfileClick:" target="-2" id="UVe-4y-lVz"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
                                 <color key="fillColor" red="1" green="1" blue="1" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
                             </box>
                             <box boxType="custom" borderWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="GiE-EK-at1">

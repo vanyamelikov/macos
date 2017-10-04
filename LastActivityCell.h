@@ -13,7 +13,7 @@
 
 @property (weak) IBOutlet NSImageView *image;
 @property (weak) IBOutlet NSTextField *activityNameLabel;
-@property (weak) IBOutlet NSTextField *agoTimeLabel;
+@property (weak) IBOutlet NSTextField *lastActivityTime;
 @property (weak) IBOutlet NSTextField *totalTimeLabel;
 
 

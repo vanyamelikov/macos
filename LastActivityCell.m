@@ -12,8 +12,9 @@
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
-    
-    // Drawing code here.
+    [self.image setWantsLayer:YES];
+    [self.image.layer setCornerRadius:10.0f];
+    [self.image.layer setMasksToBounds:YES];
 }
 
 @end

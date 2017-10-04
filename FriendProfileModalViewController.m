@@ -18,5 +18,11 @@
     [super viewDidLoad];
     // Do view setup here.
 }
+- (IBAction)openFriendProfileClick:(NSClickGestureRecognizer *)sender {
+    //openFriendsProfileNotification
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"openFriendsProfileNotification"
+     object:@"background_purchase"];
+}
 
 @end

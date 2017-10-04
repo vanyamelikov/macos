@@ -3,13 +3,13 @@
 #import "StoreSideMenuHeaderCell.h"
 #import "StoreSideMenuModel.h"
 #import <CoreImage/CoreImage.h>
-#import "SelfStatusModalViewController.h"
+#import "LibraryGameModalViewController.h"
 
 @implementation LibraryEmptySideMenu{
     NSMutableArray *dataSourceArray;
     NSInteger preSelectedRow;
     NSPopover *popover;
-    SelfStatusModalViewController *popoverViewController;
+    LibraryGameModalViewController *popoverViewController;
 }
 
 @synthesize delegate;
@@ -21,7 +21,7 @@
     popover = [[NSPopover alloc] init];
     [popover setBehavior: NSPopoverBehaviorTransient];
     [popover setDelegate: self];
-    popoverViewController = [[SelfStatusModalViewController alloc] initWithNibName: @"SelfStatusModalViewController" bundle: nil];
+    popoverViewController = [[LibraryGameModalViewController alloc] initWithNibName: @"LibraryGameModalViewController" bundle: nil];
     [popover setContentViewController: popoverViewController];
     [popover setContentSize: popoverViewController.view.frame.size];
     [popover showRelativeToRect: sender.view.bounds

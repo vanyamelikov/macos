@@ -2,20 +2,20 @@
 #import "LibrarySideMenuCell.h"
 #import "LibrarySideMenuModel.h"
 #import "Colours.h"
-#import "SelfStatusModalViewController.h"
+#import "LibraryGameModalViewController.h"
 
 @implementation LibrarySideMenu {
     NSMutableArray *dataSourceArray;
     NSInteger preSelectedRow;
     NSPopover *popover;
-    SelfStatusModalViewController *popoverViewController;
+    LibraryGameModalViewController *popoverViewController;
 }
 
 - (IBAction)showPopupClick:(NSClickGestureRecognizer *)sender {
     popover = [[NSPopover alloc] init];
     [popover setBehavior: NSPopoverBehaviorTransient];
     [popover setDelegate: self];
-    popoverViewController = [[SelfStatusModalViewController alloc] initWithNibName: @"SelfStatusModalViewController" bundle: nil];
+    popoverViewController = [[LibraryGameModalViewController alloc] initWithNibName: @"LibraryGameModalViewController" bundle: nil];
     [popover setContentViewController: popoverViewController];
     [popover setContentSize: popoverViewController.view.frame.size];
     [popover showRelativeToRect: sender.view.bounds

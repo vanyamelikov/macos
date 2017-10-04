@@ -43,7 +43,7 @@
                                         </textFieldCell>
                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         <prototypeCellViews>
-                                            <customView id="ar0-Nb-66b" customClass="LastActivityCell">
+                                            <customView identifier="LastActivityCell" id="ar0-Nb-66b" customClass="LastActivityCell">
                                                 <rect key="frame" x="1" y="1" width="804" height="105"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             </customView>
