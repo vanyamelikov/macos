@@ -8,6 +8,12 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="PGameInfoController">
             <connections>
+                <outlet property="buyGameMainView" destination="pBB-AJ-o4c" id="GV0-g0-30V"/>
+                <outlet property="buyGameQrView" destination="pkd-D1-tRj" id="zf0-Ri-Bim"/>
+                <outlet property="paymentInformationView" destination="8wP-zy-Vyv" id="Nt4-fX-UBG"/>
+                <outlet property="paymentMethodView" destination="Ik9-5Y-cZz" id="RHA-es-Oxx"/>
+                <outlet property="storeGameInfoView" destination="IWR-zH-nhu" id="vaW-aL-KbN"/>
+                <outlet property="storePurchaseListView" destination="svV-1h-5zZ" id="bow-Zz-320"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -26,14 +32,42 @@
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="pBB-AJ-o4c" customClass="BuyGameMainView">
                     <rect key="frame" x="201" y="0.0" width="453" height="371"/>
                 </customView>
+                <customView identifier="StoreGameInfoView" hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IWR-zH-nhu" customClass="StoreGameInfoView">
+                    <rect key="frame" x="201" y="0.0" width="453" height="371"/>
+                </customView>
+                <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pkd-D1-tRj" customClass="BuyGameQRView">
+                    <rect key="frame" x="0.0" y="0.0" width="654" height="371"/>
+                </customView>
+                <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ik9-5Y-cZz" customClass="BuyGamePaymentMethodView">
+                    <rect key="frame" x="0.0" y="0.0" width="654" height="371"/>
+                </customView>
+                <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8wP-zy-Vyv" customClass="PaymentInformationView">
+                    <rect key="frame" x="0.0" y="0.0" width="654" height="371"/>
+                </customView>
             </subviews>
             <constraints>
+                <constraint firstItem="8wP-zy-Vyv" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="1bl-NY-9hq"/>
+                <constraint firstAttribute="bottom" secondItem="Ik9-5Y-cZz" secondAttribute="bottom" id="1nL-yU-X7H"/>
+                <constraint firstItem="Ik9-5Y-cZz" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="3qo-ZS-zh7"/>
+                <constraint firstAttribute="trailing" secondItem="IWR-zH-nhu" secondAttribute="trailing" id="4p7-Lt-bha"/>
                 <constraint firstItem="pBB-AJ-o4c" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="5bo-AN-fHs"/>
+                <constraint firstItem="IWR-zH-nhu" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="5e3-F4-pkj"/>
+                <constraint firstItem="pkd-D1-tRj" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="AZg-xK-YcS"/>
                 <constraint firstAttribute="trailing" secondItem="pBB-AJ-o4c" secondAttribute="trailing" id="AbS-u0-9fP"/>
+                <constraint firstItem="IWR-zH-nhu" firstAttribute="leading" secondItem="svV-1h-5zZ" secondAttribute="trailing" id="BEo-d0-7cx"/>
                 <constraint firstAttribute="bottom" secondItem="pBB-AJ-o4c" secondAttribute="bottom" id="Bxh-cj-gmx"/>
                 <constraint firstItem="svV-1h-5zZ" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="D5p-6Z-hR6"/>
+                <constraint firstAttribute="trailing" secondItem="Ik9-5Y-cZz" secondAttribute="trailing" id="DcM-Kn-rLY"/>
+                <constraint firstAttribute="trailing" secondItem="8wP-zy-Vyv" secondAttribute="trailing" id="FwW-xw-esG"/>
+                <constraint firstItem="pkd-D1-tRj" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="N2L-Ch-XS2"/>
                 <constraint firstAttribute="bottom" secondItem="svV-1h-5zZ" secondAttribute="bottom" id="Tpz-Gw-Joa"/>
+                <constraint firstAttribute="bottom" secondItem="pkd-D1-tRj" secondAttribute="bottom" id="cIN-SF-ED8"/>
+                <constraint firstAttribute="bottom" secondItem="IWR-zH-nhu" secondAttribute="bottom" id="diW-Dh-6o8"/>
                 <constraint firstItem="svV-1h-5zZ" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="jxX-N2-ho1"/>
+                <constraint firstItem="Ik9-5Y-cZz" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="lFg-vy-rJX"/>
+                <constraint firstAttribute="bottom" secondItem="8wP-zy-Vyv" secondAttribute="bottom" id="oGM-Ze-zZm"/>
+                <constraint firstItem="8wP-zy-Vyv" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="t8f-BJ-N0q"/>
+                <constraint firstAttribute="trailing" secondItem="pkd-D1-tRj" secondAttribute="trailing" id="xSJ-n3-BhF"/>
                 <constraint firstItem="pBB-AJ-o4c" firstAttribute="leading" secondItem="svV-1h-5zZ" secondAttribute="trailing" id="zNt-fe-VMV"/>
             </constraints>
             <point key="canvasLocation" x="147" y="218.5"/>

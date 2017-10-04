@@ -8,6 +8,13 @@
 
 #import "NSView+INSNibLoading.h"
 
+@class BuyGameMainView;
+@protocol BuyGameMainViewDelegate <NSObject>
+- (void) preOrderClick;
+@end
+
 @interface BuyGameMainView : INSNibLoadedView
+
+@property (nonatomic, weak) id <BuyGameMainViewDelegate> delegate;
 
 @end

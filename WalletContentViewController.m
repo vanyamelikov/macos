@@ -59,4 +59,6 @@
     [self.friendImage setImage:[NSImage imageNamed:@"img_cf_a1"]];
 }
 
+
+
 @end

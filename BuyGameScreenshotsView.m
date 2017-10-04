@@ -21,14 +21,12 @@
 -(void)initView {
     self.collectionViewItem = [BuyGameScreenshotItem new];
     
-    self.contents = @[@{@"itemImage":@"screenshot1"},
-                      @{@"itemImage":@"screenshot"},
-                      @{@"itemImage":@"screenshot1"},
-                      @{@"itemImage":@"screenshot"},
-                      @{@"itemImage":@"screenshot1"},
-                      @{@"itemImage":@"screenshot1"},
-                      @{@"itemImage":@"screenshot"},
-                      @{@"itemImage":@"screenshot1"}];
+    self.contents = @[@{@"itemImage":@"img_buy_screen_1"},
+                      @{@"itemImage":@"img_buy_screen_2"},
+                      @{@"itemImage":@"img_buy_screen_3"},
+                      @{@"itemImage":@"img_buy_screen_4"},
+                      @{@"itemImage":@"img_buy_screen_5"},
+                      @{@"itemImage":@"img_buy_screen_6"}];
     [self.collectionView setMaxNumberOfRows:1];
     [self.collectionView setItemPrototype:self.collectionViewItem];
     

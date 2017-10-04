@@ -12,18 +12,11 @@
 #import "LibraryGamesRightMenuHeaderCell.h"
 #import "WalletSideMenuHeaderCell.h"
 #import "Colours.h"
-#import "WalletHistory.h"
-#import "ReceiveView.h"
-#import "NSSplitView+ReplaceView.h"
-#import "WalletSideMenu.h"
+
 
 @implementation WalletSideMenu {
     NSMutableArray *dataSourceArray;
     NSInteger preSelectedRow;
-    WalletHistory *walletHistory;
-    ReceiveView *receiveView;
-    NSSplitView *superSplitView;
-    NSView *walletSend;
 }
 
 @synthesize delegate;
@@ -103,11 +96,6 @@
     [self.tableView setUsesAlternatingRowBackgroundColors:NO];
     [self.tableView setBackgroundColor:[NSColor clearColor]];
     [[self.tableView enclosingScrollView] setDrawsBackground:NO];
-    
-    superSplitView = (NSSplitView *)self.superview.superview.superview;
-    walletHistory = [[WalletHistory alloc] initWithFrame:superSplitView.subviews[1].frame];
-    receiveView = [[ReceiveView alloc] initWithFrame:superSplitView.subviews[1].frame];
-    walletSend = superSplitView.subviews[1];
 }
 
 #pragma mark - TableViewDataSource
@@ -158,18 +146,14 @@
             [preSelectedCellView.label setTextColor:[NSColor colorFromHexString:@"#78819F"]];
         }
         preSelectedRow = index;
+        
+        [[NSNotificationCenter defaultCenter]
+             postNotificationName:@"changeWalletPage"
+             object:[NSString stringWithFormat:@"%ld",index]];
 
 //        if(delegate && [self.delegate respondsToSelector:@selector(itemClicked::)]) {
 //            [self.delegate itemClicked:index:model.title];
 //        }
-        if(index == 2) {
-            [superSplitView replaceSplitViewItemAtIndex:1 withViewController:receiveView];
-        } else if(index == 3) {
-            [superSplitView replaceSplitViewItemAtIndex:1 withViewController:walletHistory];
-        } else {
-            [superSplitView replaceSplitViewItemAtIndex:1 withViewController:walletSend];
-        }
-        [superSplitView setNeedsDisplay:YES];
     }
 }
 

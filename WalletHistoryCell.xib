@@ -31,10 +31,10 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="2xZ-ha-Kz4">
+                            <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="2xZ-ha-Kz4">
                                 <rect key="frame" x="82" y="67" width="2" height="12"/>
                                 <view key="contentView" id="OyM-Zd-e7J">
-                                    <rect key="frame" x="0.0" y="0.0" width="2" height="12"/>
+                                    <rect key="frame" x="1" y="1" width="0.0" height="10"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <constraints>
@@ -98,16 +98,17 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="68U-nh-nsV">
+                            <box boxType="custom" borderWidth="2" cornerRadius="1" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="68U-nh-nsV">
                                 <rect key="frame" x="160" y="27" width="2" height="12"/>
                                 <view key="contentView" id="lKV-5I-ZgF">
-                                    <rect key="frame" x="0.0" y="0.0" width="2" height="12"/>
+                                    <rect key="frame" x="2" y="2" width="0.0" height="8"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="2" id="B4T-mo-arM"/>
                                     <constraint firstAttribute="height" constant="12" id="uEO-K9-Dzy"/>
                                 </constraints>
+                                <color key="borderColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="fillColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                             </box>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D4T-OO-dzZ">

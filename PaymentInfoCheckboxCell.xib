@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PaymentInfoCheckboxCell"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="1137" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Wdb-6X-V4j">
+                    <rect key="frame" x="0.0" y="0.0" width="1137" height="75"/>
+                    <view key="contentView" id="aj5-2y-1k0">
+                        <rect key="frame" x="0.0" y="0.0" width="1137" height="75"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="h8f-QE-oya">
+                                <rect key="frame" x="24" y="27" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="oWi-Nt-nje"/>
+                                    <constraint firstAttribute="height" constant="18" id="wu9-VJ-ly0"/>
+                                </constraints>
+                                <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="a4w-g3-NSR">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yX0-Zc-OxV">
+                                <rect key="frame" x="62" y="29" width="467" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="fFm-zH-aAk"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="I accept the Subscriber Agreement Xenio (last updated January 1, 2017)" id="4O7-VC-Kqu">
+                                    <font key="font" metaFont="system" size="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.34157451919999998" green="0.64983173080000001" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="yX0-Zc-OxV" firstAttribute="centerY" secondItem="aj5-2y-1k0" secondAttribute="centerY" constant="-1" id="8UF-tU-KCO"/>
+                            <constraint firstItem="yX0-Zc-OxV" firstAttribute="leading" secondItem="h8f-QE-oya" secondAttribute="trailing" constant="20" id="Gqi-HW-l0c"/>
+                            <constraint firstItem="h8f-QE-oya" firstAttribute="leading" secondItem="aj5-2y-1k0" secondAttribute="leading" constant="26" id="fJH-Ah-ZZs"/>
+                            <constraint firstItem="h8f-QE-oya" firstAttribute="centerY" secondItem="aj5-2y-1k0" secondAttribute="centerY" id="vei-Gg-SbJ"/>
+                        </constraints>
+                    </view>
+                    <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Wdb-6X-V4j" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="Tse-QF-Vw5"/>
+                <constraint firstItem="Wdb-6X-V4j" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="jwy-Jh-qjs"/>
+                <constraint firstAttribute="bottom" secondItem="Wdb-6X-V4j" secondAttribute="bottom" id="qmQ-ta-Yu7"/>
+                <constraint firstAttribute="trailing" secondItem="Wdb-6X-V4j" secondAttribute="trailing" id="ul2-ZN-Wfk"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>

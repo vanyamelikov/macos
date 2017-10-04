@@ -8,6 +8,12 @@
 
 #import "NSView+INSNibLoading.h"
 
-@interface BuyGameQRView : INSNibLoadedView
+@class BuyGameQRView;
 
+@protocol BuyGameQRViewDelegate <NSObject>
+-(void)continueToPaymentInfo;
+@end
+
+@interface BuyGameQRView : INSNibLoadedView
+@property (nonatomic, weak) id <BuyGameQRViewDelegate> delegate;
 @end

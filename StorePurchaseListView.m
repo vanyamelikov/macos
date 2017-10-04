@@ -15,6 +15,7 @@
 @implementation StorePurchaseListView
 
 @synthesize dataSourceArray;
+@synthesize delegate;
 
 -(void)awakeFromNib {
     [super awakeFromNib];
@@ -70,7 +71,11 @@
 }
 
 -(void)tableViewSelectionDidChange:(NSNotification *)notification {
-    
+    NSInteger index = [self.tableView selectedRow];
+    if(delegate && [self.delegate respondsToSelector:@selector(itemClicked:)])
+    {
+        [self.delegate itemClicked:index];
+    }
 }
 
 @end

@@ -8,6 +8,11 @@
 
 #import "NSView+INSNibLoading.h"
 
-@interface BuyGamePaymentMethodView : INSNibLoadedView
+@class BuyGamePaymentMethodView;
+@protocol BuyGamePaymentMethodViewDelegate <NSObject>
+-(void)continueToLastPage;
+@end
 
+@interface BuyGamePaymentMethodView : INSNibLoadedView
+@property (nonatomic, weak) id<BuyGamePaymentMethodViewDelegate> delegate;
 @end

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="1137" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="xKV-bI-4wG">
+                    <rect key="frame" x="0.0" y="0.0" width="1137" height="75"/>
+                    <view key="contentView" id="5c9-Ei-rca">
+                        <rect key="frame" x="0.0" y="0.0" width="1137" height="75"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PFs-pZ-WoG">
+                                <rect key="frame" x="24" y="27" width="44" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="WRN-ro-ZgX"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Total:" id="dWE-41-MEz">
+                                    <font key="font" metaFont="system" size="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GmE-bQ-xNW">
+                                <rect key="frame" x="934" y="28" width="55" height="19"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="$16.99" id="eRa-dL-k4M">
+                                    <font key="font" metaFont="system" size="16"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="GmE-bQ-xNW" firstAttribute="centerY" secondItem="5c9-Ei-rca" secondAttribute="centerY" id="8iu-xf-Erk"/>
+                            <constraint firstItem="PFs-pZ-WoG" firstAttribute="centerY" secondItem="5c9-Ei-rca" secondAttribute="centerY" constant="-1" id="8qg-AB-jpR"/>
+                            <constraint firstItem="PFs-pZ-WoG" firstAttribute="leading" secondItem="5c9-Ei-rca" secondAttribute="leading" constant="26" id="MCD-bK-Kuz"/>
+                            <constraint firstAttribute="trailing" secondItem="GmE-bQ-xNW" secondAttribute="trailing" constant="150" id="oPn-nH-XIT"/>
+                        </constraints>
+                    </view>
+                    <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xKV-bI-4wG" secondAttribute="trailing" id="3Qg-to-ILM"/>
+                <constraint firstItem="xKV-bI-4wG" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="Fgm-YN-lGY"/>
+                <constraint firstAttribute="bottom" secondItem="xKV-bI-4wG" secondAttribute="bottom" id="Fhb-cJ-loK"/>
+                <constraint firstItem="xKV-bI-4wG" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="fV9-Gv-8KS"/>
+            </constraints>
+            <point key="canvasLocation" x="-248.5" y="69.5"/>
+        </customView>
+    </objects>
+</document>

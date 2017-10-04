@@ -40,9 +40,8 @@
                     </view>
                     <color key="fillColor" red="0.15686274509803921" green="0.1803921568627451" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                 </box>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gDy-ad-jCV">
-                    <rect key="frame" x="45" y="0.0" width="45" height="20"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gDy-ad-jCV">
+                    <rect key="frame" x="44" y="3" width="46" height="16"/>
                     <gestureRecognizers>
                         <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="KBC-yP-Lru">
                             <connections>
@@ -56,9 +55,11 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bZJ-26-gPL">
-                    <rect key="frame" x="0.0" y="0.0" width="45" height="20"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bZJ-26-gPL">
+                    <rect key="frame" x="0.0" y="3" width="45" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="41" id="90A-Ed-TDI"/>
+                    </constraints>
                     <gestureRecognizers>
                         <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="evZ-5t-ltC">
                             <connections>
@@ -73,6 +74,14 @@
                     </textFieldCell>
                 </textField>
             </subviews>
+            <constraints>
+                <constraint firstItem="gDy-ad-jCV" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" constant="-1" id="9HE-Yj-bXQ"/>
+                <constraint firstItem="gDy-ad-jCV" firstAttribute="leading" secondItem="bZJ-26-gPL" secondAttribute="trailing" constant="3" id="Jij-ns-V4S"/>
+                <constraint firstItem="bZJ-26-gPL" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" constant="-1" id="Q1h-AQ-1gi"/>
+                <constraint firstItem="bZJ-26-gPL" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="2" id="SWn-yc-Rpl"/>
+                <constraint firstAttribute="trailing" secondItem="gDy-ad-jCV" secondAttribute="trailing" constant="2" id="bH8-Y2-DUw"/>
+                <constraint firstItem="gDy-ad-jCV" firstAttribute="leading" secondItem="bZJ-26-gPL" secondAttribute="trailing" constant="3" id="vc0-qi-mX7"/>
+            </constraints>
         </customView>
     </objects>
 </document>

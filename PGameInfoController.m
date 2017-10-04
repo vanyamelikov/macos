@@ -19,7 +19,7 @@
 - (id)initWithNibName: (NSString *)nibNameOrNil bundle: (NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if(self) {
-        // Initialization code here.
+        //background_purchase
     }
     
     return self;
@@ -34,12 +34,21 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     NSLog(@"%@ - viewWillAppear: %i", self.title, animated);
-//    NSClickGestureRecognizer *registerClick = [[NSClickGestureRecognizer alloc] initWithTarget:self action:@selector(RegisterAction:)];
-//    [self.RegisterLabel addGestureRecognizer:registerClick];
+    self.storePurchaseListView.delegate = self;
+    self.buyGameMainView.delegate = self;
+    self.buyGameQrView.delegate = self;
+    self.paymentMethodView.delegate = self;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     NSLog(@"%@ - viewDidAppear: %i", self.title, animated);
+    [[NSNotificationCenter defaultCenter]
+         postNotificationName:@"changeBackgroundNotification"
+         object:@"background_purchase"];
+    self.buyGameMainView.hidden = NO;
+    self.storeGameInfoView.hidden = YES;
+    self.buyGameQrView.hidden = YES;
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -49,4 +58,60 @@
 - (void)viewDidDisappear:(BOOL)animated {
     NSLog(@"%@ - viewDidDisappear: %i", self.title, animated);
 }
+- (void)itemClicked:(NSInteger)sender {
+    if(sender == 0) {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:1.5f];
+        self.buyGameMainView.animator.hidden = NO;
+        self.storeGameInfoView.animator.hidden = YES;
+        self.buyGameQrView.animator.hidden = YES;
+        [NSAnimationContext endGrouping];
+    } else if(sender == 1) {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:1.5f];
+        self.buyGameMainView.animator.hidden = YES;
+        self.storeGameInfoView.animator.hidden = NO;
+        self.buyGameQrView.animator.hidden = YES;
+        [NSAnimationContext endGrouping];
+    } else {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:1.5f];
+        self.buyGameMainView.animator.hidden = NO;
+        self.storeGameInfoView.animator.hidden = YES;
+        self.buyGameQrView.animator.hidden = YES;
+        [NSAnimationContext endGrouping];
+    }
+}
+
+- (void)preOrderClick {
+    [NSAnimationContext beginGrouping];
+    [[NSAnimationContext currentContext] setDuration:1.5f];
+    self.buyGameMainView.animator.hidden = YES;
+    self.storeGameInfoView.animator.hidden = YES;
+    self.storePurchaseListView.animator.hidden = YES;
+    self.buyGameQrView.animator.hidden = NO;
+    [NSAnimationContext endGrouping];
+}
+
+- (void)continueToPaymentInfo {
+    
+    
+    [NSAnimationContext beginGrouping];
+    [[NSAnimationContext currentContext] setDuration:1.5f];
+    self.buyGameMainView.animator.hidden = YES;
+    self.storeGameInfoView.animator.hidden = YES;
+    self.buyGameQrView.animator.hidden = YES;
+    self.storePurchaseListView.animator.hidden = YES;
+    self.paymentMethodView.animator.hidden = NO;
+    [NSAnimationContext endGrouping];
+}
+
+- (void)continueToLastPage {
+    [NSAnimationContext beginGrouping];
+    [[NSAnimationContext currentContext] setDuration:1.5f];
+    self.paymentMethodView.animator.hidden = YES;
+    self.paymentInformationView.animator.hidden = NO;
+    [NSAnimationContext endGrouping];
+}
+
 @end

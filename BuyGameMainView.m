@@ -10,10 +10,25 @@
 
 @implementation BuyGameMainView
 
+@synthesize delegate;
+
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
+}
+
+-(void)viewDidMoveToSuperview {
+    [super viewDidMoveToSuperview];
     
-    // Drawing code here.
+}
+
+-(void)viewDidMoveToWindow {
+    [super viewDidMoveToWindow];
+    
+}
+- (IBAction)preOrderButtonClick:(NSClickGestureRecognizer *)sender {
+    if(delegate && [self.delegate respondsToSelector:@selector(preOrderClick)]) {
+        [self.delegate preOrderClick];
+    }
 }
 
 @end

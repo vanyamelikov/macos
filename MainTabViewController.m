@@ -12,7 +12,7 @@
 #import "BottomDownloadBar.h"
 #import <QuartzCore/QuartzCore.h>
 #import "LibraryViewController.h"
-#import "WalletViewController.h"
+#import "WalletMainViewController.h"
 #import "SettingsViewController.h"
 #import "SettingsContentViewController.h"
 #import "FriendsContentViewController.h"
@@ -58,7 +58,7 @@
     LibraryViewController *mainLibraryVC = (LibraryViewController *)[sb2 instantiateControllerWithIdentifier:@"LibraryNavigationViewController"];
     
     NSStoryboard *sb3 = [NSStoryboard storyboardWithName:@"Wallet" bundle:nil];
-    WalletViewController *mainWalletVC = [sb3 instantiateControllerWithIdentifier:@"WalletViewController"];
+    WalletMainViewController *mainWalletVC = [sb3 instantiateControllerWithIdentifier:@"WalletMainViewController"];
     
     NSStoryboard *sb4 = [NSStoryboard storyboardWithName:@"Settings" bundle:nil];
     SettingsContentViewController *mainSettingsVC = (SettingsContentViewController *)[sb4 instantiateControllerWithIdentifier:@"SettingsContentViewController"];
@@ -81,14 +81,25 @@
     [item setView:[mainLibraryVC view]];
     
     item = [[self mainTabView] tabViewItemAtIndex:2];
-    [item setView:[mainWalletVC view]];
+    [item setViewController:mainWalletVC];
     
     item = [[self mainTabView] tabViewItemAtIndex:3];
     [item setView:settingsSplitView];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(changeBackground:)
+                                                 name:@"changeBackgroundNotification"
+                                               object:nil];
 }
 
 -(void)viewWillAppear {
     [super viewWillAppear];
+}
+
+- (void) changeBackground:(NSNotification *) notification
+{
+    if ([[notification name] isEqualToString:@"changeBackgroundNotification"])
+        [self setBackgroundImage:notification.object];
 }
 
 -(void)tabClicked:(NSInteger)sender {
@@ -198,6 +209,15 @@
         [imageView setImage:[NSImage imageNamed:imageName]];
     }
     
+}
+
+- (void) dealloc
+{
+    // If you don't remove yourself as an observer, the Notification Center
+    // will continue to try and send notification objects to the deallocated
+    // object.
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    //[super dealloc];
 }
 
 @end

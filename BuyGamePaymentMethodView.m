@@ -10,10 +10,17 @@
 
 @implementation BuyGamePaymentMethodView
 
+@synthesize delegate;
+
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
     
     // Drawing code here.
+}
+- (IBAction)continueToPaymentInformation:(NSClickGestureRecognizer *)sender {
+    if(delegate && [self.delegate respondsToSelector:@selector(continueToLastPage)]) {
+        [self.delegate continueToLastPage];
+    }
 }
 
 @end

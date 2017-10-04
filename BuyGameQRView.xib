@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BuyGameQRView"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" transparent="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cQ8-yl-Zag">
+                    <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
+                    <view key="contentView" id="jAC-eQ-Dxr">
+                        <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="y3F-lV-b1b">
+                                <rect key="frame" x="607" y="192" width="226" height="29"/>
+                                <subviews>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="Oc5-LP-BZ1" customClass="QRBuyXenioButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="92l-Lu-p5P"/>
+                                            <constraint firstAttribute="height" constant="29" id="Vh7-Aa-JS6"/>
+                                        </constraints>
+                                    </customView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="IQh-lD-tGQ" customClass="QRContinueButton">
+                                        <rect key="frame" x="116" y="0.0" width="110" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="JCC-mg-Raf"/>
+                                            <constraint firstAttribute="height" constant="29" id="edf-hp-j4k"/>
+                                        </constraints>
+                                        <gestureRecognizers>
+                                            <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="dLI-PH-nj1">
+                                                <connections>
+                                                    <action selector="continueButtonClick:" target="-2" id="Q82-bo-t2z"/>
+                                                </connections>
+                                            </clickGestureRecognizer>
+                                        </gestureRecognizers>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="IQh-lD-tGQ" secondAttribute="trailing" id="4Vw-eP-FNU"/>
+                                    <constraint firstItem="Oc5-LP-BZ1" firstAttribute="leading" secondItem="y3F-lV-b1b" secondAttribute="leading" id="51p-b9-IpX"/>
+                                    <constraint firstAttribute="height" constant="29" id="6Tz-AR-J2w"/>
+                                    <constraint firstItem="Oc5-LP-BZ1" firstAttribute="centerY" secondItem="y3F-lV-b1b" secondAttribute="centerY" id="Eul-Ee-uq9"/>
+                                    <constraint firstAttribute="width" constant="226" id="ucx-Ng-DcF"/>
+                                    <constraint firstItem="IQh-lD-tGQ" firstAttribute="centerY" secondItem="y3F-lV-b1b" secondAttribute="centerY" id="wWa-wG-sXq"/>
+                                </constraints>
+                            </customView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TkU-EN-HUd">
+                                <rect key="frame" x="467" y="623" width="506" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rVp-PR-u4R"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="iKy-MO-0fC">
+                                    <font key="font" metaFont="system" size="15"/>
+                                    <string key="title">In your Xenio purse there is not enough money to perform this operation!
+Please refill your xenio account to pay the missing amount.</string>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <box boxType="custom" cornerRadius="10" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="1VW-wY-kC8">
+                                <rect key="frame" x="688" y="702" width="64" height="64"/>
+                                <view key="contentView" id="1FG-xi-6Fw">
+                                    <rect key="frame" x="1" y="1" width="62" height="62"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KPa-Jd-ooe">
+                                            <rect key="frame" x="16" y="16" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="Wml-Rk-6lt"/>
+                                                <constraint firstAttribute="height" constant="30" id="iOC-vj-e4i"/>
+                                            </constraints>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_xno_large" id="r0l-Tn-LQe"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="KPa-Jd-ooe" firstAttribute="centerX" secondItem="1FG-xi-6Fw" secondAttribute="centerX" id="7Vv-eJ-hya"/>
+                                        <constraint firstItem="KPa-Jd-ooe" firstAttribute="centerY" secondItem="1FG-xi-6Fw" secondAttribute="centerY" id="iGQ-WM-yY2"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="FVx-CI-qSH"/>
+                                    <constraint firstAttribute="height" constant="64" id="v2T-Qz-hra"/>
+                                </constraints>
+                                <color key="borderColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </box>
+                            <box boxType="custom" borderWidth="2" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="dRH-8X-ZZN">
+                                <rect key="frame" x="582" y="308" width="275" height="275"/>
+                                <view key="contentView" id="hwO-yM-PhG">
+                                    <rect key="frame" x="2" y="2" width="271" height="271"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PH4-ep-ngV">
+                                            <rect key="frame" x="65" y="65" width="142" height="142"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="142" id="EZC-oN-h0j"/>
+                                                <constraint firstAttribute="width" constant="142" id="rBw-Aj-dPA"/>
+                                            </constraints>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_qr" id="KcM-wD-5Rm"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="PH4-ep-ngV" firstAttribute="centerX" secondItem="hwO-yM-PhG" secondAttribute="centerX" id="Fia-oA-VMa"/>
+                                        <constraint firstItem="PH4-ep-ngV" firstAttribute="centerY" secondItem="hwO-yM-PhG" secondAttribute="centerY" id="llh-S4-zkO"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="233-uZ-BwS"/>
+                                    <constraint firstAttribute="height" constant="275" id="GUm-a9-Mzm"/>
+                                </constraints>
+                                <color key="borderColor" red="0.91372549020000005" green="0.92549019610000005" blue="0.95294117649999999" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                            </box>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="byQ-U9-A66">
+                                <rect key="frame" x="670" y="272" width="100" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="e4S-wP-hjE"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Xenio address:" id="bpL-Bt-zHh">
+                                    <font key="font" metaFont="system" size="14"/>
+                                    <color key="textColor" red="0.3411764706" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="egN-mF-iRU">
+                                <rect key="frame" x="574" y="246" width="293" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="7BA-vB-LbR"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="3AiGej11G8jUXvEBPvQKPLiHXC7ruUCp1Z" id="h1r-u2-E8U">
+                                    <font key="font" metaFont="systemBold" size="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1VW-wY-kC8" firstAttribute="centerX" secondItem="jAC-eQ-Dxr" secondAttribute="centerX" id="65c-yh-v3c"/>
+                            <constraint firstItem="egN-mF-iRU" firstAttribute="top" secondItem="byQ-U9-A66" secondAttribute="bottom" constant="8" id="A44-hI-Jaa"/>
+                            <constraint firstItem="egN-mF-iRU" firstAttribute="centerX" secondItem="jAC-eQ-Dxr" secondAttribute="centerX" id="DKH-z6-Wty"/>
+                            <constraint firstItem="TkU-EN-HUd" firstAttribute="centerX" secondItem="jAC-eQ-Dxr" secondAttribute="centerX" id="ESE-7H-LK0"/>
+                            <constraint firstItem="byQ-U9-A66" firstAttribute="centerX" secondItem="jAC-eQ-Dxr" secondAttribute="centerX" id="Xtj-Wp-Cc4"/>
+                            <constraint firstItem="dRH-8X-ZZN" firstAttribute="top" secondItem="TkU-EN-HUd" secondAttribute="bottom" constant="40" id="ZEi-bv-Upy"/>
+                            <constraint firstItem="y3F-lV-b1b" firstAttribute="top" secondItem="egN-mF-iRU" secondAttribute="bottom" constant="25" id="jbn-xs-t23"/>
+                            <constraint firstItem="byQ-U9-A66" firstAttribute="top" secondItem="hwO-yM-PhG" secondAttribute="bottom" constant="20" id="lKr-Eg-gEh"/>
+                            <constraint firstItem="y3F-lV-b1b" firstAttribute="centerX" secondItem="jAC-eQ-Dxr" secondAttribute="centerX" id="pd8-or-1uE"/>
+                            <constraint firstItem="TkU-EN-HUd" firstAttribute="top" secondItem="1FG-xi-6Fw" secondAttribute="bottom" constant="40" id="qHm-0K-Yf4"/>
+                            <constraint firstItem="1VW-wY-kC8" firstAttribute="top" secondItem="jAC-eQ-Dxr" secondAttribute="top" constant="74" id="srb-me-e1y"/>
+                            <constraint firstItem="dRH-8X-ZZN" firstAttribute="centerX" secondItem="jAC-eQ-Dxr" secondAttribute="centerX" id="z0c-S5-cZo"/>
+                        </constraints>
+                    </view>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cQ8-yl-Zag" secondAttribute="trailing" id="ASd-kB-i9d"/>
+                <constraint firstAttribute="bottom" secondItem="cQ8-yl-Zag" secondAttribute="bottom" id="UcC-EJ-duT"/>
+                <constraint firstItem="cQ8-yl-Zag" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="nYX-mB-0Uh"/>
+                <constraint firstItem="cQ8-yl-Zag" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="qye-IR-dMK"/>
+            </constraints>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_xno_large" width="30" height="30"/>
+        <image name="img_qr" width="284" height="284"/>
+    </resources>
+</document>

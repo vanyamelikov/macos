@@ -14,22 +14,23 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="eWS-y7-bGy" customClass="WalletHistoryView">
-                    <rect key="frame" x="0.0" y="0.0" width="1440" height="620"/>
+                    <rect key="frame" x="26" y="100" width="1388" height="661"/>
                     <subviews>
-                        <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="108" horizontalPageScroll="10" verticalLineScroll="108" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="UK7-cO-2aD">
-                            <rect key="frame" x="0.0" y="0.0" width="1440" height="620"/>
-                            <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Akx-OC-CWV">
-                                <rect key="frame" x="0.0" y="0.0" width="1440" height="620"/>
+                        <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="108" horizontalPageScroll="10" verticalLineScroll="108" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="UK7-cO-2aD">
+                            <rect key="frame" x="26" y="241" width="1388" height="559"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="Akx-OC-CWV">
+                                <rect key="frame" x="0.0" y="0.0" width="1388" height="559"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="103" rowSizeStyle="automatic" viewBased="YES" floatsGroupRows="NO" id="C88-Ak-Edo">
-                                        <rect key="frame" x="0.0" y="0.0" width="1440" height="620"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1388" height="559"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <size key="intercellSpacing" width="3" height="5"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <color key="gridColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <tableColumns>
-                                            <tableColumn editable="NO" width="1437" minWidth="40" maxWidth="2600" id="etK-GK-ud1">
+                                            <tableColumn editable="NO" width="1385" minWidth="40" maxWidth="2600" id="etK-GK-ud1">
                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                     <font key="font" metaFont="smallSystem"/>
                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -43,7 +44,7 @@
                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                 <prototypeCellViews>
                                                     <customView identifier="WalletHistoryCell" focusRingType="none" id="o4n-R3-rcF" customClass="WalletHistoryCell">
-                                                        <rect key="frame" x="1" y="2" width="1437" height="103"/>
+                                                        <rect key="frame" x="1" y="2" width="1385" height="103"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     </customView>
                                                 </prototypeCellViews>
@@ -63,12 +64,6 @@
                             </scroller>
                         </scrollView>
                     </subviews>
-                    <constraints>
-                        <constraint firstItem="UK7-cO-2aD" firstAttribute="top" secondItem="eWS-y7-bGy" secondAttribute="top" id="2k4-eA-CsN"/>
-                        <constraint firstAttribute="bottom" secondItem="UK7-cO-2aD" secondAttribute="bottom" id="kxj-Qw-8S5"/>
-                        <constraint firstAttribute="trailing" secondItem="UK7-cO-2aD" secondAttribute="trailing" id="v7f-7G-5Nm"/>
-                        <constraint firstItem="UK7-cO-2aD" firstAttribute="leading" secondItem="eWS-y7-bGy" secondAttribute="leading" id="yI4-4s-Ush"/>
-                    </constraints>
                 </customView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ydi-dC-mmM">
                     <rect key="frame" x="24" y="797" width="79" height="30"/>
@@ -84,11 +79,11 @@
             </subviews>
             <constraints>
                 <constraint firstItem="Ydi-dC-mmM" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="13" id="981-wO-BVw"/>
-                <constraint firstAttribute="trailing" secondItem="eWS-y7-bGy" secondAttribute="trailing" id="OmP-xo-ePJ"/>
-                <constraint firstItem="eWS-y7-bGy" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="Opu-tZ-cyu"/>
+                <constraint firstAttribute="trailing" secondItem="eWS-y7-bGy" secondAttribute="trailing" constant="26" id="K7G-u7-gCA"/>
                 <constraint firstItem="Ydi-dC-mmM" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="26" id="PIt-0Q-OzL"/>
-                <constraint firstItem="eWS-y7-bGy" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="220" id="aXG-7V-saY"/>
-                <constraint firstAttribute="bottom" secondItem="eWS-y7-bGy" secondAttribute="bottom" id="ffQ-Tf-xU0"/>
+                <constraint firstItem="eWS-y7-bGy" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="26" id="ljO-JB-CGE"/>
+                <constraint firstItem="eWS-y7-bGy" firstAttribute="top" secondItem="Ydi-dC-mmM" secondAttribute="bottom" constant="36" id="veV-2p-Dng"/>
+                <constraint firstAttribute="bottom" secondItem="eWS-y7-bGy" secondAttribute="bottom" constant="100" id="w7i-Eo-qPN"/>
             </constraints>
         </customView>
     </objects>

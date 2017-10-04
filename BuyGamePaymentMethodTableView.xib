@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BuyGamePaymentMethodTableView">
+            <connections>
+                <outlet property="tableView" destination="M9D-zJ-p7g" id="wlF-YP-JgZ"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="1144" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="q3D-do-vEF">
+                    <rect key="frame" x="0.0" y="0.0" width="1144" height="95"/>
+                    <view key="contentView" id="u8f-3m-Glt">
+                        <rect key="frame" x="0.0" y="0.0" width="1144" height="95"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="96" horizontalPageScroll="10" verticalLineScroll="96" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="9DC-R8-hEl">
+                                <rect key="frame" x="0.0" y="0.0" width="1142" height="95"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="xPO-M8-j1r">
+                                    <rect key="frame" x="0.0" y="0.0" width="1142" height="95"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="91" rowSizeStyle="automatic" viewBased="YES" floatsGroupRows="NO" id="M9D-zJ-p7g">
+                                            <rect key="frame" x="0.0" y="0.0" width="1142" height="96"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <size key="intercellSpacing" width="3" height="5"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <color key="gridColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <tableColumns>
+                                                <tableColumn editable="NO" width="1139" minWidth="40" maxWidth="2600" id="Fj2-f0-jeL">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="oWy-aM-AXi">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <prototypeCellViews>
+                                                        <customView identifier="PaymentInformationGameCell" focusRingType="none" id="4Fv-WG-T5S" customClass="PaymentInformationGameCell">
+                                                            <rect key="frame" x="1" y="2" width="1139" height="91"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        </customView>
+                                                    </prototypeCellViews>
+                                                </tableColumn>
+                                            </tableColumns>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="nxS-VV-UmQ">
+                                    <rect key="frame" x="-100" y="-100" width="223" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="KcT-qs-ZQj">
+                                    <rect key="frame" x="-100" y="-100" width="15" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="9DC-R8-hEl" firstAttribute="leading" secondItem="u8f-3m-Glt" secondAttribute="leading" id="8Cs-mx-tHo"/>
+                            <constraint firstItem="9DC-R8-hEl" firstAttribute="top" secondItem="u8f-3m-Glt" secondAttribute="top" id="KME-bx-shd"/>
+                            <constraint firstAttribute="trailing" secondItem="9DC-R8-hEl" secondAttribute="trailing" constant="2" id="RHp-97-6p8"/>
+                            <constraint firstAttribute="bottom" secondItem="9DC-R8-hEl" secondAttribute="bottom" id="gVK-Xd-e9V"/>
+                        </constraints>
+                    </view>
+                    <color key="fillColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="q3D-do-vEF" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="3g0-pY-Hgj"/>
+                <constraint firstItem="q3D-do-vEF" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="TyZ-U4-Dob"/>
+                <constraint firstAttribute="trailing" secondItem="q3D-do-vEF" secondAttribute="trailing" id="Yxb-36-XeX"/>
+                <constraint firstAttribute="bottom" secondItem="q3D-do-vEF" secondAttribute="bottom" id="vvO-Tg-oSD"/>
+            </constraints>
+            <point key="canvasLocation" x="471" y="79.5"/>
+        </customView>
+    </objects>
+</document>

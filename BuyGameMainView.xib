@@ -141,6 +141,13 @@
                                     <constraint firstAttribute="height" constant="33" id="MPG-DA-D7Z"/>
                                     <constraint firstAttribute="width" constant="116" id="q4F-8k-qeN"/>
                                 </constraints>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="tyj-J6-CiA">
+                                        <connections>
+                                            <action selector="preOrderButtonClick:" target="-2" id="xuD-Uw-siv"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
                             </customView>
                             <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="KB1-dM-952">
                                 <rect key="frame" x="203" y="71" width="78" height="25"/>

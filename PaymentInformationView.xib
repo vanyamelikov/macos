@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PaymentInformationView"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="1440" height="810"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="stm-3V-uef">
+                    <rect key="frame" x="0.0" y="0.0" width="1440" height="810"/>
+                    <view key="contentView" id="RdN-pT-yzf">
+                        <rect key="frame" x="0.0" y="0.0" width="1440" height="810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                </box>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="io8-Yk-JAq" customClass="PaymentInformationTableView">
+                    <rect key="frame" x="26" y="65" width="1388" height="675"/>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s4c-y5-4qN">
+                    <rect key="frame" x="55" y="766" width="193" height="24"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Payment Information" id="liu-xq-ZEE">
+                        <font key="font" metaFont="system" size="20"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BLK-cF-ym0">
+                    <rect key="frame" x="26" y="768" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="2c7-OX-MGC"/>
+                        <constraint firstAttribute="height" constant="16" id="uVZ-4e-cV7"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_arrow" id="9Ha-Cf-tcP"/>
+                </imageView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="g2y-t0-tyj" customClass="PayNowButton">
+                    <rect key="frame" x="1304" y="26" width="110" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="PrZ-cI-BP1"/>
+                        <constraint firstAttribute="width" constant="110" id="z8C-12-4XX"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="stm-3V-uef" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="1Kr-oV-Du1"/>
+                <constraint firstItem="BLK-cF-ym0" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="26" id="5b9-nA-0Le"/>
+                <constraint firstItem="io8-Yk-JAq" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="26" id="8Ub-oh-Jir"/>
+                <constraint firstAttribute="bottom" secondItem="g2y-t0-tyj" secondAttribute="bottom" constant="26" id="CVS-K0-heI"/>
+                <constraint firstAttribute="trailing" secondItem="io8-Yk-JAq" secondAttribute="trailing" constant="26" id="CfO-ed-LHt"/>
+                <constraint firstAttribute="trailing" secondItem="stm-3V-uef" secondAttribute="trailing" id="EYT-HO-m31"/>
+                <constraint firstAttribute="bottom" secondItem="stm-3V-uef" secondAttribute="bottom" id="Jnj-xu-ivd"/>
+                <constraint firstItem="stm-3V-uef" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="N62-ko-tnX"/>
+                <constraint firstItem="io8-Yk-JAq" firstAttribute="top" secondItem="s4c-y5-4qN" secondAttribute="bottom" constant="26" id="c90-vL-8Yu"/>
+                <constraint firstItem="g2y-t0-tyj" firstAttribute="top" secondItem="io8-Yk-JAq" secondAttribute="bottom" constant="10" id="oyR-hL-p2n"/>
+                <constraint firstItem="s4c-y5-4qN" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="20" id="sXZ-Sa-Anw"/>
+                <constraint firstItem="g2y-t0-tyj" firstAttribute="trailing" secondItem="io8-Yk-JAq" secondAttribute="trailing" id="va5-Sl-6AM"/>
+                <constraint firstItem="BLK-cF-ym0" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="26" id="yYS-kr-KlO"/>
+                <constraint firstItem="s4c-y5-4qN" firstAttribute="leading" secondItem="BLK-cF-ym0" secondAttribute="trailing" constant="15" id="zvO-GD-Lib"/>
+            </constraints>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_arrow" width="16" height="11"/>
+    </resources>
+</document>

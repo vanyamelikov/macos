@@ -8,10 +8,16 @@
 
 #import "NSView+INSNibLoading.h"
 
+@class StorePurchaseListView;
+@protocol StorePurchaseListViewDelegate <NSObject>
+- (void) itemClicked: (NSInteger) sender;
+@end
+
 @interface StorePurchaseListView : INSNibLoadedView <NSTableViewDelegate, NSTableViewDataSource>
 
 @property (strong) IBOutlet NSTableView *tableView;
 @property (nonatomic) NSMutableArray *dataSourceArray;
 
+@property (nonatomic, weak) id <StorePurchaseListViewDelegate> delegate;
 
 @end
