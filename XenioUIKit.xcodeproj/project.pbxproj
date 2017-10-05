@@ -67,6 +67,10 @@
 		317B06191F855815006D2786 /* LastActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 317B06181F855815006D2786 /* LastActivityView.m */; };
 		317B061D1F855A08006D2786 /* ProfileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 317B061C1F855A08006D2786 /* ProfileModel.m */; };
 		317B06201F856047006D2786 /* FriendsProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317B061F1F856047006D2786 /* FriendsProfileViewController.m */; };
+		317B06221F856B1D006D2786 /* FriendsRequestModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 317B06211F856B1D006D2786 /* FriendsRequestModalView.xib */; };
+		317B06251F856D71006D2786 /* FriendsRequestModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 317B06241F856D71006D2786 /* FriendsRequestModalView.m */; };
+		317B062B1F8572D3006D2786 /* JMOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 317B06271F8572D2006D2786 /* JMOverlayView.m */; };
+		317B062C1F8572D3006D2786 /* JMModalOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 317B06281F8572D3006D2786 /* JMModalOverlay.m */; };
 		31972D6C1F7CB9FC008447C2 /* RMBluredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31972D6B1F7CB9FC008447C2 /* RMBluredView.m */; };
 		31972D6F1F7CEB77008447C2 /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 31972D6E1F7CEB77008447C2 /* ImageUtils.m */; };
 		31972D711F7D1582008447C2 /* LibraryEmptySideMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31972D701F7D1582008447C2 /* LibraryEmptySideMenu.xib */; };
@@ -115,6 +119,20 @@
 		31C3C6331F83F7030070E612 /* FriendProfileModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C3C6321F83F7030070E612 /* FriendProfileModalView.xib */; };
 		31C3C6351F83F7180070E612 /* SelfStatusModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C3C6341F83F7180070E612 /* SelfStatusModalView.xib */; };
 		31C3C6371F83F7290070E612 /* WalletAddressModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31C3C6361F83F7290070E612 /* WalletAddressModalView.xib */; };
+		31D462621F859A03001E3AC6 /* WebsiteButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D462611F859A03001E3AC6 /* WebsiteButton.xib */; };
+		31D462651F859A57001E3AC6 /* WebsiteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D462641F859A57001E3AC6 /* WebsiteButton.m */; };
+		31D462681F85A6FE001E3AC6 /* ShowFriendsRequestBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D462671F85A6FE001E3AC6 /* ShowFriendsRequestBox.m */; };
+		31D4627C1F85B309001E3AC6 /* ChatMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D4626B1F85B309001E3AC6 /* ChatMessageModel.m */; };
+		31D4627D1F85B309001E3AC6 /* ChatMsgInItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D4626C1F85B309001E3AC6 /* ChatMsgInItem.m */; };
+		31D4627E1F85B309001E3AC6 /* ChatMsgOutItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D4626D1F85B309001E3AC6 /* ChatMsgOutItem.xib */; };
+		31D4627F1F85B309001E3AC6 /* ChatMsgLiveItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D4626E1F85B309001E3AC6 /* ChatMsgLiveItem.xib */; };
+		31D462801F85B309001E3AC6 /* ChatMsgOutItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D462701F85B309001E3AC6 /* ChatMsgOutItem.m */; };
+		31D462811F85B309001E3AC6 /* ChatMsgInItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D462711F85B309001E3AC6 /* ChatMsgInItem.xib */; };
+		31D462821F85B309001E3AC6 /* ChatMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D462721F85B309001E3AC6 /* ChatMainView.xib */; };
+		31D462831F85B309001E3AC6 /* ChatMsgLiveItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D462771F85B309001E3AC6 /* ChatMsgLiveItem.m */; };
+		31D462841F85B309001E3AC6 /* ChatSmallView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D462781F85B309001E3AC6 /* ChatSmallView.xib */; };
+		31D462851F85B309001E3AC6 /* ChatMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D462791F85B309001E3AC6 /* ChatMainView.m */; };
+		31D462861F85B30A001E3AC6 /* ChatSmallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D4627B1F85B309001E3AC6 /* ChatSmallView.m */; };
 		31DAB2F51F7DFBB7006E326E /* NSPopover+MISSINGBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DAB2F41F7DFBB7006E326E /* NSPopover+MISSINGBackgroundView.m */; };
 		31E4F7421F7E9E5E0047B843 /* PaymentInformationTotalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E4F7311F7E9E5C0047B843 /* PaymentInformationTotalCell.m */; };
 		31E4F7441F7E9E5E0047B843 /* PaymentInformationGameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E4F7341F7E9E5C0047B843 /* PaymentInformationGameCell.m */; };
@@ -424,6 +442,14 @@
 		317B061C1F855A08006D2786 /* ProfileModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileModel.m; sourceTree = "<group>"; };
 		317B061E1F856047006D2786 /* FriendsProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendsProfileViewController.h; sourceTree = "<group>"; };
 		317B061F1F856047006D2786 /* FriendsProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendsProfileViewController.m; sourceTree = "<group>"; };
+		317B06211F856B1D006D2786 /* FriendsRequestModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsRequestModalView.xib; sourceTree = "<group>"; };
+		317B06231F856D71006D2786 /* FriendsRequestModalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendsRequestModalView.h; sourceTree = "<group>"; };
+		317B06241F856D71006D2786 /* FriendsRequestModalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendsRequestModalView.m; sourceTree = "<group>"; };
+		317B06271F8572D2006D2786 /* JMOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMOverlayView.m; path = JMModalOverlay/JMOverlayView.m; sourceTree = "<group>"; };
+		317B06281F8572D3006D2786 /* JMModalOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JMModalOverlay.m; path = JMModalOverlay/JMModalOverlay.m; sourceTree = "<group>"; };
+		317B06291F8572D3006D2786 /* JMModalOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMModalOverlay.h; path = JMModalOverlay/JMModalOverlay.h; sourceTree = "<group>"; };
+		317B062A1F8572D3006D2786 /* JMOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JMOverlayView.h; path = JMModalOverlay/JMOverlayView.h; sourceTree = "<group>"; };
+		317B062D1F857456006D2786 /* Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Version.h; path = JMModalOverlay/Version.h; sourceTree = "<group>"; };
 		31972D6A1F7CB9FC008447C2 /* RMBluredView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMBluredView.h; sourceTree = "<group>"; };
 		31972D6B1F7CB9FC008447C2 /* RMBluredView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMBluredView.m; sourceTree = "<group>"; };
 		31972D6D1F7CEB77008447C2 /* ImageUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
@@ -500,6 +526,28 @@
 		31C3C6321F83F7030070E612 /* FriendProfileModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendProfileModalView.xib; sourceTree = "<group>"; };
 		31C3C6341F83F7180070E612 /* SelfStatusModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelfStatusModalView.xib; sourceTree = "<group>"; };
 		31C3C6361F83F7290070E612 /* WalletAddressModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletAddressModalView.xib; sourceTree = "<group>"; };
+		31D462611F859A03001E3AC6 /* WebsiteButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebsiteButton.xib; sourceTree = "<group>"; };
+		31D462631F859A57001E3AC6 /* WebsiteButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebsiteButton.h; sourceTree = "<group>"; };
+		31D462641F859A57001E3AC6 /* WebsiteButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebsiteButton.m; sourceTree = "<group>"; };
+		31D462661F85A6FE001E3AC6 /* ShowFriendsRequestBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowFriendsRequestBox.h; sourceTree = "<group>"; };
+		31D462671F85A6FE001E3AC6 /* ShowFriendsRequestBox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowFriendsRequestBox.m; sourceTree = "<group>"; };
+		31D4626B1F85B309001E3AC6 /* ChatMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatMessageModel.m; sourceTree = "<group>"; };
+		31D4626C1F85B309001E3AC6 /* ChatMsgInItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatMsgInItem.m; sourceTree = "<group>"; };
+		31D4626D1F85B309001E3AC6 /* ChatMsgOutItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatMsgOutItem.xib; sourceTree = "<group>"; };
+		31D4626E1F85B309001E3AC6 /* ChatMsgLiveItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatMsgLiveItem.xib; sourceTree = "<group>"; };
+		31D4626F1F85B309001E3AC6 /* ChatSmallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatSmallView.h; sourceTree = "<group>"; };
+		31D462701F85B309001E3AC6 /* ChatMsgOutItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatMsgOutItem.m; sourceTree = "<group>"; };
+		31D462711F85B309001E3AC6 /* ChatMsgInItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatMsgInItem.xib; sourceTree = "<group>"; };
+		31D462721F85B309001E3AC6 /* ChatMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatMainView.xib; sourceTree = "<group>"; };
+		31D462731F85B309001E3AC6 /* ChatMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatMessageModel.h; sourceTree = "<group>"; };
+		31D462741F85B309001E3AC6 /* ChatMsgOutItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatMsgOutItem.h; sourceTree = "<group>"; };
+		31D462751F85B309001E3AC6 /* ChatMsgInItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatMsgInItem.h; sourceTree = "<group>"; };
+		31D462761F85B309001E3AC6 /* ChatMsgLiveItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatMsgLiveItem.h; sourceTree = "<group>"; };
+		31D462771F85B309001E3AC6 /* ChatMsgLiveItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatMsgLiveItem.m; sourceTree = "<group>"; };
+		31D462781F85B309001E3AC6 /* ChatSmallView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatSmallView.xib; sourceTree = "<group>"; };
+		31D462791F85B309001E3AC6 /* ChatMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatMainView.m; sourceTree = "<group>"; };
+		31D4627A1F85B309001E3AC6 /* ChatMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatMainView.h; sourceTree = "<group>"; };
+		31D4627B1F85B309001E3AC6 /* ChatSmallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatSmallView.m; sourceTree = "<group>"; };
 		31DAB2F31F7DFBB7006E326E /* NSPopover+MISSINGBackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSPopover+MISSINGBackgroundView.h"; sourceTree = "<group>"; };
 		31DAB2F41F7DFBB7006E326E /* NSPopover+MISSINGBackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSPopover+MISSINGBackgroundView.m"; sourceTree = "<group>"; };
 		31E4F72F1F7E9E5B0047B843 /* PaymentInfoCheckboxCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaymentInfoCheckboxCell.h; path = PaymentInformation/PaymentInfoCheckboxCell.h; sourceTree = "<group>"; };
@@ -1017,6 +1065,37 @@
 			name = ModalViews;
 			sourceTree = "<group>";
 		};
+		31D462601F8580E2001E3AC6 /* Downloads */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Downloads;
+			sourceTree = "<group>";
+		};
+		31D4626A1F85B2A4001E3AC6 /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				31D4627A1F85B309001E3AC6 /* ChatMainView.h */,
+				31D462791F85B309001E3AC6 /* ChatMainView.m */,
+				31D462721F85B309001E3AC6 /* ChatMainView.xib */,
+				31D462731F85B309001E3AC6 /* ChatMessageModel.h */,
+				31D4626B1F85B309001E3AC6 /* ChatMessageModel.m */,
+				31D462751F85B309001E3AC6 /* ChatMsgInItem.h */,
+				31D4626C1F85B309001E3AC6 /* ChatMsgInItem.m */,
+				31D462711F85B309001E3AC6 /* ChatMsgInItem.xib */,
+				31D462761F85B309001E3AC6 /* ChatMsgLiveItem.h */,
+				31D462771F85B309001E3AC6 /* ChatMsgLiveItem.m */,
+				31D4626E1F85B309001E3AC6 /* ChatMsgLiveItem.xib */,
+				31D462741F85B309001E3AC6 /* ChatMsgOutItem.h */,
+				31D462701F85B309001E3AC6 /* ChatMsgOutItem.m */,
+				31D4626D1F85B309001E3AC6 /* ChatMsgOutItem.xib */,
+				31D4626F1F85B309001E3AC6 /* ChatSmallView.h */,
+				31D4627B1F85B309001E3AC6 /* ChatSmallView.m */,
+				31D462781F85B309001E3AC6 /* ChatSmallView.xib */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
 		31DAB2F21F7DFB9A006E326E /* Popover */ = {
 			isa = PBXGroup;
 			children = (
@@ -1310,6 +1389,9 @@
 				317B06151F8557CA006D2786 /* LastActivityView.xib */,
 				317B061E1F856047006D2786 /* FriendsProfileViewController.h */,
 				317B061F1F856047006D2786 /* FriendsProfileViewController.m */,
+				317B06211F856B1D006D2786 /* FriendsRequestModalView.xib */,
+				317B06231F856D71006D2786 /* FriendsRequestModalView.h */,
+				317B06241F856D71006D2786 /* FriendsRequestModalView.m */,
 			);
 			name = Friends;
 			sourceTree = "<group>";
@@ -1622,6 +1704,7 @@
 				3E7230911F72D8860050A70D /* Wallet */,
 				3E7230A41F7346020050A70D /* Friends */,
 				3E7230A51F7346260050A70D /* Settings */,
+				31D462601F8580E2001E3AC6 /* Downloads */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -1740,6 +1823,11 @@
 		3ECF3CAE1F686869005165E5 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				317B062D1F857456006D2786 /* Version.h */,
+				317B06291F8572D3006D2786 /* JMModalOverlay.h */,
+				317B06281F8572D3006D2786 /* JMModalOverlay.m */,
+				317B062A1F8572D3006D2786 /* JMOverlayView.h */,
+				317B06271F8572D2006D2786 /* JMOverlayView.m */,
 				31B07ED01F80CC6500B6BCCA /* NSImage+MGCropExtensions.h */,
 				31B07ECF1F80CC6500B6BCCA /* NSImage+MGCropExtensions.m */,
 				3E6FE80E1F78883A00B98AD3 /* NSView+Fade.h */,
@@ -1757,6 +1845,7 @@
 		3ECF3CAF1F686883005165E5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				31D4626A1F85B2A4001E3AC6 /* ChatView */,
 				3115C3721F842EDF0022F8B2 /* CustomPopover */,
 				31C3C62B1F83F6B00070E612 /* ModalViews */,
 				31F1555D1F82EBD20070B256 /* XenioBackgroundView */,
@@ -1784,6 +1873,8 @@
 				315947271F7C99D80073FA52 /* SplitViewWithDivider.m */,
 				31F155551F82AEC80070B256 /* CustomOutlineView.h */,
 				31F155561F82AEC80070B256 /* CustomOutlineView.m */,
+				31D462661F85A6FE001E3AC6 /* ShowFriendsRequestBox.h */,
+				31D462671F85A6FE001E3AC6 /* ShowFriendsRequestBox.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -1849,6 +1940,8 @@
 				3115C3A11F84EFFA0022F8B2 /* QRContinueButton.m */,
 				3115C3A51F84F1B40022F8B2 /* QRBuyXenioButton.h */,
 				3115C3A61F84F1B40022F8B2 /* QRBuyXenioButton.m */,
+				31D462631F859A57001E3AC6 /* WebsiteButton.h */,
+				31D462641F859A57001E3AC6 /* WebsiteButton.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1885,6 +1978,7 @@
 				3115C3651F8407FE0022F8B2 /* SpecialPriceButton.xib */,
 				3115C39E1F84EFC90022F8B2 /* QRContinueButton.xib */,
 				3115C3A31F84F18F0022F8B2 /* QRBuyXenioButton.xib */,
+				31D462611F859A03001E3AC6 /* WebsiteButton.xib */,
 			);
 			name = Buttons;
 			sourceTree = "<group>";
@@ -2009,6 +2103,7 @@
 				3115C3611F8404DD0022F8B2 /* StorePurchaseListView.xib in Resources */,
 				3E6FE7CF1F7793CE00B98AD3 /* WalletChooseFriendCollectionView.xib in Resources */,
 				31C3C6141F83D8C00070E612 /* PlayerStatusWantsToPlay.xib in Resources */,
+				31D462841F85B309001E3AC6 /* ChatSmallView.xib in Resources */,
 				3E558BFC1F79D53200542B7B /* StoreMainGridView.xib in Resources */,
 				31B07F431F81B12300B6BCCA /* PayNowButton.xib in Resources */,
 				3E1FF8E61F6AC4F700117F16 /* CustomTabbar.xib in Resources */,
@@ -2031,6 +2126,7 @@
 				31B593C31F7C194B00D5B5FC /* StoreTabView.xib in Resources */,
 				3E7230B01F734A070050A70D /* StoreSideMenu.xib in Resources */,
 				3EBAADCB1F75922700890AD1 /* LibraryGamesServerListHeaderCell.xib in Resources */,
+				31D462821F85B309001E3AC6 /* ChatMainView.xib in Resources */,
 				3159471C1F7C6B190073FA52 /* BottomDownloadBar.xib in Resources */,
 				3ECF3CF21F6979A2005165E5 /* SendMessageButton.xib in Resources */,
 				3ECF3CC11F6884B1005165E5 /* PreOrderButton.xib in Resources */,
@@ -2042,17 +2138,20 @@
 				31F1554A1F81FE9F0070B256 /* CustomSwitch.xib in Resources */,
 				31E4F74D1F7E9E5E0047B843 /* PaymentInformationTableView.xib in Resources */,
 				3E558C0B1F7AE2F500542B7B /* FriendsContentList.xib in Resources */,
+				31D462621F859A03001E3AC6 /* WebsiteButton.xib in Resources */,
 				3E8876521F74ABB2001B8374 /* FriendsRightListCell.xib in Resources */,
 				31B07ECE1F80ACCB00B6BCCA /* CustomSearchBar.xib in Resources */,
 				3E88763B1F749462001B8374 /* FriendsContentViewListCell.xib in Resources */,
 				3115C36B1F841B810022F8B2 /* WalletHistory.xib in Resources */,
 				3E8876081F7418AA001B8374 /* LibraryGamesRightMenuView.xib in Resources */,
+				31D4627E1F85B309001E3AC6 /* ChatMsgOutItem.xib in Resources */,
 				3E558BF41F79AF7F00542B7B /* FriendsHideCell.xib in Resources */,
 				31E4F7551F7EA2560047B843 /* PayInfoCell.xib in Resources */,
 				31C3C62F1F83F6DD0070E612 /* LibraryGameModalView.xib in Resources */,
 				3E8875E81F73F8A5001B8374 /* LibrarySideMenuCell.xib in Resources */,
 				3ECF3CDC1F696D54005165E5 /* CancelButton.xib in Resources */,
 				3115C3B81F85044D0022F8B2 /* PaymentInformationGameCell.xib in Resources */,
+				317B06221F856B1D006D2786 /* FriendsRequestModalView.xib in Resources */,
 				3E8876541F74ABCA001B8374 /* FriendsRightListNotificationCell.xib in Resources */,
 				3E558BCB1F796D8E00542B7B /* SettingsSideListView.xib in Resources */,
 				3E7230C01F734BDD0050A70D /* Wallet.storyboard in Resources */,
@@ -2071,6 +2170,7 @@
 				31F1554E1F81FED90070B256 /* BuyGameMainView.xib in Resources */,
 				3E6FE8141F7897EB00B98AD3 /* SendMoneyButton.xib in Resources */,
 				31C3C6181F83D9FE0070E612 /* PlayerStatusNotHere.xib in Resources */,
+				31D462811F85B309001E3AC6 /* ChatMsgInItem.xib in Resources */,
 				3159471D1F7C6B190073FA52 /* StoreGameSideListHeaderCell.xib in Resources */,
 				3E7230BA1F734B5F0050A70D /* LibrarySideMenu.xib in Resources */,
 				3E558BC91F796D3400542B7B /* SettingsNavigationListView.xib in Resources */,
@@ -2096,6 +2196,7 @@
 				31C3C6351F83F7180070E612 /* SelfStatusModalView.xib in Resources */,
 				317B06091F855551006D2786 /* ActivityTag.xib in Resources */,
 				3E558BB91F794A9200542B7B /* AddGame.xib in Resources */,
+				31D4627F1F85B309001E3AC6 /* ChatMsgLiveItem.xib in Resources */,
 				31F155591F82D2F90070B256 /* FriendsListSearchBar.xib in Resources */,
 				3E9C46181F71165F00693AA1 /* LineChartView.xib in Resources */,
 				3115C3911F84E6E70022F8B2 /* BuyGameQRView.xib in Resources */,
@@ -2187,10 +2288,13 @@
 			files = (
 				3151CC8B1F7F5F5600B3D3C3 /* NSSplitView+ReplaceView.h in Sources */,
 				31B07EDC1F8127A400B6BCCA /* MyBaseGradientView.m in Sources */,
+				31D462681F85A6FE001E3AC6 /* ShowFriendsRequestBox.m in Sources */,
 				3E7230D41F734EEC0050A70D /* LibraryContentViewController.m in Sources */,
 				3EBAADFC1F760A8100890AD1 /* WalletHistoryModel.m in Sources */,
 				3ECF3CFA1F697BBD005165E5 /* RemoveButton.m in Sources */,
+				31D462831F85B309001E3AC6 /* ChatMsgLiveItem.m in Sources */,
 				3E6FE8021F785F4400B98AD3 /* WalletViewController.m in Sources */,
+				31D4627D1F85B309001E3AC6 /* ChatMsgInItem.m in Sources */,
 				3ECF3CC41F6886A6005165E5 /* PreOrderButton.m in Sources */,
 				3ECF3CBF1F68821E005165E5 /* SettingsButton.m in Sources */,
 				3E558BB71F78B8BE00542B7B /* LibraryViewController.m in Sources */,
@@ -2219,6 +2323,7 @@
 				3E8A04C51F682E5400579DF8 /* LIButton.m in Sources */,
 				31972D741F7D1755008447C2 /* LibraryEmptySideMenu.m in Sources */,
 				31C3C61E1F83DA5E0070E612 /* PlayerStatusOffline.m in Sources */,
+				31D4627C1F85B309001E3AC6 /* ChatMessageModel.m in Sources */,
 				317B06201F856047006D2786 /* FriendsProfileViewController.m in Sources */,
 				31B593C11F7C15D400D5B5FC /* FreeButton.m in Sources */,
 				3115C3AE1F84FB760022F8B2 /* BuyGamePaymentMethodTableView.m in Sources */,
@@ -2271,6 +2376,7 @@
 				317B06141F85579F006D2786 /* LastActivityCell.m in Sources */,
 				3EBAADE11F75A34900890AD1 /* StoreGamesView.m in Sources */,
 				3E8876271F745460001B8374 /* StoreGamesCell.m in Sources */,
+				317B062B1F8572D3006D2786 /* JMOverlayView.m in Sources */,
 				3E7230AC1F7348C30050A70D /* MainStoreViewController.m in Sources */,
 				315947171F7C6B190073FA52 /* StoreGameSideListCell.m in Sources */,
 				3E558BFA1F79D51000542B7B /* StoreMainGridView.m in Sources */,
@@ -2297,12 +2403,14 @@
 				3E7230DA1F734F850050A70D /* WalletContentViewController.m in Sources */,
 				31E4F74E1F7E9E5E0047B843 /* PaymentInfoCheckboxCell.m in Sources */,
 				31B07F261F81AD1100B6BCCA /* BuyGameQRView.m in Sources */,
+				31D462651F859A57001E3AC6 /* WebsiteButton.m in Sources */,
 				3E9C460E1F7084E100693AA1 /* ChartView.m in Sources */,
 				3E6FE7FF1F784BCF00B98AD3 /* WalletNavigationController.m in Sources */,
 				31C3C6211F83DA6D0070E612 /* PlayerStatusOnline.m in Sources */,
 				31DAB2F51F7DFBB7006E326E /* NSPopover+MISSINGBackgroundView.m in Sources */,
 				3EE9C42B1F6C91E8004B72F2 /* MainTabViewController.m in Sources */,
 				3EBAADEC1F75BDFC00890AD1 /* StoreDownloadsModel.m in Sources */,
+				31D462801F85B309001E3AC6 /* ChatMsgOutItem.m in Sources */,
 				3EBAADF41F75FA4B00890AD1 /* ArrowButton.m in Sources */,
 				3E25FB211F66EBCA000423E9 /* AppDelegate.m in Sources */,
 				3E558BBC1F794B7D00542B7B /* AddGame.m in Sources */,
@@ -2332,6 +2440,7 @@
 				3115C37F1F8435610022F8B2 /* LibraryGameModalViewController.m in Sources */,
 				3E558BC71F79558100542B7B /* ProfileEditButton.m in Sources */,
 				3E6FE7E71F77FD8100B98AD3 /* WelcomeContinueButton.m in Sources */,
+				317B062C1F8572D3006D2786 /* JMModalOverlay.m in Sources */,
 				3E6FE8101F78883A00B98AD3 /* NSView+Fade.m in Sources */,
 				3E7230F61F7356430050A70D /* FriendsContentViewController.m in Sources */,
 				31C3C62A1F83DAA10070E612 /* PlayerStatusInGame.m in Sources */,
@@ -2349,6 +2458,7 @@
 				3E558C0E1F7AE39200542B7B /* FriendsContentList.m in Sources */,
 				3ECF3CF71F697B66005165E5 /* SendMessageButton.m in Sources */,
 				317B06191F855815006D2786 /* LastActivityView.m in Sources */,
+				31D462861F85B30A001E3AC6 /* ChatSmallView.m in Sources */,
 				3E6FE7CC1F77909700B98AD3 /* WalletChooseFriendItem.m in Sources */,
 				31972D6C1F7CB9FC008447C2 /* RMBluredView.m in Sources */,
 				3ECF3CE81F697054005165E5 /* AddGameButton.m in Sources */,
@@ -2361,6 +2471,7 @@
 				3E558BE41F7973A500542B7B /* SettingsNavigationViewController.m in Sources */,
 				3EBAADD41F7595FE00890AD1 /* StoreSideMenu.m in Sources */,
 				3115C3841F8435BA0022F8B2 /* ProfileModalViewController.m in Sources */,
+				317B06251F856D71006D2786 /* FriendsRequestModalView.m in Sources */,
 				3E6FE7E21F77F1BC00B98AD3 /* MainWindow.m in Sources */,
 				3E3E41FA1F7565C5009698FD /* LibraryGamesRightMenuModel.m in Sources */,
 				31E4F7441F7E9E5E0047B843 /* PaymentInformationGameCell.m in Sources */,
@@ -2369,6 +2480,7 @@
 				3E3E42031F757D72009698FD /* LibraryGamesServerListModel.m in Sources */,
 				3E88763E1F749720001B8374 /* FriendsContentViewListCell.m in Sources */,
 				31B07F2B1F81AD8000B6BCCA /* PaymentInformationView.m in Sources */,
+				31D462851F85B309001E3AC6 /* ChatMainView.m in Sources */,
 				3ECF3CEE1F6978C3005165E5 /* SaveSettingsButton.m in Sources */,
 				3E6FE7A61F774A9B00B98AD3 /* LibraryFriendsGamesItem.m in Sources */,
 			);

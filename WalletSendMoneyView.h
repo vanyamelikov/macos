@@ -22,5 +22,9 @@
 @property (weak) IBOutlet NSImageView *chooseFriendImage;
 @property (weak) IBOutlet ChooseFriendButton *chooseFriendButton;
 
+@property (weak) IBOutlet NSSlider *moneySlider;
+@property (weak) IBOutlet NSTextField *transferTextLabel;
+@property (weak) IBOutlet NSBox *transferImageBack;
+@property (weak) IBOutlet NSImageView *transferImageView;
 
 @end

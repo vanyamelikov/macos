@@ -24,12 +24,17 @@
 #import "MyRectGradientView.h"
 #import "Colours.h"
 #import "FriendsProfileViewController.h"
+#import "ChatMainView.h"
 
 @interface MainTabViewController (){
     NSWindowController *_controlWindowController;
     BOOL isShowDownloadBar;
+    BOOL isShowMainChatView;
     NSImageView *imageView;
     BFNavigationController *_navigationController;
+    BottomDownloadBar *downloadBar;
+    ChatMainView *mainChatView;
+    
 }
 
 @end
@@ -177,18 +182,53 @@
 
 -(void)downloadsButtonClick {
     MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
-    BottomDownloadBar *downloadBar = [[BottomDownloadBar alloc] initWithFrame:CGRectMake(mainWindow.contentView.frame.origin.x,
-                                                                                         mainWindow.contentView.frame.origin.y,
-                                                                                         mainWindow.contentView.frame.size.width,
-                                                                                         75.0f)];
+    if(!downloadBar) {
+        downloadBar = [[BottomDownloadBar alloc] initWithFrame:CGRectMake(mainWindow.contentView.frame.origin.x,
+                                                                          mainWindow.contentView.frame.origin.y,
+                                                                          mainWindow.contentView.frame.size.width,
+                                                                          75.0f)];
+        [downloadBar setAutoresizingMask:NSViewWidthSizable];
+        [downloadBar setTranslatesAutoresizingMaskIntoConstraints:YES];
+    }
     if(!isShowDownloadBar) {
-        [mainWindow.contentView addSubview:downloadBar positioned:NSWindowOut relativeTo:nil];
-        [mainWindow.contentView setNeedsDisplay:YES];
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:1.5f];
+        [mainWindow.animator.contentView addSubview:downloadBar positioned:NSWindowOut relativeTo:nil];
+        [mainWindow.animator.contentView setNeedsDisplay:YES];
         isShowDownloadBar = YES;
+        [NSAnimationContext endGrouping];
     } else {
-        [downloadBar removeFromSuperview];
-        [mainWindow.contentView setNeedsDisplay:YES];
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:1.5f];
+        [downloadBar.animator removeFromSuperview];
+        [mainWindow.animator.contentView setNeedsDisplay:YES];
         isShowDownloadBar = NO;
+        [NSAnimationContext endGrouping];
+    }
+}
+
+-(void)openChatEvent {
+    MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
+    if(!mainChatView) {
+        mainChatView = [[ChatMainView alloc] initWithFrame:CGRectMake(mainWindow.contentView.frame.size.width - 26.0f - 262.0f,
+                                                                          mainWindow.contentView.frame.origin.y,
+                                                                          262.0f,
+                                                                          334.0f)];
+    }
+    if(!isShowMainChatView) {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:1.5f];
+        [mainWindow.animator.contentView addSubview:mainChatView positioned:NSWindowOut relativeTo:nil];
+        [mainWindow.animator.contentView setNeedsDisplay:YES];
+        isShowMainChatView = YES;
+        [NSAnimationContext endGrouping];
+    } else {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:1.5f];
+        [mainChatView.animator removeFromSuperview];
+        [mainWindow.animator.contentView setNeedsDisplay:YES];
+        isShowMainChatView = NO;
+        [NSAnimationContext endGrouping];
     }
 }
 

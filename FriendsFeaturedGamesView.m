@@ -23,14 +23,14 @@
     self.collectionViewItem = [FriendsFeaturedGamesItem new];
     
     self.contents = @[
-                      @{@"itemImage":@"img_featured_dota", @"itemName":@"Dota 2"},
-                      @{@"itemImage":@"img_featured_nfs", @"itemName":@"NFS MW 2"},
-                      @{@"itemImage":@"img_featured_cod", @"itemName":@"COD 2"},
-                      @{@"itemImage":@"img_featured_crew", @"itemName":@"The Crew"},
-                      @{@"itemImage":@"img_featured_sam", @"itemName":@"Serious Sam"},
-                      @{@"itemImage":@"img_featured_csgo", @"itemName":@"Cs Go"},
-                      @{@"itemImage":@"img_featured_wot", @"itemName":@"WOT"},
-                      @{@"itemImage":@"img_featured_assassin", @"itemName":@"Assassin`s"}
+                      @{@"itemImage":@"featured_image_1", @"itemName":@"Shadow of..."},
+                      @{@"itemImage":@"featured_image_2", @"itemName":@"Black Sea 2"},
+                      @{@"itemImage":@"featured_image_3", @"itemName":@"Navy"},
+                      @{@"itemImage":@"featured_image_4", @"itemName":@"Obizoniac"},
+                      @{@"itemImage":@"featured_image_5", @"itemName":@"Colorite"},
+                      @{@"itemImage":@"featured_image_6", @"itemName":@"Nobunaga"},
+                      @{@"itemImage":@"featured_image_7", @"itemName":@"Crime scene"},
+                      @{@"itemImage":@"featured_image_8", @"itemName":@"W.O.F.S"}
                       ];
     [self.collectionView setMaxNumberOfRows:1];
     [self.collectionView setItemPrototype:self.collectionViewItem];

@@ -12,7 +12,11 @@
                 <outlet property="chooseFriendButton" destination="lj6-mM-8f8" id="oO1-JD-lyj"/>
                 <outlet property="chooseFriendImage" destination="ghF-G0-dHQ" id="SLW-7C-89V"/>
                 <outlet property="chooseFriendView" destination="Pgu-cd-b4H" id="jkx-Jh-3RC"/>
+                <outlet property="moneySlider" destination="J8B-rm-zZw" id="x3x-j1-MAP"/>
                 <outlet property="sendMoneyView" destination="FRr-dM-llD" id="BRV-Wh-VSI"/>
+                <outlet property="transferImageBack" destination="xaj-in-Qt0" id="ku6-He-hiY"/>
+                <outlet property="transferImageView" destination="RRz-qm-cH6" id="UM7-hr-Mrm"/>
+                <outlet property="transferTextLabel" destination="00i-3X-52L" id="RL6-gW-oCb"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -21,7 +25,15 @@
             <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Wt8-gz-ixa">
+                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="1Pl-xF-evQ">
+                    <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
+                    <view key="contentView" id="NIO-JS-Z7h">
+                        <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="fillColor" red="0.090196078431372548" green="0.10196078431372549" blue="0.14901960784313725" alpha="0.80251869248466257" colorSpace="calibratedRGB"/>
+                </box>
+                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Wt8-gz-ixa">
                     <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
                     <view key="contentView" id="r1f-29-hkE">
                         <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
@@ -79,7 +91,7 @@
                             <constraint firstItem="IJA-C7-czr" firstAttribute="top" secondItem="r1f-29-hkE" secondAttribute="top" constant="13" id="yjY-cY-d0k"/>
                         </constraints>
                     </view>
-                    <color key="fillColor" red="0.090196078431372548" green="0.10196078431372549" blue="0.14901960784313725" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </box>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="FRr-dM-llD" userLabel="Send money">
                     <rect key="frame" x="0.0" y="0.0" width="1440" height="620"/>
@@ -102,11 +114,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="00i-3X-52L">
-                                        <rect key="frame" x="72" y="32" width="94" height="19"/>
+                                        <rect key="frame" x="72" y="32" width="121" height="19"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="19" id="3zQ-W6-aaA"/>
                                         </constraints>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Fast transfer" id="1Vc-H0-bfh">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Average transfer" id="1Vc-H0-bfh">
                                             <font key="font" size="14" name="SFProText-Medium"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -126,6 +138,9 @@
                                             <constraint firstAttribute="width" constant="72" id="nXT-p0-Bcs"/>
                                         </constraints>
                                         <sliderCell key="cell" state="on" alignment="left" maxValue="1" tickMarkPosition="above" sliderType="linear" id="Pu6-LG-Rgh"/>
+                                        <connections>
+                                            <action selector="sliderAction:" target="-2" id="KgS-sV-zut"/>
+                                        </connections>
                                     </slider>
                                     <box boxType="custom" borderWidth="0.0" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="xaj-in-Qt0">
                                         <rect key="frame" x="25" y="24" width="35" height="35"/>
@@ -134,24 +149,24 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RRz-qm-cH6">
-                                                    <rect key="frame" x="5" y="12" width="24" height="12"/>
+                                                    <rect key="frame" x="5" y="6" width="24" height="24"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="12" id="SI6-2M-wiB"/>
-                                                        <constraint firstAttribute="width" constant="24" id="oUo-9X-w1r"/>
+                                                        <constraint firstAttribute="width" constant="24" id="Vih-fY-7dU"/>
+                                                        <constraint firstAttribute="height" constant="24" id="eUv-Ze-1nb"/>
                                                     </constraints>
-                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_transfer" id="XTi-eB-7iY"/>
+                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="ic_transfer_fast" id="XTi-eB-7iY"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="RRz-qm-cH6" firstAttribute="centerX" secondItem="FK3-gc-sYl" secondAttribute="centerX" id="KN3-ed-B6H"/>
-                                                <constraint firstItem="RRz-qm-cH6" firstAttribute="centerY" secondItem="FK3-gc-sYl" secondAttribute="centerY" id="dKV-6D-Dt1"/>
+                                                <constraint firstItem="RRz-qm-cH6" firstAttribute="centerY" secondItem="FK3-gc-sYl" secondAttribute="centerY" id="B6F-k5-erm"/>
+                                                <constraint firstItem="RRz-qm-cH6" firstAttribute="centerX" secondItem="FK3-gc-sYl" secondAttribute="centerX" id="YBb-5m-EEL"/>
                                             </constraints>
                                         </view>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="2Tz-ov-R4M"/>
                                             <constraint firstAttribute="width" constant="35" id="hTi-if-xZJ"/>
                                         </constraints>
-                                        <color key="fillColor" red="0.8862745098" green="0.56470588239999997" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="fillColor" red="0.32941176470588235" green="0.59607843137254901" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
                                     </box>
                                 </subviews>
                                 <constraints>
@@ -395,11 +410,15 @@
             <constraints>
                 <constraint firstItem="Pgu-cd-b4H" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="2iK-K2-GcT"/>
                 <constraint firstItem="FRr-dM-llD" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="220" id="3yT-re-hFx"/>
+                <constraint firstItem="1Pl-xF-evQ" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="5ie-yd-Jhh"/>
                 <constraint firstAttribute="bottom" secondItem="Pgu-cd-b4H" secondAttribute="bottom" id="6WE-vA-jZM"/>
                 <constraint firstItem="FRr-dM-llD" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="7oe-DE-qqE"/>
                 <constraint firstAttribute="bottom" secondItem="Wt8-gz-ixa" secondAttribute="bottom" id="90W-EK-2tA"/>
+                <constraint firstAttribute="bottom" secondItem="1Pl-xF-evQ" secondAttribute="bottom" id="D9v-hL-f99"/>
                 <constraint firstItem="Wt8-gz-ixa" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="ISJ-kA-bce"/>
                 <constraint firstAttribute="trailing" secondItem="Pgu-cd-b4H" secondAttribute="trailing" id="QrT-hW-KgW"/>
+                <constraint firstItem="1Pl-xF-evQ" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="TAf-Yf-sqY"/>
+                <constraint firstAttribute="trailing" secondItem="1Pl-xF-evQ" secondAttribute="trailing" id="Xfp-Wi-aZg"/>
                 <constraint firstItem="Wt8-gz-ixa" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="YLz-Q6-Y9W"/>
                 <constraint firstAttribute="trailing" secondItem="Wt8-gz-ixa" secondAttribute="trailing" id="cEP-oa-IMW"/>
                 <constraint firstAttribute="bottom" secondItem="FRr-dM-llD" secondAttribute="bottom" id="riO-L3-szJ"/>
@@ -412,7 +431,7 @@
         <image name="ic_dots" width="3" height="12"/>
         <image name="ic_input_plane" width="12" height="11.5"/>
         <image name="ic_input_xno" width="10" height="10"/>
-        <image name="ic_transfer" width="48" height="25"/>
+        <image name="ic_transfer_fast" width="38.400001525878906" height="38.400001525878906"/>
         <image name="ic_userpic" width="12" height="14"/>
     </resources>
 </document>

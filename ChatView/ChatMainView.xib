@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ChatMainView">
+            <connections>
+                <outlet property="chatMessageTextField" destination="Sgf-66-aF1" id="Pvq-OJ-qOW"/>
+                <outlet property="chatNameLabel" destination="shu-3q-1qM" id="9Xa-4J-yly"/>
+                <outlet property="chatTableView" destination="KjI-R8-tW1" id="Y4r-2v-xgt"/>
+                <outlet property="enterMessageBox" destination="0yR-ng-nEl" id="vwT-Ig-lJT"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="334"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" cornerRadius="7" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="9Di-Wz-xcf">
+                    <rect key="frame" x="0.0" y="0.0" width="260" height="334"/>
+                    <view key="contentView" id="vc3-T0-L1D">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="334"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d7o-eP-df1">
+                                <rect key="frame" x="238" y="312" width="10" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="Mv6-ge-UHX"/>
+                                    <constraint firstAttribute="height" constant="10" id="elK-Oh-5Qx"/>
+                                </constraints>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="hTx-mG-M9X">
+                                        <connections>
+                                            <action selector="closeButtonClick:" target="-2" id="vwS-tL-K31"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="ic_chat_close" id="BxP-fT-Okr"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="shu-3q-1qM">
+                                <rect key="frame" x="10" y="309" width="222" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="VUM-eQ-eZ8"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Turbo Ms" usesSingleLineMode="YES" id="mgX-qk-2ws">
+                                    <font key="font" size="13" name="SFProText-Medium"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="shu-3q-1qM" firstAttribute="leading" secondItem="vc3-T0-L1D" secondAttribute="leading" constant="12" id="2YT-v2-P9F"/>
+                            <constraint firstItem="shu-3q-1qM" firstAttribute="top" secondItem="vc3-T0-L1D" secondAttribute="top" constant="8" id="Jz1-Pp-O1w"/>
+                            <constraint firstItem="d7o-eP-df1" firstAttribute="leading" secondItem="shu-3q-1qM" secondAttribute="trailing" constant="8" id="ebp-eO-CW0"/>
+                            <constraint firstAttribute="trailing" secondItem="d7o-eP-df1" secondAttribute="trailing" constant="12" id="mFr-nS-6hG"/>
+                            <constraint firstItem="d7o-eP-df1" firstAttribute="top" secondItem="vc3-T0-L1D" secondAttribute="top" constant="12" id="oDc-Gf-vWq"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="B5L-FF-N0U"/>
+                        <constraint firstAttribute="height" constant="334" id="oHj-cp-JU1"/>
+                    </constraints>
+                    <color key="fillColor" red="0.17254901960784313" green="0.32549019607843138" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
+                </box>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="SZt-cj-tKA">
+                    <rect key="frame" x="0.0" y="0.0" width="260" height="300"/>
+                    <view key="contentView" id="6oE-FB-1ir">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="45" horizontalPageScroll="10" verticalLineScroll="45" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="bQb-W8-Zea">
+                                <rect key="frame" x="0.0" y="68" width="260" height="232"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="ZAP-gS-roZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="260" height="232"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="44" rowSizeStyle="automatic" viewBased="YES" floatsGroupRows="NO" id="KjI-R8-tW1">
+                                            <rect key="frame" x="0.0" y="0.0" width="260" height="232"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <size key="intercellSpacing" width="2" height="1"/>
+                                            <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <color key="gridColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <tableColumns>
+                                                <tableColumn identifier="" width="257" minWidth="10" maxWidth="3.4028234663852886e+38" id="EBr-H9-DeL">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="Qdg-V5-0Ox">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <prototypeCellViews>
+                                                        <customView identifier="ChatMsgLiveItem" id="DiG-s4-KDB" customClass="ChatMsgLiveItem">
+                                                            <rect key="frame" x="1" y="0.0" width="257" height="44"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        </customView>
+                                                        <customView identifier="ChatMsgInItem" id="V3t-c3-nVG" customClass="ChatMsgInItem">
+                                                            <rect key="frame" x="1" y="45" width="257" height="42"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        </customView>
+                                                        <customView identifier="ChatMsgOutItem" id="NB6-K1-UXJ" customClass="ChatMsgOutItem">
+                                                            <rect key="frame" x="1" y="88" width="257" height="44"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        </customView>
+                                                    </prototypeCellViews>
+                                                </tableColumn>
+                                            </tableColumns>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="Dv7-W9-POM">
+                                    <rect key="frame" x="-100" y="-100" width="139" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="7bP-Nt-rBv">
+                                    <rect key="frame" x="-100" y="-100" width="15" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="0yR-ng-nEl">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="68"/>
+                                <view key="contentView" id="bG2-xI-VPM">
+                                    <rect key="frame" x="0.0" y="0.0" width="260" height="68"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" alphaValue="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="qJ0-Kz-eaZ">
+                                            <rect key="frame" x="221" y="18" width="33" height="33"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="33" id="JIs-fq-XP4"/>
+                                                <constraint firstAttribute="width" constant="33" id="YZr-cZ-Sj5"/>
+                                            </constraints>
+                                            <gestureRecognizers>
+                                                <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="KcK-xW-0cl">
+                                                    <connections>
+                                                        <action selector="sendMessageButtonClick:" target="-2" id="a0x-1d-DXF"/>
+                                                    </connections>
+                                                </clickGestureRecognizer>
+                                            </gestureRecognizers>
+                                            <contentFilters>
+                                                <ciFilter name="CIMaskToAlpha">
+                                                    <configuration>
+                                                        <null key="inputImage"/>
+                                                    </configuration>
+                                                </ciFilter>
+                                            </contentFilters>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_send_arr" id="SWx-AN-yho"/>
+                                        </imageView>
+                                        <textField wantsLayer="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Sgf-66-aF1">
+                                            <rect key="frame" x="13" y="25" width="200" height="19"/>
+                                            <contentFilters>
+                                                <ciFilter name="CIColorInvert">
+                                                    <configuration>
+                                                        <null key="inputImage"/>
+                                                    </configuration>
+                                                </ciFilter>
+                                            </contentFilters>
+                                            <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" placeholderString="Enter your message..." drawsBackground="YES" id="7ij-uC-Nuj">
+                                                <font key="font" size="13" name="SFProText-Medium"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="qJ0-Kz-eaZ" firstAttribute="centerY" secondItem="bG2-xI-VPM" secondAttribute="centerY" id="T7a-TD-Cav"/>
+                                        <constraint firstItem="Sgf-66-aF1" firstAttribute="centerY" secondItem="bG2-xI-VPM" secondAttribute="centerY" id="b5a-jD-blS"/>
+                                        <constraint firstAttribute="trailing" secondItem="qJ0-Kz-eaZ" secondAttribute="trailing" constant="6" id="f5Z-mY-Kqw"/>
+                                        <constraint firstItem="Sgf-66-aF1" firstAttribute="leading" secondItem="bG2-xI-VPM" secondAttribute="leading" constant="13" id="kLN-dh-s3S"/>
+                                        <constraint firstItem="qJ0-Kz-eaZ" firstAttribute="leading" secondItem="Sgf-66-aF1" secondAttribute="trailing" constant="8" id="zBx-W5-weQ"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="xtS-xf-iae"/>
+                                </constraints>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="0yR-ng-nEl" firstAttribute="leading" secondItem="6oE-FB-1ir" secondAttribute="leading" id="5gX-t0-aHL"/>
+                            <constraint firstAttribute="trailing" secondItem="bQb-W8-Zea" secondAttribute="trailing" id="9Hk-06-3QE"/>
+                            <constraint firstAttribute="bottom" secondItem="0yR-ng-nEl" secondAttribute="bottom" id="9SG-iI-pXc"/>
+                            <constraint firstAttribute="trailing" secondItem="0yR-ng-nEl" secondAttribute="trailing" id="Abd-ze-ZSc"/>
+                            <constraint firstItem="bQb-W8-Zea" firstAttribute="leading" secondItem="6oE-FB-1ir" secondAttribute="leading" id="BwR-bv-3pr"/>
+                            <constraint firstItem="0yR-ng-nEl" firstAttribute="top" secondItem="bQb-W8-Zea" secondAttribute="bottom" id="YR3-dh-RO8"/>
+                            <constraint firstItem="bQb-W8-Zea" firstAttribute="top" secondItem="6oE-FB-1ir" secondAttribute="top" id="exV-Z0-TDo"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="KIv-8l-sDP"/>
+                        <constraint firstAttribute="height" constant="300" id="Nju-ho-qRh"/>
+                    </constraints>
+                    <color key="fillColor" red="0.074509803921568626" green="0.086274509803921567" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="SZt-cj-tKA" secondAttribute="bottom" id="6yR-7I-4Ui"/>
+                <constraint firstItem="SZt-cj-tKA" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="8No-bI-W1o"/>
+                <constraint firstItem="9Di-Wz-xcf" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="B2h-YW-bV8"/>
+                <constraint firstAttribute="trailing" secondItem="SZt-cj-tKA" secondAttribute="trailing" id="RvE-uM-aby"/>
+                <constraint firstAttribute="bottom" secondItem="9Di-Wz-xcf" secondAttribute="bottom" id="g2g-Id-gEe"/>
+                <constraint firstItem="9Di-Wz-xcf" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="rhZ-jT-aRa"/>
+                <constraint firstItem="SZt-cj-tKA" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="34" id="s1Y-YS-X8A"/>
+                <constraint firstAttribute="trailing" secondItem="9Di-Wz-xcf" secondAttribute="trailing" id="vcB-Fa-euo"/>
+            </constraints>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_chat_close" width="10" height="10"/>
+        <image name="ic_send_arr" width="13" height="13"/>
+    </resources>
+</document>

@@ -597,7 +597,7 @@
                                     <constraint firstAttribute="width" constant="338" id="V9Z-Ue-h1f"/>
                                 </constraints>
                             </customView>
-                            <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="ybf-Ul-DAD">
+                            <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="ybf-Ul-DAD" customClass="ShowFriendsRequestBox">
                                 <rect key="frame" x="0.0" y="0.0" width="338" height="37"/>
                                 <view key="contentView" id="CtY-PS-5xU">
                                     <rect key="frame" x="0.0" y="0.0" width="338" height="37"/>
@@ -650,9 +650,9 @@
                                     <constraint firstAttribute="height" constant="37" id="9Vd-va-MVm"/>
                                 </constraints>
                                 <gestureRecognizers>
-                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="kY1-3S-CdI">
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="GZr-VM-Ah8">
                                         <connections>
-                                            <action selector="friendsRequestButtonClick:" target="dBA-3u-nFO" id="DcI-OT-jZg"/>
+                                            <action selector="friendsRequestClick:" target="dBA-3u-nFO" id="IKN-Qv-FFE"/>
                                         </connections>
                                     </clickGestureRecognizer>
                                 </gestureRecognizers>
@@ -682,6 +682,9 @@
                             <constraint firstItem="qW2-WE-dHO" firstAttribute="top" secondItem="d8F-Xs-HKy" secondAttribute="top" constant="12" id="ybE-QL-Fh9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="friendsRequestBox" destination="ybf-Ul-DAD" id="EAb-UV-AHH"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="512" y="1057"/>

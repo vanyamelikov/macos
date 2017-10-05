@@ -7,6 +7,7 @@
 //
 
 #import "WalletSendMoneyView.h"
+#import "Colours.h"
 
 @implementation WalletSendMoneyView
 
@@ -37,6 +38,18 @@
                         }];
     
 }
+- (IBAction)sliderAction:(NSSlider *)sender {
+    if(sender.floatValue >= 0.5) {
+        //ic_transfer_fast
+        [self.transferImageBack setFillColor:[NSColor colorFromHexString:@"e2907a"]];
+        [self.transferImageView setImage:[NSImage imageNamed:@"ic_transfer"]];
+        [self.transferTextLabel setStringValue:@"Fast transfer"];
+    } else {
+        [self.transferImageBack setFillColor:[NSColor colorFromHexString:@"5498d5"]];
+        [self.transferImageView setImage:[NSImage imageNamed:@"ic_transfer_fast"]];
+        [self.transferTextLabel setStringValue:@"Average transfer"];
+    }
+}
 
 - (void)chooseFriendAction:(id)sender
 {
@@ -49,6 +62,7 @@
                             self.sendMoneyView.hidden = NO;
                             self.chooseFriendView.alphaValue = 1;
                         }];
+    [self.chooseFriendImage setImage:[NSImage imageNamed:@"img_wallet_friend_2"]];
 }
 
 

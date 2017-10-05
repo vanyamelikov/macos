@@ -14,6 +14,7 @@
 @protocol CustomTabbarDelegate <NSObject>
 - (void) tabClicked: (NSInteger) sender;
 - (void) downloadsButtonClick;
+- (void) openChatEvent;
 @end
 
 @interface CustomTabbar : INSNibLoadedView <TabItemViewDelegate, NSPopoverDelegate>

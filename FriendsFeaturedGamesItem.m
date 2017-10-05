@@ -11,7 +11,6 @@
 @interface FriendsFeaturedGamesItem ()
 @property (strong) IBOutlet NSImageView *itemImageView;
 @property (strong) IBOutlet NSTextField *itemNameLabel;
-@property (strong) IBOutlet NSBox *itemImageBox;
 
 @end
 
@@ -19,12 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
 }
 
 -(void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
     if(representedObject != nil) {
+        [self.itemImageView setWantsLayer:YES];
+        [self.itemImageView.layer setCornerRadius:10.0f];
+        [self.itemImageView.layer setMasksToBounds:YES];
         [self.itemImageView setImage:[NSImage imageNamed:[representedObject valueForKey:@"itemImage"]]];
         [self.itemNameLabel setStringValue:[representedObject valueForKey:@"itemName"]];
     }

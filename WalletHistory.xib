@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,11 +14,19 @@
             <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
+                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="0AS-ke-KNo">
+                    <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
+                    <view key="contentView" id="abb-D4-UA2">
+                        <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="fillColor" red="0.090196078431372548" green="0.10196078431372549" blue="0.14901960784313725" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="eWS-y7-bGy" customClass="WalletHistoryView">
-                    <rect key="frame" x="26" y="100" width="1388" height="661"/>
+                    <rect key="frame" x="26" y="0.0" width="1388" height="761"/>
                     <subviews>
                         <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="108" horizontalPageScroll="10" verticalLineScroll="108" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="UK7-cO-2aD">
-                            <rect key="frame" x="26" y="241" width="1388" height="559"/>
+                            <rect key="frame" x="26" y="341" width="1388" height="559"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="Akx-OC-CWV">
                                 <rect key="frame" x="0.0" y="0.0" width="1388" height="559"/>
@@ -79,11 +88,15 @@
             </subviews>
             <constraints>
                 <constraint firstItem="Ydi-dC-mmM" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="13" id="981-wO-BVw"/>
+                <constraint firstAttribute="bottom" secondItem="0AS-ke-KNo" secondAttribute="bottom" id="ImB-Ae-sUD"/>
                 <constraint firstAttribute="trailing" secondItem="eWS-y7-bGy" secondAttribute="trailing" constant="26" id="K7G-u7-gCA"/>
                 <constraint firstItem="Ydi-dC-mmM" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="26" id="PIt-0Q-OzL"/>
+                <constraint firstItem="0AS-ke-KNo" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="Qq6-ci-QsO"/>
+                <constraint firstItem="0AS-ke-KNo" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="eXy-8A-JiW"/>
                 <constraint firstItem="eWS-y7-bGy" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="26" id="ljO-JB-CGE"/>
+                <constraint firstAttribute="trailing" secondItem="0AS-ke-KNo" secondAttribute="trailing" id="mLN-i1-1DN"/>
                 <constraint firstItem="eWS-y7-bGy" firstAttribute="top" secondItem="Ydi-dC-mmM" secondAttribute="bottom" constant="36" id="veV-2p-Dng"/>
-                <constraint firstAttribute="bottom" secondItem="eWS-y7-bGy" secondAttribute="bottom" constant="100" id="w7i-Eo-qPN"/>
+                <constraint firstAttribute="bottom" secondItem="eWS-y7-bGy" secondAttribute="bottom" id="w7i-Eo-qPN"/>
             </constraints>
         </customView>
     </objects>

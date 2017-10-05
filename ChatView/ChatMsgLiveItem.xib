@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ChatMsgLiveItem">
+            <connections>
+                <outlet property="dotBoxCollection" destination="UK4-F6-uWc" id="gBz-qO-ezc"/>
+                <outlet property="itemImageView" destination="izO-A9-CpQ" id="SYK-OT-2Z1"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" transparent="YES" translatesAutoresizingMaskIntoConstraints="NO" id="icR-ml-MaR">
+                    <rect key="frame" x="0.0" y="0.0" width="260" height="42"/>
+                    <view key="contentView" id="snk-Fg-N2u">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="42"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="izO-A9-CpQ">
+                                <rect key="frame" x="12" y="6" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="ci2-nP-p8n"/>
+                                    <constraint firstAttribute="height" constant="30" id="g1E-v0-V3T"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="miniCrysis" id="YA2-Qk-w1S"/>
+                            </imageView>
+                            <box boxType="custom" borderType="none" borderWidth="0.0" cornerRadius="14" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="UK4-F6-uWc">
+                                <rect key="frame" x="50" y="8" width="40" height="26"/>
+                                <view key="contentView" id="bcT-l2-tUd">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="26"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <box boxType="custom" borderWidth="0.0" cornerRadius="3" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="aY5-Ve-WcZ">
+                                            <rect key="frame" x="10" y="10" width="6" height="6"/>
+                                            <view key="contentView" id="oL6-yc-60A">
+                                                <rect key="frame" x="0.0" y="0.0" width="6" height="6"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="6" id="JCL-7A-DHS"/>
+                                                <constraint firstAttribute="width" constant="6" id="xKe-Bd-bsN"/>
+                                            </constraints>
+                                            <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </box>
+                                        <box boxType="custom" borderWidth="0.0" cornerRadius="3" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="9qa-7V-09Q">
+                                            <rect key="frame" x="17" y="10" width="6" height="6"/>
+                                            <view key="contentView" id="ea0-fE-MHh">
+                                                <rect key="frame" x="0.0" y="0.0" width="6" height="6"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="6" id="dVd-jx-UXC"/>
+                                                <constraint firstAttribute="height" constant="6" id="yTS-Zg-yOq"/>
+                                            </constraints>
+                                            <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </box>
+                                        <box boxType="custom" borderWidth="0.0" cornerRadius="3" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="ZDX-Sz-w6e">
+                                            <rect key="frame" x="24" y="10" width="6" height="6"/>
+                                            <view key="contentView" id="vfj-fd-CDe">
+                                                <rect key="frame" x="0.0" y="0.0" width="6" height="6"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="6" id="5Bd-Cg-4Dy"/>
+                                                <constraint firstAttribute="height" constant="6" id="Rgi-vz-EuC"/>
+                                            </constraints>
+                                            <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </box>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="9qa-7V-09Q" firstAttribute="centerY" secondItem="bcT-l2-tUd" secondAttribute="centerY" id="1VF-sU-Afr"/>
+                                        <constraint firstItem="9qa-7V-09Q" firstAttribute="leading" secondItem="aY5-Ve-WcZ" secondAttribute="trailing" constant="1" id="C5B-Mh-5I3"/>
+                                        <constraint firstItem="ZDX-Sz-w6e" firstAttribute="leading" secondItem="9qa-7V-09Q" secondAttribute="trailing" constant="1" id="H8n-Wu-Dbm"/>
+                                        <constraint firstItem="ZDX-Sz-w6e" firstAttribute="centerY" secondItem="bcT-l2-tUd" secondAttribute="centerY" id="JXt-6S-GcC"/>
+                                        <constraint firstItem="aY5-Ve-WcZ" firstAttribute="centerY" secondItem="bcT-l2-tUd" secondAttribute="centerY" id="L1g-Dv-A7L"/>
+                                        <constraint firstItem="9qa-7V-09Q" firstAttribute="centerX" secondItem="bcT-l2-tUd" secondAttribute="centerX" id="gpK-Pt-aGY"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="It9-hA-Xei"/>
+                                    <constraint firstAttribute="height" constant="26" id="QXV-zW-9jZ"/>
+                                </constraints>
+                                <color key="fillColor" red="0.11764705882352941" green="0.13725490196078433" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="izO-A9-CpQ" firstAttribute="centerY" secondItem="snk-Fg-N2u" secondAttribute="centerY" id="5jU-Tt-RIK"/>
+                            <constraint firstItem="UK4-F6-uWc" firstAttribute="leading" secondItem="izO-A9-CpQ" secondAttribute="trailing" constant="8" id="Ja1-J5-gsi"/>
+                            <constraint firstItem="izO-A9-CpQ" firstAttribute="leading" secondItem="snk-Fg-N2u" secondAttribute="leading" constant="12" id="O71-3R-cGw"/>
+                            <constraint firstItem="UK4-F6-uWc" firstAttribute="centerY" secondItem="snk-Fg-N2u" secondAttribute="centerY" id="nXq-wf-Qeo"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="hbK-xT-8mK"/>
+                        <constraint firstAttribute="width" constant="260" id="smZ-5E-Pba"/>
+                    </constraints>
+                    <color key="fillColor" red="0.70965176819999998" green="0.093337986829999997" blue="0.1303119486" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="icR-ml-MaR" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="Xbh-Hd-Zwp"/>
+                <constraint firstAttribute="bottom" secondItem="icR-ml-MaR" secondAttribute="bottom" id="aSS-9c-DBb"/>
+                <constraint firstItem="icR-ml-MaR" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="tnM-dg-s3L"/>
+            </constraints>
+            <point key="canvasLocation" x="142" y="115"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="miniCrysis" width="58" height="58"/>
+    </resources>
+</document>

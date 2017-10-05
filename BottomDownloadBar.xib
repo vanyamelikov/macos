@@ -123,7 +123,7 @@
                         </constraints>
                     </view>
                     <color key="borderColor" red="0.090196078430000007" green="0.10980392160000001" blue="0.1529411765" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
-                    <color key="fillColor" red="0.090196078430000007" green="0.10980392160000001" blue="0.1529411765" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" red="0.090196078430000007" green="0.10980392160000001" blue="0.1529411765" alpha="0.95361388036809824" colorSpace="calibratedRGB"/>
                 </box>
             </subviews>
             <constraints>

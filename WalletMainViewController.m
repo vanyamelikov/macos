@@ -92,7 +92,9 @@
     
     [self.tableView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleNone];
     [self.tableView setUsesAlternatingRowBackgroundColors:NO];
-
+    
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
+    [self.tableView selectRowIndexes:indexSet byExtendingSelection:NO];
 }
 
 #pragma mark - TableViewDataSource
@@ -145,17 +147,26 @@
         }
         preSelectedRow = index;
         if(index == 1) {
-            self.sendMoneyView.hidden = NO;
-            self.historyView.hidden = YES;
-            self.receiveView.hidden = YES;
+            [NSAnimationContext beginGrouping];
+            [[NSAnimationContext currentContext] setDuration:1.0f];
+            self.sendMoneyView.animator.hidden = NO;
+            self.historyView.animator.hidden = YES;
+            self.receiveView.animator.hidden = YES;
+            [NSAnimationContext endGrouping];
         } else if (index == 2) {
-            self.sendMoneyView.hidden = YES;
-            self.historyView.hidden = YES;
-            self.receiveView.hidden = NO;
+            [NSAnimationContext beginGrouping];
+            [[NSAnimationContext currentContext] setDuration:1.0f];
+            self.sendMoneyView.animator.hidden = YES;
+            self.historyView.animator.hidden = YES;
+            self.receiveView.animator.hidden = NO;
+            [NSAnimationContext endGrouping];
         } else if (index == 3) {
-            self.sendMoneyView.hidden = YES;
-            self.receiveView.hidden = YES;
-            self.historyView.hidden = NO;
+            [NSAnimationContext beginGrouping];
+            [[NSAnimationContext currentContext] setDuration:1.0f];
+            self.sendMoneyView.animator.hidden = YES;
+            self.receiveView.animator.hidden = YES;
+            self.historyView.animator.hidden = NO;
+            [NSAnimationContext endGrouping];
         }
     }
 }

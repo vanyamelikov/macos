@@ -12,8 +12,9 @@
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
-    
-    // Drawing code here.
+    [self.playerImage setWantsLayer:YES];
+    [self.playerImage.layer setCornerRadius:3.0f];
+    [self.playerImage.layer setMasksToBounds:YES];
 }
 
 @end

@@ -12,7 +12,9 @@
 #import "StoreGameSideListHeaderCell.h"
 
 
-@implementation StorePurchaseListView
+@implementation StorePurchaseListView {
+    NSInteger preSelectedIndex;
+}
 
 @synthesize dataSourceArray;
 @synthesize delegate;
@@ -39,6 +41,7 @@
 }
 
 -(void)initView {
+    preSelectedIndex = -1;
     NSArray *titleArray = @[@"Game",
                             @"Information",
                             @"Related products",
@@ -47,7 +50,7 @@
     dataSourceArray = [[NSMutableArray alloc] initWithArray:titleArray];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    [self.tableView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleRegular];
+    [self.tableView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleNone];
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
     [self.tableView selectRowIndexes:indexSet byExtendingSelection:NO];
 }
@@ -72,10 +75,20 @@
 
 -(void)tableViewSelectionDidChange:(NSNotification *)notification {
     NSInteger index = [self.tableView selectedRow];
-    if(delegate && [self.delegate respondsToSelector:@selector(itemClicked:)])
-    {
-        [self.delegate itemClicked:index];
+    if(index != preSelectedIndex) {
+        StoreGameSideListCell *cell = (StoreGameSideListCell *)[self.tableView viewAtColumn:0 row:index makeIfNecessary:YES];
+        [cell.lightLayer setHidden:NO];
+        if(preSelectedIndex >= 0) {
+            StoreGameSideListCell *preSelectedCell = (StoreGameSideListCell *)[self.tableView viewAtColumn:0 row:preSelectedIndex makeIfNecessary:YES];
+            [preSelectedCell.lightLayer setHidden:YES];
+        }
+        if(delegate && [self.delegate respondsToSelector:@selector(itemClicked:)])
+        {
+            [self.delegate itemClicked:index];
+        }
+        preSelectedIndex = index;
     }
+    
 }
 
 @end

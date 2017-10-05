@@ -61,21 +61,21 @@
 - (void)itemClicked:(NSInteger)sender {
     if(sender == 0) {
         [NSAnimationContext beginGrouping];
-        [[NSAnimationContext currentContext] setDuration:1.5f];
+        [[NSAnimationContext currentContext] setDuration:1.0f];
         self.buyGameMainView.animator.hidden = NO;
         self.storeGameInfoView.animator.hidden = YES;
         self.buyGameQrView.animator.hidden = YES;
         [NSAnimationContext endGrouping];
     } else if(sender == 1) {
         [NSAnimationContext beginGrouping];
-        [[NSAnimationContext currentContext] setDuration:1.5f];
+        [[NSAnimationContext currentContext] setDuration:1.0f];
         self.buyGameMainView.animator.hidden = YES;
         self.storeGameInfoView.animator.hidden = NO;
         self.buyGameQrView.animator.hidden = YES;
         [NSAnimationContext endGrouping];
     } else {
         [NSAnimationContext beginGrouping];
-        [[NSAnimationContext currentContext] setDuration:1.5f];
+        [[NSAnimationContext currentContext] setDuration:1.0f];
         self.buyGameMainView.animator.hidden = NO;
         self.storeGameInfoView.animator.hidden = YES;
         self.buyGameQrView.animator.hidden = YES;
@@ -85,7 +85,7 @@
 
 - (void)preOrderClick {
     [NSAnimationContext beginGrouping];
-    [[NSAnimationContext currentContext] setDuration:1.5f];
+    [[NSAnimationContext currentContext] setDuration:1.0f];
     self.buyGameMainView.animator.hidden = YES;
     self.storeGameInfoView.animator.hidden = YES;
     self.storePurchaseListView.animator.hidden = YES;
@@ -97,7 +97,7 @@
     
     
     [NSAnimationContext beginGrouping];
-    [[NSAnimationContext currentContext] setDuration:1.5f];
+    [[NSAnimationContext currentContext] setDuration:1.0f];
     self.buyGameMainView.animator.hidden = YES;
     self.storeGameInfoView.animator.hidden = YES;
     self.buyGameQrView.animator.hidden = YES;
@@ -108,7 +108,7 @@
 
 - (void)continueToLastPage {
     [NSAnimationContext beginGrouping];
-    [[NSAnimationContext currentContext] setDuration:1.5f];
+    [[NSAnimationContext currentContext] setDuration:1.0f];
     self.paymentMethodView.animator.hidden = YES;
     self.paymentInformationView.animator.hidden = NO;
     [NSAnimationContext endGrouping];

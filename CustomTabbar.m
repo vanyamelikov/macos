@@ -92,5 +92,10 @@
     }
 }
 
+- (IBAction)openChatClick:(NSClickGestureRecognizer *)sender {
+    if(delegate && [self.delegate respondsToSelector:@selector(openChatEvent)]) {
+        [self.delegate openChatEvent];
+    }
+}
 
 @end

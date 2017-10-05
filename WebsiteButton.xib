@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WebsiteButton">
+            <connections>
+                <outlet property="backgroundBox" destination="Fc4-Yu-LxP" id="3BT-NU-ZcV"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="hFg-uV-O9H">
+            <rect key="frame" x="0.0" y="0.0" width="84" height="32"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Fc4-Yu-LxP">
+                    <rect key="frame" x="0.0" y="0.0" width="84" height="32"/>
+                    <view key="contentView" id="cd8-uK-tjm">
+                        <rect key="frame" x="1" y="1" width="82" height="30"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1eJ-w5-lJ7">
+                                <rect key="frame" x="8" y="6" width="67" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="On7-cw-0Hn"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="WEB SITE" id="vIX-Jq-HGJ">
+                                    <font key="font" size="12" name="SFProText-Bold"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1eJ-w5-lJ7" firstAttribute="centerY" secondItem="cd8-uK-tjm" secondAttribute="centerY" id="58b-sO-Hpl"/>
+                            <constraint firstItem="1eJ-w5-lJ7" firstAttribute="centerX" secondItem="cd8-uK-tjm" secondAttribute="centerX" id="DGt-Xh-vhV"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="nCX-N0-V1P"/>
+                        <constraint firstAttribute="width" constant="84" id="sCQ-OX-TEH"/>
+                    </constraints>
+                    <color key="borderColor" red="0.23921568630000001" green="0.4823529412" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.55294117647058827" green="0.63921568627450975" blue="0.92941176470588238" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Fc4-Yu-LxP" secondAttribute="bottom" id="R9K-WR-b91"/>
+                <constraint firstAttribute="trailing" secondItem="Fc4-Yu-LxP" secondAttribute="trailing" id="UgK-uA-3pQ"/>
+                <constraint firstItem="Fc4-Yu-LxP" firstAttribute="top" secondItem="hFg-uV-O9H" secondAttribute="top" id="yQS-tK-hiM"/>
+                <constraint firstItem="Fc4-Yu-LxP" firstAttribute="leading" secondItem="hFg-uV-O9H" secondAttribute="leading" id="znp-z5-epv"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="375"/>
+        </customView>
+    </objects>
+</document>

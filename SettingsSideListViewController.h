@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "JMModalOverlay.h"
 
-@interface SettingsSideListViewController : NSViewController
+@interface SettingsSideListViewController : NSViewController <JMModalOverlayDelegate>
 
 @end
