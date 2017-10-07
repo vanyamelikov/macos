@@ -160,10 +160,10 @@
                     </view>
                     <color key="borderColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </box>
-                <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="LEj-nS-aUB">
+                <box boxType="custom" borderType="none" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="LEj-nS-aUB">
                     <rect key="frame" x="200" y="0.0" width="1" height="737"/>
                     <view key="contentView" id="sJR-YD-YdW">
-                        <rect key="frame" x="1" y="1" width="0.0" height="735"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1" height="737"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
                     <constraints>

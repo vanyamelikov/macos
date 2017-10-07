@@ -199,7 +199,7 @@
                         <constraint firstAttribute="width" constant="260" id="KIv-8l-sDP"/>
                         <constraint firstAttribute="height" constant="300" id="Nju-ho-qRh"/>
                     </constraints>
-                    <color key="fillColor" red="0.074509803921568626" green="0.086274509803921567" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" red="0.062745098039215685" green="0.070588235294117646" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                 </box>
             </subviews>
             <constraints>

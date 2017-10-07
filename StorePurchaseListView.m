@@ -10,6 +10,7 @@
 #import "StoreGamesViewModel.h"
 #import "StoreGameSideListCell.h"
 #import "StoreGameSideListHeaderCell.h"
+#import "Colours.h"
 
 
 @implementation StorePurchaseListView {
@@ -78,9 +79,11 @@
     if(index != preSelectedIndex) {
         StoreGameSideListCell *cell = (StoreGameSideListCell *)[self.tableView viewAtColumn:0 row:index makeIfNecessary:YES];
         [cell.lightLayer setHidden:NO];
+        [cell.label setTextColor:[NSColor whiteColor]];
         if(preSelectedIndex >= 0) {
             StoreGameSideListCell *preSelectedCell = (StoreGameSideListCell *)[self.tableView viewAtColumn:0 row:preSelectedIndex makeIfNecessary:YES];
             [preSelectedCell.lightLayer setHidden:YES];
+            [preSelectedCell.label setTextColor:[NSColor colorFromHexString:@"78819f"]];
         }
         if(delegate && [self.delegate respondsToSelector:@selector(itemClicked:)])
         {

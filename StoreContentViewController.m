@@ -150,14 +150,14 @@
         self.gridImageView.image = [ImageUtils imageTintedWithColor:[NSColor colorFromHexString:@"#69a2a9c1"] : self.gridImageView.image];
         [[NSNotificationCenter defaultCenter]
          postNotificationName:@"changeBackgroundNotification"
-         object:@"background_store_2"];
+         object:@"background_store_3"];
     } else {
         self.gamesTabViewBottomConstraint.constant = 0;
         self.listImageView.image = [ImageUtils imageTintedWithColor:[NSColor colorFromHexString:@"#69a2a9c1"] : self.listImageView.image];
         self.gridImageView.image = [ImageUtils imageTintedWithColor:[NSColor whiteColor] : self.gridImageView.image];
         [[NSNotificationCenter defaultCenter]
          postNotificationName:@"changeBackgroundNotification"
-         object:@"background_store_3"];
+         object:@"background_store_2"];
     }
     
     self.gamesTabController.alphaValue = 0;
