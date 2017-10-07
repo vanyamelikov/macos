@@ -589,10 +589,10 @@
                                     <constraint firstAttribute="width" constant="338" id="JLo-7M-9rw"/>
                                 </constraints>
                                 <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <color key="fillColor" red="0.0" green="0.0" blue="0.0" alpha="0.39998322469325154" colorSpace="calibratedRGB"/>
+                                <color key="fillColor" red="0.34157451919999998" green="0.64983173080000001" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </box>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="03I-nb-m2h" customClass="SettingsSideListView">
-                                <rect key="frame" x="0.0" y="37" width="338" height="798"/>
+                                <rect key="frame" x="0.0" y="37" width="338" height="792"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="338" id="V9Z-Ue-h1f"/>
                                 </constraints>
@@ -649,23 +649,31 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="9Vd-va-MVm"/>
                                 </constraints>
-                                <gestureRecognizers>
-                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="GZr-VM-Ah8">
-                                        <connections>
-                                            <action selector="friendsRequestClick:" target="dBA-3u-nFO" id="IKN-Qv-FFE"/>
-                                        </connections>
-                                    </clickGestureRecognizer>
-                                </gestureRecognizers>
                                 <color key="fillColor" red="0.17254901960784313" green="0.35686274509803922" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
                             </box>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="qW2-WE-dHO" customClass="FriendsListSearchBar">
-                                <rect key="frame" x="0.0" y="853" width="338" height="35"/>
+                                <rect key="frame" x="0.0" y="847" width="338" height="41"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="nfz-wY-MwT"/>
+                                    <constraint firstAttribute="height" constant="41" id="nfz-wY-MwT"/>
                                 </constraints>
                             </customView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Yax-nK-TNe">
+                                <rect key="frame" x="194" y="1" width="81" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="Xes-eZ-QZL"/>
+                                    <constraint firstAttribute="height" constant="21" id="bWf-kL-0qw"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Open" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="USn-gU-UKK">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="openFriendsRequest:" target="dBA-3u-nFO" id="phd-xK-SD8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Yax-nK-TNe" secondAttribute="bottom" constant="8" id="5Bk-US-MoV"/>
                             <constraint firstItem="03I-nb-m2h" firstAttribute="top" secondItem="qW2-WE-dHO" secondAttribute="bottom" constant="18" id="6Fd-pV-aVm"/>
                             <constraint firstAttribute="bottom" secondItem="ybf-Ul-DAD" secondAttribute="bottom" id="B2r-vL-dQx"/>
                             <constraint firstAttribute="bottom" secondItem="SpA-TB-dr5" secondAttribute="bottom" id="DYu-cw-dfZ"/>
@@ -673,6 +681,7 @@
                             <constraint firstItem="SpA-TB-dr5" firstAttribute="top" secondItem="d8F-Xs-HKy" secondAttribute="top" id="JYf-dS-rQW"/>
                             <constraint firstAttribute="trailing" secondItem="ybf-Ul-DAD" secondAttribute="trailing" id="beK-Dr-dFL"/>
                             <constraint firstItem="ybf-Ul-DAD" firstAttribute="leading" secondItem="d8F-Xs-HKy" secondAttribute="leading" id="ghJ-Nt-as2"/>
+                            <constraint firstAttribute="trailing" secondItem="Yax-nK-TNe" secondAttribute="trailing" constant="69" id="lj5-rG-EQP"/>
                             <constraint firstAttribute="trailing" secondItem="03I-nb-m2h" secondAttribute="trailing" id="nR0-mZ-tN5"/>
                             <constraint firstItem="SpA-TB-dr5" firstAttribute="leading" secondItem="d8F-Xs-HKy" secondAttribute="leading" id="q10-u8-orJ"/>
                             <constraint firstItem="ybf-Ul-DAD" firstAttribute="top" secondItem="03I-nb-m2h" secondAttribute="bottom" id="rOV-JU-Bvs"/>

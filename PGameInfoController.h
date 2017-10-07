@@ -15,7 +15,7 @@
 #import "BuyGamePaymentMethodView.h"
 #import "PaymentInformationView.h"
 
-@interface PGameInfoController : NSViewController <BFViewController, StorePurchaseListViewDelegate, BuyGameMainViewDelegate, BuyGameQRViewDelegate, BuyGamePaymentMethodViewDelegate>
+@interface PGameInfoController : NSViewController <BFViewController, StorePurchaseListViewDelegate, BuyGameMainViewDelegate, BuyGameQRViewDelegate, BuyGamePaymentMethodViewDelegate, PaymentInformationViewDelegate>
 
 @property (weak) IBOutlet BuyGameMainView *buyGameMainView;
 @property (weak) IBOutlet StoreGameInfoView *storeGameInfoView;

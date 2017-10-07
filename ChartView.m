@@ -1,10 +1,3 @@
-//
-//  ChartView.m
-//  XenioUIKit
-//
-//  Created by Сергей Иванов on 19.09.17.
-//  Copyright © 2017 mifsoftware. All rights reserved.
-//
 
 #import "ChartView.h"
 
@@ -18,8 +11,13 @@
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
     if(self) {
-        [self updateBackBar];
+        
     }
+}
+
+-(void)viewDidMoveToWindow {
+    [super viewDidMoveToWindow];
+    
 }
 
 -(instancetype)initWithCoder:(NSCoder *)coder {
@@ -39,6 +37,10 @@
         currentView.frame = CGRectMake(currentView.frame.origin.x, currentView.frame.origin.y, currentView.frame.size.width, displayHeight);
         displayHeight = currentHeight;
     }
+    [self.lineChartView setFirstLinePercent:currentPercent];
+    [self.lineChartView setSecondLinePercent:currentPercent];
+    [self.lineChartView updateLines];
+    [self setNeedsDisplay:YES];
 }
 
 
@@ -69,5 +71,13 @@
     return CGPointMake(x, y);
 }
 
+
+- (void)someBackgroundTask:(NSTimer *)timer {
+    float low_bound = 5;
+    float high_bound = 95;
+    float rndValue = (((float)arc4random()/0x100000000)*(high_bound-low_bound)+low_bound);
+    [self setCurrentPercent:rndValue];
+    [self updateBackBar];
+}
 
 @end

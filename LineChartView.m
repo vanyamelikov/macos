@@ -22,8 +22,7 @@
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
     if(self) {
-        [self updateFirstLine];
-        [self updateSecondLine];
+        
     }
 }
 
@@ -34,6 +33,11 @@
         [self preDrawSecondLine];
     }
     return self;
+}
+
+-(void)updateLines {
+    [self updateFirstLine];
+    [self updateSecondLine];
 }
 
 -(void)updateFirstLine {

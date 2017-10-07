@@ -57,6 +57,7 @@
 		315947281F7C99D80073FA52 /* SplitViewWithDivider.m in Sources */ = {isa = PBXBuildFile; fileRef = 315947271F7C99D80073FA52 /* SplitViewWithDivider.m */; };
 		3167C9DA1F85BD270082C94C /* DonwloadsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3167C9D91F85BD270082C94C /* DonwloadsView.xib */; };
 		3167C9DD1F85CBD40082C94C /* DownloadsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3167C9DC1F85CBD40082C94C /* DownloadsView.m */; };
+		3167C9E01F8662CB0082C94C /* DownloadsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3167C9DF1F8662CB0082C94C /* DownloadsViewController.m */; };
 		317B05FA1F852408006D2786 /* PaymentInfoCheckboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 317B05F91F852408006D2786 /* PaymentInfoCheckboxCell.xib */; };
 		317B05FD1F85248C006D2786 /* PayInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 317B05FC1F85248C006D2786 /* PayInfoCell.m */; };
 		317B05FF1F852525006D2786 /* PaymentInfoGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 317B05FE1F852525006D2786 /* PaymentInfoGameCell.xib */; };
@@ -428,6 +429,8 @@
 		3167C9D91F85BD270082C94C /* DonwloadsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonwloadsView.xib; sourceTree = "<group>"; };
 		3167C9DB1F85CBD40082C94C /* DownloadsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadsView.h; sourceTree = "<group>"; };
 		3167C9DC1F85CBD40082C94C /* DownloadsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadsView.m; sourceTree = "<group>"; };
+		3167C9DE1F8662CB0082C94C /* DownloadsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadsViewController.h; sourceTree = "<group>"; };
+		3167C9DF1F8662CB0082C94C /* DownloadsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadsViewController.m; sourceTree = "<group>"; };
 		317B05F91F852408006D2786 /* PaymentInfoCheckboxCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentInfoCheckboxCell.xib; sourceTree = "<group>"; };
 		317B05FB1F85248C006D2786 /* PayInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayInfoCell.h; sourceTree = "<group>"; };
 		317B05FC1F85248C006D2786 /* PayInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayInfoCell.m; sourceTree = "<group>"; };
@@ -2014,6 +2017,8 @@
 				3E7230A91F7347B10050A70D /* SettingsViewControllers */,
 				3E6FE7FA1F7844EC00B98AD3 /* SignInViewController.h */,
 				3E6FE7FB1F7844EC00B98AD3 /* SignInViewController.m */,
+				3167C9DE1F8662CB0082C94C /* DownloadsViewController.h */,
+				3167C9DF1F8662CB0082C94C /* DownloadsViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -2387,6 +2392,7 @@
 				315947191F7C6B190073FA52 /* StoreGameInfoView.m in Sources */,
 				31B8EB921F7FD82500962504 /* StoreMainGamesGridViewController.m in Sources */,
 				31B07EDF1F815A4E00B6BCCA /* LibraryEmptyView.m in Sources */,
+				3167C9E01F8662CB0082C94C /* DownloadsViewController.m in Sources */,
 				3E7230DD1F7350940050A70D /* NSView+INSNibLoading.m in Sources */,
 				317B060C1F855707006D2786 /* ActivityTag.m in Sources */,
 				31F155531F820AAF0070B256 /* PGameInfoController.m in Sources */,

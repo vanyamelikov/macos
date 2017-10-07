@@ -36,6 +36,13 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SQ8-46-20z">
                                 <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="eq6-mp-9Yc">
+                                        <connections>
+                                            <action selector="openStoreGameDetailClick:" target="-2" id="6Ve-Kb-vb5"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_6" id="e0v-9m-1kf"/>
                             </imageView>
                         </subviews>
@@ -52,6 +59,13 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="slr-UL-q1N">
                                 <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="E1T-C2-1U4">
+                                        <connections>
+                                            <action selector="openStoreGameDetailClick:" target="-2" id="P3f-qS-myh"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_7" id="aO0-s1-28U"/>
                             </imageView>
                         </subviews>
@@ -68,6 +82,13 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w3w-89-XDP">
                                 <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="L9f-fB-pyL">
+                                        <connections>
+                                            <action selector="openStoreGameDetailClick:" target="-2" id="2K2-wX-qmm"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_8" id="1gF-Jx-WOv"/>
                             </imageView>
                         </subviews>
@@ -84,6 +105,13 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k5u-Ca-Goa">
                                 <rect key="frame" x="0.0" y="0.0" width="528" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="Ru5-bo-1j7">
+                                        <connections>
+                                            <action selector="openStoreGameDetailClick:" target="-2" id="vOm-gu-Oaj"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_9" id="1uj-6k-8bs"/>
                             </imageView>
                         </subviews>
@@ -100,6 +128,13 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dQC-Zc-ufo">
                                 <rect key="frame" x="0.0" y="0.0" width="730" height="392"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="Myw-Ej-Zcf">
+                                        <connections>
+                                            <action selector="openStoreGameDetailClick:" target="-2" id="4Sj-75-XHA"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_1" id="Bgb-k9-Rla"/>
                             </imageView>
                         </subviews>
@@ -116,6 +151,13 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9mz-Jg-zQo">
                                 <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="q5C-9a-4XE">
+                                        <connections>
+                                            <action selector="openStoreGameDetailClick:" target="-2" id="BnK-g4-JEB"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_4" id="Mkh-7q-X6I"/>
                             </imageView>
                         </subviews>
@@ -132,6 +174,13 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fzw-xf-Vy1">
                                 <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="W3s-wv-gtd">
+                                        <connections>
+                                            <action selector="openStoreGameDetailClick:" target="-2" id="G6c-Zu-UmQ"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_5" id="WyK-WG-vJT"/>
                             </imageView>
                         </subviews>
@@ -148,6 +197,13 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yP4-GE-7mL">
                                 <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="yx9-HT-pmc">
+                                        <connections>
+                                            <action selector="openStoreGameDetailClick:" target="-2" id="Rp3-ld-Ujv"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_2" id="AJH-QQ-64K"/>
                             </imageView>
                         </subviews>
@@ -164,6 +220,13 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H3T-cT-HN0">
                                 <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="OUQ-TC-QFB">
+                                        <connections>
+                                            <action selector="openStoreGameDetailClick:" target="-2" id="IiH-AN-j1l"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="img_grid_3" id="UVv-Z9-NRb"/>
                             </imageView>
                         </subviews>

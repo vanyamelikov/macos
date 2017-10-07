@@ -7,7 +7,9 @@
 //
 
 #import "NSView+INSNibLoading.h"
+#import "WalletAddressModalViewController.h"
 
-@interface ReceiveView : INSNibLoadedView
+@interface ReceiveView : INSNibLoadedView <NSPopoverDelegate, WalletAddressModalDelegate>
+@property (weak) IBOutlet NSTextField *addressLabel;
 
 @end

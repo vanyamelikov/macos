@@ -36,6 +36,13 @@
                                     <constraint firstAttribute="width" constant="30" id="1l2-Xx-gzU"/>
                                     <constraint firstAttribute="height" constant="30" id="6Na-YN-PUN"/>
                                 </constraints>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="cpP-zW-XaQ">
+                                        <connections>
+                                            <action selector="openDownloadsPage:" target="-2" id="MUO-2J-VHP"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_download" id="a0y-kt-GqA"/>
                             </imageView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="5jn-Nk-oo2" customClass="RoundButton">

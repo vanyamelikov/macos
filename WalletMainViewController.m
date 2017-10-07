@@ -171,8 +171,6 @@
     }
 }
 
-
-
 - (void)chooseFriend {
     NSLog(@"");
 }

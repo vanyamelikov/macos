@@ -22,4 +22,6 @@
 
 @property (nonatomic) IBInspectable CGFloat currentPercent;
 
+-(void)updateBackBar;
+
 @end

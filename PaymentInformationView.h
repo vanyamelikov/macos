@@ -8,6 +8,12 @@
 
 #import "NSView+INSNibLoading.h"
 
-@interface PaymentInformationView : INSNibLoadedView
+@class PaymentInformationView;
 
+@protocol PaymentInformationViewDelegate <NSObject>
+-(void)openMainStoreViewController;
+@end
+
+@interface PaymentInformationView : INSNibLoadedView
+@property (nonatomic, weak) id<PaymentInformationViewDelegate> delegate;
 @end

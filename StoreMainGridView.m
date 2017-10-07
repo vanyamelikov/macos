@@ -4,6 +4,8 @@
     NSArray *items;
 }
 
+@synthesize delegate;
+
 -(void)awakeFromNib {
     [super awakeFromNib];
     if(self) {
@@ -41,6 +43,11 @@
         [itemView setWantsLayer: YES];
         [itemView.layer setCornerRadius:2.0f];
         itemView.layer.masksToBounds = YES;
+    }
+}
+- (IBAction)openStoreGameDetailClick:(id)sender {
+    if(delegate && [self.delegate respondsToSelector:@selector(openGameDetail)]) {
+        [self.delegate openGameDetail];
     }
 }
 

@@ -46,7 +46,7 @@ BOOL first = YES;
 }
 
 -(void)mouseUp:(NSEvent *)theEvent {
-    [self.roundButton setFillColor:RGBcolor];
+    //[self.roundButton setFillColor:RGBcolor];
 }
 
 

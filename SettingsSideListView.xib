@@ -18,6 +18,14 @@
             <rect key="frame" x="0.0" y="0.0" width="338" height="487"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
+                <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="jjS-9U-31v">
+                    <rect key="frame" x="0.0" y="0.0" width="338" height="487"/>
+                    <view key="contentView" id="Mq0-uw-Uer">
+                        <rect key="frame" x="0.0" y="0.0" width="338" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="fillColor" red="0.08235294118" green="0.094117647060000004" blue="0.13725490200000001" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
                 <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="jwp-oH-toX">
                     <rect key="frame" x="0.0" y="0.0" width="338" height="487"/>
                     <view key="contentView" id="vwv-kP-eJC">
@@ -85,9 +93,13 @@
                 </box>
             </subviews>
             <constraints>
+                <constraint firstItem="jjS-9U-31v" firstAttribute="top" secondItem="pxR-aU-AhE" secondAttribute="top" id="0gV-7h-Oa4"/>
                 <constraint firstItem="jwp-oH-toX" firstAttribute="top" secondItem="pxR-aU-AhE" secondAttribute="top" id="BEZ-jy-g1T"/>
+                <constraint firstItem="jjS-9U-31v" firstAttribute="leading" secondItem="pxR-aU-AhE" secondAttribute="leading" id="PtR-NM-b3H"/>
+                <constraint firstAttribute="bottom" secondItem="jjS-9U-31v" secondAttribute="bottom" id="VCL-EZ-lXf"/>
                 <constraint firstAttribute="bottom" secondItem="jwp-oH-toX" secondAttribute="bottom" id="VtF-ec-ceL"/>
                 <constraint firstAttribute="trailing" secondItem="jwp-oH-toX" secondAttribute="trailing" id="aTu-Ec-pTO"/>
+                <constraint firstAttribute="trailing" secondItem="jjS-9U-31v" secondAttribute="trailing" id="i9h-ti-uaR"/>
                 <constraint firstItem="jwp-oH-toX" firstAttribute="leading" secondItem="pxR-aU-AhE" secondAttribute="leading" id="y2W-A1-jFG"/>
             </constraints>
             <point key="canvasLocation" x="-389" y="275.5"/>

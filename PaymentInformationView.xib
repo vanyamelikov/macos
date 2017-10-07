@@ -46,6 +46,13 @@
                         <constraint firstAttribute="height" constant="29" id="PrZ-cI-BP1"/>
                         <constraint firstAttribute="width" constant="110" id="z8C-12-4XX"/>
                     </constraints>
+                    <gestureRecognizers>
+                        <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="DNg-UA-3kq">
+                            <connections>
+                                <action selector="openMainStore:" target="-2" id="0g9-rz-fGu"/>
+                            </connections>
+                        </clickGestureRecognizer>
+                    </gestureRecognizers>
                 </customView>
             </subviews>
             <constraints>

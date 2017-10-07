@@ -14,7 +14,7 @@
                 <outlet property="downloadLabel" destination="zCJ-wk-p7e" id="zVJ-ZG-zwu"/>
                 <outlet property="gameImage" destination="XOU-Ei-zEl" id="KQa-ld-igL"/>
                 <outlet property="gameNameLabel" destination="jQH-Pm-K25" id="nUG-MP-mw7"/>
-                <outlet property="progressView" destination="2ra-9T-hun" id="Ff6-re-LY4"/>
+                <outlet property="progressBarView" destination="dFq-cJ-I7o" id="8sm-sU-cwX"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -38,7 +38,7 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="miniCrysis" id="NSe-9O-Q5J"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jQH-Pm-K25">
-                                <rect key="frame" x="85" y="20" width="77" height="30"/>
+                                <rect key="frame" x="85" y="16" width="77" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="VNS-X0-p0V"/>
                                 </constraints>
@@ -48,20 +48,8 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="2ra-9T-hun">
-                                <rect key="frame" x="437" y="29" width="302" height="4"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="302" id="aXl-LO-XFP"/>
-                                    <constraint firstAttribute="height" constant="4" id="cR3-aj-u9e"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </customView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zCJ-wk-p7e">
-                                <rect key="frame" x="924" y="22" width="233" height="17"/>
+                                <rect key="frame" x="895" y="22" width="233" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="gPt-Ia-dDr"/>
                                 </constraints>
@@ -78,17 +66,47 @@
                                     <constraint firstAttribute="height" constant="27" id="a5M-st-3rs"/>
                                 </constraints>
                             </customView>
+                            <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="SLQ-ao-Ajn">
+                                <rect key="frame" x="437" y="29" width="380" height="2"/>
+                                <view key="contentView" id="k3z-5f-ScP">
+                                    <rect key="frame" x="0.0" y="0.0" width="380" height="2"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="dFq-cJ-I7o">
+                                            <rect key="frame" x="0.0" y="-2" width="240" height="6"/>
+                                            <view key="contentView" id="7T1-4F-u5j">
+                                                <rect key="frame" x="1" y="1" width="238" height="4"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="240" id="bPm-A1-QaP"/>
+                                            </constraints>
+                                            <color key="fillColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </box>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="dFq-cJ-I7o" firstAttribute="leading" secondItem="k3z-5f-ScP" secondAttribute="leading" id="4fl-3Y-D3Y"/>
+                                        <constraint firstItem="dFq-cJ-I7o" firstAttribute="top" secondItem="k3z-5f-ScP" secondAttribute="top" constant="-2" id="DlG-Gt-N5N"/>
+                                        <constraint firstAttribute="bottom" secondItem="dFq-cJ-I7o" secondAttribute="bottom" constant="-2" id="K9r-pj-1F2"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="380" id="7Vy-R9-mva"/>
+                                    <constraint firstAttribute="height" constant="2" id="Agx-D6-sdD"/>
+                                </constraints>
+                                <color key="fillColor" red="0.23921568630000001" green="0.4823529412" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </box>
                         </subviews>
                         <constraints>
                             <constraint firstItem="zCJ-wk-p7e" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" id="39s-WN-e45"/>
                             <constraint firstItem="jQH-Pm-K25" firstAttribute="leading" secondItem="XOU-Ei-zEl" secondAttribute="trailing" constant="26" id="AGl-07-rwC"/>
+                            <constraint firstItem="SLQ-ao-Ajn" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" id="AkZ-aF-V0t"/>
                             <constraint firstItem="XOU-Ei-zEl" firstAttribute="leading" secondItem="sr3-I2-CdM" secondAttribute="leading" id="ReO-Bc-Y7n"/>
                             <constraint firstAttribute="trailing" secondItem="HtN-eu-JIr" secondAttribute="trailing" constant="6" id="Trx-Zl-PHU"/>
+                            <constraint firstItem="zCJ-wk-p7e" firstAttribute="leading" secondItem="SLQ-ao-Ajn" secondAttribute="trailing" constant="80" id="UUL-Gj-XyX"/>
                             <constraint firstItem="HtN-eu-JIr" firstAttribute="centerY" secondItem="zCJ-wk-p7e" secondAttribute="centerY" id="eTc-Jd-9am"/>
-                            <constraint firstItem="2ra-9T-hun" firstAttribute="leading" secondItem="XOU-Ei-zEl" secondAttribute="trailing" constant="376" id="s8k-Yc-SxX"/>
-                            <constraint firstItem="zCJ-wk-p7e" firstAttribute="leading" secondItem="2ra-9T-hun" secondAttribute="trailing" constant="187" id="voa-Gc-f7K"/>
-                            <constraint firstItem="jQH-Pm-K25" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" constant="-4" id="wa7-qc-23Q"/>
-                            <constraint firstItem="2ra-9T-hun" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" id="y85-zL-bkK"/>
+                            <constraint firstItem="HtN-eu-JIr" firstAttribute="leading" secondItem="zCJ-wk-p7e" secondAttribute="trailing" constant="207" id="poA-qJ-dKW"/>
+                            <constraint firstItem="jQH-Pm-K25" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" id="wa7-qc-23Q"/>
                             <constraint firstItem="XOU-Ei-zEl" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" id="z9i-vf-DY2"/>
                         </constraints>
                     </view>

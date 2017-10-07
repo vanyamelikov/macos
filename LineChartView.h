@@ -22,5 +22,6 @@
 @property (nonatomic) IBInspectable CGFloat secondLinePointsDistance;
 @property (nonatomic) IBInspectable CGFloat secondLinePercent;
 
+-(void)updateLines;
 
 @end

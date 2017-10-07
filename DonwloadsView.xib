@@ -256,13 +256,6 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="sli-yR-5gd" customClass="ChartView">
-                                <rect key="frame" x="947" y="22" width="474" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="5Ls-lh-dNq"/>
-                                    <constraint firstAttribute="width" constant="474" id="qpq-Ch-iHy"/>
-                                </constraints>
-                            </customView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="zhD-pz-Xkf" firstAttribute="leading" secondItem="9K4-uT-AOP" secondAttribute="trailing" constant="170" id="03r-DK-m5R"/>
@@ -274,8 +267,6 @@
                             <constraint firstItem="L82-Lk-BKd" firstAttribute="centerY" secondItem="E5F-5S-i03" secondAttribute="centerY" id="7ew-Xy-dcT"/>
                             <constraint firstItem="E5F-5S-i03" firstAttribute="leading" secondItem="UiJ-1S-Pir" secondAttribute="trailing" constant="21" id="7p1-p7-ShB"/>
                             <constraint firstItem="MlR-vb-feY" firstAttribute="centerY" secondItem="P0A-l1-eA9" secondAttribute="centerY" id="A5x-Mg-4wC"/>
-                            <constraint firstItem="sli-yR-5gd" firstAttribute="centerY" secondItem="WbA-Ve-WDj" secondAttribute="centerY" id="AcB-oI-wtO"/>
-                            <constraint firstAttribute="trailing" secondItem="sli-yR-5gd" secondAttribute="trailing" constant="19" id="Bp1-2t-MyN"/>
                             <constraint firstItem="pdE-1c-n0Y" firstAttribute="top" secondItem="MlR-vb-feY" secondAttribute="bottom" constant="1" id="CAy-g7-DRO"/>
                             <constraint firstItem="COb-lp-3Uz" firstAttribute="leading" secondItem="UiJ-1S-Pir" secondAttribute="trailing" constant="21" id="EIO-JU-3UH"/>
                             <constraint firstItem="WyZ-eJ-mh6" firstAttribute="top" secondItem="Iqm-6D-51s" secondAttribute="bottom" constant="1" id="F3P-eb-2pp"/>
@@ -312,18 +303,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="1440" height="701"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Njb-1C-y6j" customClass="StoreDownloadsView">
-                                <rect key="frame" x="19" y="0.0" width="1402" height="581"/>
-                            </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="hN0-Dz-vrC" customClass="AllStopButton">
-                                <rect key="frame" x="19" y="606" width="110" height="29"/>
+                                <rect key="frame" x="19" y="607" width="110" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="arP-Ra-lcc"/>
                                     <constraint firstAttribute="width" constant="110" id="yua-qr-3MW"/>
                                 </constraints>
                             </customView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RUb-1v-gR7">
-                                <rect key="frame" x="17" y="660" width="115" height="30"/>
+                                <rect key="frame" x="17" y="661" width="115" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Wxn-z3-bv0"/>
                                 </constraints>
@@ -342,16 +330,12 @@
                             </customView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Njb-1C-y6j" firstAttribute="top" secondItem="hN0-Dz-vrC" secondAttribute="bottom" constant="25" id="1hI-gc-qJi"/>
-                            <constraint firstItem="Njb-1C-y6j" firstAttribute="leading" secondItem="Ew8-mQ-AwV" secondAttribute="leading" constant="19" id="7Qp-hh-uv4"/>
                             <constraint firstItem="RUb-1v-gR7" firstAttribute="leading" secondItem="Ew8-mQ-AwV" secondAttribute="leading" constant="19" id="8xG-hu-AaU"/>
                             <constraint firstAttribute="trailing" secondItem="K3b-fd-TzV" secondAttribute="trailing" id="AgT-SN-IRF"/>
                             <constraint firstItem="K3b-fd-TzV" firstAttribute="top" secondItem="Ew8-mQ-AwV" secondAttribute="top" constant="16" id="EVz-CK-aVp"/>
                             <constraint firstItem="hN0-Dz-vrC" firstAttribute="top" secondItem="RUb-1v-gR7" secondAttribute="bottom" constant="25" id="NgX-RX-UnG"/>
-                            <constraint firstAttribute="bottom" secondItem="Njb-1C-y6j" secondAttribute="bottom" id="iip-mk-NUf"/>
-                            <constraint firstItem="Njb-1C-y6j" firstAttribute="top" secondItem="Ew8-mQ-AwV" secondAttribute="top" constant="120" id="mXW-fj-SpC"/>
+                            <constraint firstItem="RUb-1v-gR7" firstAttribute="top" secondItem="Ew8-mQ-AwV" secondAttribute="top" constant="10" id="ZU0-Fm-y1r"/>
                             <constraint firstItem="hN0-Dz-vrC" firstAttribute="leading" secondItem="Ew8-mQ-AwV" secondAttribute="leading" constant="19" id="tya-1O-QPk"/>
-                            <constraint firstAttribute="trailing" secondItem="Njb-1C-y6j" secondAttribute="trailing" constant="19" id="z7w-fW-hFW"/>
                         </constraints>
                     </view>
                     <color key="fillColor" red="0.090196078430000007" green="0.1019607843" blue="0.14901960780000001" alpha="0.80251869249999996" colorSpace="calibratedRGB"/>

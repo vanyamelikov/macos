@@ -17,6 +17,7 @@
 @property (strong) IBOutlet NSView *progressView;
 @property (strong) IBOutlet NSTextField *downloadLabel;
 @property (strong) IBOutlet RoundButton *button;
+@property (weak) IBOutlet NSBox *progressBarView;
 
 
 @end

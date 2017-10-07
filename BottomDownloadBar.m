@@ -10,4 +10,13 @@
 
 @implementation BottomDownloadBar
 
+@synthesize delegate;
+
+- (IBAction)openDownloadsPage:(NSClickGestureRecognizer *)sender {
+    if(delegate && [self.delegate respondsToSelector:@selector(openDownloadsViewController)]) {
+        [self.delegate openDownloadsViewController];
+    }
+}
+
+
 @end

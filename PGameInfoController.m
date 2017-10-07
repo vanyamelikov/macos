@@ -38,6 +38,7 @@
     self.buyGameMainView.delegate = self;
     self.buyGameQrView.delegate = self;
     self.paymentMethodView.delegate = self;
+    self.paymentInformationView.delegate = self;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -94,8 +95,6 @@
 }
 
 - (void)continueToPaymentInfo {
-    
-    
     [NSAnimationContext beginGrouping];
     [[NSAnimationContext currentContext] setDuration:1.0f];
     self.buyGameMainView.animator.hidden = YES;
@@ -112,6 +111,10 @@
     self.paymentMethodView.animator.hidden = YES;
     self.paymentInformationView.animator.hidden = NO;
     [NSAnimationContext endGrouping];
+}
+
+-(void)openMainStoreViewController {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 @end

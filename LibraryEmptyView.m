@@ -21,4 +21,8 @@
     }
 }
 
+- (IBAction)backAction:(NSClickGestureRecognizer *)sender {
+    
+}
+
 @end

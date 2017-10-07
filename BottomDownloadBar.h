@@ -9,6 +9,11 @@
 #import "NSView+INSNibLoading.h"
 #import "RoundButton.h"
 
+@class BottomDownloadBar;
+@protocol BottomDownloadBarDelegate <NSObject>
+-(void)openDownloadsViewController;
+@end
+
 @interface BottomDownloadBar : INSNibLoadedView
 
 @property (strong) IBOutlet RoundButton *stopButton;
@@ -18,5 +23,7 @@
 @property (strong) IBOutlet NSBox *backgroundBar;
 @property (strong) IBOutlet NSTextField *percentLabel;
 @property (strong) IBOutlet NSImageView *hideButton;
+
+@property (nonatomic, weak) id<BottomDownloadBarDelegate> delegate;
 
 @end

@@ -9,6 +9,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="WalletSendMoneyView">
             <connections>
+                <outlet property="addressTextField" destination="MYb-oI-ewj" id="8Sh-yH-9bW"/>
                 <outlet property="chooseFriendButton" destination="lj6-mM-8f8" id="oO1-JD-lyj"/>
                 <outlet property="chooseFriendImage" destination="ghF-G0-dHQ" id="SLW-7C-89V"/>
                 <outlet property="chooseFriendView" destination="Pgu-cd-b4H" id="jkx-Jh-3RC"/>
@@ -350,6 +351,14 @@
                                 <constraint firstAttribute="bottom" secondItem="26p-og-cml" secondAttribute="bottom" constant="1" id="gbQ-SY-0db"/>
                                 <constraint firstAttribute="width" constant="278" id="yHp-Sj-lay"/>
                             </constraints>
+                            <gestureRecognizers>
+                                <clickGestureRecognizer delaysSecondaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="xsp-Wc-RjH">
+                                    <buttonMask key="buttonMask" secondary="YES"/>
+                                    <connections>
+                                        <action selector="showCopyPastePopup:" target="-2" id="mCk-qo-D38"/>
+                                    </connections>
+                                </clickGestureRecognizer>
+                            </gestureRecognizers>
                             <color key="borderColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                         </box>
                     </subviews>

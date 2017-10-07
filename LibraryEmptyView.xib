@@ -34,8 +34,24 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showTitle" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="B65-OP-4Qn">
+                                <rect key="frame" x="20" y="717" width="110" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="esY-js-iZq"/>
+                                    <constraint firstAttribute="height" constant="52" id="h9v-jR-teU"/>
+                                </constraints>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="c2n-Ef-RzZ">
+                                        <connections>
+                                            <action selector="backAction:" target="-2" id="Br1-aa-L3V"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
+                            </customView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="B65-OP-4Qn" firstAttribute="top" secondItem="Aqg-hp-MNd" secondAttribute="top" id="8ao-Tg-9fr"/>
+                            <constraint firstItem="B65-OP-4Qn" firstAttribute="leading" secondItem="Aqg-hp-MNd" secondAttribute="leading" constant="20" id="Dri-PH-SFU"/>
                             <constraint firstItem="F7G-MF-2x7" firstAttribute="top" secondItem="Aqg-hp-MNd" secondAttribute="top" constant="16" id="Imf-Hk-A9M"/>
                             <constraint firstAttribute="trailing" secondItem="F7G-MF-2x7" secondAttribute="trailing" id="XMb-Rk-ZsX"/>
                         </constraints>
@@ -43,6 +59,25 @@
                     <color key="borderColor" red="1" green="1" blue="1" alpha="0.040730122319999999" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="fillColor" red="0.090196078430000007" green="0.1019607843" blue="0.14901960780000001" alpha="0.75009776431779152" colorSpace="calibratedRGB"/>
                 </box>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SsD-We-ULB">
+                    <rect key="frame" x="26" y="733" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="Sd8-Ei-gD8"/>
+                        <constraint firstAttribute="width" constant="16" id="zLh-El-Wco"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_backarrow" id="vSx-9O-c46"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="u0c-1O-YhW">
+                    <rect key="frame" x="57" y="729" width="59" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="xnY-4n-uBp"/>
+                    </constraints>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Store" id="5VB-N3-1ND">
+                        <font key="font" size="20" name="SFProText-Bold"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
                 <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="FjY-al-mjH">
                     <rect key="frame" x="26" y="672" width="1308" height="1"/>
                     <view key="contentView" id="8U7-3N-rzd">
@@ -76,13 +111,6 @@
                     <color key="borderColor" red="1" green="1" blue="1" alpha="0.040730122319999999" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="fillColor" red="0.090196078430000007" green="0.1019607843" blue="0.14901960780000001" alpha="0.98186639909999995" colorSpace="calibratedRGB"/>
                 </box>
-                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Qzq-y1-2LK" customClass="ArrowButton">
-                    <rect key="frame" x="26" y="719" width="100" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="100" id="EYw-LN-lAb"/>
-                        <constraint firstAttribute="height" constant="30" id="z2R-h4-oXM"/>
-                    </constraints>
-                </customView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BCA-bN-4TB">
                     <rect key="frame" x="24" y="681" width="92" height="18"/>
                     <constraints>
@@ -122,22 +150,28 @@
                 </customView>
             </subviews>
             <constraints>
+                <constraint firstItem="u0c-1O-YhW" firstAttribute="top" secondItem="trc-IH-5yq" secondAttribute="top" constant="10" id="4Jc-6g-7lY"/>
                 <constraint firstItem="iBh-bx-HDj" firstAttribute="centerX" secondItem="trc-IH-5yq" secondAttribute="centerX" id="6xQ-qZ-V00"/>
                 <constraint firstAttribute="bottom" secondItem="Lxa-aA-vyx" secondAttribute="bottom" id="7VK-ZP-FgM"/>
                 <constraint firstItem="iBh-bx-HDj" firstAttribute="top" secondItem="9rf-dd-ibI" secondAttribute="bottom" constant="26" id="AVV-Cd-Mfg"/>
                 <constraint firstItem="9rf-dd-ibI" firstAttribute="top" secondItem="FjY-al-mjH" secondAttribute="bottom" constant="255" id="Bda-nd-ypk"/>
-                <constraint firstItem="BCA-bN-4TB" firstAttribute="top" secondItem="Qzq-y1-2LK" secondAttribute="bottom" constant="20" id="Dd7-R6-6hB"/>
-                <constraint firstItem="Qzq-y1-2LK" firstAttribute="top" secondItem="trc-IH-5yq" secondAttribute="top" constant="20" id="Dez-m4-G97"/>
                 <constraint firstItem="9rf-dd-ibI" firstAttribute="centerX" secondItem="trc-IH-5yq" secondAttribute="centerX" id="E0B-Mk-pJu"/>
                 <constraint firstAttribute="trailing" secondItem="FjY-al-mjH" secondAttribute="trailing" constant="26" id="ELn-Cf-NVn"/>
                 <constraint firstItem="Lxa-aA-vyx" firstAttribute="leading" secondItem="trc-IH-5yq" secondAttribute="leading" id="Eam-8Y-4BB"/>
+                <constraint firstItem="u0c-1O-YhW" firstAttribute="leading" secondItem="SsD-We-ULB" secondAttribute="trailing" constant="17" id="JeQ-Xu-Ert"/>
                 <constraint firstItem="FjY-al-mjH" firstAttribute="leading" secondItem="trc-IH-5yq" secondAttribute="leading" constant="26" id="SwS-8d-VFn"/>
+                <constraint firstItem="SsD-We-ULB" firstAttribute="top" secondItem="trc-IH-5yq" secondAttribute="top" constant="20" id="UFC-JU-VJ2"/>
                 <constraint firstItem="Lxa-aA-vyx" firstAttribute="top" secondItem="trc-IH-5yq" secondAttribute="top" id="fHB-MT-8gf"/>
-                <constraint firstItem="Qzq-y1-2LK" firstAttribute="leading" secondItem="trc-IH-5yq" secondAttribute="leading" constant="26" id="g2C-Io-7Ky"/>
                 <constraint firstAttribute="trailing" secondItem="Lxa-aA-vyx" secondAttribute="trailing" id="n4o-4F-s8w"/>
+                <constraint firstItem="BCA-bN-4TB" firstAttribute="top" secondItem="u0c-1O-YhW" secondAttribute="bottom" constant="30" id="qEs-yZ-jhQ"/>
                 <constraint firstItem="BCA-bN-4TB" firstAttribute="leading" secondItem="trc-IH-5yq" secondAttribute="leading" constant="26" id="r6f-LU-Sa5"/>
+                <constraint firstItem="SsD-We-ULB" firstAttribute="leading" secondItem="trc-IH-5yq" secondAttribute="leading" constant="26" id="txX-KT-ymf"/>
                 <constraint firstItem="FjY-al-mjH" firstAttribute="top" secondItem="BCA-bN-4TB" secondAttribute="bottom" constant="8" id="vTY-A6-eVb"/>
             </constraints>
+            <point key="canvasLocation" x="131" y="168.5"/>
         </customView>
     </objects>
+    <resources>
+        <image name="ic_backarrow" width="16" height="11"/>
+    </resources>
 </document>

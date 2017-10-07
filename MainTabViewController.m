@@ -9,7 +9,6 @@
 #import "MainTabViewController.h"
 #import "MainWindow.h"
 #import "MainStoreViewController.h"
-#import "BottomDownloadBar.h"
 #import <QuartzCore/QuartzCore.h>
 #import "LibraryViewController.h"
 #import "WalletMainViewController.h"
@@ -25,6 +24,7 @@
 #import "Colours.h"
 #import "FriendsProfileViewController.h"
 #import "ChatMainView.h"
+#import "DownloadsViewController.h"
 
 @interface MainTabViewController (){
     NSWindowController *_controlWindowController;
@@ -187,19 +187,20 @@
                                                                           mainWindow.contentView.frame.origin.y,
                                                                           mainWindow.contentView.frame.size.width,
                                                                           75.0f)];
+        downloadBar.delegate = self;
         [downloadBar setAutoresizingMask:NSViewWidthSizable];
         [downloadBar setTranslatesAutoresizingMaskIntoConstraints:YES];
     }
     if(!isShowDownloadBar) {
         [NSAnimationContext beginGrouping];
-        [[NSAnimationContext currentContext] setDuration:1.5f];
+        [[NSAnimationContext currentContext] setDuration:1.0f];
         [mainWindow.animator.contentView addSubview:downloadBar positioned:NSWindowOut relativeTo:nil];
         [mainWindow.animator.contentView setNeedsDisplay:YES];
         isShowDownloadBar = YES;
         [NSAnimationContext endGrouping];
     } else {
         [NSAnimationContext beginGrouping];
-        [[NSAnimationContext currentContext] setDuration:1.5f];
+        [[NSAnimationContext currentContext] setDuration:1.0f];
         [downloadBar.animator removeFromSuperview];
         [mainWindow.animator.contentView setNeedsDisplay:YES];
         isShowDownloadBar = NO;
@@ -217,14 +218,14 @@
     }
     if(!isShowMainChatView) {
         [NSAnimationContext beginGrouping];
-        [[NSAnimationContext currentContext] setDuration:1.5f];
+        [[NSAnimationContext currentContext] setDuration:1.0f];
         [mainWindow.animator.contentView addSubview:mainChatView positioned:NSWindowOut relativeTo:nil];
         [mainWindow.animator.contentView setNeedsDisplay:YES];
         isShowMainChatView = YES;
         [NSAnimationContext endGrouping];
     } else {
         [NSAnimationContext beginGrouping];
-        [[NSAnimationContext currentContext] setDuration:1.5f];
+        [[NSAnimationContext currentContext] setDuration:1.0f];
         [mainChatView.animator removeFromSuperview];
         [mainWindow.animator.contentView setNeedsDisplay:YES];
         isShowMainChatView = NO;
@@ -282,6 +283,35 @@
     // object.
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     //[super dealloc];
+}
+
+-(void)openDownloadsViewController {
+    MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
+    if(!isShowDownloadBar) {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:1.0f];
+        [mainWindow.animator.contentView addSubview:downloadBar positioned:NSWindowOut relativeTo:nil];
+        [mainWindow.animator.contentView setNeedsDisplay:YES];
+        isShowDownloadBar = YES;
+        [NSAnimationContext endGrouping];
+    } else {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:1.0f];
+        [downloadBar.animator removeFromSuperview];
+        [mainWindow.animator.contentView setNeedsDisplay:YES];
+        isShowDownloadBar = NO;
+        [NSAnimationContext endGrouping];
+        
+        NSStoryboard *sb1 = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+        DownloadsViewController *downloadsVC = (DownloadsViewController *)[sb1 instantiateControllerWithIdentifier:@"DownloadsViewController"];
+        [downloadsVC.view setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
+        [downloadsVC.view setTranslatesAutoresizingMaskIntoConstraints:YES];
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:1.0f];
+        [mainWindow.animator.contentView addSubview:downloadsVC.view positioned:NSWindowOut relativeTo:nil];
+        [mainWindow.animator.contentView setNeedsDisplay:YES];
+        [NSAnimationContext endGrouping];
+    }
 }
 
 @end

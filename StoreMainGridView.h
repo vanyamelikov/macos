@@ -1,5 +1,11 @@
 #import "NSView+INSNibLoading.h"
 
+
+@class StoreMainGridView;
+@protocol StoreMainGridViewDelegate <NSObject>
+-(void)openGameDetail;
+@end
+
 @interface StoreMainGridView : INSNibLoadedView
 
 @property (weak) IBOutlet NSImageView *storeImage1;
@@ -11,5 +17,7 @@
 @property (weak) IBOutlet NSImageView *storeImage7;
 @property (weak) IBOutlet NSImageView *storeImage8;
 @property (weak) IBOutlet NSImageView *storeImage9;
+
+@property (nonatomic, weak) id<StoreMainGridViewDelegate> delegate;
 
 @end

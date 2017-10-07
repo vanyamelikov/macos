@@ -9,7 +9,10 @@
 #import "WalletSendMoneyView.h"
 #import "Colours.h"
 
-@implementation WalletSendMoneyView
+@implementation WalletSendMoneyView {
+    NSPopover *popover;
+    WalletAddressModalViewController *popoverViewController;
+}
 
 @synthesize delegate;
 
@@ -65,5 +68,27 @@
     [self.chooseFriendImage setImage:[NSImage imageNamed:@"img_wallet_friend_2"]];
 }
 
+- (IBAction)showCopyPastePopup:(NSClickGestureRecognizer *)sender {
+    popover = [[NSPopover alloc] init];
+    [popover setBehavior: NSPopoverBehaviorTransient];
+    [popover setDelegate: self];
+    popoverViewController = [[WalletAddressModalViewController alloc] initWithNibName: @"WalletAddressModalViewController" bundle: nil];
+    [popover setContentViewController: popoverViewController];
+    [popover setContentSize: popoverViewController.view.frame.size];
+    [popover showRelativeToRect: sender.view.bounds
+                         ofView: sender.view
+                  preferredEdge: NSMaxYEdge | NSMaxXEdge];
+}
+
+-(void)awakeFromNib {
+    [super awakeFromNib];
+    popoverViewController.delegate = self;
+}
+
+-(void)pasteAddressValue {
+    NSPasteboard*  myPasteboard  = [NSPasteboard generalPasteboard];
+    NSString* myString = [myPasteboard  stringForType:NSPasteboardTypeString];
+    [self.addressTextField setStringValue:myString];
+}
 
 @end

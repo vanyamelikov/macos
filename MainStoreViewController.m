@@ -23,7 +23,7 @@
     StoreMainGridView *gamesMainGrid = (StoreMainGridView *)storeContentVC.gamesTabController.tabViewItems[2].view;
     gamesListView.delegate = self;
     gamesGridView.delegate = self;
-    
+    gamesMainGrid.delegate = self;
 }
 
 #pragma mark - StoreGamesViewDelegate
@@ -38,6 +38,11 @@
 
 - (void)gamesGridViewItemClicked:(id)item {
     NSLog(@"Collection coming object is = %@", item);
+}
+
+- (void)openGameDetail {
+    PGameInfoController *mChildVC = [[PGameInfoController alloc] initWithNibName:@"PGameInfoController" bundle:[NSBundle mainBundle]];
+    [self.navigationController pushViewController:mChildVC animated:YES];
 }
 
 @end

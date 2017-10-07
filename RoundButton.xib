@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,20 +28,20 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UWl-BB-b3e">
                                 <rect key="frame" x="7" y="6" width="10" height="12"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="10" id="GEt-5N-cDi"/>
-                                    <constraint firstAttribute="height" constant="12" id="vLO-RH-SSu"/>
+                                    <constraint firstAttribute="height" constant="12" id="FKv-Tc-nGn"/>
+                                    <constraint firstAttribute="width" constant="10" id="ucu-lK-obv"/>
                                 </constraints>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_pause" id="dKW-ht-qWj"/>
                             </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="UWl-BB-b3e" firstAttribute="centerX" secondItem="Kjx-gX-YMK" secondAttribute="centerX" id="6G0-8d-z64"/>
-                            <constraint firstItem="UWl-BB-b3e" firstAttribute="centerY" secondItem="Kjx-gX-YMK" secondAttribute="centerY" id="CPU-3v-aDg"/>
+                            <constraint firstItem="UWl-BB-b3e" firstAttribute="centerY" secondItem="Kjx-gX-YMK" secondAttribute="centerY" id="MX2-gA-TZH"/>
+                            <constraint firstItem="UWl-BB-b3e" firstAttribute="centerX" secondItem="Kjx-gX-YMK" secondAttribute="centerX" id="UCk-g6-uE2"/>
                         </constraints>
                     </view>
                     <constraints>
-                        <constraint firstAttribute="width" constant="26" id="7fh-V4-Vvo"/>
-                        <constraint firstAttribute="height" constant="26" id="q1a-9E-KvL"/>
+                        <constraint firstAttribute="height" constant="26" id="oSx-jb-DSx"/>
+                        <constraint firstAttribute="width" constant="26" id="zz5-vE-n6D"/>
                     </constraints>
                     <color key="borderColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="fillColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -53,10 +53,10 @@
                 </box>
             </subviews>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="EVB-m7-QaQ" secondAttribute="bottom" id="6eI-fL-OJ5"/>
-                <constraint firstItem="EVB-m7-QaQ" firstAttribute="leading" secondItem="ycn-ug-r33" secondAttribute="leading" id="X4s-Jz-VWx"/>
-                <constraint firstAttribute="trailing" secondItem="EVB-m7-QaQ" secondAttribute="trailing" id="Xcz-eZ-zfy"/>
-                <constraint firstItem="EVB-m7-QaQ" firstAttribute="top" secondItem="ycn-ug-r33" secondAttribute="top" id="yfo-Bf-uxY"/>
+                <constraint firstItem="EVB-m7-QaQ" firstAttribute="leading" secondItem="ycn-ug-r33" secondAttribute="leading" id="FZa-un-ked"/>
+                <constraint firstAttribute="trailing" secondItem="EVB-m7-QaQ" secondAttribute="trailing" id="Ob2-RK-mIU"/>
+                <constraint firstAttribute="bottom" secondItem="EVB-m7-QaQ" secondAttribute="bottom" id="ZyU-KD-FEv"/>
+                <constraint firstItem="EVB-m7-QaQ" firstAttribute="top" secondItem="ycn-ug-r33" secondAttribute="top" id="shI-c1-T8t"/>
             </constraints>
             <point key="canvasLocation" x="195" y="204"/>
         </customView>

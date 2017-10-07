@@ -14,9 +14,22 @@
 
 @implementation WalletAddressModalViewController
 
+@synthesize delegate;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+}
+- (IBAction)copyClick:(NSClickGestureRecognizer *)sender {
+    if(delegate && [self.delegate respondsToSelector:@selector(copyAddressValue)]) {
+        [self.delegate copyAddressValue];
+    }
+
+}
+- (IBAction)pasteClick:(NSClickGestureRecognizer *)sender {
+    if(delegate && [self.delegate respondsToSelector:@selector(pasteAddressValue)]) {
+        [self.delegate pasteAddressValue];
+    }
 }
 
 @end

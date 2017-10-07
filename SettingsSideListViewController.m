@@ -22,6 +22,12 @@
 }
 
 - (IBAction)friendsRequestClick:(id)sender {
+    
+}
+
+//FriendsModalOverlay
+
+- (IBAction)openFriendsRequest:(id)sender {
     NSStoryboard *friends = [NSStoryboard storyboardWithName:@"Friends" bundle:nil];
     NSViewController *friendsVC = [friends instantiateControllerWithIdentifier:@"FriendsModalOverlay"];
     modalOverlay.contentViewController = friendsVC;
@@ -34,6 +40,5 @@
     [modalOverlay showInWindow:self.view.window];
 }
 
-//FriendsModalOverlay
 
 @end

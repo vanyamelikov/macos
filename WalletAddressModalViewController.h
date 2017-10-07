@@ -8,6 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface WalletAddressModalViewController : NSViewController
+@class WalletAddressModalViewController;
+@protocol WalletAddressModalDelegate <NSObject>
+-(void)copyAddressValue;
+-(void)pasteAddressValue;
+@end
 
+@interface WalletAddressModalViewController : NSViewController
+@property (nonatomic, weak) id<WalletAddressModalDelegate> delegate;
 @end
