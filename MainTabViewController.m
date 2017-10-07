@@ -308,8 +308,9 @@
         [downloadsVC.view setTranslatesAutoresizingMaskIntoConstraints:YES];
         [NSAnimationContext beginGrouping];
         [[NSAnimationContext currentContext] setDuration:1.0f];
-        [mainWindow.animator.contentView addSubview:downloadsVC.view positioned:NSWindowOut relativeTo:nil];
-        [mainWindow.animator.contentView setNeedsDisplay:YES];
+        [[_mainTabView tabViewItemAtIndex:0].view.animator addSubview:downloadsVC.view positioned:NSWindowOut relativeTo:nil];
+        //[mainWindow.animator.contentView addSubview:downloadsVC.view positioned:NSWindowOut relativeTo:nil];
+        [[_mainTabView tabViewItemAtIndex:0].view.animator setNeedsDisplay:YES];
         [NSAnimationContext endGrouping];
     }
 }

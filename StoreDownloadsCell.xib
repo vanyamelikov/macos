@@ -81,7 +81,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="240" id="bPm-A1-QaP"/>
                                             </constraints>
-                                            <color key="fillColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="fillColor" red="0.20392156862745098" green="0.4392156862745098" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
                                         </box>
                                     </subviews>
                                     <constraints>
@@ -94,7 +94,7 @@
                                     <constraint firstAttribute="width" constant="380" id="7Vy-R9-mva"/>
                                     <constraint firstAttribute="height" constant="2" id="Agx-D6-sdD"/>
                                 </constraints>
-                                <color key="fillColor" red="0.23921568630000001" green="0.4823529412" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="fillColor" red="0.41568627450980389" green="0.55686274509803924" blue="0.67450980392156867" alpha="0.10434240797546013" colorSpace="calibratedRGB"/>
                             </box>
                         </subviews>
                         <constraints>

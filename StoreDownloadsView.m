@@ -31,56 +31,46 @@
     dataSourceArray = [[NSMutableArray alloc] init];
     
     StoreDownloadsModel *model1 = [StoreDownloadsModel new];
-    //model1.title = @"Featured";
+    model1.gameImage = @"ic_downloads_1";
+    model1.gameNameLabel = @"";
+    model1.progressText = @"";
+    model1.progressView = 0;
     [dataSourceArray addObject:model1];
     
     StoreDownloadsModel *model2 = [StoreDownloadsModel new];
-    //model2.title = @"Popular";
+    model2.gameImage = @"ic_downloads_2";
+    model2.gameNameLabel = @"";
+    model2.progressText = @"";
+    model2.progressView = 0;
     [dataSourceArray addObject:model2];
     
     StoreDownloadsModel *model3 = [StoreDownloadsModel new];
-    //model3.title = @"New";
+    model3.gameImage = @"ic_downloads_3";
+    model3.gameNameLabel = @"";
+    model3.progressText = @"";
+    model3.progressView = 0;
     [dataSourceArray addObject:model3];
     
     StoreDownloadsModel *model4 = [StoreDownloadsModel new];
-    //model4.title = @"REVIEW OF CATEGORIES";
+    model4.gameImage = @"ic_downloads_4";
+    model4.gameNameLabel = @"";
+    model4.progressText = @"";
+    model4.progressView = 0;
     [dataSourceArray addObject:model4];
     
     StoreDownloadsModel *model5 = [StoreDownloadsModel new];
-    //model5.title = @"Leaders Of Sells";
+    model5.gameImage = @"ic_downloads_5";
+    model5.gameNameLabel = @"";
+    model5.progressText = @"";
+    model5.progressView = 0;
     [dataSourceArray addObject:model5];
     
     StoreDownloadsModel *model6 = [StoreDownloadsModel new];
-    //model6.title = @"Recently Updated";
+    model6.gameImage = @"ic_downloads_6";
+    model6.gameNameLabel = @"";
+    model6.progressText = @"";
+    model6.progressView = 0;
     [dataSourceArray addObject:model6];
-    
-    StoreDownloadsModel *model7 = [StoreDownloadsModel new];
-    //model6.title = @"Recently Updated";
-    [dataSourceArray addObject:model7];
-    
-    StoreDownloadsModel *model8 = [StoreDownloadsModel new];
-    //model6.title = @"Recently Updated";
-    [dataSourceArray addObject:model8];
-    
-    StoreDownloadsModel *model9 = [StoreDownloadsModel new];
-    //model6.title = @"Recently Updated";
-    [dataSourceArray addObject:model9];
-    
-    StoreDownloadsModel *model10 = [StoreDownloadsModel new];
-    //model6.title = @"Recently Updated";
-    [dataSourceArray addObject:model10];
-    
-    StoreDownloadsModel *model11 = [StoreDownloadsModel new];
-    //model6.title = @"Recently Updated";
-    [dataSourceArray addObject:model11];
-    
-    StoreDownloadsModel *model12 = [StoreDownloadsModel new];
-    //model6.title = @"Recently Updated";
-    [dataSourceArray addObject:model12];
-    
-    StoreDownloadsModel *model13 = [StoreDownloadsModel new];
-    //model6.title = @"Recently Updated";
-    [dataSourceArray addObject:model13];
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
