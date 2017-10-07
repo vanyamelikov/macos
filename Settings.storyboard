@@ -496,7 +496,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="525" id="ep4-Cj-oJh"/>
                                 </constraints>
-                                <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="0.59984183282208603" colorSpace="calibratedRGB"/>
+                                <color key="fillColor" red="0.074509803921568626" green="0.086274509803921567" blue="0.12549019607843137" alpha="0.89680070935582834" colorSpace="calibratedRGB"/>
                             </box>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NC0-Rs-JXz">
                                 <rect key="frame" x="26" y="729" width="16" height="16"/>
