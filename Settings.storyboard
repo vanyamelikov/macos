@@ -161,7 +161,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="333" id="HS3-fd-35C"/>
                                             </constraints>
-                                            <color key="borderColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="borderColor" red="1" green="1" blue="1" alpha="0.10330473542944787" colorSpace="custom" customColorSpace="sRGB"/>
                                         </box>
                                         <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="pbc-4N-qFh">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="525"/>
@@ -212,7 +212,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="37" id="l0K-dw-QYx"/>
                                                         </constraints>
-                                                        <color key="borderColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="borderColor" red="1" green="1" blue="1" alpha="0.098667561349693275" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </box>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xhb-qR-bLn">
                                                         <rect key="frame" x="13" y="406" width="57" height="20"/>
@@ -290,7 +290,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="37" id="Fkg-2l-uEN"/>
                                                         </constraints>
-                                                        <color key="borderColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="borderColor" red="1" green="1" blue="1" alpha="0.10330473542944787" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </box>
                                                     <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="jWJ-r0-GGU">
                                                         <rect key="frame" x="15" y="276" width="375" height="37"/>
@@ -324,7 +324,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="37" id="ZIM-MP-Z7p"/>
                                                         </constraints>
-                                                        <color key="borderColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="borderColor" red="1" green="1" blue="1" alpha="0.10330473542944787" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </box>
                                                     <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="ema-Bg-4cm">
                                                         <rect key="frame" x="15" y="195" width="375" height="37"/>
@@ -358,7 +358,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="37" id="xsb-3v-r2B"/>
                                                         </constraints>
-                                                        <color key="borderColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="borderColor" red="1" green="1" blue="1" alpha="0.10330473542944787" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </box>
                                                     <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="XUh-8V-2cq">
                                                         <rect key="frame" x="15" y="33" width="375" height="37"/>
@@ -392,7 +392,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="37" id="KLU-Mr-6al"/>
                                                         </constraints>
-                                                        <color key="borderColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="borderColor" red="1" green="1" blue="1" alpha="0.10330473542944787" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </box>
                                                     <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="yAX-p8-uRR">
                                                         <rect key="frame" x="15" y="114" width="375" height="37"/>
@@ -426,7 +426,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="37" id="IZi-Dm-xii"/>
                                                         </constraints>
-                                                        <color key="borderColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="borderColor" red="1" green="1" blue="1" alpha="0.10330473542944787" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </box>
                                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="u9T-tP-YLp">
                                                         <rect key="frame" x="13" y="82" width="99" height="20"/>
@@ -496,7 +496,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="525" id="ep4-Cj-oJh"/>
                                 </constraints>
-                                <color key="fillColor" red="0.074509803921568626" green="0.086274509803921567" blue="0.12549019607843137" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="0.59984183282208603" colorSpace="calibratedRGB"/>
                             </box>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NC0-Rs-JXz">
                                 <rect key="frame" x="26" y="729" width="16" height="16"/>
@@ -589,7 +589,7 @@
                                     <constraint firstAttribute="width" constant="338" id="JLo-7M-9rw"/>
                                 </constraints>
                                 <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <color key="fillColor" red="0.34157451919999998" green="0.64983173080000001" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="0.79978671395705525" colorSpace="custom" customColorSpace="sRGB"/>
                             </box>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="03I-nb-m2h" customClass="SettingsSideListView">
                                 <rect key="frame" x="0.0" y="37" width="338" height="792"/>

@@ -82,6 +82,7 @@
                             <constraint firstItem="0y4-Dh-ORL" firstAttribute="leading" secondItem="Rd6-5D-AiC" secondAttribute="leading" id="fk6-5C-iJS"/>
                         </constraints>
                     </view>
+                    <color key="fillColor" red="0.074509803921568626" green="0.086274509803921567" blue="0.12549019607843137" alpha="0.20045293328220859" colorSpace="calibratedRGB"/>
                 </box>
             </subviews>
             <constraints>

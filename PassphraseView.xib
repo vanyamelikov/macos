@@ -210,7 +210,7 @@ We do not store your passphrase and, if lost, can not recover it.</string>
                             <constraint firstItem="hlg-Qp-aTx" firstAttribute="top" secondItem="i9V-O9-mAn" secondAttribute="bottom" constant="16" id="sUE-z3-2pv"/>
                         </constraints>
                     </view>
-                    <color key="fillColor" red="0.074509803920000006" green="0.086274509799999996" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" red="0.10196078431372549" green="0.11372549019607843" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                 </box>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OZR-ha-gaA">
                     <rect key="frame" x="15" y="629" width="158" height="23"/>

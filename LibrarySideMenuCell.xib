@@ -27,7 +27,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Dg-4R-aZ5">
-                                <rect key="frame" x="0.0" y="0.0" width="255" height="30"/>
+                                <rect key="frame" x="0.0" y="0.0" width="258" height="30"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="sidemenu_focus" id="9I9-f3-TXW"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wPa-8E-zLp">
@@ -48,7 +48,7 @@
                             <constraint firstItem="8Dg-4R-aZ5" firstAttribute="leading" secondItem="ceB-MD-JYI" secondAttribute="leading" id="6Lf-DM-a4C"/>
                             <constraint firstAttribute="bottom" secondItem="8Dg-4R-aZ5" secondAttribute="bottom" id="ASJ-hF-KCd"/>
                             <constraint firstAttribute="trailing" secondItem="wPa-8E-zLp" secondAttribute="trailing" constant="20" id="GCn-Cg-sc6"/>
-                            <constraint firstAttribute="trailing" secondItem="8Dg-4R-aZ5" secondAttribute="trailing" id="M3w-Ub-r4s"/>
+                            <constraint firstAttribute="trailing" secondItem="8Dg-4R-aZ5" secondAttribute="trailing" constant="-3" id="M3w-Ub-r4s"/>
                             <constraint firstItem="wPa-8E-zLp" firstAttribute="centerY" secondItem="ceB-MD-JYI" secondAttribute="centerY" id="VdR-1Y-oIW"/>
                         </constraints>
                     </view>

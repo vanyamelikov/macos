@@ -132,7 +132,7 @@
                             <constraint firstAttribute="trailing" secondItem="dL4-kr-0aB" secondAttribute="trailing" id="tZ8-i4-0TX"/>
                         </constraints>
                     </view>
-                    <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="0.7961920053680982" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="0.39793424079754602" colorSpace="calibratedRGB"/>
                 </box>
             </subviews>
             <constraints>

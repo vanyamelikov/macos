@@ -32,43 +32,43 @@
     
     StoreDownloadsModel *model1 = [StoreDownloadsModel new];
     model1.gameImage = @"ic_downloads_1";
-    model1.gameNameLabel = @"";
-    model1.progressText = @"";
+    model1.gameNameLabel = @"Crysis 2";
+    model1.progressText = @"Downloaded: 25.3 MB / 4.0 GB (4%)";
     model1.progressView = 0;
     [dataSourceArray addObject:model1];
     
     StoreDownloadsModel *model2 = [StoreDownloadsModel new];
     model2.gameImage = @"ic_downloads_2";
-    model2.gameNameLabel = @"";
-    model2.progressText = @"";
+    model2.gameNameLabel = @"Need For Speed MW 2";
+    model2.progressText = @"Downloaded: 2.8 GB / 3.7 GB (62%)";
     model2.progressView = 0;
     [dataSourceArray addObject:model2];
     
     StoreDownloadsModel *model3 = [StoreDownloadsModel new];
     model3.gameImage = @"ic_downloads_3";
-    model3.gameNameLabel = @"";
-    model3.progressText = @"";
+    model3.gameNameLabel = @"DIRT: Rally";
+    model3.progressText = @"Downloaded: 3.1 GB / 6.8 GB (42%)";
     model3.progressView = 0;
     [dataSourceArray addObject:model3];
     
     StoreDownloadsModel *model4 = [StoreDownloadsModel new];
     model4.gameImage = @"ic_downloads_4";
-    model4.gameNameLabel = @"";
-    model4.progressText = @"";
+    model4.gameNameLabel = @"Assassin's creed: Unity";
+    model4.progressText = @"Downloaded: 8.9 GB / 9.4 GB (4%)";
     model4.progressView = 0;
     [dataSourceArray addObject:model4];
     
     StoreDownloadsModel *model5 = [StoreDownloadsModel new];
     model5.gameImage = @"ic_downloads_5";
-    model5.gameNameLabel = @"";
-    model5.progressText = @"";
+    model5.gameNameLabel = @"SIMS 4";
+    model5.progressText = @"Downloaded: 0 / 0.0 GB (0%)";
     model5.progressView = 0;
     [dataSourceArray addObject:model5];
     
     StoreDownloadsModel *model6 = [StoreDownloadsModel new];
     model6.gameImage = @"ic_downloads_6";
-    model6.gameNameLabel = @"";
-    model6.progressText = @"";
+    model6.gameNameLabel = @"Medal Of Honor";
+    model6.progressText = @"Downloaded: 0 / 0.0 GB (4%)";
     model6.progressView = 0;
     [dataSourceArray addObject:model6];
     
@@ -95,10 +95,11 @@
 }
 
 -(NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-    //StoreDownloadsModel *model = [dataSourceArray objectAtIndex:row];
+    StoreDownloadsModel *model = [dataSourceArray objectAtIndex:row];
     StoreDownloadsCell *cell = (StoreDownloadsCell *)[tableView makeViewWithIdentifier:@"StoreGamesCell" owner:self];
-    //cell.gameNameLabel.stringValue = model.title;
-    
+    [cell.gameImage setImage:[NSImage imageNamed:model.gameImage]];
+    [cell.gameNameLabel setStringValue:model.gameNameLabel];
+    [cell.downloadLabel setStringValue:model.progressText];
     return cell;
 }
 

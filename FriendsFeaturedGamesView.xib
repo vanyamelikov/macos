@@ -19,19 +19,19 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <box boxType="custom" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="wJR-iF-V2Z">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <rect key="frame" x="20" y="0.0" width="440" height="272"/>
                     <view key="contentView" id="iRF-Hc-9YO">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="272"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" verticalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="Zd9-C8-INg">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                                <rect key="frame" x="6" y="0.0" width="428" height="272"/>
                                 <clipView key="contentView" drawsBackground="NO" id="us3-Vd-hgM">
-                                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="428" height="272"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <collectionView maxNumberOfRows="1" id="sHg-5l-9wk">
-                                            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="272"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="primaryBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </collectionView>
@@ -51,16 +51,17 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Zd9-C8-INg" secondAttribute="bottom" id="Oox-TI-P8l"/>
                             <constraint firstItem="Zd9-C8-INg" firstAttribute="top" secondItem="iRF-Hc-9YO" secondAttribute="top" id="W3B-2i-kJQ"/>
-                            <constraint firstAttribute="trailing" secondItem="Zd9-C8-INg" secondAttribute="trailing" id="jsu-t6-cda"/>
-                            <constraint firstItem="Zd9-C8-INg" firstAttribute="leading" secondItem="iRF-Hc-9YO" secondAttribute="leading" id="keT-Jc-7yL"/>
+                            <constraint firstAttribute="trailing" secondItem="Zd9-C8-INg" secondAttribute="trailing" constant="6" id="jsu-t6-cda"/>
+                            <constraint firstItem="Zd9-C8-INg" firstAttribute="leading" secondItem="iRF-Hc-9YO" secondAttribute="leading" constant="6" id="keT-Jc-7yL"/>
                         </constraints>
                     </view>
+                    <color key="fillColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="0.60404284892638038" colorSpace="custom" customColorSpace="sRGB"/>
                 </box>
             </subviews>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="wJR-iF-V2Z" secondAttribute="bottom" id="SIF-EE-fl2"/>
-                <constraint firstItem="wJR-iF-V2Z" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="TPH-Zh-rOp"/>
-                <constraint firstAttribute="trailing" secondItem="wJR-iF-V2Z" secondAttribute="trailing" id="aTN-F7-5KP"/>
+                <constraint firstItem="wJR-iF-V2Z" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="TPH-Zh-rOp"/>
+                <constraint firstAttribute="trailing" secondItem="wJR-iF-V2Z" secondAttribute="trailing" constant="20" id="aTN-F7-5KP"/>
                 <constraint firstItem="wJR-iF-V2Z" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="jQ6-6r-E3h"/>
             </constraints>
         </customView>

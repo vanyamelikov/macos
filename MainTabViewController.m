@@ -134,13 +134,13 @@
     NSLog(@"Delegate Clicked Tab Is %ld", sender);
     [self animation:sender : _mainTabBar.selectedTab];
     if(sender == 0){
-        [self setBackgroundImage:@"background_store_2"];
+        [self setBackgroundImage:@"background_store_1"];
         [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:0]];  
     }else if (sender == 1){
         [self setBackgroundImage:@"background_library"];
         [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:1]];
     }else if (sender == 2){
-        [self setBackgroundImage:@"background_store_2"];
+        [self setBackgroundImage:@"background_main"];
         [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:2]];
     }else if (sender == 3){//friends
         [self setBackgroundImage:@"background_profile"];
@@ -157,7 +157,7 @@
         if(![_mainTabView.selectedTabViewItem isEqual:[_mainTabView.tabViewItems objectAtIndex:3]])
             [_mainTabView selectTabViewItem:[_mainTabView.tabViewItems objectAtIndex:3]];
     }else if (sender == 4){//settings
-        [self setBackgroundImage:@"background_store_2"];
+        [self setBackgroundImage:@"background_profile"];
         NSSplitView *superView = (NSSplitView *)[_mainTabView.tabViewItems objectAtIndex:3].view;
         
         //get friends edit content view
@@ -236,20 +236,14 @@
 -(void)setBackgroundImage : (NSString *) imageName {
     if(imageView == nil) {
         imageView = [[NSImageView alloc] initWithFrame:self.view.frame];
+        [imageView setImage:[NSImage imageNamed:imageName]];
         [imageView setImageScaling:NSImageScaleAxesIndependently];
         [imageView setImageAlignment:NSImageAlignCenter];
         [imageView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
         
         [self.view addSubview:imageView positioned:NSWindowBelow relativeTo:self.view];
         
-        MyRectGradientView *rectGradientView = [[MyRectGradientView alloc] initWithFrame:self.view.frame];
-        [rectGradientView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
         
-        [rectGradientView setStartColor:[NSColor colorWithRed:(23/255) green:(26/255) blue:(38/255) alpha:.9f]];
-        [rectGradientView setEndColor:[NSColor colorWithRed:(23/255) green:(26/255) blue:(38/255) alpha:.9f]];
-        [rectGradientView setAngle:90.0];
-        
-        [self.view addSubview:rectGradientView positioned:NSWindowAbove relativeTo:imageView];
         
         NSDictionary * views = NSDictionaryOfVariableBindings(imageView);
         [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[imageView]|"
@@ -260,16 +254,7 @@
                                                                           options:0
                                                                           metrics:nil
                                                                             views:views]];
-        
-        NSDictionary * rectViews = NSDictionaryOfVariableBindings(rectGradientView);
-        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[rectGradientView]|"
-                                                                          options:0
-                                                                          metrics:nil
-                                                                            views:rectViews]];
-        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[rectGradientView]|"
-                                                                          options:0
-                                                                          metrics:nil
-                                                                            views:rectViews]];
+
     } else {
         [imageView setImage:[NSImage imageNamed:imageName]];
     }

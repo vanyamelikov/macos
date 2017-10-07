@@ -82,7 +82,7 @@
                             <constraint firstItem="HZd-VT-5Ho" firstAttribute="leading" secondItem="iBj-B6-OB5" secondAttribute="leading" id="gk6-a3-i93"/>
                         </constraints>
                     </view>
-                    <color key="fillColor" red="0.08235294118" green="0.094117647060000004" blue="0.13725490200000001" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.08235294118" green="0.094117647060000004" blue="0.13725490200000001" alpha="0.39738305214723929" colorSpace="custom" customColorSpace="sRGB"/>
                 </box>
             </subviews>
             <constraints>

@@ -138,7 +138,7 @@
                         <constraint firstAttribute="width" constant="255" id="Owj-gy-POc"/>
                     </constraints>
                     <color key="borderColor" red="0.08235294118" green="0.094117647060000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <color key="fillColor" red="0.08235294118" green="0.094117647060000004" blue="0.13725490200000001" alpha="0.80134442101226999" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" red="0.08235294118" green="0.094117647060000004" blue="0.13725490200000001" alpha="0.39944401840490795" colorSpace="calibratedRGB"/>
                 </box>
             </subviews>
             <constraints>

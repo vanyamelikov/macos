@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
-                    <color key="fillColor" red="0.090196078431372548" green="0.10196078431372549" blue="0.14901960784313725" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="fillColor" red="0.090196078431372548" green="0.10196078431372549" blue="0.14901960784313725" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                 </box>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="eWS-y7-bGy" customClass="WalletHistoryView">
                     <rect key="frame" x="26" y="0.0" width="1388" height="761"/>

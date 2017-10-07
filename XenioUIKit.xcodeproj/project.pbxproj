@@ -79,6 +79,7 @@
 		31972D711F7D1582008447C2 /* LibraryEmptySideMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31972D701F7D1582008447C2 /* LibraryEmptySideMenu.xib */; };
 		31972D741F7D1755008447C2 /* LibraryEmptySideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 31972D731F7D1755008447C2 /* LibraryEmptySideMenu.m */; };
 		31972D771F7D96CA008447C2 /* TextFieldWithTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 31972D761F7D96CA008447C2 /* TextFieldWithTag.m */; };
+		319C40DC1F8940CA00C27EF9 /* XenioBackgroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319C40DB1F8940CA00C27EF9 /* XenioBackgroundView.xib */; };
 		31B07EC81F80A21200B6BCCA /* SettingsFriendsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07EC71F80A21200B6BCCA /* SettingsFriendsListModel.m */; };
 		31B07ECD1F80ACCB00B6BCCA /* CustomSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B07ECB1F80ACCB00B6BCCA /* CustomSearchBar.m */; };
 		31B07ECE1F80ACCB00B6BCCA /* CustomSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31B07ECC1F80ACCB00B6BCCA /* CustomSearchBar.xib */; };
@@ -467,6 +468,7 @@
 		31972D731F7D1755008447C2 /* LibraryEmptySideMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibraryEmptySideMenu.m; sourceTree = "<group>"; };
 		31972D751F7D96CA008447C2 /* TextFieldWithTag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldWithTag.h; sourceTree = "<group>"; };
 		31972D761F7D96CA008447C2 /* TextFieldWithTag.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldWithTag.m; sourceTree = "<group>"; };
+		319C40DB1F8940CA00C27EF9 /* XenioBackgroundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XenioBackgroundView.xib; sourceTree = "<group>"; };
 		31B07EC61F80A21200B6BCCA /* SettingsFriendsListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsFriendsListModel.h; sourceTree = "<group>"; };
 		31B07EC71F80A21200B6BCCA /* SettingsFriendsListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsFriendsListModel.m; sourceTree = "<group>"; };
 		31B07ECA1F80ACCA00B6BCCA /* CustomSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomSearchBar.h; path = CustomSearchBar/CustomSearchBar.h; sourceTree = "<group>"; };
@@ -1172,6 +1174,7 @@
 			children = (
 				31F155601F82EE210070B256 /* XenioBackgroundView.h */,
 				31F155611F82EE210070B256 /* XenioBackgroundView.m */,
+				319C40DB1F8940CA00C27EF9 /* XenioBackgroundView.xib */,
 			);
 			name = XenioBackgroundView;
 			sourceTree = "<group>";
@@ -1219,8 +1222,6 @@
 			children = (
 				3E25FB1F1F66EBCA000423E9 /* AppDelegate.h */,
 				3E25FB201F66EBCA000423E9 /* AppDelegate.m */,
-				3E25FB251F66EBCA000423E9 /* ViewController.h */,
-				3E25FB261F66EBCA000423E9 /* ViewController.m */,
 				3E25FB281F66EBCA000423E9 /* Assets.xcassets */,
 				3E25FB2D1F66EBCA000423E9 /* Info.plist */,
 				3E25FB221F66EBCA000423E9 /* Supporting Files */,
@@ -2019,6 +2020,8 @@
 				3E6FE7FB1F7844EC00B98AD3 /* SignInViewController.m */,
 				3167C9DE1F8662CB0082C94C /* DownloadsViewController.h */,
 				3167C9DF1F8662CB0082C94C /* DownloadsViewController.m */,
+				3E25FB251F66EBCA000423E9 /* ViewController.h */,
+				3E25FB261F66EBCA000423E9 /* ViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -2202,6 +2205,7 @@
 				3E9C46051F7048DE00693AA1 /* Store.storyboard in Resources */,
 				3E7230B41F734ABB0050A70D /* StoreGamesView.xib in Resources */,
 				3E558BC41F79549200542B7B /* ProfileEditButton.xib in Resources */,
+				319C40DC1F8940CA00C27EF9 /* XenioBackgroundView.xib in Resources */,
 				317B05FF1F852525006D2786 /* PaymentInfoGameCell.xib in Resources */,
 				3E7230C41F734C0F0050A70D /* SendView.xib in Resources */,
 				31B8EB8E1F7FD75500962504 /* StoreMainGridViewController.xib in Resources */,

@@ -16,11 +16,11 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="104" height="125"/>
+            <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LJi-sJ-ZPI">
-                    <rect key="frame" x="2" y="16" width="100" height="17"/>
+                    <rect key="frame" x="2" y="9" width="96" height="17"/>
                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" id="PPS-5z-9Ap">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -28,7 +28,7 @@
                     </textFieldCell>
                 </textField>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wrt-Mo-8lp">
-                    <rect key="frame" x="20" y="39" width="64" height="64"/>
+                    <rect key="frame" x="18" y="32" width="64" height="64"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="64" id="W4i-aw-WLl"/>
                         <constraint firstAttribute="height" constant="64" id="ZbH-ba-rAH"/>
@@ -41,7 +41,7 @@
                 <constraint firstAttribute="trailing" secondItem="LJi-sJ-ZPI" secondAttribute="trailing" constant="4" id="aF1-SS-VhX"/>
                 <constraint firstItem="Wrt-Mo-8lp" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="f6w-Ex-9Mg"/>
                 <constraint firstItem="LJi-sJ-ZPI" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="4" id="tQv-CH-v1N"/>
-                <constraint firstItem="Wrt-Mo-8lp" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="22" id="zxt-Mf-big"/>
+                <constraint firstItem="Wrt-Mo-8lp" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="24" id="zxt-Mf-big"/>
             </constraints>
         </customView>
     </objects>

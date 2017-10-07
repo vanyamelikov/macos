@@ -19,7 +19,7 @@
 -(instancetype)initWithCoder:(NSCoder *)decoder {
     self = [super initWithCoder:decoder];
     if(self) {
-
+        
     }
     return self;
 }
@@ -27,18 +27,19 @@
 -(instancetype)initWithFrame:(NSRect)frameRect {
     self = [super initWithFrame:frameRect];
     if(self) {
-
+        
     }
     return self;
 }
 
 -(void)drawRect:(NSRect)dirtyRect {
+    [self setWantsLayer:YES];
     if(!solidLayer) {
         [self addSolidRectangleWithColor:self.solidColor
                               andOpacity:self.solidOpacity];
     } else {
-        [solidLayer setFrame:self.frame];
-        [self setNeedsDisplay:YES];
+        [solidLayer setFrame:dirtyRect];
+        [solidLayer setNeedsDisplay];
     }
     
     if(!blurredImageLayer) {
@@ -46,8 +47,8 @@
                                 blurRadius:self.blurRadius
                                    opacity:self.imageTransparency];
     } else {
-        [blurredImageLayer setFrame:self.frame];
-        [self setNeedsDisplay:YES];
+        [blurredImageLayer setFrame:dirtyRect];
+        [blurredImageLayer setNeedsDisplay];
     }
     
     if(!gradientLayer) {
@@ -55,10 +56,13 @@
                                         endColor:self.endGradientColor
                                       andOpacity:self.gradientOpacity];
     } else {
-        [gradientLayer setFrame:self.frame];
-        [self setNeedsDisplay:YES];
+        [gradientLayer setFrame:dirtyRect];
+        [gradientLayer setNeedsDisplay];
     }
-    
+    [self setNeedsDisplayInRect:dirtyRect];
+    [self setNeedsUpdateConstraints:YES];
+    [self setNeedsLayout:YES];
+    [super drawRect:dirtyRect];
     
 }
 

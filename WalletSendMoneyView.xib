@@ -32,7 +32,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
-                    <color key="fillColor" red="0.090196078431372548" green="0.10196078431372549" blue="0.14901960784313725" alpha="0.80251869248466257" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" red="0.090196078431372548" green="0.10196078431372549" blue="0.14901960784313725" alpha="0.0" colorSpace="calibratedRGB"/>
                 </box>
                 <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Wt8-gz-ixa">
                     <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
@@ -185,7 +185,7 @@
                                 <constraint firstAttribute="height" constant="82" id="5L5-Hm-2hT"/>
                                 <constraint firstAttribute="width" constant="404" id="G9B-qt-Adt"/>
                             </constraints>
-                            <color key="fillColor" red="1" green="1" blue="1" alpha="0.098770609659999994" colorSpace="calibratedRGB"/>
+                            <color key="fillColor" red="0.11372549019607843" green="0.13333333333333333" blue="0.20784313725490194" alpha="0.59781202070552142" colorSpace="calibratedRGB"/>
                         </box>
                         <box boxType="custom" cornerRadius="4" title="Amount to send" translatesAutoresizingMaskIntoConstraints="NO" id="mDg-sT-cnz">
                             <rect key="frame" x="581" y="540" width="278" height="35"/>

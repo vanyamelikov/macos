@@ -57,7 +57,7 @@
                         </constraints>
                     </view>
                     <color key="borderColor" red="1" green="1" blue="1" alpha="0.040730122319999999" colorSpace="custom" customColorSpace="sRGB"/>
-                    <color key="fillColor" red="0.090196078430000007" green="0.1019607843" blue="0.14901960780000001" alpha="0.75009776431779152" colorSpace="calibratedRGB"/>
+                    <color key="fillColor" red="0.090196078430000007" green="0.1019607843" blue="0.14901960780000001" alpha="0.0" colorSpace="calibratedRGB"/>
                 </box>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SsD-We-ULB">
                     <rect key="frame" x="26" y="733" width="16" height="16"/>

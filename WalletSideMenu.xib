@@ -74,10 +74,25 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="QXB-Kz-YIm">
+                                <rect key="frame" x="407" y="0.0" width="1" height="737"/>
+                                <view key="contentView" id="Wjf-5o-xpJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="1" height="737"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="e7X-uC-1a1"/>
+                                </constraints>
+                                <color key="borderColor" red="1" green="1" blue="1" alpha="0.039344325153374195" colorSpace="calibratedRGB"/>
+                                <color key="fillColor" red="1" green="1" blue="1" alpha="0.042094037576687116" colorSpace="calibratedRGB"/>
+                            </box>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="YxW-aX-pDV" secondAttribute="bottom" id="GZe-fi-oMR"/>
                             <constraint firstAttribute="trailing" secondItem="YxW-aX-pDV" secondAttribute="trailing" id="ThL-ee-X57"/>
+                            <constraint firstItem="QXB-Kz-YIm" firstAttribute="trailing" secondItem="YxW-aX-pDV" secondAttribute="trailing" id="XGT-1b-cV3"/>
+                            <constraint firstItem="QXB-Kz-YIm" firstAttribute="top" secondItem="vXQ-dv-kbN" secondAttribute="top" id="aTN-zn-HDY"/>
+                            <constraint firstAttribute="bottom" secondItem="QXB-Kz-YIm" secondAttribute="bottom" id="h3Q-nr-tiA"/>
                             <constraint firstItem="YxW-aX-pDV" firstAttribute="top" secondItem="vXQ-dv-kbN" secondAttribute="top" constant="10" id="h61-Yo-Jeu"/>
                             <constraint firstItem="YxW-aX-pDV" firstAttribute="leading" secondItem="vXQ-dv-kbN" secondAttribute="leading" id="sXi-DH-fgV"/>
                         </constraints>
