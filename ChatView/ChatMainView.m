@@ -7,10 +7,15 @@
 //
 
 #import "ChatMainView.h"
+#import "MainWindow.h"
 
 @implementation ChatMainView {
     NSMutableArray *itemsArray;
+    ChatDialogsView *chatDialogView;
+    BOOL isShownDialogView;
 }
+
+@synthesize delegate;
 
 -(void)awakeFromNib {
     [super awakeFromNib];
@@ -68,14 +73,24 @@
     
     self.chatTableView.delegate = self;
     self.chatTableView.dataSource = self;
+    
+    [self.chatTableView setSelectionHighlightStyle:NSTableViewSelectionHighlightStyleNone];
 }
 
 - (IBAction)closeButtonClick:(NSClickGestureRecognizer *)sender {
-    NSLog(@"Close click = %@", sender.className);
-}
-
-- (IBAction)sendMessageButtonClick:(NSClickGestureRecognizer *)sender {
-    NSLog(@"Send click = %@", sender.className);
+    MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
+    if(isShownDialogView) {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:0.5f];
+        [chatDialogView.animator setFrame:CGRectOffset(chatDialogView.frame, +260.0f, 0)];
+        [chatDialogView.animator removeFromSuperview];
+        [mainWindow.animator.contentView setNeedsDisplay:YES];
+        isShownDialogView = NO;
+        [NSAnimationContext endGrouping];
+    }
+    if(delegate && [self.delegate respondsToSelector:@selector(closeChatMainView)]) {
+        [self.delegate closeChatMainView];
+    }
 }
 
 #pragma mark - TableViewDataSource
@@ -114,6 +129,35 @@
     [[NSColor redColor] set];
     [path stroke];
     [path closePath];
+}
+
+#pragma mark - Chat Dialogs View
+
+- (IBAction)openChatDialogsViewClick:(NSClickGestureRecognizer *)sender {
+    MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
+    if(!chatDialogView) {
+        chatDialogView = [[ChatDialogsView alloc] initWithFrame:CGRectMake(self.frame.origin.x,
+                                                                           self.frame.origin.y - 5.0f,
+                                                                           self.frame.size.width + 10.0f,
+                                                                           self.frame.size.height +5.0f)];
+    }
+    if(!isShownDialogView) {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:0.5f];
+        [mainWindow.contentView addSubview:chatDialogView positioned:NSWindowBelow relativeTo:self];
+        [chatDialogView.animator setFrame:CGRectOffset(chatDialogView.frame, -260.0f, 0)];
+        [mainWindow.animator.contentView setNeedsDisplay:YES];
+        isShownDialogView = YES;
+        [NSAnimationContext endGrouping];
+    } else {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:0.5f];
+        [chatDialogView.animator setFrame:CGRectOffset(chatDialogView.frame, +260.0f, 0)];
+        [chatDialogView.animator removeFromSuperview];
+        [mainWindow.animator.contentView setNeedsDisplay:YES];
+        isShownDialogView = NO;
+        [NSAnimationContext endGrouping];
+    }
 }
 
 @end

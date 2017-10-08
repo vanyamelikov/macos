@@ -11,9 +11,9 @@
 #import "BFNavigationController.h"
 #import "NSViewController+BFNavigationController.h"
 #import "BottomDownloadBar.h"
+#import "ChatMainView.h"
 
-
-@interface MainTabViewController : NSViewController <CustomTabbarDelegate, NSTabViewDelegate, BottomDownloadBarDelegate>
+@interface MainTabViewController : NSViewController <CustomTabbarDelegate, NSTabViewDelegate, BottomDownloadBarDelegate, ChatMainViewDelegate>
 
 @property (strong) IBOutlet NSTabView *mainTabView;
 @property (strong) IBOutlet CustomTabbar *mainTabBar;

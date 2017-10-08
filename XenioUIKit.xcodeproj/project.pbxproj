@@ -59,6 +59,11 @@
 		315947221F7C8DFA0073FA52 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315947211F7C8DFA0073FA52 /* QuartzCore.framework */; };
 		315947251F7C8F5E0073FA52 /* CustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 315947241F7C8F5E0073FA52 /* CustomScrollView.m */; };
 		315947281F7C99D80073FA52 /* SplitViewWithDivider.m in Sources */ = {isa = PBXBuildFile; fileRef = 315947271F7C99D80073FA52 /* SplitViewWithDivider.m */; };
+		3167816D1F8A9EC5003D30CD /* ChatDialogsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3167816C1F8A9EC5003D30CD /* ChatDialogsView.xib */; };
+		316781701F8A9ED7003D30CD /* ChatDialogsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3167816F1F8A9ED7003D30CD /* ChatDialogsView.m */; };
+		316781721F8AACAE003D30CD /* ChatDialogItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 316781711F8AACAE003D30CD /* ChatDialogItem.xib */; };
+		316781751F8AAEBF003D30CD /* ChatDialogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 316781741F8AAEBF003D30CD /* ChatDialogItem.m */; };
+		316781791F8AB03C003D30CD /* ChatDialogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 316781781F8AB03C003D30CD /* ChatDialogModel.m */; };
 		3167C9DA1F85BD270082C94C /* DonwloadsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3167C9D91F85BD270082C94C /* DonwloadsView.xib */; };
 		3167C9DD1F85CBD40082C94C /* DownloadsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3167C9DC1F85CBD40082C94C /* DownloadsView.m */; };
 		3167C9E01F8662CB0082C94C /* DownloadsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3167C9DF1F8662CB0082C94C /* DownloadsViewController.m */; };
@@ -437,6 +442,14 @@
 		315947241F7C8F5E0073FA52 /* CustomScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomScrollView.m; sourceTree = "<group>"; };
 		315947261F7C99D80073FA52 /* SplitViewWithDivider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitViewWithDivider.h; sourceTree = "<group>"; };
 		315947271F7C99D80073FA52 /* SplitViewWithDivider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitViewWithDivider.m; sourceTree = "<group>"; };
+		3167816C1F8A9EC5003D30CD /* ChatDialogsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatDialogsView.xib; sourceTree = "<group>"; };
+		3167816E1F8A9ED7003D30CD /* ChatDialogsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatDialogsView.h; sourceTree = "<group>"; };
+		3167816F1F8A9ED7003D30CD /* ChatDialogsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatDialogsView.m; sourceTree = "<group>"; };
+		316781711F8AACAE003D30CD /* ChatDialogItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatDialogItem.xib; sourceTree = "<group>"; };
+		316781731F8AAEBF003D30CD /* ChatDialogItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatDialogItem.h; sourceTree = "<group>"; };
+		316781741F8AAEBF003D30CD /* ChatDialogItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatDialogItem.m; sourceTree = "<group>"; };
+		316781771F8AB03C003D30CD /* ChatDialogModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatDialogModel.h; sourceTree = "<group>"; };
+		316781781F8AB03C003D30CD /* ChatDialogModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatDialogModel.m; sourceTree = "<group>"; };
 		3167C9D91F85BD270082C94C /* DonwloadsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonwloadsView.xib; sourceTree = "<group>"; };
 		3167C9DB1F85CBD40082C94C /* DownloadsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadsView.h; sourceTree = "<group>"; };
 		3167C9DC1F85CBD40082C94C /* DownloadsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadsView.m; sourceTree = "<group>"; };
@@ -982,6 +995,15 @@
 			name = BottomDownloadBar;
 			sourceTree = "<group>";
 		};
+		316781761F8AB023003D30CD /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				316781771F8AB03C003D30CD /* ChatDialogModel.h */,
+				316781781F8AB03C003D30CD /* ChatDialogModel.m */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
 		3167C9D81F85BD0B0082C94C /* DownloadsView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1135,6 +1157,12 @@
 				31D4626F1F85B309001E3AC6 /* ChatSmallView.h */,
 				31D4627B1F85B309001E3AC6 /* ChatSmallView.m */,
 				31D462781F85B309001E3AC6 /* ChatSmallView.xib */,
+				3167816C1F8A9EC5003D30CD /* ChatDialogsView.xib */,
+				3167816E1F8A9ED7003D30CD /* ChatDialogsView.h */,
+				3167816F1F8A9ED7003D30CD /* ChatDialogsView.m */,
+				316781711F8AACAE003D30CD /* ChatDialogItem.xib */,
+				316781731F8AAEBF003D30CD /* ChatDialogItem.h */,
+				316781741F8AAEBF003D30CD /* ChatDialogItem.m */,
 			);
 			path = ChatView;
 			sourceTree = "<group>";
@@ -1709,6 +1737,7 @@
 		3E8876671F754688001B8374 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				316781761F8AB023003D30CD /* Chat */,
 				3EBAADDB1F7599E300890AD1 /* Store */,
 				3EBAADDA1F7599D500890AD1 /* Library */,
 				3EBAADF91F760A3400890AD1 /* Wallet */,
@@ -2188,6 +2217,7 @@
 				31353F901F89CB9500CCB7B8 /* CustomClickableView.xib in Resources */,
 				31E4F74D1F7E9E5E0047B843 /* PaymentInformationTableView.xib in Resources */,
 				3E558C0B1F7AE2F500542B7B /* FriendsContentList.xib in Resources */,
+				3167816D1F8A9EC5003D30CD /* ChatDialogsView.xib in Resources */,
 				31D462621F859A03001E3AC6 /* WebsiteButton.xib in Resources */,
 				31353F8A1F89B2C800CCB7B8 /* DownloadsExpectationView.xib in Resources */,
 				3E8876521F74ABB2001B8374 /* FriendsRightListCell.xib in Resources */,
@@ -2238,6 +2268,7 @@
 				3ECF3CF01F6978DA005165E5 /* SaveSettingsButton.xib in Resources */,
 				31972D711F7D1582008447C2 /* LibraryEmptySideMenu.xib in Resources */,
 				3115C3851F8435BA0022F8B2 /* ProfileModalViewController.xib in Resources */,
+				316781721F8AACAE003D30CD /* ChatDialogItem.xib in Resources */,
 				31B8EB951F80433800962504 /* ChooseFriendButton.xib in Resources */,
 				3115C38A1F84360B0022F8B2 /* SelfStatusModalViewController.xib in Resources */,
 				3E88761A1F7428DA001B8374 /* WalletHistoryCell.xib in Resources */,
@@ -2360,6 +2391,7 @@
 				3ECF3CCE1F689CC2005165E5 /* RoundButton.m in Sources */,
 				3E7230F01F73559F0050A70D /* FriendsContentNavigationViewController.m in Sources */,
 				3E7230D71F734F5A0050A70D /* WalletSideMenuViewController.m in Sources */,
+				316781701F8A9ED7003D30CD /* ChatDialogsView.m in Sources */,
 				31B07EE21F81633B00B6BCCA /* LibraryGameView.m in Sources */,
 				3E558BF71F79AFA500542B7B /* FriendsHideCell.m in Sources */,
 				3E9C46021F70484C00693AA1 /* StoreNavigationViewController.m in Sources */,
@@ -2434,6 +2466,7 @@
 				317B062B1F8572D3006D2786 /* JMOverlayView.m in Sources */,
 				3E7230AC1F7348C30050A70D /* MainStoreViewController.m in Sources */,
 				315947171F7C6B190073FA52 /* StoreGameSideListCell.m in Sources */,
+				316781791F8AB03C003D30CD /* ChatDialogModel.m in Sources */,
 				3E558BFA1F79D51000542B7B /* StoreMainGridView.m in Sources */,
 				3ECF3CE71F697053005165E5 /* AllStopButton.m in Sources */,
 				3E7230D11F734EA10050A70D /* LibrarySideMenuViewController.m in Sources */,
@@ -2480,6 +2513,7 @@
 				3E8876221F744082001B8374 /* StoreDownloadsCell.m in Sources */,
 				31B07ECD1F80ACCB00B6BCCA /* CustomSearchBar.m in Sources */,
 				3EBAADDE1F759A0D00890AD1 /* StoreSideMenuModel.m in Sources */,
+				316781751F8AAEBF003D30CD /* ChatDialogItem.m in Sources */,
 				3115C3711F841D460022F8B2 /* ReceiveView.m in Sources */,
 				3115C36E1F841CA30022F8B2 /* WalletHistory.m in Sources */,
 				3EBAADFF1F760DA700890AD1 /* WalletSideMenu.m in Sources */,

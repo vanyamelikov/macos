@@ -47,6 +47,13 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="17" id="VUM-eQ-eZ8"/>
                                 </constraints>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="6s6-y8-rVM">
+                                        <connections>
+                                            <action selector="openChatDialogsViewClick:" target="-2" id="mXF-FO-3AJ"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
                                 <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Turbo Ms" usesSingleLineMode="YES" id="mgX-qk-2ws">
                                     <font key="font" size="13" name="SFProText-Medium"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -140,13 +147,6 @@
                                                 <constraint firstAttribute="height" constant="33" id="JIs-fq-XP4"/>
                                                 <constraint firstAttribute="width" constant="33" id="YZr-cZ-Sj5"/>
                                             </constraints>
-                                            <gestureRecognizers>
-                                                <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="KcK-xW-0cl">
-                                                    <connections>
-                                                        <action selector="sendMessageButtonClick:" target="-2" id="a0x-1d-DXF"/>
-                                                    </connections>
-                                                </clickGestureRecognizer>
-                                            </gestureRecognizers>
                                             <contentFilters>
                                                 <ciFilter name="CIMaskToAlpha">
                                                     <configuration>
@@ -154,7 +154,7 @@
                                                     </configuration>
                                                 </ciFilter>
                                             </contentFilters>
-                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_send_arr" id="SWx-AN-yho"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_dialog_send" id="SWx-AN-yho"/>
                                         </imageView>
                                         <textField wantsLayer="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Sgf-66-aF1">
                                             <rect key="frame" x="13" y="25" width="200" height="19"/>
@@ -216,6 +216,6 @@
     </objects>
     <resources>
         <image name="ic_chat_close" width="10" height="10"/>
-        <image name="ic_send_arr" width="13" height="13"/>
+        <image name="ic_dialog_send" width="13" height="13"/>
     </resources>
 </document>

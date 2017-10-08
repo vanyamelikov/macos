@@ -23,7 +23,6 @@
 #import "MyRectGradientView.h"
 #import "Colours.h"
 #import "FriendsProfileViewController.h"
-#import "ChatMainView.h"
 #import "DownloadsViewController.h"
 
 @interface MainTabViewController (){
@@ -242,20 +241,14 @@
                                                                           mainWindow.contentView.frame.origin.y,
                                                                           262.0f,
                                                                           334.0f)];
+        mainChatView.delegate = self;
     }
     if(!isShowMainChatView) {
         [NSAnimationContext beginGrouping];
-        [[NSAnimationContext currentContext] setDuration:1.0f];
+        [[NSAnimationContext currentContext] setDuration:0.5f];
         [mainWindow.animator.contentView addSubview:mainChatView positioned:NSWindowOut relativeTo:nil];
         [mainWindow.animator.contentView setNeedsDisplay:YES];
         isShowMainChatView = YES;
-        [NSAnimationContext endGrouping];
-    } else {
-        [NSAnimationContext beginGrouping];
-        [[NSAnimationContext currentContext] setDuration:1.0f];
-        [mainChatView.animator removeFromSuperview];
-        [mainWindow.animator.contentView setNeedsDisplay:YES];
-        isShowMainChatView = NO;
         [NSAnimationContext endGrouping];
     }
 }
@@ -323,6 +316,25 @@
         [[_mainTabView tabViewItemAtIndex:0].view.animator addSubview:downloadsVC.view positioned:NSWindowOut relativeTo:nil];
         //[mainWindow.animator.contentView addSubview:downloadsVC.view positioned:NSWindowOut relativeTo:nil];
         [[_mainTabView tabViewItemAtIndex:0].view.animator setNeedsDisplay:YES];
+        [NSAnimationContext endGrouping];
+    }
+}
+
+-(void)closeChatMainView {
+    MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
+    if(!isShowMainChatView) {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:0.5f];
+        [mainWindow.animator.contentView addSubview:mainChatView positioned:NSWindowOut relativeTo:nil];
+        [mainWindow.animator.contentView setNeedsDisplay:YES];
+        isShowMainChatView = YES;
+        [NSAnimationContext endGrouping];
+    } else {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:0.5f];
+        [mainChatView.animator removeFromSuperview];
+        [mainWindow.animator.contentView setNeedsDisplay:YES];
+        isShowMainChatView = NO;
         [NSAnimationContext endGrouping];
     }
 }

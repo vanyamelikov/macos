@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ChatDialogsView">
+            <connections>
+                <outlet property="tableView" destination="QGe-KA-rpX" id="ode-7D-NzJ"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="241" height="334"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderWidth="0.0" cornerRadius="6" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="OqY-PH-mfw">
+                    <rect key="frame" x="0.0" y="0.0" width="241" height="334"/>
+                    <view key="contentView" id="ceX-ea-oF7">
+                        <rect key="frame" x="0.0" y="0.0" width="241" height="334"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="98" horizontalPageScroll="10" verticalLineScroll="98" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="NTq-UM-wFA">
+                                <rect key="frame" x="0.0" y="5" width="231" height="324"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="QZO-5C-goq">
+                                    <rect key="frame" x="0.0" y="0.0" width="231" height="324"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="96" rowSizeStyle="automatic" viewBased="YES" floatsGroupRows="NO" id="QGe-KA-rpX">
+                                            <rect key="frame" x="0.0" y="0.0" width="231" height="324"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <size key="intercellSpacing" width="3" height="2"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                            <tableColumns>
+                                                <tableColumn width="228" minWidth="40" maxWidth="1000" id="haR-EH-Lvd">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="KVN-bW-hdl">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <prototypeCellViews>
+                                                        <customView identifier="ChatDialogItem" id="BhE-kc-WaN" customClass="ChatDialogItem">
+                                                            <rect key="frame" x="1" y="1" width="228" height="96"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        </customView>
+                                                    </prototypeCellViews>
+                                                </tableColumn>
+                                            </tableColumns>
+                                        </tableView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="RrZ-aM-bVV">
+                                    <rect key="frame" x="-100" y="-100" width="223" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="oe5-UE-Ha4">
+                                    <rect key="frame" x="-100" y="-100" width="15" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="NTq-UM-wFA" firstAttribute="leading" secondItem="ceX-ea-oF7" secondAttribute="leading" id="0QA-4m-3sO"/>
+                            <constraint firstAttribute="trailing" secondItem="NTq-UM-wFA" secondAttribute="trailing" constant="10" id="Lcz-ON-cfO"/>
+                            <constraint firstAttribute="bottom" secondItem="NTq-UM-wFA" secondAttribute="bottom" constant="5" id="ilO-1R-6fg"/>
+                            <constraint firstItem="NTq-UM-wFA" firstAttribute="top" secondItem="ceX-ea-oF7" secondAttribute="top" constant="5" id="k5s-Np-3Xh"/>
+                        </constraints>
+                    </view>
+                    <color key="fillColor" red="0.062745098039215685" green="0.070588235294117646" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="OqY-PH-mfw" secondAttribute="bottom" id="0Aw-UU-IpC"/>
+                <constraint firstItem="OqY-PH-mfw" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="2Tz-8g-HZm"/>
+                <constraint firstItem="OqY-PH-mfw" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="EKy-7X-LeZ"/>
+                <constraint firstAttribute="trailing" secondItem="OqY-PH-mfw" secondAttribute="trailing" id="zMq-gy-ANR"/>
+            </constraints>
+            <point key="canvasLocation" x="130.5" y="169"/>
+        </customView>
+    </objects>
+</document>
