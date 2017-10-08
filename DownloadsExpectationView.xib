@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DownloadsExpectationView"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UMz-cS-uWB">
+                    <rect key="frame" x="0.0" y="130" width="12" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="fJo-bC-ocm"/>
+                        <constraint firstAttribute="height" constant="12" id="wMb-je-9ef"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_expectation" id="j3R-sP-6Q9"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8rS-H0-ACa">
+                    <rect key="frame" x="22" y="126" width="94" height="19"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="EXPECTATION" usesSingleLineMode="YES" id="OtL-fJ-gFD">
+                        <font key="font" size="13" name="SFProText-Medium"/>
+                        <color key="textColor" red="0.80000000000000004" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="UMz-cS-uWB" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="73O-48-HbL"/>
+                <constraint firstItem="8rS-H0-ACa" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="CzE-vx-J16"/>
+                <constraint firstItem="UMz-cS-uWB" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="RVk-5f-d1r"/>
+                <constraint firstItem="8rS-H0-ACa" firstAttribute="leading" secondItem="UMz-cS-uWB" secondAttribute="trailing" constant="12" id="tMt-vw-SvB"/>
+            </constraints>
+        </customView>
+    </objects>
+    <resources>
+        <image name="ic_expectation" width="12" height="12"/>
+    </resources>
+</document>

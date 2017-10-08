@@ -69,8 +69,36 @@
     model6.gameImage = @"ic_downloads_6";
     model6.gameNameLabel = @"Medal Of Honor";
     model6.progressText = @"Downloaded: 0 / 0.0 GB (4%)";
-    model6.progressView = 0;
+    model6.progressView = 1;
     [dataSourceArray addObject:model6];
+    
+    StoreDownloadsModel *model7 = [StoreDownloadsModel new];
+    model7.gameImage = @"ic_downloads_1";
+    model7.gameNameLabel = @"Crysis 2";
+    model7.progressText = @"Downloaded: 25.3 MB / 4.0 GB (4%)";
+    model7.progressView = 1;
+    [dataSourceArray addObject:model7];
+    
+    StoreDownloadsModel *model8 = [StoreDownloadsModel new];
+    model8.gameImage = @"ic_downloads_2";
+    model8.gameNameLabel = @"Need For Speed MW 2";
+    model8.progressText = @"Downloaded: 2.8 GB / 3.7 GB (62%)";
+    model8.progressView = 1;
+    [dataSourceArray addObject:model8];
+    
+    StoreDownloadsModel *model9 = [StoreDownloadsModel new];
+    model9.gameImage = @"ic_downloads_3";
+    model9.gameNameLabel = @"DIRT: Rally";
+    model9.progressText = @"Downloaded: 3.1 GB / 6.8 GB (42%)";
+    model9.progressView = 0;
+    [dataSourceArray addObject:model9];
+    
+    StoreDownloadsModel *model10 = [StoreDownloadsModel new];
+    model10.gameImage = @"ic_downloads_4";
+    model10.gameNameLabel = @"Assassin's creed: Unity";
+    model10.progressText = @"Downloaded: 8.9 GB / 9.4 GB (4%)";
+    model10.progressView = 1;
+    [dataSourceArray addObject:model10];
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -100,6 +128,13 @@
     [cell.gameImage setImage:[NSImage imageNamed:model.gameImage]];
     [cell.gameNameLabel setStringValue:model.gameNameLabel];
     [cell.downloadLabel setStringValue:model.progressText];
+    if(model.progressView == 0) {
+        [cell.progressBox setHidden:NO];
+        [cell.expectationView setHidden:YES];
+    } else if(model.progressView == 1) {
+        [cell.progressBox setHidden:YES];
+        [cell.expectationView setHidden:NO];
+    }
     return cell;
 }
 

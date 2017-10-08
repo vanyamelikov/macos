@@ -12,9 +12,11 @@
                 <outlet property="backgroundBox" destination="CBB-qv-KgH" id="ycF-GM-j08"/>
                 <outlet property="button" destination="HtN-eu-JIr" id="i30-Xy-Yyl"/>
                 <outlet property="downloadLabel" destination="zCJ-wk-p7e" id="zVJ-ZG-zwu"/>
+                <outlet property="expectationView" destination="Nhm-EL-Hf5" id="Ykl-WU-p4F"/>
                 <outlet property="gameImage" destination="XOU-Ei-zEl" id="KQa-ld-igL"/>
                 <outlet property="gameNameLabel" destination="jQH-Pm-K25" id="nUG-MP-mw7"/>
                 <outlet property="progressBarView" destination="dFq-cJ-I7o" id="8sm-sU-cwX"/>
+                <outlet property="progressBox" destination="SLQ-ao-Ajn" id="hh9-83-aKJ"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -98,6 +100,13 @@
                                 </constraints>
                                 <color key="fillColor" red="0.41568627450980389" green="0.55686274509803924" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
                             </box>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nhm-EL-Hf5" customClass="DownloadsExpectationView">
+                                <rect key="frame" x="493" y="21" width="380" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="380" id="64N-wb-nQn"/>
+                                    <constraint firstAttribute="height" constant="20" id="gtE-Zb-kkw"/>
+                                </constraints>
+                            </customView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="zCJ-wk-p7e" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" id="4X0-uI-Be6"/>
@@ -105,11 +114,13 @@
                             <constraint firstItem="SLQ-ao-Ajn" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" id="H33-cM-Uqa"/>
                             <constraint firstItem="HtN-eu-JIr" firstAttribute="leading" secondItem="zCJ-wk-p7e" secondAttribute="trailing" constant="8" id="KFl-QW-3ky"/>
                             <constraint firstItem="SLQ-ao-Ajn" firstAttribute="centerX" secondItem="sr3-I2-CdM" secondAttribute="centerX" id="Pkg-Bk-r6l"/>
+                            <constraint firstItem="Nhm-EL-Hf5" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" id="ThX-g9-2DP"/>
                             <constraint firstItem="HtN-eu-JIr" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" id="UxQ-7b-qZ6"/>
                             <constraint firstItem="XOU-Ei-zEl" firstAttribute="leading" secondItem="sr3-I2-CdM" secondAttribute="leading" id="YZD-if-Cex"/>
                             <constraint firstAttribute="trailing" secondItem="HtN-eu-JIr" secondAttribute="trailing" constant="6" id="lSg-HA-p7h"/>
                             <constraint firstItem="jQH-Pm-K25" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" id="mOp-9z-4Sd"/>
                             <constraint firstItem="XOU-Ei-zEl" firstAttribute="centerY" secondItem="sr3-I2-CdM" secondAttribute="centerY" id="qOf-OS-S9q"/>
+                            <constraint firstItem="Nhm-EL-Hf5" firstAttribute="centerX" secondItem="sr3-I2-CdM" secondAttribute="centerX" id="wtq-Bu-Rm4"/>
                         </constraints>
                     </view>
                     <color key="borderColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>

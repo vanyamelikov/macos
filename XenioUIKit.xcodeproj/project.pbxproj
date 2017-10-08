@@ -41,6 +41,8 @@
 		3115C3B61F8503D20022F8B2 /* PaymentInformationTotalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3115C3B51F8503D20022F8B2 /* PaymentInformationTotalCell.xib */; };
 		3115C3B81F85044D0022F8B2 /* PaymentInformationGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3115C3B71F85044D0022F8B2 /* PaymentInformationGameCell.xib */; };
 		3115C3BB1F850B780022F8B2 /* WalletMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3115C3BA1F850B780022F8B2 /* WalletMainViewController.m */; };
+		31353F8A1F89B2C800CCB7B8 /* DownloadsExpectationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31353F891F89B2C800CCB7B8 /* DownloadsExpectationView.xib */; };
+		31353F8D1F89B2E200CCB7B8 /* DownloadsExpectationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31353F8C1F89B2E200CCB7B8 /* DownloadsExpectationView.m */; };
 		3151CC8A1F7F4F8B00B3D3C3 /* NSSplitView+ReplaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3151CC891F7F4F8B00B3D3C3 /* NSSplitView+ReplaceView.m */; };
 		3151CC8B1F7F5F5600B3D3C3 /* NSSplitView+ReplaceView.h in Sources */ = {isa = PBXBuildFile; fileRef = 3151CC881F7F4F8B00B3D3C3 /* NSSplitView+ReplaceView.h */; };
 		315947031F7C51CF0073FA52 /* BackgroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315947021F7C51CF0073FA52 /* BackgroundView.xib */; };
@@ -406,6 +408,9 @@
 		3115C3B71F85044D0022F8B2 /* PaymentInformationGameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentInformationGameCell.xib; sourceTree = "<group>"; };
 		3115C3B91F850B780022F8B2 /* WalletMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletMainViewController.h; sourceTree = "<group>"; };
 		3115C3BA1F850B780022F8B2 /* WalletMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletMainViewController.m; sourceTree = "<group>"; };
+		31353F891F89B2C800CCB7B8 /* DownloadsExpectationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadsExpectationView.xib; sourceTree = "<group>"; };
+		31353F8B1F89B2E200CCB7B8 /* DownloadsExpectationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadsExpectationView.h; sourceTree = "<group>"; };
+		31353F8C1F89B2E200CCB7B8 /* DownloadsExpectationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadsExpectationView.m; sourceTree = "<group>"; };
 		3151CC881F7F4F8B00B3D3C3 /* NSSplitView+ReplaceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSSplitView+ReplaceView.h"; sourceTree = "<group>"; };
 		3151CC891F7F4F8B00B3D3C3 /* NSSplitView+ReplaceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSSplitView+ReplaceView.m"; sourceTree = "<group>"; };
 		315947021F7C51CF0073FA52 /* BackgroundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackgroundView.xib; sourceTree = "<group>"; };
@@ -968,6 +973,9 @@
 				3167C9D91F85BD270082C94C /* DonwloadsView.xib */,
 				3167C9DB1F85CBD40082C94C /* DownloadsView.h */,
 				3167C9DC1F85CBD40082C94C /* DownloadsView.m */,
+				31353F891F89B2C800CCB7B8 /* DownloadsExpectationView.xib */,
+				31353F8B1F89B2E200CCB7B8 /* DownloadsExpectationView.h */,
+				31353F8C1F89B2E200CCB7B8 /* DownloadsExpectationView.m */,
 			);
 			name = DownloadsView;
 			sourceTree = "<group>";
@@ -2164,6 +2172,7 @@
 				31E4F74D1F7E9E5E0047B843 /* PaymentInformationTableView.xib in Resources */,
 				3E558C0B1F7AE2F500542B7B /* FriendsContentList.xib in Resources */,
 				31D462621F859A03001E3AC6 /* WebsiteButton.xib in Resources */,
+				31353F8A1F89B2C800CCB7B8 /* DownloadsExpectationView.xib in Resources */,
 				3E8876521F74ABB2001B8374 /* FriendsRightListCell.xib in Resources */,
 				31B07ECE1F80ACCB00B6BCCA /* CustomSearchBar.xib in Resources */,
 				3E88763B1F749462001B8374 /* FriendsContentViewListCell.xib in Resources */,
@@ -2359,6 +2368,7 @@
 				3E6FE7EC1F782A6900B98AD3 /* PassphraseView.m in Sources */,
 				3E8876011F74104E001B8374 /* LibraryGamesRightMenuHeaderCell.m in Sources */,
 				31F155621F82EE210070B256 /* XenioBackgroundView.m in Sources */,
+				31353F8D1F89B2E200CCB7B8 /* DownloadsExpectationView.m in Sources */,
 				31B07ED51F8113A000B6BCCA /* BackgroundView.m in Sources */,
 				315947281F7C99D80073FA52 /* SplitViewWithDivider.m in Sources */,
 				31B07F3C1F81AECE00B6BCCA /* BuyGamePaymentMethodView.m in Sources */,

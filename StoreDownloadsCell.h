@@ -8,6 +8,7 @@
 
 #import "NSView+INSNibLoading.h"
 #import "RoundButton.h"
+#import "DownloadsExpectationView.h"
 
 @interface StoreDownloadsCell : INSNibLoadedView
 
@@ -18,6 +19,8 @@
 @property (strong) IBOutlet NSTextField *downloadLabel;
 @property (strong) IBOutlet RoundButton *button;
 @property (weak) IBOutlet NSBox *progressBarView;
+@property (weak) IBOutlet DownloadsExpectationView *expectationView;
+@property (weak) IBOutlet NSBox *progressBox;
 
 
 @end
