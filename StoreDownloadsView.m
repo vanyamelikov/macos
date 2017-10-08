@@ -127,7 +127,13 @@
     StoreDownloadsCell *cell = (StoreDownloadsCell *)[tableView makeViewWithIdentifier:@"StoreGamesCell" owner:self];
     [cell.gameImage setImage:[NSImage imageNamed:model.gameImage]];
     [cell.gameNameLabel setStringValue:model.gameNameLabel];
-    [cell.downloadLabel setStringValue:model.progressText];
+    
+    NSMutableAttributedString* attrString = [[NSMutableAttributedString alloc] initWithString:model.progressText];
+    NSRange range = NSMakeRange([attrString length] - 5, 5);
+    //62,175,255
+    [attrString addAttribute:NSForegroundColorAttributeName value:[NSColor colorWithRed:62/255 green:175/255 blue:255/255 alpha:1.0f] range:range];
+    [cell.downloadLabel setAttributedStringValue:attrString];
+    
     if(model.progressView == 0) {
         [cell.progressBox setHidden:NO];
         [cell.expectationView setHidden:YES];
