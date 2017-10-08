@@ -43,6 +43,8 @@
 		3115C3BB1F850B780022F8B2 /* WalletMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3115C3BA1F850B780022F8B2 /* WalletMainViewController.m */; };
 		31353F8A1F89B2C800CCB7B8 /* DownloadsExpectationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31353F891F89B2C800CCB7B8 /* DownloadsExpectationView.xib */; };
 		31353F8D1F89B2E200CCB7B8 /* DownloadsExpectationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31353F8C1F89B2E200CCB7B8 /* DownloadsExpectationView.m */; };
+		31353F901F89CB9500CCB7B8 /* CustomClickableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31353F8F1F89CB9500CCB7B8 /* CustomClickableView.xib */; };
+		31353F931F89CBD400CCB7B8 /* CustomClickableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31353F921F89CBD400CCB7B8 /* CustomClickableView.m */; };
 		3151CC8A1F7F4F8B00B3D3C3 /* NSSplitView+ReplaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3151CC891F7F4F8B00B3D3C3 /* NSSplitView+ReplaceView.m */; };
 		3151CC8B1F7F5F5600B3D3C3 /* NSSplitView+ReplaceView.h in Sources */ = {isa = PBXBuildFile; fileRef = 3151CC881F7F4F8B00B3D3C3 /* NSSplitView+ReplaceView.h */; };
 		315947031F7C51CF0073FA52 /* BackgroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315947021F7C51CF0073FA52 /* BackgroundView.xib */; };
@@ -411,6 +413,9 @@
 		31353F891F89B2C800CCB7B8 /* DownloadsExpectationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadsExpectationView.xib; sourceTree = "<group>"; };
 		31353F8B1F89B2E200CCB7B8 /* DownloadsExpectationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadsExpectationView.h; sourceTree = "<group>"; };
 		31353F8C1F89B2E200CCB7B8 /* DownloadsExpectationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadsExpectationView.m; sourceTree = "<group>"; };
+		31353F8F1F89CB9500CCB7B8 /* CustomClickableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomClickableView.xib; sourceTree = "<group>"; };
+		31353F911F89CBD400CCB7B8 /* CustomClickableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomClickableView.h; sourceTree = "<group>"; };
+		31353F921F89CBD400CCB7B8 /* CustomClickableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomClickableView.m; sourceTree = "<group>"; };
 		3151CC881F7F4F8B00B3D3C3 /* NSSplitView+ReplaceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSSplitView+ReplaceView.h"; sourceTree = "<group>"; };
 		3151CC891F7F4F8B00B3D3C3 /* NSSplitView+ReplaceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSSplitView+ReplaceView.m"; sourceTree = "<group>"; };
 		315947021F7C51CF0073FA52 /* BackgroundView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackgroundView.xib; sourceTree = "<group>"; };
@@ -955,6 +960,16 @@
 				3115C38D1F8436580022F8B2 /* WalletAddressModalViewController.xib */,
 			);
 			name = ModalViewControllers;
+			sourceTree = "<group>";
+		};
+		31353F8E1F89CB6E00CCB7B8 /* CustomClickableView */ = {
+			isa = PBXGroup;
+			children = (
+				31353F8F1F89CB9500CCB7B8 /* CustomClickableView.xib */,
+				31353F911F89CBD400CCB7B8 /* CustomClickableView.h */,
+				31353F921F89CBD400CCB7B8 /* CustomClickableView.m */,
+			);
+			name = CustomClickableView;
 			sourceTree = "<group>";
 		};
 		315947201F7C6B1F0073FA52 /* BottomDownloadBar */ = {
@@ -1872,6 +1887,7 @@
 		3ECF3CAF1F686883005165E5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				31353F8E1F89CB6E00CCB7B8 /* CustomClickableView */,
 				3167C9D81F85BD0B0082C94C /* DownloadsView */,
 				31D4626A1F85B2A4001E3AC6 /* ChatView */,
 				3115C3721F842EDF0022F8B2 /* CustomPopover */,
@@ -2169,6 +2185,7 @@
 				3EBAADEF1F75CCEC00890AD1 /* WalletHistoryView.xib in Resources */,
 				3E8876301F7471B6001B8374 /* FriendsChatRequestCell.xib in Resources */,
 				31F1554A1F81FE9F0070B256 /* CustomSwitch.xib in Resources */,
+				31353F901F89CB9500CCB7B8 /* CustomClickableView.xib in Resources */,
 				31E4F74D1F7E9E5E0047B843 /* PaymentInformationTableView.xib in Resources */,
 				3E558C0B1F7AE2F500542B7B /* FriendsContentList.xib in Resources */,
 				31D462621F859A03001E3AC6 /* WebsiteButton.xib in Resources */,
@@ -2404,6 +2421,7 @@
 				31C3C6271F83DA930070E612 /* PlayerStatusNotHere.m in Sources */,
 				3E3E42001F757D0D009698FD /* LibraryGamesServersListView.m in Sources */,
 				315947191F7C6B190073FA52 /* StoreGameInfoView.m in Sources */,
+				31353F931F89CBD400CCB7B8 /* CustomClickableView.m in Sources */,
 				31B8EB921F7FD82500962504 /* StoreMainGamesGridViewController.m in Sources */,
 				31B07EDF1F815A4E00B6BCCA /* LibraryEmptyView.m in Sources */,
 				3167C9E01F8662CB0082C94C /* DownloadsViewController.m in Sources */,

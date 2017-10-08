@@ -9,6 +9,6 @@
 #import <Cocoa/Cocoa.h>
 #import "JMModalOverlay.h"
 
-@interface ShowFriendsRequestBox : NSBox <JMModalOverlayDelegate>
+@interface ShowFriendsRequestBox : NSBox
 
 @end

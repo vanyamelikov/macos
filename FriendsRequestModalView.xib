@@ -78,10 +78,20 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xR5-7F-wZk">
+                                <rect key="frame" x="669" y="18" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Ca9-rh-5iM"/>
+                                    <constraint firstAttribute="width" constant="16" id="Jkl-JT-xDn"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="ic_chat_close" id="0mg-Vv-8jW"/>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="3rL-3o-vqf" firstAttribute="leading" secondItem="Kx5-XJ-pLe" secondAttribute="leading" constant="20" id="HMR-36-ZgK"/>
+                            <constraint firstItem="xR5-7F-wZk" firstAttribute="top" secondItem="Kx5-XJ-pLe" secondAttribute="top" constant="17" id="Ly8-Ow-A9N"/>
                             <constraint firstItem="3rL-3o-vqf" firstAttribute="centerY" secondItem="Kx5-XJ-pLe" secondAttribute="centerY" id="tZf-ZJ-CKK"/>
+                            <constraint firstAttribute="trailing" secondItem="xR5-7F-wZk" secondAttribute="trailing" constant="20" id="vqx-jX-fDN"/>
                         </constraints>
                     </view>
                     <constraints>
@@ -102,4 +112,7 @@
             <point key="canvasLocation" x="104.5" y="290"/>
         </customView>
     </objects>
+    <resources>
+        <image name="ic_chat_close" width="10" height="10"/>
+    </resources>
 </document>

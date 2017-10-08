@@ -822,39 +822,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="703" height="570"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="YYa-7c-M0g" customClass="XenioBackgroundView">
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="h5Y-cr-5Vh" customClass="CustomClickableView">
                                 <rect key="frame" x="0.0" y="0.0" width="703" height="570"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="startGradientColor">
-                                        <color key="value" red="0.22745098039215686" green="0.21568627450980393" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="endGradientColor">
-                                        <color key="value" red="0.38039215686274508" green="0.46666666666666667" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientOpacity">
-                                        <real key="value" value="0.10000000000000001"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="solidColor">
-                                        <color key="value" red="0.074509803921568626" green="0.086274509803921567" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="solidOpacity">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="blurredImage" value="background_purchase"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="imageTransparency">
-                                        <real key="value" value="0.10000000000000001"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="blurRadius">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </customView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="YYa-7c-M0g" firstAttribute="top" secondItem="DPa-d6-rJr" secondAttribute="top" id="4gG-HB-zXZ"/>
-                            <constraint firstAttribute="bottom" secondItem="YYa-7c-M0g" secondAttribute="bottom" id="KME-nh-Wv5"/>
-                            <constraint firstAttribute="trailing" secondItem="YYa-7c-M0g" secondAttribute="trailing" id="OVl-DE-xHr"/>
-                            <constraint firstItem="YYa-7c-M0g" firstAttribute="leading" secondItem="DPa-d6-rJr" secondAttribute="leading" id="SuV-cm-Mdr"/>
+                            <constraint firstItem="h5Y-cr-5Vh" firstAttribute="leading" secondItem="DPa-d6-rJr" secondAttribute="leading" id="GcW-WT-mRV"/>
+                            <constraint firstItem="h5Y-cr-5Vh" firstAttribute="top" secondItem="DPa-d6-rJr" secondAttribute="top" id="Swj-yt-kZ6"/>
+                            <constraint firstAttribute="bottom" secondItem="h5Y-cr-5Vh" secondAttribute="bottom" id="akk-9J-GIR"/>
+                            <constraint firstAttribute="trailing" secondItem="h5Y-cr-5Vh" secondAttribute="trailing" id="tNJ-hY-2i4"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -1542,7 +1518,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background_purchase" width="2880" height="1620"/>
         <image name="ic_disk" width="17" height="16"/>
         <image name="ic_lock" width="17" height="22"/>
         <image name="ic_logo" width="293" height="76"/>

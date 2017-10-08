@@ -8,32 +8,30 @@
 
 #import "ShowFriendsRequestBox.h"
 
-@implementation ShowFriendsRequestBox{
-    JMModalOverlay *modalOverlay;
-}
+@implementation ShowFriendsRequestBox
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
-    
-    // Drawing code here.
+    [self.window makeFirstResponder:self];
 }
 
--(void)mouseDown:(NSEvent *)event {
-    NSLog(@"Mouse Down");
+- (BOOL)acceptsFirstMouse:(NSEvent *)theEvent
+{
+    return YES;
+}
+
+- (BOOL)acceptsFirstResponder {
+    return YES;
 }
 
 -(void)mouseUp:(NSEvent *)event {
+    [super mouseUp:event];
     NSLog(@"Mouse Up");
-    NSStoryboard *friends = [NSStoryboard storyboardWithName:@"Friends" bundle:nil];
-    NSViewController *friendsVC = [friends instantiateControllerWithIdentifier:@"FriendsModalOverlay"];
-    modalOverlay.contentViewController = friendsVC;
-    modalOverlay.animates = YES;
-    modalOverlay.animationDirection = JMModalOverlayDirectionBottom;
-    modalOverlay.shouldOverlayTitleBar = YES;
-    modalOverlay.shouldCloseWhenClickOnBackground = NO;
-    modalOverlay.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantDark];
-    modalOverlay.backgroundColor = [NSColor colorWithCalibratedWhite:0.0 alpha:0.0];
-    [modalOverlay showInWindow:self.window];
+}
+
+-(void)mouseDown:(NSEvent *)event {
+    [super mouseDown:event];
+    NSLog(@"Mouse Up");
 }
 
 @end

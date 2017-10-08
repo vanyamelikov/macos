@@ -264,11 +264,11 @@
             <objects>
                 <viewController identifier="FriendsModalOverlay" storyboardIdentifier="FriendsModalOverlay" id="f18-J5-AY2" sceneMemberID="viewController">
                     <view key="view" id="Akl-Jk-RLr">
-                        <rect key="frame" x="0.0" y="0.0" width="1084" height="650"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1440" height="810"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView identifier="FriendsRequestModalView" translatesAutoresizingMaskIntoConstraints="NO" id="2QS-gw-Yd8" customClass="FriendsRequestModalView">
-                                <rect key="frame" x="251" y="165" width="582" height="320"/>
+                                <rect key="frame" x="429" y="245" width="582" height="320"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="582" id="FS5-6S-jsO"/>
                                     <constraint firstAttribute="height" constant="320" id="HEG-PL-h8V"/>
@@ -283,7 +283,7 @@
                 </viewController>
                 <customObject id="PwA-Zm-gl6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-751" y="3002"/>
+            <point key="canvasLocation" x="-635" y="3049"/>
         </scene>
     </scenes>
     <resources>

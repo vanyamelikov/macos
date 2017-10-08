@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CustomClickableView"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="15"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tyT-HW-Xxa">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="15"/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="NYu-mU-iKn">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="customClickAction:" target="-2" id="dpC-3w-fsm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tyT-HW-Xxa" secondAttribute="bottom" id="4Vg-Ov-Nek"/>
+                <constraint firstItem="tyT-HW-Xxa" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="JkP-Jy-cuh"/>
+                <constraint firstAttribute="trailing" secondItem="tyT-HW-Xxa" secondAttribute="trailing" id="Mep-8A-ymI"/>
+                <constraint firstItem="tyT-HW-Xxa" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="iX9-cx-S76"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>
