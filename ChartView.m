@@ -38,7 +38,7 @@
         displayHeight = currentHeight;
     }
     [self.lineChartView setFirstLinePercent:currentPercent];
-    [self.lineChartView setSecondLinePercent:currentPercent];
+    [self.lineChartView setSecondLinePercent:100-currentPercent];
     [self.lineChartView updateLines];
     [self setNeedsDisplay:YES];
 }
@@ -56,8 +56,8 @@
     for(int i = 0; i < count; i ++) {
         NSBox *barBox = [[NSBox alloc] initWithFrame:CGRectMake(summ*i, 0, barWidth, 0)];
         [barBox setBoxType:NSBoxCustom];
-        [barBox setFillColor:[NSColor colorFromHexString:@"ffffff"]];
-        [barBox setBorderColor:[NSColor colorFromHexString:@"ffffff"]];
+        [barBox setFillColor:[NSColor colorWithCalibratedWhite:1.0f alpha:0.03f]];
+        [barBox setBorderColor:[NSColor colorWithCalibratedWhite:1.0f alpha:0.03f]];
         [self.mainBox addSubview:barBox];
     }
 }

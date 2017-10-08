@@ -46,7 +46,7 @@
         CGFloat startX = NSMidX(self.dotImageView.frame);
         CGFloat startY = self.bounds.size.height/2;
         NSPoint firstPoint = CGPointMake(startX, startY);
-        [firstLineValues insertObject:[NSNumber numberWithFloat:20 + self.bounds.size.height*(firstLinePercent/100)] atIndex:0];
+        [firstLineValues insertObject:[NSNumber numberWithFloat:self.bounds.size.height*(firstLinePercent/100)] atIndex:0];
         
         [firstPath removeAllPoints];
         [firstPath setLineWidth:firstLineWidth];
@@ -54,7 +54,7 @@
         [firstPath moveToPoint:firstPoint];
         
         for(NSInteger i = 0; i < firstLineValues.count; i++) {
-            NSPoint p = CGPointMake(startX - i*firstLinePointsDistance, [((NSNumber *)[firstLineValues objectAtIndex:i]) floatValue] + 20);
+            NSPoint p = CGPointMake(startX - i*firstLinePointsDistance, [((NSNumber *)[firstLineValues objectAtIndex:i]) floatValue] + 20.0f);
             [firstPath lineToPoint:p];
             [firstPath moveToPoint:p];
         }
@@ -72,7 +72,7 @@
         CGFloat startX = NSMidX(self.dotImageView.frame);
         CGFloat startY = self.bounds.size.height/2;
         NSPoint firstPoint = CGPointMake(startX, startY);
-        [secondLineValues insertObject:[NSNumber numberWithFloat:20 + self.bounds.size.height*(secondLinePercent/100)] atIndex:0];
+        [secondLineValues insertObject:[NSNumber numberWithFloat:self.bounds.size.height*(secondLinePercent/100)] atIndex:0];
         
         [secondPath removeAllPoints];
         [secondPath setLineWidth:secondLineWidth];
@@ -80,7 +80,7 @@
         [secondPath moveToPoint:firstPoint];
         
         for(NSInteger i = 0; i < secondLineValues.count; i++) {
-            NSPoint p = CGPointMake(startX - i*secondLinePointsDistance, [((NSNumber *)[secondLineValues objectAtIndex:i]) floatValue] + 20);
+            NSPoint p = CGPointMake(startX - i*secondLinePointsDistance, [((NSNumber *)[secondLineValues objectAtIndex:i]) floatValue] + 20.0f);
             [secondPath lineToPoint:p];
             [secondPath moveToPoint:p];
         }
@@ -103,7 +103,7 @@
             NSInteger capacity = (self.bounds.size.width-40)/firstLinePointsDistance;
             firstLineValues = [[NSMutableArray alloc] initWithCapacity:capacity];
             for(NSInteger i = 0; i < capacity; i++)
-                [firstLineValues addObject:[NSNumber numberWithFloat:(self.bounds.size.height/2)-30]];
+                [firstLineValues addObject:[NSNumber numberWithFloat:(self.bounds.size.height/2)]];
         }
     }
 }
@@ -120,7 +120,7 @@
             NSInteger capacity = (self.bounds.size.width-40)/secondLinePointsDistance;
             secondLineValues = [[NSMutableArray alloc] initWithCapacity:capacity];
             for(NSInteger i = 0; i < capacity; i++)
-                [secondLineValues addObject:[NSNumber numberWithFloat:(self.bounds.size.height/2)-30]];
+                [secondLineValues addObject:[NSNumber numberWithFloat:(self.bounds.size.height/2)]];
         }
     }
 }

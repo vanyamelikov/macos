@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [NSTimer scheduledTimerWithTimeInterval:1.0f
+    [NSTimer scheduledTimerWithTimeInterval:.2f
                                      target:self selector:@selector(randomPercentChartView:) userInfo:nil repeats:YES];
 }
 
