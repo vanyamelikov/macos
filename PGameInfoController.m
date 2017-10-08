@@ -85,6 +85,9 @@
 }
 
 - (void)preOrderClick {
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"changeBackgroundNotification"
+     object:@"background_purchase_blur"];
     [NSAnimationContext beginGrouping];
     [[NSAnimationContext currentContext] setDuration:1.0f];
     self.buyGameMainView.animator.hidden = YES;
@@ -95,6 +98,9 @@
 }
 
 - (void)continueToPaymentInfo {
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"changeBackgroundNotification"
+     object:@"background_purchase_2"];
     [NSAnimationContext beginGrouping];
     [[NSAnimationContext currentContext] setDuration:1.0f];
     self.buyGameMainView.animator.hidden = YES;
@@ -106,6 +112,9 @@
 }
 
 - (void)continueToLastPage {
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"changeBackgroundNotification"
+     object:@"background_purchase_2"];
     [NSAnimationContext beginGrouping];
     [[NSAnimationContext currentContext] setDuration:1.0f];
     self.paymentMethodView.animator.hidden = YES;
@@ -114,6 +123,9 @@
 }
 
 -(void)openMainStoreViewController {
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"changeBackgroundNotification"
+     object:@"background_store_1"];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

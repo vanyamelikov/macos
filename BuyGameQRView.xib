@@ -14,7 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <box boxType="custom" borderWidth="0.0" title="Box" transparent="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cQ8-yl-Zag">
+                <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="cQ8-yl-Zag">
                     <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
                     <view key="contentView" id="jAC-eQ-Dxr">
                         <rect key="frame" x="0.0" y="0.0" width="1440" height="840"/>
@@ -158,6 +158,7 @@ Please refill your xenio account to pay the missing amount.</string>
                             <constraint firstItem="dRH-8X-ZZN" firstAttribute="centerX" secondItem="jAC-eQ-Dxr" secondAttribute="centerX" id="z0c-S5-cZo"/>
                         </constraints>
                     </view>
+                    <color key="fillColor" red="0.074509803921568626" green="0.086274509803921567" blue="0.12549019607843137" alpha="0.80221913343558282" colorSpace="calibratedRGB"/>
                 </box>
             </subviews>
             <constraints>

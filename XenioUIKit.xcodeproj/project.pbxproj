@@ -2621,7 +2621,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8E9347FF6F057E52691C32C9 /* Pods-XenioUIKit.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = XenioUIKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -2634,7 +2633,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8D9DBD9449A1117FB45C62BD /* Pods-XenioUIKit.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = XenioUIKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
