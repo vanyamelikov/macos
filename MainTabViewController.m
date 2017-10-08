@@ -34,7 +34,6 @@
     BFNavigationController *_navigationController;
     BottomDownloadBar *downloadBar;
     ChatMainView *mainChatView;
-    
 }
 
 @end
@@ -181,6 +180,34 @@
 }
 
 -(void)downloadsButtonClick {
+    MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
+    if(!downloadBar) {
+        downloadBar = [[BottomDownloadBar alloc] initWithFrame:CGRectMake(mainWindow.contentView.frame.origin.x,
+                                                                          mainWindow.contentView.frame.origin.y,
+                                                                          mainWindow.contentView.frame.size.width,
+                                                                          75.0f)];
+        downloadBar.delegate = self;
+        [downloadBar setAutoresizingMask:NSViewWidthSizable];
+        [downloadBar setTranslatesAutoresizingMaskIntoConstraints:YES];
+    }
+    if(!isShowDownloadBar) {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:1.0f];
+        [mainWindow.animator.contentView addSubview:downloadBar positioned:NSWindowOut relativeTo:nil];
+        [mainWindow.animator.contentView setNeedsDisplay:YES];
+        isShowDownloadBar = YES;
+        [NSAnimationContext endGrouping];
+    } else {
+        [NSAnimationContext beginGrouping];
+        [[NSAnimationContext currentContext] setDuration:1.0f];
+        [downloadBar.animator removeFromSuperview];
+        [mainWindow.animator.contentView setNeedsDisplay:YES];
+        isShowDownloadBar = NO;
+        [NSAnimationContext endGrouping];
+    }
+}
+
+-(void)closeBottomDownloads {
     MainWindow *mainWindow = (MainWindow *)[[NSApplication sharedApplication] mainWindow];
     if(!downloadBar) {
         downloadBar = [[BottomDownloadBar alloc] initWithFrame:CGRectMake(mainWindow.contentView.frame.origin.x,

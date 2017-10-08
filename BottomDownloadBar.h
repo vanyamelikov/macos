@@ -12,6 +12,7 @@
 @class BottomDownloadBar;
 @protocol BottomDownloadBarDelegate <NSObject>
 -(void)openDownloadsViewController;
+-(void)closeBottomDownloads;
 @end
 
 @interface BottomDownloadBar : INSNibLoadedView

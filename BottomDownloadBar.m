@@ -18,5 +18,10 @@
     }
 }
 
+- (IBAction)closeDowloadsBottomBar:(NSClickGestureRecognizer *)sender {
+    if(delegate && [self.delegate respondsToSelector:@selector(closeBottomDownloads)]) {
+        [self.delegate closeBottomDownloads];
+    }
+}
 
 @end

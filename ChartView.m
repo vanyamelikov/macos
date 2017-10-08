@@ -11,7 +11,7 @@
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
     if(self) {
-        
+        [self updateBackBar];
     }
 }
 
@@ -56,7 +56,8 @@
     for(int i = 0; i < count; i ++) {
         NSBox *barBox = [[NSBox alloc] initWithFrame:CGRectMake(summ*i, 0, barWidth, 0)];
         [barBox setBoxType:NSBoxCustom];
-        [barBox setFillColor:[NSColor colorFromHexString:@"#1d202b"]];
+        [barBox setFillColor:[NSColor colorFromHexString:@"ffffff"]];
+        [barBox setBorderColor:[NSColor colorFromHexString:@"ffffff"]];
         [self.mainBox addSubview:barBox];
     }
 }
@@ -69,15 +70,6 @@
     CGFloat x = [(NSNumber *)[dict objectForKey:@"x"] floatValue];
     CGFloat y = [(NSNumber *)[dict objectForKey:@"y"] floatValue];
     return CGPointMake(x, y);
-}
-
-
-- (void)someBackgroundTask:(NSTimer *)timer {
-    float low_bound = 5;
-    float high_bound = 95;
-    float rndValue = (((float)arc4random()/0x100000000)*(high_bound-low_bound)+low_bound);
-    [self setCurrentPercent:rndValue];
-    [self updateBackBar];
 }
 
 @end

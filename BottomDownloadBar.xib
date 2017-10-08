@@ -31,10 +31,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K1F-FB-ynF">
-                                <rect key="frame" x="30" y="31" width="30" height="15"/>
+                                <rect key="frame" x="30" y="25" width="30" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="1l2-Xx-gzU"/>
-                                    <constraint firstAttribute="height" constant="15" id="6Na-YN-PUN"/>
+                                    <constraint firstAttribute="height" constant="25" id="6Na-YN-PUN"/>
                                 </constraints>
                                 <gestureRecognizers>
                                     <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="cpP-zW-XaQ">
@@ -43,7 +43,7 @@
                                         </connections>
                                     </clickGestureRecognizer>
                                 </gestureRecognizers>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_download" id="a0y-kt-GqA"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="ic_download" id="a0y-kt-GqA"/>
                             </imageView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="5jn-Nk-oo2" customClass="RoundButton">
                                 <rect key="frame" x="80" y="23" width="30" height="30"/>
@@ -110,6 +110,13 @@
                                     <constraint firstAttribute="width" constant="15" id="7mz-vD-CG2"/>
                                     <constraint firstAttribute="height" constant="20" id="QYx-HQ-Ukh"/>
                                 </constraints>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="v0L-Y3-YG7">
+                                        <connections>
+                                            <action selector="closeDowloadsBottomBar:" target="-2" id="uYC-bZ-9a8"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ic_hide" id="NBx-KW-rkj"/>
                             </imageView>
                         </subviews>
