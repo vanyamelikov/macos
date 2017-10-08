@@ -2652,7 +2652,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = XenioUIKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = it.mifsoftware.com.XenioUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = it.mifsoftware.com.Xenio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -2664,7 +2664,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = XenioUIKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = it.mifsoftware.com.XenioUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = it.mifsoftware.com.Xenio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -20,6 +20,9 @@
 }
 - (IBAction)openProfileClick:(id)sender {
     [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"changeBackgroundNotification"
+     object:@"background_profile"];
+    [[NSNotificationCenter defaultCenter]
      postNotificationName:@"openFriendsProfileNotification"
      object:@"background_purchase"];
 }
